@@ -5,6 +5,8 @@
 layout: default
 ---
 
+<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/hrQkYsR3OGx6Bqm9cy" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/organized-hrQkYsR3OGx6Bqm9cy">via GIPHY</a></p>
+
 # Schedule
 _This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [CUNY CityTech Fall 2020 Academic Calendar](http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf){:target="_blank"}. The following topics and their precise order may change. Check here for updates!_  
 <div class="instructornote">  
