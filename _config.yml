@@ -23,7 +23,7 @@ email: LGoldford@citytech.cuny.edu
 author: Prof. Louis Goldford
 description: >- # this means to ignore newlines until "baseurl:"
   Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.
-baseurl: "Goldford-MTEC1003-Fall2020" # the subpath of your site, e.g. /blog
+baseurl: "Goldford-MTEC1003-OL04" # the subpath of your site, e.g. /blog
 # baseurl: "Goldford-MTEC1003-Fall2020" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: einbahnstrasse

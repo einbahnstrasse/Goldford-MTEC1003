@@ -40,20 +40,20 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [Personal Info Form DUE NOW!](https://forms.gle/6M39dqqsh9pLQr1R7)  
 * Review [Syllabus + course policies.]()  
 * Review [Detailed Breakdown of Grading.]()  
-* Review [Keys for Success in MTEC1003](/Goldford-MTEC1003-Fall2020/resources/week.01/keys.for.success.html)  
+* Review [Keys for Success in MTEC1003](/Goldford-MTEC1003-OL04/resources/week.01/keys.for.success.html)  
 
 ##### Slides  
-* [About the Command Line](/Goldford-MTEC1003-Fall2020/labs/01/command-line.html)  
-* [Entering Commands](/Goldford-MTEC1003-Fall2020/labs/01/entering-commands.html)  
-* [Navigating the File System](/Goldford-MTEC1003-Fall2020/labs/01/file-system.html)  
-* [Paths](/Goldford-MTEC1003-Fall2020/labs/02/paths-review.html#1.0)  
-* [Output, Download, and Uncompress](/Goldford-MTEC1003-Fall2020/labs/02/output-download-uncompress.html)  
+* [About the Command Line](/Goldford-MTEC1003-OL04/labs/01/command-line.html)  
+* [Entering Commands](/Goldford-MTEC1003-OL04/labs/01/entering-commands.html)  
+* [Navigating the File System](/Goldford-MTEC1003-OL04/labs/01/file-system.html)  
+* [Paths](/Goldford-MTEC1003-OL04/labs/02/paths-review.html#1.0)  
+* [Output, Download, and Uncompress](/Goldford-MTEC1003-OL04/labs/02/output-download-uncompress.html)  
 
 ##### LAB ASSIGNMENTS  
 <div class="instructornote"><p markdown="span"><em>Due online (GitHub) at 11:59 PM Saturday night each week!</em></p></div>  
-* [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003-Fall2020/labs/01/how.to.submit.1st.week.labs.html)  
-* [Lab 1 / Part 1: Commands + Navigation](/Goldford-MTEC1003-Fall2020/labs/01/lab.01.part1.commands.navigation.txt)  
-* [Lab 1 / Part 2: Download + (Un)Compress](/Goldford-MTEC1003-Fall2020/labs/01/lab.01.part2.download.compress.txt)  
+* [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003-OL04/labs/01/how.to.submit.1st.week.labs.html)  
+* [Lab 1 / Part 1: Commands + Navigation](/Goldford-MTEC1003-OL04/labs/01/lab.01.part1.commands.navigation.txt)  
+* [Lab 1 / Part 2: Download + (Un)Compress](/Goldford-MTEC1003-OL04/labs/01/lab.01.part2.download.compress.txt)  
 
 * * *
 
@@ -63,16 +63,16 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 9/7. VOE Rosters due 9/15. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### Slides  
-* [Review](/Goldford-MTEC1003-Fall2020/labs/03/review.html#1.0)  
-* [Working With Files](/Goldford-MTEC1003-Fall2020/labs/03/working-with-files.html)  
-* [File Permissions, Editing, Date + Time, Shell Scripting](/Goldford-MTEC1003-Fall2020/labs/03/permissions-editing-date-time.html)  
-* [Shell Scripting: Some Odds and Ends](/Goldford-MTEC1003-Fall2020/labs/04/shell-scripting.html#1.0)  
+* [Review](/Goldford-MTEC1003-OL04/labs/03/review.html#1.0)  
+* [Working With Files](/Goldford-MTEC1003-OL04/labs/03/working-with-files.html)  
+* [File Permissions, Editing, Date + Time, Shell Scripting](/Goldford-MTEC1003-OL04/labs/03/permissions-editing-date-time.html)  
+* [Shell Scripting: Some Odds and Ends](/Goldford-MTEC1003-OL04/labs/04/shell-scripting.html#1.0)  
 
 ##### LAB ASSIGNMENTS
-* [Submitting Week 2 Labs](/Goldford-MTEC1003-Fall2020/labs/02/how.to.submit.2nd.week.labs.html)  
-* [Lab 2 / Part 1: Review](/Goldford-MTEC1003-Fall2020/labs/02/lab.02.part1.review.compress.txt)  
-* [Lab 2 / Part 2: Working with Files](/Goldford-MTEC1003-Fall2020/labs/02/lab.02.part2.working.with.files.txt)  
-* [Lab 2 / Part 3: Shell Scripting, Permissions, Editing Text, Date + Time](/Goldford-MTEC1003-Fall2020/labs/02/lab.02.part3.shell.scripting.txt)  
+* [Submitting Week 2 Labs](/Goldford-MTEC1003-OL04/labs/02/how.to.submit.2nd.week.labs.html)  
+* [Lab 2 / Part 1: Review](/Goldford-MTEC1003-OL04/labs/02/lab.02.part1.review.compress.txt)  
+* [Lab 2 / Part 2: Working with Files](/Goldford-MTEC1003-OL04/labs/02/lab.02.part2.working.with.files.txt)  
+* [Lab 2 / Part 3: Shell Scripting, Permissions, Editing Text, Date + Time](/Goldford-MTEC1003-OL04/labs/02/lab.02.part3.shell.scripting.txt)  
 
 * * *
 
@@ -81,14 +81,14 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Version Control: Introduction to GIT, Concepts + Basic Commands
 
 ##### Slides  
-* [Introduction to Version Control + Git](/Goldford-MTEC1003-Fall2020/labs/04/version-control.html)  
-* [Creating and Setting Up Repositories](/Goldford-MTEC1003-Fall2020/labs/04/creating-repositories.html)  
-* [Making, Saving, and Sharing Changes](/Goldford-MTEC1003-Fall2020/labs/04/changing-files.html)  
+* [Introduction to Version Control + Git](/Goldford-MTEC1003-OL04/labs/04/version-control.html)  
+* [Creating and Setting Up Repositories](/Goldford-MTEC1003-OL04/labs/04/creating-repositories.html)  
+* [Making, Saving, and Sharing Changes](/Goldford-MTEC1003-OL04/labs/04/changing-files.html)  
 
 ##### LAB ASSIGNMENTS  
-<!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-Fall2020/labs/05/lab-05-git-part-01.html)   -->
-* [LAB 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-Fall2020/labs/03/lab-03-git-intro.html)  
-<!-- * [exp lab 4 part 1 link](/Goldford-MTEC1003-Fall2020/labs/04/lab-04-git-part-01.html)   -->
+<!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL04/labs/05/lab-05-git-part-01.html)   -->
+* [LAB 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html)  
+<!-- * [exp lab 4 part 1 link](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-01.html)   -->
 
 ##### Video Tutorial Series  
 ###### Daniel Shiffman: Git and GitHub for Poets  
@@ -107,13 +107,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <p class="redish">A TUESDAY, but follows a Monday schedule. <i>City Tech is closed on 9/28. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### Tutorials  
-* [Pull Requests + Merge Conflicts](/Goldford-MTEC1003-Fall2020/labs/04/git.pull.requests.and.merge.tutorial.v01.html)  
+* [Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL04/labs/04/git.pull.requests.and.merge.tutorial.v01.html)  
 * [Shiffman Video Tutorial on Pull Requests / Merges](https://youtu.be/JtIX3HJKwfo)
 
 ##### LAB ASSIGNMENTS  
-* [Lab 4 / Part 1: Pull Requests + Merge Conflicts](/Goldford-MTEC1003-Fall2020/labs/04/lab-04-git-part-01a.html)  
-* [Lab 4 / Part 2: Review — Creating + Setting Up Git Repositories](/Goldford-MTEC1003-Fall2020/labs/04/lab-04-git-part-02a.html)  
-* [Lab 4 / Part 3: Review — Saving + Sending Changes to Your Repository](/Goldford-MTEC1003-Fall2020/labs/04/lab-04-git-part-03a.html)  
+* [Lab 4 / Part 1: Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-01a.html)  
+* [Lab 4 / Part 2: Review — Creating + Setting Up Git Repositories](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-02a.html)  
+* [Lab 4 / Part 3: Review — Saving + Sending Changes to Your Repository](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-03a.html)  
 
 * * *
 
@@ -122,13 +122,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### JavaScript + Python: Introduction, Variables, Types, Input/Output
 
 ##### Slides  
-* [Introduction to JavaScript](/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html)  
-* [JavaScript Basics](/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html)  
+* [Introduction to JavaScript](/Goldford-MTEC1003-OL04/labs/05/js-intro.html)  
+* [JavaScript Basics](/Goldford-MTEC1003-OL04/labs/05/js-basics.html)  
 * Python tutorial?!  
 
 ##### LAB ASSIGNMENTS
-* [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003-Fall2020/labs/05/lab-05-part1-js-basics.html)  
-* [Lab 5 / Part 2: Python Basics](/Goldford-MTEC1003-Fall2020/labs/05/lab-05-part2-python-basics.html)  
+* [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html)  
+* [Lab 5 / Part 2: Python Basics](/Goldford-MTEC1003-OL04/labs/05/lab-05-part2-python-basics.html)  
 
 ##### Further Reading / Suggested Resources
 *  

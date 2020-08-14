@@ -4,9 +4,9 @@
 
 layout: default
 ---
-<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="VR-img" width="400" align="right">
+<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zach" width="400" align="right">
 # Syllabus
-[_PDF version here._](/Goldford-ENT3320/resources/week.01/Goldford-ENT3320-Spring2020-Syllabus-v.01.pdf)
+[_PDF version here._](dummy.pdf)
 
 ### I. Essential Course + Contact Information
 **Course Number:** MTEC1003  
@@ -18,7 +18,7 @@ layout: default
 **Email:** <a href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a>  
 **Office Hours:** by virtual appointment. _Email me to set up a time._  
 **Office Location:** [ONLINE]  
-**Course Website:** <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/">https://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/</a>  
+**Course Website:** <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/">https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/</a>  
 **Course Slack:** _Coming Soon!_  
 
 * * *
@@ -28,7 +28,7 @@ MTEC1003 examines the fundamental topics, tools, skills, and best practices that
 
 In this semester's online version of MTEC1003, and in lieu of a physical classroom, we will rely on a few of the interactive coding tools available to us as distant learners — for example, some of our tutorials will be completed on Google Colaboratory, and we will heavily utilize Slack for essential course communication. We may also use OpenLab for some correspondence.
 
-Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public Github user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003-Fall2020/resources.html)).
+Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public Github user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html)).
 
 * * *
 
@@ -54,7 +54,7 @@ _By the end of the course students will be able to:_
 * * *
 
 ### V. Required Software + Other Resources  
-_See the [RESOURCES TAB](/Goldford-MTEC1003-Fall2020/resources.html) for download and documentation links._  
+_See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html) for download and documentation links._  
 * Terminal (macOS) or an acceptable Terminal Emulator (Windows)  
 * an acceptable Text Editor (e.g. Atom, Sublime Text 3, or Visual Studio Code)  
 * Google Chrome  
@@ -90,7 +90,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-Fall2020/resources.html) for downloa
 * Use Slack for easy communications with your classmates as well — you can DM individuals or selected groups.
 
 ### VIII. General Schedule of Topics
-_Please note: Our schedule of topics and their precise order may change. See the [SCHEDULE TAB](/Goldford-MTEC1003-Fall2020/schedule.html) for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._
+_Please note: Our schedule of topics and their precise order may change. See the [SCHEDULE TAB](/Goldford-MTEC1003-OL04/schedule.html) for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._
 
 <div class="schedulingtable">
 <table>
