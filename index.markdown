@@ -23,7 +23,7 @@ layout: default
 10. <a href="#integrity">Academic Integrity Policy</a>  
 11. <a href="#rubric">GENERAL GRADING RUBRIC for Lab Assignments</a>  
 12. <a href="#disable">Course Accommodations for Students with Disabilities</a>   
-13. <a href="#inclusivity">inclusivity</a>  
+13. <a href="#inclusivity">Inclusivity</a>  
 
 <a id="contact"></a>
 ### I. Essential Course + Contact Information
