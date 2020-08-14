@@ -111,7 +111,6 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [Lab 5 / Part 2: All the Basics... But in PYTHON!](/Goldford-MTEC1003-OL04/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -120,15 +119,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Review: Version Control + Basic JavaScript/Python
 <p class="redish">A WEDNESDAY, but follows a Monday schedule. <i>City Tech is closed on 10/12. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-##### Assignment #2 Prep
-* Returning to small teams (pairs) for exchange of creative ideas and sharing of labor.
-* We will practice this collaboration by building the patches below mostly on small teams.
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
 
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -137,16 +134,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Javascript + Python: Conditionals
 ### Javascript + Python: Debugging
 
-##### Ice-Breaker + Discussion
-* Listening + Review of [Assignment #2](/Goldford-ENT3320/resources/week.04/assignment.02.html) Patches (on Monday 3/9)
+_More coming soon! Check back as this week gets filled up..._
 
-### [Midterm Assignment #4: Due Sunday 3/22!](/Goldford-ENT3320/resources/week.08/assignment.04.html)
+##### Slides
 
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -155,11 +149,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Javascript + Python: For Loops
 <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
+
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -168,15 +164,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Javascript + Python: More Kinds of Loops
 <p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-##### Spatialization in _spat~_
-* [spat~ for Max/MSP: download is NOW FREE!](https://forum.ircam.fr/projects/detail/spat/)
-* simple binaural spatialization of a single sound source in Max/MSP
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
 
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -184,14 +178,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h3 class="schedule-page-date">Week 10: November 9th</h3>
 ### Javascript + Python: Functions Definitions + Function Calls
 
-##### Ice-Breaker + Discussion
-* Develop a _storyboard_ for any number of elements + short scenes that our collective project might include.
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
 
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -200,14 +193,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### HTML/CSS: Introduction
 #### Review: Conditionals, Loops, Functions
 
-##### Ice-Breaker + Discussion
-* Listening + Review of [Midterm Assignment #4](/Goldford-ENT3320/resources/week.08/assignment.04.html) (on Monday 3/23)
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
 
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -216,11 +208,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
 <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
+
 ##### LAB ASSIGNMENTS
-*  
 
 ##### Further Reading / Suggested Resources
-*
 
 * * *
 
@@ -229,11 +223,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Introduction to Python Data Visualization + Mapping
 <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/30. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
+
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -242,11 +238,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Introduction to _GitHub Pages_
 #### Review: HTML/CSS
 
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
+
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
 
@@ -254,12 +252,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h3 class="schedule-page-date">Week 15: December 14th</h3>
 ### Complete + Present Final Assignments
 <p class="redish">Finals week begins. <i>Last class session on 12/14. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
-* Talkback and Evaluation After Launch?
+
+_More coming soon! Check back as this week gets filled up..._
+
+##### Slides
 
 ##### LAB ASSIGNMENTS
-*
 
 ##### Further Reading / Suggested Resources
-*  
 
 * * *
