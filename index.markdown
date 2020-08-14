@@ -6,7 +6,7 @@ layout: default
 ---
 
 <img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="600" align="right">  
-<div style="text-align: right"><i>"By the end of this course, you will be able to..."</i></div>  
+<div style="text-align: right"><i>"By the end of this course,<br>you will be able to..."</i></div>  
 
 <!-- <figure>
 	<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="400" align="right">
