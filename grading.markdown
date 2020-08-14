@@ -39,7 +39,7 @@ _The following topics and their precise order may change. Check here for updates
 <td markdown="span">1</td>
 <td markdown="span">8/31</td>
 <td markdown="span">5</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html/#w1/" target="_blank">1.1 Commands + Navigation</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w1/" target="_blank">1.1 Commands + Navigation</a></td>
 </tr>
 <tr>
 <td markdown="span"></td>
