@@ -23,7 +23,7 @@ layout: default
 # Syllabus
 [_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL04/resources/week.01/Goldford.MTEC1003.Fall2020.Syllabus.v01.pdf){:target="_blank"}
 
-**CONTENTS**
+**C O N T E N T S**
 1. <a href="#contact">Essential Course + Contact Information</a>  
 2. <a href="#descr">Course Description</a>  
 3. <a href="#goals">Course Goals</a>  
