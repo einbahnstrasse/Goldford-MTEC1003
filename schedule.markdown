@@ -16,20 +16,20 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w1"></a>
 <h3 class="schedule-page-date">Week 1: August 31st</h3>
 ### File System: Introduction, Navigation, Paths, Output, Download, Uncompress  
-##### Start-of-Semester Business
+<h5 style="color:Tomato;"><b>Start-of-Semester Business</b></h5>
 * [Personal Info Form DUE NOW!](https://forms.gle/6M39dqqsh9pLQr1R7){:target="_blank"}  
 * Review [Syllabus + course policies.](){:target="_blank"}  
 * Review [Detailed Breakdown of Grading.](){:target="_blank"}  
 * Review [Keys for Success in MTEC1003](/Goldford-MTEC1003-OL04/resources/week.01/keys.for.success.html){:target="_blank"}  
 
-<h5 style="color:Tomato;">SLIDES</h5>  
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [About the Command Line](/Goldford-MTEC1003-OL04/labs/01/command-line.html){:target="_blank"}  
 * [Entering Commands](/Goldford-MTEC1003-OL04/labs/01/entering-commands.html){:target="_blank"}  
 * [Navigating the File System](/Goldford-MTEC1003-OL04/labs/01/file-system.html){:target="_blank"}  
 * [Paths](/Goldford-MTEC1003-OL04/labs/02/paths-review.html#1.0){:target="_blank"}  
 * [Output, Download, and Uncompress](/Goldford-MTEC1003-OL04/labs/02/output-download-uncompress.html){:target="_blank"}  
 
-##### LAB ASSIGNMENTS  
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
 <div class="instructornote"><p markdown="span"><em>Due online (GitHub) at 11:59 PM Saturday night each week!</em></p></div>  
 * [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003-OL04/labs/01/how.to.submit.1st.week.labs.html){:target="_blank"}  
 * [Lab 1 / Part 1: Commands + Navigation](/Goldford-MTEC1003-OL04/labs/01/lab.01.part1.commands.navigation.txt){:target="_blank"}  
@@ -42,13 +42,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
 <p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 9/7. VOE Rosters due 9/15. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h5 style="color:Tomato;">SLIDES</h5>  
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Review](/Goldford-MTEC1003-OL04/labs/03/review.html#1.0){:target="_blank"}  
 * [Working With Files](/Goldford-MTEC1003-OL04/labs/03/working-with-files.html){:target="_blank"}  
 * [File Permissions, Editing, Date + Time, Shell Scripting](/Goldford-MTEC1003-OL04/labs/03/permissions-editing-date-time.html){:target="_blank"}  
 * [Shell Scripting: Some Odds and Ends](/Goldford-MTEC1003-OL04/labs/04/shell-scripting.html#1.0){:target="_blank"}  
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Submitting Week 2 Labs](/Goldford-MTEC1003-OL04/labs/02/how.to.submit.2nd.week.labs.html){:target="_blank"}  
 * [Lab 2 / Part 1: Review](/Goldford-MTEC1003-OL04/labs/02/lab.02.part1.review.compress.txt){:target="_blank"}  
 * [Lab 2 / Part 2: Working with Files](/Goldford-MTEC1003-OL04/labs/02/lab.02.part2.working.with.files.txt){:target="_blank"}  
@@ -60,12 +60,12 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h3 class="schedule-page-date">Week 3: September 21st</h3>
 ### Version Control: Introduction to GIT, Concepts + Basic Commands
 
-<h5 style="color:Tomato;">SLIDES</h5>  
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Introduction to Version Control + Git](/Goldford-MTEC1003-OL04/labs/04/version-control.html){:target="_blank"}  
 * [Creating and Setting Up Repositories](/Goldford-MTEC1003-OL04/labs/04/creating-repositories.html){:target="_blank"}  
 * [Making, Saving, and Sharing Changes](/Goldford-MTEC1003-OL04/labs/04/changing-files.html){:target="_blank"}  
 
-##### LAB ASSIGNMENTS  
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
 <!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL04/labs/05/lab-05-git-part-01.html)   -->
 * [Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"}  
 <!-- * [exp lab 4 part 1 link](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-01.html)   -->
@@ -90,7 +90,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL04/labs/04/git.pull.requests.and.merge.tutorial.v01.html){:target="_blank"}  
 * [Shiffman Video Tutorial on Pull Requests / Merges](https://youtu.be/JtIX3HJKwfo){:target="_blank"}
 
-##### LAB ASSIGNMENTS  
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
 * [Lab 4 / Part 1: Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-01a.html){:target="_blank"}  
 * [Lab 4 / Part 2: Review — Creating + Setting Up Git Repositories](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-02a.html){:target="_blank"}  
 * [Lab 4 / Part 3: Review — Saving + Sending Changes to Your Repository](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-03a.html){:target="_blank"}  
@@ -101,16 +101,16 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h3 class="schedule-page-date">Week 5: October 5th</h3>
 ### JavaScript + Python: Introduction, Variables, Types, Input/Output
 
-<h5 style="color:Tomato;">SLIDES</h5>  
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Introduction to JavaScript](/Goldford-MTEC1003-OL04/labs/05/js-intro.html){:target="_blank"}  
 * [JavaScript Basics](/Goldford-MTEC1003-OL04/labs/05/js-basics.html){:target="_blank"}  
 * [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
 * [Lab 5 / Part 2: All the Basics... But in PYTHON!](/Goldford-MTEC1003-OL04/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -121,11 +121,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -136,11 +136,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -151,11 +151,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -166,11 +166,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -180,11 +180,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -195,11 +195,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -210,11 +210,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -225,11 +225,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -240,11 +240,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
 
@@ -255,10 +255,10 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;">SLIDES</h5>
+<h5 style="color:Tomato;"><b>SLIDES</b></h5>
 
-##### LAB ASSIGNMENTS
+<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
-##### Further Reading / Suggested Resources
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
 * * *
