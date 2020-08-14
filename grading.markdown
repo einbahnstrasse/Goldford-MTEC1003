@@ -10,10 +10,10 @@ _A list of assignments, deadlines, and points to help you plan for the semester.
 _For an overview of grading policies for this course, see [XI. General Grading Rubric, located in the SYLLABUS.](index.html){:target="_blank"}_  
 
 <div class="instructornote">
-<p markdown="span"><em><b>Reminder:</b> Deadlines are always on the Saturday night at 11:59 PM following the assignment date listed below.</em></p></div>
+<p markdown="span"><em><b>Reminder:</b> Deadlines are always on the Saturday night following the assignment date listed below, at 11:59 PM.</em></p></div>
 <!-- _**Reminder:** Deadlines are always on the Saturday night at 11:59 PM following the assignment date listed below._   -->
 
-### I. Individual + Collective Project Assignments
+### I. Weekly Lab Assignments
 
 <div class="schedulingtable">
 <table>
@@ -114,7 +114,7 @@ _For an overview of grading policies for this course, see [XI. General Grading R
 
 * * *
 
-**`75 Total Points`** for _Participation Grades_
+**`75 Total Points`** for _Participation Scores_
 
 * * *
 
