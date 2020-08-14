@@ -119,7 +119,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Review: Version Control + Basic JavaScript/Python
 <p class="redish">A WEDNESDAY, but follows a Monday schedule. <i>City Tech is closed on 10/12. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -134,7 +134,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Javascript + Python: Conditionals
 ### Javascript + Python: Debugging
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -149,7 +149,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Javascript + Python: For Loops
 <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -164,7 +164,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Javascript + Python: More Kinds of Loops
 <p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -178,7 +178,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h3 class="schedule-page-date">Week 10: November 9th</h3>
 ### Javascript + Python: Functions Definitions + Function Calls
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -193,7 +193,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### HTML/CSS: Introduction
 #### Review: Conditionals, Loops, Functions
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -208,7 +208,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
 <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -223,7 +223,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Introduction to Python Data Visualization + Mapping
 <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/30. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -238,7 +238,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Introduction to _GitHub Pages_
 #### Review: HTML/CSS
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
@@ -253,7 +253,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Complete + Present Final Assignments
 <p class="redish">Finals week begins. <i>Last class session on 12/14. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;">SLIDES</h5>
 
