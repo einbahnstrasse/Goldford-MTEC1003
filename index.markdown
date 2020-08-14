@@ -4,9 +4,15 @@
 
 layout: default
 ---
-<figure>
+<!-- <figure>
 	<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="400" align="right">
 		<figcaption>"By the end of this course, you will be able to..."</figcaption>
+</figure> -->
+
+<figure class=frontfoto>
+  <p><img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif"
+    alt="zachypooh" width="400">
+  <figcaption>"By the end of this course, you will be able to..."</figcaption>
 </figure>
 
 # Syllabus
