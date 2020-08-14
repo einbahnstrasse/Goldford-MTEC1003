@@ -5,26 +5,6 @@
 layout: default
 ---
 
-<!-- <script src="../../resources/js/jquery-1.6.3.min.js"></script> -->
-<!-- <script src="../../resources/js/persistent-nav-weekly.js"></script> -->
-<!-- <div class="container" id="weeklynavbar">
-  <div class="weeknav">
-    <a href="#w1">Week 1 dummy</a>
-    <a href="#w2">Week 2 dummy</a>
-    <a href="#w3">Week 3 dummy</a>
-    <a href="#w4">Week 4 dummy</a>
-  </div>
-</div> -->
-
-<!-- <div id="weeklynavbar">
-  <ul id="weeknav">
-    <li><a href="#w1">Week 1 dummy</a></li>
-    <li><a href="#w2">Week 2 dummy</a></li>
-    <li><<a href="#w3">Week 3 dummy</a></li>
-    <li><<a href="#w4">Week 4 dummy</a></li>
-  </ul>
-</div> -->
-
 # Schedule
 _This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [CUNY CityTech Fall 2020 Academic Calendar](http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf){:target="_blank"}. The following topics and their precise order may change. Check here for updates!_  
 <div class="instructornote">  
@@ -60,7 +40,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w2"></a>
 <h3 class="schedule-page-date">Week 2: September 14th</h3>
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
-<p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 9/7. VOE Rosters due 9/15. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+<p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 9/7. VOE Rosters due 9/15. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### Slides  
 * [Review](/Goldford-MTEC1003-OL04/labs/03/review.html#1.0){:target="_blank"}  
@@ -104,7 +84,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w4"></a>
 <h3 class="schedule-page-date">Week 4: September 29th</h3>
 ### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_
-<p class="redish">A TUESDAY, but follows a Monday schedule. <i>City Tech is closed on 9/28. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+<p class="redish">A TUESDAY, but follows a Monday schedule. <i>City Tech is closed on 9/28. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### Tutorials  
 * [Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL04/labs/04/git.pull.requests.and.merge.tutorial.v01.html){:target="_blank"}  
@@ -138,7 +118,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w6"></a>
 <h3 class="schedule-page-date">Week 6: October 14th</h3>
 ### Review: Version Control + Basic JavaScript/Python
-<p class="redish">A WEDNESDAY, but follows a Monday schedule. <i>City Tech is closed on 10/12. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+<p class="redish">A WEDNESDAY, but follows a Monday schedule. <i>City Tech is closed on 10/12. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### Assignment #2 Prep
 * Returning to small teams (pairs) for exchange of creative ideas and sharing of labor.
@@ -173,7 +153,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w8"></a>
 <h3 class="schedule-page-date">Week 8: October 26th</h3>
 ### Javascript + Python: For Loops
-<p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+<p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### LAB ASSIGNMENTS
 *
@@ -186,7 +166,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w9"></a>
 <h3 class="schedule-page-date">Week 9: November 2nd</h3>
 ### Javascript + Python: More Kinds of Loops
-<p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+<p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### Spatialization in _spat~_
 * [spat~ for Max/MSP: download is NOW FREE!](https://forum.ircam.fr/projects/detail/spat/)
@@ -234,7 +214,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w12"></a>
 <h3 class="schedule-page-date">Week 12: November 23rd</h3>
 ### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
-<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### LAB ASSIGNMENTS
 *  
@@ -247,7 +227,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w13"></a>
 <h3 class="schedule-page-date">Week 13: November 30th</h3>
 ### Introduction to Python Data Visualization + Mapping
-<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/30. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/30. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 ##### LAB ASSIGNMENTS
 *
@@ -273,7 +253,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w15"></a>
 <h3 class="schedule-page-date">Week 15: December 14th</h3>
 ### Complete + Present Final Assignments
-<p class="redish">Finals week begins. <i>Last class session on 12/14. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+<p class="redish">Finals week begins. <i>Last class session on 12/14. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 * Talkback and Evaluation After Launch?
 
 ##### LAB ASSIGNMENTS
