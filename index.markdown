@@ -8,6 +8,24 @@ layout: default
 # Syllabus
 [_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL04/resources/week.01/Goldford.MTEC1003.Fall2020.Syllabus.v01.pdf){:target="_blank"}
 
+**CONTENTS**
+1. <a href="#contact">Essential Course + Contact Information</a>  
+2. <a href="#descr">Course Description</a>  
+3. <a href="#goals">Course Goals</a>  
+4. <a href="#outcomes">Learning Outcomes</a>  
+5. <a href="#resources">Required Software + Other Resources</a>  
+6. <a href="#expect">Expectations</a>  
+7. <a href="#comm">Communication</a>  
+8. <a href="#sched">General Schedule of Topics</a>  
+9. <a href="#zoom">Attendance + Participation Policy</a>  
+	* <a href="#zoom">Part I. Virtual Participation on Zoom</a>  
+	* <a href="#arrival">Part II. Prompt Arrival and Absences</a>  
+10. <a href="#integrity">Academic Integrity Policy</a>  
+11. <a href="#rubric">GENERAL GRADING RUBRIC for Lab Assignments</a>  
+12. <a href="#disable">Course Accommodations for Students with Disabilities</a>   
+13. <a href="#inclusivity">inclusivity</a>  
+
+<a id="contact"></a>
 ### I. Essential Course + Contact Information
 **Course Number:** MTEC1003  
 **Semester:** Fall 2020  
@@ -23,6 +41,7 @@ layout: default
 
 * * *
 
+<a id="descr"></a>
 ### II. Course Description
 MTEC1003 examines the fundamental topics, tools, skills, and best practices that support creative programming. At its core we ask how the user can gain finer control over their computer and make better use of it in their personal practice. Through our weekly lab assignments, demonstrations, and supplementary resources, students will gain fluency with the tools necessary to construct websites, using essential front-end technologies such as HTML/CSS and JavaScript. Additionally, students will implement fundamental programming paradigms in JavaScript and Python, and will harness the computer's powerful administrative functionality on the Unix command line. We will organize our workflow intelligently with source code management (i.e. Git). Our work prepares the student for subsequent classes in the MTEC course rotation. Time permitting, we will also touch on the basics of data mapping for artistic purposes.
 
@@ -32,6 +51,7 @@ Students will therefore be **required** to (1) set up and join our course's Slac
 
 * * *
 
+<a id="goals"></a>
 ### III. Course Goals
 * Introduce the Unix command line, JavaScript, HTML, CSS, and Python.
 * Define and execute basic control flow operations: functions + function calls, loops, conditional statements, etc.  
@@ -41,6 +61,7 @@ Students will therefore be **required** to (1) set up and join our course's Slac
 
 * * *
 
+<a id="outcomes"></a>
 ### IV. Learning Outcomes
 _By the end of the course students will be able to:_
 * **Build + Execute** simple programs in JavaScript and Python.
@@ -53,6 +74,7 @@ _By the end of the course students will be able to:_
 
 * * *
 
+<a id="resources"></a>
 ### V. Required Software + Other Resources  
 _See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank"} for download and documentation links._  
 * Terminal (macOS) or an acceptable Terminal Emulator (Windows)  
@@ -64,6 +86,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank
 
 * * *
 
+<a id="expect"></a>
 ### VI. Expectations  
 #### VI. Part I. General Expectations  
 * **Arrive on time** to all online course sessions. — _See Attendance + Participation Policy below._
@@ -79,6 +102,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank
 
 * * *
 
+<a id="comm"></a>
 ### VII. Communication
 * Weekly course sessions will be held on Zoom. Use the recurring virtual Zoom classroom link emailed to you at the start of the semester.
 * City Tech email accounts are our official means of communication, but we will also use Slack and OpenLab for additional discussion.  
@@ -89,6 +113,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank
 * If you have a question that may be relevant to the group (about assignments, etc.), post in the #general channel on Slack.
 * Use Slack for easy communications with your classmates as well — you can DM individuals or selected groups.
 
+<a id="sched"></a>
 ### VIII. General Schedule of Topics
 _Please note: Our schedule of topics and their precise order may change._  
 _See the [SCHEDULE TAB](/Goldford-MTEC1003-OL04/schedule.html){:target="_blank"} for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._  
@@ -190,6 +215,7 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 
 * * *
 
+<a id="zoom"></a>
 ### IX. Attendance + Participation Policy
 _Participation is based on attendance and your engagement on Zoom, and will form a substantial portion of your grade._
 
@@ -209,6 +235,7 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 * **Certain demonstrations in class may be recorded** for anyone in need of an asynchronous learning option. Any such videos will be made available temporarily through our Course Slack page, but will never be posted publicly.
 * Bear in mind that you will be doing exercises on your computer at the same time we're discussing and presenting examples on Zoom. Locate an easy way to rapidly switch between the application windows open on your desktop, e.g. between Zoom and your Terminal, Text Editor, and/or Chrome. On macOS, for example, this is easily accomplished by holding down the `Command` key and pressing `TAB` to switch between applications.
 
+<a id="arrival"></a>
 #### IX. Part II. Prompt Arrival and Absences
 * Students are expected to arrive promptly to all virtual class sessions, stay online and involved through the duration of each session, participate and engage in our labs, discussions, and demonstrations.  
 * Follow this **Procedure for Absences:**
@@ -265,6 +292,7 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 
 * * *
 
+<a id="integrity"></a>
 ### X. Academic Integrity Policy
 Students and all others who work with information, ideas, texts, images, music, inventions, and other intellectual property owe their audience and sources accuracy and honesty in using, crediting, and citing sources. As a community of intellectual and professional workers, the university recognizes its responsibility for providing instruction in information literacy and academic integrity, offering models of good practice, and responding vigilantly and appropriately to infractions of academic integrity. Accordingly, academic dishonesty is prohibited in The City University of New York and at New York City College of Technology and is punishable by penalties, including failing grades, suspension, and expulsion. The complete text of the College policy on Academic Integrity may be found in the catalog.
 
@@ -274,6 +302,7 @@ Students and all others who work with information, ideas, texts, images, music, 
 
 * * *
 
+<a id="rubric"></a>
 ### XI. GENERAL GRADING RUBRIC for Lab Assignments
 
 <div class="gradingtable">
@@ -343,11 +372,13 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 
 * * *
 
+<a id="disable"></a>
 ### XII. Course Accommodations for Students with Disabilities  
 In order to receive disability-related academic accommodations students must first be registered with the Student Support Services Program (SSSP). Students who have a documented disability or suspect they may have a disability are invited to set up an appointment with Ms. Linda Buist, the program manager of SSSP (Phone: 718–260–5143, e-mail: <a href="mailto:buist@citytech.cuny.edu">buist@citytech.cuny.edu</a>). If you have already registered with SSSP, please provide your professor with the course accommodation form and discuss your specific accommodation with him/her/them.  
 
 * * *
 
+<a id="inclusivity"></a>
 ### XIII. Inclusivity  
 #### XIII. Part I. Name + Pronoun Usage
 This course consists of individual work and group discussion. We must therefore strive to create an atmosphere of inclusion and mutual respect: all students will have their chosen gender pronoun(s) and chosen name recognized. If the class roster does not align with your name, gender, and/or pronouns, please inform the instructor.  
