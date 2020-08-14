@@ -67,7 +67,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 ##### LAB ASSIGNMENTS  
 <!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL04/labs/05/lab-05-git-part-01.html)   -->
-* [LAB 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"}  
+* [Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"}  
 <!-- * [exp lab 4 part 1 link](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-01.html)   -->
 
 ##### Video Tutorial Series  
@@ -108,7 +108,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 ##### LAB ASSIGNMENTS
 * [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
-* [Lab 5 / Part 2: Python Basics](/Goldford-MTEC1003-OL04/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
+* [Lab 5 / Part 2: All the Basics... But in PYTHON!](/Goldford-MTEC1003-OL04/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
 
 ##### Further Reading / Suggested Resources
 *  
