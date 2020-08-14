@@ -19,7 +19,7 @@ layout: default
 **Office Hours:** by virtual appointment. _Email me to set up a time._  
 **Office Location:** [ONLINE]  
 **Course Website:** <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/">https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/</a>  
-**Course Slack:** _Coming Soon!_  
+**Course Slack:** [http://goldford-mtec1003.slack.com/](http://goldford-mtec1003.slack.com/)  
 
 * * *
 
