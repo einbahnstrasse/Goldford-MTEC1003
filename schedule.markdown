@@ -22,7 +22,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * Review [Detailed Breakdown of Grading.](){:target="_blank"}  
 * Review [Keys for Success in MTEC1003](/Goldford-MTEC1003-OL04/resources/week.01/keys.for.success.html){:target="_blank"}  
 
-##### Slides  
+<h5 style="color:Tomato;">SLIDES</h5>  
 * [About the Command Line](/Goldford-MTEC1003-OL04/labs/01/command-line.html){:target="_blank"}  
 * [Entering Commands](/Goldford-MTEC1003-OL04/labs/01/entering-commands.html){:target="_blank"}  
 * [Navigating the File System](/Goldford-MTEC1003-OL04/labs/01/file-system.html){:target="_blank"}  
@@ -42,7 +42,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
 <p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 9/7. VOE Rosters due 9/15. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-##### Slides  
+<h5 style="color:Tomato;">SLIDES</h5>  
 * [Review](/Goldford-MTEC1003-OL04/labs/03/review.html#1.0){:target="_blank"}  
 * [Working With Files](/Goldford-MTEC1003-OL04/labs/03/working-with-files.html){:target="_blank"}  
 * [File Permissions, Editing, Date + Time, Shell Scripting](/Goldford-MTEC1003-OL04/labs/03/permissions-editing-date-time.html){:target="_blank"}  
@@ -60,7 +60,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h3 class="schedule-page-date">Week 3: September 21st</h3>
 ### Version Control: Introduction to GIT, Concepts + Basic Commands
 
-##### Slides  
+<h5 style="color:Tomato;">SLIDES</h5>  
 * [Introduction to Version Control + Git](/Goldford-MTEC1003-OL04/labs/04/version-control.html){:target="_blank"}  
 * [Creating and Setting Up Repositories](/Goldford-MTEC1003-OL04/labs/04/creating-repositories.html){:target="_blank"}  
 * [Making, Saving, and Sharing Changes](/Goldford-MTEC1003-OL04/labs/04/changing-files.html){:target="_blank"}  
@@ -101,7 +101,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h3 class="schedule-page-date">Week 5: October 5th</h3>
 ### JavaScript + Python: Introduction, Variables, Types, Input/Output
 
-##### Slides  
+<h5 style="color:Tomato;">SLIDES</h5>  
 * [Introduction to JavaScript](/Goldford-MTEC1003-OL04/labs/05/js-intro.html){:target="_blank"}  
 * [JavaScript Basics](/Goldford-MTEC1003-OL04/labs/05/js-basics.html){:target="_blank"}  
 * [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}
@@ -121,7 +121,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -136,7 +136,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -151,7 +151,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -166,7 +166,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -180,7 +180,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -195,7 +195,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -210,7 +210,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -225,7 +225,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -240,7 +240,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
@@ -255,7 +255,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h4 style="color:Tomato;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-##### Slides
+<h5 style="color:Tomato;">SLIDES</h5>
 
 ##### LAB ASSIGNMENTS
 
