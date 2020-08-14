@@ -6,7 +6,7 @@ layout: default
 ---
 <img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zach" width="400" align="right">
 # Syllabus
-[_PDF version here._](dummy.pdf)
+[_PDF version here._](dummy.pdf){:target="_blank"}
 
 ### I. Essential Course + Contact Information
 **Course Number:** MTEC1003  
@@ -28,7 +28,7 @@ MTEC1003 examines the fundamental topics, tools, skills, and best practices that
 
 In this semester's online version of MTEC1003, and in lieu of a physical classroom, we will rely on a few of the interactive coding tools available to us as distant learners — for example, some of our tutorials will be completed on Google Colaboratory, and we will heavily utilize Slack for essential course communication. We may also use OpenLab for some correspondence.
 
-Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public Github user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html)).
+Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public Github user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank"}).
 
 * * *
 
@@ -54,7 +54,7 @@ _By the end of the course students will be able to:_
 * * *
 
 ### V. Required Software + Other Resources  
-_See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html) for download and documentation links._  
+_See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank"} for download and documentation links._  
 * Terminal (macOS) or an acceptable Terminal Emulator (Windows)  
 * an acceptable Text Editor (e.g. Atom, Sublime Text 3, or Visual Studio Code)  
 * Google Chrome  
@@ -90,7 +90,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html) for download an
 * Use Slack for easy communications with your classmates as well — you can DM individuals or selected groups.
 
 ### VIII. General Schedule of Topics
-_Please note: Our schedule of topics and their precise order may change. See the [SCHEDULE TAB](/Goldford-MTEC1003-OL04/schedule.html) for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._
+_Please note: Our schedule of topics and their precise order may change. See the [SCHEDULE TAB](/Goldford-MTEC1003-OL04/schedule.html){:target="_blank"} for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._
 
 <div class="schedulingtable">
 <table>
@@ -198,7 +198,7 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 * **Do not use a photo.** Video of your face confirms (1) that you are present and participating in our class, and (2) whether you understand our discussion and materials. This simulates our normal physical classroom environment. Despite the challenges of distance learning, we must push ourselves to engage fully in lieu of in-person sessions.
 * Therefore, _present yourself as you would in a physical classroom._
 * Utilize Zoom's **chat and hand-raising features for interacting with the instructor or the class.** Occasionally you will be prompted to answer questions, so these tools are essential.
-* For questions about using Zoom and its features, consult the [Zoom Help Center](https://support.zoom.us/hc/en-us).
+* For questions about using Zoom and its features, consult the [Zoom Help Center](https://support.zoom.us/hc/en-us){:target="_blank"}.
 * **Test your internet connection on the day of class before it's too late.** If you are suddenly experiencing connection problems that prevent you from joining one of our sessions on time, send me a Slack message immediately, and an email later if necessary. Further information about our Attendance Policy appears below. Failure to proactively troubleshoot long-term connection problems (and/or to communicate with the instructor about them) will be problematic for your participation score.
 * Avoid distractions from social media and unrelated gaming or web content. Strive to engage fully during our dedicated class time. We only meet on Mondays, so it will be difficult to recoup the losses of not paying attention later in the week, e.g. while finishing assignments.
 * Typically we will take a 10-minute break in the middle of class. If you need additional time for restroom breaks or emergencies, quietly and occasionally excuse yourself by muting your video and audio on Zoom. However, **frequent and recurring self-excusals will reflect negatively with your engagement in our class and result in lowered participation marks.**
@@ -267,7 +267,7 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 Students and all others who work with information, ideas, texts, images, music, inventions, and other intellectual property owe their audience and sources accuracy and honesty in using, crediting, and citing sources. As a community of intellectual and professional workers, the university recognizes its responsibility for providing instruction in information literacy and academic integrity, offering models of good practice, and responding vigilantly and appropriately to infractions of academic integrity. Accordingly, academic dishonesty is prohibited in The City University of New York and at New York City College of Technology and is punishable by penalties, including failing grades, suspension, and expulsion. The complete text of the College policy on Academic Integrity may be found in the catalog.
 
 <div class="instructornote">
-<p markdown="span">**Instructor Note:** _Code borrowed from another source must be attributed as a comment within your own code. If you are unsure of whether or not your work may constitute plagiarism, please check with the instructor before submitting. Where applicable and where marked within our course materials, follow the provisions of the [Creative Commons Attribution-ShareAlike 4.0 International License.](https://creativecommons.org/licenses/by-sa/4.0/)_</p>
+<p markdown="span">**Instructor Note:** _Code borrowed from another source must be attributed as a comment within your own code. If you are unsure of whether or not your work may constitute plagiarism, please check with the instructor before submitting. Where applicable and where marked within our course materials, follow the provisions of the [Creative Commons Attribution-ShareAlike 4.0 International License.](https://creativecommons.org/licenses/by-sa/4.0/){:target="_blank"}_</p>
 </div>
 
 * * *
@@ -337,7 +337,7 @@ Students and all others who work with information, ideas, texts, images, music, 
 </tbody>
 </table>
 </div>  
-_For a detailed list of assignments, points, and deadlines, see the [GRADING TAB.](grading.html)_  
+_For a detailed list of assignments, points, and deadlines, see the [GRADING TAB.](grading.html){:target="_blank"}_  
 
 * * *
 
