@@ -124,7 +124,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ##### Slides  
 * [Introduction to JavaScript](/Goldford-MTEC1003-OL04/labs/05/js-intro.html)  
 * [JavaScript Basics](/Goldford-MTEC1003-OL04/labs/05/js-basics.html)  
-* Python tutorial?!  
+* [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.intro.tutorial.v01/#/)
 
 ##### LAB ASSIGNMENTS
 * [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html)  
