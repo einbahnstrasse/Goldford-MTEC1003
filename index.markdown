@@ -90,7 +90,9 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank
 * Use Slack for easy communications with your classmates as well — you can DM individuals or selected groups.
 
 ### VIII. General Schedule of Topics
-_Please note: Our schedule of topics and their precise order may change. See the [SCHEDULE TAB](/Goldford-MTEC1003-OL04/schedule.html){:target="_blank"} for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._
+_Please note: Our schedule of topics and their precise order may change._  
+_See the [SCHEDULE TAB](/Goldford-MTEC1003-OL04/schedule.html){:target="_blank"} for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._  
+_For a detailed list of assignments, points, and deadlines, see the [GRADING TAB.](grading.html){:target="_blank"}_  
 
 <div class="schedulingtable">
 <table>
