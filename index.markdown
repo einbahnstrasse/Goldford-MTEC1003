@@ -5,7 +5,7 @@
 layout: default
 ---
 
-<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="400" align="right">
+<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="600" align="right">
 
 <!-- <figure>
 	<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="400" align="right">
