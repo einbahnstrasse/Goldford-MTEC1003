@@ -1,0 +1,518 @@
+MTEC1003 — LAB 01 (revised 8/8/20 —lg)
+
+Lab 1 / Part 1 - Entering Commands
+==========
+Follow the instructions line-by-line.
+
+* Type in the commands as is, but ignore the beginning prompt.
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+1. Open Terminal.  Type:
+
+$ ls<ENTER>
+
+Copy and paste the output of ls below.
+----------
+
+
+
+
+
+
+==========
+2.  Type:
+
+$ ls -l Documents<ENTER>
+
+Copy and paste the first *two lines* of output below.
+----------
+
+
+
+
+
+
+==========
+3.  Type:
+
+$ ls -a Documents
+
+Copy and paste the first *two lines* of output below.
+----------
+
+
+
+
+
+
+==========
+4.  Type:
+
+$ ls doesnotexist
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+5.  What key do I press to go to the previous command?
+----------
+
+
+
+
+
+
+==========
+6.  Name two flags that we used in this exercise.
+----------
+
+
+
+
+
+
+==========
+7.  What was the main command that we used throughout this exercise?
+----------
+
+
+
+
+
+
+==========
+8.  What's one an argument that we've so far passed to a command?
+----------
+
+
+
+
+
+
+==========
+9.  Type:
+
+$ foo<ENTER>
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+10.  Type:
+
+<UP><ENTER>
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+11.  In the following line....
+
+$ ls -a Desktop
+
+Identify the command, flag, argument, and prompt:
+----------
+
+
+
+
+
+Lab 1 / Part 2 - Navigating the File System
+==========
+Follow the instructions line-by-line.
+
+* Type in the commands as is, but ignore the beginning prompt.
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+==========
+12. Open a new terminal window. Create a directory called mtec1002. What command did you use?
+----------
+
+
+
+
+
+
+==========
+13. Change your directory so that you're in mtec1002. What command did you use?
+----------
+
+
+
+
+
+
+==========
+14. Type:
+
+$ pwd
+
+Check that the output ends with mtec1002 (something like this: /Users/joe/mtec1002).
+
+If it doesn't ask for help before moving on!
+
+Copy and paste the output of pwd below.
+----------
+
+
+
+
+
+
+==========
+15. Type:
+
+$ mkdir animals
+$ ls
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+16. Type:
+
+$ mkdir food
+$ ls
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+17. Type:
+
+$ mkdir -p foo/bar/baz/qux
+$ ls
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+18. Type:
+
+$ cd foo/bar/baz/qux
+$ pwd
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+19. Type:
+
+$ cd ../..
+$ pwd
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+20. Type:
+
+$ cd -
+$ pwd
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+21. Type:
+
+$ cd ../../../..
+$ pwd
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+22. Type:
+
+$ ls -l
+$ rmdir animals
+$ ls -l
+
+Copy and paste the first 3 lines from the output into the space below.
+----------
+
+
+
+
+
+
+==========
+23. Type:
+
+$ cd ~
+$ pwd
+
+Copy and paste the output into the space below.
+----------
+
+
+
+
+
+
+==========
+24. Type:
+
+$ cd /Volumes
+$ pwd
+
+Copy and paste the output into the space below.
+----------
+
+
+
+
+
+
+==========
+25. Type:
+
+$ cd /unknown_folder
+$ pwd
+
+Copy and paste the output into the space below.
+----------
+
+
+
+
+
+
+==========
+26. Type:
+
+$ cd ~/mtec1002
+$ pwd
+
+Copy and paste the output into the space below.
+----------
+
+
+
+
+
+
+==========
+27. Type:
+
+$ hostname
+
+Copy and paste the output into the space below.
+----------
+
+
+
+
+
+
+==========
+28. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
+----------
+
+
+
+
+
+
+==========
+29. If you're not in the right directory, type the following command:
+
+cd ~/mtec1002
+
+Otherwise skip this question/step!
+----------
+
+
+
+
+
+
+==========
+30. Create the following directories, with each one inside each other, using only a single command.
+
+The first one, pineapple, is the innermost:
+
+pineapple
+orange
+strawberry
+lemon
+
+Write the one command you used below:
+----------
+
+
+
+
+
+
+==========
+31. Make another directory called aardvark.
+
+Write the command you used to create the directory below:
+----------
+
+
+
+
+
+
+==========
+32. List the files and directories in the current directory using the long format.
+
+What is the modified date of the aardvark directory?
+----------
+
+
+
+
+
+
+==========
+33. Make 3 directories nested within each other:
+
+* foo should be the outermost directory
+* bar should be the inside foo
+* baz should be inside bar
+
+What command did you use?
+----------
+
+
+
+
+
+
+==========
+34. Change your directory so that you're in the inner most directory (baz)
+
+What command did you use?
+----------
+
+
+
+
+
+
+==========
+35. Change your directory so that you're two directories up (foo)
+
+What command did you use?
+----------
+
+
+
+
+
+
+==========
+36. What command is used to delete empty directories?
+----------
+
+
+
+
+
+
+==========
+37. What command is used to print out your current working directory?
+----------
+
+
+
+
+
+
+==========
+38. What flag do I pass to ls to print out all files?
+----------
+
+
+
+
+
+
+==========
+39. What's the shortcut for home directory?
+----------
+
+
+
+
+
+
+==========
+40. What's a pathname?
+----------
+
+
+
+
+
+
+==========
+41. What is a directory?
+----------
+
+
+
+
+
+
+==========
+42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
+----------

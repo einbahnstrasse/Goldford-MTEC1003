@@ -1,0 +1,129 @@
+Lab - Permissions, Editing Text, Date and Time
+==========
+Follow the instructions line-by-line.  
+
+* Type in the commands as is, but ignore the beginning prompt.  
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+
+==========
+We're going to be writing a shell script.  First, though... let's figure out what day and time it is!
+==========
+
+==========
+1. What day and time is it?
+
+What command did you use, and what was its output?
+----------
+
+
+
+==========
+2. Print out a calendar for this month.
+
+What command did you use, and what was its output?
+----------
+
+
+
+==========
+3. Go to your home directory.  Verify that you're in your home directory.
+
+What commands did you use to do this?
+----------
+
+
+
+==========
+4. Create an empty file called copy_to_backup.sh.  Verify that the file exists.
+
+What commands did you use to do this?
+----------
+
+
+
+==========
+5. What are the permissions on your copy_to_backup.sh.
+
+What command did you use to find the permissions?
+----------
+
+
+
+==========
+6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
+
+What commands did you use to do this?  What was the output?
+----------
+
+
+
+==========
+7. Try executing the file!
+
+$ ./copy_to_backup.sh
+
+What command did you use to try to execute the file?  What happens?
+----------
+
+
+
+==========
+8. Open the file with nano
+
+What command did you use to do this?
+----------
+
+
+
+==========
+9. In your file, write the commands to do the following
+
+a. create a directory called backup 
+b. copy all of the txt files in the current directory to the backup directory (use *.txt)
+c. print out "I'm done backing up"
+
+Don't forget the first line of your shell script! It should begin with #!/bin/bash)!
+
+Write out the code in your file below...
+----------
+
+
+
+==========
+10. Create a directory in your home called test
+----------
+
+
+
+==========
+11. Go into that directory and create two empty files... 1.txt and 2.txt
+
+What commands did you use to do this?
+----------
+
+
+
+==========
+12. Move the script that you created into this directory.
+
+What commands did you use to do this?
+----------
+
+
+
+==========
+13. Run your script.
+
+What commands did you use to do this?
+----------
+
+
+
+==========
+14. Verify that a backup folder was created in your test directory... with copies of the files present.
+
+What commands did you use to do this?  Show the output.
+----------

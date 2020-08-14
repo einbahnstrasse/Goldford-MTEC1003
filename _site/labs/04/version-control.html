@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Version Control</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="version-control">Version Control</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="version-control-with-git">Version Control (With Git)</h3>
+
+  <p>The material in these slides was sourced from:</p>
+
+  <ul>
+    <li><a href="http://gitref.org/">gitref.org</a></li>
+    <li><a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">pro git</a></li>
+    <li><a href="http://rogerdudler.github.io/git-guide/">git - the simple guide</a></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="um--first-archiving">First&#8230; Archiving?</h3>
+
+  <p><strong>What are some ways you&#8217;ve used to keep / save different versions of files?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>adding a date to a file name?</li>
+      <li>adding extensions to files, like .bak?</li>
+      <li>organizing copies by folders?</li>
+      <li>perhaps folders with timestamps / dates</li>
+      <li>&#8230;etc.</li>
+    </ul>
+
+    <p><strong>What are some drawbacks of these methods of saving versions of files?</strong> &#8594;</p>
+
+    <ul>
+      <li>it&#8217;s all manual </li>
+      <li>&#8230; and, consequently, tedious and error prone</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="sharing--collaborating">Sharing / Collaborating</h3>
+
+  <p>Have you ever worked on a programming project with more than one person?  <strong>How did you share your code?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>email?</li>
+      <li>usb?</li>
+      <li>dropbox?</li>
+    </ul>
+
+    <p><strong>What are some issues with these methods (except (mostly) for dropbox)?</strong></p>
+
+    <ul>
+      <li>hard to find a specific version</li>
+      <li>which one is the latest?</li>
+      <li>how do you deal with conflicting changes?</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 id="enter-version-control">Enter: Version Control</h2>
+</section>
+
+<section>
+  <h3 id="whats-version-control">What&#8217;s Version Control?</h3>
+
+  <p><strong>Version control software</strong> allows you to record changes to a file or set of files over time so that you can inspect or even revert to specific versions.</p>
+
+  <ul>
+    <li>can be applied to any kind of file, but we&#8217;re mostly using text files</li>
+    <li>with version control, you can:
+      <ul>
+        <li>leave <strong>comments</strong> on changes that you&#8217;ve made</li>
+        <li><strong>revert</strong> files to a previous state</li>
+        <li><strong>review</strong> changes made over time, and track <strong>who</strong> made them</li>
+        <li><strong>you can easily recover from accidentally breaking or deleting code</strong></li>
+        <li>automatically <strong>merge</strong> changes to the same file</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="so-um--why">So&#8230; Why?</h3>
+
+  <aside>What does this all mean?</aside>
+
+  <p>Version control can help us:</p>
+
+  <ul>
+    <li>stop using .bak files!</li>
+    <li>collaborate with others
+      <ul>
+        <li>share our code</li>
+        <li>merge changes from different sources</li>
+      </ul>
+    </li>
+    <li>document our work</li>
+    <li>group related changes</li>
+    <li>And it&#8217;s kind of <em>expected</em> that you know this as a professional programmer.</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="were-using-git">We’re Using Git!</h3>
+
+  <ul>
+    <li><strong>Git</strong> is the version control system that we&#8217;re using</li>
+    <li>it’s a <strong>modern distributed version control</strong> system</li>
+    <li>it has emerged as <strong>the standard</strong> version control system to use</li>
+    <li>(some others are&#8230;)
+      <ul>
+        <li>mercurial</li>
+        <li>subversion (svn)</li>
+        <li>cvs</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="a-bit-about-git">A Bit About Git</h3>
+
+  <p>It was developed by Linus Torvalds&#8230; <strong>who?</strong> &#8594;</p>
+
+  <div class="img-container">
+    <p><img src="../../resources/img/linus-torvalds.jpg" alt="Linux" /></p>
+  </div>
+
+  <div class="incremental">
+    <p>(the guy who made <a href="http://en.wikipedia.org/wiki/Linux">Linux</a>)</p>
+  </div>
+</section>
+
+<section>
+  <h2 id="by-the-way-does-the-name-git-sound-familiar--where-have-seen-it-before">By the way, does the name, Git, sound familiar?  Where have seen it before?</h2>
+
+</section>
+<section>
+  <h3 id="github-vs-git">Github vs Git</h3>
+
+  <p><strong>GIT AND GITHUB ARE DIFFERENT!</strong> </p>
+
+  <ul>
+    <li>so&#8230; we used github to submit assignments</li>
+    <li><strong>github is a website</strong> that hosts git repositories</li>
+    <li>on it&#8217;s own <strong>git is just version control</strong></li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="who-uses-git-and-github">Who Uses Git and Github?</h3>
+
+  <p>Git is used to maintain a variety of projects, like:</p>
+
+  <ul>
+    <li>the <a href="https://github.com/processing/processing">Processing IDE</a></li>
+    <li>or <a href="https://github.com/twbs/bootstrap">Twitter&#8217;s Bootstrap</a></li>
+    <li>or <a href="https://github.com/rails/rails">Ruby on Rails</a></li>
+    <li>or <a href="https://github.com/livinglab/openlab">The City Tech OpenLab!</a></li>
+  </ul>
+
+  <p>Some people use github to distribute open source code&#8230; for example:</p>
+
+  <ul>
+    <li><strong>id software</strong> has a bunch of <a href="https://github.com/id-Software">stuff hosted on git</a></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="local-version-control">Local Version Control</h3>
+
+  <p><a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">See the diagram on pro git</a></p>
+
+  <ul>
+    <li>equivalent to what we may have done manually:
+      <ul>
+        <li>save files in folder with locally as a <em>snapshot</em> of current state of code</li>
+        <li>recover by going through folders on computer</li>
+        <li>see versions by the timestamped folder name</li>
+      </ul>
+    </li>
+    <li>all of this is automated through software
+      <ul>
+        <li>stores changes to your files in a local database</li>
+        <li>an example of local version control is RCS</li>
+      </ul>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="centralized-version-control">Centralized Version Control</h3>
+
+  <p><a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">See the diagram on pro git</a></p>
+
+  <ul>
+    <li>promoted collaboration; everyone got code from the same place</li>
+    <li>single server that has all of the versioned files</li>
+    <li>everyone working on it had a <em>working copy</em>, but not the full repository</li>
+    <li>an example is subversion (SVN)</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="distributed-version-control">Distributed Version Control</h3>
+
+  <p><a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">See the diagram on pro git</a></p>
+
+  <ul>
+    <li>everyone has full repository</li>
+    <li>can connect to multiple <strong>remote</strong> repositories </li>
+    <li>can push and pull to individuals, not just <em>shared</em> or <em>centralized</em> servers</li>
+    <li>single server that has all of the versioned files</li>
+    <li>everyone working on it had a <em>working copy</em></li>
+  </ul>
+
+</section>
+
+<section>
+  <h2 id="were-using-git-a-distributed-version-control-system">We&#8217;re Using Git, a Distributed Version Control System</h2>
+
+</section>
+
+<section>
+  <h3 id="some-terminology">Some Terminology</h3>
+
+  <p><strong>repository</strong> - the place where your version control system stores the snapshots that you <em>save</em></p>
+
+  <ul>
+    <li>think of it as the place where you store all previous/saved versions of your files</li>
+    <li>this could be:
+      <ul>
+        <li><strong>local</strong> - on your computer</li>
+        <li><strong>remote</strong> - a copy of versions of your files on another computer</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="some-more-terminology">Some More Terminology</h3>
+
+  <ul>
+    <li><strong>git</strong> - the distributed version control system that we&#8217;re using</li>
+    <li><strong>github</strong> - a website that can serve as a remote <em>repository</em> for your project</li>
+  </ul>
+
+  <p><strong>What&#8217;s a remote repository again?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p>A copy of versions of your files on another computer.</p>
+  </div>
+</section>
+
+<section>
+  <h3 id="where-are-my-files">Where Are My Files</h3>
+
+  <p>In your <strong>local repository</strong>, git <em>stores</em> your files and versions of your files in a few different <em>conceptual</em> places:</p>
+
+  <ul>
+    <li><strong>the working directory / working copy</strong> - stores the version of the files that you&#8217;re currently modifying / working on</li>
+    <li><strong>index</strong> - the staging area where you put stuff that you want to <em>save</em> (or&#8230; that you&#8217;re about to <em>commit</em>)</li>
+    <li><strong>HEAD</strong> - the most recent saved version of your files (or&#8230; the last <em>commit</em> that you made)</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="another-way-to-look-at-it">Another Way to Look at It</h3>
+
+  <ul>
+    <li><strong>the working directory / working copy</strong> - stuff you&#8217;ve changed but haven&#8217;t saved</li>
+    <li><strong>index</strong> - stuff that you&#8217;re about to save</li>
+    <li><strong>HEAD</strong> - stuff that you&#8217;ve saved</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="aaaaand--more-terminology">And, More Terminology.</h3>
+
+  <ul>
+    <li><strong>commit</strong> - save a snapshot of your work</li>
+    <li><strong>diff</strong> - the line-by-line difference between two files or sets of files</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="two-basic-workflows">Two Basic Workflows</h3>
+
+  <ol>
+    <li>Creating and setting up local and remote repositories</li>
+    <li>Making, saving, and <em>sharing</em> changes</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="creating-repositories">Creating Repositories</h3>
+
+  <ul>
+    <li>create a local repository</li>
+    <li>configure it to use your name and email (for tracking purposes)</li>
+    <li>create a remote repository</li>
+    <li><em>link</em> the two</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="making-saving-and-sharing-changes">Making, Saving, and Sharing Changes</h3>
+
+  <ul>
+    <li>make changes</li>
+    <li>put them aside so they can staged for saving / committing</li>
+    <li>save / commit</li>
+    <li>send changes from local repository to remote repository</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="ok--great">Ok.  Great!</h3>
+
+  <p><strong>Remind me again, what&#8217;s github?</strong> &#8594;</p>
+
+  <ul>
+    <li><strong>github is a website</strong> </li>
+    <li>it can serve as a <strong>remote git repository</strong>
+      <ul>
+        <li>that means it can store all versions of your files</li>
+        <li>(after you&#8217;ve sent changes to it)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="we-can-now-submit-assignments-using-the-commandline">We can now submit assignments using the commandline</h2>
+</section>
+
+<section>
+  <h3 id="submitting-assignments">Submitting Assignments</h3>
+
+  <ul>
+    <li>we will continue to use github to submit assignments</li>
+    <li>however, instead of using the web interface and copying and pasting &#8230;</li>
+    <li>we can use a combination of git commands to send files to github</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="lets-start-off-with-creating-repositoriescreating-repositorieshtml"><a href="creating-repositories.html">Let&#8217;s Start Off With Creating Repositories</a></h2>
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

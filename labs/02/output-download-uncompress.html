@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Output, Download, and Uncompress</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+  <h1 id="output-download-and-uncompress">Output, Download, and Uncompress</h1>
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="for-part-2-of-this-lab">For Part 2 of This Lab&#8230;</h3>
+
+  <p>We&#8217;re going to download a file and uncompress it.  To do that, we&#8217;ll learn a few commands related to:</p>
+
+  <ul>
+    <li>your terminal (displaying text, clearing the screen, stopping a command)</li>
+    <li>downlading files from a url</li>
+    <li>archiving and unarchiving files</li>
+    <li>uncompressing files</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="echo">echo</h3>
+
+  <p><strong>Print to display &#8594;.</strong></p>
+
+  <p>Think: an <em>echo</em> repeats what you say</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nb">echo </span>say this again
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="clear">clear</h3>
+
+  <p><strong>Clear screen &#8594;</strong></p>
+
+  <p>(obvs).  Bring prompt up to top so that it looks like you have a clear screen (you can still scroll up).</p>
+
+  <div class="highlight"><pre><code class="bash">clear
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="control-c-interrupt-a-command">control-c (interrupt a command)</h3>
+
+  <p><strong>Interrupt or stop a running command &#8594;</strong></p>
+
+  <p>Think <em>cancel</em>.  It&#8217;s the control key <strong>and</strong> the lowercase c key together.</p>
+
+  <p>[CONTROL] + [c]</p>
+</section>
+
+<section>
+  <h3 id="curl">curl</h3>
+
+  <p><strong>Download a file and display file. &#8594;</strong></p>
+
+  <p>(Requires one argument, the URL of the page you&#8217;d like to display.)</p>
+
+  <div class="highlight"><pre><code class="bash">curl http://someurl.com
+</code></pre></div>
+
+  <p><strong>Download a file and save it. &#8594;</strong></p>
+
+  <div class="highlight"><pre><code class="bash">curl -o filename.txt http://someurl.com
+</code></pre></div>
+
+  <p>(the -o flag should be followed by the name of the file you want the URL to be saved as)</p>
+</section>
+
+<section>
+  <h2 id="dont-forget-the--o-flag--thats-the-name-of-the-file-that-the-url-is-downloaded-as">Don&#8217;t forget the -o flag!  That&#8217;s the name of the file that the URL is downloaded as!</h2>
+
+  <p>curl <strong>-o filename.txt</strong> http://someurl.com</p>
+</section>
+
+<section>
+  <h3 id="unzip">unzip</h3>
+
+  <p><strong>Uncompress a zip file. Works on files with a .zip extension. &#8594;</strong></p>
+
+  <div class="highlight"><pre><code class="bash">unzip filename1.zip
+</code></pre></div>
+
+  <p>(Requires one argument - the name of the file you want to uncompress)</p>
+</section>
+
+<section>
+  <h3 id="tar-archive">tar (archive)</h3>
+
+  <p><strong>Archive directories and files. &#8594;</strong></p>
+
+  <p>Think: <em>T-archive</em>, <em>compress</em></p>
+
+  <div class="highlight"><pre><code class="bash">tar -cvf archivename.tar directory_to_compress
+</code></pre></div>
+
+  <p>(tar requires one argument, the directory to compress&#8230; and the -f flag requires the name of the resulting archive)</p>
+</section>
+
+<section>
+  <h3 id="tar-extract">tar (extract)</h3>
+
+  <p><strong>Uncompress and unarchive a tarball. Works on files with a .tar.gz extension.  &#8594;</strong></p>
+
+  <p>Think: <em>t-archive</em>, <em>xtract</em></p>
+
+  <div class="highlight"><pre><code class="bash">tar -xvf archivename.tar.gz
+</code></pre></div>
+
+  <p>(exactly one argument, the name of the files to unarchive)</p>
+</section>
+
+<section>
+  <h3 id="gzip">gzip</h3>
+
+  <p><strong>Compress a file. &#8594;</strong></p>
+
+  <p>Think: <em>zip</em></p>
+
+  <div class="highlight"><pre><code class="bash">gzip filename.txt
+</code></pre></div>
+
+  <p>(exactly one argument, the name of the files to compress)</p>
+</section>
+
+<section>
+  <h2 id="tar-and-unzip-are-different">tar and unzip are different!</h2>
+
+</section>
+
+<section>
+  <h3 id="tar-vs-unzip">tar vs unzip</h3>
+
+  <ul>
+    <li>use tar -xvf myfile.tar.gz to uncompress .tar.gz files</li>
+    <li>use unzip myfile.zip to uncompress .zip files</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="activity-drills"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 5 (use set 2)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 2</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="lab"><strong>Lab</strong></h3>
+
+  <p><a href="lab-02-part-02-output-download-uncompress.txt">Output, Download and Uncompress</a></p>
+
+  <ul>
+    <li>Type each command (with arguments and flags) exactly</li>
+    <li>Only press &lt;ENTER&gt; when instructed&#8230;</li>
+    <li>&lt;TAB&gt;, &lt;ENTER&gt;, &lt;UP&gt;, &lt;DOWN&gt; are the actual keys!</li>
+    <li>Paste answer or output below the dashed line (&#8212;&#8212;&#8212;&#8212;)</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="activity-drills-1"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 3 (use set 12)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 12</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

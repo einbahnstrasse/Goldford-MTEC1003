@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab 12, Part 1 - HTML</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-13-html-part-1---html">Lab 12, Part 1 - HTML</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+<!--  <li>Using SSH keys saved on your usb drive to connect to GitHub</li>  -->
+  <li>Creating a repository on the GitHub website</li>
+  <li>Cloning the repository on your local machine</li>
+  <li>Associating a name and email address with your local repository</li>
+  <li>Editing the README file in your local repository</li>
+  <li>creating an html page</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+<!--
+<p>Please sit at the same computer you were at last class.</p>
+
+<h3 id="check your config file">Check your ssh config file</h3>
+
+<ul>
+  <li>Open a terminal and go to your home directory. </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~
+</code></pre></div>
+
+<ul>
+  <li>List all files/directories (to check for hidden directories - you're looking for one called .ssh) </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">ls -al</span>
+</code></pre></div>
+
+<ul>
+    <li>If it exists, view the config file in there and make sure it contains your information.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cat</span> .ssh/config
+
+<span class="c"># the config file should look like this:</span>
+Host github.com
+    HostName github.com
+    IdentityFile /Volumes/<span class="s2">your_usb_drive_name</span>/.ssh/github_rsa
+    User <span class="s2">your_GitHub_username</span>
+</code></pre></div>
+
+<ul>
+  <li>If the directory doesn't exist, create it, and then change into it. </li>
+  <li>Create the config file (using Nano).</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">mkdir </span>.ssh
+<span class="nb">cd</span> .ssh
+<span class="nb">nano</span> config
+</code></pre></div>
+
+<ul>
+  <li>Enter the text below, substituting the name of your USB drive and GitHub username.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Host github.com
+    HostName github.com
+    IdentityFile /Volumes/<span class="s2">your_usb_drive_name</span>/.ssh/github_rsa
+    User <span class="s2">your_GitHub_username</span>
+</code></pre></div>
+
+<ul>
+  <li>Save/exit Nano: press "ctrl + x" then "y" (for yes, save changes) then "enter".</li>
+</ul>
+
+
+<h3 id="test-to-make-sure-it-works">Test to make sure your SSH key works</h3>
+
+<ul>
+  <li>Open your terminal and try to ssh into GitHub to test your key setup.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ssh -T git@github.com
+</code></pre></div>
+
+<ul>
+  <li>You might see a warning like this:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">The authenticity of host 'github.com (207.97.227.239)' can't be established.
+# RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+# Are you sure you want to continue connecting (yes/no)?
+</code></pre></div>
+
+<ul>
+  <li>Type: yes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+</code></pre></div>
+
+<ul>
+  <li>If the username is yours, it means you were successful in setting up your SSH key.
+  <li>If you get an error message saying your key is not secure, that permissions are not restrictive enough, check the formatting of your USB drive again and chances are it's not formatted for Mac OS Extended.
+  <ul>
+    <li>If its not, start from the top, by formatting your drive. </li>
+    <li>If it is, make sure you assigned the correct permissions (see the step where you change into the .ssh directory on your drive and change permissions (chmod 600 github_rsa).</li>
+  </ul>
+</li>
+</ul>
+-->
+<h3 id="create-your-remote-repository">Create Your Remote Repository</h3>
+
+<p>This will create a remote git repository on github.</p>
+
+<ol>
+  <li>Go to your account home (github.com/username).</li>
+  <li>Click on the Repositories tab.</li>
+  <li>Click the green New button on the right side.</li>
+  <li>Give your repository the name lab-12-html</li>
+  <li>The repository should be public (the default).</li>
+  <li>Click "Initialize this repository with a README".</li>
+  <li>Click Create Repository.</li>
+  <li>Refresh your main GitHub page and you should see the new repository.
+</ol>
+
+<h3 id="cloning-your-repository">Cloning your repository</h3>
+
+<p>This will clone the repository you just created on GitHub on your local machine.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>(if doesn&#8217;t already exist) create a folder that consists of your first initial and last name in your <strong>home directory</strong> </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~
+mkdir myname
+</code></pre></div>
+
+<ul>
+  <li>use pwd to verify that you&#8217;re in the correct folder
+    <ul>
+      <li>you should be in <strong>~/myname/</strong></li>
+      <li>if you&#8217;re not, cd into it</li>
+    </ul>
+  </li>
+  <li>to prove that this is not yet a repository, list <strong>all</strong> files in your current directory </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>it should contain only your previous labs</li>
+  <li>it should not contain any .git folders</li>
+</ul>
+
+<ul>
+  <li>Make sure again that you're in the correct directory!  (/Users/student/myname or ~/myname)</li>
+  <li>Clone the GitHub repository you just created: lab-12-html</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git clone https://github.com/<span class="s2">your_username</span>/lab-12-html.git
+</code></pre></div>
+
+<ul>
+  <li>The output should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Cloning into 'lab-12-html'...
+remote: Counting ojects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Checking connectivity... done.
+</code></pre></div>
+
+<ul>
+  <li>Check to make sure you've linked to your remote repository:</li>
+  <li>Change into your repository directory (lab-12-html).</li>
+  <li>Use the git remote command.
+</ul>
+
+<div class="highlight"><pre><code class="bash">cd lab-12-html
+git remote -v
+</code></pre></div>
+
+<ul>
+  <li>You should see:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">origin https://github.com/your_username/lab-12-html.git (fetch)
+origin https://github.com/your_username/lab-12-html.git (push)
+</code></pre></div>
+
+<ul>
+  <li>configure your name and email for your commits</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git config user.name  <span class="s2">&quot;my first and last name&quot;</span>
+git config user.email <span class="s2">&quot;my@email.address&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>finally, use git config again to see if this worked:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git config -l
+</code></pre></div>
+
+<ul>
+  <li>(use should see your name and email appear in the configuration)</li>
+</ul>
+
+<h3 id="create-an-html-page">Create an HTML Page!</h3>
+
+<h4 id="basic-structure">Basic Structure</h4>
+
+<ul>
+  <li>open up SublimeText (try Command+SPACEBAR to search for SublimeText)</li>
+  <li>create a new file</li>
+  <li>save it&#8230;  browse to home&#8594;Desktop&#8594;usernamefolder&#8594;lab-12-html&#8594; and save as <strong>index.html</strong></li>
+  <li>create a skeleton page by using the following tags (don't use tab completion here)
+    <ul>
+      <li>&lt;!DOCTYPE html&gt; (note that this has no closing tag)</li>
+      <li>&lt;html lang=&quot;en&quot;&gt;</li>
+      <li>&lt;head&gt;</li>
+      <li>&lt;title&gt; &lt;&sol;title&gt;</li>
+      <li>&lt;&sol;head&gt;</li>
+      <li>&lt;body&gt;</li>
+      <li>&lt;&sol;body&gt;</li>
+      <li>&lt;&sol;html&gt;</li>
+    </ul>
+  </li>
+  <li>view your page by opening it in your browser (double click on the file from finder or option-click&#8594;Open With&#8230; your browser)</li>
+  <li>add text between the body tags</li>
+  <li>view your page (now just hit the refresh/reload button on your browser)</li>
+  <li>add a <a href="http://www.htmldog.com/guides/html/beginner/titles/">title</a>; it should go in head</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)&#8230; and of course, <strong>push origin master</strong></li>
+</ul>
+
+<h4 id="paragraphs-and-headings">Paragraphs and Headings</h4>
+
+<ul>
+  <li>add another line of text</li>
+  <li>view your page (note that there are no line breaks!)</li>
+  <li>add <a href="http://www.htmldog.com/guides/html/beginner/paragraphs/">paragraph</a> tags around each line of text
+    <ul>
+      <li>&lt;p&gt;line of text&lt;/p&gt;</li>
+    </ul>
+  </li>
+  <li>view your page (note that the text is now on separate lines!)</li>
+  <li>add some emphasis and strong tags around some text in one of the paragraphs
+    <ul>
+      <li>&lt;em&gt; &lt;/em&gt; </li>
+      <li>&lt;strong&gt; &lt;&sol;strong&gt;</li>
+    </ul>
+  </li>
+  <li>view your page (look for italicized and bolded text!)</li>
+  <li>add a <a href="http://www.htmldog.com/guides/html/beginner/headings/">heading</a> tag before each paragraph
+    <ul>
+      <li>add an &lt;h1&gt; first</li>
+      <li>add an &lt;h2&gt; next</li>
+    </ul>
+  </li>
+  <li>add one more heading tag, an h1 again&#8230; and add another paragraph tag underneath it</li>
+  <li>view your page (look for both headers)</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<h4 id="lists-and-links">Lists and Links</h4>
+
+<ul>
+  <li>add an <a href="http://www.htmldog.com/guides/html/beginner/lists/">ordered list</a> after your headers and paragraphs
+    <ul>
+      <li>&lt;ol&gt;</li>
+      <li>&lt;li&gt;</li>
+    </ul>
+  </li>
+  <li>view your page (look for both headers)</li>
+  <li>add an unordered list after your previous list
+    <ul>
+      <li>&lt;ul&gt;</li>
+      <li>&lt;li&gt;</li>
+    </ul>
+  </li>
+  <li>change one of your list items so that some of the text within it is a <a href="http://www.htmldog.com/guides/html/beginner/links/">link</a>
+    <ul>
+      <li>&lt;a href="http://somelinkhere.com"&gt;link text&lt;/a&gt;</li>
+    </ul>
+  </li>
+  <li>do the same for some text within one of the paragraphs</li>
+  <li>add another link in one of your paragraphs</li>
+  <li>view your page and check that your links work</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<h4 id="images-and-tables">Images and Tables</h4>
+
+<ul>
+  <li>add an <a href="http://www.htmldog.com/guides/html/beginner/images/">image</a> somewhere on your page
+    <ul>
+      <li>&lt;img&gt; (no closing tag)</li>
+<!--      <li>set the src attribute, equal to http://entertainmenttechnology.github.io/Wilson-MTEC1003/resources/img/lab-12-face.png </li>
+-->
+      <li>set the src attribute, equal to http://cdn3.whatculture.com/images/2018/12/6a04de7e319b8a08-600x338.jpg</li>
+
+
+    </ul>
+  </li>
+  <li>view your page </li>
+  <li>add a <a href="http://www.htmldog.com/guides/html/beginner/tables/">table</a>
+    <ul>
+      <li>make it 2 columns, 3 rows</li>
+      <li>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</li>
+      <li>add text into each table cell</li>
+    </ul>
+  </li>
+  <li>view your page </li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<h3 id="submit-your-work-through-github">Submit Your Work Through GitHub</h3>
+
+<ul>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong>, <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+  <li>so, all you have to do is <strong>push</strong> (don&#8217;t forget <strong>origin master</strong>)</li>
+  <li>check that your code is on github by refreshing the page</li>
+</ul>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

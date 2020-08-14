@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab 14, Part 2 - Remote Server</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1>Media Computation Skills Lab 2</h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-14-part-2---remote">Lab 14, Part 2 - Remote</h1>
+
+<h2 id="overview">Overview</h2>
+
+<ul>
+  <li>connect to a remote server</li>
+  <li>run commands on remote server</li>
+  <li>upload files to remote server</li>
+</ul>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="create-four-text-files">Create Four Text Files</h3>
+
+<ul>
+  <li>using SublimeText, create the following files in your repository folder (~/Desktop/yourname/lab-14-remote):
+    <ul>
+      <li>one.txt</li>
+      <li>two.txt</li>
+      <li>three.txt</li>
+      <li>proof.txt</li>
+    </ul>
+  </li>
+  <li>in one.txt, type in, without quotes: &#8220;uploaded with scp&#8221;</li>
+  <li>in two.txt, type in, without quotes: &#8220;uploaded with commandline sftp client&#8221;</li>
+  <li>in three.txt, type in, without quotes: &#8220;uploaded with graphical sftp client&#8221;</li>
+  <li>in proof.txt, type in, without quotes: &#8220;Directory Listing on Remote Server&#8221;</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> &#8230; don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part (don&#8217;t worry about using git push until the end)</li>
+</ul>
+
+<h3 id="running-commands-on-a-remote-server">Running Commands on a Remote Server</h3>
+
+<ul>
+  <li>open terminal</li>
+  <li>use ssh to connect to a remote server using your username and foureyes.in as the host</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ssh yourusername@foureyes.in
+</code></pre></div>
+
+<ul>
+  <li>you&#8217;ll be asked for a password&#8230; and once you&#8217;re authenticated, you will have a prompt on the remote server</li>
+  <li>use ls to list all of the files (there should be none!)</li>
+  <li>use mkdir to create a directory called public_html</li>
+  <li>chmod 755 public_html</li>
+  <li>try running the following commands on the remote server:
+    <ul>
+      <li>whoami</li>
+      <li>who</li>
+    </ul>
+  </li>
+  <li>type CONTROL+D to log out</li>
+</ul>
+
+<h3 id="using-scp-to-upload-a-file">Using scp to Upload a File</h3>
+
+<ul>
+  <li>open a <strong>new</strong> terminal</li>
+  <li>change your directory to your lab directory: <strong>~/Desktop/username/lab-14-remote</strong> </li>
+  <li>use <strong>pwd</strong> to make sure that you&#8217;re in <strong>~/Desktop/username/lab-14-remote</strong> </li>
+  <li>use ls to show that all of your text files are present</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">
+</code></pre></div>
+
+<p>walsh-9:bzuckerman bree$ ls -l
+total 8
+-rw-r&#8211;r&#8211;  1 bree  staff  4 May 10 08:10 one.txt
+-rw-r&#8211;r&#8211;  1 bree  staff  0 May 10 08:58 proof.txt
+-rw-r&#8211;r&#8211;  1 bree  staff  0 May 10 08:58 three.txt
+-rw-r&#8211;r&#8211;  1 bree  staff  0 May 10 08:58 two.txt
+* upload one.txt to your remote server using <strong>scp</strong></p>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># scp [/path/to/local/file] [remote-username]@[remote-hostname]:[/path/to/remote/file]</span>
+scp one.txt yourusername@foureyes.in:~
+</code></pre></div>
+
+<ul>
+  <li>in the terminal window that&#8217;s logged in to your remote server, type ls to show that the file is present on your remote server
+    <ul>
+      <li>you should have a single file: one.txt</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="use-a-commandline-sftp-client-to-transfer-files">Use a Commandline SFTP Client to Transfer Files</h3>
+
+<ul>
+  <li>switch back to the terminal window that&#8217;s <strong>local</strong></li>
+  <li>use <strong>pwd</strong> to make sure that you&#8217;re in <strong>~/Desktop/username/lab-14-remote</strong>; if you&#8217;re not, cd into it </li>
+  <li>type in <strong>sftp</strong> with your username@remotehost to start up the commandline sftp client; it will give you a prompt that&#8217;s waiting for commands</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># sftp [username]@[remote host]</span>
+sftp yourusername@foureyes.in
+</code></pre></div>
+
+<ul>
+  <li>type in <strong>lpwd</strong> after the prompt to determine what <strong>local directory</strong> you&#8217;re in</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">sftp&gt; lpwd
+</code></pre></div>
+
+<ul>
+  <li>you should be in lab_11_part_1:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Local working directory: /Users/student/Desktop/yourusername/lab-14-remote
+</code></pre></div>
+
+<ul>
+  <li>type in <strong>pwd</strong> after the prompt to determine what <strong>remote directory</strong> you&#8217;re in</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">sftp&gt; <span class="nb">pwd</span>
+</code></pre></div>
+
+<ul>
+  <li>you should get something like</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Remote working directory: /root
+</code></pre></div>
+
+<ul>
+  <li>use <strong>lls</strong> to list the files that you have locally </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">sftp&gt; lls
+</code></pre></div>
+
+<ul>
+  <li>you should see your three text files</li>
+  <li>use <strong>put</strong> to upload one of your local files to your remote server</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">sftp&gt; put two.txt
+</code></pre></div>
+
+<ul>
+  <li>you should get feedback similar to the following:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Uploading two.txt to /root/two.txt
+two.txt
+</code></pre></div>
+
+<ul>
+  <li>in the terminal window that&#8217;s logged in to your remote server, type ls to show that the files are present on your remote server
+    <ul>
+      <li>you should have two files: one.txt and two.txt</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="use-a-graphical-sftp-client-to-transfer-files">Use a Graphical SFTP Client to Transfer Files</h3>
+
+<ul>
+  <li>on your local workstation&#8230;</li>
+  <li>download this SFTP client: <a href="http://cyberduck.ch/Cyberduck-4.2.1.zip">http://cyberduck.ch/Cyberduck-4.2.1.zip</a></li>
+  <li>unzip it (it might automatically be extracted for you)</li>
+  <li>move the CyberDuck up to the desktop</li>
+  <li>double click on it to run it</li>
+  <li>click on open connection
+<img src="../../resources/img/sftp-open.png" alt="sftp-open.png" /></li>
+  <li>look for the drop down that says <strong>FTP</strong>
+<img src="../../resources/img/sftp-ftp.png" alt="sftp-ftp.png" /></li>
+  <li>change it so that it is <strong>SFTP</strong>
+<img src="../../resources/img/sftp-sftp.png" alt="sftp-sftp.png" /></li>
+  <li>uncheck add to keychain
+<img src="../../resources/img/sftp-keychain.png" alt="sftp-keychain.png" /></li>
+  <li>put in the domain (foureyes.in), username and password</li>
+  <li>once you&#8217;ve contected, you should see the two files that you&#8217;ve already created</li>
+  <li>open finder and browse to your lab directory</li>
+  <li>drag and drop both three.txt into CyberDuck to upload your file</li>
+  <li>in the terminal window that&#8217;s logged in to your remote server, type ls to show that the file is present on your remote server
+    <ul>
+      <li>you should have three files: one.txt, two.txt, three.txt</li>
+    </ul>
+  </li>
+  <li>in the same terminal window, type in hostname</li>
+  <li>copy (use your mouse to highlight, command-C)  everything from ls through to the output of hostname</li>
+  <li>using SublimeText, open proof.txt</li>
+  <li>paste your commands and their output</li>
+  <li>save your work</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> &#8230; don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part </li>
+  <li>finally, use git push origin master to send to remote repository</li>
+</ul>
+
+<h3 id="on-your-own-publish-your-site">On Your Own, Publish Your Site</h3>
+
+<ul>
+  <li>using any of the methods above, upload the following files to your <strong>public_html</strong> folder on the remote server: <strong>foureyes.in</strong>
+    <ul>
+      <li><strong>home.html</strong></li>
+      <li><strong>about.html</strong></li>
+      <li><strong>mystyles.css</strong></li>
+    </ul>
+  </li>
+  <li>check that it worked by logging in to the server and typing in ls public_html</li>
+  <li>finally, in your browser, go to http://foureyes.in/~yourusername/home.html
+    <ul>
+      <li>substitute yourusername with your system usernam</li>
+      <li>first initial, last name, all lowercase</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

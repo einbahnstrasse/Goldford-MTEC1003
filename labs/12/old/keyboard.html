@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Keyboard</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="keyboard">Keyboard</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="general-overview">General Overview</h3>
+
+  <ol>
+    <li>use boolean variables to determine if position should change</li>
+    <li>use keyboard events to set these variables</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="keyboard-and-circle-example-part-1">Keyboard and Circle Example Part 1</h3>
+
+  <p>Variables and document loaded.</p>
+
+  <div class="highlight"><pre><code class="js"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">sketch</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">context</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">circle</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">fps</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">go_up</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">go_down</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="part-2---main">Part 2 - main</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">sketch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;sketch&#39;</span><span class="p">);</span>
+	<span class="nx">context</span> <span class="o">=</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+
+	<span class="c1">// start circle at left edge, centered vertically</span>
+	<span class="nx">circle</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="o">:</span><span class="nx">sketch</span><span class="p">.</span><span class="nx">offsetWidth</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="o">:</span><span class="nx">sketch</span><span class="p">.</span><span class="nx">offsetHeight</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="o">:</span><span class="mi">25</span><span class="p">};</span>
+	<span class="nx">animation</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="nx">animate</span><span class="p">,</span> <span class="nx">fps</span><span class="p">);</span>
+
+	<span class="c1">// keyboard events</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keydown&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">===</span> <span class="mi">38</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">go_up</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="k">if</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">===</span> <span class="mi">40</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">go_down</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">});</span>
+	<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">===</span> <span class="mi">38</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">go_up</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+		<span class="p">}</span>
+
+		<span class="k">if</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">===</span> <span class="mi">40</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">go_down</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="part-3---animate">Part 3 - animate</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">animate</span><span class="p">()</span> <span class="p">{</span>
+
+	<span class="c1">// clear the screen</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">offsetWidth</span><span class="p">,</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">offsetHeight</span><span class="p">);</span>
+
+	<span class="k">if</span><span class="p">(</span><span class="nx">go_up</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">circle</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">circle</span><span class="p">.</span><span class="nx">y</span> <span class="o">-</span> <span class="mi">5</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="k">if</span><span class="p">(</span><span class="nx">go_down</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">circle</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="nx">circle</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c1">// draw circle at current position of circle object</span>
+	<span class="nx">draw_circle</span><span class="p">(</span><span class="nx">circle</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">circle</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="nx">circle</span><span class="p">.</span><span class="nx">r</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// draw circle function below</span>
+</code></pre></div>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

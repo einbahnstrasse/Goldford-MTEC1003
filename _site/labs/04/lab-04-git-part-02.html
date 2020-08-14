@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Saving and Sending Changes to Your Repository</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-4---part-2---saving-and-sending-changes-to-your-repository">Lab 4 - Part 2 - Saving and Sending Changes to Your Repository</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+  <li>creating and editing files in your local repository</li>
+  <li>saving those changes</li>
+  <li>sending those changes to your remote repository on github</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="creating-and-saving-changes-locally-sending-to-remote-repository">Creating and Saving Changes Locally, Sending to Remote Repository</h3>
+
+<p>In this part of the lab, you will create a text file in your local repository, and then you&#8217;ll send it to your remote repository.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for lab-04-version-control
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/Desktop/yourname/lab-04-version-control</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+      <li>if this doesn&#8217;t exist yet&#8230; make sure you completed the <a href="lab-04-git-part-01.html">first part of this lab</a></li>
+    </ul>
+  </li>
+  <li>use <strong>git status</strong> to show that there aren&#8217;t any changes yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+nothing to commit <span class="o">(</span>create/copy files and use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+</code></pre></div>
+
+<ul>
+  <li>create a file called <strong>README.markdown</strong>
+    <ul>
+      <li>use touch to do this</li>
+    </ul>
+  </li>
+  <li>use <strong>nano</strong> to edit <strong>README.markdown</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">nano README.markdown
+</code></pre></div>
+
+<ul>
+  <li>type in the following line</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">This is lab 04
+</code></pre></div>
+
+<ul>
+  <li>exit and save your file (&lt;ctrl-x&gt;,&lt;y&gt;,&lt;enter&gt;)</li>
+  <li>use <strong>git status</strong> to show that you&#8217;ve made changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output; notice that it contains README.markdown </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">pines:lab-04-version-control bree<span class="nv">$ </span>git status
+<span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+<span class="c"># Untracked files:</span>
+<span class="c">#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span>
+<span class="c">#</span>
+<span class="c">#	README.markdown</span>
+nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+</code></pre></div>
+
+<ul>
+  <li>if we want to save this file in the repository, we have <em>stage</em> it (that is, mark it as something that we&#8217;re ready to save / commit)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git add --all
+</code></pre></div>
+
+<ul>
+  <li>to check that you&#8217;ve staged your commit, use <strong>git status</strong> again</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should output the following text (note that README.markdown moved from <em>untracked</em> to <em>Changes to be committed</em>)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+<span class="c"># Changes to be committed:</span>
+<span class="c">#   (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span>
+<span class="c">#</span>
+<span class="c">#	new file:   README.markdown</span>
+<span class="c">#</span>
+</code></pre></div>
+
+<ul>
+  <li>now we&#8217;re ready to commit (that is, save the file to the local repository); everything after the -m is the message that will be associated with the changes that you&#8217;ve made</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git commit -m <span class="s2">&quot;added a README file&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>the output of the command should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 7a2e2f6<span class="o">]</span> added a README file
+ 1 file changed, 1 insertion<span class="o">(</span>+<span class="o">)</span>
+ create mode 100644 README.markdown
+</code></pre></div>
+
+<ul>
+  <li>check the status again </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>notice that there is nothing staged and no more changes!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+nothing to commit, working directory clean
+</code></pre></div>
+
+<ul>
+  <li>to show the changes that you&#8217;ve saved so far, use <strong>git log</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git log --color
+</code></pre></div>
+
+<ul>
+  <li>it should show you the following&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">commit 7a2e2f6ff86407b7707f78cf8c9a12b1dd843de9
+Author: bree &lt;bzuckerman@citytech.cuny.edu&gt;
+Date:   Wed Feb 26 08:54:14 2014 -0500
+
+    added a README file
+</code></pre></div>
+
+<ul>
+  <li>you can share your changes / send them to a remote repository by using <strong>git push</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git push origin master
+</code></pre></div>
+
+<ul>
+  <li>it should result in:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Counting objects: 3, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 242 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To https://github.com/bzuckerman/lab-04-version-control.git
+ * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
+</code></pre></div>
+
+<ul>
+  <li>go back to github and look in your repository.  you should see that file appear.
+<img src="../../resources/img/repos-added.png" alt="Repository List" /></li>
+</ul>
+
+<h3 id="making-changes-showing-changes-showing-history">Making Changes, Showing Changes, Showing History</h3>
+
+<p>In this part of the lab, you will make changes to an existing file.</p>
+
+<ul>
+  <li>add another line to your README.markdown</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">This is lab 04
+It<span class="err">&#39;</span>s about version control
+</code></pre></div>
+
+<ul>
+  <li>use git diff to show your changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git diff --color
+</code></pre></div>
+
+<ul>
+  <li>use git status, add and commit to save your changes</li>
+  <li>finally, use git push to send them to your remote repository</li>
+  <li>check that they are in your folder</li>
+</ul>
+
+<h3 id="optional-practice-making-changes--adding-files">(Optional) Practice Making Changes / Adding Files</h3>
+
+<ul>
+  <li>create another file called test.sh</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">echo</span> <span class="s2">&quot;hello&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>save locally and push to your remote repository</li>
+</ul>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

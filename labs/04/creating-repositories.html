@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Creating and Setting Up Local and Remote Repositories</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="creating-and-setting-up-repositories">Creating and Setting Up Repositories</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="commands-for-creation-and-set-up-of-repositories">Commands for Creation and Set Up of Repositories</h3>
+
+  <p>For most of our work, we&#8217;ll be creating a <strong>local repository</strong> to work on in class and a <strong>remote repository</strong> on github to submit our work.  Here are some commands we&#8217;ll use:</p>
+
+  <ul>
+    <li>git init</li>
+    <li>git config &#8230;
+      <ul>
+        <li>git config user.name  &#8220;<strong>your user name</strong>&#8221;</li>
+        <li>git config user.email &#8220;<strong>your@email.address</strong>&#8221;</li>
+      </ul>
+    </li>
+    <li>curl -u &#8216;<strong>your user name</strong>&#8217; https://api.github.com/user/repos -d &#8216;{&#8220;name&#8221;:&#8221;<strong>repository name</strong>&#8221;}&#8217;</li>
+    <li>git remote add &#8230;</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="git-init">git init</h3>
+
+  <p><strong>git init</strong> - creates a new <em>local</em> repository (using the files in the existing directory)</p>
+
+  <ul>
+    <li>you can tell a repository is created by running ls -l &#8230; it creates a .git directory</li>
+    <li>again, this creates a new repository - a place to archive / save all versions of your files</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git init
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="git-config">git config</h3>
+
+  <p><strong>git config</strong> - configure your user name and email for your commits </p>
+
+  <ul>
+    <li>this has nothing to do with your computer&#8217;s account or your account on github</li>
+    <li>this information helps track changes</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git config user.name  &quot;<span class="s2">michaeljordan</span>&quot;
+git config user.email &quot;<span class="s2">mj@nba.com</span>&quot;
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="creating-a-remote-repository">Creating a Remote Repository</h3>
+
+  <p>You can actually use github as a remote repository.  Here&#8217;s how you create a remote repository on github through the commandline:</p>
+
+  <div class="highlight"><pre><code class="bash">curl -u &#39;<span class="s1">username</span>&#39; https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">repo_name</span>&quot;}&#39;
+</code></pre></div>
+ <div class="highlight"><pre><code class="bash">curl -u &#39;<span class="s1">levylorenzo</span>&#39; https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">mtec_wk4</span>&quot;}&#39;
+</code></pre></div>
+  <ul>
+    <li>note that it uses our good friend, curl</li>
+    <li>use your github user name to fill in user name</li>
+    <li>the repository (repo) will be given in the instructions</li>
+    <li>it&#8217;ll ask you for a password (when you type in your password, the screen will not display what you type)</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="git-remote-add">git remote add</h3>
+
+  <p><strong>git remote add</strong> - add a remote repository so that you can synchronize changes between it and your local repository</p>
+
+  <div class="highlight"><pre><code class="bash">git remote add origin https://github.com/<span class="s1">levylorenzo</span>/<span class="s1">mtec_wk4</span>.git
+</code></pre></div>
+
+  <p>The last bit is the url to your repository on github</p>
+</section>
+
+<section>
+  <h2 id="all-together-now-part-01-of-this-lablab-04-git-part-01html"><a href="lab-04-git-part-01.html">All together now (part 01 of this lab)</a></h2>
+</section>
+
+<section>
+  <h2 id="on-to-changing-and-saving-fileschanging-fileshtml"><a href="changing-files.html">On to Changing and Saving Files</a></h2>
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

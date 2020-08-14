@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Paths and Review</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+  <h1 id="paths-and-review">Paths and Review</h1>
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="definitions">Definitions</h3>
+
+  <p>Define the following terms, and give an example of each.</p>
+
+  <ul>
+    <li>command</li>
+    <li>flag / option</li>
+    <li>argument</li>
+    <li>prompt</li>
+    <li>pathname</li>
+    <li>path separator</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="definitions-continued">Definitions Continued</h3>
+
+  <ul>
+    <li><strong>commands</strong> are <strong>verbs</strong>; they tell the computer to do something.  ex. <strong>ls</strong></li>
+    <li><strong>flags</strong> are like <strong>adverbs</strong>;  they specify how a command is run.  ex. the -l flag in <strong>ls -l</strong></li>
+    <li><strong>arguments</strong> are the thing or things that a command acts on; they&#8217;re like <strong>nouns</strong> (or more formally, <strong>direct objects</strong>).  ex. Desktop in <strong>ls Desktop</strong></li>
+    <li>the <strong>prompt</strong> is the symbol (or symbols) that appear in your terminal indicating that the computer is waiting for input</li>
+    <li>a <strong>pathname</strong> is the general form of the name of a file or directory; it specifies a unique location in a file system.  ex. /Users/student/Desktop</li>
+    <li>a <strong>path separator</strong> is a character that&#8217;s used to join together each directory in a pathname.  ex. /</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="osx-directory-structure">OSX Directory Structure</h3>
+
+  <p><strong>What is the top most folder on a disk (the directory that <em>contains</em> all of the other files and directories) called?</strong></p>
+
+  <div class="incremental">
+    <p>root or /</p>
+
+    <p><strong>What is the full path to the student user&#8217;s &#8220;Home&#8221; folder?</strong></p>
+
+    <p>/Users/student or ~</p>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="osx-directory-structure-1">OSX Directory Structure</h3>
+
+  <p><strong>What is the full path to the student user&#8217;s &#8220;Desktop&#8221;?</strong></p>
+
+  <div class="incremental">
+
+    <p>/Users/student/Desktop</p>
+
+    <p><strong>What directory contains all of the disks (USB drives, SSDs, etc.) that are attached to your computer?</strong> </p>
+
+    <p>/Volumes</p>
+  </div>
+</section>
+
+<section>
+  <h3 id="osx-directory-structure-continued">OSX Directory Structure Continued</h3>
+
+  <ul>
+    <li><strong>/</strong> - (also called <strong>root</strong>) the top most folder on a disk (the directory that <em>contains</em> all of the other files and directories)</li>
+    <li><strong>/Applications</strong> - where shared applications are kept</li>
+    <li><strong>/Users</strong> - all user accounts and their accompanying files are stored here</li>
+    <li><strong>/Volumes</strong> - all disks that are attached to your computer including USB drives, hard drives, etc.</li>
+    <li><strong>/System</strong> - <em>system specific</em> files, libraries, preferences that are critical to the operating system</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="within-the-users-directory">Within the User&#8217;s Directory</h3>
+
+  <ul>
+    <li><strong>/Users/username</strong> - (also called <strong>home</strong> when you&#8217;re in your own username&#8217;s directory) contains files specific to that particular user</li>
+    <li><strong>/Users/username/Desktop</strong> - represents the user&#8217;s Desktop</li>
+    <li><strong>/Users/username/Downloads</strong> - the user&#8217;s downloads folder</li>
+    <li><strong>/Users/username/Documents</strong> - the user&#8217;s documents folder</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="navigating-the-file-system">Navigating the File System</h3>
+
+  <p><strong>List all of the commands that we know as well as what they do&#8230; &#8594;</strong> </p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>pwd</strong> - print working directory</li>
+      <li><strong>hostname</strong> - display name of computer</li>
+      <li><strong>mkdir</strong> - make a directory </li>
+      <li><strong>cd</strong> - change directory</li>
+      <li><strong>ls</strong> - list contents of current directory</li>
+      <li><strong>rmdir</strong> - remove a directory</li>
+      <li><strong>pushd</strong> - save current directory</li>
+      <li><strong>popd</strong> -  go to most recent saved directory</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="about-ls">About ls</h3>
+
+  <p><strong>Does ls take any arguments or flags?  If so, what are they? &#8594;</strong> </p>
+
+  <div class="incremental">
+    <ul>
+      <li>ls <strong>optionally</strong> takes <strong>one argument</strong> - the directory that you&#8217;d like to list files in.  ex.  shows all files on your desktop - ls ~/Desktop</li>
+      <li><strong>-l</strong> - show detailed (long) listing</li>
+      <li><strong>-a</strong> - display all files, even hidden files</li>
+      <li><strong>-t</strong> - sort listing by time</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="about-mkdir">About mkdir</h3>
+
+  <p><strong>Does mkdir take any arguments or flags?  If so, what are they? &#8594;</strong> </p>
+
+  <div class="incremental">
+    <ul>
+      <li>mkdir <strong>requires one argument</strong> - the directory that you&#8217;re creating</li>
+      <li><strong>-p</strong> - create each nested directory in the pathname specified as the argument.  ex.  this creates three directories nested within eachother - mkdir foo/bar/baz </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="some-special-symbols-for-paths">Some Special Symbols for Paths</h3>
+
+  <p><strong>Name some special symbols that we know for paths&#8230; like current directory or home. &#8594;</strong></p>
+
+  <div class="incremental">
+    <pre>
+ . (dot) - the current directory
+ ..  (dot dot) - up one directory (parent directory)
+ ../..  (dot dot slash dot dot)  - up two directories
+ /  (slash) - root directory
+ ~ (tilde) - home directory
+ - (dash) - directory you were previously in
+</pre>
+  </div>
+</section>
+
+<section>
+  <h3 id="making-things-easier">Making Things Easier&#8230;</h3>
+
+  <p><strong>Name some special keys that we use to reduce the amount of typing that we have to do. &#8594;</strong></p>
+
+  <div class="incremental">
+    <ul>
+      <li>&lt;TAB&gt; - autocomplete</li>
+      <li>&lt;TAB&gt;&lt;TAB&gt; -autocomplete</li>
+      <li>&lt;UP&gt; - previous commend</li>
+      <li>&lt;DOWN&gt; - next command</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="activity-drills"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 3 (use set 1)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 1</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="more-about-paths">More About Paths</h3>
+
+  <p>root</p>
+
+  <ul>
+    <li>represented by /</li>
+    <li>the &#8216;parent&#8217; directory</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="absolute-paths">Absolute Paths</h3>
+
+  <p><strong>Absolute paths</strong> are paths expressed as starting from root.</p>
+
+  <ul>
+    <li>/Users/professor/Desktop</li>
+    <li>/Volumes</li>
+  </ul>
+
+  <p><strong>You can reference an absolute path regardless of what directory you&#8217;re in</strong>.</p>
+</section>
+
+<section>
+  <h2 id="you-can-reference-an-absolute-path-regardless-of-what-directory-youre-in">You can reference an absolute path regardless of what directory you&#8217;re in</h2>
+</section>
+
+<section>
+  <h3 id="relative-paths">Relative Paths</h3>
+
+  <p><strong>Relative paths</strong> are paths expressed as relative from the current working directory.</p>
+
+  <p>For example&#8230; if you&#8217;re in /Users</p>
+
+  <ul>
+    <li>to get to home: cd student</li>
+    <li>to get to Desktop: cd student/Desktop</li>
+  </ul>
+
+  <p>You have to be in the directory that you&#8217;re assuming to be current for this to work.</p>
+</section>
+
+<section>
+  <h2 id="remember---at-the-prompt-youre-running-commands-in-the-context-of-some-location-think-folderdirectory-on-your-computer">Remember - at the <em>prompt</em>, you&#8217;re running <em>commands</em> in the context of some location (think folder/directory) on your computer</h2>
+</section>
+
+<section>
+  <h3 id="what-was-that-again">What Was That Again?</h3>
+
+  <ul>
+    <li>when you&#8217;re at the prompt</li>
+    <li>and you type in a command</li>
+    <li>you&#8217;re doing so while you&#8217;re in a particular folder/directory</li>
+    <li>you&#8217;re always <em>located</em> somewhere on your file system</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="absolute-vs-relative-paths">Absolute vs Relative Paths</h3>
+
+  <ul>
+    <li>imagine that you&#8217;re at a prompt.  </li>
+    <li>you type <strong>pwd</strong> to determine where you are; it says that you&#8217;re in <strong>/Volumes</strong>.  </li>
+    <li>you type <strong>ls</strong> to see what&#8217;s in the directory that you&#8217;re in, and you see:</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">Macintosh HD			USBDRIVE1			USBDRIVE2
+</code></pre></div>
+
+  <p><strong>How would you change directory so that you&#8217;re in USBDRIVE1 by using an absolute path?  What about relative?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>absolute - cd /Volumes/USBDRIVE1</li>
+      <li>relative - cd USBDRIVE1</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="absolute-vs-relative-paths-1">Absolute vs Relative Paths</h3>
+
+  <ul>
+    <li>assume the same folder structure exists as the previous slide - /Volumes contains three directories: USBDRIVE1, USBDRIVE2 and Macintosh HD</li>
+    <li>you type <strong>pwd</strong> to determine where you are; now it says that you&#8217;re in <strong>/Volumes/USBDRIVE1</strong>.  </li>
+  </ul>
+
+  <p><strong>How would you change directory so that you&#8217;re in USBDRIVE2 instead?  Do this with an absolute path, and again with a relative path.</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>absolute - cd /Volumes/USBDRIVE2</li>
+      <li>relative - cd ../USBDRIVE2</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="absolute-vs-relative-paths-2">Absolute vs Relative Paths</h3>
+
+  <ul>
+    <li>you type <strong>pwd</strong> to determine where you are; you&#8217;re in your Desktop - /Users/student/Desktop  </li>
+  </ul>
+
+  <p><strong>List the different ways to get to your Downloads folder with one command.</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>absolute - cd /Users/student/Downloads</li>
+      <li>absolute - cd ~/Downloads</li>
+      <li>relative - cd ../Downloads</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="lab"><strong>Lab</strong></h3>
+
+  <p><a href="lab-02-part-01-paths-review.txt">Paths and Review</a></p>
+
+  <ul>
+    <li>Type each command (with arguments and flags) exactly</li>
+    <li>Only press &lt;ENTER&gt; when instructed&#8230;</li>
+    <li>&lt;TAB&gt;, &lt;ENTER&gt;, &lt;UP&gt;, &lt;DOWN&gt; are the actual keys!</li>
+    <li>Paste answer or output below the dashed line (&#8212;&#8212;&#8212;&#8212;)</li>
+  </ul>
+
+</section>
+
+<section>
+  <h2 id="output-download-and-uncompressoutput-download-uncompresshtml"><a href="output-download-uncompress.html">Output, Download and Uncompress</a></h2>
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

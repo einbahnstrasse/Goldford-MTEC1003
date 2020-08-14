@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Generating SSH Keys</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003 - Fall 2016</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-6---prep---creating-local-and-remote-repositories">Lab 7 - Generating SSH Keys</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+  <li>Generating SSH keys and saving them on your usb flash drive</li>
+  <li>Creating a SSH config file on your local machine, which points to the keys on your flash drive</li>
+  <li>Adding your public key to your GitHub account.</li>
+  <li>Creating a repository on the GitHub website.</li>
+  <li>Cloning the repository on your local machine.</li>
+  <li>Editing a file in your local repository.</li>
+  <li>Sending those changes to to your remote repo on GitHub.</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="generate-your-ssh-keys">Flash drive formatting</h3>
+
+<p>We will store your SSH keys on a USB flash drive, since it is not secure to store them on lab computers.</p>
+
+<p>Please be sure your flash drive is formatted for MAC OS Extended.  You can check it by right clicking on your drive and choosing "Get Info".  In the info window (see below), you can view the format.  If it is anything but Mac OS Extended (e.g. MS-DOS (FAT 32) or NTFS), you'll need to reformat following the instructions below.</p>
+
+<img src="../../resources/img/usb-drive-info.png" alt="More Info" />
+
+<p><strong>Please note:</strong> reformatting your flash drive will erase anything you have saved on there, so please back it up first, or use a new drive.</p>
+
+<ul>
+<li>Go to Applications > Utilities > Disk Utility</li>
+<li>Select your flash drive on the left-hand side.</li>
+<li>Choose the Erase option at the top</li>
+<li>In the format dropdown, choose the first option, Mac OS Extended (Journaled)</li>
+<li>If the name of your flash drive has a space in it, close the space or use an underscore (e.g. My Flash Drive should be MyFlashDrive, etc)</li>
+<li>Click Erase.
+  <img src="../../resources/img/disk-utility.png" alt="Disk Utility" />
+</li>
+</ul>
+
+<h3 id="generate-your-ssh-keys">Generating SSH Keys and saving on a USB flash drive</h3>
+
+<p>The steps below will generate SSH keys and set up a config file to allow you to securely connect to GitHub.</p>
+
+<p> In the examples below, where it says "your_usb_drive_name" or "your_email_address" in yellow text, replace with your the name of your drive or your email.</p>
+
+
+
+<ul>
+  <li>Open terminal</li>
+  <li>Change into your USB drive.</li>
+  <li>In the example below, you can tab twice to see everything in Volumes.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> /Volumes/<span class="s2">name_of_your_usb_drive</span>/
+</code></pre></div>
+
+<ul>
+  <li>Within your USB drive, create a hidden directory called .ssh.</li>
+  <li>Change permissions for that directory to 700.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">mkdir </span>.ssh
+<span class="nb">chmod </span>700 .ssh
+</code></pre></div>
+
+<ul>
+  <li>Generate your SSH keys and attach to your email (use the email you used to sign up for GitHub).</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"> ssh-keygen -t rsa -C <span class="s2">your_email_address</span>
+</code></pre></div>
+
+<ul>
+  <li>You should see a message that your keys are being generated and a prompt asking where to save the key.  (See below)</li>
+  <li>PLEASE DO NOT save in /Users/student/.ssh/id_rsa! You want to save on your USB drive.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/student/.ssh/id_rsa):
+</code></pre></div>
+
+<ul>
+  <li>When prompted as above, enter the following (but substitute your actual USB drive name):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">/Volumes/<span class="s2">your_usb_drive_name</span>/.ssh/github_rsa
+</code></pre></div>
+
+<ul>
+  <li>When prompted for a passphrase, just press return; do not enter a passphrase.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Enter passphrase (empty for no passphrase): <ENTER>
+Enter same passphrase again: <ENTER>
+</code></pre></div>
+
+<ul>
+  <li>You will see a confirmation that your key has been saved.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Your identification has been saved in /Volumes/your_usb_drive_name/.ssh/github_rsa.
+Your public key has been saved in /Volumes/<span class="s2">your_usb_drive_name</span>/.ssh/github_rsa.pub.
+The key fingerprint is:
+[some long string of letters and numbers] <span class="s2">your_email_address</span>
+The key's randomart image is:
+[image here]
+</code></pre></div>
+
+<ul>
+  <li>Change into your .ssh directory and change permissions.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> .ssh
+<span class="nb">chmod</span> 600 github_rsa
+</code></pre></div>
+
+<h3 id="set-up-config-file">Set up your ssh config file (on your local machine, not your flash drive)</h3>
+
+<ul>
+  <li>Change to your home directory. </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~
+</code></pre></div>
+
+<ul>
+  <li>Make a (hidden) directory called .ssh</li>
+  <li>Change into that directory.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">mkdir </span>.ssh
+<span class="nb">cd</span> .ssh
+</code></pre></div>
+
+<ul>
+  <li>Create your config file for connecting via ssh to GitHub.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">touch</span> config
+</code></pre></div>
+
+<ul>
+  <li>Open your config file in the text editor Nano.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">nano</span> config
+</code></pre></div>
+
+<ul>
+  <li>Enter the text below, substituting the name of your USB drive and GitHub username.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Host github.com
+    HostName github.com
+    IdentityFile /Volumes/<span class="s2">your_usb_drive_name</span>/.ssh/github_rsa
+    User <span class="s2">your_GitHub_username</span>
+</code></pre></div>
+
+<ul>
+  <li>Save/exit Nano: press "ctrl + x" then "y" (for yes, save changes) then "enter".</li>
+</ul>
+
+<h3 id="add-your-ssh-key-to-github-account">Add your SSH key to your GitHub account</h3>
+
+<p>In this step, you will configure your GitHub account to use your SSH key.</p>
+
+<ul>
+  <li>View your public key file (on your USB drive) so you can copy and paste.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cat</span> /Volumes/<span class="s2">your_usb_drive_name</span>/.ssh/github_rsa.pub
+</code></pre></div>
+
+<ul>
+  <li>Copy your <strong>PUBLIC</strong> key - make sure the file you are viewing is <strong>github_rsa.pub</strong> and NOT <strong>github_rsa</strong>, which is your <strong>private</strong> key that you should not share with anyone.</li>
+  <li>It should begin with <strong>ssh-rsa</strong> and end with your email.
+    <ul>
+      <li>It should NOT begin with <strong>-----BEGIN RSA PRIVATE KEY-----</strong> </li>
+    </ul>
+  </li>
+  <li>PLEASE NOTE: Be sure to get the entire key and only the key (not any additional lines or whitespace).
+</ul>
+
+<div class="highlight"><pre><code class="bash">ssh-rsa 2lB+W9jF8PKc-H/+J4OuCv...etc your_email_address</code></pre></div>
+
+<ol>
+  <li>Log into GitHub.</li>
+  <li>Click on the <strong>settings</strong> icon in the top right corner of the page.
+    <img src="../../resources/img/github-settings.png" alt="GitHub Settings" />
+  </li>
+  <li>On the settings page, click <strong>SSH keys</strong>in the menu on the left side</li>
+  <li>Click <strong>Add SSH key</strong>.
+    <img src="../../resources/img/add-ssh-key-github.png" alt="Add SSH Key" />
+  </li>
+  <li>In the <strong>Title</strong> field, add a description, e.g. "MTEC 1003 USB drive."</li>
+  <li>Paste your PUBLIC key (the one you just copied) into the <strong>key</strong> field.</li>
+  <li>Click <strong>Add key</strong>.</li>
+  <li>You may have to confirm by entering your GitHub password.</li>
+</ol>
+
+<h3 id="test-to-make-sure-it-works">Test to make sure it works</h3>
+
+<ul>
+  <li>Open your terminal and try to ssh into GitHub to test your key setup.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ssh -T git@github.com
+</code></pre></div>
+
+<ul>
+  <li>You might see a warning like this:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">The authenticity of host 'github.com (207.97.227.239)' can't be established.
+# RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+# Are you sure you want to continue connecting (yes/no)?
+</code></pre></div>
+
+<ul>
+  <li>Type: yes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+</code></pre></div>
+
+<ul>
+  <li>If the username is yours, it means you were successful in setting up your SSH key.
+
+If the message says "permission denied," you can try to troubleshoot with <a href="https://help.github.com/articles/error-permission-denied-publickey">this documentation</a>.</li>
+<li>If you get an error message saying your key is not secure, that permissions are not restrictive enough, check the formatting of your USB drive again and chances are it's not formatted for Mac OS Extended.
+  <ul>
+    <li>If its not, start from the top, by formatting your drive. </li>
+    <li>If it is, make sure you assigned the correct permissions (see the step where you change into the .ssh directory on your drive and change permissions (chmod 600 github_rsa).</li>
+  </ul>
+</li>
+</ul>
+
+<h3 id="create-your-remote-repository">Create Your Remote Repository</h3>
+
+<p>This will create a remote git repository on github.</p>
+
+<ol>
+  <li>Go to your account home (github.com/username).</li>
+  <li>Click on the Repositories tab.</li>
+  <li>Click the green New button on the right side.</li>
+  <li>Give your repository the name lab-07-generating-ssh-keys.</li>
+  <li>The repository should be public (the default).</li>
+  <li>Click "Initialize this repository with a README".</li>
+  <li>Click Create Repository.</li>
+  <li>Refresh your main GitHub page and you should see the new repository.
+</ol>
+
+<h3 id="cloning-your-repository">Cloning your repository</h3>
+
+<p>This will clone the repository you just created on GitHub on your local machine.</p>
+
+<ul>
+  <li>Open terminal.</li>
+  <li>(if doesn&#8217;t already exist) create a folder that consists of your first initial and last name in your <strong>home directory</strong> </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~
+mkdir myname
+</code></pre></div>
+
+<ul>
+  <li>use pwd to verify that you&#8217;re in the correct folder
+    <ul>
+      <li>you should be in <strong>~/myname/</strong></li>
+      <li>if you&#8217;re not, cd into it</li>
+    </ul>
+  </li>
+  <li>to prove that this is not yet a repository, list <strong>all</strong> files in your current directory </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>it should mostly be empty or contain only your previous labs</li>
+  <li>it should not contain any .git folders</li>
+</ul>
+
+<ul>
+  <li>Make sure again that you're in the correct directory!  (/Users/student/myname)</li>
+  <li>Clone the GitHub repository you just created: lab-07-generating-ssh-keys</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git clone git@github.com:<span class="s2">your_username</span>/lab-07-generating-ssh-keys.git
+</code></pre></div>
+
+<ul>
+  <li>The output should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Cloning into 'lab-07-generating-ssh-keys'...
+remote: Counting ojects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Checking connectivity... done.
+</code></pre></div>
+
+<ul>
+  <li>Check to make sure you've linked to your remote repository:</li>
+  <li>Change into your repository directory (lab-07-generating-ssh-keys).</li>
+  <li>Use the git remote command.
+</ul>
+
+<div class="highlight"><pre><code class="bash">cd lab-07-generating-ssh-keys
+git remote -v
+</code></pre></div>
+
+<ul>
+  <li>You should see:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">origin git@github.com:your_username/lab-07-generating-ssh-keys.git (fetch)
+origin git@github.com:your_username/lab-07-generating-ssh-keys.git (push)
+</code></pre></div>
+
+<ul>
+  <li>configure your name and email for your commits</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git config user.name  <span class="s2">&quot;my first and last name&quot;</span>
+git config user.email <span class="s2">&quot;my@email.address&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>finally, use git config again to see if this worked:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git config -l
+</code></pre></div>
+
+<ul>
+  <li>(use should see your name and email appear in the configuration)</li>
+</ul>
+
+<h3 id="creating-and-saving-changes-locally-sending-to-remote-repository">Creating and Saving Changes Locally, Sending to Remote Repository</h3>
+
+<p>In this part of the lab, you will edit a text file in your local repository, and then you&#8217;ll send it to your remote repository.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for lab-07-generating-ssh-keys
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/yourname/lab-07-generating-ssh-keys</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+      <li>if this doesn&#8217;t exist yet&#8230; make sure you completed the beginning part of this lab</li>
+    </ul>
+  </li>
+  <li>use <strong>git status</strong> to show that there aren&#8217;t any changes yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+</code></pre></div>
+
+<ul>
+  <li>You will have a file called <strong>README.md</strong> in your lab 07 directory. Open it using <strong>SublimeText</strong> (see below&#8230;)</li>
+  <li>Go to Applications &#8594; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)</li>
+  <li>Once SublimeText is open, open the README.md file by going to File &#8594; Open</li>
+  <li>Add the following to your file: "This is lab 7.  It's about SSH."</li>
+  <li>Save your file by going to File &#8594; Save (or command+s).</li>
+  <li>Switch back to terminal</li>
+  <li>Use <strong>git status</strong> to show that you&#8217;ve made changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output; notice that it contains README.md </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in the working directory)
+
+      modified:    README.md
+no changes added to commit (use "git add" and/or "git commit -a")
+</code></pre></div>
+
+<ul>
+  <li>if we want to save this file in the repository, we have <em>stage</em> it (that is, mark it as something that we&#8217;re ready to save / commit)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git add --all
+</code></pre></div>
+
+<ul>
+  <li>to check that you&#8217;ve staged your commit, use <strong>git status</strong> again</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should output the following text (note that README.markdown moved from <em>untracked</em> to <em>Changes to be committed</em>)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+      modified:    README.md
+</code></pre></div>
+
+<ul>
+  <li>now we&#8217;re ready to commit (that is, save the file to the local repository); everything after the -m is the message that will be associated with the changes that you&#8217;ve made</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git commit -m <span class="s2">&quot;edited the README file&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>the output of the command should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">[</span>master 5b24d27<span class="o">]</span> edited the readme file
+ ...etc
+</code></pre></div>
+
+<ul>
+  <li>check the status again </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>notice that there is nothing staged and no more changes!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+nothing to commit, working directory clean
+</code></pre></div>
+
+<ul>
+  <li>to show the changes that you&#8217;ve saved so far, use <strong>git log</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git log --color
+</code></pre></div>
+
+<ul>
+  <li>it should show you the following&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">commit 5b24d2777a602908978916ca8fe9c8dd2ed6036b
+Author: bree &lt;bzuckerman@citytech.cuny.edu&gt;
+Date:   Wed Mar 5 11:45:21 2015 -0500
+
+    edited the README file
+</code></pre></div>
+
+<ul>
+  <li>you can share your changes / send them to a remote repository by using <strong>git push</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git push origin master
+</code></pre></div>
+
+<ul>
+  <li>it should result in:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Counting objects: 3, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 242 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To https://github.com/bzuckerman/lab-07-generating-ssh-keys.git
+ * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
+</code></pre></div>
+
+<ul>
+  <li>go back to GitHub and look in your repository.  You should see the changes in the Readme file.</li>
+</ul>
+
+
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Basics</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../resources.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-5---part-2---javascript-values-types-operations-variables-calling-functions-and-inputoutput">Lab 5 - Part 1 - JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output</h1>
+
+<p>In this lab, you&#8217;ll be creating a few programs:</p>
+
+<ol>
+  <li>greetings</li>
+  <li>madlibs and madlibs with prompt</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="setup">Setup</h3>
+
+<p>Let's start with a shorthand way of setting up a new repository...</p>
+<p>On <i>GitHub</i>, do the following (use your <i>git cheatsheet</i> for a reminder):</p>
+
+<ul>
+  <li>create a new repository (using the green <strong>"New"</strong> button) called <strong>lab-05-js-py</strong></li>
+  <li>initialize your new repo with a README.md file</li>
+ 	<li>Find the green <strong>"Code"</strong> button, click on it, and copy the .git <strong>link</strong> in the dropdown menu.</li>
+</ul>
+
+<p>In Terminal, go to your <strong>/mtec1003</strong> folder and type:</p>
+
+<!-- <ul>
+  <li>type </li>
+  <li>go to your repository folder: <strong>/Users/[yourName]/mtec1003/lab-05-js-py/</strong></li>
+  <li>once you&#8217;re in it, check if your repository exists by using git <strong>status</strong>:</li>
+  <li>you should get back:</li>
+</ul> -->
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> git clone <span class="s1">[paste your .git link from GitHub here!]</span></code></pre></div>
+
+<p>Run this command, pasting in the link you copied from <i>GitHub</i>, as indicated. This <strong>clones</strong> the repo into your /mtec1003 folder, meaning <i>it copies your remote repoistory onto your local computer.</i></p>
+<p>Now we're ready to make some JavaScript. Open up your text editor (e.g. Atom, Sublime Text, etc.)...</p>
+
+<hr />
+
+<h3 id="greetings">greetings</h3>
+
+<ul>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>greetings.html</strong> in your repository directory: <strong>~/mtec1003/lab-05-js-py/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>ask the user for their name</li>
+  <li>save that input in a variable</li>
+  <li>print out to the JavaScript console &#8220;Hi (name that the user entered)!&#8221;</li>
+  <li>save your file in your text editor (e.g. Atom, Sublime Text, etc.)</li>
+  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and push to save your file in version control and submit it</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> What<span class="err">&#39;</span>s your name?
+&gt; bree
+Hi bree!
+</code></pre></div>
+
+<hr />
+
+<h3 id="madlibs">madlibs</h3>
+
+<p>Write a program that simulates MadLibs!  It will ask your for words, and then it will print out a story (in this case lyrics), with the user entered words substituted for words in the story.</p>
+
+<p>Part 1</p>
+
+<ul>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>madlibs.html</strong> in your repository directory: <strong>~/mtec1003/lab-05-js-py/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>define 4 variables, set them each equal to a word: a noun, an adjective, an adverb and a verb</li>
+  <li>name the variables after the part of speech of the word they are replacing, for example</li>
+</ul>
+
+<div class="highlight"><pre><code class="html">var noun = &#39;pizza&#39;;
+var adjective = &#39;ridiculous&#39;;
+etc...
+</code></pre></div>
+
+<ul>
+  <li>write program that <strong>uses those 4 variables</strong> in these lyrics:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">On a tropical island,
+Underneath a molten lava moon.
+Hangin<span class="s1">&#39; with the hula dancers,</span>
+<span class="s1">Askin&#39;</span> questions cause<span class="err">&#39;</span> they got all the answers.
+</code></pre></div>
+
+<ul>
+  <li>substitute any words you&#8217;d like to change with one of the variables you defined (make sure it's the same part of speech though! (e.g. substitute a noun with another noun, etc))</li>
+  <li>use string concatenation to stitch together the lyrics</li>
+  <li>print out the new version of lyrics, each line on a separate line</li>
+  <li>for example, the <strong>JavaScript console</strong> may display:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">On a tropical pizza,
+Underneath a ridiculous moon ...
+</code></pre></div>
+
+<ul>
+  <li>save your file in your text editor (e.g. Atom, Sublime Text, etc.)</li>
+  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and push to save your file in version control and submit it</li>
+</ul>
+
+<p>Part 2</p>
+
+<ul>
+  <li>modify your program so that it asks for user input for each variable (don&#8217;t use hardcoded values anymore)</li>
+  <li>this should result in 4 dialog boxes</li>
+  <li>and the result of the new lyrics printed out to the <strong>JavaScript console</strong></li>
+  <li>save your file in your text editor (e.g. Atom, Sublime Text, etc.)</li>
+  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and push to save your file in version control and submit it</li>
+</ul>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

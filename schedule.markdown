@@ -1,0 +1,285 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+<!-- <script src="../../resources/js/jquery-1.6.3.min.js"></script> -->
+<!-- <script src="../../resources/js/persistent-nav-weekly.js"></script> -->
+<!-- <div class="container" id="weeklynavbar">
+  <div class="weeknav">
+    <a href="#w1">Week 1 dummy</a>
+    <a href="#w2">Week 2 dummy</a>
+    <a href="#w3">Week 3 dummy</a>
+    <a href="#w4">Week 4 dummy</a>
+  </div>
+</div> -->
+
+<!-- <div id="weeklynavbar">
+  <ul id="weeknav">
+    <li><a href="#w1">Week 1 dummy</a></li>
+    <li><a href="#w2">Week 2 dummy</a></li>
+    <li><<a href="#w3">Week 3 dummy</a></li>
+    <li><<a href="#w4">Week 4 dummy</a></li>
+  </ul>
+</div> -->
+
+# Schedule
+_This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [CUNY CityTech Fall 2020 Academic Calendar](http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf). The following topics and their precise order may change. Check here for updates!_  
+<div class="instructornote">  
+<p markdown="span"><em><b>Study slides, references, and tutorials before each class.</b></em></p></div>  
+**Skip to:** <a href="#w1">Week 1: 8/31</a> <a href="#w2">Week 2: 9/14</a> <a href="#w3">Week 3: 9/21</a> <a href="#w4">Week 4: 9/29</a> <a href="#w5">Week 5: 10/5</a> <a href="#w6">Week 6: 10/14</a> <a href="#w7">Week 7: 10/19</a> <a href="#w8">Week 8: 10/26</a> <a href="#w9">Week 9: 11/2</a> <a href="#w10">Week 10: 11/9</a> <a href="#w11">Week 11: 11/16</a> <a href="#w12">Week 12: 11/23</a> <a href="#w13">Week 13: 11/30</a> <a href="#w14">Week 14: 12/7</a> <a href="#w15">Week 15: 12/14</a>
+
+* * *
+
+<a id="w1"></a>
+<h3 class="schedule-page-date">Week 1: August 31st</h3>
+### File System: Introduction, Navigation, Paths, Output, Download, Uncompress  
+##### Start-of-Semester Business
+* [Personal Info Form DUE NOW!](https://forms.gle/6M39dqqsh9pLQr1R7)  
+* Review [Syllabus + course policies.]()  
+* Review [Detailed Breakdown of Grading.]()  
+* Review [Keys for Success in MTEC1003](/Goldford-MTEC1003-Fall2020/resources/week.01/keys.for.success.html)  
+
+##### Slides  
+* [About the Command Line](/Goldford-MTEC1003-Fall2020/labs/01/command-line.html)  
+* [Entering Commands](/Goldford-MTEC1003-Fall2020/labs/01/entering-commands.html)  
+* [Navigating the File System](/Goldford-MTEC1003-Fall2020/labs/01/file-system.html)  
+* [Paths](/Goldford-MTEC1003-Fall2020/labs/02/paths-review.html#1.0)  
+* [Output, Download, and Uncompress](/Goldford-MTEC1003-Fall2020/labs/02/output-download-uncompress.html)  
+
+##### LAB ASSIGNMENTS  
+<div class="instructornote"><p markdown="span"><em>Due online (GitHub) at 11:59 PM Saturday night each week!</em></p></div>  
+* [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003-Fall2020/labs/01/how.to.submit.1st.week.labs.html)  
+* [Lab 1 / Part 1: Commands + Navigation](/Goldford-MTEC1003-Fall2020/labs/01/lab.01.part1.commands.navigation.txt)  
+* [Lab 1 / Part 2: Download + (Un)Compress](/Goldford-MTEC1003-Fall2020/labs/01/lab.01.part2.download.compress.txt)  
+
+* * *
+
+<a id="w2"></a>
+<h3 class="schedule-page-date">Week 2: September 14th</h3>
+### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
+<p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 9/7. VOE Rosters due 9/15. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+
+##### Slides  
+* [Review](/Goldford-MTEC1003-Fall2020/labs/03/review.html#1.0)  
+* [Working With Files](/Goldford-MTEC1003-Fall2020/labs/03/working-with-files.html)  
+* [File Permissions, Editing, Date + Time, Shell Scripting](/Goldford-MTEC1003-Fall2020/labs/03/permissions-editing-date-time.html)  
+* [Shell Scripting: Some Odds and Ends](/Goldford-MTEC1003-Fall2020/labs/04/shell-scripting.html#1.0)  
+
+##### LAB ASSIGNMENTS
+* [Submitting Week 2 Labs](/Goldford-MTEC1003-Fall2020/labs/02/how.to.submit.2nd.week.labs.html)  
+* [Lab 2 / Part 1: Review](/Goldford-MTEC1003-Fall2020/labs/02/lab.02.part1.review.compress.txt)  
+* [Lab 2 / Part 2: Working with Files](/Goldford-MTEC1003-Fall2020/labs/02/lab.02.part2.working.with.files.txt)  
+* [Lab 2 / Part 3: Shell Scripting, Permissions, Editing Text, Date + Time](/Goldford-MTEC1003-Fall2020/labs/02/lab.02.part3.shell.scripting.txt)  
+
+* * *
+
+<a id="w3"></a>
+<h3 class="schedule-page-date">Week 3: September 21st</h3>
+### Version Control: Introduction to GIT, Concepts + Basic Commands
+
+##### Slides  
+* [Introduction to Version Control + Git](/Goldford-MTEC1003-Fall2020/labs/04/version-control.html)  
+* [Creating and Setting Up Repositories](/Goldford-MTEC1003-Fall2020/labs/04/creating-repositories.html)  
+* [Making, Saving, and Sharing Changes](/Goldford-MTEC1003-Fall2020/labs/04/changing-files.html)  
+
+##### LAB ASSIGNMENTS  
+<!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-Fall2020/labs/05/lab-05-git-part-01.html)   -->
+* [LAB 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-Fall2020/labs/03/lab-03-git-intro.html)  
+<!-- * [exp lab 4 part 1 link](/Goldford-MTEC1003-Fall2020/labs/04/lab-04-git-part-01.html)   -->
+
+##### Video Tutorial Series  
+###### Daniel Shiffman: Git and GitHub for Poets  
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
+* * *
+
+<a id="w4"></a>
+<h3 class="schedule-page-date">Week 4: September 29th</h3>
+### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_
+<p class="redish">A TUESDAY, but follows a Monday schedule. <i>City Tech is closed on 9/28. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+
+##### Tutorials  
+* [Pull Requests + Merge Conflicts](/Goldford-MTEC1003-Fall2020/labs/04/git.pull.requests.and.merge.tutorial.v01.html)  
+* [Shiffman Video Tutorial on Pull Requests / Merges](https://youtu.be/JtIX3HJKwfo)
+
+##### LAB ASSIGNMENTS  
+* [Lab 4 / Part 1: Pull Requests + Merge Conflicts](/Goldford-MTEC1003-Fall2020/labs/04/lab-04-git-part-01a.html)  
+* [Lab 4 / Part 2: Review — Creating + Setting Up Git Repositories](/Goldford-MTEC1003-Fall2020/labs/04/lab-04-git-part-02a.html)  
+* [Lab 4 / Part 3: Review — Saving + Sending Changes to Your Repository](/Goldford-MTEC1003-Fall2020/labs/04/lab-04-git-part-03a.html)  
+
+* * *
+
+<a id="w5"></a>
+<h3 class="schedule-page-date">Week 5: October 5th</h3>
+### JavaScript + Python: Introduction, Variables, Types, Input/Output
+
+##### Slides  
+* [Introduction to JavaScript](/Goldford-MTEC1003-Fall2020/labs/05/js-intro.html)  
+* [JavaScript Basics](/Goldford-MTEC1003-Fall2020/labs/05/js-basics.html)  
+* Python tutorial?!  
+
+##### LAB ASSIGNMENTS
+* [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003-Fall2020/labs/05/lab-05-part1-js-basics.html)  
+* [Lab 5 / Part 2: Python Basics](/Goldford-MTEC1003-Fall2020/labs/05/lab-05-part2-python-basics.html)  
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w6"></a>
+<h3 class="schedule-page-date">Week 6: October 14th</h3>
+### Review: Version Control + Basic JavaScript/Python
+<p class="redish">A WEDNESDAY, but follows a Monday schedule. <i>City Tech is closed on 10/12. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+
+##### Assignment #2 Prep
+* Returning to small teams (pairs) for exchange of creative ideas and sharing of labor.
+* We will practice this collaboration by building the patches below mostly on small teams.
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w7"></a>
+<h3 class="schedule-page-date">Week 7: October 19th</h3>
+### Javascript + Python: Conditionals
+### Javascript + Python: Debugging
+
+##### Ice-Breaker + Discussion
+* Listening + Review of [Assignment #2](/Goldford-ENT3320/resources/week.04/assignment.02.html) Patches (on Monday 3/9)
+
+### [Midterm Assignment #4: Due Sunday 3/22!](/Goldford-ENT3320/resources/week.08/assignment.04.html)
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w8"></a>
+<h3 class="schedule-page-date">Week 8: October 26th</h3>
+### Javascript + Python: For Loops
+<p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w9"></a>
+<h3 class="schedule-page-date">Week 9: November 2nd</h3>
+### Javascript + Python: More Kinds of Loops
+<p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+
+##### Spatialization in _spat~_
+* [spat~ for Max/MSP: download is NOW FREE!](https://forum.ircam.fr/projects/detail/spat/)
+* simple binaural spatialization of a single sound source in Max/MSP
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w10"></a>
+<h3 class="schedule-page-date">Week 10: November 9th</h3>
+### Javascript + Python: Functions Definitions + Function Calls
+
+##### Ice-Breaker + Discussion
+* Develop a _storyboard_ for any number of elements + short scenes that our collective project might include.
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w11"></a>
+<h3 class="schedule-page-date">Week 11: November 16th</h3>
+### HTML/CSS: Introduction
+#### Review: Conditionals, Loops, Functions
+
+##### Ice-Breaker + Discussion
+* Listening + Review of [Midterm Assignment #4](/Goldford-ENT3320/resources/week.08/assignment.04.html) (on Monday 3/23)
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w12"></a>
+<h3 class="schedule-page-date">Week 12: November 23rd</h3>
+### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
+<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+
+##### LAB ASSIGNMENTS
+*  
+
+##### Further Reading / Suggested Resources
+*
+
+* * *
+
+<a id="w13"></a>
+<h3 class="schedule-page-date">Week 13: November 30th</h3>
+### Introduction to Python Data Visualization + Mapping
+<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/30. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w14"></a>
+<h3 class="schedule-page-date">Week 14: December 7th</h3>
+### Introduction to _GitHub Pages_
+#### Review: HTML/CSS
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *
+
+<a id="w15"></a>
+<h3 class="schedule-page-date">Week 15: December 14th</h3>
+### Complete + Present Final Assignments
+<p class="redish">Finals week begins. <i>Last class session on 12/14. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf">CityTech Fall 2020 Schedule.</a></i></p>
+* Talkback and Evaluation After Launch?
+
+##### LAB ASSIGNMENTS
+*
+
+##### Further Reading / Suggested Resources
+*  
+
+* * *

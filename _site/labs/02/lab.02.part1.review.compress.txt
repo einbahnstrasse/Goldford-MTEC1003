@@ -1,0 +1,159 @@
+MTEC1003 — LAB 02 (revised 8/9/20 —lg)
+
+LAB 2 / PART 1: Review
+==========
+Follow the instructions line-by-line.  
+
+* Type in the commands as is, but ignore the beginning prompt.  
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+==========
+This lab will review downloading and uncompressing files, and it will get us set up for the remainder of the labs.
+==========
+==========
+1. Go to your home directory.
+
+Write the command that you used to do this below:
+----------
+
+
+
+==========
+2. Prove that you're in your home directory.
+
+Write the command that you used to do this - as well as its output - below :
+----------
+
+
+
+==========
+3. Create a new directory inside your home directory named after this class. Call it "mtec1003".
+
+Write the command that you used to do this:
+----------
+
+
+
+==========
+4.  A compressed archive (.tar.gz) of some lab files we're using today lives at this url: 
+
+http://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/03/mtec1003-lab-02.tar.gz
+
+Using a Terminal command that we learned, 
+download this file to your home directory into a file called mtec1003-lab-02.tar.gz
+
+This command should have a *flag* to specify the output file.
+MAKE SURE TO NAME YOUR OUTPUT FILE: mtec1003-lab-02.tar.gz
+
+Write the command(s) that you used to download this file:
+----------
+
+
+
+==========
+5.  Uncompress the file that you just downloaded. (Remember which command to use for this type of archive...)
+
+Write the command(s) that you used to do this - as well as its output - below:
+----------
+
+
+
+
+
+
+==========
+6.  You should now have a directory called mtec1003-lab-02 inside your mtec1003 directory, 
+which is inside your home directory. Verify that this directory exists.
+
+If the directory does not exist, start over from step #1.
+
+Otherwise...
+
+Write the command(s) that you used to do this - as well as its output - below:
+----------
+
+
+
+
+
+
+
+==========
+7.  What directories are in the mtec1003-lab-02 folder?
+
+Write the command(s) that you used to determine this - as well as its output - below:
+----------
+
+
+
+
+
+
+==========
+8.  Go back to your home directory. Then change to the science-fiction directory using a relative path.  The directory is located in books... which is located in the mtec1003-lab-02 directory.  Verify you're in the right directory using pwd.
+
+Write the commands, including going home, that you used to do this:
+----------
+
+
+
+
+
+
+==========
+9.  Write the files that are in the science fiction directory below.
+
+Write the command(s) that you used to do this - as well as its output - below:
+----------
+
+
+
+
+
+==========
+10.  Return to your home directory again.  
+Now, go back to the science-fiction directory using an ABSOLUTE PATH!
+Verify that you're in the right directory using pwd.
+
+Write the command(s) that you used to do this below:
+----------
+
+
+
+
+==========
+11. Find out what the most recently modified directory is in mtec1003-lab-02. 
+How would you find this out?
+Hint: perhaps use something to show the modified date... and sort it by time...
+
+*Also, be sure to cd into your mtec1003-lab-02 folder first!
+
+Write the command(s) that you used to do this below:
+----------
+
+
+
+
+
+
+
+==========
+12. Create a compressed archive of the logs folder: 
+that is, take the contents of logs and create a single archive (.tar), and compress (.gz)
+
+Write the command(s) that you used to do this below:
+----------
+
+
+
+
+
+
+
+==========
+13. To finish up, save this file and, using your mouse or with a Terminal command, 
+move it into your mtec1003-lab-02 folder. 
+Next: Go on to LAB 2 / PART 2...
+----------

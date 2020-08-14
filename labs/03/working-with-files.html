@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Working With Files</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+  <h1 id="working-with-files">Working With Files</h1>
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="touch">touch</h3>
+
+  <p><strong>Create a new file or change the modified date of an existing file&#8594;.</strong></p>
+
+  <ul>
+    <li>think - record the last time you&#8217;ve <em>touched</em> the file.</li>
+    <li>takes one argument, the path of the file name that you&#8217;re modifying/creating</li>
+    <li><strong>if the file already exists</strong> touch changes the modified date &#8594;</li>
+    <li><strong>if the file does not exist</strong> it creates it &#8594;</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">touch filename.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="cp">cp</h3>
+
+  <p><strong>Copy file to a path&#8594;</strong></p>
+
+  <ul>
+    <li>think: <em>copy</em></li>
+    <li>requires two arguments - pathnames for both source and destination</li>
+    <li>can take a flag, -r, to copy <em>recursively</em></li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">cp filename1.txt filename2.txt
+
+<span class="c"># use -r to copy recursively (for example, all nested directories and files)</span>
+
+cp -r dir1 dir2
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="mv">mv</h3>
+  <p><strong>Move file to a different location, or rename. &#8594;</strong></p>
+
+  <ul>
+    <li>think: <em>move</em>.</li>
+    <li>requires two arguments - pathnames for both source and destination</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># renaming </span>
+mv filename1.txt filename2.txt
+
+<span class="c"># moving</span>
+mv filename.txt dir
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="less">less</h3>
+
+  <p><strong>Show the contents of a file with pagination. &#8594;</strong></p>
+
+  <ul>
+    <li>requires a single argument, the path to the file</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">less filename1.txt
+
+<span class="c"># use &lt;SPACE&gt; to page down</span>
+<span class="c"># use &lt;b&gt; to page up</span>
+<span class="c"># use &lt;UP&gt;,&lt;DOWN&gt; to navigate by line</span>
+<span class="c"># use &lt;q&gt; to quit</span>
+<span class="c"># use &lt;/&gt; to search</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="more">more</h3>
+
+  <p><strong>Show the contents of a file with pagination. &#8594;</strong></p>
+
+  <ul>
+    <li>requires a single argument, the path to the file</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">more filename1.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="cat">cat</h3>
+
+  <p><strong>Show all of the contents of a file &#8594;</strong></p>
+
+  <ul>
+    <li>requires a single argument, the path to the file</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">cat filename1.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="head">head</h3>
+
+  <p><strong>Show the contents of the start of a file. &#8594;</strong></p>
+
+  <ul>
+    <li>think <strong>head is the beginning / top</strong> of the file </li>
+    <li>requires a single argument, the path to the file</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">head filename1.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="tail">tail</h3>
+
+  <p><strong>Show the contents of the end of a file. &#8594;</strong></p>
+
+  <ul>
+    <li>think <strong>tail is the end of the file</strong></li>
+    <li>requires a single argument, the path to the file</li>
+    <li>can be used with flags: -f (realtime) and -n (how many lines should be displayed?)</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">tail filename1.txt
+
+<span class="c"># show changes realtime!</span>
+tail -f filename.txt
+
+<span class="c"># display last 5 lines</span>
+tail -n5  filename.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="rm">rm</h3>
+
+  <p><strong>Remove a file. &#8594;</strong></p>
+
+  <ul>
+    <li>think: <em>remove</em></li>
+    <li>requires a single argument, the path to the file</li>
+    <li>has an optional flag, -r, for removing recursively</li>
+    <li>has an optional flag, -f, for skipping confirmation</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">rm filename1.txt
+
+<span class="c"># also... to remove everything recursively (and ignore</span>
+<span class="c"># confirmation)... use this (be careful with it!)</span>
+
+rm -rf filename1.txt
+</code></pre></div>
+
+</section>
+<section>
+  <h3 id="wildcard-matching">Wildcard Matching</h3>
+
+  <ul>
+    <li>you can work on a set of files by using wildcard matching</li>
+    <li>the * (asterisk) represents <em>anything</em></li>
+    <li>so, *.gif represents all files with a .gif extension</li>
+    <li>you can use wildcard matching with some of the commands that we&#8217;ve seen</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># copy all gifs into the archive folder</span>
+cp *.gif archive
+
+<span class="c"># move all gifs into the archive folder</span>
+mv *.gif archive
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="wc">wc</h3>
+
+  <p><strong>Count the number of lines, words or bytes in a file. &#8594;</strong></p>
+
+  <ul>
+    <li>think: <em>word count</em></li>
+    <li>requires a single argument, the path to the file</li>
+    <li>can take flags (e.g. -l, -w, -c)
+    <li>displays lines, words, bytes</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># count the number of lines, words, and bytes in a file</span>
+wc filename.txt
+
+<span class="c"># count the number of lines in a file</span>
+wc -l filename.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="activity-drills"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 3 (use set 3)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 3</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="lab"><strong>Lab</strong></h3>
+
+  <p><a href="lab-03-part-02-working-with-files.txt">Working With Files</a></p>
+
+  <ul>
+    <li>Type each command (with arguments and flags) exactly</li>
+    <li>Only press &lt;ENTER&gt; when instructed&#8230;</li>
+    <li>&lt;TAB&gt;, &lt;ENTER&gt;, &lt;UP&gt;, &lt;DOWN&gt; are the actual keys!</li>
+    <li>Paste answer or output below the dashed line (&#8212;&#8212;&#8212;&#8212;)</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="activity-drills-1"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 3 (use set 123)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 123</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h2 id="permissions-editing-date-and-timepermissions-editing-date-timehtml"><a href="permissions-editing-date-time.html">Permissions, Editing, Date and Time</a></h2>
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

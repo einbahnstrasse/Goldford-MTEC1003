@@ -1,0 +1,98 @@
+Lab - (Optional/Advanced) Find, Grep and Redirection
+==========
+Follow the instructions line-by-line.  
+
+* Type in the commands as is, but ignore the beginning prompt.  
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+==========
+1. Open a new terminal window.
+[NO OUTPUT]
+----------
+==========
+2. Find out if mtec1002-lab-03 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
+
+(See steps 1-8 in http://foureyes.github.io/mtec1002-spring2014/labs/03/lab-03-part-02-working-with-files.txt)
+[NO OUTPUT]
+----------
+==========
+3. Change your directory mtec1002-lab-03
+[NO OUTPUT]
+----------
+==========
+4. Use nano to create a file called nonsense.txt.  Within that file, write out:
+
+foo
+bar
+baz
+
+Save and exit.  Prove that you created the file and that the contents is as specified above.  Write the commands you used to do this, as well as their output, below.
+----------
+
+
+==========
+5.  Another way to create a file is by using cat without an argument, and redirecting its output to a file.  Try this:
+
+cat > more_nonsense.txt
+
+Type in:
+baz
+qux
+<CTRL-D>
+
+Prove that you created the file and that the contents is as specified above.  Write the commands you used to do this, as well as their output, below.
+----------
+
+
+==========
+6. Look for all files that contain baz and all files that contain qux.  Some hints: 
+
+* use one of the commands from the reading
+* you can do a recursive search;  use man <COMMAND> (q to quit) to determine what flag to use for a recursive search.  
+* lastly, you should specify the current directory using dot (<COMMAND> <FLAGS> .).  
+
+Write the commands and output below.
+----------
+
+
+==========
+7. Find all of the .txt files in this directory and the directories within it.  There should only be five (or three if you didn't create the files above!).
+
+Write the command that you used to do this below.  Paste the output of the command below.
+----------
+
+
+==========
+8. Run the same command as above, but redirect the output to a file called all-text-files.txt.  The result should be a .txt file with filenames within it.  Verify that the file that was created contains only txt files.
+
+
+Write the commands that you used to do this below.
+----------
+
+
+==========
+9. Find all of the files in this directory and the directories within it that have the word, error, in it.  There should be a lot of files!  You should do this recursively (which you did earlier on in this lab).
+
+Write the commands that you used to do this below.  Copy and paste the last two lines of output as well.
+----------
+
+
+==========
+10. Do the same as above, but *pipe* the result to grep ... and only look for the text, log.
+
+Write the commands that you used to do this below.  Copy and paste the output below.
+----------
+
+
+==========
+11. To count how many lines (how many log files have the word error in them), you can pipe the result of the output of your previous command to yet another command!  What command is that? 
+
+Write the commands that you used to do this below.  Copy and paste the output below as well.
+----------
+
+
+==========
+12.  What command do you use to look for files that match a certain name?  What command do you use to look for files that contain specific text?  Write the answers below.
+----------

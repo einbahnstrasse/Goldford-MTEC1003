@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab 13, Part 2 - GitHub Pages</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-14-part-2---github-pages">Lab 13, Part 2 - GitHub Pages</h1>
+
+<h2 id="overview">Overview</h2>
+
+<ul>
+  <li>use <a href="http://pages.github.com/">github pages</a> to <strong>publish</strong> a page</li>
+</ul>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="cleaning-up">Cleaning Up</h3>
+
+<ul>
+  <li>close terminal</li>
+</ul>
+
+<h3 id="creating-a-project-page">Creating a Project Page</h3>
+
+<h4 id="verify-your-github-account">Verify Your GitHub Email</h4>
+
+<p>To create pages on github, you need to have a valid email address.  The email linked to your github account may already be verified, so start off by checking that.  If not, you can prove that you have a valid email address by going through github&#8217;s email verification process.</p>
+
+<ul>
+  <li>if haven&#8217;t done so already, log in to <a href="http://github.com">github.com</a></li>
+  <li>go to your github account settings
+<img src="../../resources/img/github-settings.png" alt="settings" /></li>
+  <li>go to your email settings
+<img src="../../resources/img/github-emails.png" alt="email" /></li>
+  <li>if you see your email address followed by "Primary" and "Public" or "Private" buttons, you're all set. Skip to the next section, <strong>Create Your Page in a Branch</strong>.
+<img src="../../resources/img/github-email-settings.png" alt="email settings" /></li>
+  <li>if you see a button that says "Unverified" you should also see a button on the right-hand side that says "Send verification email".  Click to send verification email.
+<img src="../../resources/img/github-verify.png" alt="verify" /></li>
+  <li>log in to your email</li>
+  <li>find the confirmation email</li>
+  <li>it should be from GitHub with a subject of &#8220;Please verify&#8230;&#8221;
+<img src="../../resources/img/github-subject.png" alt="subject" /></li>
+  <li>click on the link to verify your email address</li>
+  <li><em>Whew!</em>  On to the next step&#8230;</li>
+</ul>
+
+<h4 id="create-your-page-in-a-branch">Create Your Page in a Branch</h4>
+
+<ul>
+  <li>show what branch you&#8217;re currently working in:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git branch
+</code></pre></div>
+
+<ul>
+  <li>this should result in (the star means that you&#8217;re currently working on that branch):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">* master
+</code></pre></div>
+
+<ul>
+  <li>create another branch in your local repository; call it gh-pages</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git checkout -b gh-pages
+</code></pre></div>
+
+<ul>
+  <li>git should respond with:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Switched to a new branch <span class="s1">&#39;gh-pages&#39;</span>
+</code></pre></div>
+
+<ul>
+  <li>now&#8230; check which branch you&#8217;re on</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git branch
+</code></pre></div>
+
+<ul>
+  <li>the star should be next to gh-pages</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">* gh-pages
+  master
+</code></pre></div>
+
+<ul>
+  <li>create a new file called index.html using nano</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">nano index.html
+</code></pre></div>
+
+<ul>
+  <li>add the text: &#8220;My GitHub Page&#8221;</li>
+  <li>CTRL-X to save (press Y, then enter when prompted to save the file)</li>
+  <li>use <strong>status</strong>, <strong>add</strong>, and <strong>commit</strong> to save your changes</li>
+  <li>finally, send to github using git <strong>push</strong>, but make sure it goes to origin <strong>gh-pages  NOT master</strong>! (see command below)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git push origin gh-pages
+</code></pre></div>
+
+<ul>
+  <li>this should give back the following output (note the part that&#8217;s gh-pages -&gt; gh-pages):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"> * [new branch]      gh-pages -&gt; gh-pages</span>
+</code></pre></div>
+
+<ul>
+  <li>wait about 5 to 10 minutes&#8230; (this is just for the first time that you create a page)</li>
+  <li>open http://yourusername.github.io/lab-13-remote/ in your browser (replace yourusername with your actual github username)</li>
+</ul>
+
+<h4 id="what-to-do-while-waiting">What to do While Waiting</h4>
+
+<ul>
+  <li>start SublimeText2</li>
+  <li>go to File &#8594; open</li>
+  <li>browse to your Desktop &#8594; username folder &#8594; lab-13-remote &#8594; <strong>index.html</strong></li>
+  <li>open the file</li>
+  <li>overwrite what&#8217;s in your file with:
+    <ul>
+      <li>basic <a href="http://www.htmldog.com/guides/html/beginner/tags/">html structure</a></li>
+      <li>a <a href="http://www.htmldog.com/guides/html/beginner/headings/">heading</a> that says lab-13-remote</li>
+      <li>and a <a href="http://www.htmldog.com/guides/html/beginner/lists/">list</a> with five elements, all <a href="http://www.htmldog.com/guides/html/beginner/links/">links</a>
+        <ul>
+          <li>the first goes to your homepage: <strong>index.html</strong> &#8230; call it <strong>home</strong></li>
+          <li>one to the octocat gallery: <a href="http://octodex.github.com/">http://octodex.github.com/</a> &#8230; call it <strong>octocat</strong></li>
+          <li>the other to unicode snowman: <a href="http://unicodesnowmanforyou.com/"> http://unicodesnowmanforyou.com/</a> &#8230; call it <strong>snowman</strong></li>
+          <li>another link to: <strong>about.html</strong> (not yet created) &#8230; call it <strong>about</strong></li>
+          <li>one last link to: <strong>practice.html</strong> (not yet created) &#8230; call it <strong>practice</strong></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>check in on your github page to see if it&#8217;s available:
+    <ul>
+      <li>open http://yourusername.github.io/lab-13-remote/ in your browser (replace yourusername with your actual github username)</li>
+    </ul>
+  </li>
+  <li><strong>&#8212;&#8212;&#8212;&#8211;make sure your previous page (with just text) works before moving on&#8212;&#8212;&#8212;&#8212;&#8211;</strong></li>
+  <li>if it works, you can use <strong>status</strong>, <strong>add</strong>, and <strong>commit</strong> to save your work</li>
+  <li>&#8230;then <strong>push</strong> to <strong>origin</strong> <strong>gh-pages</strong></li>
+  <li>now look at your page again&#8230;
+    <ul>
+      <li>open http://yourusername.github.io/lab-13-remote/ in your browser (replace yourusername with your actual username)</li>
+    </ul>
+  </li>
+  <li>finally, use <a href="http://html-ipsum.com/">html-ipsum</a> to generate content to drop into your page</li>
+  <li>copy the generated markup and drop it below the list that you created</li>
+  <li>if it works, you can use <strong>status</strong>, <strong>add</strong>, and <strong>commit</strong> to save your work</li>
+  <li>&#8230;then <strong>push</strong> to <strong>origin</strong> <strong>gh-pages</strong></li>
+  <li>check out your page again&#8230; </li>
+</ul>
+
+<h4 id="resources-and-possibilities">Resources and Possibilities</h4>
+<ul>
+  <li>follow <a href="https://help.github.com/articles/creating-project-pages-manually">this guide</a> to create a project page&#8230;</li>
+  <li>start making <a href="http://basicallydan.github.io/skifree.js/">javascript games</a></li>
+</ul>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

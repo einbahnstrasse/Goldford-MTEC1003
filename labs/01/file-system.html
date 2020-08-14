@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - File System</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+  <h1 id="navigating-the-file-system">Navigating the File System</h1>
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="navigating-the-file-system-1">Navigating the File System</h3>
+
+  <aside>In Three Parts</aside>
+
+  <ul>
+    <li>OSX&#8217;s directory structure</li>
+    <li>A little bit about pathnames</li>
+    <li>How to get around using the commandline</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="lets-look-at-osxs-directory-structure">Let&#8217;s Look at OSX&#8217;s Directory Structure</h2>
+</section>
+
+<section>
+  <h3 id="first-some-definitions">First, Some Definitions</h3>
+
+  <p>What&#8217;s a <strong>directory</strong>? &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>a <strong>directory</strong> is a cataloging structure on a file system that references other files (and directories)</li>
+      <li>we can think of it as <em>a thing that contains files</em> (it&#8217;s a little more complex than that, though)</li>
+      <li>they&#8217;re usually used to organize files</li>
+      <li>(technically, on OSX, a directory is a file itself! it&#8217;s a file that lists the names of items on a disk or other piece of storage media)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="more-definitions">More Definitions</h3>
+
+  <p>What&#8217;s a <strong>folder</strong>? &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>it&#8217;s essentially the same thing as a directory</li>
+      <li>but it&#8217;s the graphical representation (like the little folder icons in finder)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="even-more-definitions">Even More Definitions</h3>
+
+  <p>What&#8217;s a <strong>pathname</strong>? &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>a <strong>pathname</strong> is the general form of the name of a file or directory; it specifies a unique location in a file system</li>
+      <li>for example, in finder, to locate a file or folder, you follow a particular path - <strong>let&#8217;s check this out</strong> &#8594;. </li>
+      <li><strong>what&#8217;s the path to the Desktop starting from the <em>top most</em> folder, the hard drive (probably Macintosh HD on the lab computers)?</strong> &#8594;</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="some-structure">Some Structure</h3>
+
+  <p>Each operating system organizes their files and directories differently.  OSX&#8217;s file structure looks like this (it&#8217;s similar to other UNIX based file systems):</p>
+
+  <ul>
+    <li><strong>/</strong> - (also called <strong>root</strong>) the top most folder on a disk (the directory that <em>contains</em> all of the other files and directories)</li>
+    <li><strong>/Applications</strong> - where shared applications are kept</li>
+    <li><strong>/Users</strong> - all user accounts and their accompanying files are stored here</li>
+    <li><strong>/Volumes</strong> - all disks that are attached to your computer including USB drives, hard drives, etc.</li>
+    <li><strong>/System</strong> - <em>system specific</em> files, libraries, preferences that are critical to the operating system</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="more-about-the-users-directory">More About the User&#8217;s Directory</h3>
+
+  <p>It&#8217;s worth noting the directories nested under Users.  They should seem familiar to you.</p>
+
+  <ul>
+    <li><strong>/Users/username</strong> - (also called <strong>home</strong> when you&#8217;re in your own username&#8217;s directory) contains files specific to that particular user</li>
+    <li><strong>/Users/username/Desktop</strong> - represents the user&#8217;s Desktop</li>
+    <li><strong>/Users/username/Downloads</strong> - the user&#8217;s downloads folder</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="and-now-to-pathnames">And Now&#8230; To Pathnames!</h2>
+
+  <aside>We know a little bit about the file system structure; let's take a closer look at how we locate files</aside>
+</section>
+
+<section>
+  <h3 id="whats-a-pathname-again">What&#8217;s a Pathname Again?</h3>
+
+  <p>A <strong>pathname</strong> is the general form of the name of a file or directory; <strong>it specifies a unique location in a file system</strong>.</p>
+</section>
+
+<section>
+  <h3 id="path-separator">Path Separator</h3>
+
+  <p>A <strong>path separator</strong> is a character that&#8217;s used to join together each directory in a pathname that contains nested directories (for example, Desktop was located under Users and username&#8230;  there was a character that separated each directory).  </p>
+
+  <p><strong>What character represents the path separator on OSX (we just saw this)?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>it&#8217;s a <strong>forward slash</strong>, <strong>/</strong></li>
+      <li>(sometimes just called <strong>slash</strong> when referencing directories) </li>
+      <li>it&#8217;s <strong>not backslash</strong>, <strong>\</strong>, (that&#8217;s the path separator for Windows!)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="absolute-vs-relative-paths">Absolute vs Relative Paths</h3>
+
+  <ul>
+    <li><strong>absolute paths</strong> are paths expressed as starting from root
+      <ul>
+        <li>example: /Users/username/Desktop</li>
+      </ul>
+    </li>
+    <li><strong>relative paths</strong> are paths expressed as relative from the current working directory
+      <ul>
+        <li>example (if you&#8217;re starting from /Users/username): Desktop</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>We&#8217;ll look at this a little bit more in the next class.</p>
+</section>
+
+<section>
+  <h3 id="some-special-paths">Some Special Paths</h3>
+
+  <p>There are shortcuts to represent specific paths:</p>
+
+  <ul>
+    <li><strong>~ (tilde)</strong> is <em>your</em> home directory</li>
+    <li><strong>/ (slash)</strong> is root directory</li>
+  </ul>
+
+  <p>The following paths are relative to the directory <em>that you&#8217;re in</em>:</p>
+
+  <ul>
+    <li><strong>. (dot)</strong> is the current directory</li>
+    <li><strong>.. (dot dot)</strong> is the parent directory</li>
+    <li><strong>../.. (dot dot slash dot dot)</strong> is the parent of the parent directory</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="lets-see-some-pathnames-through-finder">Let&#8217;s See Some Pathnames Through Finder</h3>
+
+  <ul>
+    <li>Desktop</li>
+    <li>Downloads</li>
+    <li>root (probably Macintosh HD)</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="now-that-we-know-about-pathnames-we-can-navigate-the-file-system-using-the-commandline-excited-yet">Now That We Know About Pathnames, We Can Navigate the File System Using the Commandline! (EXCITED YET!?)</h2>
+
+  <aside>Let's learn some commands</aside>
+</section>
+
+<section>
+  <h3 id="ls">ls</h3>
+
+  <p><strong>List all of the files (and directories) in the current directory. &#8594;</strong> </p>
+
+  <p>Think: <em>list</em> (we just saw this!).</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls
+Applications	Documents   ....
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="ls-pathname">ls pathname</h3>
+
+  <p><strong>List all of the files (and directories) in the directory specified by the pathname. &#8594;</strong> </p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls Desktop
+cuny-first.png		fractal mountains
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="ls--l">ls -l</h3>
+
+  <p><strong>The -l flag gives detailed output about each file in the directory &#8594;</strong> </p>
+
+  <p>Think: <em>l for long version</em>.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls -l
+drwx------   3 bree  staff   102 Nov  1 15:08 Applications
+drwx------+  7 bree  staff   238 Jan 28 22:46 Desktop
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="ls--a">ls -a</h3>
+
+  <p><strong>The -a flag lists all files, including hidden ones &#8594;</strong> </p>
+
+  <p>Think: <em>a for all</em>.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls -a
+.			.config			Dropbox
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="ls--al">ls -al</h3>
+
+  <p><strong>You can combine flags by placing them one after the other.  This outputs a detailed list of all files. &#8594;</strong> </p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls -al
+drwxr-xr-x+ 67 bree   staff   2278 Jan 30 02:07 .
+drwxr-xr-x   5 root  admin    170 Aug 13  2011 ..
+-rw-r--r--@  1 bree   staff  24580 Jan 30 02:19 .DS_Store
+-rw-r--r--   1 bree   staff   3459 Mar 21  2011 .RData
+</code></pre></div>
+
+  <!-- remove_highlight -->
+</section>
+
+<section>
+  <h3 id="ls--t">ls -t</h3>
+
+  <p><strong>The -t flag sorts by time. &#8594;</strong> </p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls -lt
+total 0
+drwxr-xr-x   2 bree  staff    68 Jan 30 02:07 mtec1003
+drwx------@ 19 bree  staff   646 Jan 29 21:21 Dropbox
+drwxr-xr-x   9 bree  staff   306 Jan 29 19:31 projects
+</code></pre></div>
+
+  <!-- remove_highlight -->
+</section>
+
+<section>
+  <h3 id="combining-flags-and-arguments">Combining Flags and Arguments</h3>
+
+  <p>You can use multiple flags&#8230; and combine them with an argument as well. <strong>What do you think this does?</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls -alt Desktop
+</code></pre></div>
+
+  <div class="incremental">
+    <p>It lists all of the files in Desktop (if you&#8217;re in your <em>home</em> folder), ordered by time, including hidden files and showing extra information.</p>
+
+    <div class="highlight"><pre><code class="bash">drwxr-xr-x+ 40 bree  staff    1360 Jan 29 01:12 ..
+-rw-r--r--@  1 bree  staff    6148 Jan 25 01:46 .DS_Store
+drwx------+  6 bree  staff     204 Jan 24 08:26 .
+-rw-r--r--@  1 bree  staff  245447 Jan 23 23:15 cuny-first.png
+drwxr-xr-x  16 bree  staff     544 Oct 28 18:46 fractal mountains
+-rw-r--r--   1 bree  staff       0 Aug 31 22:41 .localized
+</code></pre></div>
+
+  </div>
+  <!-- remove_highlight -->
+
+</section>
+
+<section>
+  <h3 id="pwd">pwd</h3>
+
+  <p><strong>Shows the directory that you&#8217;re currently in.</strong> &#8594;</p>
+
+  <p>Think: <em>print working directory</em>.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">pwd</span>
+/Users/bree
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="hostname">hostname</h3>
+
+  <p><strong>Prints out the name of your computer &#8594;</strong></p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>hostname
+walsh-9
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="mkdir">mkdir</h3>
+
+  <p><strong>Creates a directory with the name of the argument supplied. &#8594;</strong></p>
+
+  <p>Think: <em>make directory</em></p>
+
+  <p>One argument is <em>required</em>: the name of the directory to create.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>mkdir my_animated_gifs
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="mkdir-dir1dir2dir3">mkdir dir1/dir2/dir3</h3>
+
+  <p><strong>This attempts to create 3 directories nested within eachother. &#8594;</strong></p>
+
+  <p>Forward slash (/) shows that a directory is within the directory preceding it.  dir1/dir2 means dir2 in dir1.</p>
+
+  <p>However, nested directories don&#8217;t work as an argument for mkdir. (Unless&#8230;)</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>mkdir dir1/dir2
+mkdir: dir1: No such file or directory
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="mkdir--p-dir1dir2">mkdir -p dir1/dir2</h3>
+
+  <p><strong>The -p flag allows you to create multiple directories nested within eachother. &#8594;</strong></p>
+
+  <div class="highlight"><pre><code class="bash">mkdir -p dir1/dir2
+<span class="nv">$ </span>ls
+dir1
+<span class="nv">$ </span>ls dir1
+dir2
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="cd">cd</h3>
+
+  <p><strong>Changes current directory to the directory specified in the argument. &#8594;</strong></p>
+
+  <p>Think: <em>change directory</em></p>
+
+  <p>One argument is <em>required</em>: the name of the directory to change to.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">cd </span>Desktop
+<span class="nv">$ </span><span class="nb">pwd</span>
+/Users/bree/Desktop
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-reminder-about-special-paths">A Reminder About Special Paths</h3>
+
+  <ul>
+    <li>. (dot) is current directory</li>
+    <li>.. (dot dot) is parent directory</li>
+    <li>../.. (dot dot slash dot dot) is parent of parent directory</li>
+    <li>/ (slash) is root directory</li>
+    <li>~ (tilde) is home directory</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="using-special-paths">Using Special Paths</h3>
+
+  <p>Let&#8217;s use special paths with cd &#8594;</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">pwd</span>
+/Users/bree
+<span class="nv">$ </span><span class="nb">cd</span> ../
+<span class="nv">$ </span><span class="nb">pwd</span>
+/Users
+<span class="nv">$ </span>ls
+Shared	bree
+<span class="nv">$ </span><span class="nb">cd</span> ~
+<span class="nv">$ </span><span class="nb">pwd</span>
+/Users/bree
+<span class="nv">$ </span><span class="nb">cd</span> /
+<span class="nv">$ </span><span class="nb">pwd</span>
+/
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="back-to-directory">Back to Directory</h3>
+
+  <p><strong>Pass - (dash) as an argument to cd to go back to the directory you just changed from. &#8594;</strong></p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">pwd</span>
+/Users/bree
+<span class="nv">$ </span><span class="nb">cd</span> /tmp
+<span class="nv">$ </span><span class="nb">pwd</span>
+/tmp
+<span class="nv">$ </span><span class="nb">cd</span> -
+/Users/bree
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="rmdir">rmdir</h3>
+
+  <p><strong>Removes a directory with the name of the argument supplied. &#8594;</strong></p>
+
+  <p>Think: <em>remove directory</em></p>
+
+  <p>One argument is <em>required</em>: the name of the directory to remove.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>mkdir foo
+<span class="nv">$ </span>ls
+foo
+<span class="nv">$ </span>rmdir foo
+<span class="nv">$ </span>ls
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="pushdpopd">pushd/popd</h3>
+
+  <p><strong>Change to directory, but save current one for later. &#8594;</strong></p>
+
+  <ul>
+    <li>pushd requires one argument, the directory to change to.</li>
+    <li>you can pushd multiple directories</li>
+    <li>popd takes you back to the last saved directory</li>
+    <li>you can continue to use popd until there are no more saved directories</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="pushdpopd-continued">pushd/popd Continued</h3>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span><span class="nb">pwd</span>
+/Volumes
+<span class="nv">$ </span><span class="nb">pushd</span> ~/Desktop/
+~/Desktop /Volumes
+<span class="nv">$ </span><span class="nb">pushd</span> /Applications/
+/Applications ~/Desktop /Volumes
+<span class="nv">$ </span><span class="nb">popd</span>
+~/Desktop /Volumes
+<span class="nv">$ </span><span class="nb">pwd</span>
+/Users/bree/Desktop
+<span class="nv">$ </span><span class="nb">popd</span>
+/Volumes
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="activity-drills"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 10 (use set 2)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 2</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="lab"><strong>Lab</strong></h3>
+
+  <p><a href="lab-file-system.txt">Navigating the File System</a></p>
+
+  <ul>
+    <li>Type each command (with arguments and flags) exactly</li>
+    <li>Only press &lt;ENTER&gt; when instructed&#8230;</li>
+    <li>&lt;TAB&gt;, &lt;ENTER&gt;, &lt;UP&gt;, &lt;DOWN&gt; are the actual keys!</li>
+    <li>Paste answer or output below the dashed line (&#8212;&#8212;&#8212;&#8212;)</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="activity-drills-1"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 10 (use set 12)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 12</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

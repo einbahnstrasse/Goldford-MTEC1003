@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Goldford-MTEC1003-Fall2020/assets/css/style.css?v=b74d5b322417bef0ff797c9af68c838ab06c8851">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Lab 5 Part 2: Greetings and Madlibs in Python | MTEC1003-OL04 Media Computation Skills Lab</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Lab 5 Part 2: Greetings and Madlibs in Python" />
+<meta name="author" content="Prof. Louis Goldford" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<meta property="og:description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/05/lab-05-part2-python-basics.html" />
+<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/05/lab-05-part2-python-basics.html" />
+<meta property="og:site_name" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/05/lab-05-part2-python-basics.html","headline":"Lab 5 Part 2: Greetings and Madlibs in Python","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/Goldford-MTEC1003-Fall2020/">
+          <h1>MTEC1003-OL04 Media Computation Skills Lab</h1>
+        </a>
+        <h2>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</h2>
+
+        <section id="downloads">
+          <!-- <a href="index.html" class="btn btn-syllabus"><span class="icon"></span>Course Syllabus</a>
+          <a href="schedule.html" class="btn btn-schedule"><span class="icon"></span>Schedule</a>
+          <a href="resources.html" class="btn btn-software"><span class="icon"></span>Software + Resources</a>
+          <a href="grading.html" class="btn btn-software"><span class="icon"></span>Grading</a> -->
+        	<a href="/Goldford-MTEC1003-Fall2020/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
+        	<a href="/Goldford-MTEC1003-Fall2020/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
+        	<a href="/Goldford-MTEC1003-Fall2020/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
+          <a href="/Goldford-MTEC1003-Fall2020/grading.html" class="btn"><span class="icon"></span>GRADING</a>
+          
+      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-Fall2020" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="lab-5-part-2-greetings-and-madlibs-in-python">Lab 5 Part 2: <em>Greetings</em> and <em>Madlibs</em> in Python</h1>
+
+<p>Once you’ve made these simple programs in JavaScript, doing them in Python will be a piece of cake!  The two languages share a lot in common. We’ll do the first of these, “greetings”, together below, and then you’ll have no problem doing the other one, on your own.</p>
+
+<p>We won’t be running Python inside of an HTML script on a website, so in your text editor (e.g. Atom, Sublime Text, etc.) simply create a new file and give it the .py extension. This signals your text editor to invoke the proper syntax highlighting up front. Name this first file <strong>greetings.py</strong>.</p>
+
+<h2 id="setup-for-python3">Setup for Python3</h2>
+
+<p>Let’s be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling <code class="language-plaintext highlighter-rouge">python</code> on the command line. We can crete an “alias” for python3 by running the following command:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span><span class="nb">alias </span><span class="nv">python</span><span class="o">=</span>/usr/local/bin/python3 </code></pre></figure>
+
+<p>Once you’ve done this, you’re all set. Onto making “greetings.py” …</p>
+
+<hr />
+
+<h2 id="recreating-greetingshtml-but-in-python">Recreating <em>Greetings.html</em> but in Python</h2>
+
+<p>In JavaScript, a variable is <em>declared</em> by typing <code class="language-plaintext highlighter-rouge">var</code> like so:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">  <span class="kd">var</span> <span class="nx">myVariable</span> <span class="o">=</span> <span class="nx">someValue</span><span class="p">;</span> </code></pre></figure>
+
+<p>Notice that in addition to our <em>declaration</em>, we also assigned a value (someValue).</p>
+
+<p>In Python, we don’t need to <em>declare</em> a variable… Instead, a variable is automatically “declared” when we assign a value to it. So, we just write:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py">  <span class="n">myVariable</span> <span class="o">=</span> <span class="n">someValue</span> </code></pre></figure>
+
+<p>(Also, notice that we don’t use the semicolon at the end of a line in Python, as we do in JavaScript.)</p>
+
+<p>To prompt the user for input, we don’t type <code class="language-plaintext highlighter-rouge">prompt()</code> as we do in JavaScript. In Python (i.e. Python3) we use the <code class="language-plaintext highlighter-rouge">input()</code> method.<br />
+So, our first line of code in <strong>greetings.py</strong> will look something like this:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py">  <span class="n">username</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"So, like, what's your name? "</span><span class="p">)</span> </code></pre></figure>
+
+<p>We’ve successfully (1) prompted the user for input, and (2) stored that user input in a new variable called “username”.<br />
+The last step is to print it back out in a string back in the console. Our print function in Python is pretty simple:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py">  <span class="k">print</span><span class="p">(</span><span class="s">"Look Mom, no semicolon!"</span><span class="p">)</span> </code></pre></figure>
+
+<p>Now, we just have to <em>concatenate</em> a string that includes the input stored in the <code class="language-plaintext highlighter-rouge">username</code> variable.<br />
+So, this means our 2nd and last line of code in <strong>greetings.py</strong> will look a little something like this:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py">  <span class="k">print</span><span class="p">(</span><span class="s">"Hi, "</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s">"!"</span><span class="p">)</span> </code></pre></figure>
+
+<p>Here, we’ve (1) concatenated a string, stored inside our <code class="language-plaintext highlighter-rouge">username</code> variable, into a longer string to form a greeting, and (2) we returned this final string to the console with a <code class="language-plaintext highlighter-rouge">print()</code> function.</p>
+
+<p>Now we just have to <strong>test</strong> our python script by running it on the command line.</p>
+
+<p>Back in Terminal, simply type <code class="language-plaintext highlighter-rouge">python</code>, then a space, and then drag-and-drop your <strong>greetings.py</strong> file onto the Terminal window (<strong>remember:</strong> this will quickly create a <code class="language-plaintext highlighter-rouge">full path</code> to your file on the command line!). Run the command by hitting <code class="language-plaintext highlighter-rouge">enter</code>, of course.</p>
+
+<p>The output will look like this:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span>python /Users/louisgoldford/Desktop/greetings.py  
+<span class="go">  So, like, what's your name? dumpsterFyreFestival  
+  Hi, dumpsterFyreFestival!  
+</span><span class="gp">  $</span><span class="w"> </span></code></pre></figure>
+
+<p>Make sure your file is included in your <strong>/lab-05-js-py</strong> folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes!<br />
+Use your <a href="/Goldford-MTEC1003-Fall2020/labs/03/lab-03-git-intro.html"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<hr />
+
+<h2 id="recreating-madlibshtml-but-in-python">Recreating <em>Madlibs.html</em> but in Python</h2>
+
+<p>Now that you’ve seen how easily we can translate our JavaScript code into Python, write new versions of the <em>Madlibs</em> programs you made in <a href="/Goldford-MTEC1003-Fall2020/labs/05/lab-05-part1-js-basics.html">Lab 5 / Part 1.</a></p>
+
+<p>If you’re feeling comfortable, you can skip the 1st version of madlibs (i.e. the one with hardcoded values), and move quickly onto making the final version (i.e. the one with variables prompted with user input using Python’s <code class="language-plaintext highlighter-rouge">input()</code> method, described above). You can call it <strong>madlibs.py</strong>. Don’t forget to <strong>test</strong> your programs on the command line too.</p>
+
+<p>Make sure your file is included in your <strong>/lab-05-js-py</strong> folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes!<br />
+Use your <a href="/Goldford-MTEC1003-Fall2020/labs/03/lab-03-git-intro.html"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<p>Your final <strong>/lab-05-js-py</strong> folder by the submission deadline should include the following:</p>
+<ul>
+  <li>greetings.html</li>
+  <li>greetings.py</li>
+  <li>madlibs.html</li>
+  <li>madlibs.py</li>
+</ul>
+
+<hr />
+
+      </section>
+    </div>
+
+    
+
+    <div>
+		<header><footer class="site-footer h-card">
+  <data class="u-url" href="/Goldford-MTEC1003-Fall2020/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h4 class="footer-heading">MTEC1003-OL04 Media Computation Skills Lab</h4>
+        <ul class="contact-list">
+          <li class="p-name">Prof. Louis Goldford</li><li><a class="u-email" href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</p>
+      </div>
+
+      <div class="social-links"><ul class="social-media-list"></ul></div>
+    </div>
+
+  </div>
+
+</footer></header>
+	</div>
+
+  </body>
+
+</html>

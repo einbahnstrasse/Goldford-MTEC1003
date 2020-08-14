@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prep - Creating Local and Remote Repositories</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-8---prep---creating-local-and-remote-repositories-warm-up-programs">Lab 8 - Prep - Creating Local and Remote Repositories, Warm-Up Programs</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+  <li>creating two repositories, one local and one remote</li>
+  <li>linking the two with each other so that they can be synchronized</li>
+  <li>associating a name and email address with your local repository</li>
+  <li>creating the following programs:
+    <ol>
+      <li>password to pizza site</li>
+      <li>ordered enough pizza? (remember to use parseint)</li>
+      <li>price for pizza toppings</li>
+      <li>* tip (for pizza restaurant, of course)</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="instructions-for-repository-set-up">Instructions for Repository Set Up</h2>
+
+<h3 id="set-up-your-local-repository">Set up Your Local Repository</h3>
+
+<p>This will create a local git repository to store your work for this lab.  The repository will be in ~/Desktop/yourname/lab-08-for.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>(if doesn&#8217;t already exist) create a folder that consists of your first initial and last name on your Desktop</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~/Desktop
+mkdir your_first_initial_last_name
+</code></pre></div>
+
+<ul>
+  <li>within that folder, create another folder called <strong>lab-08-for</strong> and <strong>change into it</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>your_first_initial_last_name
+mkdir lab-08-for
+<span class="nb">cd </span>lab-08-for
+</code></pre></div>
+
+<ul>
+  <li>use pwd to verify that you&#8217;re in the correct folder
+    <ul>
+      <li>you should be in <strong>~/Desktop/your_first_initial_last_name/lab-08-for</strong></li>
+      <li>if you&#8217;re not, cd into it</li>
+    </ul>
+  </li>
+  <li>to prove that this is not yet a repository, list <strong>all</strong> files in your current directory </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>it should mostly be empty</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">total 0
+drwxr-xr-x  2 bree  staff   68 Mar 26 19:21 .
+drwxr-xr-x  3 bree  staff  102 Mar 26 19:21 ..
+</code></pre></div>
+
+<ul>
+  <li>in your lab-08-for folder, create your repository!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git init
+</code></pre></div>
+
+<ul>
+  <li>it should say:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Initialized empty Git repository in /Users/bree/Desktop/bzuckerman/lab-08-for/.git/
+</code></pre></div>
+
+<ul>
+  <li>show that this worked by listing <strong>all</strong> files in your current directory</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>check that this shows <strong>.git</strong> </li>
+  <li>use ls .git to show the contents of your repository (it should contain a configuration file, for example)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls .git
+</code></pre></div>
+
+<ul>
+  <li>configure your name and email for your commits (these do not have to be the same as your github account)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git config user.name  <span class="s2">&quot;my first and last name&quot;</span>
+git config user.email <span class="s2">&quot;my@email.address&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>finally, use git config again to see if this worked:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git config -l
+</code></pre></div>
+
+<ul>
+  <li>(use should see your name and email appear in the configuration)</li>
+</ul>
+
+<h3 id="create-your-remote-repository">Create Your Remote Repository</h3>
+
+<p>This will create a remote git repository on github.  It will also link your local repository with this remote repository.  In order to submit your work, you will send your files / changes from your local repository to the remote repository on github.</p>
+
+<ul>
+  <li>log in to github; you should see the list of repositories on the right
+<img src="../../resources/img/repos-screen.png" alt="Repository List" /></li>
+  <li>you should have all of the previous lab related repositories </li>
+  <li>go back to terminal</li>
+  <li>using the commandline, create a remote repository on github by using the command below&#8230;</li>
+  <li>substitute your github username where it says &#8220;your github user name&#8221; (keep the single quotes and <strong>KEEP &#8220;name&#8221;:</strong> at the end of the line; don&#8217;t change that!).  the name of the repository is lab-08-for (you can see that specified at the end of the command)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">curl -u <span class="s1">&#39;your github user name&#39;</span> https://api.github.com/user/repos -d <span class="s1">&#39;{&quot;name&quot;:&quot;lab-08-for&quot;}&#39;</span>
+</code></pre></div>
+
+<ul>
+  <li>it should output a bunch of text!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Enter host password <span class="k">for </span>user <span class="s1">&#39;bzuckerman&#39;</span>:
+<span class="o">{</span>
+  <span class="s2">&quot;id&quot;</span>: 17210769,
+  <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;lab-08-for&quot;</span>,
+  <span class="s2">&quot;full_name&quot;</span>: <span class="s2">&quot;bzuckerman/lab-08-for&quot;</span>,
+  <span class="s2">&quot;owner&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;login&quot;</span>: <span class="s2">&quot;bzuckerman&quot;</span>,
+	...
+<span class="o">}</span>
+</code></pre></div>
+
+<!--_-->
+<ul>
+  <li>refresh your page on github</li>
+  <li>you should see the new repository added</li>
+  <li>go back to terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for <strong>lab-08-for</strong>
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/Desktop/yourname/lab-08-for</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+    </ul>
+  </li>
+  <li>run this command to show that you have not linked your local repository to any remote repository yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote -v
+</code></pre></div>
+
+<ul>
+  <li>it should <em>do nothing</em></li>
+  <li>now, link your local repository to your remote repository on github by using git remote add </li>
+  <li>make sure to substitute the two spots where it says &#8220;your_github_user_name&#8221; with your github username
+<!--_--></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote add origin https://your_github_user_name@github.com/your_github_user_name/lab-08-for.git
+</code></pre></div>
+
+<ul>
+  <li>(alternatively, if you click on your repo you can see your remote repository&#8217;s url on the lower right hand side of the page&#8230;)
+<img src="../../resources/img/repos-url.png" alt="Repository List" /></li>
+  <li>to check that you&#8217;ve linked properly, run the following command again:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote -v
+</code></pre></div>
+
+<ul>
+  <li>it should show origin &#8230; and your repository url:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">origin	https://bzuckerman@github.com/bzuckerman/lab-08-for.git <span class="o">(</span>fetch<span class="o">)</span>
+origin	https://bzuckerman@github.com/bzuckerman/lab-08-for.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div>
+
+<h3 id="creating-and-saving-changes-locally-sending-to-remote-repository">Creating and Saving Changes Locally, Sending to Remote Repository</h3>
+
+<p>In this part of the lab, you will create a text file in your local repository, and then you&#8217;ll send it to your remote repository.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for lab-08-for
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/Desktop/yourname/lab-08-for</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+      <li>if this doesn&#8217;t exist yet&#8230; make sure you completed the beginning part of this lab</li>
+    </ul>
+  </li>
+  <li>use <strong>git status</strong> to show that there aren&#8217;t any changes yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+nothing to commit <span class="o">(</span>create/copy files and use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+</code></pre></div>
+
+<ul>
+  <li>create a file called <strong>README.markdown</strong> using <strong>SublimeText</strong> (see below&#8230;)</li>
+  <li>go to Applications &#8594; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)</li>
+  <li>once SublimeText is open, go to File &#8594; New (or Command+n) to create a new file</li>
+  <li>save your file by going to File &#8594; Save As to save your files as <strong>README.markdown</strong> in your <strong>~/Desktop/yourname/lab-08-for</strong>
+<img src="../../resources/img/sublime-save-as-menu.png" alt="Save As" /></li>
+  <li>make sure you navigate to your <strong>~/Desktop/yourname/lab-08-for</strong> before saving!
+<img src="../../resources/img/sublime-save-as.png" alt="Save As" /></li>
+  <li>add text to your file: </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">lab 8, <span class="k">for</span>
+</code></pre></div>
+
+<ul>
+  <li>switch back to terminal</li>
+  <li>use <strong>git status</strong> to show that you&#8217;ve made changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output; notice that it contains README.markdown </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+<span class="c"># Untracked files:</span>
+<span class="c">#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span>
+<span class="c">#</span>
+<span class="c">#	README.markdown</span>
+nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+</code></pre></div>
+
+<ul>
+  <li>if we want to save this file in the repository, we have <em>stage</em> it (that is, mark it as something that we&#8217;re ready to save / commit)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git add --all
+</code></pre></div>
+
+<ul>
+  <li>to check that you&#8217;ve staged your commit, use <strong>git status</strong> again</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should output the following text (note that README.markdown moved from <em>untracked</em> to <em>Changes to be committed</em>)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+<span class="c"># Changes to be committed:</span>
+<span class="c">#   (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span>
+<span class="c">#</span>
+<span class="c">#	new file:   README.markdown</span>
+<span class="c">#</span>
+</code></pre></div>
+
+<ul>
+  <li>now we&#8217;re ready to commit (that is, save the file to the local repository); everything after the -m is the message that will be associated with the changes that you&#8217;ve made</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git commit -m <span class="s2">&quot;added a README file&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>the output of the command should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 5b24d27<span class="o">]</span> added readme
+ 1 file changed, 0 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
+ create mode 100644 README.markdown
+</code></pre></div>
+
+<ul>
+  <li>check the status again </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>notice that there is nothing staged and no more changes!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+nothing to commit, working directory clean
+</code></pre></div>
+
+<ul>
+  <li>to show the changes that you&#8217;ve saved so far, use <strong>git log</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git log --color
+</code></pre></div>
+
+<ul>
+  <li>it should show you the following&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">commit 5b24d2777a602908978916ca8fe9c8dd2ed6036b
+Author: bree &lt;bzuckerman@citytech.cuny.edu&gt;
+Date:   Wed Mar 26 20:18:51 2014 -0500
+
+    added readme
+</code></pre></div>
+
+<ul>
+  <li>you can share your changes / send them to a remote repository by using <strong>git push</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git push origin master
+</code></pre></div>
+
+<ul>
+  <li>it should result in:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Counting objects: 3, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 242 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To https://github.com/bzuckerman/lab-08-for.git
+ * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
+</code></pre></div>
+
+<ul>
+  <li>go back to github and look in your repository.  you should see that file appear.</li>
+</ul>
+
+<hr />
+
+<h2 id="instructions-for-warm-up-programs">Instructions for Warm-Up Programs</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<hr />
+
+<h3 id="password">password</h3>
+
+<p>Write a program for a pizza ordering site that asks for your user name and password.  The program will have a <em>hardcoded</em> username and password of your choosing.  Ask the user for their username, then ask for their password.  Based on their input, display an appropriate message to the JavaScript console.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>password.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-08-for/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>output - &#8220;Welcome to Pizza 4 U&#8221;</li>
+  <li>create two variables, one for username and one for password</li>
+  <li>set each to a value of your choosing</li>
+  <li>ask for a username and assign it to a new variable: &#8220;What is your user name?&#8221;</li>
+  <li>ask for a password and assign it to a new variable : &#8220;What is your password?&#8221;</li>
+  <li>say &#8220;WELCOME!&#8221; if the user input matches the username and password that you set</li>
+  <li>say &#8220;K THX BAI&#8221; if the user input does not match either the username or password that was set</li>
+  <li>use logical operators and if / else to do this</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># assuming that the hardcoded username and password are albert and secret respectively...</span>
+
+<span class="o">(</span>prompt<span class="o">)</span> What is your username?
+&gt; albert
+<span class="o">(</span>prompt<span class="o">)</span> What is your password?
+&gt; secret
+WELCOME!
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="enough">enough</h3>
+
+<p>Write a program that determines if you&#8217;ve ordered enough pizza.  It assumes 8 slices per pie, and 2 slices per person.  It will ask for how many people and how many pies&#8230; and based on the input, it will display an appropriate message.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>enough.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-08-for/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>output - &#8220;Let&#8217;s find out if you ordered enough pizza?&#8221;</li>
+  <li>ask for number of slices and assign it to a new variable: &#8220;How many pies did you order?&#8221;</li>
+  <li>ask for number of people and assign it to a new variable : &#8220;How many people are eating pizza?&#8221;</li>
+  <li>calculate how many slices are needed based on the number of people (remember, 2 per person)</li>
+  <li>calculate total slices there are based on the number of pies (remember, 8 per pie)</li>
+  <li>use a conditional - an if / else - with a comparison operator to determine if there are enough pies</li>
+  <li>say &#8220;x pies is equal to y slices&#8221; (with x and y substituted appropriately)</li>
+  <li>say &#8220;x people need y slices&#8221; (with x and y substituted appropriately)</li>
+  <li>say &#8220;U NEED MOAR &#8216;ZA&#8221; if there are not enough slices</li>
+  <li>(optional) - print out how many extra slices are needed&#8230;</li>
+  <li>the program should say &#8220;ENOUGH!&#8221; if there are enough (or more) slices to accommodate the number of people specified</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Let<span class="s1">&#39;s find out if you ordered enough pizza?</span>
+<span class="s1">(prompt) How many pies did you order?</span>
+<span class="s1">&gt; 3 </span>
+<span class="s1">(prompt) How many people are eating pizza?</span>
+<span class="s1">&gt; 15</span>
+<span class="s1">3 pies are 24 slices</span>
+<span class="s1">15 people need 30 slices</span>
+<span class="s1">U NEED MOAR &#39;</span>ZA
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+</ul>
+<hr />
+
+<h3 id="toppings">toppings</h3>
+
+<p>Write a program that gives back the price of a topping based on user input&#8230;</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>toppings.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-08-for/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>say - &#8220;We have mushrooms, pepperoni, and anchovies.&#8221;</li>
+  <li>ask for a topping: &#8220;What topping would you like?&#8221;</li>
+  <li>based on the input, say &#8220;That&#8217;s an extra x dollars&#8221; with x substituted appropriately:
+    <ul>
+      <li>mushrooms - $2</li>
+      <li>pepperoni - $3</li>
+      <li>anchovies - $4</li>
+    </ul>
+  </li>
+  <li>if the topping that the user put in does not exist, say &#8220;Sorry, we don&#8217;t have that&#8221;</li>
+  <li>use an if / else if / else to do this</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">We have mushrooms, pepperoni, and anchovies.
+<span class="o">(</span>prompt<span class="o">)</span> What topping would you like?
+&gt; mushroom
+That<span class="err">&#39;</span>s an extra 2 dollars.
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="tip">tip</h3>
+
+<p>Create a tip calculator.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>tip.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-08-for/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask the following:
+    <ul>
+      <li>how many people?	</li>
+      <li>how much did it cost?</li>
+      <li>how was the service?
+        <ul>
+          <li>the values for this can be: terrible, poor, ok, good, great</li>
+          <li>only ask about service if there are less than 6 people</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>if the number of people are &gt; 6 tip should always be 20%, regardless of service.</li>
+  <li>otherwise, calculate the tip using the following table:
+    <ul>
+      <li>terrible = no tip (0%)</li>
+      <li>poor - 10%</li>
+      <li>ok - 15%</li>
+      <li>good - 20%</li>
+      <li>great - 25%</li>
+    </ul>
+  </li>
+  <li>output the calculated tip.</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># Run 1: </span>
+<span class="c"># -----</span>
+<span class="o">(</span>prompt<span class="o">)</span> How many people? &gt; 2
+<span class="o">(</span>prompt<span class="o">)</span> How much did it cost? &gt; 25
+<span class="o">(</span>prompt<span class="o">)</span> How was the service <span class="o">(</span>terrible, poor, ok, good, great<span class="o">)</span>? &gt; great
+You should probably tip <span class="nv">$6</span>.25!
+
+
+<span class="c"># Run 2: </span>
+<span class="c"># -----</span>
+<span class="o">(</span>prompt<span class="o">)</span> How many people? &gt; 4
+<span class="o">(</span>prompt<span class="o">)</span> How much did it cost? &gt; 70
+<span class="o">(</span>prompt<span class="o">)</span> How was the service <span class="o">(</span>terrible, poor, ok, good, great<span class="o">)</span>? &gt; meh
+Couldn<span class="err">&#39;</span>t understand meh service<span class="p">;</span> using default 15 percent.
+You should probably tip <span class="nv">$10</span>.5!
+
+<span class="c"># Run 3: </span>
+<span class="c"># -----</span>
+<span class="o">(</span>prompt<span class="o">)</span> How many people? &gt; 200
+<span class="o">(</span>prompt<span class="o">)</span> How much did it cost? &gt; 950
+You should probably tip <span class="nv">$190</span>.0!
+</code></pre></div>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

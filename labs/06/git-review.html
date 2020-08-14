@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Version Control Review</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="version-control-review-troubleshooting">Version Control Review, Troubleshooting</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="version-control---definition">Version Control - Definition</h3>
+
+  <p><strong>What is version control?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <p><strong>Version control software</strong> allows you to record changes to a file or set of files over time. With version control, you can:</p>
+  </div>
+</section>
+
+<section>
+  <h3 id="and-why">And Why!?</h3>
+
+  <p><strong>Why use version control anyway?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>so that you can <strong>review</strong> changes made over time, and track <strong>who</strong> made those changes</li>
+      <li>to document work by leaving <strong>comments</strong> on changes that you&#8217;ve made</li>
+      <li><strong>easily recover from accidentally breaking or deleting code</strong> by __revert__ing to a previous state</li>
+      <li>it make sharing and collaborating with others easier through the ability to <strong>send, receive and automatically merge</strong> changes</li>
+      <li><strong>it&#8217;s expected that you know this as a professional programmer</strong></li>
+      <li>um &#8230; it&#8217;s how we submit assignments!</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="tools">Tools</h3>
+
+  <p><strong>What version control software are we using?  What is the website we use to store assignments?  What is the relationship between the two?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li><strong>git</strong> is solely the <strong>version control</strong> system that we&#8217;re using</li>
+      <li><strong>github</strong> is a <strong>website</strong> that <em>hosts</em> (stores) git repositories
+        <ul>
+          <li>that means it can store all versions of your files</li>
+          <li>(but only after you&#8217;ve sent changes to it)</li>
+        </ul>
+      </li>
+      <li><strong>git</strong> and <strong>github</strong> are two totally separate things!</li>
+      <li>we&#8217;ll be using <strong>git</strong> to submit our assignments by posting them to <strong>github</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="vocabulary">Vocabulary</h3>
+
+  <p>What is a <strong>repository</strong>, <strong>local repository</strong>, <strong>remote repository</strong>, <strong>commit</strong>, and <strong>diff</strong>? &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li><strong>repository</strong> - the place where your version control system stores the snapshots that you <em>save</em></li>
+      <li><strong>local repository</strong> - the repository on your computer</li>
+      <li><strong>remote repository</strong> - a copy of versions of your files on another computer</li>
+      <li><strong>commit</strong> - save a snapshot of your work</li>
+      <li><strong>diff</strong> - the line-by-line difference between two files or sets of files</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="more-vocabulary">More Vocabulary</h3>
+
+  <p>In your <strong>local repository</strong>, describe what is contained in the: <strong>working directory</strong>, <strong>index</strong> and <strong>HEAD</strong>. &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>the working directory / working copy</strong> - stuff you&#8217;ve changed but haven&#8217;t saved</li>
+      <li><strong>index</strong> - stuff that you&#8217;re about to save (staging area)</li>
+      <li><strong>HEAD</strong> - stuff that you&#8217;ve already saved</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="how-do-we-use-git">How Do We Use Git?</h3>
+
+  <p><strong>What is the primary way that we use git?  That is, what is the root command, and what can we do with it? &#8220;Where&#8221; do you have to be to use git?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>we use <strong>git</strong> through the <strong>commandline</strong> </li>
+      <li>the base command is <strong>git</strong> followed by a specific <em>git command</em></li>
+      <li>these commands/actions only work when <strong>you&#8217;re in a git repository</strong></li>
+      <li>(that is, you have to cd to the directory that contains your repository)</li>
+    </ul>
+
+  </div>
+</section>
+
+<section>
+  <h2 id="all-git-commands-must-be-run-in-your-repository-directory-where-you-ran-git-init">All git commands must be run in your repository directory (where you ran git init)</h2>
+</section>
+
+<section>
+  <h3 id="setting-up-repositories">Setting Up Repositories</h3>
+
+  <p><strong>What&#8217;s the workflow for setting up repositories for our assignments? (just the high level description, not the actual commands)</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>create a <strong>local repository</strong></li>
+      <li><strong>configure it</strong> to use your name and email (for tracking purposes, comments)</li>
+      <li>create a <strong>remote repository</strong> (we&#8217;ll use <strong>github</strong> as our <strong>remote repository</strong>)</li>
+      <li><em>link</em> the two</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="commands-for-setting-up-repositories">Commands for Setting Up Repositories</h3>
+
+  <p><strong>What are the actual commands that you would use to set up and link your repositories?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># create a local repository</span>
+git init
+
+<span class="c"># configure it with your name and email</span>
+git config user.name  <span class="s2">&quot;your name&quot;</span>
+git config user.email <span class="s2">&quot;your@email.address&quot;</span>
+
+<span class="c"># create a remote repository</span>
+curl -u <span class="s1">&#39;your github user name&#39;</span> https://api.github.com/user/repos -d <span class="s1">&#39;{&quot;name&quot;:&quot;your repository name&quot;}&#39;</span>
+
+<span class="c"># link the two</span>
+git remote add origin <span class="s2">url_to_your_repo_on_github</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="one-of-these-is-not-like-the-others">One of These Is Not Like the Others</h3>
+
+  <p><strong>One of the previous commands was not a git command?  Which one was it?  Explain what it does.</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># creating a remote repository on github can be done with curl:</span>
+<span class="c">#     curl makes a request to github with the username and data you provide</span>
+<span class="c"># -u means your username:</span>
+<span class="c">#     replace &#39;your github user name&#39; with your username</span>
+<span class="c"># -d means data: </span>
+<span class="c">#    replace &#39;your repository name&#39; with the name you&#39;d like to </span>
+<span class="c">#    call your new remote repository</span>
+<span class="c"># keep EVERYTHING ELSE as is</span>
+curl -u <span class="s1">&#39;your github user name&#39;</span> https://api.github.com/user/repos -d <span class="s1">&#39;{&quot;name&quot;:&quot;your repository name&quot;}&#39;</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="dissecting-git-remote">Dissecting git remote</h3>
+
+  <p><strong>Explain what each part of the following command means</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="bash">git remote add origin <span class="s2">url_to_your_repo_on_github</span>
+</code></pre></div>
+
+  <div class="incremental">
+    <ul>
+      <li>you&#8217;re using a bunch of git commands that deal with remote repositories</li>
+      <li>you&#8217;re making your local repository aware of a remote repository (adding a remote repository)
+        <ul>
+          <li>you&#8217;re calling that remote repository origin</li>
+          <li>and you&#8217;re associating it with a github url (which is hopefully a repository that you&#8217;ve created!)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="additional-git-remote-commands">Additional git remote Commands</h3>
+
+  <p>Sometimes you need to troubleshoot your remote repository connection.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># show remote repositories</span>
+git remote -v
+
+<span class="c"># or ...</span>
+cat .git/config
+
+<span class="c"># remove / delete an associated remote repository</span>
+git remote remove name_of_remote
+
+<span class="c"># change / set the url of a named remote</span>
+git remote <span class="nb">set</span>-url name_of_remote the_updated_url
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="making-saving-and-sharing-changes">Making, Saving, and Sharing Changes</h3>
+
+  <p><strong>What&#8217;s the workflow for making, saving and sharing changes?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>make changes, show your exact line-by-line changes&#8230; and check on their status</li>
+      <li>put them aside so they can staged for saving / committing, check on your staged changes</li>
+      <li>save / commit, check that your changes were saved</li>
+      <li>send changes from local repository to remote repository</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="andthe-corresponding-commands">And&#8230;the Corresponding Commands</h3>
+
+  <p><strong>What&#8217;s are the actual commands that you use for making, saving and sharing changes?  Let&#8217;s start with just making the change and prepping it to be saved.</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># (make changes)</span>
+
+<span class="c"># show the exact, line-by-line changes that you&#39;ve made</span>
+git diff --color
+
+<span class="c"># check on the status of your changes</span>
+git status
+
+<span class="c"># stage your changes / prep them to be saved</span>
+git add --all
+
+<span class="c"># (continued...)</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="corresponding-commands-continued">Corresponding Commands Continued</h3>
+
+  <p><strong>Saving and sending to the remote repository</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># check your staged changes</span>
+git status
+
+<span class="c"># save them, make sure you remember your comment by using -m!</span>
+git commit -m <span class="s1">&#39;my message&#39;</span>
+
+<span class="c"># show a history of your changes</span>
+git log --color <span class="o">(</span>show your changes so far<span class="o">)</span>
+
+<span class="c"># send to your remote repository</span>
+git push origin master
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="details-on-git-status">Details on git status</h3>
+
+  <p><strong>What does git status do?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p><strong>git status</strong> - show what changes are ready to be committed as well as changes that you are working on in your working directory that haven&#8217;t been staged yet</p>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="additional-notes-on-git-add">Additional Notes on git add</h3>
+
+  <p><strong>git add</strong> marks a file or files as ready to be saved.  </p>
+
+  <p><strong>There are two ways to use it:</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># add all</span>
+git add --all
+
+<span class="c"># add specific file</span>
+git add relative/path/to/myfile.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="commit-messages">Commit Messages</h3>
+
+  <p>When you commit (save) <strong>remember to add a commit message</strong> using the <strong>-m</strong> option.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git commit -m <span class="s1">&#39;commit message goes here&#39;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="some-troubleshooting">Some Troubleshooting</h3>
+
+  <p>If you&#8217;re having issues sending your changes to your remote repository (github)&#8230;</p>
+
+  <p>Show your remote repository names and urls:</p>
+
+  <div class="highlight"><pre><code class="bash">git remote -v
+</code></pre></div>
+
+  <p>The output should look something like&#8230;</p>
+
+  <div class="highlight"><pre><code class="bash">origin	https://github.com/bzuckerman/lab-06-javascript-conditionals.git <span class="o">(</span>fetch<span class="o">)</span>
+origin	https://github.com/bzuckerman/lab-06-javascript-conditionals.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div>
+
+  <p>If it&#8217;s incorrect, try changing the associated url:</p>
+
+  <div class="highlight"><pre><code class="bash">git remote <span class="nb">set</span>-url origin https://github.com/your_github_user_name/lab-06-javascript-conditionals.git
+</code></pre></div>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

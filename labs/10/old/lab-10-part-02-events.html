@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Events and Drawing Revisited</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1>Media Computation Skills Lab </h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-10---part-2---events-and-drawing-revisited">Lab 10 - Part 2 - Events and Drawing Revisited</h1>
+
+<ol>
+  <li>squares (vertical and horizontal)</li>
+  <li>* size</li>
+  <li>grid </li>
+  <li>* diagonal </li>
+  <li>face</li>
+  <li>* multiface</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<h3 id="squares">squares</h3>
+
+<p>Write a program that draws multiple squares using a for loop.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>vertical.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-events/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>create a main function within your script tags</li>
+  <li>start writing your program in your main function</li>
+  <li>get your sketch element: var sketch = document.getElementById(&#8216;sketch&#8217;);	</li>
+  <li>create your context: var context = sketch.getContext(&#8220;2d&#8221;); </li>
+  <li>create three variables, x and y (both equal to 0) and size (equal to 20)</li>
+  <li>use a for loop to loop from 0 through (up-to and including) 4</li>
+  <li>use your for loop variable to modify the variables you created, x, y and size
+    <ul>
+      <li>size should be constant (20)</li>
+      <li>y should be equal to loop variable, i * something larger than size (30)</li>
+      <li>x should always be equal to 100</li>
+      <li>in the for loop, draw a rectangle using the variables you created: context.fillRect(x, y, size, size);</li>
+    </ul>
+  </li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-10-squares-1-vertical.png" alt="vertical" /></p>
+
+<ul>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>modify your program so that the squares are horizontal instead of vertical!</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-10-squares-2-horizontal.png" alt="horizontal" /></p>
+
+<hr />
+
+<h3 id="size">* size</h3>
+
+<p>Draw a series of squares that increase in size and change in color.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>size.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-events/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>create a main function within your script tags</li>
+  <li>start writing your program in your main function</li>
+  <li>get your sketch element: var sketch = document.getElementById(&#8216;sketch&#8217;);	</li>
+  <li>create your context: var context = sketch.getContext(&#8220;2d&#8221;); </li>
+  <li>again, use a for loop to create 5 squares, each an increasing size, and optionally, a lighter shade of green</li>
+  <li>hint: you&#8217;ll have to vary the size based on the loop variable (perhaps multiply the loop variable by 20)</li>
+  <li>hint: you can use the loop variable to create a two digit number&#8230; that you can insert into the hex string</li>
+  <li>hint: you can set x equal to whatever value x was previously, and add the size of the square plus some constant offset</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-10-squares-3-gradient.png" alt="size" /></p>
+
+<hr />
+
+<h3 id="grid">grid</h3>
+
+<p>Draw a grid of squares.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>grid.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-events/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>create a main function within your script tags</li>
+  <li>start writing your program in your main function</li>
+  <li>get your sketch element: var sketch = document.getElementById(&#8216;sketch&#8217;);	</li>
+  <li>create your context: var context = sketch.getContext(&#8220;2d&#8221;); </li>
+  <li>create two variables, x and y - both set to 0</li>
+  <li>use two for loops!
+    <ul>
+      <li>the outside for loop should have a loop variable called i</li>
+      <li>the inside for loop should have a loop variable called j</li>
+      <li>within the innermost for loop change x based on the loop variable i (maybe something like x = i * &#8230;)</li>
+      <li>within the innermost for loop change y based on the loop variable j </li>
+      <li>set your fill color to blue&#8230;</li>
+      <li>call context.fillRect with your new x and y values to create blue squares</li>
+    </ul>
+  </li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-10-grid-1.png" alt="grid" /></p>
+
+<hr />
+
+<h3 id="diagonal">diagonal</h3>
+
+<p>Create a diagonal line in your grid of squares.</p>
+
+<ul>
+  <li>modify the above program (grid.html) so that a diagonal line of squares from the upper left corner down to the lower right corner is yellow</li>
+  <li>hint: use a conditional to do this &#8230; base this conditional on the values of your loop variables (i and j)</li>
+</ul>
+
+<p><img src="../../resources/img/lab-10-grid-2-diagonal.png" alt="diagonal" /></p>
+
+<hr />
+
+<h3 id="face">face</h3>
+
+<p>Draw a face!</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>face.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-events/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>create a main function within your script tags</li>
+  <li>start writing your program in your main function</li>
+  <li>get your sketch element: var sketch = document.getElementById(&#8216;sketch&#8217;);	</li>
+  <li>create your context: var context = sketch.getContext(&#8220;2d&#8221;); </li>
+  <li>create a function that draws a circle - it should take a context, x, y, and r value&#8230;</li>
+  <li>use that function to the draw circles that compose the face</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-10-face-1.png" alt="face" /></p>
+
+<hr />
+
+<h3 id="multiface">multiface</h3>
+
+<ul>
+  <li>modify your program above so that face can be drawn using a function call</li>
+  <li>draw three faces</li>
+  <li>hint: pass context in as a parameter&#8230; along with x and y coordinates</li>
+  <li>use that function to draw a face</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-10-face-2-function.png" alt="multiface" /></p>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

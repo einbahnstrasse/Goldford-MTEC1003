@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Review</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+  <h1 id="review">Review</h1>
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="last-week">Last Week</h3>
+
+  <p><strong>What did we do in our last class?</strong></p>
+
+  <div class="incremental">
+    <ul>
+      <li>paths - absolute and relative</li>
+      <li>input and output, downloading files, archiving/compressing and extracting/uncompressing</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="special-symbols-for-paths">Special Symbols for Paths</h3>
+
+  <p><strong>What symbols represent the following directories? &#8594;</strong></p>
+
+  <ul>
+    <li>the current directory</li>
+    <li>up one directory (parent directory)</li>
+    <li>up two directories</li>
+    <li>root directory</li>
+    <li>home directory</li>
+    <li>directory you were previously in</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="special-symbols-for-paths-1">Special Symbols for Paths</h3>
+  <ul>
+    <li><strong>.</strong> (dot) - the current directory</li>
+    <li><strong>..</strong>  (dot dot) - up one directory (parent directory)</li>
+    <li><strong>../..</strong>  (dot dot slash dot dot)  - up two directories</li>
+    <li><strong>/</strong>  (slash) - root directory</li>
+    <li><strong>~</strong>  (tilde) - home directory</li>
+    <li><strong>-</strong> (dash) - directory you were previously in</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="root">Root</h3>
+
+  <ul>
+    <li><strong>What&#8217;s the root directory?</strong> &#8594;</li>
+    <li><strong>What symbol represents it??</strong> &#8594;</li>
+  </ul>
+
+  <div class="incremental">
+    <ul>
+      <li>the <strong>root directory</strong> is the top most folder or directory in a file system
+        <ul>
+          <li>it contains all of the other directories and files</li>
+          <li>think &#8220;Macintosh HD&#8221; on OSX</li>
+          <li>or c: on Windows</li>
+        </ul>
+      </li>
+      <li>root is represented by &#8220;/&#8221;
+        <ul>
+          <li><strong>cd /</strong> will bring you to the root directory</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="btdubs-abt-root">Note About Root</h3>
+
+  <p>We didn&#8217;t explicitly mention this in the last class, but:</p>
+
+  <ul>
+    <li>the <strong>root directory</strong> is not writable by the lab computer default user account</li>
+    <li>consequently, if you&#8217;re in root, commands like mkdir, touch, etc&#8230; should fail</li>
+    <li><strong>How would I get to root again?</strong> &#8594;</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="absolute-paths">Absolute Paths</h3>
+
+  <p><strong>What&#8217;s an absolute path?</strong> </p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>absolute paths</strong> are paths expressed as starting from root.
+        <ul>
+          <li>/Users/professor/Desktop</li>
+          <li>/Volumes</li>
+        </ul>
+      </li>
+      <li>you can get to an absolute path regardless of your current working directory</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="relative-paths">Relative Paths</h3>
+
+  <p><strong>What&#8217;s a relative path?</strong> </p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>relative paths</strong> are paths expressed as relative from the current working directory.
+        <ul>
+          <li>current directory is /User; to get to home: professor</li>
+          <li>current directory is /User; to get to Desktop: professor/Desktop</li>
+        </ul>
+      </li>
+      <li>you have to be in the directory that you&#8217;re assuming to be current for this to work.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="relative-and-absolute">Relative and Absolute</h3>
+
+  <p><strong>Tell me how to create these directories in my home folder</strong> &#8594;</p>
+
+  <ul>
+    <li>a directory called myprojects</li>
+    <li>within that, two directories called lab1 and lab2</li>
+    <li>and finally, in lab1, create a directory called output</li>
+  </ul>
+
+  <p>This should result in:</p>
+
+  <ul>
+    <li>myprojects</li>
+    <li>myprojects/lab1</li>
+    <li>myprojects/lab2</li>
+    <li>myprojects/lab1/output</li>
+  </ul>
+</section>
+
+<section>
+
+  <h3 id="relative-and-absolute-path-questions">Relative and Absolute Path Questions</h3>
+
+  <ol>
+    <li>From /Volumes, change to the lab1 directory that was just created
+      <div class="incremental">
+        <ul>
+          <li>In /Volumes: <strong>cd ~/myprojects/lab1</strong></li>
+        </ul>
+      </div>
+    </li>
+    <li>From home directory, what&#8217;s the <strong>relative</strong> path to output?
+      <div class="incremental">
+        <ul>
+          <li>In home: <strong>myprojects/lab1/output</strong></strong></li>
+        </ul>
+      </div>
+    </li>
+    <li>From home directory, what&#8217;s the <strong>absolute</strong> path to output?
+      <div class="incremental">
+        <ul>
+          <li>In home: <strong>/Users/professor/myprojects/lab1/output</strong></li>
+        </ul>
+      </div>
+    </li>
+    <li>From output, what&#8217;s the <strong>relative</strong> path to lab2?
+	  <div class="incremental">
+        <ul>
+          <li>In myprojects/lab1/output: <strong>../../lab2</strong></strong></li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section>
+
+  <h3 id="relative-and-absolute-path-questions-1">Relative and Absolute Path Questions Continued</h3>
+
+  <ol>
+	<li>From output, what&#8217;s the <strong>absolute</strong> path to lab2?
+	  <div class="incremental">
+        <ul>
+          <li>In myprojects/lab1/output: <strong>/Users/professor/myprojects/lab2</strong></strong></li>
+        </ul>
+      </div>
+    </li>
+    <li>From lab2, what&#8217;s the relative path to output?
+      <div class="incremental">
+        <ul>
+          <li>In lab2: <strong>../lab1/output</strong></strong></li>
+        </ul>
+      </div>
+    </li>
+    <li>From lab2, what&#8217;s the absolute path to output?
+      <div class="incremental">
+        <ul>
+          <li>In lab2: <strong>/Users/professor/myprojects/lab1/output</strong></li>
+        </ul>
+      </div>
+    </li>
+  </ol>
+
+</section>
+
+<section>
+  <h3 id="reviewing-inputoutput-commands">Reviewing input/output Commands</h3>
+
+  <ul>
+    <li><strong>How do I print/output text to the screen? &#8594;</strong>
+      <div class="incremental">
+    	<ul>
+      	  <li>echo [text]</li>
+    	</ul>
+  	  </div>
+    </li>
+    <li><strong>How do I clean up / remove the text from the screen? &#8594;</strong>
+      <div class="incremental">
+    	<ul>
+      	  <li>clear</li>
+    	</ul>
+  	  </div>
+  	 </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="downloading-files">Downloading Files</h3>
+
+  <ul>
+    <li><strong>How do I download a file and display its contents on my screen with one command? &#8594;</strong>
+      <div class="incremental">
+    	<ul>
+      	  <li>curl someurl.com</li>
+    	</ul>
+  	  </div>
+  	</li>
+    <li><strong>How do I download a file and save it to a file with a specified name? &#8594;</strong></li>
+  </ul>
+
+  <div class="incremental">
+    <ul>
+      <li>curl -o filename.txt someurl.com</li>
+      <li>what&#8217;s the -o flag its following argument for?</li>
+    </ul>
+
+    <p>&#8230;it specifies the name of the file to save your download to.</p>
+  </div>
+</section>
+
+<section>
+  <h3 id="archiving-and-compressing-files">Archiving and Compressing Files</h3>
+
+  <ul>
+    <li><strong>How do I archive an entire directory into a single file? &#8594;</strong>
+      <div class="incremental">
+    	<ul>
+      	  <li>tar -cvf archivename.tar dirname</li>
+    	</ul>
+      </div>
+    </li>
+    <li><strong>How do I compress a file? &#8594;</strong>
+  	  <div class="incremental">
+    	<ul>
+      	  <li>gzip filename</li>
+    	</ul>
+  	  </div>
+  	</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="extract-and-uncompress">Extract and Uncompress</h3>
+
+  <ul>
+    <li><strong>How do I uncompress a zip (.zip) file? &#8594;</strong></li>
+    <li><strong>How do I extract files from a compressed archive (.tar.gz)? &#8594;</strong></li>
+  </ul>
+
+  <div class="incremental">
+    <ul>
+      <li>unzip filename.zip</li>
+      <li>tar -xvf filename</li>
+    </ul>
+  </div>
+</section>
+
+<!--
+<section>
+  <h3 id="extract-and-uncompress-again">Extract and Uncompress (Again)</h3>
+
+  <ul>
+    <li><strong>Again, what do I use to uncompress a zip (.zip) file? &#8594;</strong></li>
+    <li><strong>&#8230;And how do I extract files from a compressed archive (.tar.gz)? &#8594;</strong></li>
+  </ul>
+
+  <div class="incremental">
+    <ul>
+      <li>unzip filename.zip</li>
+      <li>tar -xvf filename</li>
+    </ul>
+  </div>
+</section>
+-->
+
+<section>
+  <h3 id="activity-drills"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 3 (use set 2)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 2</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="summary-part-1">Summary Part 1</h3>
+
+  <p>(brackets - []&#8217;s  - denote arguments that you must supply; <strong>the brackets are not part of the command</strong>, so don&#8217;t type them out)</p>
+
+  <ul>
+    <li>echo [something to print to the screen]</li>
+    <li>clear</li>
+    <li>curl [url of file to downlaod]</li>
+    <li>curl -o [name of file to download to] [url of file to download]	</li>
+    <li>unzip [name of file to unzip]</li>
+    <li>tar -xvf [name of file to extract and uncompress]</li>
+    <li>tar -cvf [name of archive] [name of directory to archive]</li>
+    <li>gzip [name of file to compress]</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="lab"><strong>Lab</strong></h3>
+
+  <p><a href="lab-03-part-01-review.txt">Review</a></p>
+
+  <ul>
+    <li>Type each command (with arguments and flags) exactly</li>
+    <li>Only press &lt;ENTER&gt; when instructed&#8230;</li>
+    <li>&lt;TAB&gt;, &lt;ENTER&gt;, &lt;UP&gt;, &lt;DOWN&gt; are the actual keys!</li>
+    <li>Paste answer or output below the dashed line (&#8212;&#8212;&#8212;&#8212;)</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="activity-everything-weve-learned-so-far"><strong>Activity</strong>: Everything We&#8217;ve Learned So Far</h3>
+
+  <p>Entering commands <em>flash cards</em> x 3 (use sets 1 and 2)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 12</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h2 id="working-with-filesworking-with-fileshtml"><a href="working-with-files.html">Working With Files</a></h2>
+</section>
+
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

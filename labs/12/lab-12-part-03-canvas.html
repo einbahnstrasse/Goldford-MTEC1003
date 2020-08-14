@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Canvas</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-12---part-3---canvas">Lab 11 - Canvas</h1>
+
+<p>In this lab, you&#8217;ll be creating the following programs:</p>
+
+<ol>
+  <li>square</li>
+  <li>squarecircle</li>
+  <li>customcircle</li>
+  <li>five</li>
+  <li>car</li>
+  <li>alternating</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<h3 id="square">square</h3>
+
+<p>Write a program that draws a square.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>square.html</strong> in your repository directory: <strong>~/Desktop/llorenzo/lab-11-canvas/</strong></li>
+  <li>setup an html file</li>
+  <li>add an onload attribute to the body tag to call a function called draw:<br />
+    <div class="highlight"><pre><code class="bash">&lt;body onload="draw()">
+    </code></pre></div>
+  </li>
+  <li>create a canvas element of at least 300 by 300<br />
+    <div class="highlight"><pre><code class="bash">&lt;canvas id="sketch" width="300" height="300">
+&lt;/canvas>
+    </code></pre></div>
+  </li>
+  <li>add script tags</li>
+  <li>create a draw function within your script tags
+    <br />
+    <div class="highlight"><pre><code class="bash">function draw() {
+// your drawing goes here
+}
+    </code></pre></div>
+  </li>
+  <li>start writing your program in your draw function<br />
+    <div class="highlight"><pre><code class="bash">var sketch = document.getElementById('sketch');
+var context = sketch.getContext("2d");
+context.fillRect(x, y, width, height);
+    </code></pre></div>
+  </li>
+  <li>draw a square of any color other than default black</li>
+  <li>the square should be at least 100 pixels wide and 100 pixels high</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-09-square.png" alt="square" /></p>
+
+<hr />
+
+<h3 id="squarecircle">squarecircle</h3>
+
+<p>Write a program that draws a square and a circle next to each other.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>squarecircle.html</strong> in your repository directory: <strong>~/Desktop/llorenzo/lab-11-canvas/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 300 by 300</li>
+  <li>add an onload attribute to the body tag to call a function called draw</li>
+  <li>add script tags</li>
+  <li>create a draw function within your script tags</li>
+  <li>start writing your program in your draw function</li>
+  <li>draw a square of any dimensions of any color other than default black</li>
+  <li>draw a circle next to the square of any color other than default black</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-09-squarecircle.png" alt="squarecircle" /></p>
+
+<hr />
+
+<h3 id="customcircle">customcircle</h3>
+
+<p>Write a program that asks for a number and a color - red, green, or blue. It will draw a circle with that radius and color.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>customcircle.html</strong> in your repository directory: <strong>~/Desktop/llorenzo/lab-11-canvas/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 300 by 300</li>
+  <li>add an onload attribute to the body tag to call a function called draw</li>
+  <li>add script tags</li>
+  <li>create a draw function within your script tags</li>
+  <li>start writing your program in your draw function</li>
+  <li>the program should ask for a radius: &#8220;Enter a radius&#8221;</li>
+  <li>the program should ask for a color: &#8220;Enter a color&#8221;</li>
+  <li>use the parseInt function to convert input from a string to a number</li>
+  <li>use a conditional (if, if-else, or if-else-if) to create a string of the hex color that represents the color entered by the user - red (&#8220;#ff0000&#8221;), green, or blue</li>
+  <li>draw the circle in at the center of your canvas</li>
+  <li>(if your canvase is 300 x 300, then the circle should be at 150 x 150)</li>
+  <li>the program should use the input to draw a circle with that radius</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example images below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-09-customcircle-1.png" alt="customcircle1" /></p>
+
+<p><img src="../../resources/img/lab-09-customcircle-2.png" alt="customcircle2" /></p>
+
+<p><img src="../../resources/img/lab-09-customcircle-3.png" alt="customcircle3" /></p>
+
+<hr />
+
+<h3 id="five">five</h3>
+
+<p>Draw five squares using a for loop</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>five.html</strong> in your repository directory: <strong>~/Desktop/llorenzo/lab-11-canvas/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 300 by 300</li>
+  <li>add an onload attribute to the body tag to call a function called draw</li>
+  <li>add script tags</li>
+  <li>create a draw function within your script tags</li>
+  <li>start writing your program in your draw function</li>
+  <li>draw five  squares, all adjacent to eachother using a for loop!</li>
+  <li>they should be any color other than default black. </li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-09-five.png" alt="five" /></p>
+
+<hr />
+
+<h3 id="car">car</h3>
+
+<p>Draw a car&#8230;</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>car.html</strong> in your repository directory: <strong>~/Desktop/llorenzo/lab-11-canvas/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 300 by 300</li>
+  <li>add an onload attribute to the body tag to call a function called draw</li>
+  <li>add script tags</li>
+  <li>create a draw function within your script tags</li>
+  <li>start writing your program in your draw function</li>
+  <li>draw a car!</li>
+  <li>use two rectangles and two circles</li>
+  <li>make the color of the rectangles different from the color of the circles</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-09-car.png" alt="car" /></p>
+
+<hr />
+
+<h3 id="alternating">alternating</h3>
+
+<p>Draw a row of circles and squares.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>alternating.html</strong> in your repository directory: <strong>~/Desktop/llorenzo/lab-11-canvas/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 300 by 300</li>
+  <li>add an onload attribute to the body tag to call a function called draw</li>
+  <li>add script tags</li>
+  <li>create a draw function within your script tags</li>
+  <li>start writing your program in your draw function</li>
+  <li>draw a 10 shapes - 5 circles and 5 squares</li>
+  <li>they should be alternating horizontally</li>
+  <li>the squares and the circles should be colored differently</li>
+  <li>hint: use a conditional for this</li>
+  <li>hint: use modulo to switch between circles and squares (% 2 will give back 0 or 1)</li>
+  <li>(optional) *ask for a number, draw that many shapes</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-09-alternating.png" alt="alternating" /></p>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

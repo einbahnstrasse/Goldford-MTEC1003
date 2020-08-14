@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Version Control Review</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="submitting-assignments-javascript-review">Submitting Assignments, JavaScript Review</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h2 id="version-control">Version Control!</h2>
+</section>
+
+<section>
+  <h3 id="about-repositories">About Repositories</h3>
+
+  <p>What is a <strong>repository</strong>, <strong>local repository</strong>, <strong>remote repository</strong>, <strong>commit</strong>, and <strong>diff</strong>? &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li><strong>repository</strong> - the place where your version control system stores the snapshots that you <em>save</em></li>
+      <li><strong>local repository</strong> - the repository on your computer</li>
+      <li><strong>remote repository</strong> - a copy of versions of your files on another computer</li>
+      <li><strong>commit</strong> - save a snapshot of your work</li>
+      <li><strong>diff</strong> - the line-by-line difference between two files or sets of files</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="changing-and-saving-files">Changing and Saving Files</h3>
+
+  <p>In your <strong>local repository</strong>, describe what is contained in the: <strong>working directory</strong>, <strong>index</strong> and <strong>HEAD</strong>. &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>the working directory / working copy</strong> - stuff you&#8217;ve changed but haven&#8217;t saved</li>
+      <li><strong>index</strong> - stuff that you&#8217;re about to save (staging area)</li>
+      <li><strong>HEAD</strong> - stuff that you&#8217;ve already saved</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="how-do-we-use-git">How Do We Use Git?</h3>
+
+  <p><strong>What is the primary way that we use git?  That is, what is the root command, and what can we do with it? &#8220;Where&#8221; do you have to be to use git?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>we use <strong>git</strong> through the <strong>commandline</strong> </li>
+      <li>the base command is <strong>git</strong> followed by a specific <em>git command</em></li>
+      <li>these commands/actions only work when <strong>you&#8217;re in a git repository</strong></li>
+      <li>(that is, you have to cd to the directory that contains your repository)</li>
+    </ul>
+
+  </div>
+</section>
+
+<section>
+  <h2 id="all-git-commands-must-be-run-in-your-repository-directory-where-you-ran-git-init">All git commands must be run in your repository directory (where you ran git init)</h2>
+</section>
+
+<section>
+  <h3 id="commands-for-setting-up-repositories">Commands for Setting Up Repositories</h3>
+
+  <p><strong>What are the actual commands that you would use to set up and link your repositories?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># create a local repository</span>
+git init
+
+<span class="c"># configure it with your name and email</span>
+git config user.name  <span class="s2">&quot;your name&quot;</span>
+git config user.email <span class="s2">&quot;your@email.address&quot;</span>
+
+<span class="c"># create a remote repository</span>
+curl -u <span class="s1">&#39;your github user name&#39;</span> https://api.github.com/user/repos -d <span class="s1">&#39;{&quot;name&quot;:&quot;your repository name&quot;}&#39;</span>
+
+<span class="c"># link the two</span>
+git remote add origin <span class="s2">&quot;your username&quot;</span>@<span class="s2">&quot;the url to your repository on github&quot;</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="commands-for-saving-and-sharing-changes">Commands for Saving and Sharing Changes</h3>
+
+  <p><strong>What&#8217;s are the actual commands that you use for making, saving and sharing changes?  Let&#8217;s start with just making the change and prepping it to be saved.</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># (make changes)</span>
+
+<span class="c"># show the exact, line-by-line changes that you&#39;ve made</span>
+git diff --color
+
+<span class="c"># check on the status of your changes</span>
+git status
+
+<span class="c"># stage your changes / prep them to be saved</span>
+git add --all
+
+<span class="c"># check your staged changes using git status again</span>
+git status
+
+<span class="c"># (continued...)</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="saving-and-sharing-continued">Saving and Sharing Continued&#8230;</h3>
+
+  <p><strong>Saving and sending to the remote repository</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># save them, make sure you remember your comment by using -m!</span>
+git commit -m <span class="s1">&#39;my message&#39;</span>
+
+<span class="c"># show a history of your changes</span>
+git log --color <span class="o">(</span>show your changes so far<span class="o">)</span>
+
+<span class="c"># send to your remote repository</span>
+git push origin master
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="git-status">git status</h3>
+
+  <p><strong>What does git status do?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p><strong>git status</strong> - show what changes are ready to be committed as well as changes that you are working on in your working directory that haven&#8217;t been staged yet</p>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="git-add">git add</h3>
+
+  <p><strong>What does git add do? Does it take any arguments or does it have flags?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p><strong>git add</strong> marks a file or files as ready to be saved.  </p>
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># add all to stage all of your changes</span>
+git add --all
+
+<span class="c"># add a path to a file to add a specific file</span>
+git add relative/path/to/myfile.txt
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="git-commit">git commit</h3>
+
+  <p><strong>What does git commit do? Does it take any arguments or does it have flags?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p><strong>git commit</strong> <em>saves</em> your changes to your local repository.</p>
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git commit -m <span class="s1">&#39;commit message goes here&#39;</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="showing-and-getting-rid-of-remote-repositories">Showing and Getting Rid of Remote Repositories</h3>
+
+  <p>How do you&#8230; <strong>Show your remote repository names and urls?</strong> <strong>&#8230;and how do you  get rid of remote repositories?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># show remote repositories</span>
+git remote -v
+
+<span class="c"># The output should look something like...</span>
+<span class="c"># origin	https://bzuckerman@github.com/bzuckerman/lab-07-javascript-conditionals.git (fetch)</span>
+<span class="c"># origin	https://bzuckerman@github.com/bzuckerman/lab-07-javascript-conditionals.git (push)</span>
+
+<span class="c"># remove remote repository (assuming remote repository name is origin)</span>
+git remote remove origin
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="troubleshooting">Troubleshooting</h3>
+
+  <p>If you have trouble sending your changes to github, make sure your remote repository url is correct&#8230;</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># show remote repositories</span>
+git remote -v
+
+<span class="c"># should give back something like...</span>
+<span class="c"># origin	https://bzuckerman@github.com/bzuckerman/lab-07-javascript-conditionals.git (fetch)</span>
+<span class="c"># origin	https://bzuckerman@github.com/bzuckerman/lab-07-javascript-conditionals.git (push)</span>
+
+<span class="c"># remove remote repository (assuming remote repository name is origin)</span>
+git remote remove origin
+
+<span class="c"># add new remote</span>
+git remote add origin https://bzuckerman@github.com/bzuckerman/lab-07-javascript-conditionals.git
+</code></pre></div>
+
+</section>
+
+<section>
+  <h2 id="javascript">JavaScript!</h2>
+</section>
+
+<section>
+  <h3 id="running-javascript-programs">Running JavaScript Programs</h3>
+
+  <p><strong>What application / tool do we use to run our programs?</strong> &#8594; </p>
+
+  <div class="incremental">
+    <ul>
+      <li>we&#8217;ll be using our web browser to run JavaScript programs!</li>
+      <li>specifically, we&#8217;ll be using Chrome and Chrome&#8217;s <strong>JavaScript Console</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="javascript-programs---file-format">JavaScript Programs - File Format</h3>
+
+  <p><strong>What kind of file will we save our programs in (as in, what extension should we use, what&#8217;s the file type)?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>because we&#8217;re targeting Chrome and Chrome&#8217;s <strong>JavaScript Console</strong> to run our programs, we&#8217;ll be writing our JavaScript in web pages</li>
+      <li>that means editing plain text files </li>
+      <li>specifically,files that that end in <strong>.html</strong> (web pages)
+        <ul>
+          <li>it&#8217;s actually not good practice to have JavaScript code interspersed with your html, but for our purposes of getting started it&#8217;s ok</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="a-template-for-our-programs">A Template for Our Programs</h3>
+
+  <p><strong>What do we have to put in our .html file before we can write our JavaScript</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p>We&#8217;ll have to create a bare bones web page:</p>
+
+    <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="c1">// your JavaScript goes here!</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+    <p><strong>Your code goes within the script tags!</strong></p>
+  </div>
+</section>
+
+<section>
+  <h3 id="creating-javascript-programs">Creating JavaScript Programs</h3>
+
+  <p><strong>What tool do we use to write our JavaScript programs?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>we use a text editor called <strong>SublimeText</strong></li>
+      <li>if we save the file as some_file_name.html (note the <strong>.html</strong> extension) before writing&#8230;</li>
+      <li>we can use TAB to automplete:
+        <ul>
+          <li>start typing html&#8230; and hit TAB</li>
+          <li>you&#8217;ll still need to fill in the script tags</li>
+        </ul>
+      </li>
+      <li>(again, your code goes between the script tags)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="running-a-program-in-chrome">Running a Program in Chrome</h3>
+
+  <p><strong>How do we actually run our JavaScript programs in Chrome?  Where does the output (and errors) from your program show up?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>In <strong>Chrome</strong>&#8230; go to File &#8594; Open File &#8230; &#8594; browse to the html file you created in SublimeText</li>
+      <li>you&#8217;ll see output and errors pop up in <strong>Chrome&#8217;s JavaScript Console</strong></li>
+      <li>(you can get to this by going to View &#8594; Developer &#8594; JavaScript Console)</li>
+      <li>if you make changes to your original file, just refresh the page (Command + r)</li>
+    </ul>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="trying-one-line-at-a-time">Trying One Line at a Time</h3>
+
+  <p><strong>How do we try out single lines of JavaScript without writing an entire html file?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>once again, we can use Chrome&#8217;s JavaScript console; it lets you try out lines of JavaScript one line at a time interactively</li>
+      <li>you can use this to experiment with code</li>
+      <li>it has access to everything else in the page (we&#8217;ll see this later)</li>
+      <li>it will give you instant feedback with each line you type</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="the-javascript-console">The JavaScript Console</h3>
+
+  <p>Chrome&#8217;s JavaScript Console is multi-purpose.  <strong>What are the ways that we can use it?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>shows the output of your program</li>
+      <li>displays errors from your program</li>
+      <li>allows you to interactively execute single lines of code on the page that you&#8217;re on</li>
+      <li>&#8230;and later, we&#8217;ll see that we can use it to debug our programs</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h2 id="javascript-basics">JavaScript Basics&#8230;</h2>
+
+  <!--
+* what types do we know
+	* what are some examples of each?
+* what operators do we know
+* put together expressions using variables, values and operators
+* put together  statements
+* built in functions
+	* console.log
+	* prompt()
+* sample program.... double a number that's entered... using a temporary variable
+-->
+</section>
+
+<section>
+  <h3 id="data-types-and-values">Data Types and Values</h3>
+
+  <p><strong>What&#8217;s a value and what&#8217;s a data type?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>values are just data - for example: 3.14, &#8220;hello&#8221;</li>
+      <li>a <strong>type</strong> is just a kind or category of value.  </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="creating-values">Creating Values</h3>
+
+  <p><strong>How do we create a value in our program?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>to create values, just write them!</li>
+      <li>for example: 7 &#8230; or &#8220;hello there&#8221;</li>
+      <li>values that are written plainly like this are called <strong>literals</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="data-types">Data Types</h3>
+
+  <p><strong>What are some data types that we know?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>number</strong> - numeric data (clearly!)</li>
+      <li><strong>string</strong> - an ordered sequence of characters (alphanumeric, punctuation, spaces, etc.)</li>
+      <li><strong>boolean</strong> values - true / false</li>
+      <li>there&#8217;s also <strong>undefined</strong>&#8230; when we try to use a variable that hasn&#8217;t been created yet</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="data-types-1">Data Types</h3>
+
+  <p>A value&#8217;s data <strong>type</strong> determines how that value behaves when used in functions or transformed/combined with <strong>operators</strong>.</p>
+
+</section>
+
+<section>
+  <h3 id="numbers">Numbers</h3>
+
+  <ul>
+    <li>numbers are, of course,  <em>numbers</em></li>
+    <li>including&#8230; positive and negative whole numbers: 23, 42, -10</li>
+    <li>as well as decimals (with a period): 2.3, 4.2</li>
+    <li>no need for commas</li>
+    <li>JavaScript uses a fixed number of bits to store numbers: <em>64 bits</em></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="some-special-numbers">Some Special Numbers&#8230;</h3>
+
+  <p><strong>Are there any special values for numbers other than actual integer and floating point numbers?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>Infinity, -Infintity</strong> - positive and negative infinities (don&#8217;t use these, they&#8217;re not that useful, and not mathematically solid!)</li>
+      <li><strong>NaN</strong> (not-a-number) - this results from any numeric operation that doesn&#8217;t give back a meaniingful result&#8230; such as 0/0</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="strings">Strings</h3>
+
+  <p><strong>What&#8217;s a string, and give an example of a string literal</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p>A <strong>string</strong> is an ordered sequence of characters.  You can tell that a value is a string if it is surrounded by single or double quotes:</p>
+
+    <div class="highlight"><pre><code class="html">&quot;I&#39;m a string&quot;
+&#39;I\&#39;m a string&#39;
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="empty-strings">Empty Strings</h3>
+
+  <p><strong>What&#8217;s an empty string?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>a <strong>string</strong> can be composed of <em>any</em> characters: numbers, letters, punctuation, spaces, etc. &#8230; and it can even be empty</li>
+      <li>string with nothing in it is an <strong>empty string</strong>:</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">&quot;&quot;
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="escape-characters">Escape Characters</h3>
+
+  <p><strong>How do we write a backslash, quote, tab or a new line in a string?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>use the escape character, backslash (\)</li>
+      <li>if there is a backslash in a string (\), it means:
+        <ul>
+          <li>the next character has a special meaning</li>
+          <li>the initial backslash will not be printed out</li>
+        </ul>
+      </li>
+      <li>for example, backslash, quote, tab and newline:</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">&quot;\\&quot;
+&quot;\&quot;&quot;
+&quot;\t&quot;
+&quot;\n&quot;
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="operators">Operators</h3>
+
+  <p><strong>What&#8217;s an operator and what are some examples of operators?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>operators allow us to combine and transform values</li>
+      <li>operators have <strong>operands</strong>,
+        <ul>
+          <li><strong>operands</strong> are the values that supplied to operators</li>
+          <li><strong>binary</strong> operators have two operands</li>
+          <li><strong>unary</strong> operators have one operand</li>
+        </ul>
+      </li>
+      <li><strong>operators give back values</strong>
+        <ul>
+          <li>using operators with values yields other values!</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="numeric-operators">Numeric Operators</h3>
+
+  <p><strong>Name 5 binary arithmetic operators (they take two operands, one on either side)</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li><strong>+</strong> - addition</li>
+      <li><strong>-</strong> - subtraction</li>
+      <li><strong>*</strong> - multiplication</li>
+      <li><strong>/</strong> - division</li>
+      <li><strong>%</strong> - modulo (remainder operator)</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="numeric-operators-and-precedence">Numeric Operators and Precedence</h3>
+
+  <ul>
+    <li>order of operations: parentheses, exponents, multiplication, division, addition, subtraction (PEMDAS)</li>
+    <li>modulo is the same precedence as multiplication and division</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="string-operators">String Operators</h3>
+
+  <p><strong>We learned about one operator that works on strings.  What was it?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p><strong>string concatenation</strong>, or <strong>+</strong>, is an operator that takes two strings and joins them:</p>
+
+    <div class="highlight"><pre><code class="html">&quot;hello &quot; + &quot;there&quot;
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="unary-operators">Unary Operators</h3>
+
+  <p>Unary Operators only have a single operand to the right:</p>
+
+  <ul>
+    <li><strong>+</strong> - convert to positive number</li>
+    <li><strong>-</strong> - convert to negative number</li>
+  </ul>
+
+  <p><strong>What&#8217;s the operator that gives back the type of a value?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p><strong>typeof</strong> - gives the <em>type</em> of a value (Number, String, etc.)</p>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="typeof">typeof</h3>
+
+  <p>Again, <strong>typeof</strong> is:</p>
+
+  <ul>
+    <li>an operator that takes one operand</li>
+    <li>gives back the type of value the operand</li>
+  </ul>
+
+  <p><strong>What are the types that we know?  What would we get with this code:</strong>  &#8594;</p>
+
+  <div class="highlight"><pre><code class="html">typeof true
+typeof &quot;10&quot;
+</code></pre></div>
+
+  <div class="incremental">
+    <ul>
+      <li>we know three types: strings, numbers, and booleans)</li>
+      <li>string, number and string</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="functions">Functions</h3>
+
+  <p><strong>What&#8217;s a function?  What&#8217;s a function call?  What are arguments?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>a <strong>function</strong> is a named sequence of statements that perform some useful action</li>
+      <li>it can <strong>optionally</strong> take <strong>inputs</strong> and <strong>return values</strong></li>
+      <li>to <strong>call</strong> a function is just to <em>run</em> or <em>execute</em> it</li>
+      <li>the values passed to a function are called <strong>arguments</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="calling-functions">Calling Functions</h3>
+
+  <p><strong>How do you call <em>or execute</em> a function?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>to call a function, use its name followed by parentheses&#8230; with an optional list of comma separated arguments between the parentheses</li>
+      <li>an example of a function call is:</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">prompt(&quot;hello&quot;) is a function call
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="built-in-functions">Built-in Functions</h3>
+
+  <p>JavaScript comes with several built in functions.  We learned two of them.  <strong>What are they and what do they do?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>prompt(&#8220;some message&#8221;)</strong> - asks the user for input and <strong>returns</strong> that value to your program! &#8230; takes a single argument, the message to display to a user (this usually requires the use of <em>variables</em>)</li>
+      <li><strong>console.log(&#8220;some message&#8221;)</strong> - prints the argument that you pass to it&#8230; out to Chrome&#8217;s JavaScript console </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 id="values-operators-and-functions-can-be-combined-to-make-expressions">Values, Operators and Functions can be Combined to Make Expressions</h2>
+</section>
+
+<section>
+  <h3 id="what-exactly-is-a-program">What Exactly is a Program?</h3>
+
+  <p><strong>What&#8217;s a program?  What&#8217;s a statement?  What&#8217;s an expression?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li><strong>program</strong> - a sequence of statements that specify to a computer actions to perform</li>
+      <li><strong>statement</strong> - corresponds to a sentence&#8230; it&#8217;s a full instruction for the computer&#8230; <strong>all statements end in a semicolon</strong> in JavaScript (;)</li>
+      <li><strong>expression</strong> - a fragment of code that produces a value; it&#8217;s not a statement by itself</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="expressions-and-statements-continued">Expressions and Statements Continued</h3>
+
+  <div class="highlight"><pre><code class="html"># the entire line below is a statement
+var x = 1 + 5;
+
+# 1 + 5 in the statement above is just an expression... that produces a value
+</code></pre></div>
+
+</section>
+
+<section>
+  <h2 id="all-statements-end-in-a-semicolon--in-javascript">All statements end in a semicolon (;) in JavaScript</h2>
+</section>
+
+<section>
+  <h3 id="variables">Variables</h3>
+
+  <p><strong>What are variables and how do you use them in JavaScript?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>variables</strong> are names bound to values:  </li>
+      <li>you can use a variable&#8217;s name wherever you want to use that value.</li>
+      <li>to create a variable, use the special word, var, followed by =, then the value, and finally a semicolon</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">var x = 23;
+
+// using that variable
+console.log(x + 7);
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="using-prompt-with-variables">Using Prompt With Variables</h3>
+
+  <p>Remember that the function prompt gives back a value.  To retain that value, you have to hold it in a variable:</p>
+
+  <div class="highlight"><pre><code class="html">var answer = prompt(&quot;Yes or no!?&quot;);
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="comments">Comments</h3>
+
+  <p>Comments allow the programmer to write notes that the JavaScript interpreter will skip over / ignore.  <strong>How do you specify a comment in your program?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="html">// a comment
+/*
+a long
+comment
+*/
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="lets-write-a-program-that">Let&#8217;s Write a Program That&#8230;</h3>
+
+  <ul>
+    <li>asks the user for a number</li>
+    <li>doubles the number and saves it in a variable</li>
+    <li>prints out the new number to the JavaScript console</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="a-potential-solution">A Potential Solution</h3>
+
+  <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Give me a number; I&#39;ll double it&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">twice_the_num</span> <span class="o">=</span> <span class="nx">num</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">twice_the_num</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

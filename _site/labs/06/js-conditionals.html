@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - JavaScript Conditionals</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="javascript-conditionals">JavaScript Conditionals</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="source-material">Source Material</h3>
+
+  <p>See the first two chapters of the second edition of <a href="http://eloquentjavascript.net/2nd_edition/preview/">Eloquent JavaScript</a> for more detailed information:</p>
+
+  <ul>
+    <li><a href="http://eloquentjavascript.net/2nd_edition/preview/01_values.html">Chapter 1 - Values</a></li>
+    <li><a href="http://eloquentjavascript.net/2nd_edition/preview/02_program_structure.html">Chapter 2 - Program Structure</a></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="boolean-values">Boolean Values</h3>
+
+  <p>Besides numbers and strings, there is another type that we talked about briefly.  <strong>They are booleans.  What are the possible values that a boolean can be?</strong> &#8594; </p>
+
+  <div class="incremental">
+    <ul>
+      <li>a boolean value is <strong>true</strong> or <strong>false</strong></li>
+      <li>a literal <strong>true</strong> and <strong>false</strong> is just:</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">true
+false
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="boolean-operators">Boolean Operators</h3>
+
+  <p>There are a couple of operators that return boolean values!</p>
+
+  <ul>
+    <li><strong>===</strong> - equals - checks if both operands are the <strong>same value and type</strong>
+      <ul>
+        <li>gives back true if both are the same value and type</li>
+        <li>gives back false otherwise</li>
+      </ul>
+    </li>
+    <li><strong>!==</strong> - not equals - checks if the operands are <strong>not the same value or type</strong>
+      <ul>
+        <li>gives back true if both operands are not the same value or type</li>
+        <li>gives back false otherwise</li>
+      </ul>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="boolean-expressions">Boolean Expressions</h3>
+
+  <p>You can create boolean expressions with these operators:</p>
+
+  <div class="highlight"><pre><code class="html">1 === &quot;1&quot;
+12 !== &quot;cat&quot;
+</code></pre></div>
+
+  <p><strong>By the way&#8230; what is the type of value given back by these, and how do we find out what the type actually is?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="html"># boolean
+var result =  1 === &quot;1&quot;
+typeof result
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h2 id="boolean-expressions-give-back-boolean-values">Boolean Expressions Give Back Boolean Values!</h2>
+</section>
+
+<section>
+  <h3 id="conditionals">Conditionals</h3>
+
+  <p><a href="http://eloquentjavascript.net/2nd_edition/preview/02_program_structure.html">See Conditional Execution in Eloquent JavaScript</a></p>
+
+  <p>A conditional is a way of allowing us to conditionally execute code based on a boolean expression.</p>
+
+</section>
+
+<section>
+  <h3 id="if-statement">If Statement</h3>
+
+  <p>Conditionally execute a branch of code.</p>
+
+  <div class="highlight"><pre><code class="html">if (some_boolean_expression) {
+	// do stuff here if expression is true
+}
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="if--else-statement">If / Else Statement</h3>
+
+  <p>Execute one branch if condition is true, another branch if condition is false.  An else must have a preceding if!</p>
+
+  <div class="highlight"><pre><code class="html">if (some_boolean_expression) {
+	// do stuff here if expression is true
+} else {
+	// do stuff here if expression is false
+}
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="if--else-if">If / Else If</h3>
+
+  <p>Chain multiple conditions.  You can add else at the end as well.  Conditions are evaluated until the first true condition, at which point the if statement finishes immediately.</p>
+
+  <div class="highlight"><pre><code class="html">if (boolean_expression_1) {
+	// do stuff here if expression 1 is true
+} else if (boolean_expression_2) {
+	// do stuff here if expression 2 is true
+} else if (boolean_expression_3) {
+	// do stuff here if expression 3 is true
+}
+</code></pre></div>
+
+</section>
+<section>
+  <h3 id="boolean-expression">Boolean Expression</h3>
+
+  <p>Note that within the parentheses is some expression that produces a boolean values (true or false).</p>
+
+  <div class="highlight"><pre><code class="html">if (boolean_expression_1) {
+	// do stuff here if expression 1 is true
+}
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="blocks-of-code">Blocks of Code</h3>
+
+  <p>Curly braces denote statements of code that are grouped together.  Everything within the curly braces below is considered part of the if statement.</p>
+
+  <div class="highlight"><pre><code class="html">if (boolean_expression_1) {
+	// do stuff here if expression 1 is true
+}
+</code></pre></div>
+
+</section>
+
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

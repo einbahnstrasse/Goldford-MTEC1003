@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Functions</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-10---part-1---javascript-functions">Lab 10 - Part 1 - JavaScript Functions</h1>
+
+<p>In this lab, you&#8217;ll be creating the following programs:</p>
+
+<ol>
+  <li>heart</li>
+  <li>sandwich</li>
+  <li>triangle</li>
+  <li>* min</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE CREATED IN THE REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<h3 id="heart">heart</h3>
+
+<p>Write a program that adds a heart to the beginning of two strings - &#8220;stuff&#8221; and &#8220;JavaScript&#8221;.  Do this by creating a function</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>heart.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-events/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>create a function called heart (use: function yourFunctionName(param1, param2 &#8230;))</li>
+  <li>it should take only one parameter; call it word</li>
+  <li>it should return a value &#8230; the word with an ascii art heart attached to the beginning of it  &gt;3 (use return &#8230; to do this)</li>
+  <li>call your function twice&#8230; (function name, then arguments within parentheses: yourFunctionName(arg1, arg2 &#8230;))
+    <ul>
+      <li>&#8230;and assign the output to a variable (var varname1 = yourFunctionName(arg1, &#8230;))</li>
+      <li>the first time, pass in &#8220;stuff&#8221; as an argument</li>
+      <li>the second timee, pass in &#8220;&#8221; as an argument</li>
+    </ul>
+  </li>
+  <li>print out both variables to the JavaScript console (console.log(&#8230;))</li>
+  <li>example output below&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">&lt;3 stuff
+&lt;3 JavaScript
+</code></pre></div>
+
+<hr />
+
+<h3 id="sandwich">sandwich</h3>
+
+<p>Write a program that adds an arbitrary character to the beginning and end of a string. It will ask the user for a word and another word to surround it with. </p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>sandwich.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-events/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>define a function called sandwich</li>
+  <li>it should have two parameters, word and surround</li>
+  <li>it should <strong>give back</strong> a value - the the string, word, with the string, surround, at the beginning and end of it</li>
+  <li>ask for a word: &#8220;Word please:&#8221;</li>
+  <li>ask for a surrounding word: &#8220;What should I surround it with?&#8221;</li>
+  <li>it should call your sandwich function will give back the word surrounded appropriately
+    <ul>
+      <li>for example youFunctionName(&#8220;HELLO&#8221;, &#8220;<em>&#8221;) gives back &#8220;</em>HELLO*&#8221;</li>
+    </ul>
+  </li>
+  <li>save the result of calling your sandwich function </li>
+  <li>print out the result to the JavaScript console</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Word please:
+&gt; hello
+<span class="o">(</span>prompt<span class="o">)</span> What should I surround it with?:
+&gt; x
+xhellox
+</code></pre></div>
+
+<hr />
+
+<h3 id="triangle">triangle</h3>
+
+<p>Write a program that asks for a base and height of a triangle.  It will output the area.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>triangle.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-events/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>define a function called area_of_triangle</li>
+  <li>it should have two parameters, b and h (base and height)</li>
+  <li>look up the formula for the area</li>
+  <li>your function should calculate the area and store it in a variable</li>
+  <li>it should <strong>give back</strong> the resulting area (return)</li>
+  <li>your program should ask for a base: &#8220;What is the base of the triangle?&#8221;&#8221;</li>
+  <li>your program should ask for a height: &#8220;What is the height of the triangle?&#8221;&#8221;</li>
+  <li>use the function you just created to calculate area based on input</li>
+  <li>save the result of your function call in variable</li>
+  <li>print out the result to the JavaScript console</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> What is the base of the triangle?
+&gt; 20
+<span class="o">(</span>prompt<span class="o">)</span> What is the height of the triangle?
+&gt; 5
+The area of the triangle is 50
+</code></pre></div>
+
+<hr />
+
+<h3 id="min">min</h3>
+
+<p>Write a program that asks for two numbers and determines which one is smaller.  It will output the smaller one to the JavaScript console.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>min.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-events/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>define a function called min</li>
+  <li>it should have two parameters, a and b </li>
+  <li>your function should determine which number is smaller, a or b (either works if they&#8217;re equal)</li>
+  <li>it should <strong>give back</strong> the smaller number (return)</li>
+  <li>your program should ask for one number: &#8220;Number 1:&#8221;&#8221;</li>
+  <li>your program should ask for another number: &#8220;Number 2:&#8221;&#8221;</li>
+  <li>use the function you just created to determine the smaller of the two</li>
+  <li>save the result of your function call in variable</li>
+  <li>print out the result to the JavaScript console</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Number 1:
+&gt; 20
+<span class="o">(</span>prompt<span class="o">)</span> Number 2:
+&gt; 7
+The smaller number is 7
+</code></pre></div>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

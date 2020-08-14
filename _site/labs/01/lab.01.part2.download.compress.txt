@@ -1,0 +1,272 @@
+LAB 1 PART 2 — revised 8/8/20 (lg)
+
+Part 1 - Paths and Review
+==========
+Follow the instructions line-by-line.
+
+* Type in the commands as is, but ignore the beginning prompt.
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
+* "No output" or "nothing happens" are valid answers to any of the questions.
+
+Feel free to use your workstation to test your answers to the questions that don't explicitly tell you to run a command)
+==========
+
+==========
+1. Write the command that you would use to change to the root directory.
+----------
+
+
+
+==========
+2. Write the command that you would use to change to your home directory.
+----------
+
+
+
+==========
+3. What's the absolute path to your Desktop directory?
+----------
+
+
+
+==========
+4. If you're in your home directory, how would you create a new directory on your desktop
+called stuff without changing your directory?  Write your command below.
+----------
+
+
+
+
+==========
+5. If you're in your Desktop directory, how would you change to two directories right above it (again, this should be /Users) using a relative path?  Write your command below.
+----------
+
+
+
+==========
+6. What's the shortcut for changing to the directory that you were just previously in?  For example, if I were in /Volumes... and I changed to /Users/professor/Desktop, what's a quick way of changing to /Volumes without writing something like cd /Volumes?
+----------
+
+
+
+==========
+7. How would you show all of the files (including hidden ones) with detailed (long) information
+for all files on your Desktop — if you're currently in your home directory?  Write your command below.
+----------
+
+
+
+==========
+Part 2 - Output, Download and Uncompress
+==========
+Follow the instructions line-by-line.
+
+* Type in the commands as is, but ignore the beginning prompt.
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
+* "No output" or "nothing happens" are valid answers to any of the questions.
+
+We're going to be echoing stuff to the console and cleaning it up.
+==========
+
+1. Type:
+
+$ echo hello there
+
+Copy and paste the output below.
+----------
+
+
+
+
+==========
+2. Type:
+
+$ echo whoa
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+3. Type:
+
+$ echo good mornin'
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+4. Uh-oh... we're stuck!
+
+Type [CTRL + C] to get your prompt back.
+----------
+
+
+
+==========
+5. Say good mornin' again with quotes!
+
+$ echo "good mornin'"
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+6. There are some other symbols that have special meanings if you don't quote them.
+For example, > brings up a different prompt.  Try *.
+
+$ echo *
+
+What happens?
+----------
+
+
+
+
+==========
+7. Ok... that's a lot of output.  How do we clean up our screen so that it's empty again?
+
+Write the command that you used below:
+----------
+
+
+
+==========
+Downloading files from a web site:  We'll use the following method to download more lab materials!
+
+What if I want to save a file from a website?
+What flag/option and option argument would I use to download a web page to a file called mygoogle.html?
+
+8. Run the following command *exactly* as it appears:
+
+$ curl -o mygoogle.html www.google.com
+
+Now copy and paste the output below.
+----------
+
+
+
+
+
+
+
+==========
+9. Now let's download some course-related files. First, figure out what directory you're in.
+
+Write the command you used to determine your directory. Also, copy and paste the output below.
+----------
+
+
+
+
+
+==========
+10. If you're not in your home directory, change to it (use the shortcut).
+
+Write the command that you used to change to your home directory.
+If you were already in your home directory, write the command that you *would* have used to change to it!
+----------
+
+
+
+==========
+11. So... the lab materials are located at this url:
+
+http://einbahnstrasse.github.io/Goldford-MTEC1003-Fall2020/labs/01/my-flashcards.zip
+
+Download the file using curl... to a file called MTEC1003-my-flashcards.zip.
+DON'T copy/paste the download link! Use the command line to download the file.
+
+REMEMBER to use the -o flag, and follow it with a .zip extension!
+Then, use ls to verify that it downloaded.
+
+Write down the command(s) that you used to download the file below.
+Finally, write the output of the command below.
+----------
+
+
+
+
+
+
+
+
+
+==========
+12. Go back up to your home directory.
+Create a directory called stuff.
+List the contents of your home directory to prove that the directory was created.
+
+Copy and paste the output below.
+----------
+
+
+
+
+==========
+13. Change into the "stuff" directory that you just created.
+Run the following command (we haven't learned this exact command yet,
+but we will in the next lab!) exactly as described below:
+
+$ echo "hi" > hello.txt
+
+List the files in the directory you're currently in (which should be stuff).
+
+Copy and paste the output below.
+----------
+
+
+
+==========
+14. Go up one directory back into your home directory.
+Run the following commands exactly to create a compressed archive of the stuff folder.
+
+$ tar -cvf stuff.tar stuff
+
+List the files in the directory you're currently in (which should be home).
+
+Copy and paste the output below.
+----------
+
+
+
+
+==========
+15. Go up one directory back into your home directory.
+Run the following commands exactly to create a compressed archive of the stuff folder.
+
+$ tar -cvf stuff.tar stuff
+
+Copy and paste the output below.
+----------
+
+
+
+
+
+
+==========
+16. Now compress it! Type:
+
+gzip stuff.tar
+
+List your files again.... you should have a new file with a .gz extension.
+Copy and paste the output of your this below.
+----------
+
+
+
+
+
+==========
+17. Now, let's uncompress the same file.
+
+$ tar -xvf stuff.tar.gz
+
+List the files.  Copy and paste the output below (the folder, stuff, should be there).
+----------

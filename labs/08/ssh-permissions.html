@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - SSH, Command Line Permissions</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+  <h1 id="permissions-editing-date-time-shell-scripting">SSH, Command Line Permissions</h1>
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="ssh-some-background">SSH - some background</h3>
+
+  <ul>
+    <li>stands for Secure Shell</li>
+    <li>protocol for connecting securely to a remote computer by establishing an encrypted connection</li>
+  </ul>
+
+  <p>Why use SSH?</p>
+
+  <ul>
+    <li>security
+      <ul>
+        <li>connection is secure</li>
+        <li>nothing is sent in clear text</li>
+      </ul>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="how-does-it-work">How does it work?</h3>
+
+  <ul>
+    <li>Uses public key cryptography</li>
+    <li>You have a public key and a private key</li>
+    <li>Public key encrypts the data and private key decrypts it
+    <li>It is safe to give out your public key but NOT private!</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="how-does-it-work-cont">How does it work? ...cont</h3>
+
+  <div class="img-container">
+    <p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Public_key_encryption.svg/491px-Public_key_encryption.svg.png" /></p>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="permissions">permissions</h3>
+
+  <p>(what command and options did I use to get this output?) &#8594; </p>
+
+  <div class="highlight"><pre><code class="bash">drwx------+ 18 bree  staff    612 Aug 10  2012 Music
+drwx------+ 14 bree  staff    476 Jan 12 10:16 Pictures
+drwxr-xr-x+  6 bree  staff    204 Apr 11  2012 Public
+drwxr-xr-x+  6 bree  staff    204 Apr 11  2012 Sites
+-rw-r--r--   1 bree  staff    31  Jan 24 18:49  myfile.txt
+</code></pre></div>
+
+<div class="incremental">
+  <p>ls -l</p>
+ </div>
+
+</section>
+
+<section>
+  <h3 id="permissions-continued">permissions continued</h3>
+
+  <p>I can get permissions for a single file by using ls -l on a single file&#8230;</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls -l filename.txt
+-rw-r--r--  1 bree  wheel  0 Feb 13 17:05 filename.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="permissions-continued-1">permissions continued</h3>
+  <ul>
+    <li>u - __u__ser permissions</li>
+    <li>g - __g__roup permssions</li>
+    <li>o - w__o__rld permsissions</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">drwxrwxrwx
+  <span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span>
+ rwx <span class="p">|</span>  <span class="p">|</span>
+  u rwx <span class="p">|</span>
+     g rwx
+        o
+</code></pre></div>
+
+<p>note: permissions are preceded by file type - "d" = directory, - (dash) = file</p>
+
+</section>
+
+<section>
+  <h3 id="permissions-continued-2">permissions continued</h3>
+
+  <ul>
+    <li>r - read</li>
+    <li>w - write</li>
+    <li>x - execute</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">drwxrwxrwx
+</code></pre></div>
+
+<p> What are the permissions of this file? &#8594;</p>
+
+  <div class="highlight"><pre><code class="bash">-rw-r--r--  1 bree  staff  0 Jan 14 16:51 file_name
+</code></pre></div>
+
+ <div class="incremental">
+  <ul>
+  <li>File is owned by the <strong>U</strong>ser "bree"</li>
+	<li><strong>U</strong>ser (bree) can read and write</li>
+  <li>File is owned by the <strong>G</strong>roup "staff"</li>
+	<li><strong>G</strong>roup (staff) can read.</li>
+	<li>W<strong>o</strong>rld (everyone else) can read.</li>
+  </ul>
+ </div>
+
+</section>
+
+<section>
+  <h3 id="chmod">chmod</h3>
+
+  <p>change permissions</p>
+
+  <div class="highlight"><pre><code class="bash">chmod <span class="o">[</span>user, group or world<span class="o">]</span> <span class="o">[</span>plus or minus<span class="o">]</span> <span class="o">[</span><span class="nb">read</span>, write or execute<span class="o">]</span> <span class="o">[</span>filename.sh<span class="o">]</span>
+	<span class="c"># allow user to execute</span>
+	chmod u+x filename.sh
+	<span class="c"># prevent world from writing</span>
+	chmod o-w filename.txt
+  </code></pre></div>
+
+  <p>or, you can use a numeric notation:</p>
+
+  <div class="highlight"><pre><code class="bash">chmod 600 filename
+  </code></pre></div>
+
+  <ul>
+    <li>600 means: rw------- owner may read and write; all others have no rights</li>
+    <li>700 means: rwx------ owner may read, write, and execute; all others have no rights</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="chown">chown</h3>
+
+  <p>change owner and group</p>
+
+  <div class="highlight"><pre><code class="bash">chown bree:admins filename.txt
+</code></pre></div>
+
+ <p>change owner</p>
+
+  <div class="highlight"><pre><code class="bash">chown bree filename.txt
+</code></pre></div>
+
+ <p>change group</p>
+
+  <div class="highlight"><pre><code class="bash">chown :admins filename.txt
+</code></pre></div>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

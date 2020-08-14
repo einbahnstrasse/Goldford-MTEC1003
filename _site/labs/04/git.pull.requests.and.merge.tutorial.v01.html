@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Goldford-MTEC1003-Fall2020/assets/css/style.css?v=b74d5b322417bef0ff797c9af68c838ab06c8851">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>GIT Tutorial: Submit a Pull Request + Merge Conflicts | MTEC1003-OL04 Media Computation Skills Lab</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="GIT Tutorial: Submit a Pull Request + Merge Conflicts" />
+<meta name="author" content="Prof. Louis Goldford" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<meta property="og:description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/04/git.pull.requests.and.merge.tutorial.v01.html" />
+<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/04/git.pull.requests.and.merge.tutorial.v01.html" />
+<meta property="og:site_name" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/04/git.pull.requests.and.merge.tutorial.v01.html","headline":"GIT Tutorial: Submit a Pull Request + Merge Conflicts","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/Goldford-MTEC1003-Fall2020/">
+          <h1>MTEC1003-OL04 Media Computation Skills Lab</h1>
+        </a>
+        <h2>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</h2>
+
+        <section id="downloads">
+          <!-- <a href="index.html" class="btn btn-syllabus"><span class="icon"></span>Course Syllabus</a>
+          <a href="schedule.html" class="btn btn-schedule"><span class="icon"></span>Schedule</a>
+          <a href="resources.html" class="btn btn-software"><span class="icon"></span>Software + Resources</a>
+          <a href="grading.html" class="btn btn-software"><span class="icon"></span>Grading</a> -->
+        	<a href="/Goldford-MTEC1003-Fall2020/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
+        	<a href="/Goldford-MTEC1003-Fall2020/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
+        	<a href="/Goldford-MTEC1003-Fall2020/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
+          <a href="/Goldford-MTEC1003-Fall2020/grading.html" class="btn"><span class="icon"></span>GRADING</a>
+          
+      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-Fall2020" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="git-tutorial-submit-a-pull-request--merge-conflicts">GIT Tutorial: Submit a Pull Request + Merge Conflicts</h1>
+
+<p>So far, we’ve used <code class="language-plaintext highlighter-rouge">git</code> and <em>GitHub</em> to:</p>
+<ol>
+  <li>create our our own <code class="language-plaintext highlighter-rouge">local</code> and <code class="language-plaintext highlighter-rouge">remote repository</code> (backup), in order to</li>
+  <li>save and manage our work via the <code class="language-plaintext highlighter-rouge">commit</code> and <code class="language-plaintext highlighter-rouge">push</code> messages, and</li>
+  <li>for creating our own copy of a <em>“repo”</em> using the <code class="language-plaintext highlighter-rouge">fork</code> message.</li>
+</ol>
+
+<p>However, <code class="language-plaintext highlighter-rouge">git</code> and <em>GitHub</em> really shine brightest while working alongside others; for example, on a team developing a collective website, or a new app.</p>
+
+<p>In this tutorial you’ll learn to harness some of git’s powerful collaborative features. We’ll check out:</p>
+<ol>
+  <li>How to submit a <code class="language-plaintext highlighter-rouge">pull request</code>,</li>
+  <li>How to <code class="language-plaintext highlighter-rouge">merge</code> changes from multiple users and resolve <code class="language-plaintext highlighter-rouge">merge conflicts</code> when users overwrite the same line(s) of code.</li>
+  <li>How to read <em>GitHub</em>’s <strong>Network graph</strong> showing the branching structure of a <code class="language-plaintext highlighter-rouge">repository</code>.</li>
+</ol>
+
+<hr />
+
+<h2 id="part-1-submitting-a-pull-request">Part 1. Submitting a <code class="language-plaintext highlighter-rouge">pull request</code></h2>
+
+<p>First, we’ll need to <code class="language-plaintext highlighter-rouge">fork</code> a copy of a repository. In this tutorial, we’ll use this readymade ‘lab-04-merge-conflicts’ repository located at <a href="https://github.com/einbahnstrasse/lab-04-merge-conflicts">https://github.com/einbahnstrasse/lab-04-merge-conflicts</a>. A new user can navigate to a repository like this one and hit the now-familiar <strong>fork</strong> button to create their own copy.</p>
+
+<p>Inside this repository there is one file, a README.md file. It’s a simple “markdown” file, but let’s imagine it’s a larger piece of code. Essentially this can be any in a series of text files. Notice what’s written under Section 3, lines 10-12:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v1.png" width="650px" /></p>
+
+<p>Once <code class="language-plaintext highlighter-rouge">fork</code>ed, user @LeonardDunk clicks on the <strong>pen tool</strong> to edit the file directly. (Alternatively, the file can be edited on your own computer with a text editor, or even on the command line itself!) they then makes a change to lines 10-12:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v2.png" width="400px" /></p>
+
+<p>Then, at the bottom of the page, @LeonardDunk <code class="language-plaintext highlighter-rouge">commit</code>s the change (<strong>Reminder:</strong> We’re not using the command line to make this commit. Instead, we’re committing <em>online</em> via the <em>GitHub</em> website.):</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v4.png" width="300px" /></p>
+
+<p>Now, suppose @LeonardDunk wants to <code class="language-plaintext highlighter-rouge">push</code> their new changes to the <em>original</em> ‘lab-04-merge-conflicts’ repository owned by @einbahnstrasse. (<strong>Remember:</strong> this <code class="language-plaintext highlighter-rouge">commit</code> was just made to @LeonardDunk’s <code class="language-plaintext highlighter-rouge">fork</code>ed copy of the repo…) In this case, they needs to <em>ask permission</em> of the original owner(s) to integrate their changes into the original code base. this is done through a <code class="language-plaintext highlighter-rouge">pull request</code>, i.e. asking the owners of the code to, “Please <em>pull</em> my changes into your original repository.” @LeonardDunk therefore hits the <strong>Pull request</strong> tab and then the green <strong>New pull request</strong> button:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v5.png" /></p>
+
+<p>Then, they can add a message (similar to adding a message to a <code class="language-plaintext highlighter-rouge">commit</code>), finally hit the green <strong>Create pull request</strong> button:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v8.png" width="600px" /></p>
+
+<p>this action signals to the original code owners that a new user, @LeonardDunk, has <code class="language-plaintext highlighter-rouge">fork</code>ed the repository and made their own changes to some of the original code, and is now asking to have those changes integrated into the original <code class="language-plaintext highlighter-rouge">repository</code>.</p>
+
+<p>The next steps is for the original owner @einbahnstrasse to accept or reject those changes…</p>
+
+<hr />
+
+<h2 id="part-2-accepting-changes-and-managing-merge-conflicts">Part 2. Accepting changes and managing <code class="language-plaintext highlighter-rouge">merge conflicts</code></h2>
+
+<p>Let’s assume that @LeonardDunk isn’t the <em>only</em> other user who’s submitted their own changes. Instead let’s assume that @LeonardDunk is one of many <em>GitHub</em> users who might submit a <code class="language-plaintext highlighter-rouge">pull request</code>. Or perhaps many members on the same development team need to be able to safely <code class="language-plaintext highlighter-rouge">push</code> new changes without accidentally overwriting one another’s code! Well thankfully, <code class="language-plaintext highlighter-rouge">git</code> is a robust system that can prevent such a catastrophe!</p>
+
+<p>In our case, another user, @DYLAN-T-PAIN, has made their own changes to lines 10-12…</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v11.png" width="400px" /></p>
+
+<p>Not only have they made their own changes, they’ve also made changes to the <em>same line(s)</em> of code that the other user changed, lines 10-12. I mean, come on, this is <strong>SUCH A DYLAN!</strong> (Okay, sorry to all the Dylans of the world…)</p>
+
+<p>Also, they’ve submitted a <code class="language-plaintext highlighter-rouge">pull request</code>:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v13.png" width="600px" /></p>
+
+<p>Thanks a lot, @DYLAN-T-PAIN…</p>
+
+<p>Since both users have made changes to the same line(s) in our README.md file, this means there’s a <code class="language-plaintext highlighter-rouge">conflict</code> and the owner of the code will have to <code class="language-plaintext highlighter-rouge">resolve</code> it before s/he can <code class="language-plaintext highlighter-rouge">merge</code> any change into the original <code class="language-plaintext highlighter-rouge">repository</code>. From @einbahnstrasse’s viewpoint, there appear to be two <code class="language-plaintext highlighter-rouge">pull request</code>s in need of attention:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v16.png" width="600px" /></p>
+
+<p>Let’s say @einbahnstrasse likes @LeonardDunk’s changes, so they click on this <code class="language-plaintext highlighter-rouge">pull request</code> first, and hit the green <strong>Merge pull request</strong> button:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v17.png" width="600px" /></p>
+
+<p>Then, @einbahnstrasse goes to @DYLAN-T-PAIN’s <code class="language-plaintext highlighter-rouge">pull request</code> and attempts to <code class="language-plaintext highlighter-rouge">merge</code>. There’s a warning about the <code class="language-plaintext highlighter-rouge">merge conflict</code>, so they click on the gray <strong>Resolve conflicts</strong> button:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v18.png" width="600px" /></p>
+
+<p>On the next page you’ll notice (1) a left sidebar with the files containing conflicts (in this case, only the README.md file), and on the right (2) a text editor showing the conflicting lines themselves. The red brackets show the different ‘versions’ of lines 10-12 that need to be resolved:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v20.png" /></p>
+
+<p>@einbahnstrasse deletes the first version, i.e. @DYLAN-T-PAIN’s version, so that only @LeonardDunk’s changes will be included in the repo. Then they hit the <strong>Mark as resolved</strong> button, which changes into a green <strong>Commit merge</strong> button:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v22.png" /></p>
+
+<p>@einbahnstrasse clicks this button as well, and finally the <strong>I understand, update master</strong> button that follows:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v23.png" width="350px" /></p>
+
+<p>@einbahnstrasse then clicks the <code class="language-plaintext highlighter-rouge">pull request</code> tab and then the specific request made by @DYLAN-T-PAIN. They type a message to let @DYLAN-T-PAIN know why their changes were not accepted, and finally they click on the <strong>Close and comment</strong> button to post the message and close the <code class="language-plaintext highlighter-rouge">pull request</code>:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v24.png" width="600px" /></p>
+
+<p>Now, the preferred user changes have been integrated into the source code, and everybody lived happily ever after…</p>
+
+<hr />
+
+<h2 id="part-3-how-to-read-the-network-graph-in-github">Part 3. How to Read the <strong>Network graph</strong> in <em>GitHub</em></h2>
+
+<p>We can also visualize the often complex network of users that interact with our repos. <em>GitHub</em> provides a handy mechanism for this, called the <strong>Network graph</strong>.</p>
+
+<p>From the front page of any repo (i.e. <a href="https://github.com/einbahnstrasse/lab-04-merge-conflicts">https://github.com/einbahnstrasse/lab-04-merge-conflicts</a>), click on the <strong>Insights</strong> tab and, at the bottom of the left sidebar, the <strong>Network</strong> tab.</p>
+
+<p>You’ll then see a graph that looks curiously like the color-coded subway stops on the MTA:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v26.png" /></p>
+
+<p>Notice the original timeline for the code base, running left-to-right (in black). Each “stop” along this subway route  (or “node”) is a <code class="language-plaintext highlighter-rouge">commit</code> message, providing a handy visual for the history of the repository as it developed.</p>
+
+<p>Underneath seem to be alternate “subway routes” in blue and green. These can be <code class="language-plaintext highlighter-rouge">fork</code>ed copies of the repository by other users (as in today’s example), or they can also be <code class="language-plaintext highlighter-rouge">branch</code>es. (We’ll describe what a <code class="language-plaintext highlighter-rouge">branch</code> is another time, but for now, suffice it to say that it’s literally like the branch of a tree — we can visualize how the network of code development “branches out” into many directions…)</p>
+
+<p>In this case, the blue route represents the first <code class="language-plaintext highlighter-rouge">fork</code> made by @LeonardDunk. Notice they made 1 <code class="language-plaintext highlighter-rouge">commit</code>, at the blue node. Also notice the blue arrow that points back up to the black <code class="language-plaintext highlighter-rouge">master</code> branch. This is the <code class="language-plaintext highlighter-rouge">master</code> branch in the original code base (the black route), so this arrow symbolizes the <code class="language-plaintext highlighter-rouge">merge commit</code> made by @einbahnstrasse, integrating the new changes by @LeonardDunk.</p>
+
+<p>On the other hand, notice the lowermost green route. This is the <code class="language-plaintext highlighter-rouge">fork</code> made by @DYLAN-T-PAIN, whose changes were not chosen as a <code class="language-plaintext highlighter-rouge">merge</code> (hence, there is no green arrow pointing back up to the original <code class="language-plaintext highlighter-rouge">repository</code>; it continues rightbound, meaning @DYLAN-T-PAIN can keep working along their own <code class="language-plaintext highlighter-rouge">fork</code> indefinitely).</p>
+
+<p>These variously colored <code class="language-plaintext highlighter-rouge">fork</code>s appear like express subway trains along the same “route” as the original code. They can develop at their own rates of change. For example, here’s a <em>GitHub</em> project I follow with a lot more development than our tutorial repo — a JavaScript synthesizer project called Tone.js:</p>
+
+<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v27.tone.js.png" /></p>
+
+<p>Can you describe what the different “stations” and “routes” mean?</p>
+
+<hr />
+
+      </section>
+    </div>
+
+    
+
+    <div>
+		<header><footer class="site-footer h-card">
+  <data class="u-url" href="/Goldford-MTEC1003-Fall2020/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h4 class="footer-heading">MTEC1003-OL04 Media Computation Skills Lab</h4>
+        <ul class="contact-list">
+          <li class="p-name">Prof. Louis Goldford</li><li><a class="u-email" href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</p>
+      </div>
+
+      <div class="social-links"><ul class="social-media-list"></ul></div>
+    </div>
+
+  </div>
+
+</footer></header>
+	</div>
+
+  </body>
+
+</html>

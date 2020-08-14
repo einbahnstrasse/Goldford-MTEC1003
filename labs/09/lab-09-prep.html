@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prep - Creating Remote Repo and Cloning it, Warm Up Program(s)</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-8-prep-creating-local-and-remote-repositories">Lab 9 - Prep - Creating Remote Repo and Cloning it, Warm Up Program(s)</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+  <li>Using SSH keys saved on your usb drive to connect to GitHub</li>
+  <li>Creating a repository on the GitHub website</li>
+  <li>Cloning the repository on your local machine</li>
+  <li>Associating a name and email address with your local repository</li>
+  <li>Editing the README file in your local repository</li>
+  <li>Creating the following programs:
+    <ol>
+      <li>greetings</li>
+      <li>miles per gallon</li>
+      <li>* if you finish mpg, a bonus challenge: numbers</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Please sit at the same computer you were at last class.</p>
+
+<h3 id="check your config file">Check your ssh config file</h3>
+
+<ul>
+  <li>Open a terminal and go to your home directory. </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~
+</code></pre></div>
+
+<ul>
+  <li>List all files/directories (to check for hidden directories - you're looking for one called .ssh) </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">ls -al</span>
+</code></pre></div>
+
+<ul>
+    <li>If it exists, view the config file in there and make sure it contains your information.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cat</span> .ssh/config
+
+<span class="c"># the config file should look like this:</span>
+Host github.com
+    HostName github.com
+    IdentityFile /Volumes/<span class="s2">your_usb_drive_name</span>/.ssh/github_rsa
+    User <span class="s2">your_GitHub_username</span>
+</code></pre></div>
+
+<ul>
+  <li>If the directory doesn't exist, create it, and then change into it. </li>
+  <li>Create the config file (using Nano).</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">mkdir </span>.ssh
+<span class="nb">cd</span> .ssh
+<span class="nb">nano</span> config
+</code></pre></div>
+
+<ul>
+  <li>Enter the text below, substituting the name of your USB drive and GitHub username.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Host github.com
+    HostName github.com
+    IdentityFile /Volumes/<span class="s2">your_usb_drive_name</span>/.ssh/github_rsa
+    User <span class="s2">your_GitHub_username</span>
+</code></pre></div>
+
+<ul>
+  <li>Save/exit Nano: press "ctrl + x" then "y" (for yes, save changes) then "enter".</li>
+</ul>
+
+
+<h3 id="test-to-make-sure-it-works">Test to make sure your SSH key works</h3>
+
+<ul>
+  <li>Open your terminal and try to ssh into GitHub to test your key setup.</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ssh -T git@github.com
+</code></pre></div>
+
+<ul>
+  <li>You might see a warning like this:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">The authenticity of host 'github.com (207.97.227.239)' can't be established.
+# RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+# Are you sure you want to continue connecting (yes/no)?
+</code></pre></div>
+
+<ul>
+  <li>Type: yes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+</code></pre></div>
+
+<ul>
+  <li>If the username is yours, it means you were successful in setting up your SSH key.
+
+If the message says "permission denied," you can try to troubleshoot with <a href="https://help.github.com/articles/error-permission-denied-publickey">this documentation</a>.</li>
+<li>If you get an error message saying your key is not secure, that permissions are not restrictive enough, check the formatting of your USB drive again and chances are it's not formatted for Mac OS Extended.
+  <ul>
+    <li>If its not, start from the top, by formatting your drive. </li>
+    <li>If it is, make sure you assigned the correct permissions (see the step where you change into the .ssh directory on your drive and change permissions (chmod 600 github_rsa).</li>
+  </ul>
+</li>
+</ul>
+
+<h3 id="create-your-remote-repository">Create Your Remote Repository</h3>
+
+<p>This will create a remote git repository on github.</p>
+
+<ol>
+  <li>Go to your account home (github.com/username).</li>
+  <li>Click on the Repositories tab.</li>
+  <li>Click the green New button on the right side.</li>
+  <li>Give your repository the name lab-09-javascript-conditionals.</li>
+  <li>The repository should be public (the default).</li>
+  <li>Click "Initialize this repository with a README".</li>
+  <li>Click Create Repository.</li>
+  <li>Refresh your main GitHub page and you should see the new repository.
+</ol>
+
+<h3 id="cloning-your-repository">Cloning your repository</h3>
+
+<p>This will clone the repository you just created on GitHub on your local machine.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>(if doesn&#8217;t already exist) create a folder that consists of your first initial and last name in your <strong>home directory</strong> </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~
+mkdir myname
+</code></pre></div>
+
+<ul>
+  <li>use pwd to verify that you&#8217;re in the correct folder
+    <ul>
+      <li>you should be in <strong>~/myname/</strong></li>
+      <li>if you&#8217;re not, cd into it</li>
+    </ul>
+  </li>
+  <li>to prove that this is not yet a repository, list <strong>all</strong> files in your current directory </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>it should contain only your previous labs</li>
+  <li>it should not contain any .git folders</li>
+</ul>
+
+<ul>
+  <li>Make sure again that you're in the correct directory!  (/Users/student/myname or ~/myname)</li>
+  <li>Clone the GitHub repository you just created: lab-09-javascript-conditionals</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git clone git@github.com:<span class="s2">your_username</span>/lab-09-javascript-conditionals.git
+</code></pre></div>
+
+<ul>
+  <li>The output should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Cloning into 'lab-09-javascript-conditionals'...
+remote: Counting ojects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Checking connectivity... done.
+</code></pre></div>
+
+<ul>
+  <li>Check to make sure you've linked to your remote repository:</li>
+  <li>Change into your repository directory (lab-09-javascript-conditionals).</li>
+  <li>Use the git remote command.
+</ul>
+
+<div class="highlight"><pre><code class="bash">cd lab-09-javascript-conditionals
+git remote -v
+</code></pre></div>
+
+<ul>
+  <li>You should see:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">origin git@github.com:your_username/lab-09-javascript-conditionals.git (fetch)
+origin git@github.com:your_username/lab-09-javascript-conditionals.git (push)
+</code></pre></div>
+
+<ul>
+  <li>configure your name and email for your commits</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git config user.name  <span class="s2">&quot;my first and last name&quot;</span>
+git config user.email <span class="s2">&quot;my@email.address&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>finally, use git config again to see if this worked:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git config -l
+</code></pre></div>
+
+<ul>
+  <li>(use should see your name and email appear in the configuration)</li>
+</ul>
+
+<h3 id="creating-and-saving-changes-locally-sending-to-remote-repository">Creating and Saving Changes Locally, Sending to Remote Repository</h3>
+
+<p>In this part of the lab, you will edit a text file in your local repository, and then you&#8217;ll send it to your remote repository.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for lab-09-javascript-conditionals
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/yourname/lab-09-javascript-conditionals</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+      <li>if this doesn&#8217;t exist yet&#8230; make sure you completed the beginning part of this lab</li>
+    </ul>
+  </li>
+  <li>use <strong>git status</strong> to show that there aren&#8217;t any changes yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+</code></pre></div>
+
+<ul>
+  <li>You will have a file called <strong>README.md</strong> in your lab 09 directory. Open it using <strong>SublimeText</strong> (see below&#8230;)</li>
+  <li>Go to Applications &#8594; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)</li>
+  <li>Once SublimeText is open, open the README.md file by going to File &#8594; Open</li>
+  <li>Add the following to your file: "This is lab 9.  It's about Javascript Conditionals."</li>
+  <li>Save your file by going to File &#8594; Save (or command+s).</li>
+  <li>Switch back to terminal</li>
+  <li>Use <strong>git status</strong> to show that you&#8217;ve made changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output; notice that it contains README.md </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in the working directory)
+
+      modified:    README.md
+no changes added to commit (use "git add" and/or "git commit -a")
+</code></pre></div>
+
+<ul>
+  <li>if we want to save this file in the repository, we have <em>stage</em> it (that is, mark it as something that we&#8217;re ready to save / commit)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git add --all
+</code></pre></div>
+
+<ul>
+  <li>to check that you&#8217;ve staged your commit, use <strong>git status</strong> again</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should output the following text (note that README.markdown moved from <em>untracked</em> to <em>Changes to be committed</em>)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+      modified:    README.md
+</code></pre></div>
+
+<ul>
+  <li>now we&#8217;re ready to commit (that is, save the file to the local repository); everything after the -m is the message that will be associated with the changes that you&#8217;ve made</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git commit -m <span class="s2">&quot;edited the README file&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>the output of the command should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">[</span>master 5b24d27<span class="o">]</span> edited the readme file
+ ...etc
+</code></pre></div>
+
+<ul>
+  <li>check the status again </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>notice that there is nothing staged and no more changes!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+nothing to commit, working directory clean
+</code></pre></div>
+
+<ul>
+  <li>to show the changes that you&#8217;ve saved so far, use <strong>git log</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git log --color
+</code></pre></div>
+
+<ul>
+  <li>it should show you the following&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">commit 5b24d2777a602908978916ca8fe9c8dd2ed6036b
+Author: bree &lt;bzuckerman@citytech.cuny.edu&gt;
+Date:   Wed Mar 5 11:45:21 2015 -0500
+
+    edited the README file
+</code></pre></div>
+
+<ul>
+  <li>you can share your changes / send them to a remote repository by using <strong>git push</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git push origin master
+</code></pre></div>
+
+<ul>
+  <li>it should result in:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Counting objects: 3, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 242 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To https://github.com/bzuckerman/lab-09-javascript-conditionals.git
+ * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
+</code></pre></div>
+
+<ul>
+  <li>go back to GitHub and look in your repository.  You should see the changes in the Readme file.</li>
+</ul>
+
+<h2 id="instructions-for-warm-up-programs">Instructions for Warm-Up Programs</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<hr />
+
+<h3 id="say-twice">say twice</h3>
+
+<p>Write a program that takes user input and repeats the user input twice (both words on the same lin) in the JavaScript console.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>saytwice.html</strong> in your repository directory: <strong>~/bzuckerman/lab-09-javascript-conditionals/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for a word: &#8220;Give me a word to say twice&#8221;</li>
+  <li>the program should repeat the input twice on the same line with a space in between&#8230;  back to the <strong>JavaScript console</strong>
+    <ul>
+      <li>for example, if someone enters &#8220;hello&#8221; in the prompt dialog</li>
+      <li>the output in the console would be &#8220;hello hello&#8221;</li>
+      <li><strong>important:</strong> to get full credit, be sure to include a space between the word repetition (e.g. "hello hello" <strong>not</strong> "hellohello")
+    </ul>
+  </li>
+  <li>example interaction is below (everything after the greater than sign &gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Give me a word to say twice
+&gt; hello
+hello hello
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="miles">miles per gallon</h3>
+
+<p>Write a program that calculates miles-per-gallon based on user input for miles driven and gallons of gas used.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>miles.html</strong> in your repository directory: <strong>~/bzuckerman/lab-09-javascript-conditionals/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>miles-per-gallon (mpg) can be calculated using the following formula&#8230; </li>
+  <li>mpg = miles driven / gallons of gas used </li>
+  <li>ask the user for the number of miles driven and the gallons of gas used</li>
+  <li>calculate miles-per-gallon and output the result to the JavaScript console</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> How many miles did you drive?
+&gt;20
+<span class="o">(</span>prompt<span class="o">)</span> How many gallons of gas did you use?
+&gt;2
+Your car gets 10.0 miles per gallon.
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="numbers">*numbers</h3>
+<p>(This one&#8217;s hard!) Write a program that outputs the number in the thousands, hundreds, tens and ones places of a number. </p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>numbers.html</strong> in your repository directory: <strong>~/bzuckerman/lab-09-javascript-conditionals/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>ask the user for a number</li>
+  <li>calculate the numbers in the thousands, hundreds, tens and ones places</li>
+  <li>output each place to the JavaScript console</li>
+  <li>one solution is to use some numeric operators to determine each place (maybe modulo, division and subtraction would help)</li>
+  <li>you may have to calculate each place separately</li>
+  <li>don&#8217;t worry about input that&#8217;s not a positive whole number below 10,000</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Please enter a number
+&gt; 256
+
+0 thousands
+2 hundreds
+5 tens
+6 ones
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

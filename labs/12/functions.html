@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - JavaScript Functions</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="functions">Functions</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="built-in-functions">Built-in Functions</h3>
+
+  <p><strong>What are some functions that we know?</strong></p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;number please...&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">);</span>
+<span class="nb">parseInt</span><span class="p">(</span><span class="s2">&quot;5&quot;</span><span class="p">);</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h2 id="we-can-write-our-own-functions">We can write our own functions!</h2>
+</section>
+
+<section>
+  <h3 id="creating-functions">Creating Functions</h3>
+
+  <ol>
+    <li>start with the keyword, <strong>function</strong></li>
+    <li>followed by the name of your function</li>
+    <li>followed by parentheses</li>
+    <li>the parentheses can be empty, OR can include an <em>optional</em> list of comma separated parameters (input)</li>
+    <li>followed by a block of code between curly braces</li>
+  </ol>
+
+  <p>Syntax:</p>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">functionName</span><span class="p">(</span><span class="nx">param1, param2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="s2">Some statement(s) here</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="why-functions">Why Create Functions?</h3>
+
+  <ul>
+    <li>can repeat the same block of code many times without rewriting it&#8212;just use the function name</li>
+    <li>can pass different arguments to the same code in different places</li>
+    <li>streamlines code and makes it easier to understand</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="basic-functions">Basic Functions</h3>
+
+  <p>Here&#8217;s a bare bones function&#8230;.</p>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;FOO!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="incremental">
+
+  <p>What does this function do and how would you execute (call) it?&#8594;</p>
+
+  <ul>
+    <li>Prints "FOO!" to the console</li>
+    <li>To execute the function write: <strong>foo();</strong></li>
+  </ul>
+
+
+</div>
+
+</section>
+
+<section>
+  <h3 id="a-function-with-parameters">A Function With Parameters</h3>
+
+  <p>To create a function that has an input, and executes some code&#8230;</p>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">s</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="incremental">
+
+  <p>How does this improve on the previous example?&#8594;</p>
+
+  <ul>
+    <li>More flexible&#8212;you can change the message printed to the console</li>
+  </ul>
+
+   <p>How would you call this function, using it to print "Hello world!" to the console?&#8594;</p>
+
+   <ul>
+    <li><strong>foo("Hello world");</strong></li>
+  </ul>
+
+</div>
+
+</section>
+
+<section>
+  <h3 id="a-function-with-parameters-that-returns-a-value">A Function With Parameters That Returns a Value</h3>
+
+  <p>To create a function that has an inputs, and returns a value&#8230;.</p>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="nx">s</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">(</span><span class="s2">&quot;hi&quot;</span><span class="p">));</span>
+</code></pre></div>
+
+<div class="incremental">
+
+  <p>How does this differ from the previous example?&#8594;</p>
+
+  <ul>
+    <li>Even more flexible &#8212; you can change the message and where it's printed</li>
+  </ul>
+
+</div>
+
+</section>
+
+<section>
+  <h3 id="calling-functions">Calling Functions</h3>
+
+  <p>You can use a function as you would use a variable&#8230;</p>
+
+  <div class="highlight"><pre><code class="js"><span class="c1">// as part of an expression</span>
+<span class="p">var sum = someNum + calcSomething(x);</span>
+
+<span class="c1">// in a function call</span>
+<span class="p">console.log(calcGrade(num));</span>
+
+<span class="c1">// inside another function</span>
+<span class="p">function calcGrade(x) {
+  return someNum + calcNum(y);
+}</span>
+
+</code></pre></div>
+
+<div class="incremental">
+
+  <p>How does this differ from the previous example?&#8594;</p>
+
+  <ul>
+    <li>Even more flexible &#8212; you can change the message and where it's printed</li>
+  </ul>
+
+</div>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

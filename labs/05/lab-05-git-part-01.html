@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Using Version Control Review, JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-5---part-1---using-version-control-review-javascript">Lab 5 - Part 1 - Using Version Control Review, JavaScript</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+  <li>creating two repositories, one local and one remote</li>
+  <li>linking the two with each other so that they can be synchronized</li>
+  <li>associating a name and email address with your local repository</li>
+  <li>creating, editing and saving a JavaScript program in your local repository</li>
+  <li>sending those changes to your remote repository on github</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="set-up-your-local-repository">Set up Your Local Repository</h3>
+
+<p>This will create a local git repository to store your work for this lab.  The repository will be in ~/Desktop/yourname/lab-05-javascript.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>(if doesn&#8217;t already exist) create a folder that consists of your first initial and last name on your Desktop</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~/Desktop
+mkdir myname
+</code></pre></div>
+
+<ul>
+  <li>within that folder, create another folder called <strong>lab-05-javascript</strong> and <strong>change into it</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>myname
+mkdir lab-05-javascript
+<span class="nb">cd </span>lab-05-javascript
+</code></pre></div>
+
+<ul>
+  <li>use pwd to verify that you&#8217;re in the correct folder
+    <ul>
+      <li>you should be in <strong>~/Desktop/myname/lab-05-javascript</strong></li>
+      <li>if you&#8217;re not, cd into it</li>
+    </ul>
+  </li>
+  <li>to prove that this is not yet a repository, list <strong>all</strong> files in your current directory </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>it should mostly be empty</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">total 0
+drwxr-xr-x  2 bree  staff   68 Feb 26 07:52 .
+drwxr-xr-x  3 bree  staff  102 Feb 26 07:52 ..
+</code></pre></div>
+
+<ul>
+  <li>in your lab-05 folder, create your repository!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git init
+</code></pre></div>
+
+<ul>
+  <li>it should say:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Initialized empty Git repository in /Users/bree/Desktop/bzuckerman/lab-05-javascript/.git/
+</code></pre></div>
+
+<ul>
+  <li>show that this worked by listing <strong>all</strong> files in your current directory</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>check that this shows <strong>.git</strong> </li>
+  <li>use ls .git to show the contents of your repository (it should contain a configuration file, for example)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls .git
+</code></pre></div>
+
+<ul>
+  <li>configure your user name and email for your commits (these do not have to be the same as your github account)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git config user.name  <span class="s2">&quot;my user name&quot;</span>
+git config user.email <span class="s2">&quot;my@email.address&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>finally, use git config again to see if this worked:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git config -l
+</code></pre></div>
+
+<ul>
+  <li>(use should see your name and email appear in the configuration)</li>
+</ul>
+
+<h3 id="create-your-remote-repository">Create Your Remote Repository</h3>
+
+<p>This will create a remote git repository on github.  It will also link your local repository with this remote repository.  In order to submit your work, you will send your files / changes from your local repository to the remote repository on github.</p>
+
+<ul>
+  <li>log in to github; you should see the list of repositories on the right
+<img src="../../resources/img/repos-screen.png" alt="Repository List" /></li>
+  <li>you should have 4 lab related repositories (or less if you missed a lab!)</li>
+  <li>go back to terminal</li>
+  <li>using the commandline, create a remote repository on github by using the command below&#8230;</li>
+  <li>substitute your github username where it says &#8220;your github user name&#8221; (keep the single quotes and <strong>KEEP &#8220;name&#8221;:</strong> at the end of the line; don&#8217;t change that!).  the name of the repository is lab-05-javascript (you can see that specified at the end of the command)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">curl -u <span class="s1">&#39;your github user name&#39;</span> https://api.github.com/user/repos -d <span class="s1">&#39;{&quot;name&quot;:&quot;lab-05-javascript&quot;}&#39;</span>
+</code></pre></div>
+
+<ul>
+  <li>it should output a bunch of text!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Enter host password <span class="k">for </span>user <span class="s1">&#39;bzuckerman&#39;</span>:
+<span class="o">{</span>
+  <span class="s2">&quot;id&quot;</span>: 17210769,
+  <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;lab-05-javascript&quot;</span>,
+  <span class="s2">&quot;full_name&quot;</span>: <span class="s2">&quot;bzuckerman/lab-05-javascript&quot;</span>,
+  <span class="s2">&quot;owner&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;login&quot;</span>: <span class="s2">&quot;bzuckerman&quot;</span>,
+	...
+<span class="o">}</span>
+</code></pre></div>
+
+<!--_-->
+<ul>
+  <li>refresh your page on github</li>
+  <li>you should see the new repository added</li>
+  <li>go back to terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for <strong>lab-05-javascript</strong>
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/Desktop/yourname/lab-05-javascript</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+    </ul>
+  </li>
+  <li>run this command to show that you have not linked your local repository to any remote repository yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote -v show
+</code></pre></div>
+
+<ul>
+  <li>it should <em>do nothing</em></li>
+  <li>now, link your local repository to your remote repository on github by using git remote add (make sure to substitute your github username where it says &#8220;[your github user name]&#8221;)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote add origin https://github.com/<span class="o">your github user name</span>/lab-05-javascript.git
+</code></pre></div>
+
+<ul>
+  <li>(alternatively, if you click on your repo you can see your remote repository&#8217;s url on the lower right hand side of the page&#8230;)
+<img src="../../resources/img/repos-url.png" alt="Repository List" /></li>
+  <li>to check that you&#8217;ve linked properly, run the following command again:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote -v show
+</code></pre></div>
+
+<ul>
+  <li>it should show origin &#8230; and your repository url</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">origin	https://github.com/bzuckerman/lab-05-javascript.git <span class="o">(</span>fetch<span class="o">)</span>
+origin	https://github.com/bzuckerman/lab-05-javascript.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div>
+
+<h3 id="creating-and-saving-changes-locally-sending-to-remote-repository">Creating and Saving Changes Locally, Sending to Remote Repository</h3>
+
+<p>In this part of the lab, you will create a text file in your local repository, and then you&#8217;ll send it to your remote repository.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for lab-05-javascript
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/Desktop/yourname/lab-05-javascript</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+      <li>if this doesn&#8217;t exist yet&#8230; make sure you completed the beginning part of this lab</li>
+    </ul>
+  </li>
+  <li>use <strong>git status</strong> to show that there aren&#8217;t any changes yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+nothing to commit <span class="o">(</span>create/copy files and use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+</code></pre></div>
+
+<ul>
+  <li>create a file called <strong>README.markdown</strong> using <strong>SublimeText</strong> (see below&#8230;)</li>
+  <li>go to Applications &#8594; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)</li>
+  <li>once SublimeText is open, go to File &#8594; New (or Command+n) to create a new file</li>
+  <li>save your file by going to File &#8594; Save As to save your files as <strong>README.markdown</strong> in your <strong>~/Desktop/yourname/lab-05-javascript</strong>
+<img src="../../resources/img/sublime-save-as-menu.png" alt="Save As" /></li>
+  <li>make sure you navigate to your <strong>~/Desktop/yourname/lab-05-javascript</strong> before saving!
+<img src="../../resources/img/sublime-save-as.png" alt="Save As" /></li>
+  <li>switch back to terminal</li>
+  <li>use <strong>git status</strong> to show that you&#8217;ve made changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output; notice that it contains README.markdown </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+<span class="c"># Untracked files:</span>
+<span class="c">#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span>
+<span class="c">#</span>
+<span class="c">#	README.markdown</span>
+nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+</code></pre></div>
+
+<ul>
+  <li>if we want to save this file in the repository, we have <em>stage</em> it (that is, mark it as something that we&#8217;re ready to save / commit)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git add --all
+</code></pre></div>
+
+<ul>
+  <li>to check that you&#8217;ve staged your commit, use <strong>git status</strong> again</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should output the following text (note that README.markdown moved from <em>untracked</em> to <em>Changes to be committed</em>)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+<span class="c"># Changes to be committed:</span>
+<span class="c">#   (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span>
+<span class="c">#</span>
+<span class="c">#	new file:   README.markdown</span>
+<span class="c">#</span>
+</code></pre></div>
+
+<ul>
+  <li>now we&#8217;re ready to commit (that is, save the file to the local repository); everything after the -m is the message that will be associated with the changes that you&#8217;ve made</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git commit -m <span class="s2">&quot;added a README file&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>the output of the command should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 5b24d27<span class="o">]</span> added readme
+ 1 file changed, 0 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
+ create mode 100644 README.markdown
+</code></pre></div>
+
+<ul>
+  <li>check the status again </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>notice that there is nothing staged and no more changes!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+nothing to commit, working directory clean
+</code></pre></div>
+
+<ul>
+  <li>to show the changes that you&#8217;ve saved so far, use <strong>git log</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git log --color
+</code></pre></div>
+
+<ul>
+  <li>it should show you the following&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">commit 5b24d2777a602908978916ca8fe9c8dd2ed6036b
+Author: bree &lt;bzuckerman@citytech.cuny.edu&gt;
+Date:   Wed Mar 5 11:45:21 2014 -0500
+
+    added readme
+</code></pre></div>
+
+<ul>
+  <li>you can share your changes / send them to a remote repository by using <strong>git push</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git push origin master
+</code></pre></div>
+
+<ul>
+  <li>it should result in:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Counting objects: 3, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 242 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To https://github.com/bzuckerman/lab-05-javascript.git
+ * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
+</code></pre></div>
+
+<ul>
+  <li>go back to github and look in your repository.  you should see that file appear.</li>
+  <li>go back to SublimeText</li>
+  <li>add two lines to your README.markdown file</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">This is lab 05
+It<span class="err">&#39;</span>s about JavaScript
+</code></pre></div>
+
+<ul>
+  <li>save your file: File &#8594; Save or Command+s</li>
+  <li>go back to terminal</li>
+  <li>use git diff to show your changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git diff --color
+</code></pre></div>
+
+<ul>
+  <li>use git status, add and then commit to save your changes</li>
+  <li>use git push to send them to your remote repository</li>
+  <li>if you click through the filename on github, you&#8217;ll see your changes</li>
+</ul>
+
+<h3 id="writing-hello-world-with-a-mistake-sad-face">Writing Hello World! With a Mistake (Sad Face)</h3>
+
+<ul>
+  <li>create a file called <strong>hello.html</strong> using <strong>SublimeText</strong></li>
+  <li>(if it&#8217;s not already open) go to Applications &#8594; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)</li>
+  <li>go to File &#8594; New (or Command+n) to create a new file</li>
+  <li>save your file by going to File &#8594; Save As to save your files as <strong>hello.html</strong> in your <strong>~/Desktop/yourname/lab-05-javascript</strong></li>
+  <li>make sure you navigate to your <strong>~/Desktop/yourname/lab-05-javascript</strong> before saving!</li>
+  <li>switch back to terminal</li>
+  <li>use <strong>git status</strong> to show that you&#8217;ve made changes</li>
+  <li>use add and commit to save this new file - make sure you <strong>type a message</strong> with commit (-m &#8216;your message here&#8217;)</li>
+  <li>go back to sublime text</li>
+  <li>add the following text to your file:</li>
+</ul>
+
+<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="c1">// oops... there&#39;s an error here</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;HELLO WORLD!&quot;</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+<ul>
+  <li>(you can also start typing in html and press tab&#8230; then fill in the missing bits)</li>
+  <li>save your file</li>
+  <li>open chrome</li>
+  <li>go to File &#8594; Open File &#8594; and browse to <strong>~/Desktop/yourname/lab-05-javascript</strong> to open your <strong>hello.html</strong> file</li>
+  <li>you should see a blank page!</li>
+  <li>in Chrome, go to View &#8594; JavaScript Console&#8230; it should pop-up a panel:
+<img src="../../resources/img/console-error.png" alt="JavaScript console" /></li>
+  <li>notice the red x and message: &#8220;Uncaught SyntaxError: Unexpected end of input&#8221;</li>
+  <li><strong>go back to terminal to use status, add and commit to save your changes</strong>.  for your commit message, you should write: -m &#8220;broken version of hello world&#8221;</li>
+</ul>
+
+<h3 id="fixing-hello-world">Fixing Hello World</h3>
+<ul>
+  <li>go back to SublimeText</li>
+  <li>add a closing parenthese and a semicolon&#8230; and remove the line that says &#8220;// oops&#8230; theres an error here&#8221; so that your code looks like this:</li>
+</ul>
+
+<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;HELLO WORLD!&quot;</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+<ul>
+  <li>save your file</li>
+  <li>go back to Chrome</li>
+  <li>if your console isn&#8217;t open, reveal it by going to View &#8594; Developer &#8594; JavaScript Console (or Command+Option+j)</li>
+  <li>refresh the page by using Command+Shift+r (or go to View &#8594; Reload this page)&#8230; you should see the following message in the console
+<img src="../../resources/img/console-hello.png" alt="Hello" /></li>
+  <li>&#8220;Hello World&#8221;</li>
+  <li>once you have your program fixed&#8230;</li>
+  <li><strong>go back to terminal to use status, add and commit to save your changes</strong>.  for your commit message, you should write: -m &#8220;fixed hello world&#8221;</li>
+  <li>use git log to show all of your changes so far</li>
+  <li>send your changes to github, and show me the files on github when your finished</li>
+  <li>when you&#8217;re done, help your neighbor and/or read the introduction to <a href="http://eloquentjavascript.net/2nd_edition/preview/00_intro.html">the second edition of Eloquent JavaScript</a></li>
+</ul>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

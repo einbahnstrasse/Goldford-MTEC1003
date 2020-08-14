@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Animation</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Tech Skills Lab </h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-11---part-2---animation">Lab 11 - Part 2 - Animation</h1>
+
+<ol>
+  <li>circle-animate</li>
+  <li>circle-bounce</li>
+  <li>circle-y-bounce</li>
+  <li>*circle-xy</li>
+  <li>*car-animate</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<h3 id="circle-animate">circle-animate</h3>
+
+<p>Write a program that draws a black circle that moves across the canvas horizontally</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>circle-animate.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-11-interaction/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>create 5 variables:
+    <ul>
+      <li>sketch (don&#8217;t set it to anything yet)</li>
+      <li>context (don&#8217;t set it to anything yet)</li>
+      <li>circle &#8230; an object that&#8217;s equal to {&#8216;x&#8217;:0, &#8216;y&#8217;:100, &#8216;r&#8217;:25 }</li>
+      <li>dx &#8230; the velocity, which can be set to any value between 1 and 5</li>
+      <li>fps &#8230; how often the screen redraws; 10 is a good value</li>
+    </ul>
+  </li>
+  <li>create a main function&#8230; and within this funciton:
+    <ul>
+      <li>assign values to sketch and context:
+        <ul>
+          <li>sketch = document.getElementById(&#8216;sketch&#8217;);</li>
+          <li>context = sketch.getContext(&#8220;2d&#8221;);</li>
+        </ul>
+      </li>
+      <li>use setInterval to constantly call a function called animate (you&#8217;ll create this later)
+        <ul>
+          <li>pass in animate as the function to be called, and fps and the time interval</li>
+          <li>setInterval(animate, fps);</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>create an animate function&#8230; and within this function:
+    <ul>
+      <li>clear the screen
+        <ul>
+          <li>use context.clearRect</li>
+          <li>use the arguments 0, 0 &#8230; and the width and height of your canvas element</li>
+          <li>context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);</li>
+          <li>use draw_circle to draw a shape, and use the circle object&#8217;s x, y and radius values</li>
+          <li>draw_circle(circle.x, circle.y, circle.r);</li>
+          <li>increment the circle&#8217;s x value</li>
+          <li>circle.x = circle.x + dx;</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>bring in your draw_circle function from previous exercises</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example movie: <a href="../../resources/mov/circle-animate.mov">circle-animate</a></li>
+</ul>
+
+<h3 id="circle-bounce">circle-bounce</h3>
+
+<p>Make your circle bounce back and forth when it reaches the far left or far right side of the screen</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>circle-bounce.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-11-interaction/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>this will be similar to the previous lab, circle-animate&#8230;</li>
+  <li>create 5 variables:
+    <ul>
+      <li>sketch (don&#8217;t set it to anything yet)</li>
+      <li>context (don&#8217;t set it to anything yet)</li>
+      <li>circle &#8230; an object that&#8217;s equal to {&#8216;x&#8217;:0, &#8216;y&#8217;:100, &#8216;r&#8217;:25 }</li>
+      <li>dx &#8230; the velocity, which can be set to any value between 1 and 5</li>
+      <li>fps &#8230; how often the screen redraws; 10 is a good value</li>
+    </ul>
+  </li>
+  <li>create a main function&#8230; and within this funciton:
+    <ul>
+      <li>assign values to sketch and context:
+        <ul>
+          <li>sketch = document.getElementById(&#8216;sketch&#8217;);</li>
+          <li>context = sketch.getContext(&#8220;2d&#8221;);</li>
+        </ul>
+      </li>
+      <li>use setInterval to constantly call a function called animate (you&#8217;ll create this later)
+        <ul>
+          <li>pass in animate as the function to be called, and fps and the time interval</li>
+          <li>setInterval(animate, fps);</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>create an animate function&#8230; and within this function:
+    <ul>
+      <li>clear the screen
+        <ul>
+          <li>use context.clearRect</li>
+          <li>use the arguments 0, 0 &#8230; and the width and height of your canvas element</li>
+          <li>context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);</li>
+          <li>use draw_circle to draw a shape, and use the circle object&#8217;s x, y and radius values</li>
+          <li>draw_circle(circle.x, circle.y, circle.r);</li>
+          <li>increment the circle&#8217;s x value</li>
+          <li>circle.x = circle.x + dx;</li>
+          <li>create a conditional that checks if your circle has reached the far left or far right of the canvase:
+            <ul>
+              <li>circle.x &gt; sketch.offsetWidth - dx</li>
+              <li>circle.x &lt; 0 + dx</li>
+            </ul>
+          </li>
+          <li>use an if / else if to handle these conditions</li>
+          <li>the body of the condition should change the direction (by multiplying dx by -1)</li>
+          <li>&#8230;as well as set the circle&#8217;s x value to either 0 or sketch.offsetWidth:
+            <ul>
+              <li>circle.x = offsetWidth;</li>
+              <li>circle.x = 0;</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>bring in your draw_circle function from previous exercises</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example movie: <a href="../../resources/mov/circle-bounce.mov">circle-bounce</a></li>
+</ul>
+
+<!--_ -->
+
+<h3 id="circle-y-bounce">circle-y-bounce</h3>
+
+<p>Copy your program above, and modify it so that your circle travels vertically, instead of horizontally.  It should bounce in the opposite direction if it hits the top or bottom of the canvas.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>circle-y-bounce.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-11-interaction/</strong></li>
+  <li>copy your program above&#8230; and change it so that:
+    <ul>
+      <li>the circle travels up and down</li>
+      <li>&#8230;and bounces off of the top or bottom of the canvas.</li>
+      <li>use 0 for the top</li>
+      <li>use sketch.offsetHeight for the bottom</li>
+    </ul>
+  </li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example movie: <a href="../../resources/mov/circle-y-bounce.mov">circle-y-bounce</a></li>
+</ul>
+
+<h3 id="circle-xy">*circle-xy</h3>
+
+<p>Animate your circle so that it is travelling both horizontally and vertically (along the x and y axis).  Make sure it bounces off of the top, bottom, left and right of the canvas.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>circle-xy.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-11-interaction/</strong></li>
+  <li>using the programs above as a base
+    <ul>
+      <li>add both a dx and dy</li>
+      <li>make the circle move in both directions by adding the dx or dy to the circle object&#8217;s x and y</li>
+      <li>add another if / else if &#8230; so that top, bottom, left and right are handled appropriately</li>
+    </ul>
+  </li>
+  <li>send it to github by using git push</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example movie: <a href="../../resources/mov/circle-xy.mov">circle-xy</a></li>
+</ul>
+
+<h3 id="car-animate">*car-animate</h3>
+
+<p>Animate your car! Make it move from left to right&#8230;</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>car-animate.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-11-interaction/</strong></li>
+  <li>mimic the example movie: <a href="../../resources/mov/car-animate.mov">car-animate</a></li>
+  <li>send it to github by using git push</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+</ul>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

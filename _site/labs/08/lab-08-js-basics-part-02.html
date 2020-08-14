@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Basics</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1>Media Computation Skills Lab </h1>
+<h2>MTEC 1003 - Fall 2016</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-6---javascript-basics">Lab 8 - JavaScript Basics</h1>
+
+<p>In this lab, you&#8217;ll be creating several programs:</p>
+
+<ol>
+  <li>shout</li>
+  <li>mad libs</li>
+  <li>temperature</li>
+  <li>*bonus: tree</li>
+</ol>
+
+<h2 id="summary-of-commands">Summary of Commands:</h2>
+
+<p><strong>THESE ARE NOT LAB INSTRUCTIONS.</strong></p>
+
+<p>The following is just a reference.  The lab instructions are below.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># configure your local repo with your name and email</span>
+git config user.name  <span class="s2">&quot;your name&quot;</span>
+git config user.email <span class="s2">&quot;your@email.address&quot;</span>
+
+<span class="c"># two ways to show all remote repositories</span>
+git remote -v
+cat .git/config
+
+<span class="c"># removing a remote repository by name (usually origin)</span>
+git remote remove name_of_remote
+
+<span class="c"># changing / setting the url of a named remote repository (usually origin)</span>
+git remote <span class="nb">set</span>-url name_of_remote new_remote_url
+
+<span class="c"># look at the differences between your last save and your current changes (line by line)</span>
+git diff --color
+
+<span class="c"># check on the status of your changes</span>
+git status
+
+<span class="c"># &quot;stage&quot; or mark your changes as ready to be saved</span>
+git add --all
+
+<span class="c"># save!</span>
+git commit -m <span class="s1">&#39;my message&#39;</span>
+
+<span class="c"># show a log of your changes so far</span>
+git log --color <span class="o">(</span>show your changes so far<span class="o">)</span>
+
+<span class="c"># send to a remote repository (to submit an assignment)</span>
+git push origin master
+</code></pre></div>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE CREATED IN THE REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<h3 id="shout">shout</h3>
+
+<p>Write a program that takes user input and repeats the user input, but with three exclamation points afterwards. </p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>shout.html</strong> in your repository directory: <strong>~/bzuckerman/lab-08-javascript-basics/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for a word: &#8220;Give me a word, and I&#8217;ll shout it out&#8221;</li>
+  <li>the program should repeat the word, but with three exclamation points added to it</li>
+  <li>the output should go to the <strong>JavaScript console</strong> </li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Give me a word, and I<span class="err">&#39;</span>ll shout it out
+&gt; yeah
+yeah!!!
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+<hr />
+
+<h3 id="madlibs">madlibs</h3>
+
+<p>Write a program that simulates MadLibs!  It will ask your for words, and then it will print out a story (in this case lyrics), with the user entered words substituted for words in the story.</p>
+
+<p>Part 1</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>madlibs.html</strong> in your repository directory: <strong>~/bzuckerman/lab-08-javascript-basics/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>define 3 variables, set them each equal to a word: an adjective, a noun, and a verb</li>
+  <li>name the variables after the part of speech of the word they are replacing, for example</li>
+</ul>
+
+<div class="highlight"><pre><code class="html">var adjective = &quot;funny&quot;;
+var noun = &quot;hippo&quot;;
+etc...
+</code></pre></div>
+
+<ul>
+  <li>write program that <strong>uses those 3 variables</strong> in these lyrics:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Sometimes I rhyme slow sometimes I rhyme quick
+I was on 1-2-5 and Saint Nick
+Waiting on a cab, standing in the rain
+Under my heart three clouds of pain
+</code></pre></div>
+
+<ul>
+  <li>substitute any words you&#8217;d like to change with one of the variables you defined (make sure it's the same part of speech though! (e.g. substitute a noun with another noun, etc))</li>
+  <li>use string concatenation to stitch together the lyrics</li>
+  <li>print out the new version of lyrics, each line on a separate line</li>
+  <li>for example, the <strong>JavaScript console</strong> may display:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Sometimes I rhyme <span class="s1">funny</span> sometimes I rhyme quick ...
+Waiting on a <span class="s1">hippo</span>, standing in the rain ...
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<p>Part 2</p>
+
+<ul>
+  <li>modify your program so that it asks for user input for each variable (don&#8217;t use hardcoded values anymore)</li>
+  <li>this should result in 3 dialog boxes</li>
+  <li>and the result of the new lyrics printed out to the <strong>JavaScript console</strong></li>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="temperature">temperature</h3>
+
+<p>Write a program that calculates celsius to fahrenheit based on user input.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>temperature.html</strong> in your repository directory: <strong>~/bzuckerman/lab-08-javascript-basics/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for the temperature in celsius</li>
+  <li>find the formula for celsius to faahrenheit conversion online!</li>
+  <li>translate that formula into javascript </li>
+  <li>the program should output to the <strong>JavaScript console</strong>: c degrees celsius is f degrees fahrenheit</li>
+  <li>(with f and c substituted with the appropriate calculated values)</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Please enter a temperature in celsius
+&gt; 37
+37 degrees celsius is 98 degrees fahrenheit
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+
+<h3 id="tree">*tree</h3>
+
+<p>(This one&#8217;s slightly hard&#8230; try doing it in just one line!) Print out a tree!</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>tree.html</strong> in your repository directory: <strong>~/bzuckerman/lab-08-javascript-basics/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>print out an ascii art tree to the JavaScript console</li>
+</ul>
+<pre>
+   /\
+  /  \
+  /  \
+ /____\
+   ||
+</pre>
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

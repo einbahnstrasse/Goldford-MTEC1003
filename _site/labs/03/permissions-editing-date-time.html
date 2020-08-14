@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Permissions, Dates and Time, Shell Scripting</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+  <h1 id="permissions-editing-date-time-shell-scripting">Permissions, Editing, Date, Time, Shell Scripting</h1>
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="permissions">permissions</h3>
+
+  <p>(what command and options did I use to get this output?)</p>
+
+  <div class="highlight"><pre><code class="bash">drwx------+ 18 bree  staff    612 Aug 10  2012 Music
+drwx------+ 14 bree  staff    476 Jan 12 10:16 Pictures
+drwxr-xr-x+  6 bree  staff    204 Apr 11  2012 Public
+drwxr-xr-x+  6 bree  staff    204 Apr 11  2012 Sites
+drwxr-xr-x   5 bree  staff    170 Aug 10  2012 VirtualBox VMs
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="permissions-continued">permissions continued</h3>
+
+  <p>I can get permissions for a single file by using ls -l on a single file&#8230;</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls -l filename.txt
+-rw-r--r--  1 bree  wheel  0 Feb 13 17:05 filename.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="permissions-continued-1">permissions continued</h3>
+  <ul>
+    <li>u - __u__ser permissions</li>
+    <li>g - __g__roup permssions</li>
+    <li>o - w__o__rld permsissions</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">drwxrwxrwx
+  <span class="p">|</span>  <span class="p">|</span>  <span class="p">|</span>
+ rwx <span class="p">|</span>  <span class="p">|</span>
+  u rwx <span class="p">|</span>
+     g rwx
+        o
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="permissions-continued-2">permissions continued</h3>
+
+  <ul>
+    <li>r - read</li>
+    <li>w - write</li>
+    <li>x - execute</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash">drwxrwxrwx
+</code></pre></div>
+
+<p> What are the permissions of this file? &#8594;</p>
+
+  <div class="highlight"><pre><code class="bash">-rw-r--r--  1 bree  staff  0 Jan 14 16:51 file_name
+</code></pre></div>
+
+ <div class="incremental">
+  <ul>
+	<li><strong>U</strong>ser (bree) can read and write.</li>
+	<li><strong>G</strong>roup (staff) can read.</li>
+	<li>W<strong>o</strong>rld can read.</li>
+  </ul>
+ </div>
+
+</section>
+
+<section>
+  <h3 id="chmod">chmod</h3>
+
+  <p>change permissions</p>
+
+  <div class="highlight"><pre><code class="bash">chmod <span class="o">[</span>user, group or world<span class="o">]</span> <span class="o">[</span>plus or minus<span class="o">]</span> <span class="o">[</span><span class="nb">read</span>, write or execute<span class="o">]</span> <span class="o">[</span>filename.sh<span class="o">]</span>
+	<span class="c"># allow user to execute</span>
+	chmod u+x filename.sh
+	<span class="c"># prevent world from writing</span>
+	chmod o-w filename.txt
+  </code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="chown">chown</h3>
+
+  <p>change owner and group</p>
+
+  <div class="highlight"><pre><code class="bash">chown bree:admins filename.txt
+</code></pre></div>
+
+ <p>change owner</p>
+
+  <div class="highlight"><pre><code class="bash">chown bree filename.txt
+</code></pre></div>
+
+ <p>change group</p>
+
+  <div class="highlight"><pre><code class="bash">chown :admins filename.txt
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="nano">nano</h3>
+
+  <p>start a command line txt editor!</p>
+
+  <div class="highlight"><pre><code class="bash">nano filename.txt
+
+<span class="c"># &lt;CTRL-X&gt; exit</span>
+<span class="c"># &lt;CTRL-O&gt; save</span>
+<span class="c"># &lt;CTRL-K&gt; cut</span>
+<span class="c"># &lt;CTRL-U&gt; paste</span>
+<span class="c"># &lt;CTRL-W&gt; search</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="date">date</h3>
+
+  <p>show the current date and time</p>
+
+  <div class="highlight"><pre><code class="bash">date
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="cal">cal</h3>
+
+  <p>show the current calendar month</p>
+
+  <div class="highlight"><pre><code class="bash">cal
+
+<span class="c"># for year...</span>
+cal 2013
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="shell-scripts">shell scripts</h3>
+
+  <ul>
+    <li>must be user executable</li>
+    <li>can be run using ./shell_script_name.sh - this uses the bash command language interpreter (what you use to run all commands) to run the script. </li>
+    <li>can also be run using: bash shell_script_name
+    <li>script should being with: #!/bin/bash
+    <li>each new line begins a new command
+    <li>comments begin with: #
+  </ul>
+</section>
+
+<section>
+  <h3 id="shell-scripts-cont">shell scripts continued</h3>
+
+  <p>For example, a script called "hello_world.sh"...</p>
+
+   <div class="highlight"><pre><code class="bash">
+  	#!/bin/bash
+	# Prints "Hello World!"
+
+	echo "Hello World!"
+   </code></pre></div>
+
+  <p> How would I run this? &#8594;</p>
+
+ 	<div class="incremental">
+ 	  <div class="highlight"><pre><code class="bash">./hello_world.sh
+	  </code></pre></div>
+ 	</div>
+
+</section>
+
+<section>
+  <h3 id="activity-drills"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 3 (use set 4)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 4</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="lab"><strong>Lab</strong></h3>
+
+  <p><a href="lab-03-part-03-permissions-editing-date-time.txt">Permissions, Editing, Date, Time</a></p>
+
+  <ul>
+    <li>Type each command (with arguments and flags) exactly</li>
+    <li>Only press &lt;ENTER&gt; when instructed&#8230;</li>
+    <li>&lt;TAB&gt;, &lt;ENTER&gt;, &lt;UP&gt;, &lt;DOWN&gt; are the actual keys!</li>
+    <li>Paste answer or output below the dashed line (&#8212;&#8212;&#8212;&#8212;)</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="activity-drills-1"><strong>Activity</strong>: Drills!</h3>
+
+  <p>Entering commands <em>flash cards</em> x 3 (use set 1234)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 1234</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

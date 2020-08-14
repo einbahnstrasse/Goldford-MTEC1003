@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - JavaScript Conditionals</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="javascript-conditionals">JavaScript Conditionals</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="source-material">Source Material</h3>
+
+  <p>See the first two chapters of the second edition of <a href="http://eloquentjavascript.net/2nd_edition/preview/">Eloquent JavaScript</a> for more detailed information:</p>
+
+  <ul>
+    <li><a href="http://eloquentjavascript.net/2nd_edition/preview/01_values.html">Chapter 1 - Values</a></li>
+    <li><a href="http://eloquentjavascript.net/2nd_edition/preview/02_program_structure.html">Chapter 2 - Program Structure</a></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="boolean-values">Boolean Values</h3>
+
+  <p>Besides numbers and strings, there is another type that we talked about briefly.  <strong>They are booleans.  What are the possible values that a boolean can be?</strong> &#8594; </p>
+
+  <div class="incremental">
+    <ul>
+      <li>a boolean value is <strong>true</strong> or <strong>false</strong></li>
+      <li>a literal <strong>true</strong> and <strong>false</strong> is just:</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="js"><span class="kc">true</span>
+<span class="kc">false</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="boolean-operators">Boolean Operators</h3>
+
+  <p><strong>What are some operators that return boolean values?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>===</strong> - equals - checks if both operands are the <strong>same value and type</strong>
+        <ul>
+          <li>gives back true if both are the same value and type</li>
+          <li>gives back false otherwise</li>
+        </ul>
+      </li>
+      <li><strong>!==</strong> - not equals - checks if the operands are <strong>not the same value or type</strong>
+        <ul>
+          <li>gives back true if both operands are not the same value or type</li>
+          <li>gives back false otherwise</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="boolean-expressions">Boolean Expressions</h3>
+
+  <p>You can create boolean expressions with these operators.  <strong>What is the value that results from the following expressions?  What type are they?</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="js"><span class="mi">1</span> <span class="o">===</span> <span class="s2">&quot;1&quot;</span>
+<span class="mi">12</span> <span class="o">!==</span> <span class="s2">&quot;cat&quot;</span>
+</code></pre></div>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="c1">// boolean</span>
+<span class="kc">false</span>
+<span class="kc">true</span>
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="additional-comparison-operators">Additional Comparison Operators</h3>
+
+  <p><strong>Can you think of other comparison operators that JavaScript may have?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>these all return boolean values</li>
+      <li>less than - <strong>&lt;</strong></li>
+      <li>greater than - <strong>&gt;</strong></li>
+      <li>less than or equal to - <strong>&lt;=</strong></li>
+      <li>greater than or equal to- <strong>&gt;=</strong></li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="additional-comparison-operators-continued">Additional Comparison Operators Continued</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="c1">// false!</span>
+<span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">7</span>
+
+<span class="c1">// true!</span>
+<span class="mi">5</span> <span class="o">&gt;=</span> <span class="mi">5</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h2 id="boolean-expressions-give-back-boolean-values">Boolean Expressions Give Back Boolean Values!</h2>
+</section>
+
+<section>
+  <h3 id="conditionals">Conditionals</h3>
+
+  <p><a href="http://eloquentjavascript.net/2nd_edition/preview/02_program_structure.html">See Conditional Execution in Eloquent JavaScript</a></p>
+
+  <p>A conditional is a way of allowing us to conditionally execute code based on a boolean expression.</p>
+
+</section>
+
+<section>
+  <h3 id="if-statement">If Statement</h3>
+
+  <p>Conditionally execute a branch of code.</p>
+
+  <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">some_boolean_expression</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is true</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  <ul>
+    <li><a href="../../resources/img/if.png">Diagram for if statements</a></li>
+    <li><a href="../../resources/img/if-consecutive.png">Diagram for consecutive if statements</a></li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="if--else-statement">If / Else Statement</h3>
+
+  <p>Execute one branch if condition is true, another branch if condition is false.  An else must have a preceding if!</p>
+
+  <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">some_boolean_expression</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is false</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  <ul>
+    <li><a href="../../resources/img/if-else.png">Diagram for if / else statements</a></li>
+    <li>else statements are always attached to an if!</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="if--else-if">If / Else If</h3>
+
+  <p>Chain multiple conditions.  You can add else at the end as well.  Conditions are evaluated until the first true condition, at which point the if statement finishes immediately.</p>
+
+  <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 1 is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_2</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 2 is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_3</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 3 is true</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  <ul>
+    <li><a href="../../resources/img/if-else-if.png">Diagram for if / else if statements</a></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="usage">Usage</h3>
+
+  <ul>
+    <li>use if statements if there&#8217;s a single alternative path of execution</li>
+    <li>use if/else  statements if there&#8217;s a two possible alternative paths of execution</li>
+    <li>use if/else if statements if there&#8217;s more than two possible alternative paths of execution</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="boolean-expressions-1">Boolean Expressions</h3>
+
+  <p>Note that within the parentheses is some expression that produces a boolean values (true or false).</p>
+
+  <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 1 is true</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="blocks-of-code">Blocks of Code</h3>
+
+  <p>Curly braces denote statements of code that are grouped together.  Everything within the curly braces below is considered part of the if statement.</p>
+
+  <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 1 is true</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="logical-operators">Logical Operators</h3>
+
+  <p>Logical operators allow you to combine boolean values!</p>
+
+  <ul>
+    <li><strong>and</strong> (represented as <strong>&amp;&amp;</strong>) - takes two operands.<br />
+      <ul>
+        <li>only gives back true when both operands are true.</li>
+        <li>gives back false otherwise</li>
+      </ul>
+    </li>
+    <li><strong>or</strong> (represented as <strong>&#124;&#124;</strong>) - takes two operands.
+      <ul>
+        <li>returns true if either operand is true</li>
+        <li>it only gives back false when both operands are false.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="using-logical-operators">Using Logical Operators</h3>
+
+  <p>Examples</p>
+
+  <div class="highlight"><pre><code class="js"><span class="c1">// variable num is between 1 and 10</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">num</span> <span class="o">&lt;=</span><span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">print</span><span class="p">(</span><span class="s2">&quot;it&#39;s between 1 and 10&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// answer is yeah or yes</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">answer</span> <span class="o">===</span> <span class="s1">&#39;yes&#39;</span> <span class="o">||</span> <span class="nx">answer</span> <span class="o">===</span> <span class="s1">&#39;yeah&#39;</span> <span class="p">)</span> <span class="p">{</span>
+	<span class="nx">print</span><span class="p">(</span><span class="s2">&quot;YUP!&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="converting-from-numbers-to-strings">Converting from Numbers to Strings</h3>
+
+  <p>Use the built-in function <strong>parseInt</strong> to convert a number to a string.</p>
+
+  <ul>
+    <li>parseInt takes two arguments, the string to convert, and the radix (which will be 10 for us)</li>
+    <li>we can use this when we get user input&#8230; <strong>why would we need to do this?</strong>&#8230;</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">answer</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+</code></pre></div>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

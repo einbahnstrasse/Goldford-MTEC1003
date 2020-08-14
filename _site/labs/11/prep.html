@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Prep, Review</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="prep-review">Prep, Review</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h2 id="quick-rundown-of-git-commands">Quick Rundown of Git Commands</h2>
+</section>
+
+<section>
+  <h3 id="git---setting-up-repositories">Git - Setting up Repositories</h3>
+
+  <p><strong>What command would you use to clone a remote repository?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># clone a remote repo</span>
+<!--git clone git@github.com:your_username/your-repository-name.git -->
+git clone https://your_username/your-repository-name.git
+
+</code></pre></div>
+
+<p><strong>What is the command to show a remote repo?</strong> &#8594;</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># show remote repositories</span>
+git remote -v
+
+<span class="c"># The output should look something like...</span>
+<span class="c"># origin  https://bzuckerman@github.com/bzuckerman/lab-08-prep.git (fetch)</span>
+<span class="c"># origin  https://bzuckerman@github.com/bzuckerman/lab-08-prep.git (push)</span>
+</code></pre></div>
+
+<p>...continued...</p>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="git---setting-up-repositories-cont">Git - Setting up Repositories Continued</h3>
+
+<p><strong>What command would you use to configure your cloned repository with your name and email?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash">
+<span class="c"># configure it with your name and email</span>
+git config user.name  <span class="s2">&quot;your name&quot;</span>
+git config user.email <span class="s2">&quot;your@email.address&quot;</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="git---saving-and-sharing-changes">Git - Saving and Sharing Changes</h3>
+
+  <p><strong>What&#8217;s are the commands that you would use for making, saving and sharing changes?  Let&#8217;s start with just making the change and prepping it to be saved.</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># (make changes)</span>
+
+<span class="c"># show the exact, line-by-line changes that you&#39;ve made</span>
+git diff --color
+
+<span class="c"># check on the status of your changes</span>
+git status
+
+<span class="c"># stage your changes / prep them to be saved</span>
+git add --all
+
+<span class="c"># check your staged changes using git status again</span>
+git status
+
+<span class="c"># (continued...)</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="git---saving-and-sharing-continued">Git - Saving and Sharing Continued&#8230;</h3>
+
+  <p><strong>Saving and sending to the remote repository</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># save them, make sure you remember your comment by using -m!</span>
+git commit -m <span class="s1">&#39;my message&#39;</span>
+
+<span class="c"># show a history of your changes</span>
+git log --color <span class="o">(</span>show your changes so far<span class="o">)</span>
+
+<span class="c"># send to your remote repository</span>
+git push origin master
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h2 id="javascript">JavaScript</h2>
+</section>
+
+<section>
+  <h3 id="a-template">A Template</h3>
+
+  <p><strong>What kind of file and what set up do we have write in order to start a new JavaScript program?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p>We have to create a bare bones web page, an <strong>.html</strong> file:</p>
+
+    <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="c1">// your JavaScript goes here!</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+    <p><strong>Your code goes within the script tags!</strong></p>
+  </div>
+</section>
+
+<section>
+  <h3 id="data-types-and-values">Data Types and Values</h3>
+
+  <p><strong>What&#8217;s a value and what&#8217;s a data type?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>values are just data - for example: 3.14, &#8220;hello&#8221;</li>
+      <li>a <strong>type</strong> is just a kind or category of value.  </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="data-types">Data Types</h3>
+
+  <p><strong>What are some data types that we know?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>number</strong> - numeric data (clearly!)</li>
+      <li><strong>string</strong> - an ordered sequence of characters (alphanumeric, punctuation, spaces, etc.)</li>
+      <li><strong>boolean</strong> values - true / false</li>
+      <li>there&#8217;s also <strong>undefined</strong>&#8230; when we try to use a variable that hasn&#8217;t been created yet</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="data-types-1">Data Types</h3>
+
+  <p>A value&#8217;s data <strong>type</strong> determines how that value behaves when used in functions or transformed/combined with <strong>operators</strong>.</p>
+
+</section>
+
+<section>
+  <h3 id="numbers">Numbers</h3>
+
+  <p>Numbers can be positive or negative rational numbers, like 23, -42 and 3.14.  <strong>However, there are also some special values that are numbers.</strong> &#8594;</p>
+
+    <ul>
+      <li><strong>Infinity, -Infintity</strong> - positive and negative infinities (don&#8217;t use these, they&#8217;re not that useful, and not mathematically solid!)</li>
+      <li><strong>NaN</strong> (not-a-number) - this results from any numeric operation that doesn&#8217;t give back a meaniigful result&#8230; such as 0/0</li>
+    </ul>
+</section>
+
+<section>
+  <h3 id="strings">Strings</h3>
+
+  <p><strong>What&#8217;s a string, and give an example of a string literal</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p>A <strong>string</strong> is an ordered sequence of characters.  You can tell that a value is a string if it is surrounded by single or double quotes:</p>
+
+    <div class="highlight"><pre><code class="html">&quot;Surrounded by quotes!&quot;
+</code></pre></div>
+
+    <p><strong>What kind of data type is this?</strong> &#8594;  "5"</p>
+
+    <ul>
+      <li>It's a string!</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">&quot;When numbers are surrounded by quotes they are strings!&quot;
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="escape-characters">Escape Characters</h3>
+
+  <p><strong>How do we write a backslash, quote, tab or a new line in a string?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>use the escape character, backslash (\)</li>
+      <li>if there is a backslash in a string (\), it means:
+        <ul>
+          <li>the next character has a special meaning</li>
+          <li>the initial backslash will not be printed out</li>
+        </ul>
+      </li>
+      <li>for example, backslash, quote, tab and newline:</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">&quot;\\&quot;
+&quot;\&quot;&quot;
+&quot;\t&quot;
+&quot;\n&quot;
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="booleans">Booleans</h3>
+
+  <p><strong>What&#8217;s a boolean value?</strong> &#8594; </p>
+
+  <div class="incremental">
+    <p>A boolean value is a data type with only two possible values:</p>
+
+    <div class="highlight"><pre><code class="js"><span class="kc">true</span>
+<span class="kc">false</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="operators">Operators</h3>
+
+  <p><strong>What&#8217;s an operator and what are some examples of operators?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>operators allow us to combine and transform values</li>
+      <li>operators have <strong>operands</strong>,
+        <ul>
+          <li><strong>operands</strong> are the values that supplied to operators</li>
+          <li><strong>binary</strong> operators have two operands</li>
+          <li><strong>unary</strong> operators have one operand</li>
+        </ul>
+      </li>
+      <li><strong>operators give back values</strong>
+        <ul>
+          <li>using operators with values yields other values!</li>
+        </ul>
+          <li>examples: + - * / % (these are numeric operators)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="string-operators">String Operators</h3>
+
+  <p><strong>We learned one operator that works on strings.  What was it?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p><strong>string concatenation</strong>, or <strong>+</strong>, is an operator that takes two strings and joins them:</p>
+
+    <div class="highlight"><pre><code class="html">&quot;hello &quot; + &quot;there&quot;
+</code></pre></div>
+
+  <p><strong>What is the result of this expression?</strong> &#8594;</p>
+
+    <div class="highlight"><pre><code class="html">&quot;1&quot; + &quot;1&quot;
+</code></pre></div>
+
+  <p><strong>11</strong></p>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="comparison-operators">Comparison Operators</h3>
+
+  <p>Name some <strong>comparison</strong> operators that <strong>return</strong> boolean values&#8230; &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>===</strong> - equals - checks if both operands are the <strong>same value and type</strong>
+        <ul>
+          <li>gives back true if both are the same value and type</li>
+          <li>gives back false otherwise</li>
+        </ul>
+      </li>
+      <li><strong>!==</strong> - not equals - checks if the operands are <strong>not the same value or type</strong>
+        <ul>
+          <li>gives back true if both operands are not the same value or type</li>
+          <li>gives back false otherwise</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="even-more-comparison-operators">Even More Comparison Operators</h3>
+
+  <ul>
+    <li><strong>&lt;</strong> - less than</li>
+    <li><strong>&gt;</strong> - greater than </li>
+    <li><strong>&lt;=</strong> - less than or equal to</li>
+    <li><strong>&gt;=</strong> - greater than or equal to</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="logical-operators">Logical Operators</h3>
+
+  <p>Name some <strong>logical</strong> operators that allow you to <strong>combine boolean values</strong>. &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>and</strong> (represented as <strong>&amp;&amp;</strong>) - takes two operands.<br />
+        <ul>
+          <li>only gives back true when both operands are true.</li>
+          <li>gives back false otherwise</li>
+        </ul>
+      </li>
+      <li><strong>or</strong> (represented as <strong>&#124;&#124;</strong>) - takes two operands.
+        <ul>
+          <li>returns true if either operand is true</li>
+          <li>it only gives back false when both operands are false.</li>
+        </ul>
+      </li>
+      <li><strong>they are evaluated left to right</strong> (precedence is determined left to right)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="boolean-expressions">Boolean Expressions</h3>
+
+  <p>You can create boolean expressions with comparison and logical  operators.  <strong>What is the value that results from the following expressions?</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="js"><span class="mi">24</span> <span class="o">!==</span> <span class="s2">&quot;hello&quot;</span>
+<span class="mi">5</span> <span class="o">===</span> <span class="s2">&quot;5&quot;</span>
+<span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">false</span>
+<span class="kc">false</span> <span class="o">||</span> <span class="kc">true</span>
+</code></pre></div>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="kc">true</span>
+<span class="kc">false</span>
+<span class="kc">false</span>
+<span class="kc">true</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="more-boolean-expressions">More Boolean Expressions</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="kc">false</span> <span class="o">&&</span> <span class="kc">true</span> <span class="o">||</span> <span class="kc">true</span>
+<span class="kc">false</span> <span class="o">&&</span> <span class="kc">(true</span> <span class="o">||</span> <span class="kc">true)</span>
+<span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="o">||</span> <span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">20</span>
+</code></pre></div>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">var</span> <span class="nx">login</span> <span class="o">=</span> <span class="s1">&quot;albert&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">password</span> <span class="o">=</span> <span class="s1">&quot;secret&quot;</span><span class="p">;</span>
+<span class="nx">login</span> <span class="o">===</span> <span class="s1">&quot;albert&quot;</span> <span class="o">&&</span> <span class="nx">password</span> <span class="o">===</span> <span class="s1">&quot;secret&quot;</span>
+</code></pre></div>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="kc">true</span>
+<span class="kc">false</span>
+<span class="kc">false</span>
+<span class="kc">true</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="not">Not</h3>
+
+  <p>There&#8217;s one more logical operator, <strong>not</strong>. </p>
+
+  <ul>
+    <li>only takes one operand, a boolean</li>
+    <li>gives back the opposite boolean value</li>
+    <li><strong>not</strong> is represented by an exclamation point - <strong>!</strong></li>
+  </ul>
+
+  <div class="highlight"><pre><code class="js"><span class="o">!</span> <span class="kc">true</span>
+<span class="o">!</span> <span class="p">(</span><span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
+<span class="o">!</span> <span class="p">(</span><span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">true</span><span class="p">)</span>
+</code></pre></div>
+
+ <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="kc">false</span>
+<span class="kc">true</span>
+<span class="kc">false</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h2 id="boolean-expressions-give-back-boolean-values">Boolean Expressions Give Back Boolean Values!</h2>
+</section>
+
+<section>
+  <h3 id="unary-operators">Unary Operators</h3>
+
+  <p>Unary Operators only have a single operand to the right:</p>
+
+  <ul>
+    <li><strong>+</strong> - convert to positive number</li>
+    <li><strong>-</strong> - convert to negative number</li>
+  </ul>
+
+  <p><strong>What&#8217;s the operator that gives back the type of a value?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p><strong>typeof</strong> - gives the <em>type</em> of a value (Number, String, etc.)</p>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="typeof">typeof</h3>
+
+  <p>Again, <strong>typeof</strong> is:</p>
+
+  <ul>
+    <li>an operator that takes one operand</li>
+    <li>gives back the type of value the operand</li>
+  </ul>
+
+  <p><strong>What would we get with this code:</strong>  &#8594;</p>
+
+  <div class="highlight"><pre><code class="html">typeof -12
+typeof &quot;98.6&quot;
+typeof (20 === 20)
+typeof NaN
+</code></pre></div>
+
+  <div class="incremental">
+    <ul>
+      <li>number, string, boolean, number</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="functions">Functions</h3>
+
+  <p><strong>What&#8217;s a function?  What&#8217;s a function call?  What are arguments?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>a <strong>function</strong> is a named sequence of statements that perform some useful action</li>
+      <li>it can <strong>optionally</strong> take <strong>inputs</strong> and <strong>return values</strong></li>
+      <li>to <strong>call</strong> a function is just to <em>run</em> or <em>execute</em> it</li>
+      <li>the values passed to a function are called <strong>arguments</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="calling-functions">Calling Functions</h3>
+
+  <p><strong>How do you call <em>or execute</em> a function?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>to call a function, use its name followed by parentheses&#8230; with an optional list of comma separated arguments between the parentheses</li>
+      <li>an example of a function call is:</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">prompt(&quot;What is your name?&quot;)
+
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h2 id="when-you-see-parentheses----s---after-a-function-name-that-function-is-being-called-or-executed">When you see parentheses - ( )&#8217;s - after a function name, that function is being <em>called</em> or <em>executed</em></h2>
+</section>
+
+<section>
+  <h3 id="built-in-functions">Built-in Functions</h3>
+
+  <p>JavaScript comes with many built-in functions.  <strong>We know three; what are they and what do they do?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>prompt(&#8220;some message&#8221;)</strong> - asks the user for input and <strong>returns</strong> that value to your program! &#8230; takes an argument, the message to display to a user (this usually requires the use of <em>variables</em>)
+      </li>
+      <li><strong>console.log(&#8220;some message&#8221;)</strong> - prints the argument that you pass to it&#8230; out to Chrome&#8217;s JavaScript console </li>
+      <li><strong>parseInt(&#8220;5&#8221;)</strong> - converts a string to a number</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="some-functions-return-values">Some Functions Return Values</h3>
+
+  <p><strong>What type of value does prompt always return?  What type of value does parseInt always return?</strong>  &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>prompt</strong> always gives back a <strong>string</strong></li>
+      <li><strong>parseInt</strong> always gives back a <strong>number</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="using-prompt-with-variables">Using Prompt With Variables</h3>
+
+  <p>Remember that the function prompt gives back a value.  To retain that value, you have to hold it in a variable:</p>
+
+  <div class="highlight"><pre><code class="html">var answer = prompt(&quot;Yes or no!?&quot;);
+</code></pre></div>
+
+</section>
+
+<section>
+  <h2 id="conditionals">Conditionals</h2>
+</section>
+
+<section>
+  <h3 id="blocks-of-code">Blocks of Code</h3>
+
+  <p>Curly braces denote statements of code that are grouped together.  Everything within the curly braces below is considered part of the if statement.  Blocks of code must <strong>start and end</strong> with curly braces&#8230;</p>
+
+  <div class="highlight"><pre><code class="js"><span class="p">...</span> <span class="p">{</span>
+	<span class="c1">// code wrapped by curly braces</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="conditionals-1">Conditionals&#8230;</h3>
+
+  <p><strong>What kind of statement would we use to execute code if a condition is true?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <p>An if statement&#8230;</p>
+
+    <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">some_boolean_expression</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is true</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="conditionals-continued">Conditionals Continued</h3>
+
+  <p><strong>What kind of statement would we use to execute code one branch of code if a condition is true and another branch of code otherwise?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>an if / else statement  </li>
+      <li>an else must always have a preceding if!</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">some_boolean_expression</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is false</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="if--else-if">If / Else If</h3>
+
+  <p><strong>What kind of statement would we use to execute multiple branches of code based on multiple chained conditions?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p>Use if / else if statements</p>
+
+    <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 1 is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_2</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 2 is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_3</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 3 is true</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="if--else-if-1">If / Else If</h3>
+
+  <ul>
+    <li>once a condition is true, the if / else if executes the code in that block and the if / else if ends immediately (even if other later conditions are true)</li>
+    <li>can end with else to handle all <em>other</em> conditions</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="usage">Usage</h3>
+
+  <ul>
+    <li>use if statements if there&#8217;s a single alternative path of execution</li>
+    <li>use if/else  statements if there&#8217;s a two possible alternative paths of execution</li>
+    <li>use if/else if statements if there&#8217;s more than two possible alternative paths of execution</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="repeat-that-again">Repeat That Again?</h3>
+
+  <p><strong>What construct do we use if we want to execute a block of code multiple times without writing it multiple times?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>we use a for loop!</li>
+      <li><strong>what does a for loop look like&#8230; what are its parts?</strong> &#8594;</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="for-loop-dissected">For Loop Dissected</h3>
+
+  <p>A for loop consists of the keyword, <strong>for</strong>, and three parts, separated by a semicolon,  contained within parentheses:</p>
+
+  <ul>
+    <li>initialization - declares a variable and value to start with</li>
+    <li>condition - a condition for the loop to stop </li>
+    <li><em>afterthought</em> - a way to increment/decrement or change the variable on each iteration so that the condition is eventually met</li>
+  </ul>
+
+  <p>You can use the variable that you declare in the initialization within your for loop!</p>
+</section>
+
+<section>
+  <h3 id="for-loop-parts">For Loop Parts</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="c1">//    initialization</span>
+<span class="c1">//    |        condition</span>
+<span class="c1">//    |        |       afterthought/increment</span>
+<span class="c1">//    |        |       |</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="counting-by-3s">Counting By 3&#8217;s</h3>
+
+  <p><strong>Create a for loop that counts from 0 up to and including 9 by 3&#8217;s?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">9</span><span class="p">;</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

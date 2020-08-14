@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Drawing Revisited, Events</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="drawing-revisited-events">Drawing Revisited, Events</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="lets-draw">Let&#8217;s Draw</h3>
+
+  <p>What HTML element do we use to draw on a web page?</p>
+
+  <div class="incremental">
+    <ul>
+      <li>a <strong>canvas</strong> is an html element that be used for programmatic rendering of graphics on a web page</li>
+      <li>think of it is a blank rectangle on your page that you can draw on</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="setting-up-a-canvas">Setting up a Canvas</h3>
+
+  <p>Again, a <strong>canvas</strong> is an html element - it&#8217;s a tag.  You can draw on it by using JavaScript.  <strong>How do we set it up?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ol>
+      <li>create an html page</li>
+      <li>add your canvas tags</li>
+      <li>add your script tags</li>
+      <li>tell the page to <em>call your code</em> once the whole page is loaded </li>
+      <li>create a function that will do your drawing!</li>
+      <li>write some setup code so that you have access to the canvas</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h3 id="our-usual-template">Our Usual Template</h3>
+
+  <p>Let&#8217;s start with our usual template&#8230;.</p>
+
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-canvas">A Canvas</h3>
+
+  <p>Let&#8217;s add a place to draw!.  Use a pair of opening and closing tags called canvas&#8230; with attributes, id, width, and height.</p>
+
+  <ul>
+    <li><strong>id</strong> will be used later in order to reference this particular canvas</li>
+    <li><strong>width</strong> and <strong>height</strong> are the dimensions of your drawing area</li>
+    <li>place this tag before your JavaScript (for now&#8230; we&#8217;ll see a more <em>correct</em> way of doing it later)</li>
+    <li>make sure to add an <strong>id attribute</strong>!</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;sketch&quot;</span> <span class="na">width=</span><span class="s">&quot;800&quot;</span> <span class="na">height=</span><span class="s">&quot;600&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/canvas&gt;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="script-tags">Script Tags</h3>
+
+  <p>As usual, add your script tags:</p>
+
+  <ul>
+    <li>this can be done within the body</li>
+    <li>you can place it before the closing body tag (after the canvas element)</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;script&gt;</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="events">Events</h3>
+
+  <p>We can have JavaScript run whenever a specific even happens.  We&#8217;ll use <strong>document.addEventListener</strong> to monitor for events.</p>
+
+  <ul>
+    <li>it takes two parameters&#8230;</li>
+    <li>an event (as a string)</li>
+    <li>the name of a function that should run when the event is triggered:</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="js"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="events-continued">Events Continued</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+</code></pre></div>
+
+  <ul>
+    <li>the above runs a function called main when the page is loaded.</li>
+    <li>we&#8217;ll use this to start our drawing&#8230;</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="define-our-drawing-function">Define our Drawing Function</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="c1">// draw stuff here</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="get-the-canvas-element-and-context">Get the Canvas Element and Context</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="c1">// within your main function</span>
+<span class="kd">var</span> <span class="nx">sketch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;sketch&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-template-somewhat-updated">A Template (Somewhat Updated)</h3>
+
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;sketch&quot;</span> <span class="na">width=</span><span class="s">&quot;800&quot;</span> <span class="na">height=</span><span class="s">&quot;600&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/canvas&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">sketch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;sketch&#39;</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+	<span class="c1">// your code goes here</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="drawing">Drawing</h3>
+
+  <p>About the canvas&#8230;</p>
+
+  <ul>
+    <li>the canvas origin is at 0, 0, and it&#8217;s at the upper left hand corner</li>
+    <li>positive y values go down, positive x values go right</li>
+  </ul>
+
+  <p>Once you have your context, you can call <em>methods</em> (or functions) from the context by using the dot and the function name:</p>
+
+  <div class="highlight"><pre><code class="js"><span class="nx">context</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">);</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-rectangle">A Rectangle</h3>
+
+  <p><strong>fillRect</strong> creates a rectangle.  It takes 4 arguments:</p>
+
+  <ul>
+    <li><strong>x</strong> position</li>
+    <li><strong>y</strong> position</li>
+    <li><strong>width</strong> of rectangle</li>
+    <li><strong>height</strong> of rectangle</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="js"><span class="nx">context</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">width</span><span class="p">,</span> <span class="nx">height</span><span class="p">);</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-circle">A Circle</h3>
+
+  <p>A circle is a bit more complicated:</p>
+
+  <div class="highlight"><pre><code class="js"><span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">radius</span><span class="p">,</span> <span class="nx">start</span> <span class="nx">angle</span><span class="p">,</span> <span class="nx">end</span> <span class="nx">angle</span><span class="p">,</span> <span class="nx">clockwise</span><span class="p">);</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="circle-example">Circle Example</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="colors">Colors</h3>
+
+  <p>You can color your shapes by setting <strong>fillStyle</strong>:</p>
+
+  <div class="highlight"><pre><code class="js"><span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">&quot;#00ff00&quot;</span>
+</code></pre></div>
+
+  <ul>
+    <li>this sets the fill color for all shapes drawn subsequently</li>
+    <li>notice that it&#8217;s not a function call</li>
+    <li>rather&#8230; you set that property equal to a value</li>
+    <li>the value is a <em>string</em> representation of a hexadecimal color code
+      <ul>
+        <li>&#8220;#ff0000&#8221; - red</li>
+        <li>&#8220;#00ff00&#8221; - green</li>
+        <li>&#8220;#0000ff&#8221; - blue</li>
+        <li>&#8220;#000000&#8221; - black</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="more-about-drawing">More About Drawing</h3>
+
+  <p>Each shape you create draws on top of all of your previous drawwings.  In this case, the green circle is drawn over the black square:</p>
+
+  <div class="highlight"><pre><code class="js"><span class="nx">context</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+
+<span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">&quot;#00ff00&quot;</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="lets-make-some-functions-to-draw-stuff">Let&#8217;s Make Some Functions to Draw Stuff</h3>
+
+  <ul>
+    <li>simplify making a circle by creating a function</li>
+    <li>create a crescent using your circle function</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="a-circle-function">A Circle Function</h3>
+
+  <p>First&#8230; it&#8217;s tough to make a circle.  <strong>Lets try making a few functions to reduce our code.</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">sketch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;sketch&#39;</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+	<span class="nx">draw_circle</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw_circle</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="a-crescent">A Crescent</h3>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">sketch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;sketch&#39;</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+	<span class="nx">draw_moon</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw_circle</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw_moon</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">draw_circle</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span>	<span class="s2">&quot;#ffffff&quot;</span><span class="p">;</span>
+	<span class="nx">draw_circle</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="the-full-program">The Full Program</h3>
+
+  <div class="highlight"><pre><code class="html"><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;sketch&quot;</span> <span class="na">width=</span><span class="s">&quot;800&quot;</span> <span class="na">height=</span><span class="s">&quot;600&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/canvas&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">sketch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;sketch&#39;</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+	<span class="nx">draw_moon</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw_circle</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw_moon</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">draw_circle</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span>	<span class="s2">&quot;#ffffff&quot;</span><span class="p">;</span>
+	<span class="nx">draw_circle</span><span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">x</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+</section>
+
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Prep, Review</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="prep-review">Prep, Review</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h2 id="quick-rundown-of-git-commands">Quick Rundown of Git Commands</h2>
+</section>
+
+<section>
+  <h3 id="git---setting-up-repositories">Git - Setting Up Repositories</h3>
+
+  <p><strong>What are the commands that you would use to set up and link your repositories?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># create a local repository</span>
+git init
+
+<span class="c"># configure it with your name and email</span>
+git config user.name  <span class="s2">&quot;your name&quot;</span>
+git config user.email <span class="s2">&quot;your@email.address&quot;</span>
+
+<span class="c"># create a remote repository</span>
+curl -u <span class="s1">&#39;your github user name&#39;</span> https://api.github.com/user/repos -d <span class="s1">&#39;{&quot;name&quot;:&quot;your repository name&quot;}&#39;</span>
+
+<span class="c"># link the two</span>
+git remote add origin <span class="s2">&quot;your username&quot;</span>@<span class="s2">&quot;the url to your repository on github&quot;</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="git---saving-and-sharing-changes">Git - Saving and Sharing Changes</h3>
+
+  <p><strong>What&#8217;s are the commands that you would use for making, saving and sharing changes?  Let&#8217;s start with just making the change and prepping it to be saved.</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># (make changes)</span>
+
+<span class="c"># show the exact, line-by-line changes that you&#39;ve made</span>
+git diff --color
+
+<span class="c"># check on the status of your changes</span>
+git status
+
+<span class="c"># stage your changes / prep them to be saved</span>
+git add --all
+
+<span class="c"># check your staged changes using git status again</span>
+git status
+
+<span class="c"># (continued...)</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="git---saving-and-sharing-continued">Git - Saving and Sharing Continued&#8230;</h3>
+
+  <p><strong>Saving and sending to the remote repository</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># save them, make sure you remember your comment by using -m!</span>
+git commit -m <span class="s1">&#39;my message&#39;</span>
+
+<span class="c"># show a history of your changes</span>
+git log --color <span class="o">(</span>show your changes so far<span class="o">)</span>
+
+<span class="c"># send to your remote repository</span>
+git push origin master
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="showing-and-getting-rid-of-remote-repositories">Showing and Getting Rid of Remote Repositories</h3>
+
+  <p>How do you <strong>show remote repository names and urls&#8230; and how do you get rid of remote repositories?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash"><span class="c"># show remote repositories</span>
+git remote -v
+
+<span class="c"># The output should look something like...</span>
+<span class="c"># origin	https://bzuckerman@github.com/bzuckerman/lab-08-prep.git (fetch)</span>
+<span class="c"># origin	https://bzuckerman@github.com/bzuckerman/lab-08-prep.git (push)</span>
+
+<span class="c"># remove remote repository (assuming remote repository name is origin)</span>
+git remote remove origin
+</code></pre></div>
+
+    <p><strong>And how do you add back a remote repository?</strong></p>
+
+    <div class="highlight"><pre><code class="bash">git remote add origin https://bzuckerman@github.com/bzuckerman/lab-08-new.git
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="functions">Functions</h3>
+
+  <p><strong>What&#8217;s a function?  What&#8217;s a function call?  What are arguments?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>a <strong>function</strong> is a named sequence of statements that perform some useful action</li>
+      <li>it can <strong>optionally</strong> take <strong>inputs</strong> and <strong>return values</strong></li>
+      <li>to <strong>call</strong> a function is just to <em>run</em> or <em>execute</em> it</li>
+      <li>the values passed to a function are called <strong>arguments</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="calling-functions">Calling Functions</h3>
+
+  <p><strong>How do you call <em>or execute</em> a function?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>to call a function, use its name followed by parentheses&#8230; with an optional list of comma separated arguments between the parentheses</li>
+      <li>an example of a function call is:</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="html">prompt(&quot;hello&quot;) is a function call
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h2 id="when-you-see-parentheses----s---after-a-function-name-that-function-is-being-called-or-executed">When you see parentheses - ( )&#8217;s - after a function name, that function is being <em>called</em> or <em>executed</em></h2>
+</section>
+
+<section>
+  <h3 id="built-in-functions">Built-in Functions</h3>
+
+  <p>JavaScript comes with many built-in functions.  <strong>We know three; what are they and what do they do?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>prompt(&#8220;some message&#8221;)</strong> - asks the user for input and <strong>returns</strong> that value to your program! &#8230; takes a single argument, the message to display to a user (this usually requires the use of <em>variables</em>)</li>
+      <li><strong>console.log(&#8220;some message&#8221;)</strong> - prints the argument that you pass to it&#8230; out to Chrome&#8217;s JavaScript console </li>
+      <li><strong>parseInt(&#8220;5&#8221;)</strong> - converts a string to a number</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="some-functions-return-values">Some Functions Return Values</h3>
+
+  <p><strong>What type of value does prompt always return?  What type of value does parseInt always return?</strong>  &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>prompt</strong> always gives back a <strong>string</strong></li>
+      <li><strong>parseInt</strong> always gives back a <strong>number</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="using-prompt-with-variables">Using Prompt With Variables</h3>
+
+  <p>Remember that the function prompt gives back a value.  To retain that value, you have to hold it in a variable:</p>
+
+  <div class="highlight"><pre><code class="html">var answer = prompt(&quot;Yes or no!?&quot;);
+</code></pre></div>
+
+</section>
+
+<section>
+  <h2 id="conditionals">Conditionals</h2>
+</section>
+
+<section>
+  <h3 id="blocks-of-code">Blocks of Code</h3>
+
+  <p>Curly braces denote statements of code that are grouped together.  Everything within the curly braces below is considered part of the if statement.  Blocks of code must <strong>start and end</strong> with curly braces&#8230;</p>
+
+  <div class="highlight"><pre><code class="js"><span class="p">...</span> <span class="p">{</span>
+	<span class="c1">// code wrapped by curly braces</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="conditionals-1">Conditionals&#8230;</h3>
+
+  <p><strong>What kind of statement would we use to execute code if a condition is true?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <p>An if statement&#8230;</p>
+
+    <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">some_boolean_expression</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is true</span>
+<span class="p">}</span>
+</code></pre></div>
+
+    <ul>
+      <li><a href="../../resources/img/if.png">Diagram for if statements</a></li>
+      <li><a href="../../resources/img/if-consecutive.png">Diagram for consecutive if statements</a></li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="conditionals-continued">Conditionals Continued</h3>
+
+  <p><strong>What kind of statement would we use to execute code one branch of code if a condition is true and another branch of code otherwise?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>an if / else statement  </li>
+      <li>an else must always have a preceding if!</li>
+    </ul>
+
+    <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">some_boolean_expression</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression is false</span>
+<span class="p">}</span>
+</code></pre></div>
+
+    <ul>
+      <li><a href="../../resources/img/if-else.png">Diagram for if / else statements</a></li>
+      <li>else statements are always attached to an if!</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="if--else-if">If / Else If</h3>
+
+  <p><strong>What kind of statement would we use to execute multiple branches of code based on multiple chained conditions?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p>Use if / else if statements</p>
+
+    <div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 1 is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_2</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 2 is true</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">boolean_expression_3</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// do stuff here if expression 3 is true</span>
+<span class="p">}</span>
+</code></pre></div>
+
+    <ul>
+      <li><a href="../../resources/img/if-else-if.png">Diagram for if / else if statements</a></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="if--else-if-1">If / Else If</h3>
+
+  <ul>
+    <li>once a condition is true, the if / else if executes the code in that block and the if / else if ends immediately (even if other later conditions are true)</li>
+    <li>can end with else to handle all <em>other</em> conditions</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="usage">Usage</h3>
+
+  <ul>
+    <li>use if statements if there&#8217;s a single alternative path of execution</li>
+    <li>use if/else  statements if there&#8217;s a two possible alternative paths of execution</li>
+    <li>use if/else if statements if there&#8217;s more than two possible alternative paths of execution</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="repeat-that-again">Repeat That Again?</h3>
+
+  <p><strong>What construct do we use if we want to execute a block of code multiple times without writing it multiple times?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>we use a for loop!</li>
+      <li><strong>what does a for loop look like&#8230; what are its parts?</strong> &#8594;</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="for-loop-dissected">For Loop Dissected</h3>
+
+  <p>A for loop consists of the keyword, <strong>for</strong>, and three parts, separated by a semicolon,  contained within parentheses:</p>
+
+  <ul>
+    <li>initialization - declares a variable and value to start with</li>
+    <li>condition - a condition for the loop to stop </li>
+    <li><em>afterthought</em> - a way to increment/decrement or change the variable on each iteration so that the condition is eventually met</li>
+  </ul>
+
+  <p>You can use the variable that you declare in the initialization within your for loop!</p>
+</section>
+
+<section>
+  <h3 id="for-loop-parts">For Loop Parts</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="c1">//    initialization</span>
+<span class="c1">//    |        condition</span>
+<span class="c1">//    |        |       afterthought/increment</span>
+<span class="c1">//    |        |       |</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">;</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="square-1-through-10">Square 1 Through 10</h3>
+
+  <p><strong>Create a for loop that prints out the square of every number from 1 through 10</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="js"><span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span> <span class="o">*</span> <span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

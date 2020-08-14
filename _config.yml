@@ -1,0 +1,100 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: MTEC1003-OL04 Media Computation Skills Lab
+email: LGoldford@citytech.cuny.edu
+author: Prof. Louis Goldford
+description: >- # this means to ignore newlines until "baseurl:"
+  Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.
+baseurl: "Goldford-MTEC1003-Fall2020" # the subpath of your site, e.g. /blog
+# baseurl: "Goldford-MTEC1003-Fall2020" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: einbahnstrasse
+github_username:  einbahnstrasse
+#show_downloads: false
+
+# Build settings
+theme: jekyll-theme-hacker
+plugins:
+  - jekyll-feed
+
+gems:
+  - jekyll-relative-links
+# trying to fix internal links!
+# https://stackoverflow.com/questions/25826770/jekyll-using-links-to-internal-markdown-files
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Permalinks
+# permalink:            pretty
+
+# reveal options
+reveal:
+  slide_separator:    "<hr />"
+  vertical_separator: "<p>~~</p>"
+  notes_separator:    "<p>Notes:</p>"
+  title_slide:        true
+
+# # Setup
+# title:                Jekyll and Slide
+# tagline:              "Markdown slides in Jekyll using reveal.js"
+# description:          "A template for creating slide decks using Markdown and <a href='//jekyllrb.com'>Jekyll</a>, using <a href='//github.com/poole/lanyon'>Lanyon</a> by <a href='//twitter.com/mdo'>@mdo</a>."
+# url:                  http://admhlt.github.io/jekyll-and-slide
+# baseurl:              /jekyll-and-slide
+markdown:             kramdown
+kramdown:
+  input:              GFM
+#
+collections:
+  slides:
+    output:           true
+    permalink:        /:collection/:title/
+
+# # About/contact
+# author:
+#   name:               Adam Hollett
+#   url:                https://twitter.com/admhlt
+#   email:              mail@adamhollett.com
+
+# YAML defaults
+defaults:
+  - scope:
+      path: ""
+      type: slides
+    values:
+      layout: slides

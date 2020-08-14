@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Entering Commands</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+  <h1 id="entering-commands">Entering Commands</h1>
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="commands">Commands</h3>
+
+  <p><strong>Commands</strong> are <strong>verbs</strong>; they tell the computer to do something.</p>
+</section>
+
+<section>
+  <h3 id="entering-a-command">Entering a Command</h3>
+
+  <p>Once you have Terminal open, you should see a string of characters that ends with a dollar sign.  This is called the <strong>command prompt</strong>.  A <strong>prompt</strong> looks something like this.</p>
+
+  <div class="highlight"><pre><code class="bash"> walsh-9:~ bree<span class="err">$</span>
+</code></pre></div>
+
+  <p>Whenever you see a line in these slides prefixed with a $, that means that we&#8217;re typing something in at the <strong>prompt</strong>.</p>
+</section>
+
+<section>
+  <h3 id="executing-a-command">Executing a Command</h3>
+
+  <p>In terminal, type in the name of the command, and press &lt;ENTER&gt;.  <strong>Let&#8217;s trying using ls, a command to list files and directories</strong> &#8594; </p>
+
+  <ul>
+    <li>open Terminal (Applications &#8594; Utilities &#8594; Terminal</li>
+    <li>type <strong>ls</strong></li>
+    <li>press &lt;ENTER&gt;</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="where-are-you">Where Are You?</h3>
+
+  <p>Note that when you&#8217;re at the prompt, you&#8217;re always running commands in the context of some location on your computer.  </p>
+
+  <ul>
+    <li>This location corresponds to an actual directory.  </li>
+    <li>You can change <em>where you are</em> using various commands.  We&#8217;ll see that later.</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="lets-repeat-that-at-the-prompt-youre-running-commands-in-the-context-of-some-location-think-folderdirectory-on-your-computer">Let&#8217;s Repeat That: At the prompt, you&#8217;re running commands in the context of some location (think folder/directory) on your computer</h2>
+
+</section>
+
+<section>
+  <h3 id="what-was-that-again">What Was That Again?</h3>
+
+  <ul>
+    <li>when you&#8217;re at the prompt</li>
+    <li>and you type in a command</li>
+    <li>you&#8217;re doing so while you&#8217;re in a particular folder/directory</li>
+    <li>you&#8217;re always <em>located</em> somewhere on your file system</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="arguments">Arguments</h3>
+
+  <p><strong>Arguments</strong> are the thing or things that a command acts on; they&#8217;re like <strong>nouns</strong> (or more formally, <strong>direct objects</strong>).</p>
+</section>
+
+<section>
+  <h3 id="commands-and-arguments">Commands and Arguments</h3>
+
+  <p>Some commands can optionally have <strong>arguments</strong>:  </p>
+
+  <ul>
+    <li>they go after the command name</li>
+    <li>a command may potentially be able to take 0 or more arguments</li>
+  </ul>
+
+  <p><strong>Try this (list files in Desktop):</strong></p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls Desktop
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="flags">Flags</h3>
+
+  <p><strong>Flags</strong> are like <strong>adverbs</strong>.  They specify how a command is run.</p>
+
+  <p>(sometimes they&#8217;re also called <em>options</em>)</p>
+</section>
+
+<section>
+  <h3 id="commands-and-flags">Commands and Flags</h3>
+
+  <p><strong>Commands</strong> can optionally have <strong>flags</strong>.  </p>
+
+  <ul>
+    <li>they go after the command name, but usually before arguments</li>
+    <li>they are specified with either - or &#8211;</li>
+    <li>commands may have 0 or more flags.  </li>
+  </ul>
+
+  <p><strong>Try this (list all, including hidden, files in Desktop):&#8594;</strong></p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls -a Desktop
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="lttabgt-completion">&lt;TAB&gt; Completion</h3>
+
+  <p>You can use the &lt;TAB&gt; key to complete commands or file names.  <strong>Try typing the following:&#8594;</strong></p>
+
+  <ul>
+    <li>ls Desk&lt;TAB&gt;</li>
+    <li><strong>What happens? &#8594;</strong></li>
+  </ul>
+
+  <div class="incremental">
+    <p>The argument, Desktop, is automatically completed for you!  <strong>Go ahead and run the command by pressing &lt;ENTER&gt; &#8594;</strong></p>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="lttabgtlttabgt">&lt;TAB&gt;&lt;TAB&gt;</h3>
+
+  <p>What if there are multiple matches?  <strong>Type the letter l and then &lt;TAB&gt;. What happens? &#8594;</strong></p>
+
+  <div class="incremental">
+    <p>Nothing.  Now try hitting &lt;TAB&gt; one more time.  <strong>What happens? &#8594;</strong></p>
+
+    <p>All of the possible commands that start with the letter l are shown.</p>
+  </div>
+</section>
+
+<section>
+  <h3 id="next-and-previous-commands">Next and Previous Commands</h3>
+
+  <p>You can use the &lt;UP&gt; or &lt;DOWN&gt; keys to go through previous and next commands.  <strong>Try pressing &lt;UP&gt; twice, and &lt;DOWN&gt; once.  What command is shown?</strong></p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls Desktop
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="errors">Errors</h3>
+
+  <p>Type the letter l and press &lt;ENTER&gt;. </p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>l
+</code></pre></div>
+
+  <p><strong>What happens? &#8594;</strong></p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash">-bash: l: <span class="nb">command </span>not found
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="more-errors">More Errors</h3>
+
+  <p>Type ls foo and press &lt;ENTER&gt;. </p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">$ </span>ls foo
+</code></pre></div>
+
+  <p><strong>What happens? &#8594;</strong></p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash">ls: foo: No such file or directory
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="activity-drills"><strong>Activity</strong>: Drills!</h3>
+
+  <p><strong>Entering commands</strong> <em>flash cards</em> x 5 (use set 1)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 1</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h3 id="lab"><strong>Lab</strong></h3>
+
+  <p><a href="lab-entering-commands.txt">Entering Commands</a></p>
+
+  <ul>
+    <li>Type each command (with arguments and flags) exactly</li>
+    <li>Only press &lt;ENTER&gt; when instructed&#8230;</li>
+    <li>&lt;TAB&gt;, &lt;ENTER&gt;, &lt;UP&gt;, &lt;DOWN&gt; are the actual keys!</li>
+    <li>Paste answer or output below the dashed line (&#8212;&#8212;&#8212;&#8212;)</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="activity-drills-1"><strong>Activity</strong>: Drills!</h3>
+
+  <p>&#8230;And&#8230; again!</p>
+
+  <p><strong>Entering commands</strong> <em>flash cards</em> x 5 (use set 1)</p>
+
+  <p>We&#8217;ll do this together, then try downloading it yourself:</p>
+
+  <ol>
+    <li>Download <a href="drills.py">drills.py</a> to the home directory</li>
+    <li>Type python drills.py</li>
+    <li>When prompted for a number, enter 1</li>
+    <li>CTRL-C quits</li>
+  </ol>
+</section>
+
+<section>
+  <h2 id="navigating-the-file-systemfile-systemhtml"><a href="file-system.html">Navigating the File System</a></h2>
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

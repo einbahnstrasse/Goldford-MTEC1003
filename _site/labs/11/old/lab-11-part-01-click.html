@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Click</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-11---part-2---click">Lab 11 - Part 2 - Click</h1>
+
+<ol>
+  <li>rectangles-click</li>
+  <li>car</li>
+  <li>*face </li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE SAVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<h3 id="rectangles">rectangles</h3>
+
+<p>Write a program that draws a rectangle wherever you click.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>rectangles-click.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-11-interaction/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>declare two variables - sketch and context</li>
+  <li>create a main function</li>
+  <li>start writing your program in your main function</li>
+  <li>get your sketch element: sketch = document.getElementById(&#8216;sketch&#8217;);	</li>
+  <li>create your context: context = sketch.getContext(&#8220;2d&#8221;); </li>
+  <li>create a listener for click events: sketch.addEventListener &#8230;</li>
+  <li>create an anonymous function (do this as an argument to addEventListener)</li>
+  <li>in the anonymous function, use event.x and event.y to draw a rectangle</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-11-rectangle-click.png" alt="rectangles" /></p>
+
+<h3 id="car">car</h3>
+
+<p>Write a program that draws a car wherever you click.  It will clear the screen on each click so that there is only one car on the canvas.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>car-click.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-11-interaction/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>declare two variables - sketch and context</li>
+  <li>create a main function</li>
+  <li>start writing your program in your main function</li>
+  <li>get your sketch element: sketch = document.getElementById(&#8216;sketch&#8217;);	</li>
+  <li>create your context: context = sketch.getContext(&#8220;2d&#8221;); </li>
+  <li>create a listener for click events: sketch.addEventListener &#8230;</li>
+  <li>create an anonymous function (do this as an argument to addEventListener)</li>
+  <li>in the anonymous function, use event.x and event.y to draw a car
+    <ul>
+      <li>clear the canvas (see slides)</li>
+      <li>this will use a function you define later (called draw_car)</li>
+    </ul>
+  </li>
+  <li>copy in the draw_circle function from the slides</li>
+  <li>create a new function called draw_car&#8230; that utilizes the draw_circle function
+    <ul>
+      <li>it should have two parameters, x and y</li>
+      <li>draw all of your shapes relative to these values&#8230; for example:
+        <ul>
+          <li>context.fillRect(x, y, 120, 40);</li>
+          <li>context.fillRect(x + somevalue, y - anothervalue, 80, 30);</li>
+          <li>draw_circle(x + somevalue, y + anothervalue, 20)
+            <ul>
+              <li>(fill in somevalue and anothervalue with numbers)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>draw_car will be used in the anonymous function in event handler&#8230;</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-11-car-click.png" alt="car" /></p>
+
+<h3 id="faces">*faces</h3>
+
+<p>Write a program that draws a face wherever you click.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>faces-click.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-11-interaction/</strong></li>
+  <li>setup an html file</li>
+  <li>create a canvas element of at least 800 by 600</li>
+  <li>use the code in the previous labs to set up a click interaction</li>
+  <li>bring in your draw_circle function </li>
+  <li>create a function to draw a face&#8230; and parameterize it appropriately</li>
+  <li>the program should draw a face wherever the mouse is clicked</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example image below</li>
+</ul>
+
+<p><img src="../../resources/img/lab-11-face-click.png" alt="faces" /></p>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

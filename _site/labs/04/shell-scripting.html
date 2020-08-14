@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - Version Control</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="some-odds-and-ends-shell-scripting">Some Odds and Ends, Shell Scripting</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="creating-a-file-editing-a-file-viewing-a-file">Creating a File, Editing a File, Viewing a File</h3>
+
+  <p><strong>What command did we use to create a file?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash">touch name_of_file.txt
+</code></pre></div>
+
+    <p><strong>What command did we use to edit a text file?</strong> &#8594;</p>
+
+    <div class="highlight"><pre><code class="bash">nano name_of_file.txt
+</code></pre></div>
+
+    <p><strong>What command(s) could we use to show a text file?</strong> &#8594;</p>
+
+    <div class="highlight"><pre><code class="bash">cat name_of_file.txt
+<span class="c"># (also less and more)</span>
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="permissions">Permissions</h3>
+
+  <p><strong>How do we show the permissions associated with a file?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash">ls -l name_of_file.txt
+</code></pre></div>
+
+    <p><strong>What do the permissions mean?</strong> &#8594;</p>
+
+    <ul>
+      <li>user, group or world &#8230; readable, writable or executable</li>
+      <li>u, g, and o &#8230; r, w, and x</li>
+    </ul>
+
+    <p><strong>What command do we use to change permissions ?</strong> &#8594;</p>
+
+    <div class="highlight"><pre><code class="bash">chmod u+x name_of_file.sh
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="permissions-continued">Permissions Continued</h3>
+
+  <p><strong>What permissions does the following line give/remove?</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="bash">chmod u-w name_of_file.sh
+</code></pre></div>
+
+  <div class="incremental">
+    <p>removes write from user</p>
+
+    <p><strong>What permissions do we have to give a file so that we can &#8220;run&#8221; it?</strong> &#8594;</p>
+
+    <div class="highlight"><pre><code class="bash">chmod u+x name_of_file.sh
+</code></pre></div>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="running-scripts">Running Scripts</h3>
+
+  <p><strong>How do we run a file that we made executable?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="bash">./name_of_file.sh
+</code></pre></div>
+
+    <p><strong>What does dot mean again?</strong> &#8594;</p>
+
+    <p>The current directory</p>
+
+    <p><strong>So what do you think ./ does?</strong> &#8594;</p>
+
+    <p>In the directory I&#8217;m currently in&#8230; try to execute the following file</p>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="running-scripts-continued">Running Scripts Continued</h3>
+
+  <p>If we change to /, we&#8217;ll see that our command will no longer work to run the script.</p>
+
+  <p>However, we can use the full path to the script to run it! (Notice, there&#8217;s no dot at the beginning)</p>
+
+  <div class="highlight"><pre><code class="bash">/full/path/to/name_of_file.sh
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-few-odds-and-ends">A Few Odds and Ends</h3>
+
+  <ul>
+    <li>environment variables</li>
+    <li>$PATH, $USER, </li>
+    <li>env</li>
+    <li>ps</li>
+    <li>kill</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="environment-variables">Environment Variables</h3>
+
+  <p><strong>environment variables</strong> - are <em>dynamic named values</em> that affect the way processes (programs) run on your computer.  for example, they may specify:</p>
+
+  <ul>
+    <li>the locations where your programs are stored so that they can be easily executed</li>
+    <li>the current user</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="env">env</h3>
+
+  <p><strong>env</strong> shows the list of current environment variables and their values</p>
+
+  <div class="highlight"><pre><code class="bash">env
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="setting-and-using-environment-variable">Setting and Using Environment Variable</h3>
+
+  <p>setting</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nv">MYVAR</span><span class="o">=</span><span class="s2">&quot;some value&quot;</span>
+</code></pre></div>
+
+  <p>using</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nb">echo</span> <span class="nv">$MYVAR</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="common-environment-variables">Common Environment Variables</h3>
+
+  <ul>
+    <li><strong>$PATH</strong> - contains a colon-separated list of directories that the shell searches for commands that do not contain a slash in their name (commands with slashes are interpreted as file names to execute, and the shell attempts to execute the files directly)</li>
+    <li><strong>$USER</strong> - the current user</li>
+    <li><strong>$HOME</strong> - the full path to the current user&#8217;s home directory</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="bash"><span class="nb">echo</span> <span class="nv">$PATH</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="ps">ps</h3>
+
+  <p>Show all running processes&#8230;</p>
+
+  <div class="highlight"><pre><code class="bash">ps aux
+</code></pre></div>
+
+  <p>Look for a specific process&#8230;</p>
+
+  <div class="highlight"><pre><code class="bash">ps aux <span class="p">|</span> grep -i program_to_find
+</code></pre></div>
+
+  <p>The first number after username is the process ID</p>
+
+  <div class="highlight"><pre><code class="bash">bzuckerman       34930   0.0
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="kill">kill</h3>
+
+  <p>&#8230;.and when you have a process id, you can kill that program!</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nb">kill </span>12345
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="shell-script-arguments">Shell Script Arguments</h3>
+
+  <p>You can pass arguments to your shell scripts (just like commands like ls, cd, etc.):</p>
+
+  <div class="highlight"><pre><code class="bash">./myscript.sh hello hi
+</code></pre></div>
+
+  <p>Within your .sh file (your shell script), you can access these values by using $1, $2, etc &#8230; with each number corresponding to an argument; it starts with $1 as the first argument (the one closest to the command).</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="c"># using variables in your shell script</span>
+<span class="nb">echo</span> <span class="nv">$1</span>
+<span class="nb">echo</span> <span class="nv">$2</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="shell-scripts---using-variables">Shell Scripts - Using Variables</h3>
+
+  <p>You can use variables as part of longer strings.  For example, if we called our shell script by writing:</p>
+
+  <div class="highlight"><pre><code class="bash">./myscript.sh example
+</code></pre></div>
+
+  <p>Within the script:</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="nb">echo</span> <span class="s2">&quot;counting words, lines, bytes for ya!&quot;</span>
+wc <span class="nv">$1</span>.txt
+</code></pre></div>
+
+  <p>&#8230; would count the words in example.txt</p>
+</section>
+
+<section>
+  <h3 id="shell-scripts-and-for-loops">Shell Scripts and For Loops</h3>
+
+  <p>You can use the following syntax to repeat code.  Here $i is a variable that can be used&#8230; and it represents each number from 1 through 3.</p>
+
+  <div class="highlight"><pre><code class="bash"><span class="k">for </span>i in <span class="o">{</span>1..3<span class="o">}</span>
+<span class="k">do</span>
+<span class="k">   </span><span class="nb">echo</span> <span class="s2">&quot;Counting $i&quot;</span>
+<span class="k">done</span>
+</code></pre></div>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

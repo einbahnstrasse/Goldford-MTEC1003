@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - JavaScript Basics</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="javascript-basics">JavaScript Basics</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="some-readings">Some Readings</h3>
+
+  <p>Most of the material in these slides is based on the frist two chapters of the second edition of <a href="http://eloquentjavascript.net/2nd_edition/preview/">Eloquent JavaScript</a>:</p>
+
+  <ul>
+    <li><a href="http://eloquentjavascript.net/2nd_edition/preview/01_values.html">Chapter 1 - Values</a></li>
+    <li><a href="http://eloquentjavascript.net/2nd_edition/preview/02_program_structure.html">Chapter 2 - Program Structure</a> (up to control flow)</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="running-javascript-programs">Running JavaScript Programs</h3>
+
+  <p><strong>What application / tool do we use to run our programs?</strong> &#8594; </p>
+
+  <div class="incremental">
+    <ul>
+      <li>we&#8217;ll be using our web browser to run JavaScript programs!</li>
+      <li>specifically, we&#8217;ll be using Chrome and Chrome&#8217;s <strong>JavaScript Console</strong></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="javascript-programs---file-format">JavaScript Programs - File Format</h3>
+
+  <p><strong>What kind of file will we save our programs in (as in, what extension should we use, what&#8217;s the file type)?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>because we&#8217;re targeting Chrome and Chrome&#8217;s <strong>JavaScript Console</strong> to run our programs, we&#8217;ll be writing our JavaScript in web pages</li>
+      <li>that means editing plain text files </li>
+      <li>specifically,files that that end in <strong>.html</strong> (web pages)
+        <ul>
+          <li>it&#8217;s actually not good practice to have JavaScript code interspersed with your html, but for our purposes of getting started it&#8217;s ok</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="a-template-for-our-programs">A Template for Our Programs</h3>
+
+  <p><strong>What do we have to put in our .html file before we can write our JavaScript</strong> &#8594;</p>
+
+  <div class="incremental">
+    <p>We&#8217;ll have to create a bare bones web page:</p>
+
+    <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="c1">// your JavaScript goes here!</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+    <p><strong>Your code goes within the script tags!</strong></p>
+  </div>
+</section>
+
+<section>
+  <h3 id="creating-javascript-programs">Creating JavaScript Programs</h3>
+
+  <p><strong>What tool do we use to write our JavaScript programs?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>we use a text editor called <strong>SublimeText</strong></li>
+      <li>if we save the file as some_file_name.html (note the <strong>.html</strong> extension) before writing&#8230;</li>
+      <li>we can use TAB to automplete:
+        <ul>
+          <li>start typing html&#8230; and hit TAB</li>
+          <li>you&#8217;ll still need to fill in the script tags</li>
+        </ul>
+      </li>
+      <li>(again, your code goes between the script tags)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="running-a-program-in-chrome">Running a Program in Chrome</h3>
+
+  <p><strong>How do we actually run our JavaScript programs in Chrome?  Where does the output (and errors) from your program show up?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>In <strong>Chrome</strong>&#8230; go to File &#8594; Open File &#8230; &#8594; browse to the html file you created in SublimeText</li>
+      <li>you&#8217;ll see output and errors pop up in <strong>Chrome&#8217;s JavaScript Console</strong></li>
+      <li>(you can get to this by going to View &#8594; Developer &#8594; JavaScript Console)</li>
+      <li>if you make changes to your original file, just refresh the page (Command + r)</li>
+    </ul>
+
+  </div>
+</section>
+
+<section>
+  <h3 id="trying-one-line-at-a-time">Trying One Line at a Time</h3>
+
+  <p><strong>How do we try out single lines of JavaScript without writing an entire html file?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>once again, we can use Chrome&#8217;s JavaScript console; it lets you try out lines of JavaScript one line at a time interactively</li>
+      <li>you can use this to experiment with code</li>
+      <li>it has access to everything else in the page (we&#8217;ll see this later)</li>
+      <li>it will give you instant feedback with each line you type</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 id="javascript-basics-1">JavaScript Basics&#8230;</h2>
+</section>
+
+<section>
+  <h3 id="values-types-and-operators">Values, Types and Operators</h3>
+
+  <p>The most basic elements of a JavaScript program are:</p>
+
+  <ul>
+    <li>values</li>
+    <li>types</li>
+    <li>operators</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="values">Values</h3>
+
+  <p><strong>What&#8217;s a value, and what are some examples of values in JavaScript?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>values are just data</li>
+      <li>some examples of values are numbers, like 3.14 and -273 and strings, like &#8220;hello&#8221; and &#8220;hi&#8221;</li>
+      <li>there are also special values like:
+        <ul>
+          <li><strong>Infinity</strong> (and negative Infinity!)</li>
+          <li><strong>NaN</strong> - not-a-number</li>
+          <li><strong>null/undefined</strong> - <em>absence of a value</em></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="creating-values">Creating Values</h3>
+
+  <p><strong>How do we create a value in our program?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>to create values, just write them!</li>
+      <li>for example: 7 &#8230; or &#8220;hello there&#8221;</li>
+      <li>values that are written plainly like this are called <strong>literals</strong></li>
+      <li>they are fixed values, not variables (which we'll get to in a sec...)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="data-types">Data Types</h3>
+
+  <p>A <strong>type</strong> is just a kind or category of value.  Here are three data types in JavaScript:</p>
+
+  <ul>
+    <li><strong>numbers</strong> - numeric data (clearly!)</li>
+    <li><strong>strings</strong> - an ordered sequence of characters (alphanumeric, punctuation, spaces, etc.)</li>
+    <li><strong>boolean</strong> values - true / false</li>
+  </ul>
+
+  <p>A value type sometimes determines what we can and can&#8217;t do with that value!</p>
+</section>
+
+<section>
+  <h3 id="operators">Operators</h3>
+
+  <p><strong>What&#8217;s an operator?</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li>operators allow us to combine and transform values</li>
+      <li>operators have <strong>operands</strong>,
+        <ul>
+          <li>operands are the values that supply to operators</li>
+          <li><strong>binary</strong> operators have two operands</li>
+          <li><strong>unary</strong> operators have one operand</li>
+        </ul>
+      </li>
+      <li>operators give back values&#8230;
+        <ul>
+          <li>using operators with values yields other values!</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="numbers">Numbers</h3>
+
+  <ul>
+    <li>numbers are just <em>numbers</em></li>
+    <li>you can represent
+      <ul>
+        <li>positive and negative whole numbers: 23, 42, -10</li>
+        <li>decimals (with a period): 2.3, 4.2</li>
+      </ul>
+    </li>
+    <li>no need for commas</li>
+    <li>JavaScript uses a fixed number of bits to store numbers: <em>64 bits</em></li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="numeric-operators">Numeric Operators</h3>
+
+  <p><strong>Name 5 binary arithmetic operators (they take two operands, one on either side)</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <ul>
+      <li><strong>+</strong> - addition</li>
+      <li><strong>-</strong> - subtraction</li>
+      <li><strong>*</strong> - multiplication</li>
+      <li><strong>/</strong> - division</li>
+      <li><strong>%</strong> - modulo (remainder operator)</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+  <h3 id="numeric-operators-and-precedence">Numeric Operators and Precedence</h3>
+
+  <p><strong>What is the resulting value of this expression?</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="html">6 + 20 % 8
+</code></pre></div>
+
+  <div class="incremental">
+    <ul>
+      <li>order of operations: parentheses, exponents, multiplication, division, addition, subtraction (PEMDAS)</li>
+      <li>modulo is the same precedence as multiplication and division</li>
+      <li>answer is 10</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="some-special-numbers">Some Special Numbers&#8230;</h3>
+
+  <ul>
+    <li><strong>Infinity, -Infintity</strong> - positive and negative infinities (don&#8217;t use these, they&#8217;re not that useful, and not mathematically solid!)</li>
+    <li><strong>NaN</strong> (not-a-number) - this results from any numeric operation that doesn&#8217;t give back a meaniingful result&#8230; such as 0/0</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="strings">Strings</h3>
+
+  <p>A <strong>string</strong> is an ordered sequence of characters.  You can tell that a value is a string if it is surrounded by single or double quotes:</p>
+
+  <div class="highlight"><pre><code class="html">&quot;I am a string&quot;
+&quot;I&#39;m a string&quot;
+</code></pre></div>
+
+</section>
+
+<section>
+  <h2 id="quoted-text-is-a-string">Quoted text is a string!</h2>
+</section>
+
+<section>
+  <h3 id="strings-continued">Strings Continued</h3>
+
+  <p>A <strong>string</strong> can be composed of <em>any</em> characters: numbers, letters, punctuation, spaces, etc.</p>
+
+  <p>The following is a string with nothing in it&#8230; or an <strong>empty string</strong>:</p>
+
+  <div class="highlight"><pre><code class="html">&quot;&quot;
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="escape-characters">Escape Characters</h3>
+
+  <p>If there is a backslash in a string (\), that means:</p>
+
+  <ul>
+    <li>the next character has a special meaning</li>
+    <li>the initial backslash will not be printed out</li>
+  </ul>
+
+  <p>For example, <strong>\n</strong> is a newline</p>
+
+  <div class="highlight"><pre><code class="html">&quot;\n&quot;
+</code></pre></div>
+
+  <p>For example, <strong>\t</strong> is a tab</p>
+
+  <div class="highlight"><pre><code class="html">&quot;\t&quot;
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="i-heard-you-like-backslashes">I Heard You Like Backslashes</h3>
+
+  <p><strong>How would we put double quotes in a double quoted string?</strong></p>
+  <p>e.g. Say you have the following string:</p>
+
+  <p>&quot;She read <a href="http://emoglen.law.columbia.edu/publications/dcm.html">&quot;The dotCommunist Manifesto&quot;</a> by <a href="http://emoglen.law.columbia.edu/">Eben Moglen</a>.&quot; &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="html">&quot;She read \&quot;The dotCommunist Manifesto\&quot; by Eben Moglen.&quot;
+</code></pre></div>
+
+    <p><strong>And what about an <em>actual</em> backslash?</strong> &#8594;</p>
+
+    <div class="highlight"><pre><code class="html">&quot;\\&quot;
+</code></pre></div>
+
+  </div>
+
+</section>
+
+<section>
+  <h3 id="string-operators">String Operators</h3>
+
+  <p><strong>string concatenation</strong>, or <strong>+</strong>, is an operator that takes two strings and joins them:</p>
+
+  <div class="highlight"><pre><code class="html">&quot;hello &quot; + &quot;there&quot;
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="unary-operators">Unary Operators</h3>
+
+  <p>Unary Operators only have a single operand to the right:</p>
+
+  <ul>
+    <li><strong>+</strong> - convert to positive number</li>
+    <li><strong>-</strong> - convert to negative number</li>
+    <li>typeof - gives the <em>type</em> of a value (Number, String, etc.)</li>
+  </ul>
+
+  <p><strong>Let&#8217;s try some of these.</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="html">-10
+typeof &quot;hi there&quot;
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="some-special-numbers">Some Special Numbers&#8230;</h3>
+
+  <ul>
+    <li><strong>Infinity, -Infinity</strong> - positive and negative infinities (don&#8217;t use these, they&#8217;re not that useful, and not mathematically solid!)</li>
+    <li><strong>NaN</strong> (not-a-number) - this results from any numeric operation that doesn&#8217;t give back a meaningful result&#8230; such as 0/0</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="expressions-and-statements">Expressions and Statements</h3>
+
+  <p>A <strong>program</strong> is a sequence of statements that specify to a computer actions to perform.</p>
+
+  <p>A <strong>statement</strong> is an instruction for the computer &#8230; it performs an action.</p>
+
+  <p><strong>All statements end in a semicolon</strong> in JavaScript.</p>
+
+  <p>An <strong>expression</strong> is just a fragment of code that produces a value; it&#8217;s not a statement by itself.</p>
+</section>
+
+<section>
+  <h3 id="expressions-and-statements-continued">Expressions and Statements Continued</h3>
+
+  <div class="highlight"><pre><code class="html">// Expression (no semicolon)
+1 + 5
+
+// Statements
+var x;
+x = 1 + 5;
+  </code></pre></div>
+
+</section>
+
+<section>
+  <h2 id="all-statements-end-in-a-semicolon-in-javascript">All statements end in a semicolon in JavaScript</h2>
+</section>
+
+<section>
+  <h3 id="functions">Functions</h3>
+
+  <p><strong>What&#8217;s a function?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>a <strong>function</strong> is a sequence of statements that perform an action.</li>
+      <li>a function must be defined (given a name).
+      <li>it can take inputs, and it can return values (but it doesn&#8217;t have to do either)</li>
+      <li>to <strong>call</strong> (or execute) a function, just call it by name, with parentheses after (with an optional list of commas separated inputs within the parentheses)</li>
+      <li>the values passed to a function are called <strong>arguments</strong></li>
+      <li>for example: prompt(&#8220;What is your name?&#8221;); is a function call</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 id="to-call-a-function-use-its-name-followed-by-parentheses">To call a function, use its name followed by parentheses.</h2>
+</section>
+
+<section>
+  <h3 id="some-built-in-functions">Some Built-in Functions</h3>
+
+  <ul>
+    <li><strong>prompt(&#8220;some message&#8221;)</strong> - asks the user for input and <strong>returns</strong> that value to your program! &#8230; takes a single argument, the message to display to a user (this usually requires the use of <em>variables</em>)</li>
+    <li><strong>console.log(&#8220;some message&#8221;)</strong> - prints the argument that you pass to it&#8230; out to Chrome&#8217;s JavaScript console </li>
+  </ul>
+
+  <p><strong>Let&#8217;s try these out.</strong> &#8594;</p>
+</section>
+
+<section>
+  <h3 id="variables">Variables</h3>
+
+  <p><strong>Variables</strong> are names that represent particular values:  </p>
+
+  <ul>
+    <li>you can use a variable&#8217;s name wherever you want to use that value.</li>
+    <li>to create a variable, use the special word (called a keyword), <strong>var</strong>, followed by the <strong>variable name</strong>,  then <strong>=</strong>, then the <strong>value</strong>, end with a <strong>semicolon;</strong></li>
+  </ul>
+
+  <div class="highlight"><pre><code class="html">var x = 23;
+
+// using that variable
+console.log(x + 7);
+</code></pre></div>
+
+  <p><strong>What will the above output?</strong> &#8594;</p>
+</section>
+
+<section>
+  <h3 id="variables">Variables Cont.</h3>
+
+  <p>Variables can be assigned to different kinds of values!  For example:  </p>
+
+  <ul>
+    <li>Strings, e.g. “ice cream”<br />
+      <ul>
+        <li>And remember, strings will always be in quotes!</li>
+      </ul>
+    </li>
+    <li>Numbers, e.g. var paycheck = 1000000
+      <ul>
+        <li>Don’t use quotes for numbers so JavaScript knows it’s a number not a string (and can thus be used for computation), e.g.  paycheck + 1</li>
+      </ul>
+    </li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="variables">Rules for Naming Variables</h3>
+
+  <ul>
+    <li>variable names can’t begin with numbers</li>
+    <li>they're case sensitive - <strong>MyName</strong> and <strong>myname</strong> are two different variables.</li>
+    <li>can’t contain spaces (e.g. <strong>my name</strong> - must be <strong>myName</strong> or <strong>myname</strong>, etc)</li>
+    <li>can only contain letters, numbers, and two non-alphanumeric characters: <strong>$</strong> and <strong>_</strong> </li>
+    <li>can't BEGIN with a number (e.g. 1stCatOfMine is not allowed, <strong>my1stCat</strong> is)</li>
+    <li>There’s a list of words you can’t use (find it in Eloquent Javascript or Google it). Some examples include: <strong>function</strong>, <strong>var</strong>, <strong>boolean</strong> ...</li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="prompt-revisited">Prompt Revisited</h3>
+
+  <p>Remember that the function prompt gives back a value.  To retain that value, you have to hold it in a variable:</p>
+
+  <div class="highlight"><pre><code class="html">var answer = prompt(&quot;Yes or no!?&quot;);
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="you-can-put-all-of-these-together">You Can Put All of These Together!</h3>
+
+  <p><strong>Let&#8217;s write a small program that echoes back whatever is written in a prompt.</strong> &#8594;</p>
+
+  <div class="incremental">
+
+    <div class="highlight"><pre><code class="html">var answer = prompt(&quot;Say something!&quot;);
+console.log(answer);
+</code></pre></div>
+
+    <p><strong>Of course, you have to embed that in script tags in HTML for it to run (or just use the interactive console).</strong> &#8594;</p>
+  </div>
+</section>
+
+<section>
+  <h3 id="comments">Comments</h3>
+
+  <p>Comments allow the programmer to write notes that the JavaScript interpreter will skip over / ignore</p>
+
+  <ul>
+    <li>these are meant for humans to read, not the computer.</li>
+    <li>you can comment by starting a line with //</li>
+    <li>or by stopping and starting a series of lines with /* */</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="html">// a comment
+/*
+a long
+comment
+*/
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="comments">Some things to remember!</h3>
+
+  <ul>
+    <li>JavaScript is case sensitive: <strong>myVar</strong> !== <strong>myvar</strong></li>
+    <li>Statements always end in a semicolon! <strong>;</strong></li>
+    <li>To call a function, use its name followed by parentheses: <strong>prompt("some message")</strong>
+    <li>Function that prints to Chrome's Console: <strong>console.log("some message")</strong></li>
+    <li>Strings must be in quotes: <strong>"I'm a string!"</strong></li>
+    <li>To create a variable use: <strong>var</strong>, followed by the <strong>variable name</strong>,  then <strong>=</strong>, then the <strong>value</strong>, end with a <strong>semicolon</strong>;
+    e.g. <strong>var x = 2;</strong></li>
+  </ul>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

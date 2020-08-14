@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Creating and Setting Up Git Repositories</title>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../resources.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-4---part-1---creating-and-setting-up-git-repositories">Lab 4 - Part 1 - Creating and Setting Up Git Repositories</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+  <li>creating two repositories, one local and one remote</li>
+  <li>linking the two with each other so that they can be synchronized</li>
+  <li>associate a name and email address with your local repository</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="set-up-your-local-repository">Set up Your Local Repository</h3>
+
+<p>This will create a local git repository to store your work for this lab.  The repository will be in ~/Desktop/yourname/lab-04-version-control.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>create a folder that consists of your first initial and last name on your Desktop</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~/Desktop
+mkdir myname
+</code></pre></div>
+
+<ul>
+  <li>within that folder, create another folder called <strong>lab-04-version-control</strong> and change into it</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>myname
+mkdir lab-04-version-control
+<span class="nb">cd </span>lab-04-version-control
+</code></pre></div>
+
+<ul>
+  <li>use pwd to verify that you&#8217;re in the correct folder
+    <ul>
+      <li>you should be in <strong>~/Desktop/myname/lab-04-version-control</strong></li>
+      <li>if you&#8217;re not, cd into it</li>
+    </ul>
+  </li>
+  <li>to prove that this is not yet a repository, list <strong>all</strong> files in your current directory </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>it should mostly be empty</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">total 0
+drwxr-xr-x  2 bree  staff   68 Feb 26 07:52 .
+drwxr-xr-x  3 bree  staff  102 Feb 26 07:52 ..
+</code></pre></div>
+
+<ul>
+  <li>in your lab-04 folder, create your repository!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git init
+</code></pre></div>
+
+<ul>
+  <li>it should say:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Initialized empty Git repository in /Users/bree/Desktop/bzuckerman/lab-04-version-control/.git/
+</code></pre></div>
+
+<ul>
+  <li>show that this worked by listing <strong>all</strong> files in your current directory</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>check that this shows <strong>.git</strong> </li>
+  <li>by the way, what&#8217;s in that .git directory (use ls .git to take a peek)</li>
+  <li>now&#8230; configure your user name and email for your commits (these do not have to be the same as your github account)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git config user.name  &quot;<span class="s2">my_user_name</span>&quot;</span>
+git config user.email &quot;<span class="s2">my@email.address</span>&quot;
+</code></pre></div>
+
+<ul>
+  <li>finally, use git config again to see if this worked:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git config -l
+</code></pre></div>
+
+<h3 id="create-your-remote-repository">Create Your Remote Repository</h3>
+
+<p>This will create a remote git repository on github.  It will also link your local repository with this remote repository.  In order to submit your work, you will send your files / changes from your local repository to the remote repository on github.</p>
+
+<ul>
+  <li>log in to github; you should see the list of repositories on the right
+<img src="../../resources/img/repos-screen.png" alt="Repository List" /></li>
+  <li>you should have 3 lab related repositories</li>
+  <li>go back to terminal</li>
+  <li>using the commandline, create a remote repository on github by using the command below&#8230;</li>
+  <li>substitute your github username where it says &#8220;your github user name&#8221; (keep the single quotes, though.  this is lab-04-version-control (you can see that specified at the end of the command)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">curl -u &#39;<span class="s1">your github user name</span>&#39; https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">lab-04-version-control</span>&quot;}&#39;
+</code></pre></div>
+
+<ul>
+  <li>it should output a bunch of text!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Enter host password <span class="k">for </span>user <span class="s1">&#39;bzuckerman&#39;</span>:
+<span class="o">{</span>
+  <span class="s2">&quot;id&quot;</span>: 17210769,
+  <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;lab-04-version-control&quot;</span>,
+  <span class="s2">&quot;full_name&quot;</span>: <span class="s2">&quot;bzuckerman/lab-04-version-control&quot;</span>,
+  <span class="s2">&quot;owner&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;login&quot;</span>: <span class="s2">&quot;bzuckerman&quot;</span>,
+	...
+<span class="o">}</span>
+</code></pre></div>
+
+<ul>
+  <li>refresh your page on github</li>
+  <li>you should see the new repository added</li>
+  <li>go back to terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for <strong>lab-04-version-control</strong>
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/Desktop/yourname/lab-04-version-control</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+    </ul>
+  </li>
+  <li>run this command to show that you have not linked your local repository to any remote repository yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote -v show
+</code></pre></div>
+
+<ul>
+  <li>it should <em>do nothing</em></li>
+  <li>now, link your local repository to your remote repository on github by using git remote add (make sure to substitute your github username where it says &#8220;your user name&#8221;)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote add origin https://github.com/<span class="s1">github_username</span>/<span class="s1">lab-04-version-control</span>.git
+</code></pre></div>
+
+<ul>
+  <li>(alternatively, if you click on your repo you can see your remote repository&#8217;s url on the lower right hand side of the page&#8230;)
+<img src="../../resources/img/repos-url.png" alt="Repository List" /></li>
+  <li>to check that you&#8217;ve linked properly, run the following command again:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote -v show
+</code></pre></div>
+
+<ul>
+  <li>it should show origin &#8230; and your repository url</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">origin	https://github.com/bzuckerman/lab-04-version-control.git <span class="o">(</span>fetch<span class="o">)</span>
+origin	https://github.com/bzuckerman/lab-04-version-control.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

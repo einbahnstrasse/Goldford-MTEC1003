@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Basics</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1>Media Computation Skills Lab </h1>
+<h2>MTEC 1003 - Fall 2016</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-6---javascript-basics">Lab 7 - JavaScript Basics</h1>
+
+<p>In this lab, you&#8217;ll be creating several programs:</p>
+
+<ol>
+  <li>say twice</li>
+  <li>shout</li>
+  <li>temperature</li>
+  <li>miles</li>
+  <li>* &#8230;and a couple of challenging ones: numbers and tree</li>
+</ol>
+
+<h2 id="summary-of-commands">Summary of Commands:</h2>
+
+<p><strong>THESE ARE NOT LAB INSTRUCTIONS.</strong></p>
+
+<p>The following is just a reference.  The lab instructions are below.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># configure your local repo with your name and email</span>
+git config user.name  <span class="s2">&quot;your name&quot;</span>
+git config user.email <span class="s2">&quot;your@email.address&quot;</span>
+
+<span class="c"># two ways to show all remote repositories</span>
+git remote -v
+cat .git/config
+
+<span class="c"># removing a remote repository by name (usually origin)</span>
+git remote remove name_of_remote
+
+<span class="c"># changing / setting the url of a named remote repository (usually origin)</span>
+git remote <span class="nb">set</span>-url name_of_remote new_remote_url
+
+<span class="c"># look at the differences between your last save and your current changes (line by line)</span>
+git diff --color
+
+<span class="c"># check on the status of your changes</span>
+git status
+
+<span class="c"># &quot;stage&quot; or mark your changes as ready to be saved</span>
+git add --all
+
+<span class="c"># save!</span>
+git commit -m <span class="s1">&#39;my message&#39;</span>
+
+<span class="c"># show a log of your changes so far</span>
+git log --color <span class="o">(</span>show your changes so far<span class="o">)</span>
+
+<span class="c"># send to a remote repository (to submit an assignment)</span>
+git push origin master
+</code></pre></div>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE CREATED IN THE REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<h3 id="say-twice">say twice</h3>
+
+<p>Write a program that takes user input and repeats the user input twice (both words on the same lin) in the JavaScript console.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>saytwice.html</strong> in your repository directory: <strong>~/bzuckerman/lab-07-generating-ssh-keys/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for a word: &#8220;Give me a word to say twice&#8221;</li>
+  <li>the program should repeat the input twice on the same line with a space inbetween&#8230;  back to the <strong>JavaScript console</strong>
+    <ul>
+      <li>for example, if someone enters &#8220;hello&#8221; in the prompt dialog</li>
+      <li>the output in the console would be &#8220;hello hello&#8221;</li>
+    </ul>
+  </li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Give me a word to say twice
+&gt; hello
+hello hello
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="shout">shout</h3>
+
+<p>Write a program that takes user input and repeats the user input, but with three exclamation points afterwards. </p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>shout.html</strong> in your repository directory: <strong>~/bzuckerman/lab-07-generating-ssh-keys/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for a word: &#8220;Give me a word, and I&#8217;ll shout it out&#8221;</li>
+  <li>the program should repeat the word, but with three exclamation points added to it</li>
+  <li>the output should go to the <strong>JavaScript console</strong> </li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Give me a word, and I<span class="err">&#39;</span>ll shout it out
+&gt; yeah
+yeah!!!
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+<hr />
+
+<h3 id="temperature">temperature</h3>
+
+<p>Write a program that calculates celsius to fahrenheit based on user input.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>temperature.html</strong> in your repository directory: <strong>~/bzuckerman/lab-07-generating-ssh-keys/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for the temperature in celsius</li>
+  <li>find the formula for celsius to faahrenheit conversion online!</li>
+  <li>translate that formula into javascript </li>
+  <li>the program should output to the <strong>JavaScript console</strong>: c degrees celsius is f degrees fahrenheit</li>
+  <li>(obvs with f and c substituted with the appropriate calculated values)</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Please enter a temperature in celsius
+&gt; 37
+37 degrees celsius is 98 degrees fahrenheit
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="miles">miles</h3>
+
+<p>Write a program that calculates miles-per-gallon based on user input for miles driven and gallons of gas used.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>miles.html</strong> in your repository directory: <strong>~/bzuckerman/lab-07-generating-ssh-keys/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>miles-per-gallon (mpg) can be calculated using the following formula&#8230; </li>
+  <li>mpg = miles driven / gallons of gas used </li>
+  <li>ask the user for the number of miles driven and the gallons of gas used</li>
+  <li>calculate miles-per-gallon and output the result to the JavaScript console</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> How many miles did you drive?
+&gt;20
+<span class="o">(</span>prompt<span class="o">)</span> How many gallons of gas did you use?
+&gt;2
+Your car gets 10.0 miles per gallon.
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="numbers">*numbers</h3>
+<p>(This one&#8217;s hard!) Write a program that outputs the number in the thousands, hundreds, tens and ones places of a number. </p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>numbers.html</strong> in your repository directory: <strong>~/bzuckerman/lab-07-generating-ssh-keys/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>ask the user for a number</li>
+  <li>calculate the numbers in the thousands, hundreds, tens and ones places</li>
+  <li>output each place to the JavaScript console</li>
+  <li>one solution is to use some numeric operators to determine each place (maybe modulo, division and subtraction would help)</li>
+  <li>you may have to calculate each place separately</li>
+  <li>don&#8217;t worry about input that&#8217;s not a positive whole number below 10,000</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Please enter a number
+&gt; 256
+
+0 thousands
+2 hundreds
+5 tens
+6 ones
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="tree">*tree</h3>
+
+<p>(This one&#8217;s slightly hard&#8230; try doing it in just one line!) Print out a tree!</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>tree.html</strong> in your repository directory: <strong>~/bzuckerman/lab-07-generating-ssh-keys/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>print out an ascii art tree to the JavaScript console</li>
+</ul>
+<pre>
+   /\
+  /  \
+  /  \
+ /____\
+   ||
+</pre>
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use status, add commit and push to save your file in version control and submit it</li>
+</ul>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab 2 - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

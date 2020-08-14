@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Conditionals</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003 - Spring 2015</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../setup.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-7---conditionals-boolean-logic">Lab 10 - Conditionals, Boolean Logic</h1>
+
+<p>In this lab, you&#8217;ll be creating several programs:</p>
+
+<ol>
+  <!-- <li>snake eyes</li> -->
+  <li>days</li>
+  <li>guess</li>
+  <li>*grade </li>
+  <li>*tip</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE AVED IN THE LOCAL REPOSITORY THAT YOU CREATED FOR THIS LAB</strong>.</p>
+
+<!-- <h3 id="snake-eyes">snake eyes</h3>
+
+<p>Write a program that asks for the result of two dice rolls.  If both rolls are 1, it will shout, &#8220;SNAKE EYES!&#8221;.  Otherwise, it should just say &#8220;That&#8217;s a normal roll&#8221;.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>snakeeyes.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-if-while/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for the result of the first die roll: &#8220;Give me a number for the first roll (1-6)&#8221;</li>
+  <li>the program should ask for the result of the second die roll: &#8220;Give me a number for the second roll (1-6)&#8221;</li>
+  <li>the program should say &#8220;SNAKE EYES!&#8221; if both rolls are 1, and &#8220;That&#8217;s a normal roll&#8221; otherwise</li>
+  <li>use the parseInt function to convert input from a string to a number (for example: num1 = parseInt(roll1, 10)) before comparing!</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Give me a number <span class="k">for </span>the first roll <span class="o">(</span>1-6<span class="o">)</span>
+&gt; 1
+<span class="o">(</span>prompt<span class="o">)</span> Give me a number <span class="k">for </span>the second roll <span class="o">(</span>1-6<span class="o">)</span>
+&gt; 1
+SNAKE EYES!
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+</ul>
+
+<hr /> -->
+
+<hr />
+
+<h3 id="days">days</h3>
+
+<p>Write a program that asks for number.  The program will translate that number to a day of the week.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>days.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-if-while/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for a number: &#8220;Give me a number for the day of the week&#8221;</li>
+  <li>use the parseInt function to convert the input from a string to a number (for example: num = parseInt(day, 10)) </li>
+  <li>compare the resulting number to a number corresponding to a day of the week:
+    <ul>
+      <li>1 for Monday</li>
+      <li>2 for Tuesday &#8230;</li>
+      <li>up through 7 for Sunday</li>
+    </ul>
+  </li>
+  <li>print out the corresponding day to the JavaScript console: &#8220;That day is Thursday!&#8221; </li>
+  <li>if the number does not match a day, the program should say &#8220;That&#8217;s not a day!&#8221;</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># Run 1</span>
+<span class="o">(</span>prompt<span class="o">)</span> Give me a number <span class="k">for </span>the day of the week
+&gt; 2
+Tuesday
+
+<span class="c"># Run 2</span>
+<span class="o">(</span>prompt<span class="o">)</span> Give me a number <span class="k">for </span>the day of the week
+&gt; 34
+That<span class="err">&#39;</span>s not a day!
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="guess">guess</h3>
+
+<p>Write a number guessing game.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>guess.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-if-while/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>create a variable to hold a secret number</li>
+  <li>the program should ask for a number: &#8220;Guess the secret number&#8221;</li>
+  <li>use the parseInt function to convert the input from a string to a number (for example: num = parseInt(guess, 10)) </li>
+  <li>if the number inputted matches the secret number, print out &#8220;You got it!&#8221;</li>
+  <li>if the number inputted is within 1 of the secret number, print out &#8220;Close, the secret number was [the secret number]&#8221;</li>
+  <li>if the number inputted is not the secret number, and is not within 1, print out &#8220;Nope, it was [the secret number]&#8221;</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># Assuming secret number is 5</span>
+
+<span class="c"># Run 1</span>
+<span class="o">(</span>prompt<span class="o">)</span> Guess the secret number
+&gt; 2
+Nope, it was 5
+
+
+<span class="c"># Run 2</span>
+<span class="o">(</span>prompt<span class="o">)</span> Guess the secret number
+&gt; 4
+Close, the secret number was 5
+
+
+<span class="c"># Run 3</span>
+<span class="o">(</span>prompt<span class="o">)</span> Guess the secret number
+&gt; 5
+You got it!
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="grade">*grade</h3>
+
+<p>Write a program that converts a numeric score to a letter grade.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>grade.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-if-while/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask for a score: &#8220;What was your score?&#8221;</li>
+  <li>use the parseInt function to convert the input from a string to a number (for example: num = parseInt(guess, 10)) </li>
+  <li>use the chart below to translate from number to letter grade:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">90 - 100: A
+80 - 89:  B
+70 - 79:  C
+60 - 69:  D
+&lt; 60:     F
+</code></pre></div>
+
+<ul>
+  <li>print out the corresponding grade</li>
+  <li>if the number doesn&#8217;t fall between 0 and 100, ignore the input</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> What was your score?
+&gt; 84
+B
+</code></pre></div>
+
+<ul>
+  <li>save your file in SublimeText</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="tip">*tip</h3>
+
+<p>Create a tip calculator.</p>
+
+<ul>
+  <li>using SublimeText, create a new file called <strong>tip.html</strong> in your repository directory: <strong>~/Desktop/bzuckerman/lab-10-if-while/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should ask the following:
+    <ul>
+      <li>how many people?	</li>
+      <li>how much did it cost?</li>
+      <li>how was the service?
+        <ul>
+          <li>the values for this can be: terrible, poor, ok, good, great</li>
+          <li>only ask about service if there are less than 6 people</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>if the number of people are &gt; 6 tip should always be 20%, regardless of service.</li>
+  <li>otherwise, calculate the tip using the following table:
+    <ul>
+      <li>terrible = no tip (0%)</li>
+      <li>poor - 10%</li>
+      <li>ok - 15%</li>
+      <li>good - 20%</li>
+      <li>great - 25%</li>
+    </ul>
+  </li>
+  <li>output the calculated tip.</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Run 1:
+-----
+<span class="o">(</span>prompt<span class="o">)</span> How many people? &gt; 2
+<span class="o">(</span>prompt<span class="o">)</span> How much did it cost? &gt; 25
+<span class="o">(</span>prompt<span class="o">)</span> How was the service <span class="o">(</span>terrible, poor, ok, good, great<span class="o">)</span>? &gt; great
+You should probably tip <span class="nv">$6</span>.25!
+
+
+Run 2:
+-----
+<span class="o">(</span>prompt<span class="o">)</span> How many people? &gt; 4
+<span class="o">(</span>prompt<span class="o">)</span> How much did it cost? &gt; 70
+<span class="o">(</span>prompt<span class="o">)</span> How was the service <span class="o">(</span>terrible, poor, ok, good, great<span class="o">)</span>? &gt; meh
+Couldn<span class="err">&#39;</span>t understand meh service<span class="p">;</span> using default 15 percent.
+You should probably tip <span class="nv">$10</span>.5!
+
+Run 3:
+-----
+<span class="o">(</span>prompt<span class="o">)</span> How many people? &gt; 200
+<span class="o">(</span>prompt<span class="o">)</span> How much did it cost? &gt; 950
+You should probably tip <span class="nv">$190</span>.0!
+</code></pre></div>
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Tech Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prep - Creating Local and Remote Repositories</title>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../resources.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-6---prep---creating-local-and-remote-repositories">Lab 6 - Prep - Creating Local and Remote Repositories</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+  <li>creating two repositories, one local and one remote</li>
+  <li>linking the two with each other so that they can be synchronized</li>
+  <li>associating a name and email address with your local repository</li>
+  <li>creating a README.md file to describe your lab</li>
+  <li>sending those changes to your remote repository on github</li>
+</ol>
+
+<h2 id="summary-of-commands">Summary of Commands:</h2>
+
+<p><strong>THESE ARE NOT LAB INSTRUCTIONS.</strong></p>
+
+<p>The following is just a reference. The lab instructions are below.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># create a local repository</span>
+git init
+
+<span class="c"># configure it with your name and email</span>
+git config user.name  <span class="s2">&quot;your name&quot;</span>
+git config user.email <span class="s2">&quot;your@email.address&quot;</span>
+
+<span class="c"># create a remote repository</span>
+curl -u &#39;<span class="s1">your github user name</span>&#39;</span> https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">your repository name</span>&quot;}&#39;
+
+<span class="c"># link the two</span>
+git remote add origin <span class="s2">url_to_your_repository_on_github</span>
+
+<span class="c"># two ways to show all remote repositories</span>
+git remote -v
+cat .git/config
+
+<span class="c"># removing a remote repository by name (usually origin)</span>
+git remote remove name_of_remote
+
+<span class="c"># changing / setting the url of a named remote repository (usually origin)</span>
+git remote <span class="nb">set</span>-url name_of_remote new_remote_url
+
+<span class="c"># look at the differences between your last save and your current changes (line by line)</span>
+git diff --color
+
+<span class="c"># check on the status of your changes</span>
+git status
+
+<span class="c"># &quot;stage&quot; or mark your changes as ready to be saved</span>
+git add --all
+
+<span class="c"># save!</span>
+git commit -m <span class="s1">&#39;my message&#39;</span>
+
+<span class="c"># show a log of your changes so far</span>
+git log --color <span class="o">(</span>show your changes so far<span class="o">)</span>
+
+<span class="c"># send to a remote repository (to submit an assignment)</span>
+git push origin master
+</code></pre></div>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="set-up-your-local-repository">Set up Your Local Repository</h3>
+
+<p>This will create a local git repository to store your work for this lab.  The repository will be in ~/Desktop/yourname/lab-06-javascript-conditionals.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>(if doesn&#8217;t already exist) create a folder that consists of your first initial and last name on your Desktop</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~/Desktop
+mkdir myname
+</code></pre></div>
+
+<ul>
+  <li>within that folder, create another folder called <strong>lab-06-javascript-conditionals</strong> and <strong>change into it</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>myname
+mkdir lab-06-javascript-conditionals
+<span class="nb">cd </span>lab-06-javascript-conditionals
+</code></pre></div>
+
+<ul>
+  <li>use pwd to verify that you&#8217;re in the correct folder
+    <ul>
+      <li>you should be in <strong>~/Desktop/myname/lab-06-javascript-conditionals</strong></li>
+      <li>if you&#8217;re not, cd into it</li>
+    </ul>
+  </li>
+  <li>to prove that this is not yet a repository, list <strong>all</strong> files in your current directory </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>it should mostly be empty</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">total 0
+drwxr-xr-x  2 bree  staff   68 Feb 26 07:52 .
+drwxr-xr-x  3 bree  staff  102 Feb 26 07:52 ..
+</code></pre></div>
+
+<ul>
+  <li>in your lab-06-javascript-conditionals folder, create your repository!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git init
+</code></pre></div>
+
+<ul>
+  <li>it should say:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Initialized empty Git repository in /Users/bree/Desktop/bzuckerman/lab-06-javascript-conditionals/.git/
+</code></pre></div>
+
+<ul>
+  <li>show that this worked by listing <strong>all</strong> files in your current directory</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls -al
+</code></pre></div>
+
+<ul>
+  <li>check that this shows <strong>.git</strong> </li>
+  <li>use ls .git to show the contents of your repository (it should contain a configuration file, for example)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">ls .git
+</code></pre></div>
+
+<ul>
+  <li>configure your name and email for your commits (these do not have to be the same as your github account)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
+git config user.name  <span class="s2">&quot;my first and last name&quot;</span>
+git config user.email <span class="s2">&quot;my@email.address&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>finally, use git config again to see if this worked:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git config -l
+</code></pre></div>
+
+<ul>
+  <li>(use should see your name and email appear in the configuration)</li>
+</ul>
+
+<h3 id="create-your-remote-repository">Create Your Remote Repository</h3>
+
+<p>This will create a remote git repository on github.  It will also link your local repository with this remote repository.  In order to submit your work, you will send your files / changes from your local repository to the remote repository on github.</p>
+
+<ul>
+  <li>log in to github; you should see the list of repositories on the right
+<img src="../../resources/img/repos-screen.png" alt="Repository List" /></li>
+  <li>you should have all of the previous lab related repositories </li>
+  <li>go back to terminal</li>
+  <li>using the commandline, create a remote repository on github by using the command below&#8230;</li>
+  <li>substitute your github username where it says &#8220;your github user name&#8221; (keep the single quotes and <strong>KEEP &#8220;name&#8221;:</strong> at the end of the line; don&#8217;t change that!).  the name of the repository is lab-06-javascript-conditionals (you can see that specified at the end of the command)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">curl -u &#39;<span class="s1">your github user name</span>&#39; https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">lab-06-javascript-conditionals</span>&quot;}&#39;
+</code></pre></div>
+
+<ul>
+  <li>it should output a bunch of text!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Enter host password <span class="k">for </span>user <span class="s1">&#39;bzuckerman&#39;</span>:
+<span class="o">{</span>
+  <span class="s2">&quot;id&quot;</span>: 17210769,
+  <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;lab-06-javascript-conditionals&quot;</span>,
+  <span class="s2">&quot;full_name&quot;</span>: <span class="s2">&quot;bzuckerman/lab-06-javascript-conditionals&quot;</span>,
+  <span class="s2">&quot;owner&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;login&quot;</span>: <span class="s2">&quot;bzuckerman&quot;</span>,
+	...
+<span class="o">}</span>
+</code></pre></div>
+
+<!--_-->
+<ul>
+  <li>refresh your page on github</li>
+  <li>you should see the new repository added</li>
+  <li>go back to terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for <strong>lab-06-javascript-conditionals</strong>
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/Desktop/yourname/lab-06-javascript-conditionals</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+    </ul>
+  </li>
+  <li>run this command to show that you have not linked your local repository to any remote repository yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote -v
+</code></pre></div>
+
+<ul>
+  <li>it should <em>do nothing</em></li>
+  <li>now, link your local repository to your remote repository on github by using git remote add </li>
+  <li>make sure to substitute the two spots where it says &#8220;your_github_user_name&#8221; with github username
+<!--_--></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote add origin https://github.com/your_github_user_name/lab-06-javascript-conditionals.git
+</code></pre></div>
+
+<ul>
+  <li>(alternatively, if you click on your repo you can see your remote repository&#8217;s url on the lower right hand side of the page&#8230;)
+<img src="../../resources/img/repos-url.png" alt="Repository List" /></li>
+  <li>to check that you&#8217;ve linked properly, run the following command again:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git remote -v
+</code></pre></div>
+
+<ul>
+  <li>it should show origin &#8230; and your repository url:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">origin	https://github.com/bzuckerman/lab-06-javascript-conditionals.git <span class="o">(</span>fetch<span class="o">)</span>
+origin	https://github.com/bzuckerman/lab-06-javascript-conditionals.git <span class="o">(</span>push<span class="o">)</span>
+</code></pre></div>
+
+<h3 id="creating-and-saving-changes-locally-sending-to-remote-repository">Creating and Saving Changes Locally, Sending to Remote Repository</h3>
+
+<p>In this part of the lab, you will create a text file in your local repository, and then you&#8217;ll send it to your remote repository.</p>
+
+<ul>
+  <li>open terminal</li>
+  <li>make sure you&#8217;re in your local repository folder for lab-06-javascript-conditionals
+    <ul>
+      <li>use <strong>pwd</strong> to do this</li>
+      <li>you should be in <strong>~/Desktop/yourname/lab-06-javascript-conditionals</strong></li>
+      <li>if you&#8217;re not in your lab folder, change your directory to it</li>
+      <li>if this doesn&#8217;t exist yet&#8230; make sure you completed the beginning part of this lab</li>
+    </ul>
+  </li>
+  <li>use <strong>git status</strong> to show that there aren&#8217;t any changes yet</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+nothing to commit <span class="o">(</span>create/copy files and use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+</code></pre></div>
+
+<ul>
+  <li>create a file called <strong>README.markdown</strong> using <strong>SublimeText</strong> (see below&#8230;)</li>
+  <li>go to Applications &#8594; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)</li>
+  <li>once SublimeText is open, go to File &#8594; New (or Command+n) to create a new file</li>
+  <li>save your file by going to File &#8594; Save As to save your files as <strong>README.markdown</strong> in your <strong>~/Desktop/yourname/lab-06-javascript-conditionals</strong>
+<img src="../../resources/img/sublime-save-as-menu.png" alt="Save As" /></li>
+  <li>make sure you navigate to your <strong>~/Desktop/yourname/lab-06-javascript-conditionals</strong> before saving!
+<img src="../../resources/img/sublime-save-as.png" alt="Save As" /></li>
+  <li>switch back to terminal</li>
+  <li>use <strong>git status</strong> to show that you&#8217;ve made changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should give the following output; notice that it contains README.markdown </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+<span class="c"># Untracked files:</span>
+<span class="c">#   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)</span>
+<span class="c">#</span>
+<span class="c">#	README.markdown</span>
+nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+</code></pre></div>
+
+<ul>
+  <li>if we want to save this file in the repository, we have <em>stage</em> it (that is, mark it as something that we&#8217;re ready to save / commit)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git add --all
+</code></pre></div>
+
+<ul>
+  <li>to check that you&#8217;ve staged your commit, use <strong>git status</strong> again</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>it should output the following text (note that README.markdown moved from <em>untracked</em> to <em>Changes to be committed</em>)</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+<span class="c">#</span>
+<span class="c"># Initial commit</span>
+<span class="c">#</span>
+<span class="c"># Changes to be committed:</span>
+<span class="c">#   (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span>
+<span class="c">#</span>
+<span class="c">#	new file:   README.markdown</span>
+<span class="c">#</span>
+</code></pre></div>
+
+<ul>
+  <li>now we&#8217;re ready to commit (that is, save the file to the local repository); everything after the -m is the message that will be associated with the changes that you&#8217;ve made</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git commit -m <span class="s2">&quot;added a README file&quot;</span>
+</code></pre></div>
+
+<ul>
+  <li>the output of the command should be:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 5b24d27<span class="o">]</span> added readme
+ 1 file changed, 0 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
+ create mode 100644 README.markdown
+</code></pre></div>
+
+<ul>
+  <li>check the status again </li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git status
+</code></pre></div>
+
+<ul>
+  <li>notice that there is nothing staged and no more changes!</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># On branch master</span>
+nothing to commit, working directory clean
+</code></pre></div>
+
+<ul>
+  <li>to show the changes that you&#8217;ve saved so far, use <strong>git log</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git log --color
+</code></pre></div>
+
+<ul>
+  <li>it should show you the following&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">commit 5b24d2777a602908978916ca8fe9c8dd2ed6036b
+Author: bree &lt;bzuckerman@citytech.cuny.edu&gt;
+Date:   Wed Mar 5 11:45:21 2014 -0500
+
+    added readme
+</code></pre></div>
+
+<ul>
+  <li>you can share your changes / send them to a remote repository by using <strong>git push</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git push origin master
+</code></pre></div>
+
+<ul>
+  <li>it should result in:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">Counting objects: 3, <span class="k">done</span>.
+Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 242 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
+Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
+To https://github.com/bzuckerman/lab-06-javascript-conditionals.git
+ * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
+</code></pre></div>
+
+<ul>
+  <li>go back to github and look in your repository.  you should see that file appear.</li>
+  <li>go back to SublimeText</li>
+  <li>add two lines to your README.markdown file</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">This is lab 06...
+It<span class="err">&#39;</span>s about JavaScript conditionals.
+</code></pre></div>
+
+<ul>
+  <li>save your file: File &#8594; Save or Command+s</li>
+  <li>go back to terminal</li>
+  <li>use git diff to show your changes</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">git diff --color
+</code></pre></div>
+
+<ul>
+  <li>use git status, add and then commit to save your changes</li>
+  <li>use git push to send them to your remote repository</li>
+  <li>if you click through the filename on github, you&#8217;ll see your changes</li>
+  <li>when you&#8217;re done try the following:
+    <ul>
+      <li>show your remote url&#8230; </li>
+      <li>add it to your README file and save it!</li>
+      <li>commit your change&#8230;</li>
+      <li>set your remote url to some url that does not exist (change the lab number to 7, for example)</li>
+      <li>push the change to your remote</li>
+      <li>note the error!</li>
+      <li>set your url appropriately</li>
+      <li>attempt to push your change again</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+</div>
+</div>
+</body>
+</html>

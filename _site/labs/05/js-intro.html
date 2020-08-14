@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="introducing-javascript">Introducing JavaScript</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+
+  <h3 id="lets-talk-about">Let&#8217;s Talk About</h3>
+
+  <ul>
+    <li>What is <strong>JavaScript</strong> <em>anyway</em>, and where have you seen it?</li>
+    <li>Why are <em>we</em> using JavaScript?</li>
+    <li>The tools that we&#8217;ll need for programming in JavaScript</li>
+    <li>A quick JavaScript demo</li>
+  </ul>
+
+</section>
+
+<section>
+
+  <h3 id="a-book-that-you-may-be-interested-in">A Book That You May Be Interested In</h3>
+
+  <p><strong>Check out <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a> if you&#8217;d like to follow along with a book</strong>.&#8594;</p>
+
+  <ul>
+    <li>it&#8217;s a great JavaScript / intro to programming book</li>
+    <li>the <a href="http://eloquentjavascript.net/contents.html">online version</a> is free</li>
+    <li>a lot of the material in the JavaScript portions of this class is based off of the <a href="http://eloquentjavascript.net/2nd_edition/">second edition of Eloquent JavaScript</a></li>
+  </ul>
+
+</section>
+
+<section>
+  <h2 id="does-anyone-know-what-javascript-is">Does anyone know what JavaScript is?</h2>
+
+  <aside>Or perhaps you've used it before!</aside>
+</section>
+
+<section>
+  <h3 id="javascript">JavaScript</h3>
+
+  <ul>
+    <li><strong>JavaScript</strong> is a <strong>widely used</strong>, <strong>high-level</strong> programming language that is <strong>available on many platforms</strong></li>
+    <li><strong>JavaScript</strong> and <strong>Java</strong> are two entirely different programming languages</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="some-history">Some History</h3>
+
+  <p>Originally created in 1995 as a way to add interactivity (through programming) to web pages in <strong>Netscape Navigator</strong>!</p>
+
+  <div class="img-container">
+    <p><img src="../../resources/img/netscape.gif" width="300" height="300" /></p>
+  </div>
+</section>
+
+<section>
+  <h3 id="where-is-it-now">Where is it Now?</h3>
+
+  <p><strong>JavaScript is now a widely used programming language!</strong></p>
+
+  <ul>
+    <li>it&#8217;s usage is ubiquitous; it&#8217;s common to have <em>some</em> JavaScript on a web page</li>
+    <li>it&#8217;s usage has gone beyond web page interactivity:
+      <ul>
+        <li>processing.js</li>
+        <li>server side language (node.js)</li>
+        <li>embedded scripting language (max/msp)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="as-seen-on">As Seen On&#8230;</h3>
+
+  <p>Here are some particularly <em>awesome</em> uses of JavaScript:</p>
+
+  <ul>
+    <li><a href="https://www.khanacademy.org/cs/programming/variables/p/challenge-bucktooth-bunny">Khan Academy uses JavaScript/Process.js to teach computer science</a></li>
+    <li><a href="http://hakim.se/experiments">Creative programming, user interface experimentation (hakim.se)</a></li>
+    <li><a href="http://www.amplifon.co.uk/interactive-ear/index.html">Sophisticated interactivity on web pages (Interactive Ear)</a></li>
+    <li><a href="http://basicallydan.github.io/skifree.js/">Skifree.js!</a></li>
+  </ul>
+
+  <p>* (we&#8217;re going to start off small, though)</p>
+</section>
+
+<section>
+  <h3 id="its-a-high-level-language">It&#8217;s a High Level Language</h3>
+
+  <p>As compared to a low level language <strong>what does being a high level programming language mean?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li><strong>meant for humans to read and write</strong> (unlike machine language or assembly) </li>
+      <li>consequently, easier to read and write; closer to a <strong>natural language</strong></li>
+      <li><strong>abstracts away details of underlying machine</strong> (you don&#8217;t have to know about <em>registers</em>, your CPU&#8217;s instruction set, etc.)</li>
+      <li>must be <strong>compiled</strong> (translated) or <strong>interpreted</strong> (translated <em>on-the-fly</em>) into a language that the computer can understand (such as machine language)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="its-available">It&#8217;s Available!</h3>
+
+  <ul>
+    <li>it&#8217;s available on every major browser (such as Chrome, Firefox, Safari, or Internet Explorer)</li>
+    <li>not only are you able to run JavaScript, but&#8230; if you have a web browser and a text editor, you will be able to write and debug JavaScript programs as well!</li>
+    <li><strong>check out the JavaScript <em>console</em> in Chrome</strong> &#8594;</li>
+    <li>In Chrome: View &#8594; Developer &#8594; JavaScript Console</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="and-again-javascript-is-not-java">(And Again) JavaScript is not Java!</h2>
+</section>
+
+<section>
+  <h3 id="and-were-doing-this-because">And We&#8217;re Doing This Because?</h3>
+
+  <p><strong>Why are we learning JavaScript?</strong> &#8594;</p>
+
+  <div class="incremental">
+    <ul>
+      <li>we need <em>something</em> to put into version control</li>
+      <li>JavaScript is a <strong>widely used</strong>, <strong>high-level</strong> programming language that is <strong>available on nearly every platform</strong></li>
+      <li>some understanding of basic JavaScript will be helpful in other classes</li>
+      <li>It&#8217;s <em>fun</em> (really!)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="so-lets-write-some-javascript">So, Let&#8217;s Write Some JavaScript</h3>
+
+  <p>Our workflow:</p>
+
+  <ul>
+    <!--<li>there are multiple ways to program in JavaScript, depending on what you&#8217;re trying to build</li>
+    <li>all of our JavaScript will be browser based so that we can use Chrome and Chrome&#8217;s <strong>JavaScript Console</strong></li>-->
+    <li>we&#8217;ll create files using a text editor, <strong>SublimeText</strong></li>
+    <li>we&#8217;ll version our files using <strong>Git</strong></li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="clarification-lets-write-some-javascript-for-the-browser">Clarification: Let&#8217;s Write Some JavaScript for the Browser</h3>
+
+  <ul>
+    <li>Because we&#8217;re targeting Chrome&#8217;s <strong>JavaScript Console</strong> we&#8217;ll be writing our JavaScript in web pages</li>
+    <li>that means editing <strong>.html</strong> files (with SublimeText)</li>
+    <li>it&#8217;s not good practice to have <em>actual</em> JavaScript code interspersed with your html
+      <ul>
+        <li>because you&#8217;ll want to separate the logic of your program from its display</li>
+        <li>having the two tangled makes it difficult to change one or the other</li>
+      </ul>
+    </li>
+    <li>but for our purposes of getting started it&#8217;s ok</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="our-tools">Our Tools</h3>
+
+  <p>Again, we&#8217;ll be using the following:</p>
+
+  <ul>
+    <li><strong>Chrome</strong> to run and debug our JavaScript programs; we&#8217;ll use its <strong>JavaScript console</strong>
+      <ul>
+        <li>as a place to <strong>output messages</strong> &#8594;</li>
+        <li>as an <strong>error log</strong> &#8594;</li>
+        <li>as an <strong>interactive shell</strong> &#8594;</li>
+      </ul>
+    </li>
+    <li><strong>SublimeText</strong> to edit JavaScript/html files </li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="a-few-steps">A Few Steps</h3>
+
+  <p>Our workflow for creating a JavaScript program will be:</p>
+
+  <ul>
+    <li>open <strong>SublimeText</strong></li>
+    <li>create an <strong>.html</strong> file</li>
+    <li>create script tags</li>
+    <li>write your <strong>JavaScript</strong></li>
+    <li>debug with Chrome&#8217;s <strong>JavaScript console</strong></li>
+  </ul>
+
+</section>
+
+<section>
+  <h3 id="a-quick-example">A Quick Example</h3>
+
+  <p><strong>Let&#8217;s check out a short JavaScript program.  Begin by&#8230;</strong> &#8594;</p>
+
+  <ul>
+    <li>creating a new file and saving it as .html in SublimeText</li>
+    <li>inserting some basic html (there are <em>snippets</em> in SublimeText if you don&#8217;t like typing&#8230; you can start with html, then tab (<em>of course</em>))</li>
+  </ul>
+
+  <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-quick-example-continued">A Quick Example Continued</h3>
+
+  <p><strong>Add some script tags.</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">Your code will go here!</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-quick-example-continued-some-more">A Quick Example Continued Some More</h3>
+
+  <p><strong>What does this (super simple) program do?</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">alert</span><span class="p">(</span><span class="s2">&quot;Let's learn some Javascript&quot;</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+
+  <div class="incremental">
+    <ul>
+      <li>displays a box that pops up with the message &quot;Let's learn some Javascript&quot;</li>
+
+    </ul>
+  </div>
+</section>
+
+<!--
+
+<section>
+  <h3 id="a-quick-example-continued">A Quick Example Continued</h3>
+
+  <p><strong>Add some script tags.</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Please enter a number!&quot;</span><span class="p">);</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">num</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="a-quick-example-continued-some-more">A Quick Example Continued Some More</h3>
+
+  <p><strong>What does this program do?</strong> &#8594;</p>
+
+  <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;Please enter a number!&quot;</span><span class="p">);</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">num</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+
+  <div class="incremental">
+    <ul>
+      <li>asks the user for a number</li>
+      <li>counts from 0 up to that number</li>
+    </ul>
+  </div>
+</section>
+
+-->
+
+<!-- <section>
+  <h2 id="that-was-fun-lets-go-back-to-some-version-controlgithtml"><a href="git.html">That was fun, let&#8217;s go back to some version control</a></h2>
+</section> -->
+<!--
+<section markdown="block">
+###
+<div class="incremental" markdown="block">
+
+<div class="highlight"><pre><code class="html">
+</code></pre></div>
+
+</div>
+</section>
+-->
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>
