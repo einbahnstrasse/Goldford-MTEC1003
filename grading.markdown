@@ -15,6 +15,9 @@ _For an overview of grading policies for this course, see [XI. General Grading R
 
 ### I. Weekly Lab Assignments
 
+_Our schedule follows the [CUNY CityTech Fall 2020 Academic Calendar](http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf){:target="_blank"}._   
+_The following topics and their precise order may change. Check here for updates!_  
+
 <div class="schedulingtable">
 <table>
 <colgroup>
@@ -97,6 +100,66 @@ _For an overview of grading policies for this course, see [XI. General Grading R
 <td markdown="span"></td>
 <td markdown="span">5</td>
 <td markdown="span">5.2 All the Basics... But in PYTHON!</td>
+</tr>
+<tr>
+<td markdown="span">6</td>
+<td markdown="span">10/14</td>
+<td markdown="span">5</td>
+<td markdown="span">6.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">7</td>
+<td markdown="span">10/19</td>
+<td markdown="span">5</td>
+<td markdown="span">7.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">8</td>
+<td markdown="span">10/26</td>
+<td markdown="span">5</td>
+<td markdown="span">8.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">9</td>
+<td markdown="span">11/2</td>
+<td markdown="span">5</td>
+<td markdown="span">9.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">10</td>
+<td markdown="span">11/9</td>
+<td markdown="span">5</td>
+<td markdown="span">10.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">11</td>
+<td markdown="span">11/16</td>
+<td markdown="span">5</td>
+<td markdown="span">11.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">12</td>
+<td markdown="span">11/23</td>
+<td markdown="span">5</td>
+<td markdown="span">12.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">13</td>
+<td markdown="span">11/30</td>
+<td markdown="span">5</td>
+<td markdown="span">13.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">14</td>
+<td markdown="span">12/7</td>
+<td markdown="span">5</td>
+<td markdown="span">14.1 <i>More info coming soon!</i></td>
+</tr>
+<tr>
+<td markdown="span">15</td>
+<td markdown="span">12/14</td>
+<td markdown="span">5</td>
+<td markdown="span">15.1 <i>More info coming soon!</i></td>
 </tr>
 </tbody>
 </table>
