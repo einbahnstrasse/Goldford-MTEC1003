@@ -4,17 +4,21 @@
 
 layout: default
 ---
+
+<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="400" align="right">
+
 <!-- <figure>
 	<img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="400" align="right">
 		<figcaption>"By the end of this course, you will be able to..."</figcaption>
 </figure> -->
 
-<figure class=frontfoto>
+<!-- <figure class=frontfoto>
   <p><img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif"
     alt="zachypooh" width="400">
   <figcaption>"By the end of this course, you will be able to..."</figcaption>
-</figure>
+</figure>   -->
 
+<!-- <h1>Syllabus</h1> -->
 # Syllabus
 [_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL04/resources/week.01/Goldford.MTEC1003.Fall2020.Syllabus.v01.pdf){:target="_blank"}
 
