@@ -6,7 +6,7 @@ layout: default
 ---
 <img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zach" width="400" align="right">
 # Syllabus
-[_PDF version here._](dummy.pdf){:target="_blank"}
+[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL04/resources/week.01/Goldford.MTEC1003.Fall2020.Syllabus.v01.pdf){:target="_blank"}
 
 ### I. Essential Course + Contact Information
 **Course Number:** MTEC1003  
@@ -28,7 +28,7 @@ MTEC1003 examines the fundamental topics, tools, skills, and best practices that
 
 In this semester's online version of MTEC1003, and in lieu of a physical classroom, we will rely on a few of the interactive coding tools available to us as distant learners — for example, some of our tutorials will be completed on Google Colaboratory, and we will heavily utilize Slack for essential course communication. We may also use OpenLab for some correspondence.
 
-Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public Github user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank"}).
+Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public _GitHub_ user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank"}).
 
 * * *
 
@@ -36,19 +36,19 @@ Students will therefore be **required** to (1) set up and join our course's Slac
 * Introduce the Unix command line, JavaScript, HTML, CSS, and Python.
 * Define and execute basic control flow operations: functions + function calls, loops, conditional statements, etc.  
 * Utilize version control for intelligent backup, with special emphasis on Git.
-* Submit all course assignments through Github.
-* Create personal web content using HTML, CSS, and JavaScript, using Github Pages.  
+* Submit all course assignments through _GitHub_.
+* Create personal web content using HTML, CSS, and JavaScript, using _GitHub Pages._  
 
 * * *
 
 ### IV. Learning Outcomes
 _By the end of the course students will be able to:_
-* **Execute** simple programs in HMTL, JavaScript, and Python.
+* **Build + Execute** simple programs in JavaScript and Python.
 * **Read** and understand documentation and resources related to our programming languages.
 * **Interface** with (1) your computer's administrative capabilities, (2) Git, and (3) Python, using the Unix command line.
 * **Understand** fundamental programming operations (i.e. those listed in III. Course Goals, above).
 * **Establish** a creative coding practice that includes a logical debugging process.
-* **Organize** all developmental work using version control (Git) via a personal Github account.
+* **Organize** all developmental work using version control (Git) via a personal _GitHub_ account.
 * **Create + Publish** an original website from basic HTML/CSS formatting and JavaScript.  
 
 * * *
@@ -67,14 +67,14 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank
 ### VI. Expectations  
 #### VI. Part I. General Expectations  
 * **Arrive on time** to all online course sessions. — _See Attendance + Participation Policy below._
-* Setup + maintain a public Github account, and report your username to the instructor for grading at the start of the semester.
+* Setup + maintain a public _GitHub_ account, and report your username to the instructor for grading at the start of the semester.
 * Spend **1-2 additional hours a week** _(outside of class)_ on the timely completion of our lab assignments and projects.
-* Complete and submit assignments by given deadlines: typically **on the Saturday night following class.**
-* **Back up and organize your work REGULARLY on Github.** _Catastrophic loss of materials is no excuse for missed deadlines!_
+* Submit assignments by the given deadlines: typically **on the Saturday night following class.**
+* **Back up and organize your work REGULARLY on _GitHub_.** _Catastrophic loss of materials is no excuse for missed deadlines!_
 
 #### VI. Part II. Special Note About Readings + Slides
-* **Study the slides and tutorials ahead of class. Come prepared with questions on these readings.** You will need these materials to understand the examples given each week and to be able to complete our weekly lab assignments.
-* **We will likely be unable to present slides in class. You are therefore responsible for familiarizing yourself with this content even if we don't cover it in our session.** Our class is a "lab", meaning we will devote the majority of our time to rapid demonstrations and especially to working on the lab exercises themselves.
+* **Study the slides and tutorials ahead of class. Come prepared with questions if you don't understand them.** You will need to understand these materials and the examples given each week to be able to complete our weekly lab assignments.  
+* **We will likely be unable to present slides in class. You are therefore responsible for familiarizing yourself with this content even if we don't cover it in our session.** Our class is a "lab", meaning we will devote the majority of our time to rapid demonstrations and especially to completing the lab exercises themselves.
 * Additionally, you are strongly encouraged to **consult the recommended documentation resources** found in our schedule. These provide context, will deepen your understanding, and will pay dividends in your coding this semester and far beyond...
 
 * * *
@@ -85,7 +85,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL04/resources.html){:target="_blank
 * **Requests to the instructor for assistance:** Send an email, or a message on Slack. I will respond during normal working hours; requests arriving "after hours" will be answered on subsequent weekdays.
 * Slack should be used during regular hours. Please respond during the workday as promptly as you can to inquiries from the instructor (both for email and messages sent on Slack). _Multiple successive days without a response is unacceptable._
 * **Actively participate** in our online class discussions. **Thoughtfully contribute to a positive classroom environment,** while supporting and challenging your colleagues’ ideas.
-* **Check Slack** regularly for group and private messages.
+* **Check Slack regularly** for group and private messages.
 * If you have a question that may be relevant to the group (about assignments, etc.), post in the #general channel on Slack.
 * Use Slack for easy communications with your classmates as well — you can DM individuals or selected groups.
 
@@ -127,7 +127,7 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 <tr>
 <td markdown="span">4</td>
 <td markdown="span">9/29</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w4" target="_blank">Version Control: Local/Remote Repositories + Collaboration Via <i>GitHub</i></a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w4" target="_blank">Version Control: Local/Remote Repositories + Collaboration Via <i>_GitHub_</i></a></td>
 </tr>
 <tr>
 <td markdown="span">5</td>
@@ -177,7 +177,7 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 <tr>
 <td markdown="span">14</td>
 <td markdown="span">12/7</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w14" target="_blank">Introduction to GitHub Pages <br />Review: HTML/CSS</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w14" target="_blank">Introduction to _GitHub_ Pages <br />Review: HTML/CSS</a></td>
 </tr>
 <tr>
 <td markdown="span">15</td>
@@ -217,7 +217,7 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 	* After these first 2 steps, contact the instructor with any additional questions.
 * **Excused absences/lateness must be accompanied by documentation** and/or include advance notice with the instructor where possible. Excused absences/lateness will not impact on your grade. Absences may be excused in cases of: documentation of illness provided by a doctor, religious observance with advance notice, official school-related activity (always with documentation and advanced notice), and on a case-by-case basis for other critical events, at the discretion of the instructor.
 * _A lack of communication with the instructor about planned absences will therefore be treated as UNEXCUSED. Be in touch early._
-* **Unexcused absences/lateness result in lowered participation grades.** Prompt arrival online earns you an immediate 5 points (i.e. full participation). For arrivals after 2:30 PM, the following weighted score system applies:
+* **Unexcused absences and lateness will result in lowered participation grades.** Prompt arrival online earns you an immediate 5 points (i.e. full participation). For arrivals after 2:30 PM, the following weighted score system applies:
 
 <div class="latetable">
 <table>
@@ -261,7 +261,7 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 </div>
 
 <div class="instructornote">
-<p markdown="span"><em><b>Additionally, three (3) unexcused absences will lower your final course grade by 10% (i.e. one letter grade).<br />Each additional unexcused absence** will further lower your course grade in 5% increments.</b></em></p></div>
+<p markdown="span"><em><b>Additionally, three (3) unexcused absences will lower your final course grade by 10% (i.e. one letter grade).<br />Each additional unexcused absence will further lower your course grade in 5% increments.</b></em></p></div>
 
 * * *
 
@@ -329,7 +329,7 @@ Students and all others who work with information, ideas, texts, images, music, 
 <tr>
 <td markdown="span">60-69.9%</td>
 <td markdown="span">D</td>
-<td markdown="span">**Poor:** does not meet minimum requirements.</td>
+<td markdown="span">**Poor:** does not meet the minimum requirements.</td>
 </tr>
 <tr>
 <td markdown="span">> 60%</td>
