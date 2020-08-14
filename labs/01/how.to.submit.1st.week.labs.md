@@ -11,7 +11,7 @@ layout: default
 * You can use some version of your name (e.g. full name, first initial and last name, etc.) as your username or choose a pseudonym. GitHub is public, so please choose whatever you feel comfortable with.
 * Check your email to **verify your address.**
 
-* Once you're logged into GitHub, navigate to [https://github.com/einbahnstrasse/Goldford-MTEC1003-Fall2020](https://github.com/einbahnstrasse/Goldford-MTEC1003-Fall2020).
+* Once you're logged into GitHub, navigate to [https://github.com/einbahnstrasse/Goldford-MTEC1003-OL04](https://github.com/einbahnstrasse/Goldford-MTEC1003-OL04).
 * Click on /labs, then click on /01, and finally, click on the first lab: "lab.01.part1.commands.navigation.txt".
 * Once you see the line-by-line "code" for this lab, in the upper-right corner, just under your avatar, click on “Fork”
 * Once it's forked into your own account's repository, you have your own copy of this file.
