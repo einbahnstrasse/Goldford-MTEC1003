@@ -5,7 +5,7 @@
 layout: default
 ---
 
-<img src="../assets/organized.gif" alt="organized" width="400" align="right">
+<img src="../../assets/organized.gif" alt="organized" width="400" align="right">
 
 # Schedule
 _This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [CUNY CityTech Fall 2020 Academic Calendar](http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf){:target="_blank"}. The following topics and their precise order may change. Check here for updates!_  
