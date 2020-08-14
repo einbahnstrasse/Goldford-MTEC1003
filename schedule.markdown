@@ -70,7 +70,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"}  
 <!-- * [exp lab 4 part 1 link](/Goldford-MTEC1003-OL04/labs/04/lab-04-git-part-01.html)   -->
 
-##### Video Tutorial Series  
+<h5 style="color:Tomato;"><b>Video Tutorial Series</b></h5>
 ###### Daniel Shiffman: Git and GitHub for Poets  
 
 <div class="video">
@@ -86,7 +86,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_
 <p class="redish">A TUESDAY, but follows a Monday schedule. <i>City Tech is closed on 9/28. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-##### Tutorials  
+<h5 style="color:Tomato;"><b>Tutorials</b></h5>  
 * [Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL04/labs/04/git.pull.requests.and.merge.tutorial.v01.html){:target="_blank"}  
 * [Shiffman Video Tutorial on Pull Requests / Merges](https://youtu.be/JtIX3HJKwfo){:target="_blank"}
 
