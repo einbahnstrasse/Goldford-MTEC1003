@@ -15,10 +15,10 @@ _Be sure you've installed + tested all 7 of these before you arrive in class:_
 _If you're not on macOS, you'll most likely need a program that mimics the behavior of the Unix command line._  
 _Mac users can ignore this step! But if you're on Windows, install one of these free apps:_  
 
-* [Xshell](https://xshell.en.softonic.com/)
-* [Cmder](https://cmder.net/)
-* [PuTTY](https://www.puttygen.com/download-putty)
-* Or, check out some others: [15 Best Terminal Emulators for Windows in 2020](https://www.puttygen.com/windows-terminal-emulators)
+* [Xshell](https://xshell.en.softonic.com/){:target="_blank"}  
+* [Cmder](https://cmder.net/){:target="_blank"}  
+* [PuTTY](https://www.puttygen.com/download-putty){:target="_blank"}  
+* Or, check out some others: [15 Best Terminal Emulators for Windows in 2020](https://www.puttygen.com/windows-terminal-emulators){:target="_blank"}  
 
 * * *
 
@@ -26,9 +26,9 @@ _Mac users can ignore this step! But if you're on Windows, install one of these 
 _Get yourself a little something nice... A good text editor with clear syntax highlighting._  
 _Check your operating system for compatibility and install one of these:_  
 
-* [Atom](https://atom.io/)  
-* [Sublime Text 3](https://www.sublimetext.com/3)  
-* [Visual Studio Code](https://code.visualstudio.com/download)  
+* [Atom](https://atom.io/){:target="_blank"}  
+* [Sublime Text 3](https://www.sublimetext.com/3){:target="_blank"}  
+* [Visual Studio Code](https://code.visualstudio.com/download){:target="_blank"}  
 
 * * *
 
@@ -36,7 +36,7 @@ _Check your operating system for compatibility and install one of these:_
 _Package management system to ease installation of other tools and software._  
 
 1. INSTALL:  
-	* See the [Wiki](https://github.com/Homebrew/legacy-homebrew), or scroll to the [end of the Homebrew homepage](https://brew.sh/)  
+	* See the [Wiki](https://github.com/Homebrew/legacy-homebrew){:target="_blank"}, or scroll to the [end of the Homebrew homepage](https://brew.sh/){:target="_blank"}  
 	* Or, open your Terminal and run:  
 			`ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"`  
 	* You may then need to run the following to check installation and update:  
@@ -69,8 +69,8 @@ _Version control system for tracking changes in development code or any set of f
 <p class="redish"><i>You'll be using GIT (and GitHub.com) to submit your lab homework every week, so be sure to set this up!</i></p>  
 
 1. SIGN UP:  
-	* Go to [Github.com](Github.com) to get started;  
-	* or visit [this 'How-To' Page for extra support.](https://www.wikihow.com/Create-an-Account-on-GitHub)  
+	* Go to [Github.com](Github.com){:target="_blank"} to get started;  
+	* or visit [this 'How-To' Page for extra support.](https://www.wikihow.com/Create-an-Account-on-GitHub){:target="_blank"}  
 2. VERIFY:
 	* Immediately <a href="mailto:LGoldford@citytech.cuny.edu">email the instructor with your Github user account name</a> to receive grades in this class!!  
 
@@ -80,7 +80,7 @@ _Version control system for tracking changes in development code or any set of f
 _A web browser with great built-in device compatibility tools._  
 
 1. INSTALL:  
-	* [Direct from Chrome homepage](https://www.google.com/intl/en/chrome/)  
+	* [Direct from Chrome homepage](https://www.google.com/intl/en/chrome/){:target="_blank"}  
 2. VERIFY:  
 	* Chrome can be launched from your Applications folder.  
 
@@ -89,11 +89,11 @@ _A web browser with great built-in device compatibility tools._
 ### 7. Python 3 + pip
 _**Python** is an object-oriented, interpreted, and interactive programming language that we'll be introducing alongside JavaScript. It's great for quick prototyping and even better for data visualization._  
 
-_**pip** is the standard package manager for the Python language, allowing you to easily install code packages + modules from the extensive [standard library.](https://docs.python.org/3/py-modindex.html)_  
+_**pip** is the standard package manager for the Python language, allowing you to easily install code packages + modules from the extensive [standard library.](https://docs.python.org/3/py-modindex.html){:target="_blank"}_  
 
 1. INSTALL using these tutorials:  
-	* [macOS](https://evansdianga.com/install-pip-osx/)  
-	* [Windows](https://phoenixnap.com/kb/install-pip-windows)  
+	* [macOS](https://evansdianga.com/install-pip-osx/){:target="_blank"}  
+	* [Windows](https://phoenixnap.com/kb/install-pip-windows){:target="_blank"}  
 2. VERIFY:  
 	* Verify Python 3:  
 		* Open your Terminal and run:  
