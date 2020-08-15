@@ -121,8 +121,6 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Review: Version Control + Basic JavaScript/Python  
 <p class="redish">A WEDNESDAY, but follows a Monday schedule. <i>City Tech is closed on 10/12. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
-
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Git Review](/Goldford-MTEC1003-OL04/labs/06/git-review.html){:target="_blank"}  
 * [JavaScript Basics Review](/Goldford-MTEC1003-OL04/labs/06/js-basics-review.html){:target="_blank"}  
