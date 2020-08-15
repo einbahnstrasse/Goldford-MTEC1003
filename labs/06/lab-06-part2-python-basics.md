@@ -96,8 +96,8 @@ Well, let's see what happens...
   TypeError: can't multiply sequence by non-int of type 'float'
   $ {% endhighlight %}
 
-##### WHAT JUST HAPPENED?!
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/k5Cfhooa1bI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+#### WAIT, WHAT JUST HAPPENED?!?!
+
 <iframe width="450" height="253" src="https://www.youtube.com/embed/k5Cfhooa1bI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> alt="HEY WHA' HAPPENED?!"</iframe>
 
 Okay first, just breathe... Now let's start to work the problem.    
