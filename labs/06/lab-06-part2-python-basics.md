@@ -69,7 +69,7 @@ where:
   * F will be our result; i.e. degrees in Fahrenheit (°F), and  
   * C is our "user input"; i.e. degrees in Celcius (°C)  
 
-Maybe you found this or a formula, or one like it, when you did your JavaScript version in [Lab 6 / Part 1](/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html){:target="_blank"}. But how should we reconstruct it in Python?   
+Maybe you found this formula, or one like it, when you made your JavaScript version in [Lab 6 / Part 1](/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html){:target="_blank"}. But how should we reconstruct it in Python?   
 
 ### Initial "Translation" of our JavaScript Code  
 
