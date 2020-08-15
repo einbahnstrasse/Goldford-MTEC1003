@@ -5,7 +5,7 @@
 layout: default
 ---
 
-# Lab 5 Part 2: _Greetings_ and _Madlibs_ in Python  
+# Lab 5 / Part 2: _Greetings_ and _Madlibs_ in Python  
 
 #### C O N T E N T S  
 <a href="#intro">Introduction</a>  

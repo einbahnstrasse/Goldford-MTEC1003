@@ -8,7 +8,7 @@ layout: default
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
 
-# Lab 6 Part 2: Some Simple, Stupid Python Programs   
+# Lab 6 / Part 2: Some Simple, Stupid Python Programs   
 
 #### C O N T E N T S  
 <a href="#setup">Setup for Python3</a>  
