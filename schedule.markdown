@@ -118,14 +118,19 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <a id="w6"></a>
 <h3 class="schedule-page-date">Week 6: October 14th</h3>
-### Review: Version Control + Basic JavaScript/Python
+### Review: Version Control + Basic JavaScript/Python  
 <p class="redish">A WEDNESDAY, but follows a Monday schedule. <i>City Tech is closed on 10/12. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
+* [Git Review](/Goldford-MTEC1003-OL04/labs/06/git-review.html){:target="_blank"}  
+* [JavaScript Basics Review](/Goldford-MTEC1003-OL04/labs/06/js-basics-review.html){:target="_blank"}  
+* [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
+* [Lab 6 / Part 1: JavaScript](/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html){:target="_blank"}  
+* [Lab 6 / Part 2: Easy Python Programs](/Goldford-MTEC1003-OL04/labs/06/dummy.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
@@ -178,7 +183,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <a id="w10"></a>
 <h3 class="schedule-page-date">Week 10: November 9th</h3>
-### Javascript + Python: Functions Definitions + Function Calls
+### Javascript + Python: Function Definitions + Function Calls
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
