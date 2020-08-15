@@ -54,14 +54,16 @@ The output will look like this:
   $ {% endhighlight %}
 
 Make sure your file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes!  
-Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!  
+Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
 
 * * *   
 
 <a id="temperature"></a>
 ## 2. Recreating (and Debugging) _Temperature.html_ but in Python  
 
-This one's slightly more involved, so we'll do it together.  
+This one's slightly more involved, so we'll do it together. Firstly, we need [a formula for our conversion](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf){:target="_blank"}:
+
+$$ {BMI} {F} = {\frac{9}{5}} \times C \plus 32 $$
 
 ### Initial "Translation" of our JavaScript Code  
 
@@ -141,7 +143,7 @@ Try it out in the Terminal... Now it should work!
   The temperature is 89.6°F  
   $ {% endhighlight %}
 
-Save your code, make sure your **temperature.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!  
+Save your code, make sure your **temperature.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
 
 * * *
 
@@ -153,7 +155,7 @@ Dunno about you, but the pandemic has led to me gaining some weight......... :$
 
 ### How would you calculate the percentage of fat on a person's body?  
 
-To do this we use [a formula for Body Mass Index (BMI)](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf):  
+To do this we use [a formula for Body Mass Index (BMI)](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf){:target="_blank"}:  
 
 $$ {BMI} = \frac{703 \times W}{H^2} $$
 
@@ -194,8 +196,8 @@ Write your code below your `import sys` line, so that your output in the console
   Your body mass index (BMI) is 23.2610294118%
   $ {% endhighlight %}
 
-Although you won't need it, feel free to try out Python's [pow() method](https://www.w3schools.com/python/ref_func_pow.asp) to aid in your calculation.  
+Although you won't need it, feel free to try out Python's [pow() method](https://www.w3schools.com/python/ref_func_pow.asp){:target="_blank"} to aid in your calculation.  
 
-Save your code, make sure your **bmi.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!
+Save your code, make sure your **bmi.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!
 
 * * *
