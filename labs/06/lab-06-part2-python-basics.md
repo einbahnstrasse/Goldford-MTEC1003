@@ -63,9 +63,9 @@ Consider your file **temperature.html** from Lab 6 / Part 1, and start your tran
   tempinfahrenheit = tempincelsius * 1.8 + 32.0  
   print("The temperature is " + tempinfahrenheit + "°F") {% endhighlight %}  
 
-Our Python code is looking pretty good.... I mean, right?
+Our Python code is looking pretty good.... I mean, right?  
 Yeah, life's been pretty good to ya.... right?  
-We are **aWeSoMe cOdErZ** aren't we... RIGHT?!!!!
+We are **aWeSoMe cOdErZ** aren't we... RIGHT?!!!!  
 
 So, we save our code and go to our console to run it, and we are **SO SURE** it's gonna work... right?!  
 Well, let's see what happens...  
