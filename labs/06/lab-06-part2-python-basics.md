@@ -8,16 +8,7 @@ layout: default
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
 
-$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
-
-# Lab 5 Part 2: _Greetings_ and _Madlibs_ in Python  
-
-$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
-### $$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
-
-Once you've made these simple programs in JavaScript, doing them in Python will be a piece of cake!  The two languages share a lot in common. We'll do the first of these, "greetings", together below, and then you'll have no problem doing the other one, on your own.  
-
-We won't be running Python inside of an HTML script on a website, so in your text editor (e.g. Atom, Sublime Text, etc.) simply create a new file and give it the .py extension. This signals your text editor to invoke the proper syntax highlighting up front. Name this first file **greetings.py**.
+# Lab 6 Part 2: Some Simple, Stupid Python Programs   
 
 ## Setup for Python3   
 
@@ -30,72 +21,130 @@ Once you've done this, you're all set. Onto making "greetings.py" ...
 
 * * *  
 
-## Recreating _Greetings.html_ but in Python  
+## Recreating _SayTwice.html_ but in Python  
 
-In JavaScript, a variable is _declared_ by typing `var` like so:
+In Lab 6 / Part 1, you made a program that asked for user input and echoed it back twice to the console. How would we do that in Python?  
 
-  {% highlight js %}
-  var myVariable = someValue; {% endhighlight %}
+What if I told you...
 
-Notice that in addition to our _declaration_, we also assigned a value (someValue).
+...that you already know the two things in Python you'll need: `input()` and `print()`? Remember those?!
 
-In Python, we don't need to _declare_ a variable... Instead, a variable is automatically "declared" when we assign a value to it. So, we just write:  
+I bet you can do the rest...
 
-  {% highlight py %}
-  myVariable = someValue {% endhighlight %}
-
-(Also, notice that we don't use the semicolon at the end of a line in Python, as we do in JavaScript.)  
-
-To prompt the user for input, we don't type `prompt()` as we do in JavaScript. In Python (i.e. Python3) we use the `input()` method.  
-So, our first line of code in **greetings.py** will look something like this:  
-
-  {% highlight py %}
-  username = input("So, like, what's your name? ") {% endhighlight %}
-
-We've successfully (1) prompted the user for input, and (2) stored that user input in a new variable called "username".  
-The last step is to print it back out in a string back in the console. Our print function in Python is pretty simple:
-
-  {% highlight py %}
-  print("Look Mom, no semicolon!") {% endhighlight %}
-
-Now, we just have to _concatenate_ a string that includes the input stored in the `username` variable.  
-So, this means our 2nd and last line of code in **greetings.py** will look a little something like this:  
-
-  {% highlight py %}
-  print("Hi, " + username + "!") {% endhighlight %}
-
-Here, we've (1) concatenated a string, stored inside our `username` variable, into a longer string to form a greeting, and (2) we returned this final string to the console with a `print()` function.  
+Save your new code to a file called **saytwice.py**. Make sure it's in your **lab-06-review** repository!
 
 Now we just have to **test** our python script by running it on the command line.
 
-Back in Terminal, simply type `python`, then a space, and then drag-and-drop your **greetings.py** file onto the Terminal window (**remember:** this will quickly create a `full path` to your file on the command line!). Run the command by hitting `enter`, of course.
+Back in Terminal, simply type `python`, then a space, and then drag-and-drop your **saytwice.py** file onto the Terminal window (**remember:** this will quickly create a `full path` to your file on the command line!). Run the command by hitting `enter`, of course.
 
 The output will look like this:  
 
   {% highlight terminal %}
-  $ python /Users/louisgoldford/Desktop/greetings.py  
-  So, like, what's your name? dumpsterFyreFestival  
-  Hi, dumpsterFyreFestival!  
+  $ python /Users/louisgoldford/mtec1003/lab-06-review/saytwice.py  
+  Give me a word to say twice: michaelCaine
+  michaelCaine! michaelCaine!
   $ {% endhighlight %}
 
-Make sure your file is included in your **/lab-05-js-py** folder, and don't forget to **add**, **commit**, and **push** your changes!  
+Make sure your file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes!  
 Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!  
 
 * * *   
 
-## Recreating _Madlibs.html_ but in Python  
+## Recreating (and Debugging) _Temperature.html_ but in Python  
 
-Now that you've seen how easily we can translate our JavaScript code into Python, write new versions of the _Madlibs_ programs you made in [Lab 5 / Part 1.](/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html)
+This one's slightly more involved, so we'll do it together.  
 
-If you're feeling comfortable, you can skip the 1st version of madlibs (i.e. the one with hardcoded values), and move quickly onto making the final version (i.e. the one with variables prompted with user input using Python's `input()` method, described above). You can call it **madlibs.py**. Don't forget to **test** your programs on the command line too.  
+### Initial "Translation" of our JavaScript Code  
 
-Make sure your file is included in your **/lab-05-js-py** folder, and don't forget to **add**, **commit**, and **push** your changes!  
-Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!  
+Consider your file **temperature.html** from Lab 6 / Part 1, and start your translation into Python by doing the obvious:  
 
-Your final **/lab-05-js-py** folder by the submission deadline should include the following:  
-* greetings.html  
-* greetings.py   
-* madlibs.html  
-* madlibs.py  
+  {% highlight py %}  
+  tempincelsius = input("Please enter a temperature in celsius: ")  
+  tempinfahrenheit = tempincelsius * 1.8 + 32.0  
+  print("The temperature is " + tempinfahrenheit + "°F") {% endhighlight %}  
+
+Our Python code is looking pretty good.... I mean, right?
+Yeah, life's been pretty good to ya.... right?  
+We are **aWeSoMe cOdErZ** aren't we... RIGHT?!!!!
+
+So, we save our code and go to our console to run it, and we are **SO SURE** it's gonna work... right?!  
+Well, let's see what happens...  
+
+  {% highlight terminal %}
+  $ python /Users/louisgoldford/mtec1003/lab-06-review/temperature.py  
+  Traceback (most recent call last):
+    File "/Users/louisgoldford/mtec1003/lab-06-review/temperature.py", line 2, in <module>
+      tempinfahrenheit = tempincelsius * 1.8 + 32.0
+  TypeError: can't multiply sequence by non-int of type 'float'
+  $ {% endhighlight %}
+
+WHAT JUST HAPPENED? First, breathe... Okay, now let's start to work the problem here:  
+
+### We Need a Floating-Point Number!  
+
+The error we got mentions two crucial things: (1) it mentions that line 2 is a specific problem, and (2) it also mentions something about a `float` (non-int of type 'float'). What does this mean?
+
+It means that something on line 2 (which is reprinted in our error message, and that helps! _tempinfahrenheit = tempincelsius * 1.8 + 32.0_) is not the expected **floating-point number** (i.e. a number with a decimal, in computer science terms). Without a floating-point number, the equation we wrote on line 2 can't be computed. We see that 1.8 and 32.0 are both numbers with decimals, so the only thing that might _not_ be a floating-point number in line 2 _must be_ our variable: **'tempincelsius'**.
+
+So what **is** 'tempincelsius' then, anyway?  
+And how can we **make** it a floating-point number?  
+
+### Debugging with the `type()` Function  
+
+Fortunately, in Python we can use a nifty function called `type()` to find out what **'tempincelsius'** really is. Start by going back to your **temperature.py** file and **commenting out** lines 2 and 3 (since that's where the error is occurring.)  
+
+Just after line 1, insert a line and type the following:  
+
+  {% highlight py %}  
+  tempincelsius = input("Please enter a temperature in celsius: ")  
+  print(type(tempincelsius))
+  # tempinfahrenheit = tempincelsius * 1.8 + 32.0  
+  # print("The temperature is " + tempinfahrenheit + "°F") {% endhighlight %}
+
+Now, on line 2 we're printing out (`print()`) the _result_ of the `type()` function.  
+Save your file, and re-run it in Terminal:  
+
+  {% highlight terminal %}
+  $ python /Users/louisgoldford/mtec1003/lab-06-review/temperature.py  
+  Please enter a temperature in celsius: 45
+  <class 'str'>
+  $ {% endhighlight %}
+
+AHA! The result of our {% highlight py %} print(type(tempincelsius)) {% endhighlight %} command tells us that the variable we're testing, **'tempincelsius'**, is a STRING, NOT A DECIMAL (i.e. 'str' according to the result in our console). So, now we know we just need to _convert_ the **'tempincelsius'** variable into a `float`. For converting between strings and floats, python has two very handy functions: `float()` and `str()`. How nice!  
+
+### Updating Our Code With the Right Conversions  
+
+Go back to your code, **comment out** the print function, and **comment in** lines 3 + 4. Revise them so that it reads:  
+
+  {% highlight py %}  
+  tempincelsius = input("Please enter a temperature in celsius: ")  
+  # print(type(tempincelsius))
+  tempinfahrenheit = float(tempincelsius) * 1.8 + 32.0  
+  print("The temperature is " + str(tempinfahrenheit) + "°F") {% endhighlight %}
+
+Here, we've updated our code so that we're converting variable **'tempincelsius'** into a `float` in order to compute the temperature. Then on line 4, we need to _concatenate_ the result into a larger string and print it out to the console, so we have to convert the **'tempinfahrenheit'** variable _back into a string, because it's a float._ If we forget to convert it back into a string, we'll get an error in the console similar to the one we got before we did our first conversion above.  
+
+Try it out in the Terminal... Now it should work!  
+
+  {% highlight terminal %}
+  $ python /Users/louisgoldford/mtec1003/lab-06-review/temperature.py  
+  Please enter a temperature in celsius: 32  
+  The temperature is 89.6°F  
+  $ {% endhighlight %}
+
+Save your code, and make sure your file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes!    
+Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!
+
+* * *
+
+## Calculating Body Mass Index (BMI) in Python
+
+Let's do something we haven't already done in JavaScript...  
+Dunno about you, but the pandemic has led to me gaining some weight......... :$  
+
+How would you calculate the percentage of fat on a person's body?  
+We use a formula for the body mass index (BMI):  
+
+$$ {BMI} = \frac{703*W}{H^2} $$
 
 * * *  
