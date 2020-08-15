@@ -10,6 +10,15 @@ layout: default
 
 # Lab 6 Part 2: Some Simple, Stupid Python Programs   
 
+#### C O N T E N T S  
+<a href="#setup">Setup for Python3</a>  
+1. <a href="#saytwice">Recreating <i>SayTwice.html</i> but in Python</a>  
+2. <a href="#temperature">Recreating (and Debugging) <i>Temperature.html</i> but in Python</a>
+3. <a href="#bmi">Calculating Body Mass Index (BMI) in Python</a>
+
+* * *
+
+<a id="setup"></a>
 ## Setup for Python3   
 
 Let's be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling `python` on the command line. We can crete an "alias" for python3 by running the following command:  
@@ -21,15 +30,14 @@ Once you've done this, you're all set. Onto making "greetings.py" ...
 
 * * *  
 
-## Recreating _SayTwice.html_ but in Python  
+<a id="saytwice"></a>
+## 1. Recreating _SayTwice.html_ but in Python  
 
 In Lab 6 / Part 1, you made a program that asked for user input and echoed it back twice to the console. How would we do that in Python?  
 
-What if I told you...
+What if I told you... that you already know the two things in Python you'll need: `input()` and `print()`? Remember those?!  
 
-...that you already know the two things in Python you'll need: `input()` and `print()`? Remember those?!
-
-I bet you can do the rest...
+I bet you can do the rest...  
 
 Save your new code to a file called **saytwice.py**. Make sure it's in your **lab-06-review** repository!
 
@@ -50,7 +58,8 @@ Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-
 
 * * *   
 
-## Recreating (and Debugging) _Temperature.html_ but in Python  
+<a id="temperature"></a>
+## 2. Recreating (and Debugging) _Temperature.html_ but in Python  
 
 This one's slightly more involved, so we'll do it together.  
 
@@ -136,14 +145,15 @@ Save your code, make sure your **temperature.py** file is included in your **/la
 
 * * *
 
-## Calculating Body Mass Index (BMI) in Python
+<a id="bmi"></a>
+## 3. Calculating Body Mass Index (BMI) in Python
 
 Let's do something we haven't already done in JavaScript...  
 Dunno about you, but the pandemic has led to me gaining some weight......... :$  
 
 ### How would you calculate the percentage of fat on a person's body?  
 
-To do this we use a formula for _body mass index_ (BMI):  
+To do this we use [a formula for Body Mass Index (BMI)](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf):  
 
 $$ {BMI} = \frac{703 \times W}{H^2} $$
 
@@ -189,10 +199,3 @@ Although you won't need it, feel free to try out Python's [pow() method](https:/
 Save your code, make sure your **bmi.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!
 
 * * *
-
-
-
-
-
-
-* * *  
