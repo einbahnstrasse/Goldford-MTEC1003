@@ -63,7 +63,7 @@ Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-
 
 This one's slightly more involved, so we'll do it together. Firstly, we need [a formula for our conversion](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf){:target="_blank"}:
 
-$$ {BMI} {F} = {\frac{9}{5}} \times C \plus 32 $$
+$$ {F} = {\frac{9}{5}}C + 32 $$
 
 ### Initial "Translation" of our JavaScript Code  
 
