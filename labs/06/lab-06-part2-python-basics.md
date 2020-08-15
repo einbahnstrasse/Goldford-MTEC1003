@@ -141,16 +141,17 @@ Save your code, make sure your **temperature.py** file is included in your **/la
 Let's do something we haven't already done in JavaScript...  
 Dunno about you, but the pandemic has led to me gaining some weight......... :$  
 
-How would you calculate the percentage of fat on a person's body?  
+### How would you calculate the percentage of fat on a person's body?  
+
 To do this we use a formula for _body mass index_ (BMI):  
 
 $$ {BMI} = \frac{703 \times W}{H^2} $$
 
 where:
-  * W = a person's weight (in pounds), and
-  * H = their height (in inches)
+  * W is a person's weight (in pounds), and  
+  * H is their height (in inches).  
 
-With just these two inputs to the equation, we can fairly accurately describe what a person's BMI is, i.e. the percentage of their weight in fat.
+With just these two inputs to the equation, we can describe a person's BMI; the percentage of their body weight that is fat.  
 
 ### How would we accomplish this with Python?  
 
@@ -172,7 +173,7 @@ At the top of your new file on line 1, type the following:
   {% highlight py %}  
   import sys {% endhighlight %}
 
-`import` is a statement in Python that allows you to "import" a "module." In this case, `sys` is the module we're importing. A Python module is basically a file containing more Python code; more functions, varibles, classes, methods, etc. We're using `sys` here to be sure you won't get any errors if resulting from weird characters you may type, or those that might cause errors on the command line. You might try safeguarding yourself with this particular module in some of your other Python files too!
+`import` is a statement in Python that allows you to "import" a "module." In this case, `sys` is the module we're importing. A Python module is basically a file containing more Python code; more functions, variables, classes, methods, etc. We're using `sys` here to be sure you won't get any errors resulting from weird characters you may type, or those that might throw errors on the command line. You might try safeguarding yourself with this particular module in some of your other Python files too!
 
 Write your code below your `import sys` line, so that your output in the console resembles this:
 
