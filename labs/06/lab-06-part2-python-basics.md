@@ -75,9 +75,9 @@ Maybe you found this formula, or one like it, when you made your JavaScript vers
 
 Consider your file **temperature.html** from Lab 6 / Part 1, and start your translation into Python by doing the obvious:  
 
-  {% highlight py %}  
+  {% highlight py linenos %}  
   tempincelsius = input("Please enter a temperature in celsius: ")  
-  tempinfahrenheit = tempincelsius * 1.8 + 32.0  
+  tempinfahrenheit = (tempincelsius * (9 / 5)) + 32.0  
   print("The temperature is " + tempinfahrenheit + "°F") {% endhighlight %}  
 
 ...Our Python code is looking pretty good.... I mean, right?.........  
@@ -91,11 +91,11 @@ Well, let's see what happens...
   $ python /Users/louisgoldford/mtec1003/lab-06-review/temperature.py  
   Traceback (most recent call last):
     File "/Users/louisgoldford/mtec1003/lab-06-review/temperature.py", line 2, in <module>
-      tempinfahrenheit = tempincelsius * 1.8 + 32.0
+      tempinfahrenheit = (tempincelsius * (9 / 5)) + 32.0  
   TypeError: can't multiply sequence by non-int of type 'float'
   $ {% endhighlight %}
 
-WHAT JUST HAPPENED? First, breathe... Okay, now let's start to work the problem here:  
+WHAT JUST HAPPENED? First, breathe... Okay, now let's start to work the problem.    
 
 ### We Need a Floating-Point Number!  
 
@@ -112,10 +112,10 @@ Fortunately, in Python we can use a nifty function called `type()` to find out w
 
 Just after line 1, insert a line and type the following:  
 
-  {% highlight py %}  
+  {% highlight py linenos %}  
   tempincelsius = input("Please enter a temperature in celsius: ")  
   print(type(tempincelsius))
-  # tempinfahrenheit = tempincelsius * 1.8 + 32.0  
+  # tempinfahrenheit = (tempincelsius * (9 / 5)) + 32.0  
   # print("The temperature is " + tempinfahrenheit + "°F") {% endhighlight %}
 
 Now, on line 2 we're printing out (`print()`) the _result_ of the `type()` function.  
@@ -133,10 +133,10 @@ AHA! The result of our {% highlight py %} print(type(tempincelsius)) {% endhighl
 
 Go back to your code, **comment out** the print function, and **comment in** lines 3 + 4. Revise them so that it reads:  
 
-  {% highlight py %}  
+  {% highlight py linenos %}  
   tempincelsius = input("Please enter a temperature in celsius: ")  
   # print(type(tempincelsius))
-  tempinfahrenheit = float(tempincelsius) * 1.8 + 32.0  
+  tempinfahrenheit = (float(tempincelsius) * (9 / 5)) + 32.0   
   print("The temperature is " + str(tempinfahrenheit) + "°F") {% endhighlight %}
 
 Here, we've updated our code so that we're converting variable **'tempincelsius'** into a `float` in order to compute the temperature. Then on line 4, we need to _concatenate_ the result into a larger string and print it out to the console, so we have to convert the **'tempinfahrenheit'** variable _back into a string, because it's a float._ If we forget to convert it back into a string, we'll get an error in the console similar to the one we got before we did our first conversion above.  
