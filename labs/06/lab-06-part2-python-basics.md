@@ -26,7 +26,9 @@ Let's be sure your Terminal session will run Python3 (instead of the prepackaged
   {% highlight terminal %}
   $ alias python=/usr/local/bin/python3 {% endhighlight %}
 
-Once you've done this, you're all set. Onto making "greetings.py" ...  
+Alternatively, you can simply run `python3` in the Terminal instead of `python`, but this gets annoying after awhile.  
+
+Once you've done this, you're all set.  
 
 * * *  
 
