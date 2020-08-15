@@ -7,10 +7,20 @@ layout: default
 
 # Lab 5 Part 2: _Greetings_ and _Madlibs_ in Python  
 
+#### C O N T E N T S  
+<a href="#intro">Introduction</a>  
+<a href="#setup">Setup for Python3</a>
+1. <a href="#greetings">Recreating <i>Greetings.html</i> but in Python</a>  
+2. <a href="#madlibs">Recreating <i>Madlibs.html</i> but in Python</a>
+
+<a id="intro"></a>
+## Introduction  
+
 Once you've made these simple programs in JavaScript, doing them in Python will be a piece of cake!  The two languages share a lot in common. We'll do the first of these, "greetings", together below, and then you'll have no problem doing the other one, on your own.  
 
 We won't be running Python inside of an HTML script on a website, so in your text editor (e.g. Atom, Sublime Text, etc.) simply create a new file and give it the .py extension. This signals your text editor to invoke the proper syntax highlighting up front. Name this first file **greetings.py**.
 
+<a id="setup"></a>
 ## Setup for Python3   
 
 Let's be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling `python` on the command line. We can crete an "alias" for python3 by running the following command:  
@@ -18,11 +28,14 @@ Let's be sure your Terminal session will run Python3 (instead of the prepackaged
   {% highlight terminal %}
   $ alias python=/usr/local/bin/python3 {% endhighlight %}
 
+Alternatively, you can simply run `python3` in the Terminal instead of `python`, but this gets annoying after awhile.  
+
 Once you've done this, you're all set. Onto making "greetings.py" ...  
 
 * * *  
 
-## Recreating _Greetings.html_ but in Python  
+<a id="greetings"></a>
+## 1. Recreating _Greetings.html_ but in Python  
 
 In JavaScript, a variable is _declared_ by typing `var` like so:
 
@@ -75,7 +88,8 @@ Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-
 
 * * *   
 
-## Recreating _Madlibs.html_ but in Python  
+<a id="madlibs"></a>
+## 2. Recreating _Madlibs.html_ but in Python  
 
 Now that you've seen how easily we can translate our JavaScript code into Python, write new versions of the _Madlibs_ programs you made in [Lab 5 / Part 1.](/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html)
 
