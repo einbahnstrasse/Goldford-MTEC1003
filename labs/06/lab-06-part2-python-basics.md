@@ -75,8 +75,7 @@ Maybe you found this formula, or one like it, when you made your JavaScript vers
 
 Consider your file **temperature.html** from Lab 6 / Part 1, and start your translation into Python by doing the obvious:  
 
-  {% highlight py linenos %}  
-  tempincelsius = input("Please enter a temperature in celsius: ")  
+  {% highlight py linenos %} tempincelsius = input("Please enter a temperature in celsius: ")  
   tempinfahrenheit = (tempincelsius * (9 / 5)) + 32.0  
   print("The temperature is " + tempinfahrenheit + "°F") {% endhighlight %}  
 
@@ -112,8 +111,7 @@ Fortunately, in Python we can use a nifty function called `type()` to find out w
 
 Just after line 1, insert a line and type the following:  
 
-  {% highlight py linenos %}  
-  tempincelsius = input("Please enter a temperature in celsius: ")  
+  {% highlight py linenos %} tempincelsius = input("Please enter a temperature in celsius: ")  
   print(type(tempincelsius))
   # tempinfahrenheit = (tempincelsius * (9 / 5)) + 32.0  
   # print("The temperature is " + tempinfahrenheit + "°F") {% endhighlight %}
@@ -133,8 +131,7 @@ AHA! The result of our {% highlight py %} print(type(tempincelsius)) {% endhighl
 
 Go back to your code, **comment out** the print function, and **comment in** lines 3 + 4. Revise them so that it reads:  
 
-  {% highlight py linenos %}  
-  tempincelsius = input("Please enter a temperature in celsius: ")  
+  {% highlight py linenos %} tempincelsius = input("Please enter a temperature in celsius: ")  
   # print(type(tempincelsius))
   tempinfahrenheit = (float(tempincelsius) * (9 / 5)) + 32.0   
   print("The temperature is " + str(tempinfahrenheit) + "°F") {% endhighlight %}
@@ -188,8 +185,7 @@ So, in your text editor, create a new file and call it **bmi.py**, and get start
 
 At the top of your new file on line 1, type the following:  
 
-  {% highlight py %}  
-  import sys {% endhighlight %}
+  {% highlight py %} import sys {% endhighlight %}
 
 `import` is a statement in Python that allows you to "import" a "module." In this case, `sys` is the module we're importing. A Python module is basically a file containing more Python code; more functions, variables, classes, methods, etc. We're using `sys` here to be sure you won't get any errors resulting from weird characters you may type, or those that might throw errors on the command line. You might try safeguarding yourself with this particular module in some of your other Python files too!
 
