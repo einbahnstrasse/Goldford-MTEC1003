@@ -132,8 +132,7 @@ Try it out in the Terminal... Now it should work!
   The temperature is 89.6°F  
   $ {% endhighlight %}
 
-Save your code, and make sure your file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes!    
-Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!
+Save your code, make sure your **temperature.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!  
 
 * * *
 
@@ -143,8 +142,56 @@ Let's do something we haven't already done in JavaScript...
 Dunno about you, but the pandemic has led to me gaining some weight......... :$  
 
 How would you calculate the percentage of fat on a person's body?  
-We use a formula for the body mass index (BMI):  
+To do this we use a formula for _body mass index_ (BMI):  
 
 $$ {BMI} = \frac{703 \times W}{H^2} $$
+
+where:
+  * W = a person's weight (in pounds), and
+  * H = their height (in inches)
+
+With just these two inputs to the equation, we can fairly accurately describe what a person's BMI is, i.e. the percentage of their weight in fat.
+
+### How would we accomplish this with Python?  
+
+As you can imagine, you'll need to start by asking the user for some input.  
+In this case, you'll need to:  
+1. ask the user for two things, and  
+2. create separate variables and prompts for each. Then,  
+3. you'll convert the strings into floats (just like we did in _temperature_ above),
+4. make your equation (using the formula for BMI above),    
+5. convert the result back into a string, and finally  
+6. print the final result to the console.
+
+So, in your text editor, create a new file and call it **bmi.py**, and get started!
+
+### import sys
+
+At the top of your new file on line 1, type the following:  
+
+  {% highlight py %}  
+  import sys {% endhighlight %}
+
+`import` is a statement in Python that allows you to "import" a "module." In this case, `sys` is the module we're importing. A Python module is basically a file containing more Python code; more functions, varibles, classes, methods, etc. We're using `sys` here to be sure you won't get any errors if resulting from weird characters you may type, or those that might cause errors on the command line. You might try safeguarding yourself with this particular module in some of your other Python files too!
+
+Write your code below your `import sys` line, so that your output in the console resembles this:
+
+  {% highlight terminal %}
+  $ python /Users/louisgoldford/mtec1003/lab-06-review/bmi.py  
+  Enter your weight (in pounds): 153
+  Okay, also enter your height (in inches): 68
+  Your body mass index (BMI) is 23.2610294118%
+  $ {% endhighlight %}
+
+Although you won't need it, feel free to try out Python's [pow() method](https://www.w3schools.com/python/ref_func_pow.asp) to aid in your calculation.  
+
+Save your code, make sure your **bmi.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!
+
+* * *
+
+
+
+
+
 
 * * *  
