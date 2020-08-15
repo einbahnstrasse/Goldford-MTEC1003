@@ -84,19 +84,19 @@ The output will look like this:
   $ {% endhighlight %}
 
 Make sure your file is included in your **/lab-05-js-py** folder, and don't forget to **add**, **commit**, and **push** your changes!  
-Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!  
+Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
 
 * * *   
 
 <a id="madlibs"></a>
 ## 2. Recreating _Madlibs.html_ but in Python  
 
-Now that you've seen how easily we can translate our JavaScript code into Python, write new versions of the _Madlibs_ programs you made in [Lab 5 / Part 1.](/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html)
+Now that you've seen how easily we can translate our JavaScript code into Python, write new versions of the _Madlibs_ programs you made in [Lab 5 / Part 1.](/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
 
 If you're feeling comfortable, you can skip the 1st version of madlibs (i.e. the one with hardcoded values), and move quickly onto making the final version (i.e. the one with variables prompted with user input using Python's `input()` method, described above). You can call it **madlibs.py**. Don't forget to **test** your programs on the command line too.  
 
 Make sure your file is included in your **/lab-05-js-py** folder, and don't forget to **add**, **commit**, and **push** your changes!  
-Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) if you need it!  
+Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
 
 Your final **/lab-05-js-py** folder by the submission deadline should include the following:  
 * greetings.html  
