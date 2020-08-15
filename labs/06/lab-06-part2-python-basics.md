@@ -75,7 +75,7 @@ Maybe you found this formula, or one like it, when you made your JavaScript vers
 
 ### Initial "Translation" of our JavaScript Code  
 
-Consider your file **temperature.html** from Lab 6 / Part 1, and start your translation into Python by doing the obvious:  
+Consider your file **temperature.html** from [Lab 6 / Part 1](/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html){:target="_blank"}, and start your translation into Python by doing the obvious:  
 
   {% highlight py linenos %}  tempincelsius = input("Please enter a temperature in celsius: ")  
   tempinfahrenheit = (tempincelsius * (9 / 5)) + 32.0  
