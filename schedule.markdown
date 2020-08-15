@@ -130,8 +130,6 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [Lab 6 / Part 1: JavaScript](/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html){:target="_blank"}  
 * [Lab 6 / Part 2: Easy Python Programs](/Goldford-MTEC1003-OL04/labs/06/lab-06-part2-python-basics.html){:target="_blank"}  
 
-<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
-
 * * *
 
 <a id="w7"></a>
@@ -142,8 +140,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
+* [JavaScript Conditionals](/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html){:target="_blank"}  
+* [JavaScript Conditionals — Revisited](/Goldford-MTEC1003-OL04/labs/07/js-conditionals-revisited.html){:target="_blank"}  
+* [Python + Booleans](/Goldford-MTEC1003-OL04/labs/07/dummy.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
+* [Lab 7 / Part 1: JavaScript Conditionals](/Goldford-MTEC1003-OL04/labs/07/lab-07-part1-javascript-conditionals.html){:target="_blank"}  
+* [Lab 7 / Part 2: Python Conditionals](/Goldford-MTEC1003-OL04/labs/07/dummy.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
