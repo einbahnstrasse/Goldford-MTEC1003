@@ -145,6 +145,6 @@ Dunno about you, but the pandemic has led to me gaining some weight......... :$
 How would you calculate the percentage of fat on a person's body?  
 We use a formula for the body mass index (BMI):  
 
-$$ {BMI} = \frac{703*W}{H^2} $$
+$$ {BMI} = \frac{703\timesW}{H^2} $$
 
 * * *  
