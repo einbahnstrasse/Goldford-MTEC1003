@@ -61,7 +61,7 @@ Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-
 <a id="temperature"></a>
 ## 2. Recreating (and Debugging) _Temperature.html_ but in Python  
 
-This one's slightly more involved, so we'll do it together. Firstly, we need [a formula for our conversion](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf){:target="_blank"}:
+This one's slightly more involved, so we'll do it together. Firstly, we need [a formula for our conversion](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf){:target="_blank"} from degrees in Celcius (°C) to degrees in Fahrenheit (°F):
 
 $$ {F} = {\frac{9}{5}}C + 32 $$
 
