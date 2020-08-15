@@ -100,7 +100,8 @@ Well, let's see what happens...
 
 <iframe width="450" height="253" src="https://www.youtube.com/embed/k5Cfhooa1bI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> alt="HEY WHA' HAPPENED?!"</iframe>
 
-Okay first, just breathe... Now let's start to work the problem.    
+Okay first, just breathe... Now let's start to work the problem.  
+(_"Incidentally,"_ [RIP Fred Willard](https://en.wikipedia.org/wiki/Fred_Willard){:target="_blank"}, who has absolutely nothing to do with Python. Whatsoever.)    
 
 ### We Need a Floating-Point Number!  
 
