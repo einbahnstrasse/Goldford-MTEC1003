@@ -63,13 +63,13 @@ Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-
 <a id="temperature"></a>
 ## 2. Recreating (and Debugging) _Temperature.html_ but in Python  
 
-This one's slightly more involved, so we'll do it together. Firstly, we need [a formula for our conversion](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf){:target="_blank"} from degrees in Celcius (°C) to degrees in Fahrenheit (°F):
+This one's slightly more involved, so we'll do it together. Firstly, we need [a formula for our conversion](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf){:target="_blank"} from degrees in Celsius (°C) to degrees in Fahrenheit (°F):
 
 $$ {F} = {\frac{9}{5}}C + 32 $$
 
 where:
   * F will be our result; i.e. degrees in Fahrenheit (°F), and  
-  * C is our "user input"; i.e. degrees in Celcius (°C)  
+  * C is our "user input"; i.e. degrees in Celsius (°C)  
 
 Maybe you found this formula, or one like it, when you made your JavaScript version in [Lab 6 / Part 1](/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html){:target="_blank"}. But how should we reconstruct it in Python?   
 
