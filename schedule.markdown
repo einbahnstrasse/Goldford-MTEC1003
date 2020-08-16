@@ -128,7 +128,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 6 / Part 1: JavaScript](/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html){:target="_blank"}  
-* [Lab 6 / Part 2: Easy Python Programs](/Goldford-MTEC1003-OL04/labs/06/lab-06-part2-python-basics.html){:target="_blank"}  
+* [Lab 6 / Part 2: Some Simple, Stupid Python Programs](/Goldford-MTEC1003-OL04/labs/06/lab-06-part2-python-basics.html){:target="_blank"}  
 
 * * *
 
