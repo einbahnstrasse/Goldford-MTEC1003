@@ -67,8 +67,8 @@ Write a Python program that:
 <div class="schedulingtable">
 <table>
 <colgroup>
-<col width="25%" />
-<col width="75%" />
+<col width="15%" />
+<col width="85%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -110,8 +110,11 @@ Write a Python program that:
 <td markdown="span">"Gotta eat that dinner."</td>
 </tr>
 <tr>
-<td markdown="span">any other time</td>
+<td markdown="span">21 to 23</td>
 <td markdown="span">"Get that SLEEP. And rePEAT!"</td>
+</tr>
+<td markdown="span">any other hour</td>
+<td markdown="span">"You didn't type an acceptable value! (0-23)"</td>
 </tr>
 </tbody>
 </table>
