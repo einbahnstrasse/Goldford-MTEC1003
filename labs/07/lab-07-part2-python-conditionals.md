@@ -146,13 +146,23 @@ Write the rest of your code below your `import datetime` line.
 
 You won't need to write much that's new. You'll need to **comment out** the existing user input line, where you previously used `input()` and `float()`. In its place, you'll need to use the `datetime` module to grab the current hour. It's really easy! just type the following:  
 
-  {% highlight py %} now = datetime.datetime.now()
+  {% highlight py %}  now = datetime.datetime.now()
   print(now.hour){% endhighlight %}
 
 Run your code in the Terminal, and you'll get a number between 0 and 23. This is your _current hour_. You can read more about how the `datetime` module works [here,](https://docs.python.org/3/library/datetime.html#module-datetime){:target="_blank"} but suffice it to say that we're calling the <i>class</i> object `datetime` <i>within</i> a module that also has the same name. So, that's why our syntax includes funny things like `datetime.dateime`.  
 
 Anyway, by printing `now.hour` you can easily retrieve the current hour in local time. Use its value with your conditions! Finish adapting your code so that your conditions respond to this current hour. Make sure to **save frequently** and **test** on the command line!  
 
-Save your code, make sure your **reminders.v02.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!
+Save your code, make sure your **reminders.v02.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
+
+Your final **/lab-07-conditionals** folder by the submission deadline should include the following files:  
+  * cake.html  
+  * cake.py  
+  * spanish.html  
+  * spanish.py  
+  * oddcalc.html  
+  * oddcalc.py  
+  * reminders.v01.py  
+  * reminders.v02.py  
 
 * * *

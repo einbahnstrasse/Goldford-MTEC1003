@@ -41,7 +41,7 @@ What if I told you... that you already know the two things in Python you'll need
 
 I bet you can do the rest...  
 
-Save your new code to a file called **saytwice.py**. Make sure it's in your **lab-06-review** repository!
+Save your new code to a file called **saytwice.py**. Make sure it's in your **/lab-06-review** repository!
 
 Now we just have to **test** our python script by running it on the command line.
 
@@ -207,6 +207,14 @@ Write your code below your `import sys` line, so that your output in the console
 
 Although you won't need it, feel free to try out Python's [pow() method](https://www.w3schools.com/python/ref_func_pow.asp){:target="_blank"} to aid in your calculation.  
 
-Save your code, make sure your **bmi.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!
+Save your code, make sure your **bmi.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
+
+Your final **/lab-06-review** folder by the submission deadline should include the following files:  
+  * saytwice.html  
+  * saytwice.py  
+  * shout.html  
+  * temperature.html  
+  * temperature.py  
+  * bmi.py  
 
 * * *

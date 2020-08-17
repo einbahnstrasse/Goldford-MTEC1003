@@ -98,10 +98,10 @@ If you're feeling comfortable, you can skip the 1st version of madlibs (i.e. the
 Make sure your file is included in your **/lab-05-js-py** folder, and don't forget to **add**, **commit**, and **push** your changes!  
 Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
 
-Your final **/lab-05-js-py** folder by the submission deadline should include the following:  
-* greetings.html  
-* greetings.py   
-* madlibs.html  
-* madlibs.py  
+Your final **/lab-05-js-py** folder by the submission deadline should include the following files:  
+  * greetings.html  
+  * greetings.py   
+  * madlibs.html  
+  * madlibs.py  
 
 * * *  
