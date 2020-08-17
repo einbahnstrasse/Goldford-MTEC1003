@@ -135,9 +135,6 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w7"></a>
 <h3 class="schedule-page-date">Week 7: October 19th</h3>
 ### Javascript + Python: Conditionals
-### Javascript + Python: Debugging
-
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Conditionals](/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html){:target="_blank"}  
@@ -152,7 +149,8 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <a id="w8"></a>
 <h3 class="schedule-page-date">Week 8: October 26th</h3>
-### Javascript + Python: For Loops
+### Javascript + Python: For Loops  
+### Javascript + Python: Debugging  
 <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
