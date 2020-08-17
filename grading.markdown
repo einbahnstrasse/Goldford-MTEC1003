@@ -105,13 +105,25 @@ _The following topics and their precise order may change. Check here for updates
 <td markdown="span">6</td>
 <td markdown="span">10/14</td>
 <td markdown="span">5</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w6" target="_blank">6.1 <i>More info coming soon!</i></a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w6" target="_blank">6.1 Basic JavaScript</a></td>
+</tr>
+<tr>
+<td markdown="span"></td>
+<td markdown="span"></td>
+<td markdown="span">5</td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w6" target="_blank">6.2 Some Simple, Stupid Python Programs</a></td>
 </tr>
 <tr>
 <td markdown="span">7</td>
 <td markdown="span">10/19</td>
 <td markdown="span">5</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w7" target="_blank">7.1 <i>More info coming soon!</i></a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w7" target="_blank">7.1 JavaScript Conditionals</a></td>
+</tr>
+<tr>
+<td markdown="span"></td>
+<td markdown="span"></td>
+<td markdown="span">5</td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w7" target="_blank">7.2 Python Conditionals</a></td>
 </tr>
 <tr>
 <td markdown="span">8</td>
