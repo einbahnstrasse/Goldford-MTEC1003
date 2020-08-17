@@ -113,6 +113,7 @@ Write a Python program that:
 <td markdown="span">21 to 23</td>
 <td markdown="span">"Get that SLEEP. And rePEAT!"</td>
 </tr>
+<tr>
 <td markdown="span">any other hour</td>
 <td markdown="span">"You didn't type an acceptable value! (0-23)"</td>
 </tr>
