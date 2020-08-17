@@ -179,7 +179,7 @@ _The following topics and their precise order may change. Check here for updates
 
 * * *
 
-**`90 Total Points`** for _Lab Assignments_
+**`??? Total Points`** for _Lab Assignments_
 
 
 ### II. Participation Scores
