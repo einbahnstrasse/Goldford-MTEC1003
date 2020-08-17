@@ -142,13 +142,11 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Conditionals](/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html){:target="_blank"}  
 * [JavaScript Conditionals — Revisited](/Goldford-MTEC1003-OL04/labs/07/js-conditionals-revisited.html){:target="_blank"}  
-* [Python + Booleans](/Goldford-MTEC1003-OL04/labs/07/dummy.html){:target="_blank"}  
+* [Booleans + Conditionals (Python + JS)](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.conditionals.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 7 / Part 1: JavaScript Conditionals](/Goldford-MTEC1003-OL04/labs/07/lab-07-part1-javascript-conditionals.html){:target="_blank"}  
-* [Lab 7 / Part 2: Python Conditionals](/Goldford-MTEC1003-OL04/labs/07/dummy.html){:target="_blank"}  
-
-<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
+* [Lab 7 / Part 2: Python Conditionals](/Goldford-MTEC1003-OL04/labs/07/lab-07-part2-python-conditionals.html){:target="_blank"}  
 
 * * *
 
