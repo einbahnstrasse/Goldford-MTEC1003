@@ -140,7 +140,7 @@ At the top of your new file on line 1, type the following:
 
   {% highlight py %} import datetime {% endhighlight %}
 
-`import` is a statement in Python that allows you to "import" a "module." In this case, `datetime` is the module we're importing. A Python module is basically a file containing more Python code; more functions, variables, classes, methods, etc. We're can use `datetime` to easily read the current system time and convert between a variety of formats. We can even use this set of tools to convert time between time zones!  
+`import` is a statement in Python that allows you to "import" a "module." In this case, `datetime` is the module we're importing. A Python module is basically a file containing more Python code; more functions, variables, classes, methods, etc. We can use `datetime` to easily read the current system time and convert between a variety of formats. We can even use this set of tools to convert time between time zones!  
 
 Write the rest of your code below your `import datetime` line.  
 
