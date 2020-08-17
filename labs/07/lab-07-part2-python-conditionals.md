@@ -14,7 +14,7 @@ layout: default
 <a href="#setup">Setup for Python3</a>  
 1. <a href="#js-stuff">Recreating JavaScript Conditional Exercises in Python</a>  
 2. <a href="#reminders-user">Reminders (User Input)</a>
-3. <a href="#bmi">Calculating Body Mass Index (BMI) in Python</a>
+3. <a href="#mod-reminders">Modified Reminders</a>
 
 * * *
 
@@ -61,7 +61,7 @@ Make sure your file is included in your **/lab-07-conditionals** repo, and don't
 Write a Python program that:
 * asks the user for the current hour (but in military time: 0-23), then  
 * converts the number from a string to a float,  
-* sets up a series of conditions based on the current time, and  
+* sets up a series of conditions based on the current hour, and  
 * prints one of the following **reminders:**  
 
 <div class="schedulingtable">
@@ -123,60 +123,36 @@ Write a Python program that:
 
 Save your code, calling it **reminders.v01.py**.
 
-Save your code, make sure your **reminders.v01.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
+Save your code, make sure your **reminders.v01.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
 
 * * *
 
-<a id="bmi"></a>
-## 3. Calculating Body Mass Index (BMI) in Python
+<a id="mod-reminders"></a>
+## 3. Modified Reminders
 
-Let's do something we haven't already done in JavaScript...  
-Dunno about you, but the pandemic has led to me gaining some weight......... :$  
+Save a new version of your reminders.v01.py file, and call it: **reminders.v02.py**.  
 
-### How would you calculate the percentage of fat on a person's body?  
+In this new version, let's modify the current code so that _instead of user input,_ the program takes the _actual current time._  
 
-To do this we use [a formula for Body Mass Index (BMI)](https://www.pleacher.com/mp/mlessons/algebra/funform.pdf){:target="_blank"}:  
-
-$$ {BMI} = \frac{703 \times W}{H^2} $$
-
-where:
-  * W is a person's weight (in pounds), and  
-  * H is their height (in inches).  
-
-With just these two inputs to the equation, we can describe a person's BMI; the percentage of their body weight that is fat.  
-
-### How would we accomplish this with Python?  
-
-As you can imagine, you'll need to start by asking the user for some input.  
-In this case, you'll need to:  
-1. ask the user for two things, and  
-2. create separate variables and prompts for each. Then,  
-3. you'll convert the strings into floats (just like we did in _temperature_ above),
-4. make your equation (using the formula for BMI above),    
-5. convert the result back into a string, and finally  
-6. print the final result to the console.
-
-So, in your text editor, create a new file and call it **bmi.py**, and get started!
-
-### import sys
+### import datetime
 
 At the top of your new file on line 1, type the following:  
 
-  {% highlight py %} import sys {% endhighlight %}
+  {% highlight py %} import datetime {% endhighlight %}
 
-`import` is a statement in Python that allows you to "import" a "module." In this case, `sys` is the module we're importing. A Python module is basically a file containing more Python code; more functions, variables, classes, methods, etc. We're using `sys` here to be sure you won't get any errors resulting from weird characters you may type, or those that might throw errors on the command line. You might try safeguarding yourself with this particular module in some of your other Python files too!
+`import` is a statement in Python that allows you to "import" a "module." In this case, `datetime` is the module we're importing. A Python module is basically a file containing more Python code; more functions, variables, classes, methods, etc. We're can use `datetime` to easily read the current system time and convert between a variety of formats. We can even use this set of tools to convert time between time zones!  
 
-Write your code below your `import sys` line, so that your output in the console resembles this:
+Write the rest of your code below your `import datetime` line.  
 
-  {% highlight terminal %}
-  $ python /Users/louisgoldford/mtec1003/lab-06-review/bmi.py  
-  Enter your weight (in pounds): 153
-  Okay, also enter your height (in inches): 68
-  Your body mass index (BMI) is 23.2610294118%
-  $ {% endhighlight %}
+You won't need to write much that's new. You'll need to **comment out** the existing user input line, where you previously used `input()` and `float()`. In its place, you'll need to use the `datetime` module to grab the current hour. It's really easy! just type the following:  
 
-Although you won't need it, feel free to try out Python's [pow() method](https://www.w3schools.com/python/ref_func_pow.asp){:target="_blank"} to aid in your calculation.  
+  {% highlight py %} now = datetime.datetime.now()
+    print(now.hour){% endhighlight %}
 
-Save your code, make sure your **bmi.py** file is included in your **/lab-06-review** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!
+Run your code in the Terminal, and you'll get a number between 0 and 23. This is your _current hour_. You can read more about how the `datetime` module works [here,](https://docs.python.org/3/library/datetime.html#module-datetime){:target="_blank"} but suffice it so say that we're calling a <i>class</i> object called datetime <i>within</i> a module that has the same name. So, that's why our syntax includes funny things like `datetime.dateime`.  
+
+Anyway, by printing `now.hour` you can easily retrieve the current hour in local time. Finish adapting your code so that your conditions are respoding to the current hour. Make sure to **save frequently** and **test** on the command line!  
+
+Save your code, make sure your **reminders.v02.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!
 
 * * *
