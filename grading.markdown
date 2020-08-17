@@ -195,4 +195,4 @@ _The following topics and their precise order may change. Check here for updates
 
 ### III. Altogether, thats...
 
-**`290 Total Points`** for the course as a whole.
+**`??? Total Points`** for the course as a whole.
