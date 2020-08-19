@@ -60,15 +60,15 @@ Now, type `return` and see what happens:
 
 {% highlight js %}{
 
-  }{% endhighlight %}
+}{% endhighlight %}
 
 Even better! Instead of dropping one line, it drops two, and it properly places your cursor indented on the middle line, so that you're ready to type code inside your brackets. It also properly indented the closing bracket for you on the third line.  
 
 So now, with your cursor positioned on that middle line, type _another_ **left curly bracket** &#8594; `{`  
 
-  {% highlight js %}{
-      {}
-    }{% endhighlight %}
+{% highlight js %}{
+  {}
+}{% endhighlight %}
 
 As expected, it properly autofills the closing bracket. Now type `return` one more time:
 
