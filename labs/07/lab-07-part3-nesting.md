@@ -73,32 +73,32 @@ So now, with your cursor positioned on that middle line, type _another_ **left c
 As expected, it properly autofills the closing bracket. Now type `return` one more time:
 
 {% highlight js %}{
-    {
+  {
 
-    }
-  }{% endhighlight %}
+  }
+}{% endhighlight %}
 
 And voilà! It properly indented things again, which helps us visualize the placement of each pair of brackets.  
 
 We can do this endlessly, embedding one pair of brackets in another like some kind of weird obsession...  
 
 {% highlight js %}{
+  {
     {
       {
         {
-          {
-            console.log("Okay, this is ridiculous. Why are we doing this??");
-          }
+          console.log("Okay, this is ridiculous. Why are we doing this??");
         }
       }
     }
-  }{% endhighlight %}
+  }
+}{% endhighlight %}
 
 This is called _nesting._ We can _nest_ one pair of brackets inside another.  
 
 This means we can also _nest_ blocks of code _inside_ other blocks of code. Which is great, because we need this to reproduce the flowchart above. This is what we want!  
 
-Try placing your cursor next to one of your left opening brackets. It should <span style="background-color: #FFFF00">highlight</span> (or in many cases <ins>underline</ins>) both your opening bracket AND the corresponding closing bracket, which further helps you keep track of your code; not only does it help draw your eyes to the right place, it also makes sure you haven't forgotten your closing bracket!  
+Try placing your cursor next to one of your left opening brackets. It should <span style="background-color: #FFFF00; color: #000000;">highlight</span> (or in many cases <ins>underline</ins>) both your opening bracket AND the corresponding closing bracket, which further helps you keep track of your code; not only does it help draw your eyes to the right place, it also makes sure you haven't forgotten your closing bracket!  
 
 
 
