@@ -47,7 +47,9 @@ Our goal for this lab will be to turn the following flowchart into a Python or J
 
 But... do you notice anything different? Do you see the "branching" effect of this flowchart? How you answer the 1st question determines the "path" taken along the chart, and how you answer the 2nd question will determine 1 of 4 possible "final" outcomes.  
 
-To accomplish this, we'll need to talk about writing _multiple_ conditional statements and, most importantly, _nesting_ our conditions within one another...
+To accomplish this, we'll need to talk about writing _multiple_ conditional statements and, most importantly, _nesting_ our conditions within one another...  
+
+* * *
 
 <a id="nest-brackets"></a>
 ## 2. Nesting brackets in JavaScript   
