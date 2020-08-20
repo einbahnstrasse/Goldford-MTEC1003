@@ -217,7 +217,12 @@ elif myVar == "no":
 else:
   print("Answer my question! You didn't type yes or no."){% endhighlight %}
 
-See how the precise level of indentation in Python mimics the exact placement of brackets in JavaScript?  
+What differences do you notice in the syntax?  
+
+If there's one major takeaway from this lesson on the differences between JavaScript and Python, let it be this:  
+
+<div class="instructornote">  
+<p markdown="span"><em><b>The precise level of indentation in Python mimics the exact placement of brackets in JavaScript.</b></em></p></div>  
 
 In particular, notice how the indent of line 8 ("else:") compares to line 10 ("elif myVar == 'no'"). Line 8 is indented by one `tab` farther than line 10, which means line 10 is part of the _outer condition._  
 
