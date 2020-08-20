@@ -114,7 +114,7 @@ We can do this endlessly, embedding one pair of brackets in another like some ki
   }
 }{% endhighlight %}
 
-This is called _nesting._ We can _nest_ one pair of brackets inside another.  
+This is called _nesting_ (also referred to as _branching_). We can _nest_ one pair of brackets inside another.  
 
 This means we can also _nest_ blocks of code _inside_ other blocks of code. Which is great, because we need this to reproduce the flowchart above. This is what we want!  
 
