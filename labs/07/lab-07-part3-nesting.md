@@ -52,7 +52,7 @@ Briefly, compare the branching of our flowchart with the branching below. The im
 
 <img src="/Goldford-MTEC1003-OL04/labs/07/cantorset0-6.png" alt="cantor dust" width="800">  
 
-In the geometry above, branches are created by taking away the middle segment of each line. Even more interesting is that from _point-to-line,_ then _point-to-plane,_ and finally _plane-to-quadrilateral,_ we can even [create this branching process in all 3 dimensions!](https://www.robertdickau.com/cantor3d.png){:target="_blank"} This system of branches mimics what happens in the flowchart above, as each question breaks down into more questions or more statements, like branches of a tree.  
+In the geometry above, branches are created by taking away the middle segment of each new line. Even more interesting is that from _point-to-line,_ then _point-to-plane,_ and finally _plane-to-quadrilateral,_ we can even [create this branching process in all 3 dimensions!](https://www.robertdickau.com/cantor3d.png){:target="_blank"} This system of branches mimics what happens in the flowchart above, as each question breaks down into more questions or more statements, like branches of a tree.  
 
 We'll talk more about branching later. But for now, our task is clear: when it comes to coding even the easiest of flowcharts, we will need a system to support making branches within our code.  
 
