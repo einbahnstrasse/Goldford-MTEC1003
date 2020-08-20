@@ -16,7 +16,7 @@ In this lab you'll:
 
 #### C O N T E N T S  
 <a href="#setup">Setup for Python3</a>  
-1. <a href="#hard-flowchart">This flowchart is harder than it looks.</a>  
+1. <a href="#hard-flowchart">Interpreting a Flowchart: Conditions Within Conditions</a>  
 2. <a href="#nest-brackets">Nesting Brackets in a Text Editor (in JavaScript)</a>
 3. <a href="#nest-states">Nesting conditional statements</a>
 4. <a href="#version-py">The Python version</a>
@@ -38,7 +38,7 @@ Once you've done this, you're all set.
 * * *  
 
 <a id="hard-flowchart"></a>
-## 1. This flowchart is harder than it looks.      
+## 1. Interpreting a Flowchart: Conditions Within Conditions  
 
 Our goal for this lab will be to turn the following flowchart into a Python or JavaScript program. It will be a program consisting of a series of _conditional statements:_  
 
