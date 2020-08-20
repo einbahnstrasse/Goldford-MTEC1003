@@ -114,9 +114,9 @@ Now, make your first (i.e. "outer") conditional statement by typing the followin
 
 {% highlight js linenos %}var move = prompt("Does it move? (yes/no)");
 if (move == "yes") {
-  _our 1st "then" statement here_
+  <i>our 1st "then" statement here</i>
 } else if (move == "no") {
-  _our 2nd "then" statement here_
+  <i>our 2nd "then" statement here</i>
 } else {
   console.log("Answer my question! You didn't type yes or no.");
 }{% endhighlight %}
@@ -135,14 +135,14 @@ Repeat these steps to create the _same format_ for the code above:
 if (move == "yes") {
   var should = prompt("Should it? (yes/no)");
   if (should == "yes") {
-    _another 1st "then" statement_
+    <i>another 1st "then" statement</i>
   } else if (should == "no") {
-    _another 2nd "then" statement_
+    <i>another 2nd "then" statement</i>
   } else {
     console.log("Answer my question! You didn't type yes or no.");
   }
 } else if (move == "no") {
-  _our 2nd "then" statement here_
+  <i>our 2nd "then" statement here</i>
 } else {
   console.log("Answer my question! You didn't type yes or no.");
 }{% endhighlight %}
@@ -162,7 +162,7 @@ if (move == "yes") {
     console.log("Answer my question! You didn't type yes or no.");
   }
 } else if (move == "no") {
-  _our 2nd "then" statement here_
+  <i>our 2nd "then" statement here</i>
 } else {
   console.log("Answer my question! You didn't type yes or no.");
 }{% endhighlight %}
@@ -183,9 +183,9 @@ Recall the basic formula for a conditional statement in Python:
 
 {% highlight py linenos %}myVar = input("What is your answer? yes/no")  
 if myVar == "yes":
-	_our 1st "then" statement here_
+  <i>our 1st "then" statement here</i>
 elif myVar == "no":
-	_our 2nd "then" statement here_
+  <i>our 2nd "then" statement here</i>
 else:
   print("Answer my question! You didn't type yes or no."){% endhighlight %}
 
@@ -195,15 +195,15 @@ Then, create the first "nested" condition in Python, beginning on line 3 above, 
 
 {% highlight py linenos %}myVar = input("What is your answer to my 1st question? (yes/no) ")  
 if myVar == "yes":
-	myNextVar = input("What is your answer to my 2nd question? (yes/no) ")
+  myNextVar = input("What is your answer to my 2nd question? (yes/no) ")
   if myNextVar == "yes":
-    _another 1st "then" statement_
+    <i>another 1st "then" statement</i>
   elif myNextVar == "no":
-    _another 2nd "then" statement_
+    <i>another 2nd "then" statement</i>
   else:
     print("Answer my question! You didn't type yes or no.")
 elif myVar == "no":
-	_our 2nd "then" statement here_
+  <i>our 2nd "then" statement here</i>
 else:
   print("Answer my question! You didn't type yes or no."){% endhighlight %}
 
