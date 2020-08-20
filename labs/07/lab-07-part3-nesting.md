@@ -123,9 +123,9 @@ Now, make your first (i.e. "outer") conditional statement by typing the followin
 
 {% highlight js linenos %}var move = prompt("Does it move? (yes/no)");
 if (move == "yes") {
-  [our 1st "then" statement here]
+  [our 1st "then" statement here];
 } else if (move == "no") {
-  [our 2nd "then" statement here]
+  [our 2nd "then" statement here];
 } else {
   console.log("Answer my question! You didn't type yes or no.");
 }{% endhighlight %}
@@ -144,14 +144,14 @@ Repeat these steps to create the _same format_ for the code above:
 if (move == "yes") {
   var should = prompt("Should it? (yes/no)");
   if (should == "yes") {
-    [another 1st "then" statement]
+    [another 1st "then" statement];
   } else if (should == "no") {
-    [another 2nd "then" statement]
+    [another 2nd "then" statement];
   } else {
     console.log("Answer my question! You didn't type yes or no.");
   }
 } else if (move == "no") {
-  [our 2nd "then" statement here]
+  [our 2nd "then" statement here];
 } else {
   console.log("Answer my question! You didn't type yes or no.");
 }{% endhighlight %}
