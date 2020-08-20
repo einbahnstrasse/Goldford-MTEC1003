@@ -132,9 +132,9 @@ if (move == "yes") {
 
 Notice that we defined the variable `move`, which will store the string `"yes"` or `"no"` and serve as our _boolean value._  
 
-So, what will our “then” clauses look like inside these brackets, i.e. on lines 3 and 5?  
+So, what will our "then" clauses look like inside these brackets, i.e. on lines 3 and 5?  
 
-Check the original flowchart and notice that _another if/then/else conditional_ will be needed to serve as the "then" clause in _each_ of our "if" and "else if" statements. The "if" and "else if" portions are the yes/no responses to our first question, "Does it move?" Notice there's one other possibility: that the user neither types "yes" or "no" but some unacceptable response. This scenario becomes our final "else" statement.  
+Check the original flowchart and notice that _another if/then/else conditional_ will be needed to serve as the "then" clause in _each_ of our "if" and "else if" clauses. The "if" and "else if" portions are the yes/no responses to our first question, "Does it move?" Notice there's one other possibility: that the user neither types "yes" or "no" but some unacceptable response. This scenario becomes our final "else" statement.  
 
 So this means we need to "nest" or "embed" another set of conditions _inside_ our first (i.e. "outer") condition. The outcome of the question "Does it move?" will determine what question comes next, as the flowchart shows us.  
 
@@ -158,7 +158,7 @@ if (move == "yes") {
 
 Now we've got our first "inside" condition planted firmly inside the outer "if" statement, i.e. lines 3-10 above. Look again at the flowchart to see what the "then"/consequent statements should be on lines 5 and 7. One should print "no problem" and the other should tell us something about duct tape, according to the picture.  
 
-Fill in these missing “then” clauses like so:  
+Fill in these missing "then" clauses like so:  
 
 {% highlight js linenos %}var move = prompt("Does it move? (yes/no)");
 if (move == "yes") {
