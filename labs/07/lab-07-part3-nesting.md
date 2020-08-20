@@ -48,7 +48,7 @@ We'll make our program as a series of _conditional statements:_
 
 Notice the "branching" effect: Imagine the structure of the flowchart to be like a tree. How you answer the 1st question (i.e. the tree "trunk") determines the "path" taken within the flowchart, and how you answer the 2nd question (i.e. the "branches" of our tree) will determine 1 of 4 possible "final" outcomes.  
 
-Briefly, compare the flowchart with the branching below.  
+<!-- Briefly, compare the flowchart with the branching below.  
 This image is often referred to as [_Cantor dust:_](https://www.robertdickau.com/cantor.html){:target="_blank"}  
 
 <img src="/Goldford-MTEC1003-OL04/labs/07/cantorset0-6.png" alt="cantor dust" width="800">  
@@ -57,7 +57,7 @@ meaning that, as each new "branch" is created, eventually the line breaks down i
 
 In this geometry, branches are created by taking away the middle segment of each new line. Even more interesting is that from _point-to-line,_ then _line-to-plane,_ and finally _plane-to-quadrilateral,_ we can [create this branching process in all 3 dimensions!](https://www.robertdickau.com/cantor3d.png){:target="_blank"}  
 
-This system of branching mimics what happens in the flowchart above, as each question breaks down into more questions and more statements, like the branches of a tree.  
+This system of branching mimics what happens in the flowchart above, as each question breaks down into more questions and more statements, like the branches of a tree.   -->
 
 We'll talk more about branching later. But for now, our task is clear:  
 for coding even the easiest of flowcharts, we will need a system to support making branches within our code.  
@@ -117,9 +117,9 @@ We can do this endlessly, embedding one pair of brackets in another like some ki
   }
 }{% endhighlight %}
 
-This is called _nesting_ (also referred to as _branching_). We can _nest_ one pair of brackets inside another.  
+This is called _nesting_. We can _nest_ one pair of brackets inside another.  
 
-This means we can also _nest_ blocks of code _inside_ other blocks of code. Which is great, because we need this to reproduce the flowchart above. This is what we want!  
+This means we can also _nest_ blocks of code _inside_ other blocks of code; in order to create our "branches". Which is great, because we need this to reproduce the flowchart above. This is what we want!  
 
 Try placing your cursor next to one of your left opening brackets. It should <span style="background-color: #FFFF00; color: #000000;">highlight</span> (or in many cases <ins>underline</ins>) both your opening bracket AND the corresponding closing bracket, which further helps you keep track of your code; not only does it help draw your eyes to the right place, it also makes sure you haven't forgotten your closing bracket!  
 
