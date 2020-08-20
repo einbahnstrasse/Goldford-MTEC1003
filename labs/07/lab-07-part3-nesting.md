@@ -64,7 +64,7 @@ Notice what happens:
 
 Amazing! You typed one open bracket, and it kindly autofills the closing bracket that you'll need later.  
 
-Now, type `return` and see what happens:
+Now, press `return` and see what happens:
 
 {% highlight js %}{
 
@@ -78,7 +78,7 @@ So now, with your cursor positioned on that middle line, type _another_ **left c
   {}
 }{% endhighlight %}
 
-As expected, it properly autofills the closing bracket. Now type `return` one more time:
+As expected, it properly autofills the closing bracket. Now press `return` one more time:
 
 {% highlight js %}{
   {
