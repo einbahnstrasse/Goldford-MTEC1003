@@ -232,7 +232,7 @@ Your final **/lab-07-conditionals** folder by the submission deadline should inc
   * oddcalc.py  
   * reminders.v01.py  
   * reminders.v02.py  
-  * flowchart.HTML  
+  * flowchart.html    
   * flowchart.py  
 
 * * *
