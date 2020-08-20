@@ -59,7 +59,8 @@ In this geometry, branches are created by taking away the middle segment of each
 
 This system of branching mimics what happens in the flowchart above, as each question breaks down into more questions and more statements, like the branches of a tree.  
 
-We'll talk more about branching later. But for now, our task is clear: for coding even the easiest of flowcharts, we will need a system to support making branches within our code.  
+We'll talk more about branching later. But for now, our task is clear:  
+for coding even the easiest of flowcharts, we will need a system to support making branches within our code.  
 
 To accomplish this, we'll discuss _multiple_ conditional statements and, most importantly, _nesting_ our conditions within one another...  
 
