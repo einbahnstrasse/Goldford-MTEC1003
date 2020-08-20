@@ -144,6 +144,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 7 / Part 1: JavaScript Conditionals](/Goldford-MTEC1003-OL04/labs/07/lab-07-part1-javascript-conditionals.html){:target="_blank"}  
 * [Lab 7 / Part 2: Python Conditionals](/Goldford-MTEC1003-OL04/labs/07/lab-07-part2-python-conditionals.html){:target="_blank"}  
+* [Lab 7 / Part 3: Nesting](/Goldford-MTEC1003-OL04/labs/07/lab-07-part3-nesting.html){:target="_blank"}  
 
 * * *
 

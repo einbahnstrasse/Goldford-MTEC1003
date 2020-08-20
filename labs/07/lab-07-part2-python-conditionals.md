@@ -21,7 +21,7 @@ layout: default
 <a id="setup"></a>
 ## Setup for Python3   
 
-Let's be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling `python` on the command line. We can crete an "alias" for python3 by running the following command:  
+Let's be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling `python` on the command line. We can create an "alias" for python3 by running the following command:  
 
   {% highlight terminal %}
   $ alias python=/usr/local/bin/python3 {% endhighlight %}
@@ -155,7 +155,7 @@ Anyway, by printing `now.hour` you can easily retrieve the current hour in local
 
 Save your code, make sure your **reminders.v02.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
 
-Your final **/lab-07-conditionals** folder by the submission deadline should include the following files:  
+At the end of this lab, your **/lab-07-conditionals** folder should contain the following files:  
   * cake.html  
   * cake.py  
   * spanish.html  
@@ -164,5 +164,7 @@ Your final **/lab-07-conditionals** folder by the submission deadline should inc
   * oddcalc.py  
   * reminders.v01.py  
   * reminders.v02.py  
+
+_Now, on to Lab 7 / Part 3!_
 
 * * *

@@ -126,6 +126,12 @@ _The following topics and their precise order may change. Check here for updates
 <td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w7" target="_blank">7.2 Python Conditionals</a></td>
 </tr>
 <tr>
+<td markdown="span"></td>
+<td markdown="span"></td>
+<td markdown="span">5</td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w7" target="_blank">7.3 Nesting</a></td>
+</tr>
+<tr>
 <td markdown="span">8</td>
 <td markdown="span">10/26</td>
 <td markdown="span">5</td>
