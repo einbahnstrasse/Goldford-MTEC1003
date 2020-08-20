@@ -12,9 +12,10 @@ layout: default
 
 #### C O N T E N T S  
 <a href="#setup">Setup for Python3</a>  
-1. <a href="#js-stuff">Recreating JavaScript Conditional Exercises in Python</a>  
-2. <a href="#reminders-user">Reminders (User Input)</a>
-3. <a href="#mod-reminders">Modified Reminders</a>
+1. <a href="#hard-flowchart">This flowchart is harder than it looks.</a>  
+2. <a href="#nest-brackets">Nesting brackets in JavaScript</a>
+3. <a href="#nest-states">Nesting conditional statements</a>
+4. <a href="#version-py">The Python version</a>
 
 * * *
 
@@ -32,8 +33,8 @@ Once you've done this, you're all set.
 
 * * *  
 
-<a id="js-stuff"></a>
-## 1. This flowchart is harder than it looks      
+<a id="hard-flowchart"></a>
+## 1. This flowchart is harder than it looks.      
 
 Our goal for this lab will be to turn the following flowchart into a Python or JavaScript program. It will be a program consisting of a series of _conditional statements:_  
 
@@ -44,7 +45,8 @@ But... do you notice anything different? Do you see the "branching" effect of th
 
 To accomplish this, we'll need to talk about writing _multiple_ conditional statements and, most importantly, _nesting_ our conditions within one another...
 
-## 1. Nesting brackets in JS  
+<a id="nest-brackets"></a>
+## 2. Nesting brackets in JavaScript   
 
 In your text editor (Atom, Sublime Text, etc.), make a new file and save it with the name **nesting.js** inside your **/lab-07-conditionals** folder, so that it immediately gives us the proper highlighting syntax.  
 
@@ -102,7 +104,8 @@ Try placing your cursor next to one of your left opening brackets. It should <sp
 
 * * *
 
-## 2. Nesting conditional statements  
+<a id="nest-states"></a>
+## 3. Nesting conditional statements  
 
 Let's use this technique to nest different "layers" of conditions.  
 
@@ -175,7 +178,8 @@ Can you finish the flowchart by _nesting_ one last series of conditions? Give it
 
 * * *
 
-## 3. The Python version
+<a id="version-py"></a>
+## 4. The Python version
 
 Doing it in JavaScript first make it totally clear what the boundaries of our conditions are — thanks to the brackets JavaScript requires. We can easily make the same program in Python, but it's slightly more confusing without the brackets. You probably already know that instead of brackets and semicolons, Python uses indentation and the colon.  
 
