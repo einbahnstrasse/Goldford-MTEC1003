@@ -45,7 +45,7 @@ Our goal for this lab will be to turn the following flowchart into Python and Ja
 <img src="/Goldford-MTEC1003-OL04/labs/07/engineering-flow-chart.png" alt="engineering flow chart" width="600">  
 [view source](https://cacoo.com/blog/12-funny-flowcharts-help-navigate-lifes-toughest-decisions/){:target="_blank"}
 
-Notice the "branching" effect: How you answer the 1st question determines the "path" taken within the flowchart, and how you answer the 2nd question will determine 1 of 4 possible "final" outcomes.  
+Notice the "branching" effect: Imagine the structure of the flowchart to be like a tree. How you answer the 1st question (i.e. the tree "trunk") determines the "path" taken within the flowchart, and how you answer the 2nd question (i.e. the "branches" of our tree) will determine 1 of 4 possible "final" outcomes.  
 
 To accomplish this, we'll need to talk about writing _multiple_ conditional statements and, most importantly, _nesting_ our conditions within one another...  
 
