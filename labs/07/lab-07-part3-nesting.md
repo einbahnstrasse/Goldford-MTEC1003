@@ -18,7 +18,7 @@ In this lab you'll:
 <a href="#setup">Setup for Python3</a>  
 1. <a href="#flowchart-intro">Branch Upon Branch, Condition Within Condition</a>  
 2. <a href="#nest-brackets">Nesting Brackets in a Text Editor (in JavaScript)</a>
-3. <a href="#nest-states">Nesting conditional statements</a>
+3. <a href="#nest-states">Nesting Conditional Statements (in JavaScript)</a>
 4. <a href="#version-py">The Python version</a>
 
 * * *
@@ -112,7 +112,7 @@ Try placing your cursor next to one of your left opening brackets. It should <sp
 * * *
 
 <a id="nest-states"></a>
-## 3. Nesting conditional statements  
+## 3. Nesting Conditional Statements (in JavaScript)  
 
 Let's use this technique to nest different "layers" of conditions.  
 
