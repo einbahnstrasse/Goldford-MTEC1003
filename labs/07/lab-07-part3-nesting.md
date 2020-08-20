@@ -224,11 +224,11 @@ In particular, notice how the indent of line 8 ("else:") compares to line 10 ("e
 Can you finish the flowchart by filling in the right variable names and consequences, then _nesting_ your last conditions using Python syntax? Give it a try, test it in the Termianl, save your code, make sure your **flowchart.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.HTML){:target="_blank"} if you need it!
 
 Your final **/lab-07-conditionals** folder by the submission deadline should include the following files:  
-  * cake.HTML  
+  * cake.html  
   * cake.py  
-  * spanish.HTML  
+  * spanish.html  
   * spanish.py  
-  * oddcalc.HTML  
+  * oddcalc.html  
   * oddcalc.py  
   * reminders.v01.py  
   * reminders.v02.py  
