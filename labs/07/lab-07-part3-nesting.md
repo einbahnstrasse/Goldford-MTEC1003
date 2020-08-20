@@ -17,7 +17,7 @@ In this lab you'll:
 #### C O N T E N T S  
 <a href="#setup">Setup for Python3</a>  
 1. <a href="#hard-flowchart">This flowchart is harder than it looks.</a>  
-2. <a href="#nest-brackets">Nesting brackets in JavaScript</a>
+2. <a href="#nest-brackets">Nesting Brackets in a Text Editor (in JavaScript)</a>
 3. <a href="#nest-states">Nesting conditional statements</a>
 4. <a href="#version-py">The Python version</a>
 
@@ -52,7 +52,7 @@ To accomplish this, we'll need to talk about writing _multiple_ conditional stat
 * * *
 
 <a id="nest-brackets"></a>
-## 2. Nesting brackets in JavaScript   
+## 2. Nesting Brackets in a Text Editor (in JavaScript)  
 
 In your text editor (Atom, Sublime Text, etc.), make a new file and save it with the name **nesting.js** inside your **/lab-07-conditionals** folder, so that it immediately gives us the proper highlighting syntax.  
 
