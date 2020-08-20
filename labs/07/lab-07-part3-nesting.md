@@ -40,7 +40,8 @@ Once you've done this, you're all set.
 <a id="flowchart-intro"></a>
 ## 1. Branch Upon Branch, Condition Within Condition  
 
-Our goal for this lab will be to turn the following flowchart into Python and JavaScript programs. We'll make our program as a series of _conditional statements:_  
+Our goal for this lab will be to turn the following flowchart into Python and JavaScript programs.  
+We'll make our program as a series of _conditional statements:_  
 
 <img src="/Goldford-MTEC1003-OL04/labs/07/engineering-flow-chart.png" alt="engineering flow chart" width="600">  
 [view source](https://cacoo.com/blog/12-funny-flowcharts-help-navigate-lifes-toughest-decisions/){:target="_blank"}
