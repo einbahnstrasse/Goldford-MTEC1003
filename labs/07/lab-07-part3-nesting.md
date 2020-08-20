@@ -6,7 +6,7 @@ layout: default
 ---
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.HTML -->
 
 # Lab 7 / Part 3: Nesting Conditional Statements  
 
@@ -115,7 +115,7 @@ Let's use this technique to nest different "layers" of conditions.
 
 Close the file you were working with (you can delete it, honestly. We won't need **nesting.js** for the lab.)  
 
-Set up a _new_ HTMl file as you usually do, and open up `<script></script>` tags. Call this one **flowchart.html**.  
+Set up a _new_ HTML file as you usually do, and open up `<script></script>` tags. Call this one **flowchart.HTML**.  
 
 Now, make your first (i.e. "outer") conditional statement by typing the following:  
 
@@ -178,7 +178,7 @@ Notice on line 3 above that we defined a new variable `should` to store the _boo
 
 We're almost done. We just need to repeat these steps and fill in the last of our "inner" conditions, i.e. to expand line 12 above. By this we mean coding up the _right_ side of our flowchart; i.e. what happens if the user answers "no" to our first question, "Does it move?"  
 
-Can you finish the flowchart by _nesting_ one last series of conditions? Give it a try, test it in Chrome, save your code, make sure your **flowchart.html** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
+Can you finish the flowchart by _nesting_ one last series of conditions? Give it a try, test it in Chrome, save your code, make sure your **flowchart.HTML** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.HTML){:target="_blank"} if you need it!  
 
 * * *
 
@@ -219,18 +219,18 @@ See how the precise level of indentation in Python mimics the exact placement of
 
 In particular, notice how the indent of line 8 ("else:") compares to line 10 ("elif myVar == 'no'"). Line 8 is indented by one `tab` further than line 10, which means line 10 is part of the _outer condition._  
 
-Can you finish the flowchart by filling in the right variable names and consequences, then _nesting_ your last conditions using Python syntax? Give it a try, test it in the Termianl, save your code, make sure your **flowchart.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!
+Can you finish the flowchart by filling in the right variable names and consequences, then _nesting_ your last conditions using Python syntax? Give it a try, test it in the Termianl, save your code, make sure your **flowchart.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.HTML){:target="_blank"} if you need it!
 
 Your final **/lab-07-conditionals** folder by the submission deadline should include the following files:  
-  * cake.html  
+  * cake.HTML  
   * cake.py  
-  * spanish.html  
+  * spanish.HTML  
   * spanish.py  
-  * oddcalc.html  
+  * oddcalc.HTML  
   * oddcalc.py  
   * reminders.v01.py  
   * reminders.v02.py  
-  * flowchart.html  
+  * flowchart.HTML  
   * flowchart.py  
 
 * * *
