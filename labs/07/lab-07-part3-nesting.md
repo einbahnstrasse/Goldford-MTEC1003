@@ -48,13 +48,13 @@ We'll make our program as a series of _conditional statements:_
 
 Notice the "branching" effect: Imagine the structure of the flowchart to be like a tree. How you answer the 1st question (i.e. the tree "trunk") determines the "path" taken within the flowchart, and how you answer the 2nd question (i.e. the "branches" of our tree) will determine 1 of 4 possible "final" outcomes.  
 
-Briefly, compare the branching of our flowchart with the branching below. The image below is often referred to as [cantor dust](https://www.robertdickau.com/cantor.html){:target="_blank"}:  
+Briefly, compare the branching of our flowchart with the branching below. The image below is often referred to as [_Cantor dust:_](https://www.robertdickau.com/cantor.html){:target="_blank"}  
 
 <img src="/Goldford-MTEC1003-OL04/labs/07/cantorset0-6.png" alt="cantor dust" width="800">  
 
-In the image above, branches are created by taking away the middle segment of each line. Even more interesting is that from point-to-line, point-to-plane, and plane-to-quadrilateral, we can even [create this branching process in all 3 dimensions!](https://www.robertdickau.com/cantor3d.png){:target="_blank"} Geometrically, this system of creating branches mimics what happens in the flowchart above, as each question breaks down into more questions or more statements.  
+In the geometry above, branches are created by taking away the middle segment of each line. Even more interesting is that from _point-to-line,_ then _point-to-plane,_ and finally _plane-to-quadrilateral,_ we can even [create this branching process in all 3 dimensions!](https://www.robertdickau.com/cantor3d.png){:target="_blank"} This system of branches mimics what happens in the flowchart above, as each question breaks down into more questions or more statements, like branches of a tree.  
 
-We'll talk more about "branching" later. But for now, our task is clear: when it comes to coding even the easiest of flowcharts that include any sort of branching process, we will need a system to support making branches within our code.  
+We'll talk more about branching later. But for now, our task is clear: when it comes to coding even the easiest of flowcharts, we will need a system to support making branches within our code.  
 
 To accomplish this, we'll need to talk about writing _multiple_ conditional statements and, most importantly, _nesting_ our conditions within one another...  
 
