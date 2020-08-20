@@ -180,7 +180,7 @@ Notice on line 3 above that we defined a new variable `should` to store the _boo
 
 We're almost done. We just need to repeat these steps and fill in the last of our "inner" conditions, i.e. to expand line 12 above. By this we mean coding up the _right_ side of our flowchart; i.e. what happens if the user answers "no" to our first question, "Does it move?"  
 
-Can you finish the flowchart by _nesting_ one last series of conditions? Give it a try, test it in Chrome, save your code, make sure your **flowchart.HTML** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.HTML){:target="_blank"} if you need it!  
+Finish the flowchart by _nesting_ one last series of conditions. Test it in Chrome, save your code, make sure your **flowchart.HTML** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.HTML){:target="_blank"} if you need it!  
 
 * * *
 
@@ -226,7 +226,7 @@ If there's one major takeaway from this lesson on the differences between JavaSc
 
 In particular, notice how the indent of line 8 compares to line 10: line 8 is indented by one `tab` farther than line 10, which means line 10 is part of our _outer condition._  
 
-Can you finish the flowchart by filling in the right variable names and consequences, then _nesting_ your last conditions using Python syntax? Give it a try, test it in the Termianl, save your code, make sure your **flowchart.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.HTML){:target="_blank"} if you need it!
+Finish the flowchart by filling in the right variable names and consequences, then _nesting_ your conditions using Python syntax. Test it in the Terminal, save your code, make sure your **flowchart.py** file is included in your **/lab-07-conditionals** folder, and don't forget to **add**, **commit**, and **push** your changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.HTML){:target="_blank"} if you need it!
 
 Your final **/lab-07-conditionals** folder by the submission deadline should include the following files:  
   * cake.html  
