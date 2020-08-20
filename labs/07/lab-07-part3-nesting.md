@@ -156,7 +156,7 @@ if (move == "yes") {
   console.log("Answer my question! You didn't type yes or no.");
 }{% endhighlight %}
 
-Now we've got our first "inside" condition planted firmly inside the outer "if" statement, i.e. lines 3-10 above. Look again at the flowchart to see what the "then"/consequent statements should be on lines 5 and 7. One should print "no problem" and the other should tell us something about duct tape, according to the picture.  
+Now we've got our first "inside" condition planted firmly inside the outer "if" statement, i.e. lines 3-10 above. Look again at the flowchart to see what the "then"/consequent clauses should be on lines 5 and 7. One should print "no problem" and the other should tell us something about duct tape, according to the picture.  
 
 Fill in these missing "then" clauses like so:  
 
