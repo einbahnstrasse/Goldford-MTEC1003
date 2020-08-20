@@ -53,6 +53,8 @@ This image is often referred to as [_Cantor dust:_](https://www.robertdickau.com
 
 <img src="/Goldford-MTEC1003-OL04/labs/07/cantorset0-6.png" alt="cantor dust" width="800">  
 
+meaning that, as each new "branch" is created, eventually the line breaks down into infinitely smaller points until all that's left is... dust...  How sad?.....  
+
 In this geometry, branches are created by taking away the middle segment of each new line. Even more interesting is that from _point-to-line,_ then _line-to-plane,_ and finally _plane-to-quadrilateral,_ we can [create this branching process in all 3 dimensions!](https://www.robertdickau.com/cantor3d.png){:target="_blank"}  
 
 This system of branching mimics what happens in the flowchart above, as each question breaks down into more questions and more statements, like the branches of a tree.  
