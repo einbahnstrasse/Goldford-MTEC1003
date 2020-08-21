@@ -157,6 +157,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
+* [For Loops in JavaScript](/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
