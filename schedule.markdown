@@ -178,8 +178,8 @@ _This page will be updated frequently with examples, video tutorials, links to n
 </div>
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 8 / Part 1: JavaScript For Loops](/Goldford-MTEC1003-OL04/labs/08/lab-08-part1-loops.html){:target="_blank"}  
-* [Lab 8 / Part 2: Python For Loops](/Goldford-MTEC1003-OL04/labs/08/lab-08-part1-loops.html){:target="_blank"}  
+* [Lab 8 / Part 1: JavaScript For Loops](/Goldford-MTEC1003-OL04/labs/08/lab-08-part1-js-for-loops.html){:target="_blank"}  
+* [Lab 8 / Part 2: JavaScript For Loops](/Goldford-MTEC1003-OL04/labs/08/lab-08-part2-python-for-loops.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
