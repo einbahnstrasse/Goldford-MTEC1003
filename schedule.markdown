@@ -160,8 +160,25 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [For Loops in JavaScript](/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html){:target="_blank"}  
 * [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
 
+<h5 style="color:Tomato;"><b>VIDEO TUTORIAL</b></h5>
+###### CS Dojo: 5 Debugging Tips Every Developer Should Know  
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K6WGRBhacq8" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
+###### Google Chrome Developers: Debugging JavaScript - Chrome DevTools 101  
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/H0XScE08hy8" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 8 / Part 1: JavaScript For Loops](lab-08-part1-loops.html){:target="_blank"}  
+* [Lab 8 / Part 1: JavaScript For Loops](/Goldford-MTEC1003-OL04/labs/08/lab-08-part1-loops.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
