@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript For Loops</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../resources.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-8---part-1---javascript-for-loops">Lab 8 / Part 1 - JavaScript For Loops</h1>
+
+<p>In this lab, you&#8217;ll be creating several programs:</p>
+
+<ol>
+  <li>tens</li>
+  <li>party </li>
+  <li>average</li>
+  <li>largest</li>
+  <li>fizzbuzz</li>
+</ol>
+
+<hr />
+
+<h2 id="instructions">Instructions</h2>
+
+<p>Note that <strong>ALL OF THESE FILES MUST BE CREATED IN A NEW LAB 8 REPOSITORY!</strong></p>
+<ul>
+	<li>On <i>GitHub</i>, create and name your new repository <strong>lab-08-for-loops</strong> and <strong>clone</strong> it inside your <strong>/mtec1003</strong> folder.</li>
+	<li>Use you <strong><i>git cheatsheet(s)</i></strong> and the walkthrough(s) from your <strong>previous lab(s)</strong> as references!</li>
+	<li>You may find it particularly <strong>time-saving</strong> to set up your repositories using the method described in <a href="../05/lab-05-part1-js-basics.html" target="_blank">Lab 5 / Part 1.</a></li>
+</ul>
+
+<hr />
+
+<h3 id="tens">tens</h3>
+
+<p>Write a program that counts by 10&#8217;s from 20 to 100</p>
+
+<ul>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>tens.html</strong> in your repository directory: <strong>~/Desktop/myClasses/mtec1003/lab-08-for-loops/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should count from 20 to 100 by 10&#8217;s</li>
+  <li>example output below&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">20
+30
+.
+.
+100
+</code></pre></div>
+
+<ul>
+  <li>save your file in your text editor (e.g. Atom, Sublime Text, etc.)</li>
+  <li>use <b>status add commit</b> and <b>push</b> to save your file in version control and submit it</li>
+</ul>
+
+<hr />
+
+<h3 id="party">party</h3>
+
+<p>Write a program that acts for user input&#8230; and counts down from that number to exactly 1.  After it counts down to 1, it says &#8220;PARTY TIME!!!&#8221;.</p>
+
+<ul>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>party.html</strong> in your repository directory: <strong>~/Desktop/myClasses/mtec1003/lab-08-for-loops/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>say - &#8220;Let&#8217;s party&#8230;&#8221;</li>
+  <li>ask for a number: &#8220;How long &#8216;til the party?&#8221;</li>
+  <li>based on the input, it should count down from that number to <strong>1</strong></li>
+  <li>remember to convert from a string to an int!</li>
+  <li>if the number that is input is less than 1, then say &#8220;PARTY NOW!!!&#8221;</li>
+  <li>at the end, say &#8220;PARTY TIME!!!&#8221;</li>
+  <li>save your file in your text editor (e.g. Atom, Sublime Text, etc.)</li>
+  <li>use <b>status add commit</b> and <b>push</b> to save your file in version control and submit it</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="c"># Run 1: </span>
+<span class="c"># -----</span>
+Let<span class="s1">&#39;s party...</span>
+<span class="s1">(prompt) How long &#39;</span>til the party?
+&gt; 3
+3
+2
+1
+PARTY TIME!!!
+
+<span class="c"># Run 2: </span>
+<span class="c"># -----</span>
+Let<span class="s1">&#39;s party...</span>
+<span class="s1">(prompt) How long &#39;</span>til the party?
+&gt; -1
+PARTY NOW!!!
+</code></pre></div>
+
+<hr />
+
+<h3 id="average">average</h3>
+
+<p>Ask for four numbers, output the average of those numbers.  Use a for loop to do this.</p>
+
+<ul>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>average.html</strong> in your repository directory: <strong>~/Desktop/myClasses/mtec1003/lab-08-for-loops/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>ask for a number 4 times: &#8220;Number please&#8230;.&#8221;</li>
+  <li>calculate the average of those 4 numbers</li>
+  <li>remember to convert from a string to an int!</li>
+  <li>say: &#8220;The average is x&#8221;, with x replaced by the actual average of the inputs.</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Number please...
+&gt; 4
+<span class="o">(</span>prompt<span class="o">)</span> Number please...
+&gt; 6
+<span class="o">(</span>prompt<span class="o">)</span> Number please...
+&gt; 1
+<span class="o">(</span>prompt<span class="o">)</span> Number please...
+&gt; 9
+The average is 5.
+</code></pre></div>
+
+<hr />
+
+<h3 id="largest">largest</h3>
+
+<p>Ask for four numbers, output the largest of those numbers.  Use a for loop to do this.</p>
+
+<ul>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>largest.html</strong> in your repository directory: <strong>~/Desktop/myClasses/mtec1003/lab-08-for-loops/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>ask for a number 4 times: &#8220;Number please&#8230;.&#8221;</li>
+  <li>using comparison operators and a conditional (in each iteration), determine the current largest number&#8230;</li>
+  <li>remember to convert from a string to an int!</li>
+  <li>say: &#8220;The largest number is x&#8221;, with x replaced by the current largest number</li>
+  <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Number please...
+&gt; 4
+<span class="o">(</span>prompt<span class="o">)</span> Number please...
+&gt; 6
+<span class="o">(</span>prompt<span class="o">)</span> Number please...
+&gt; 1
+<span class="o">(</span>prompt<span class="o">)</span> Number please...
+&gt; 9
+The largest number is 9
+</code></pre></div>
+
+<hr />
+
+<h3 id="fizzbuzz">fizzbuzz</h3>
+
+<p>Count from 1 to 100, but print out fizz or buzz depending on special conditions.</p>
+
+<ul>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>fizzbuzz.html</strong> in your repository directory: <strong>~/Desktop/myClasses/mtec1003/lab-08-for-loops/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>print out 1 to 100 &#8230;with the following exceptions:</li>
+  <li>for multiples of three, print out &#8220;Fizz&#8221; instead of the number </li>
+  <li>for multiples of five, print out &#8220;Buzz&#8221; instead of the number</li>
+  <li>for multiples of both three and five print “FizzBuzz”</li>
+  <li>example output is below:</li>
+</ul>
+
+<div class="highlight"><pre><code class="python"><span class="mi">1</span>
+<span class="mi">2</span>
+<span class="n">Fizz</span>
+<span class="mi">4</span>
+<span class="n">Buzz</span>
+<span class="n">Fizz</span>
+<span class="o">.</span>
+<span class="o">.</span>
+<span class="mi">14</span>
+<span class="n">FizzBuzz</span>
+<span class="mi">16</span>
+<span class="o">.</span>
+<span class="o">.</span>
+<span class="mi">98</span>
+<span class="n">Fizz</span>
+<span class="n">Buzz</span>
+</code></pre></div>
+
+<hr />
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab</p>
+</div>
+</div>
+</body>
+</html>

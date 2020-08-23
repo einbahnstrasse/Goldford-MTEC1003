@@ -161,6 +161,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
+* [Lab 8 / Part 1: JavaScript For Loops](lab-08-part1-loops.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
