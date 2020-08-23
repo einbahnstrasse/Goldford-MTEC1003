@@ -36,7 +36,7 @@ Once you've done this, you're all set.
 
 _**NOTE:** This section starts with the same 5 exercises from Lab 8 / Part 1. If you feel more comfortable with Python rather than JavaScript, you can start with this section in Python and then complete the JavaScript exercises last. Either way, click on the link below for Lab 8 / Part 1 to see the details for each program._  
 
-In [Lab 8 / Part 1](/Goldford-MTEC1003-OL04/labs/08/lab-08-part1-javascript-for-loops.html){:target="_blank"}, you made 3 programs that returned different results depending on user input:  
+In [Lab 8 / Part 1](/Goldford-MTEC1003-OL04/labs/08/lab-08-part1-js-for-loops.html){:target="_blank"}, you made 3 programs that returned different results depending on user input:  
 
   1. tens.html  
   2. party.html  
@@ -44,7 +44,7 @@ In [Lab 8 / Part 1](/Goldford-MTEC1003-OL04/labs/08/lab-08-part1-javascript-for-
   4. largest.html
   5. fizzbuzz.html
 
-Using your own knowledge of Python, translate your 3 HTML/JavaScript programs into Python, and save them as: tens.py, party,py, average.py, largest.py, and fizzbuzz.py.  
+Using your knowledge of Python, aided in part by this week's [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"} slides, translate your 3 HTML/JavaScript programs into Python and save them as: **tens.py, party,py, average.py, largest.py,** and **fizzbuzz.py.**  
 
 Make sure they're in your **/lab-08-for-loops** repository!
 
