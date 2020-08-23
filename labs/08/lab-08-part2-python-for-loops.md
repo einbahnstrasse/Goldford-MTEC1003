@@ -61,7 +61,7 @@ Make sure your file is included in your **/lab-08-for-loops** repo, and don't fo
 
 Using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called **dictionary.py** in your repository directory: **~/Desktop/myClasses/mtec1003/lab-08-for-loops/**.  
 
-Copy the following into the top line of your new file:  
+**Copy + paste** the following into the **top line** of your new file:  
 
   {% highlight py %} myData = {"effective top tube length": 515, "seat tube length": 500, "seat tube angle": 74.4, "head tube angle": 70.5, "stack": 513, "reach": 367, "standover height": 755} {% endhighlight %}
 
