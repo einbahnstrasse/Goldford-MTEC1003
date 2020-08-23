@@ -158,7 +158,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [For Loops in JavaScript](/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html){:target="_blank"}  
-* [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loops.tutorial.v01/#/){:target="_blank"}  
+* [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
