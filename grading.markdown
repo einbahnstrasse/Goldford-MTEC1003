@@ -135,7 +135,13 @@ _The following topics and their precise order may change. Check here for updates
 <td markdown="span">8</td>
 <td markdown="span">10/26</td>
 <td markdown="span">5</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w8" target="_blank">8.1 <i>More info coming soon!</i></a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w8" target="_blank">8.1 JavaScript For Loops</td>
+</tr>
+<tr>
+<td markdown="span"></td>
+<td markdown="span"></td>
+<td markdown="span"></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w8" target="_blank">8.2 Python For Loops</td>
 </tr>
 <tr>
 <td markdown="span">9</td>
