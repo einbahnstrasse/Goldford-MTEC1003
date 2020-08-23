@@ -141,7 +141,7 @@ _The following topics and their precise order may change. Check here for updates
 <td markdown="span"></td>
 <td markdown="span"></td>
 <td markdown="span"></td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w8" target="_blank">8.2 Python For Loops</td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w8" target="_blank">8.2 For Loops in Python</td>
 </tr>
 <tr>
 <td markdown="span">9</td>
