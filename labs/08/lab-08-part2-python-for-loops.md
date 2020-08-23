@@ -70,6 +70,8 @@ Continue typing your code so that your program reads in this data and:
   2. **collects** all **keys** into a separate list and **prints** it,  
   3. and **collects** all values into another list and **prints** it.  
 
+Use 1 _for loop_ to do these tasks.  
+
 Your output in the console should look something like this:  
 
   {% highlight terminal %}
@@ -97,5 +99,6 @@ At the end of this lab, your **/lab-08-for-loops** folder should contain the fol
   * largest.py  
   * fizzbuzz.html  
   * fizzbuzz.py  
+  * dictionary.py  
 
 * * *
