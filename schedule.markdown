@@ -182,6 +182,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [Lab 8 / Part 2: For Loops in Python](/Goldford-MTEC1003-OL04/labs/08/lab-08-part2-python-for-loops.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
+* [Ladybug Podcast: Episode on Debugging](https://www.ladybug.dev/episodes/debugging?rq=debugging){:target="_blank"}  
 
 * * *
 
