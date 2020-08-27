@@ -160,7 +160,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
 
 ### JavaScript + Python: Debugging  
-* [Introduction to Debugging](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/debugging.tutorial.v01/#/){:target="_blank"}
+* [Introduction to Debugging](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/debugging.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>VIDEO TUTORIALS</b></h5>
 ###### CS Dojo: 5 Debugging Tips Every Developer Should Know  
