@@ -150,8 +150,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <a id="w8"></a>
 <h3 class="schedule-page-date">Week 8: October 26th</h3>
-### Javascript + Python: For Loops  
-### Javascript + Python: Debugging  
+### JavaScript + Python: For Loops  
 <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
@@ -159,6 +158,9 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [For Loops in JavaScript](/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html){:target="_blank"}  
 * [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
+
+### JavaScript + Python: Debugging  
+* [Introduction to Debugging](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/debugging.tutorial.v01/#/){:target="_blank"}
 
 <h5 style="color:Tomato;"><b>VIDEO TUTORIALS</b></h5>
 ###### CS Dojo: 5 Debugging Tips Every Developer Should Know  
