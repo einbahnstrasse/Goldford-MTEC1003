@@ -21,7 +21,7 @@ layout: default
 
 <!-- <h1>Syllabus</h1> -->
 # Syllabus
-[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL04/resources/week.01/Goldford.MTEC1003.Fall2020.Syllabus.v01a.pdf){:target="_blank"}
+[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL04/resources/week.01/Goldford.MTEC1003.Fall2020.Syllabus.v02.pdf){:target="_blank"}
 
 #### C O N T E N T S  
 1. <a href="#contact">Essential Course + Contact Information</a>  
@@ -49,7 +49,7 @@ layout: default
 
 **Professor:** Louis Goldford  
 **Email:** <a href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a>  
-**Office Hours:** by virtual appointment. _Email me to set up a time._  
+**Office Hours:** by virtual appointment. _Use email + Calendly to schedule a time._  
 **Office Location:** [ONLINE]  
 **Course Website:** <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/">https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/</a>  
 **Course Slack:** [http://goldford-mtec1003.slack.com/](http://goldford-mtec1003.slack.com/)  
