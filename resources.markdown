@@ -69,7 +69,7 @@ _Version control system for tracking changes in development code or any set of f
 <p class="redish"><i>You'll be using GIT (and GitHub.com) to submit your lab homework every week, so be sure to set this up!</i></p>  
 
 1. SIGN UP:  
-	* Go to [Github.com](Github.com){:target="_blank"} to get started;  
+	* Go to [Github.com](http://github.com){:target="_blank"} to get started;  
 	* or visit [this 'How-To' Page for extra support.](https://www.wikihow.com/Create-an-Account-on-GitHub){:target="_blank"}  
 2. VERIFY:
 	* Immediately <a href="mailto:LGoldford@citytech.cuny.edu">email the instructor with your Github user account name</a> to receive grades in this class!!  
