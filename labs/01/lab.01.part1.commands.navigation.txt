@@ -15,8 +15,7 @@ $ ls<ENTER>
 
 Copy and paste the output of ls below.
 ----------
-
-
+testing
 
 
 
