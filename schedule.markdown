@@ -195,6 +195,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Functions](/Goldford-MTEC1003-OL04/labs/09/js.functions.html){:target="_blank"}  
+* [Python Function Definitions + Calls](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/functions.tutorial.v01/#/){:target="_blank"}
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
