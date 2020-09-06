@@ -193,12 +193,12 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 <tr>
 <td markdown="span">9</td>
 <td markdown="span">11/2</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w9" target="_blank">Javascript + Python: More Kinds of Loops</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w9" target="_blank">Javascript + Python: Functions Definitions + Function Calls</a></td>
 </tr>
 <tr>
 <td markdown="span">10</td>
 <td markdown="span">11/9</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w10" target="_blank">Javascript + Python: Functions Definitions + Function Calls</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL04/schedule.html#w10" target="_blank">Javascript + Python: More Kinds of Loops</a></td>
 </tr>
 <tr>
 <td markdown="span">11</td>

@@ -188,12 +188,13 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <a id="w9"></a>
 <h3 class="schedule-page-date">Week 9: November 2nd</h3>
-### Javascript + Python: More Kinds of Loops
+### Javascript + Python: Function Definitions + Function Calls
 <p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
+* [JavaScript Functions](/Goldford-MTEC1003-OL04/labs/09/js.functions.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
@@ -203,7 +204,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <a id="w10"></a>
 <h3 class="schedule-page-date">Week 10: November 9th</h3>
-### Javascript + Python: Function Definitions + Function Calls
+### Javascript + Python: More Kinds of Loops
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
