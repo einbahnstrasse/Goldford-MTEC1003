@@ -44,7 +44,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
 <p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 9/7. VOE Rosters due 9/15. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-[<h5 style="color:Tomato;"><b>Week #1 Review Quizlet</b></h5>](https://forms.gle/NPYcX8iPERocxyfn7){:target="_blank"}  
+[##### Week #1 Review Quizlet](https://forms.gle/NPYcX8iPERocxyfn7){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Review](/Goldford-MTEC1003-OL04/labs/03/review.html#1.0){:target="_blank"}  
