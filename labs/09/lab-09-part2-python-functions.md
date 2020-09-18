@@ -50,9 +50,9 @@ Make sure they're in your **/lab-09-functions** repository!
 
 Now we just have to **test** our python scripts by running them on the command line.
 
-Back in Terminal, simply type `python`, then a space, and then drag-and-drop one of your new files, e.g. **fizzbuzz.py**, onto the Terminal window (**remember:** this will quickly create a `full path` to your file on the command line!). Run the command by hitting `enter`, of course.
+Back in Terminal, simply type `python`, then a space, and then drag-and-drop one of your new files, e.g. **pluralize,py**, onto the Terminal window (**remember:** this will quickly create a `full path` to your file on the command line!). Run the command by hitting `enter`, of course.
 
-Make sure your file is included in your **/lab-08-for-loops** repo, and don't forget to **add**, **commit**, and **push** your changes. Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it.  
+Make sure your file is included in your **/lab-09-functions** repo, and don't forget to **add**, **commit**, and **push** your changes. Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it.  
 
 * * *   
 
