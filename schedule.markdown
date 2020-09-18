@@ -205,8 +205,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 9 / Part 1: JavaScript Functions](/Goldford-MTEC1003-OL04/labs/09/lab-09-part1-js-functions.html){:target="_blank"}  
-
-<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
+* [Lab 9 / Part 2: Python Functions](/Goldford-MTEC1003-OL04/labs/09/lab-09-part2-python-functions.html){:target="_blank"}  
 
 * * *
 
