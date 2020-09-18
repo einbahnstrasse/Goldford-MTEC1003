@@ -10,6 +10,8 @@ layout: default
 
 # Lab 9 / Part 2: Python Functions   
 
+<p>Note that <span style="color: red"><strong>ALL SOLUTIONS TO THESE PROBLEMS MUST BE SHOWN IN THE FORM OF A FUNCTION DEFINITION AND A CALL TO THAT FUNCTION.</strong></span></p>
+
 #### C O N T E N T S  
 <a href="#setup">Setup for Python3</a>  
 1. <a href="#js-stuff">Recreating JavaScript Functions Exercises in Python</a>  
