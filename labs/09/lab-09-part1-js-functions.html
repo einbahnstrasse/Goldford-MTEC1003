@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Functions</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab </h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../resources.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-09---part-1---javascript-functions">Lab 10 - JavaScript Functions</h1>
+
+<p>In this lab, you&#8217;ll be creating several programs:</p>
+
+<ol>
+  <li>greetings</li>
+  <li>pluralize </li>
+  <li>double </li>
+  <li>factorial </li>
+  <li>trees </li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p>ALL OF THESE FILES MUST BE CREATED IN THE LAB 10 REPOSITORY THAT YOU CREATED FOR THIS LAB</p>
+
+<p>Note that <strong>ALL SOLUTIONS TO THESE PROBLEMS MUST BE SHOW THE FORM OF A FUNCTION DEFINITION AND A CALL TO THAT FUNCTION</strong>.</p>
+
+<hr />
+
+<h3 id="greetings">greetings</h3>
+
+<p>Write a program that says hello three times.</p>
+
+<ul>
+  <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>greetings.html</strong> in your repository directory: <strong>~/myClasses/mtec1003/lab-10-functions/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>the program should say &#8220;hello&#8221; FIVE times in the JavaScript console</li>
+  <li>do this by DEFINING a function called greet()</li>
+  <li>the greet() function will print out hello exactly once</li>
+  <li>CALL the greet() function five times</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example output below&#8230;</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash">hello
+hello
+hello
+hello
+hello
+</code></pre></div>
+
+<hr />
+
+<h3 id="pluralize">pluralize</h3>
+
+<p>Write a program that creates a plural version of a word inputted by a user.</p>
+
+<ul>
+  <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>pluralize.html</strong> in your repository directory: <strong>~/myClasses/mtec1003/lab-10-functions/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>define a function called pluralize(word)</li>
+  <li>it should have one parameter, word</li>
+  <li>it should <strong>give back</strong> a value - the plural version of the word passed in</li>
+  <li>ask for a word: &#8220;Word please:&#8221;</li>
+  <li>it should call your pluralize function</li>
+  <li>pluralize will give back the word with an s appended to the end of it</li>
+  <li>use the result of calling your pluralize function to print the plural version to the JavaScript console</li>
+  <li>add an if-else-if statement to handle the following words: moose (moose), automaton (automata), mouse (mice)</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>example interaction is below (everything after the greater than sign (&gt;) is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Word please:
+&gt; car
+cars
+</code></pre></div>
+
+<hr />
+
+<h3 id="factorial">double</h3>
+
+<p>Write a program that calculates the twice of a number entered by the user and prints it to the console log.  The function should be called - double(n).  First define the function.  Then ask the user for a input of a number to be doubled.  Then parseInt that input value and then use it in a function call to double(n).
+
+
+<hr />
+
+<h3 id="factorial">factorial</h3>
+
+<p>Write a program that calculates the factorial of a number entered by the user.  Factorial is the product of all positive integers less than or equal to a number.  4! (or 4 factorial) = 4 * 3 * 2 * 1 = 24</p>
+
+<ul>
+  <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>factorial.html</strong> in your repository directory: <strong>~/myClasses/mtec1003/lab-10-functions/</strong></li>
+  <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
+  <li>define a function called factorial(n)</li>
+  <li>it should have one parameter, n</li>
+  <li>it should <strong>give back</strong> an number - the product of all positive numbers less than or equal to the user input</li>
+  <li>ask for a word: &#8220;Number please::&#8221;</li>
+  <li>it should then CALL your factorial function</li>
+  <li>factorial will give back the result of the calculation</li>
+  <li>use the result of calling your factorial function to print the factorial</li>
+  <li>hint: use a for loop to do this and use the function that returns a number from a string</li>
+  <li>example interaction is below (everything after the greater than sign (&gt;) is user input using the prompt function):</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> Number please:
+&gt; 4
+24
+</code></pre></div>
+
+<hr />
+
+<h3 id="trees">trees</h3>
+
+<p>Write a program that draw the number of trees that the user inputs.  Ask the user how many trees he/she wants, and draw that number.   Its up to you to design and style what kind of tree to draw. </p>
+
+
+
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab</p>
+</div>
+</div>
+</body>
+</html>

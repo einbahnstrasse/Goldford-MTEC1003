@@ -44,8 +44,8 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
 <p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 9/7. VOE Rosters due 9/15. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-### [Review Quizlet (Wk. 1)](https://forms.gle/NPYcX8iPERocxyfn7){:target="_blank"}  
-* _Complete the quizlet above as part of today's attendance + participation._  
+<!-- ### [Review Quizlet (Wk. 1)](https://forms.gle/NPYcX8iPERocxyfn7){:target="_blank"}  
+* _Complete the quizlet above as part of today's attendance + participation._   -->
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Review](/Goldford-MTEC1003-OL04/labs/03/review.html#1.0){:target="_blank"}  
@@ -64,6 +64,9 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w3"></a>
 <h3 class="schedule-page-date">Week 3: September 21st</h3>
 ### Version Control: Introduction to GIT, Concepts + Basic Commands
+
+### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}  
+* _Complete the quizlet above as part of today's attendance + participation._  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Introduction to Version Control + Git](/Goldford-MTEC1003-OL04/labs/04/version-control.html){:target="_blank"}  
@@ -201,6 +204,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [Python Function Definitions + Calls](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/functions.tutorial.v01/#/){:target="_blank"}
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
+* [Lab 9 / Part 1: JavaScript Functions](/Goldford-MTEC1003-OL04/labs/09/lab-09-part1-js-functions.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
