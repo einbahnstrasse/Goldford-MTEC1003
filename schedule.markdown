@@ -66,7 +66,8 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Version Control: Introduction to GIT, Concepts + Basic Commands
 
 <!-- ### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}  
-* _Complete the quizlet above as part of today's attendance + participation._   -->
+### [Warmup Quizlet (Wk. 3)](https://forms.gle/VqsrRhRkHuNUXQ6v7){:target="_blank"}  
+* _Complete these quizlets above as part of today's attendance + participation._   -->
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Introduction to Version Control + Git](/Goldford-MTEC1003-OL04/labs/04/version-control.html){:target="_blank"}  
