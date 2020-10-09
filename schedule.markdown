@@ -219,7 +219,9 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
 
-_Don't forget to watch + study the following recursion examples:_  
+_Don't forget to watch + study the following..._
+
+### Recursion Tutorial Videos  
 
 ###### Shiffman: Tree Branches (in p5.js)  
 
