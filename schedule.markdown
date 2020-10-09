@@ -217,6 +217,25 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
+* [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
+
+_Don't forget to watch + study the following recursion examples:_  
+
+###### Shiffman: Tree Branches (in p5.js)  
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0jjeOYMjmDU" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
+###### Professor Thorsten Altenkirch: The Tower of Hanoi (in Python)  
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8lhxIOAfDss" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
