@@ -55,7 +55,9 @@ Once you've done this, you're all set.
 
 Example JavaScript Console output should resemble the following:  
 
-<img src="{{ site.baseurl }}/labs/10/gimmymynumber.example.png" alt="Gimmy Example Output" width="300">  
+<!-- <img src="{{ site.baseurl }}/labs/10/gimmymynumber.example.png" alt="Gimmy Example Output" width="300">   -->
+
+<iframe src="{{ site.baseurl }}/labs/10/gimmymynumber.example.png" width="600px" height="600px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 * **Save** your HMTL/JavaScript file, and make sure to **test** it using Google Chrome's JavaScript Console.  
 * Once you know it works, recreate a version of this in Python:  
