@@ -240,8 +240,8 @@ _Don't forget to watch + study the following..._
 </div>
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-
-<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
+* [Lab 10 / Part 1: While Loops](/Goldford-MTEC1003-OL04/labs/10/lab-10-part1-while-loops.html){:target="_blank"}  
+* [Lab 10 / Part 2: Recursions](/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-dummy.html){:target="_blank"}  
 
 * * *
 
