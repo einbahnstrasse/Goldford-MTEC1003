@@ -56,11 +56,13 @@ Once you've done this, you're all set.
 function countDown(start) {
   } {% endhighlight %}
 
+{:start="4"}
 4. Our function will take a `start` number, then count from that number down to 1, and finally will print "HAPPY NEW YEAR!". To do this, start by printing the current value of `start` on the console. Make this the first line inside your function's braces:  
 
 {% highlight javascript %}
 console.log(start); {% endhighlight %}
 
+{:start="5"}
 5. On the next line, let's create a <span style="color: tomato;">local variable</span> that cannot be accessed anywhere else in our program; only from inside our function. We'll name this variable `nextNumber` and use it to designate the _**"next"**_ number in our count down. Type the following on the next line:  
 
 {% highlight javascript %}
@@ -74,6 +76,7 @@ By using `let`, we're telling JavaScript to create a <span style="color: tomato;
 
 #### Setting Up the Base Case    
 
+{:start="6"}
 6. Next, we'll use a _**conditional statement**_ to make our base case. Create an <span style="color: tomato;">_**if** clause_</span> followed by an <span style="color: tomato;">_**else** clause_</span>. Use the <span style="color: tomato;">_**if** clause_</span> to control what happens in your function for all values of `nextNumber` that are _greater than_ 0. Within this code block, our function will <span style="color: tomato;">_**continually call itself**_</span>, implementing our **recursion**. Type this clause like so:  
 
 {% highlight javascript %}
@@ -88,6 +91,7 @@ It's important to note that the condition specified by the <span style="color: t
 
 designates our **base case**. As long as `nextNumber` continues to be _greater than 0_, the function will keep calling itself, reducing its local variable by 1. But once this condition is no longer `true`, the function will stop.  
 
+{:start="7"}
 7. Now, inside the <span style="color: tomato;">_**else** clause_</span>, imagine that you've counted down all the way to 1. What happens when the ball finally drops on New Year's Eve, after the counting...?
 
 {% highlight javascript %}
@@ -101,6 +105,7 @@ Make sure your code is written properly in all the correct braces & code blocks.
 
 #### Calling Your Function  
 
+{:start="8"}
 8. So far you've <span style="color: tomato;">definined</span> your function. You just need to <span style="color: tomato;">call</span> it. Let's run a countDown from 10 seconds. _Below & outside of your function definition,_ i.e. on the next line, call it with an argument of 10:  
 
 {% highlight javascript %}
