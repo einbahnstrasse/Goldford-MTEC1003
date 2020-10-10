@@ -55,7 +55,7 @@ Once you've done this, you're all set.
 
 Example JavaScript Console output should resemble the following:  
 
-<img src="/Goldford-MTEC1003-OL04/assets/gimmymynumber.example.png" alt="Gimmy Example Output" width="300">  
+<img src="/Goldford-MTEC1003-OL04/assets/gimmymynumber.example.png" alt="Gimmy Example Output" width="600">  
 
 <!-- <iframe src="{{ site.baseurl }}/labs/10/gimmymynumber.example.png" width="600px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
 
@@ -89,7 +89,7 @@ Example JavaScript Console output should resemble the following:
 
 Example JavaScript Console output should resemble the following:  
 
-<img src="/Goldford-MTEC1003-OL04/assets/stories.example.png" alt="Stories Example Output" width="300">  
+<img src="/Goldford-MTEC1003-OL04/assets/stories.example.png" alt="Stories Example Output" width="600">  
 
 * Once you know it works, recreate a version of this in Python:  
   - In your text editor, create a new file called **whichfloor.py** in your **lab-10-more-loops** repository.  
