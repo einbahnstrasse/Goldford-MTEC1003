@@ -14,7 +14,7 @@ layout: default
 <a href="#setup">Setup for Python3</a>  
 <a href="#repo">Setting Up Your Lab 10 Repository</a>
 1. <a href="#hny">Happy New Year!</a>
-2. <a href="#timing">Adding Timing and Interactivty</a>
+2. <a href="#timing">Add Timing + Interactivity</a>
 <!-- 4. <a href="#bmi">Calculating Body Mass Index  (BMI) in Python</a> -->
 
 * * *
@@ -70,11 +70,11 @@ let nextNumber = start - 1; {% endhighlight %}
 
 We'll use this line of code to **decrement** our `start` variable, one-by-one, until we reach our **base case**...  
 
-#### A Side-Note About `let`  
+### A Side-Note About `let`  
 
 By using `let`, we're telling JavaScript to create a <span style="color: tomato;">local variable</span> with a special property known as [block scope.](https://www.w3schools.com/js/js_let.asp){:target="_blank"} That means our variable `nextNumber` can only be accessed from within this block of code. You might find this feature really helpful in your future JavaScript adventures...  
 
-#### Setting Up the Base Case    
+### Setting Up the Base Case    
 
 {:start="6"}
 6. Next, we'll use a _**conditional statement**_ to make our base case. Create an <span style="color: tomato;">_**if** clause_</span> followed by an <span style="color: tomato;">_**else** clause_</span>. Use the <span style="color: tomato;">_**if** clause_</span> to control what happens in your function for all values of `nextNumber` that are _greater than_ 0. Within this code block, our function will <span style="color: tomato;">_**continually call itself**_</span>, implementing our **recursion**. Type this clause like so:  
@@ -99,11 +99,11 @@ designates our **base case**. As long as `nextNumber` continues to be _greater t
   console.log("HAPPY NEW YEAR!");
 }{% endhighlight %}
 
-#### A Side-Note About Checking Your Braces  
+### A Side-Note About Checking Your Braces  
 
 Make sure your code is written properly in all the correct braces & code blocks. Use your text editor to make sure you've gotten this correct: Put your cursor on any open brace and notice how it <span style="color: tomato;">highlights</span> for you the corresponding closing brace. Use this to be sure you've enclosed all statements properly in their correct braces!  
 
-#### Calling Your Function  
+### Calling Your Function  
 
 {:start="8"}
 8. So far you've <span style="color: tomato;">definined</span> your function. You just need to <span style="color: tomato;">call</span> it. Let's run a countDown from 10 seconds. _Below & outside of your function definition,_ i.e. on the next line, call it with an argument of 10:  
@@ -116,17 +116,52 @@ Example JavaScript Console output should resemble the following:
 <img src="/Goldford-MTEC1003-OL04/assets/hny.jsconsole.output.png" alt="HNY Example Output" width="200px">  
 
 * **Save** your HMTL/JavaScript file, and make sure to **test** it using Google Chrome's JavaScript Console.  
-* Once you know it works, recreate a version of this in Python:  
-  - In your text editor, create a new file called **happynewyear.py** in your **lab-10-more-loops** repository.  
-  - Don't bother setting up HTML tags; no need for this in Python!  
-  - Repeat steps 3-8 above, carefully recalling how Python syntax differs from JavaScript (_e.g. how will you ask the user for input in Python?_).  
-  - **Save** your Python script, and make sure to **test** it by running Python on your Terminal's command line.  
-* Use git **status**, **add**, **commit**, and **push** to version your two files and submit them.  
+* For this exercise, you DON'T need to create a Python version!!  
+* Use git **status**, **add**, **commit**, and **push** to version your file and submit it.  
+* Since we'll be making changes and adding to this file, **commit** your file with a **message** resembling this:  
+
+{% highlight terminal %}
+$ git commit -m <span style="color: tomato;">"first version of happynewyear.html"</span>{% endhighlight %}
+
+Now, let's make some changes that will make our count down a much cooler experience...
 
 * * *
 
 <a id="timing"></a>
-## 2. Adding Timing and Interactivity?
+## 2. Add Timing + Interactivity  
+
+When you imagine a proper New Year's Eve count down, though, isn't it true that we count down _one second at a time_ until all the seconds have passed, and it's time for the ball to drop? Let's add this timing feature, so that we don't get our entire count down at once, but instead: one number at a time, with a 1-second delay in between each number, all the way down to our final _"Happy New Year!"_ message at the end.
+
+First, let's make sure we're on the same page. Your 1st version of the file should look like this:  
+
+{% highlight html linenos %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function countDown(start) {
+          console.log(start);
+
+          let nextNumber = start - 1;
+
+          if (nextNumber > 0) {
+              countDown(nextNumber);
+          } else {
+            console.log("HAPPY NEW YEAR!");
+          }
+      }
+      countDown(10);
+    </script>
+  </body>
+</html>{% endhighlight %}
+
+If your code doesn't yet look like this, make the necessary changes before moving on. I'll be referring to the line numbers above for the rest of this exercise...  
+
+
 
 1. Using your text editor, create a new file called **whichfloor.html** in your **lab-10-more-loops** repository.  
 2. Set up an HTML file, and add <span style="color: tomato;">`<script>`</span> tags… start writing your JavaScript between the tags.  
