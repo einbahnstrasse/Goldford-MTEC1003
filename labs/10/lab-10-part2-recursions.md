@@ -14,7 +14,7 @@ layout: default
 <a href="#setup">Setup for Python3</a>  
 <a href="#repo">Setting Up Your Lab 10 Repository</a>
 1. <a href="#hny">Happy New Year!</a>
-2. <a href="#stories">Which Floor Do You Work On?</a>
+2. <a href="#timing">Adding Timing and Interactivty</a>
 <!-- 4. <a href="#bmi">Calculating Body Mass Index  (BMI) in Python</a> -->
 
 * * *
@@ -50,24 +50,79 @@ Once you've done this, you're all set.
 
 1. Using your text editor, create a new file called **happynewyear.html** in your **lab-10-more-loops** repository.  
 2. Set up an HTML file, and add <span style="color: tomato;">`<script>`</span> tags… start writing your JavaScript between the tags.  
-3. Start by <span style="color: tomato;">defining</span> a new _**recursive function**_. Name this function countDown. It should take one <span style="color: tomato;">argument</span>; name this argument `start`. Don't forget to **add braces** (_we'll write our function's **statements** inside this code block!_):  
+3. Start by <span style="color: tomato;">defining</span> a new _**recursive function**_. Name this function `countDown`. It should take one <span style="color: tomato;">argument</span>; name this argument `start`. Don't forget to **add braces** (_we'll write our function's **statements** inside this code block!_):  
 
 {% highlight javascript %}
 function countDown(start) {
   } {% endhighlight %}
 
+4. Our function will take a `start` number, then count from that number down to 1, and finally will print "HAPPY NEW YEAR!". To do this, start by printing the current value of `start` on the console. Make this the first line inside your function's braces:  
+
+{% highlight javascript %}
+console.log(start); {% endhighlight %}
+
+5. On the next line, let's create a <span style="color: tomato;">local variable</span> that cannot be accessed anywhere else in our program; only from inside our function. We'll name this variable `nextNumber` and use it to designate the _**"next"**_ number in our count down. Type the following on the next line:  
+
+{% highlight javascript %}
+let nextNumber = start - 1; {% endhighlight %}
+
+We'll use this line of code to **decrement** our `start` variable, one-by-one, until we reach our **base case**...  
+
+##### A Side-Note About `let`  
+
+By using `let`, we're telling JavaScript to create a <span style="color: tomato;">local variable</span> with a special property known as [block scope.](https://www.w3schools.com/js/js_let.asp){:target="_blank"} That means our variable `nextNumber` can only be accessed from within this block of code. You might find this feature really helpful in your future JavaScript adventures...  
+
+##### Setting Up the Base Case    
+
+6. Next, we'll use a _**conditional statement**_ to make our base case. Create an <span style="color: tomato;">_**if** clause_</span> followed by an <span style="color: tomato;">_**else** clause_</span>. Use the <span style="color: tomato;">_**if** clause_</span> to control what happens in your function for all values of `nextNumber` that are _greater than_ 0. Within this code block, our function will <span style="color: tomato;">_**continually call itself**_</span>, implementing our **recursion**. Type this clause like so:  
+
+{% highlight javascript %}
+if (nextNumber > 0) {
+    countDown(nextNumber);
+} {% endhighlight %}
+
+It's important to note that the condition specified by the <span style="color: tomato;">_**if** clause_</span>:  
+
+{% highlight javascript %}
+(nextNumber > 0){% endhighlight %}
+
+designates our **base case**. As long as `nextNumber` continues to be _greater than 0_, the function will keep calling itself, reducing its local variable by 1. But once this condition is no longer `true`, the function will stop.  
+
+7. Now, inside the <span style="color: tomato;">_**else** clause_</span>, imagine that you've counted down all the way to 1. What happens when the ball finally drops on New Year's Eve, after the counting...?
+
+{% highlight javascript %}
+else {
+  console.log("HAPPY NEW YEAR!");
+}{% endhighlight %}
+
+##### A Side-Note About Checking Your Braces  
+
+Make sure your code is written properly in all the correct braces & code blocks. Use your text editor to make sure you've gotten this correct: Put your cursor on any open brace and notice how it <span style="color: tomato;">highlights</span> for you the corresponding closing brace. Use this to be sure you've enclosed all statements properly in their correct braces!  
+
+##### Calling Your Function  
+
+8. So far you've <span style="color: tomato;">definined</span> your function. You just need to <span style="color: tomato;">call</span> it. Let's run a countDown from 10 seconds. _Below & outside of your function definition,_ i.e. on the next line, call it with an argument of 10:  
+
+{% highlight javascript %}
+countDown(10);{% endhighlight %}
+
+Example JavaScript Console output should resemble the following:
+
+<img src="/Goldford-MTEC1003-OL04/assets/hny.jsconsole.output.png" alt="HNY Example Output" width="600">  
+
 * **Save** your HMTL/JavaScript file, and make sure to **test** it using Google Chrome's JavaScript Console.  
 * Once you know it works, recreate a version of this in Python:  
   - In your text editor, create a new file called **happynewyear.py** in your **lab-10-more-loops** repository.  
   - Don't bother setting up HTML tags; no need for this in Python!  
-  - Repeat steps 3-6 above, carefully recalling how Python syntax differs from JavaScript (_e.g. how will you ask the user for input in Python?_).  
+  - Repeat steps 3-8 above, carefully recalling how Python syntax differs from JavaScript (_e.g. how will you ask the user for input in Python?_).  
   - **Save** your Python script, and make sure to **test** it by running Python on your Terminal's command line.  
 * Use git **status**, **add**, **commit**, and **push** to version your two files and submit them.  
 
 * * *
 
-<a id="stories"></a>
-## 2. Which Floor Do You Work On?  
+<a id="timing"></a>
+## 2. Adding Timing and Interactivity?
+
 1. Using your text editor, create a new file called **whichfloor.html** in your **lab-10-more-loops** repository.  
 2. Set up an HTML file, and add <span style="color: tomato;">`<script>`</span> tags… start writing your JavaScript between the tags.  
 3. **Declare** a variable called <span style="color: tomato;">`maximum_stories`</span> and **initialize** it with a **value** of your choice. In other words: Decide how many floors your building should have.  
