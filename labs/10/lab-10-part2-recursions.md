@@ -68,11 +68,11 @@ let nextNumber = start - 1; {% endhighlight %}
 
 We'll use this line of code to **decrement** our `start` variable, one-by-one, until we reach our **base case**...  
 
-##### A Side-Note About `let`  
+#### A Side-Note About `let`  
 
 By using `let`, we're telling JavaScript to create a <span style="color: tomato;">local variable</span> with a special property known as [block scope.](https://www.w3schools.com/js/js_let.asp){:target="_blank"} That means our variable `nextNumber` can only be accessed from within this block of code. You might find this feature really helpful in your future JavaScript adventures...  
 
-##### Setting Up the Base Case    
+#### Setting Up the Base Case    
 
 6. Next, we'll use a _**conditional statement**_ to make our base case. Create an <span style="color: tomato;">_**if** clause_</span> followed by an <span style="color: tomato;">_**else** clause_</span>. Use the <span style="color: tomato;">_**if** clause_</span> to control what happens in your function for all values of `nextNumber` that are _greater than_ 0. Within this code block, our function will <span style="color: tomato;">_**continually call itself**_</span>, implementing our **recursion**. Type this clause like so:  
 
@@ -95,11 +95,11 @@ else {
   console.log("HAPPY NEW YEAR!");
 }{% endhighlight %}
 
-##### A Side-Note About Checking Your Braces  
+#### A Side-Note About Checking Your Braces  
 
 Make sure your code is written properly in all the correct braces & code blocks. Use your text editor to make sure you've gotten this correct: Put your cursor on any open brace and notice how it <span style="color: tomato;">highlights</span> for you the corresponding closing brace. Use this to be sure you've enclosed all statements properly in their correct braces!  
 
-##### Calling Your Function  
+#### Calling Your Function  
 
 8. So far you've <span style="color: tomato;">definined</span> your function. You just need to <span style="color: tomato;">call</span> it. Let's run a countDown from 10 seconds. _Below & outside of your function definition,_ i.e. on the next line, call it with an argument of 10:  
 
@@ -108,7 +108,7 @@ countDown(10);{% endhighlight %}
 
 Example JavaScript Console output should resemble the following:
 
-<img src="/Goldford-MTEC1003-OL04/assets/hny.jsconsole.output.png" alt="HNY Example Output" width="600">  
+<img src="/Goldford-MTEC1003-OL04/assets/hny.jsconsole.output.png" alt="HNY Example Output">  
 
 * **Save** your HMTL/JavaScript file, and make sure to **test** it using Google Chrome's JavaScript Console.  
 * Once you know it works, recreate a version of this in Python:  
