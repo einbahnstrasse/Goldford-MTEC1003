@@ -14,8 +14,8 @@ layout: default
 <a href="#setup">Setup for Python3</a>  
 <a href="#repo">Setting Up Your Lab 10 Repository</a>
 1. <a href="#gimmy">Gimmy My Number</a>
-2. <a href="#stories">What Floor Do You Work On?</a>
-4. <a href="#bmi">Calculating Body Mass Index (BMI) in Python</a>
+2. <a href="#stories">Which Floor Do You Work On?</a>
+<!-- 4. <a href="#bmi">Calculating Body Mass Index  (BMI) in Python</a> -->
 
 * * *
 
@@ -72,7 +72,7 @@ Example JavaScript Console output should resemble the following:
 * * *
 
 <a id="stories"></a>
-## 2. What Floor Do You Work On?  
+## 2. Which Floor Do You Work On?  
 1. Using your text editor, create a new file called **whichfloor.html** in your **lab-10-more-loops** repository.  
 2. Set up an HTML file, and add <span style="color: tomato;">`<script>`</span> tags… start writing your JavaScript between the tags.  
 3. **Declare** a variable called <span style="color: tomato;">`maximum_stories`</span> and **initialize** it with a **value** of your choice. In other words: Decide how many floors your building should have.  
@@ -105,5 +105,7 @@ At the end of Lab 10 / Part 1, your **lab-10-more-loops** folder should include 
   * gimmymynumber.py  
   * whichfloor.html  
   * whichfloor.py  
+
+When finished, move on to [Lab 10 / Part 2: Python + JavaScript Recursions](/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-recursios.html){:target="_blank"} 
 
 * * *
