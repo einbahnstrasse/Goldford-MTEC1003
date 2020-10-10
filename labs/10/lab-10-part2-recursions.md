@@ -95,7 +95,7 @@ designates our **base case**. As long as `nextNumber` continues to be _greater t
 7. Now, inside the <span style="color: tomato;">_**else** clause_</span>, imagine that you've counted down all the way to 1. What happens when the ball finally drops on New Year's Eve, after the counting...?
 
 {% highlight javascript %}
-else {
+} else {
   console.log("HAPPY NEW YEAR!");
 }{% endhighlight %}
 
