@@ -232,7 +232,7 @@ $ git commit -m "adding timing feature to happynewyear.html"{% endhighlight %}
 * * *  
 
 <a id="hanoi"></a>
-## The Tower of Hanoi (in Python)</a>
+## 3. The Tower of Hanoi (in Python)  
 
 By now you should have watched a lovely video by Professor Thorsten Altenkirch, explaining the [Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi){:target="_blank"} problem and how to implement it in Python:  
 
