@@ -13,8 +13,9 @@ layout: default
 #### C O N T E N T S  
 <a href="#setup">Setup for Python3</a>  
 <a href="#repo">Setting Up Your Lab 10 Repository</a>
-1. <a href="#hny">Happy New Year!</a>
+1. <a href="#hny">Happy New Year! (in JavaScript)</a>
 2. <a href="#timing">Add Timing + Interactivity</a>
+3. <a href="#hanoi">The Tower of Hanoi (in Python)</a>
 <!-- 4. <a href="#bmi">Calculating Body Mass Index  (BMI) in Python</a> -->
 
 * * *
@@ -46,7 +47,7 @@ Once you've done this, you're all set.
 * * *  
 
 <a id="hny"></a>
-## 1. Happy New Year!  
+## 1. Happy New Year! (in JavaScript)  
 
 1. Using your text editor, create a new file called **happynewyear.html** in your **lab-10-more-loops** repository.  
 2. Set up an HTML file, and add <span style="color: tomato;">`<script>`</span> tags… start writing your JavaScript between the tags.  
@@ -191,7 +192,7 @@ One last feature to add! We want the numbers to count down like we do in real li
 {:start="12"}
 12. Inside your <span style="color: tomato;">_**if** clause_</span> let's add a delay by making a change on line 15. On this line, we'll use the JavaScript function [setTimeout()](https://www.w3schools.com/jsref/met_win_settimeout.asp){:target="_blank"} to make sure our new `countDown()` function calls itself with a 1-second delay.
 
-The [setTimeout()](https://www.w3schools.com/jsref/met_win_settimeout.asp){:target="_blank"} works like this:
+JavaScript's [setTimeout()](https://www.w3schools.com/jsref/met_win_settimeout.asp){:target="_blank"} function works like this:
 
 {% highlight javascript %}
 setTimeout(function, milliseconds, param1, param2, ...){% endhighlight %}
@@ -230,11 +231,20 @@ $ git commit -m "adding timing feature to happynewyear.html"{% endhighlight %}
 
 * * *  
 
+<a id="hanoi"></a>
+## The Tower of Hanoi (in Python)</a>
 
+By now you should have watched a lovely video by Professor Thorsten Altenkirch, explaining the [Tower of Hanoi](https://en.wikipedia.org/wiki/Tower_of_Hanoi){:target="_blank"} problem and how to implement it in Python:  
 
+<iframe src="https://www.youtube.com/embed/8lhxIOAfDss" width="560" height="315" frameborder="0"></iframe>
 
+Your task for this part of the lab is to <span style="color: tomato;">transcribe the Python code in this video</span> into a working Python script. Fortunately, the examples given in the video are very clear, so you should be able to watch the video again and simply type out the same code you see on your screen.
 
+* **Save** your Python file, and make sure to **test** it on your Terminal's command line.  
+* For this exercise, you DON'T need to create a JavaScript version!!  
+* Use git **status**, **add**, **commit**, and **push** to version your file and submit it.  
 
+* * *
 
 
 
