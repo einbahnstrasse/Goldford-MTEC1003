@@ -240,6 +240,28 @@ By now you should have watched a lovely video by Professor Thorsten Altenkirch, 
 
 Your task : <span style="color: tomato;">transcribe the Python code in this video into a working Python script.</span> Fortunately, the examples given in the video are very clear, so you should be able to watch the video again and simply type out the same code you see on your screen.
 
+Create a new file called **hanoi.py** and start typing the code you learn from the video. Be sure to include function **definitions** for `move()` and `hanoi()`, and don't forget a **base case** inside your `hanoi()` function!  
+
+Your last line should **call** the `hanoi()` function exactly as he's done in the video (i.e. using the same arguments: 4, "A", "B", "C"), and should produce the following output when you run it in Terminal:  
+
+{% highlight terminal %}
+$ python3 /path/to/hanoi.py
+Move disc from A to B!
+Move disc from A to C!
+Move disc from B to C!
+Move disc from A to B!
+Move disc from C to A!
+Move disc from C to B!
+Move disc from A to B!
+Move disc from A to C!
+Move disc from B to C!
+Move disc from B to A!
+Move disc from C to A!
+Move disc from B to C!
+Move disc from A to B!
+Move disc from A to C!
+Move disc from B to C!{% endhighlight %}
+
 * **Save** your Python file, and make sure to **test** it on your Terminal's command line.  
 * For this exercise, you DON'T need to create a JavaScript version!!  
 * Use git **status**, **add**, **commit**, and **push** to version your file and submit it.  
