@@ -238,7 +238,7 @@ By now you should have watched a lovely video by Professor Thorsten Altenkirch, 
 
 <iframe src="https://www.youtube.com/embed/8lhxIOAfDss" width="560" height="315" frameborder="0"></iframe>
 
-Your task : <span style="color: tomato;">transcribe the Python code in this video</span> into a working Python script. Fortunately, the examples given in the video are very clear, so you should be able to watch the video again and simply type out the same code you see on your screen.
+Your task : <span style="color: tomato;">transcribe the Python code in this video into a working Python script.</span> Fortunately, the examples given in the video are very clear, so you should be able to watch the video again and simply type out the same code you see on your screen.
 
 * **Save** your Python file, and make sure to **test** it on your Terminal's command line.  
 * For this exercise, you DON'T need to create a JavaScript version!!  
