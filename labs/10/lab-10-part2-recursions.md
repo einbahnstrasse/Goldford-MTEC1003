@@ -121,7 +121,7 @@ Example JavaScript Console output should resemble the following:
 * Since we'll be making changes and adding to this file, **commit** your file with a **message** resembling this:  
 
 {% highlight terminal %}
-$ git commit -m <span style="color: tomato;">"first version of happynewyear.html"</span>{% endhighlight %}
+$ git commit -m "first version of happynewyear.html"{% endhighlight %}
 
 Now, let's make some changes that will make our count down a much cooler experience...
 
@@ -130,9 +130,9 @@ Now, let's make some changes that will make our count down a much cooler experie
 <a id="timing"></a>
 ## 2. Add Timing + Interactivity  
 
-When you imagine a proper New Year's Eve count down, though, isn't it true that we count down _one second at a time_ until all the seconds have passed, and it's time for the ball to drop? Let's add this timing feature, so that we don't get our entire count down at once, but instead: one number at a time, with a 1-second delay in between each number, all the way down to our final _"Happy New Year!"_ message at the end.
+When you imagine a proper New Year's Eve count down, though, isn't it true that we count down _one second at a time_ until all the seconds have passed, and it's time for the ball to drop? Let's add this timing feature, so that we don't get our entire count down in the console at once, but instead: one number at a time, with a 1-second delay between each number, all the way down to our final _"Happy New Year!"_ message at the end.
 
-First, let's make sure we're on the same page. Your 1st version of the file should look like this:  
+First, let's make sure we're all on the same page. Your 1st version of the file should look like this:  
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -159,7 +159,85 @@ First, let's make sure we're on the same page. Your 1st version of the file shou
   </body>
 </html>{% endhighlight %}
 
-If your code doesn't yet look like this, make the necessary changes before moving on. I'll be referring to the line numbers above for the rest of this exercise...  
+If your code doesn't yet look like this, make the necessary changes & corrections to be sure it's working before moving on. <span style="color: tomato;">_Your line numbers do not have to match mine,_</span> but for ease of communication, I'll be referring to the line numbers above for the rest of this exercise...  
+
+### Asking the User  
+
+By now, you should remember how to ask the user for input. We want to ask the user how many seconds there are until New Year's Eve. Then, we'll **pass** this as an **argument** to our function, which will count down from a user-supplied number. _Where do you think we should ask for user input?_ If you guessed between the function definition and call, then you're right!
+
+{:start="9"}
+9. Insert a new line 20, between the function **definition** and its **call**, and ask the user for input:
+  - **Declare** a new variable for this user input. You can call it `count`.
+  - Set it equal to a prompt. Ask them _"How many seconds there are until New Year's Eve?"_ or something like that.
+  - Don't forget to **convert** the user response to an integer.
+  - You can do _all of this_ in 1 line of code. Can you think of how to do it?
+10. User input will be stored inside your new variable. **Pass** this to your function **call** as its argument.
+  - _(HINT: You don't need to make a new line of code for this step! You just need to change the function call, i.e. line 20.)_  
+11. **Test** this by **reloading** your file in Chrome.  
+  - First you should see the prompt. Enter a number.  
+  - Then, your function should count down from this number. Check the Console to be sure.  
+  - Reload the page and try different numbers to be sure it's working.  
+
+* Use git **status**, **add**, **commit**, and **push** to update your file.  
+* Your **commit message** can resemble this:  
+
+{% highlight terminal %}
+$ git commit -m "adding user input feature to happynewyear.html"{% endhighlight %}
+
+### Add a Time Delay  
+
+One last feature to add! We want the numbers to count down like we do in real life: 1 second at a time.  
+
+{:start="12"}
+12. Inside your <span style="color: tomato;">_**if** clause_</span> let's add a delay by making a change on line 15. On this line, we'll use the JavaScript function [setTimeout()](https://www.w3schools.com/jsref/met_win_settimeout.asp){:target="_blank"} to make sure our new `countDown()` function calls itself with a 1-second delay.
+
+The [setTimeout()](https://www.w3schools.com/jsref/met_win_settimeout.asp){:target="_blank"} works like this:
+
+{% highlight javascript %}
+setTimeout(function, milliseconds, param1, param2, ...){% endhighlight %}
+
+where `function` will be the name of a function to be called after a specific time delay (in our case, this will be our `countDown` function), and `milliseconds` is the time delay (for us, we're targeting 1 second, or 1000 milliseconds).
+
+The optional parameters `param1` and `param2` are placeholders for any **arguments** we must **pass** to our named function (i.e. `countDown`).  What was that variable we passed to `countDown()` written in our original line 15? That variable will substitute `param1` in the formula above.
+
+So, change line 15 so that it looks like this (i.e. inside your <span style="color: tomato;">_**if** clause_</span>):
+
+{% highlight javascript %}
+if (nextNumber > 0) {
+    setTimeout(countDown, 1000, nextNumber);
+}{% endhighlight %}
+
+This ensures that your function calls itself _every 1 second_.  
+
+Let's add the same delay to our final _"Happy New Year!"_ message. Inside your <span style="color: tomato;">_**else** clause_</span>, change line 17 to the following:  
+
+{% highlight javascript %}
+} else {
+  setTimeout(function(){console.log("HAPPY NEW YEAR!");}, 1000, nextNumber);
+}{% endhighlight %}
+
+We've just **defined** a function inside the `setTimeout()` function: instead of naming a pre-existing function as the first argument to `setTimeout()`, now we've just included our original print message as its own function!  
+
+Now, when you test your function, it should not only count down from a user-defined number of seconds; it should post each message to the console with a 1-second delay!  
+
+* **Save** your HMTL/JavaScript file, and make sure to **test** it using Google Chrome's JavaScript Console.  
+* For this exercise, you DON'T need to create a Python version!!  
+* Use git **status**, **add**, **commit**, and **push** to version your file and submit it.  
+* Your **commit message** can resemble this:  
+
+{% highlight terminal %}
+$ git commit -m "adding timing feature to happynewyear.html"{% endhighlight %}
+
+* * *  
+
+
+
+
+
+
+
+
+
 
 
 
