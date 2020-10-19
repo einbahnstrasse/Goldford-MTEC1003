@@ -147,6 +147,8 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h3 class="schedule-page-date">Week 7: October 19th</h3>
 ### Javascript + Python: Conditionals
 
+### [Week 6 Review (Quizlet)](https://forms.gle/2vqG7kvmSbujwBM57){:target="_blank"}  
+
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Conditionals](/Goldford-MTEC1003-OL04/labs/06/js-conditionals.html){:target="_blank"}  
 * [JavaScript Conditionals — Revisited](/Goldford-MTEC1003-OL04/labs/07/js-conditionals-revisited.html){:target="_blank"}  
