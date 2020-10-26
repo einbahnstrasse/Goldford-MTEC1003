@@ -166,6 +166,8 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### JavaScript + Python: For Loops  
 <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>  
 
+### [Week 8 Warmup (Quizlet)](https://forms.gle/34kwz8s61Vim1gQ97){:target="_blank"}  
+
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [For Loops in JavaScript](/Goldford-MTEC1003-OL04/labs/08/js.for.loops.v02.html){:target="_blank"}  
 * [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
