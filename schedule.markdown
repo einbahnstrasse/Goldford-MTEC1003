@@ -206,6 +206,8 @@ _This page will be updated frequently with examples, video tutorials, links to n
 ### Javascript + Python: Function Definitions + Function Calls
 <p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
+### [Week 9 Warmup (Quizlet)](https://forms.gle/c3YzMLmvjhudPEka7){:target="_blank"}  
+
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Functions](/Goldford-MTEC1003-OL04/labs/09/js.functions.html){:target="_blank"}  
 * [Python Function Definitions + Calls](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/functions.tutorial.v01/#/){:target="_blank"}
