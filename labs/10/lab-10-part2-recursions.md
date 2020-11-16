@@ -270,44 +270,15 @@ Move disc from B to C!{% endhighlight %}
 
 * * *
 
-
-
-
-
-
-1. Using your text editor, create a new file called **whichfloor.html** in your **lab-10-more-loops** repository.  
-2. Set up an HTML file, and add <span style="color: tomato;">`<script>`</span> tags… start writing your JavaScript between the tags.  
-3. **Declare** a variable called <span style="color: tomato;">`maximum_stories`</span> and **initialize** it with a **value** of your choice. In other words: Decide how many floors your building should have.  
-3. Ask the user which floor they work on (_"On what floor of the building is your office?"_).  
-4. If the user enters a number _greater than_ <span style="color: tomato;">`maximum_stories`</span>, format + print an <span style="color: tomato;">**error message**</span> telling the user:  
-  - what number they entered,  
-  - how many floors are in the building, and  
-  - ask them to enter a valid number.  
-5. Print this same message to the JavaScript Console; so that we we can keep a record of what the user entered.  
-6. If the user enters a valid number, format + print some kind of _"Congratulations!"_ message.  
-7. Use a <span style="color: tomato;">_**while loop**_</span> to accomplish this. Your loop should keep asking the user to enter a satisfactory number and should do so for as many times as necessary; until finally the user returns a number within the bounds of your <span style="color: tomato;">`maximum_stories`</span> variable.  
-8. **Save** your HMTL/JavaScript file, and make sure to **test** it using the JavaScript Console.
-9. Try **initializing** your program with different values for your <span style="color: tomato;">`maximum_stories`</span> variable. For example, if you original set `maximum_stories` to a value of 10, increase it to 20 or some other value of your choice. Change this number at the start of your JavaScript program, **save** your HTML file in the text editor and **refresh** your program in Chrome. **Test** to make sure that your new values are reflected in the error messages thrown by your **while loop** program.  
-
-Example JavaScript Console output should resemble the following:  
-
-<img src="/Goldford-MTEC1003-OL04/assets/stories.example.png" alt="Stories Example Output" width="600">  
-
-* Once you know it works, recreate a version of this in Python:  
-  - In your text editor, create a new file called **whichfloor.py** in your **lab-10-more-loops** repository.  
-  - Don't bother setting up HTML tags; no need for this in Python!  
-  - Repeat steps 3-9 above, carefully recalling how Python syntax differs from JavaScript (_e.g. how will you ask the user for input in Python?_).  
-  - **Save** your Python script, and make sure to **test** it by running Python on your Terminal's command line.  
-* Use git **status**, **add**, **commit**, and **push** to version your two files and submit them.  
-
 Make sure all your files are included in your **lab-10-more-loops** repo folder, and don't forget to **add**, **commit**, and **push** any additional changes! Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
 
-At the end of Lab 10 / Part 1, your **lab-10-more-loops** folder should include the following files:  
-  * gimmymynumber.html  
-  * gimmymynumber.py  
-  * whichfloor.html  
-  * whichfloor.py  
-
-When finished, move on to [Lab 10 / Part 2: Python + JavaScript Recursions](/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-recursios.html){:target="_blank"}
+At the end of Lab 10 / Part 2, your **lab-10-more-loops** folder should include the following files:  
+  * gimmymynumber.html
+  * gimmymynumber.py
+  * whichfloor.html
+  * whichfloor.py
+  * happynewyear.v01.html
+  * happynewyear.v02.html _(no Python versions of "Happy New Year!")_
+  * hanoi.py _(no JavaScript version of the Tower of Hanoi example. Just transcribe the code from the video and test it in your Terminal.)_
 
 * * *
