@@ -269,7 +269,7 @@ _Don't forget to watch + study the following..._
 * [Introduction to HTML + CSS](/Goldford-MTEC1003-OL04/labs/13/html_css.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>EXTERNAL TUTORIALS</b></h5>
-* [A CheatSheet of Basic HTML Tags](http://www.simplehtmlguide.com/cheatsheet.php/){:target="_blank"}  
+* [A CheatSheet of Basic HTML Tags](http://www.simplehtmlguide.com/cheatsheet.php){:target="_blank"}  
 * [Shay Howe's Building Your First Web Page Tutorial](https://learn.shayhowe.com/html-css/building-your-first-web-page/){:target="_blank"}  
 * [HTML Dog's CSS Beginner Tutorial](https://www.htmldog.com/guides/css/beginner/){:target="_blank"}  
 * [HTML Dog's CSS Intermediate Tutorial](https://www.htmldog.com/guides/css/intermediate/){:target="_blank"}  
