@@ -220,9 +220,15 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <a id="w10"></a>
 <h3 class="schedule-page-date">Week 10: November 9th</h3>
-### Javascript + Python: More Kinds of Loops
+#### Review: Conditionals, Loops, Functions
 
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+This week we had no new lab materials, and instead reviewed from previous weeks. Lots of demonstrations of our previous slides and labs to catch up on materials that may have gotten overlooked or otherwise weren't clear to everyone.  
+
+* * *
+
+<a id="w11"></a>
+<h3 class="schedule-page-date">Week 11: November 16th</h3>
+### Javascript + Python: More Kinds of Loops  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
@@ -253,29 +259,20 @@ _Don't forget to watch + study the following..._
 
 * * *
 
-<a id="w11"></a>
-<h3 class="schedule-page-date">Week 11: November 16th</h3>
-### HTML/CSS: Introduction
-#### Review: Conditionals, Loops, Functions
-
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
-
-<h5 style="color:Tomato;"><b>SLIDES</b></h5>
-
-<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-
-<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
-
-* * *
-
 <a id="w12"></a>
 <h3 class="schedule-page-date">Week 12: November 23rd</h3>
-### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
-<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
+### HTML/CSS: Introduction  
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
+* [Introduction to HTML + CSS](/Goldford-MTEC1003-OL04/labs/13/html_css.html){:target="_blank"}  
+
+<h5 style="color:Tomato;"><b>EXTERNAL TUTORIALS</b></h5>
+* [A CheatSheet of Basic HTML Tags](http://www.simplehtmlguide.com/cheatsheet.php/){:target="_blank"}  
+* [Shay Howe's Building Your First Web Page Tutorial](https://learn.shayhowe.com/html-css/building-your-first-web-page/){:target="_blank"}  
+* [HTML Dog's CSS Beginner Tutorial](https://www.htmldog.com/guides/css/beginner/){:target="_blank"}  
+* [HTML Dog's CSS Intermediate Tutorial](https://www.htmldog.com/guides/css/intermediate/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
@@ -285,12 +282,16 @@ _Don't forget to watch + study the following..._
 
 <a id="w13"></a>
 <h3 class="schedule-page-date">Week 13: November 30th</h3>
-### Introduction to Python Data Visualization + Mapping
-<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/30. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
+### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
+<p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
+* [Introduction to the Canvas](/Goldford-MTEC1003-OL04/labs/12/canvas.html){:target="_blank"}  
+* [Events](/Goldford-MTEC1003-OL04/labs/10/events.html){:target="_blank"}  
+* [Click Events](/Goldford-MTEC1003-OL04/labs/11/click.html){:target="_blank"}  
+* [Animation](/Goldford-MTEC1003-OL04/labs/11/animation.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 
