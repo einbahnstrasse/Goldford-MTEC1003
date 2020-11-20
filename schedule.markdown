@@ -263,7 +263,7 @@ _Don't forget to watch + study the following..._
 <h3 class="schedule-page-date">Week 12: November 23rd</h3>
 ### HTML/CSS: Introduction  
 
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
 ### [Weeks 9-11 Review Quizlet)](https://forms.gle/Nfctbg3EJQ388Vz87){:target="_blank"}  
 
@@ -277,9 +277,9 @@ _Don't forget to watch + study the following..._
 * [HTML Dog's CSS Intermediate Tutorial](https://www.htmldog.com/guides/css/intermediate/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 12 / Part 1: HTML](/Goldford-MTEC1003-OL04/labs/12/lab-12-part1-html.html){:target="_blank"}  
-* [Lab 12 / Part 2: CSS](/Goldford-MTEC1003-OL04/labs/12/lab-12-part2-css.html){:target="_blank"}  
-* [Lab 12 / Part 3: Preparing for Your Final Assignment](/Goldford-MTEC1003-OL04/labs/12/lab-12-part3-final-prep.html){:target="_blank"}  
+* [Lab 12 / Part 1: HTML](/Goldford-MTEC1003-OL04/labs/12/lab-12a-part1-html.html){:target="_blank"}  
+* [Lab 12 / Part 2: CSS](/Goldford-MTEC1003-OL04/labs/12/lab-12a-part2-css.html){:target="_blank"}  
+* [Lab 12 / Part 3: Preparing for Your Final Assignment](/Goldford-MTEC1003-OL04/labs/12/lab-12a-part3-final-prep.html){:target="_blank"}  
 
 * * *
 
