@@ -17,7 +17,7 @@ layout: default
 <a id="overview"></a>
 ## 1. Overview of the MTEC1003 Final Assignment  
 
-Our last class is on Monday, December 14 (i.e. Week 15), as marked on our [Schedule page.](schedule.html){:target="_blank"}  
+Our last class is on Monday, December 14 (i.e. Week 15), as marked on our [Schedule page.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/){:target="_blank"}  
 
 On that day, your final project for the semester will be due. This will be a simple, personal website design that you write in HTML, CSS, and JavaScript.
 
@@ -50,7 +50,7 @@ For example, our Course Website utilizes the following JavaScript libraries:
 
 Feel free to experiment these or any others, if it would help you get inspired, and to help make your website more expressive!  
 
-<p>However, do note that <span style="color: red"><strong>THE USE OF ANY EXTERNAL WEBSITE BUILDER, SUCH AS SQUARESPACE, CARGO, WIX, WORDPRESS, ETC., IS STRICTLY PROHIBITED!</strong></span> The point of this assignment is to code a simple website and design it from scratch. You will be graded on the source code you submit (not only on the elegance of your site's appearance) and your ability to follow instructions for hosting your site through GitHub pages _(we'll learn this in Week 14)_.</p>
+<p>However, do note that <span style="color: red"><i><strong>THE USE OF ANY EXTERNAL WEBSITE BUILDER, SUCH AS SQUARESPACE, CARGO, WIX, WORDPRESS, ETC., IS STRICTLY PROHIBITED!</strong></i></span> The point of this assignment is to code a simple website and design it from scratch. You will be graded on the source code you submit (not only on the elegance of your site's appearance) and your ability to follow instructions for hosting your site through GitHub pages _(we'll learn this in Week 14)_.</p>
 
 * * *   
 
