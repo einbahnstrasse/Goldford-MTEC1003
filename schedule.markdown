@@ -220,7 +220,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 
 <a id="w10"></a>
 <h3 class="schedule-page-date">Week 10: November 9th</h3>
-#### Review: Conditionals, Loops, Functions
+### Review: Conditionals, Loops, Functions
 
 This week we had no new lab materials, and instead reviewed from previous weeks. Lots of demonstrations of our previous slides and labs to catch up on materials that may have gotten overlooked or otherwise weren't clear to everyone.  
 
