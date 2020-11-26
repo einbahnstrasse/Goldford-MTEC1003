@@ -297,8 +297,9 @@ _Don't forget to watch + study the following..._
 * [Animation](/Goldford-MTEC1003-OL04/labs/11/animation.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-
-<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
+* [Lab 13 / Part 1: Basic Canvas](/Goldford-MTEC1003-OL04/labs/13/lab-13a-part1-basic-canvas.html){:target="_blank"}  
+* [Lab 13 / Part 2: Advanced Canvas](/Goldford-MTEC1003-OL04/labs/13/lab-13a-part2-advanced-canvas.html){:target="_blank"}  
+* [Lab 13 / Part 3: Animation](/Goldford-MTEC1003-OL04/labs/13/lab-13a-part2-advanced-canvas.html){:target="_blank"}  
 
 * * *
 
