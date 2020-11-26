@@ -310,9 +310,20 @@ _Don't forget to watch + study the following..._
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
-<h5 style="color:Tomato;"><b>SLIDES</b></h5>
+<h5 style="color:Tomato;"><b>EXTERNAL TUTORIALS</b></h5>
+* [Intro. to _GitHub Pages_](https://pages.github.com/){:target="_blank"}  
+
+<h5 style="color:Tomato;"><b>VIDEO TUTORIAL</b></h5>
+###### Shiffman: GitHub Pages - Git and GitHub for Poets  
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bFVtrlyH-kc" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
+* [Lab 14 / Part 3: _GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 
