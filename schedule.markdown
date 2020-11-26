@@ -288,7 +288,7 @@ _Don't forget to watch + study the following..._
 ### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
 <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Introduction to the Canvas](/Goldford-MTEC1003-OL04/labs/12/canvas.html){:target="_blank"}  
