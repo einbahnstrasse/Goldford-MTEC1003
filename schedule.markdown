@@ -301,6 +301,10 @@ _Don't forget to watch + study the following..._
 * [Lab 13 / Part 2: Advanced Canvas](/Goldford-MTEC1003-OL04/labs/13/lab-13a-part2-advanced-canvas.html){:target="_blank"}  
 * [Lab 13 / Part 3: Animation](/Goldford-MTEC1003-OL04/labs/13/lab-13a-part3-animation.html){:target="_blank"}  
 
+<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
+* [JavaScript Games (Ski Free!)](http://basicallydan.github.io/skifree.js/){:target="_blank"}  
+* [Intermediate CSS Issues](https://www.htmldog.com/guides/css/intermediate/){:target="_blank"}  
+
 * * *
 
 <a id="w14"></a>
