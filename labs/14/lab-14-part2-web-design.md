@@ -89,7 +89,31 @@ Now, inside the innermost `<div>`, add the following `<h1>` and `<p>` elements:
 <h5>I'm an Immunologist</h5>
 {% endhighlight %}
 
-This text will be placed on top of our "hero image". We'll format all of this using the class selectors we've just labeled in our CSS file later.  
+This text will be placed on top of our "hero image". We'll format all of this using the class selectors we've just labeled in our CSS file later...  
+
+So far, your page with the complete "hero image" container system should look like this:  
+
+{% highlight html linenos %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Home Page</title>
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Hi, I'm Tony</h1>
+        <h5>I'm an Immunologist</h5>
+      </div>
+    </div>
+  </body>
+</html>
+{% endhighlight %}
+
+Next, let's make containers for a "navbar" — i.e. a navigation menu — so we can easily navigate our site.  
+
+
 
 Next, make 4 identical `<div>` elements. Inside each, label them "Divider1", "Divider2", and so on. These will simply act as "containers" for different parts of your page: in this case, we'll be posting text elements inside each `<div>` and positioning them later with CSS.  
 
