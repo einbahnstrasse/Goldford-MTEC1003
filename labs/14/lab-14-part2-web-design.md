@@ -47,7 +47,7 @@ Type "HTML" + the `TAB` key to generate a boilerplate HTML document.
 Inside your `<head>` tag, and in between the `<title></title>`, type the name of your page: call it "My Home Page".  
 
 <a id="hero"></a>
-#### Make a Container for a "Hero Image"
+### Make a Container for a "Hero Image"
 
 Now, inside your page's `<body>` tag, type "div" and then press the `TAB` key to format the proper tags. So far, your page should look like this:  
 
@@ -119,7 +119,7 @@ So far, your page with the complete "hero image" container system should look li
 {% endhighlight %}
 
 <a id="naving"></a>
-#### Make a Container for a Navbar  
+### Make a Container for a Navbar  
 
 Next, let's make containers for a "navbar" — i.e. a navigation menu — so we can easily navigate our site.  
 
@@ -139,7 +139,7 @@ Inside these div tags, add some `<a>` link elements that we'll use for each page
 _By the way: **make sure all links and divs are properly indented!**_  
 
 <a id="textelems"></a>
-#### Make Containers for Body Text Elements    
+### Make Containers for Body Text Elements    
 
 Next, make 4 identical `<div>` elements, which we'll use to place content on our home page. In this example, we'll be placing news stories inside these divs.  
 
@@ -166,7 +166,7 @@ So, give these divs a generalized class selector, like "stuff", and then give th
 Again, we'll use these selectors to add style and positioning in CSS.
 
 <a id="extcss"></a>
-#### Link to an External CSS Style Sheet
+### Link to an External CSS Style Sheet
 
 Finally, let's add a relative link in our `<head>` (directly following our `<title></title>` tags) to an external style sheet. The file should be referenced as "style.css" and should be included inline with the link tag:  
 
