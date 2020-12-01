@@ -216,14 +216,46 @@ Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and
 
 Right-click and save the following image file in your local repo (fauci.v01.jpg):  
 
-<img src="fauci.v01.jpg" alt="Dr. Fauci" width="300px" />
+<img src="fauci.v01.jpg" alt="Dr. Fauci" width="375px" />
 
 We're going to use this as our "hero image".  
 
+Next, let's reference this inside your **style.css** file.
 
+Recall that your image container (`<div>`) has a class selector associated with it. We called this "hero-image".  
 
+So, in our CSS, we need to only to identify this element by its class selector. Add some rules to this selector in your CSS like so:  
 
+{% highlight css %}
+.hero-image {
+  background-image: url("fauci.v01.jpg");
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+{% endhighlight %}
 
+Next, let's style the text we want to place over the image...   
+
+Recall that your image text container also has a class selector associated with it. We called this "hero-text". This `<div>` contains an `<h1>` and an `<h5>` element.
+
+In your external style sheet, add some rules for your hero text:  
+
+{% highlight css %}
+/* Center the text over the image. */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+{% endhighlight %}
+
+At this point, open your **index.html** file in Chrome to observe the current state of your home page. 
 
 * * *   
 
