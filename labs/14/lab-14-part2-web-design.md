@@ -14,7 +14,7 @@ layout: default
   - <a href="#naving">Make a Container for a Navbar</a>  
   - <a href="#textelems">Make Containers for Body Text Elements</a>  
   - <a href="#extcss">Link to an External CSS Style Sheet</a>  
-3. <a href="#cont">Brainstorming Content for your Website</a>  
+3. <a href="#heroimg">Adding + Styling a Hero Image</a>  
 
 * * *  
 
@@ -207,31 +207,23 @@ So far your HTML source should look like this:
 </html>
 {% endhighlight %}
 
+Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
+
 * * *   
 
-<a id="cont"></a>
-## 3. Brainstorming Content for your Website  
+<a id="heroimg"></a>
+## 3. Adding + Styling a Hero Image     
 
-For each of the pages **Home**, **About Me**, and at least 1 **Portfolio page**, start **brainstorming** ideas for **content** that will appear on your site.
+Right-click and save the following image file in your local repo (fauci.v01.jpg):  
 
-Think of what you want the viewer to see when they first see your **Home** page, how you want to present yourself in your **About Me**, and what among your own projects, or professional interests, you'd want to present on any of your **Portfolio page**. Write out some initial ideas...  
+<img src="fauci.v01.jpg"
+     alt="Dr. Fauci"
+     style="float: left; margin-right: 10px;" />
 
-In your Terminal, navigate to your **/lab-12-html** repository, and create a new folder inside of it. _(Remember: What command will you use to create a new folder?)_ Call this folder **/final-project-brainstorming**. Change your directory so that your Terminal is inside this folder. Verify you're in the correct location by running **pwd**. Your path should look something like this:
+We're going to use this as our "hero image".  
 
-`/Users/[yourUserName]/myClasses-Fall2020/mtec1003//lab-12-html/final-project-brainstorming`
 
-In your text editor (e.g. SublimeText, Atom, VS Code, etc.), create 3 new text documents (.txt) and save them in your **/final-project-brainstorming** folder, which is within your **/lab-12-html** repository, using the following names:
-* **brainstorming-01-home-page.txt**  
-* **brainstorming-02-about-me.txt**  
-* **brainstorming-03-portfolio-v01.txt**  
 
-In each of these files, type out your ideas for the content on each of the pages of your site. For example, in **brainstorming-02-about-me.txt**, type out a 1-2 paragraph **biography** with information about your education, work experience, your professional expertise or goals. Think about how you want to present yourself to a future employer, a future scholarship committee, an art gallery, on a graduate school application, etc. _Put your best foot forward!_  
-
-Do the same for the **brainstorming-01-home-page.txt** and **brainstorming-03-portfolio-v01.txt**. What is the first thing you want them to see when they load your site in the browser? What pieces of your work would you want to present?
-
-Each of these text files should contain _at least 1-2 paragraphs of text explaining your initial ideas_ and/or draft of body text to be published on your website.
-
-Keep in mind: _You can change the contents of your site later!_ You don't need to turn in 100% complete ideas yet! Right now, the idea is to brainstorm and have at least a first draft of the site — that way, when we begin coding it later, you'll already have content to drop in! You can always revise this content later, add, or change things as we move forward...
 
 * * *   
 
