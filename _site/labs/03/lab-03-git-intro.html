@@ -46,7 +46,9 @@
   <li>sending those changes to your remote repository on github</li>
 </ol>
 
-<h2 id="summary-of-commands">Summary of Commands:</h2>
+<hr />
+
+<h2 id="summary-of-commands"><i>your git cheatsheet:</i> A Summary of Commands</h2>
 
 <p><strong>THESE ARE NOT LAB INSTRUCTIONS.</strong></p>
 
@@ -60,7 +62,7 @@ git config user.name  <span class="s2">&quot;your name&quot;</span>
 git config user.email <span class="s2">&quot;your@email.address&quot;</span>
 
 <span class="c"># create a remote repository</span>
-curl -u &#39;<span class="s1">your github user name</span>&#39;</span> https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">your repository name</span>&quot;}&#39;
+curl -u &#39;<span class="s1">your <i>GitHub</i> user name</span>&#39;</span> https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">your repository name</span>&quot;}&#39;
 
 <span class="c"># link the two</span>
 git remote add origin <span class="s2">url_to_your_repository_on_github</span>
@@ -98,38 +100,47 @@ git push origin master
 
 <h3 id="set-up-your-local-repository">Set up Your Local Repository</h3>
 
-<p>This will create a local git repository to store your work for this lab.  The repository will be in <strong>~/mtec1003/lab-03-git-intro.</strong></p>
+<p>This will create a local git repository to store your work for this lab. You can set this up anywhere on your computer, but to keep things organized, we recommend that you create the repository here:</p>
+<p><strong>/Users/[yourUserName]/Desktop/myClasses/mtec1003/lab-03-git-intro</strong></p>
 
 <ul>
-  <li>open terminal</li>
-  <li>if doesn&#8217;t already exist create a folder called <strong>mtec1003</strong> in your home folder. Change into that directory:</li>
+  <li>Open Terminal.</li>
+  <li>If doesn&#8217;t already exist create a folder called <strong>mtec1003</strong>. It should live in a place like <strong>~/Desktop</strong> or <strong>~/Desktop/myClasses</strong> so you can easily find it. Change into that directory:</li>
 </ul>
 
-<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~/mtec1003</code></pre></div>
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~/Desktop/myClasses
+<span class="nb">mkdir</span> mtec1003
+</code></pre></div>
+
+<ul>
+  <li>Or if this directory already exists, just change into it:</li>
+</ul>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ~/Desktop/myClasses/mtec1003</code></pre></div>
 
 <ul>
   <li>within that folder, create another folder called <strong>lab-03-git-intro</strong> and <strong>change into it</strong></li>
 </ul>
 
-<div class="highlight"><pre><code class="bash">mkdir lab-03-git-intro
+<div class="highlight"><pre><code class="bash"><span class="nb">mkdir</span> lab-03-git-intro
 <span class="nb">cd </span>lab-03-git-intro</code></pre>
 </div>
 
 <ul>
-  <li>use pwd to verify that you&#8217;re in the correct folder
+  <li>Use pwd to verify that you&#8217;re in the correct folder
     <ul>
-      <li>you should be in <strong>~/mtec1003/lab-03-git-intro</strong></li>
-      <li>if you&#8217;re not, cd into it</li>
+      <li>You should be in <strong>~/Desktop/myClasses/mtec1003/lab-03-git-intro</strong></li>
+      <li>If you&#8217;re not, change into it.</li>
     </ul>
   </li>
-  <li>to prove that this is not yet a repository, list <strong>all</strong> files in your current directory </li>
+  <li>To prove that this is not yet a repository, list <strong>all</strong> files in your current directory:</li>
 </ul>
 
 <div class="highlight"><pre><code class="bash">ls -al
 </code></pre></div>
 
 <ul>
-  <li>it should mostly be empty</li>
+  <li>It should mostly be empty.</li>
 </ul>
 
 <div class="highlight"><pre><code class="bash">total 0
@@ -138,7 +149,7 @@ drwxr-xr-x  3 bree  staff  102 Feb 26 07:52 ..
 </code></pre></div>
 
 <ul>
-  <li>in your lab-03-git-intro folder, create your repository!</li>
+  <li>Now, in your /lab-03-git-intro folder, <strong>create your repository!</strong></li>
 </ul>
 
 <div class="highlight"><pre><code class="bash">git init
@@ -148,7 +159,7 @@ drwxr-xr-x  3 bree  staff  102 Feb 26 07:52 ..
   <li>it should say:</li>
 </ul>
 
-<div class="highlight"><pre><code class="bash">Initialized empty Git repository in /Users/[yourUserName]/mtec1003/lab-03-git-intro.git
+<div class="highlight"><pre><code class="bash">Initialized empty Git repository in /Users/[yourUserName]/Desktop/myClasses/mtec1003/lab-03-git-intro.git
 </code></pre></div>
 
 <ul>
@@ -167,7 +178,7 @@ drwxr-xr-x  3 bree  staff  102 Feb 26 07:52 ..
 </code></pre></div>
 
 <ul>
-  <li>configure your name and email for your commits (these do not have to be the same as your github account)</li>
+  <li>configure your name and email for your commits (these do not have to be the same as your <i>GitHub</i> account)</li>
 </ul>
 
 <div class="highlight"><pre><code class="bash"><span class="c"># in the directory of your repository</span>
@@ -195,24 +206,24 @@ git config user.email <span class="s2">&quot;my@email.address&quot;</span>
 <img src="../../resources/img/repos-screen.png" alt="Repository List" /></li>
   <li>you should have all of the previous lab related repositories </li>
   <li>go back to terminal</li>
-  <li>using the commandline, create a remote repository on github by using the command below&#8230;</li>
-  <li>substitute your github username where it says &#8220;your github user name&#8221; (keep the single quotes and <strong>KEEP &#8220;name&#8221;:</strong> at the end of the line; don&#8217;t change that!).  the name of the repository is lab-03-git-intro (you can see that specified at the end of the command)</li>
+  <li>using the commandline, create a remote repository on <i>GitHub</i> by using the command below&#8230;</li>
+  <li>substitute your <i>GitHub</i> username where it says &#8220;your <i>GitHub</i> user name&#8221; (keep the single quotes and <strong>KEEP &#8220;name&#8221;:</strong> at the end of the line; don&#8217;t change that!).  the name of the repository is lab-03-git-intro (you can see that specified at the end of the command)</li>
 </ul>
 
-<div class="highlight"><pre><code class="bash">curl -u &#39;<span class="s1">your github user name</span>&#39; https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">lab-03-git-intro</span>&quot;}&#39;
+<div class="highlight"><pre><code class="bash">curl -u &#39;<span class="s1">your <i>GitHub</i> user name</span>&#39; https://api.github.com/user/repos -d &#39;{&quot;name&quot;:&quot;<span class="s1">lab-03-git-intro</span>&quot;}&#39;
 </code></pre></div>
 
 <ul>
   <li>it should output a bunch of text!</li>
 </ul>
 
-<div class="highlight"><pre><code class="bash">Enter host password <span class="k">for </span>user <span class="s1">&#39;bzuckerman&#39;</span>:
+<div class="highlight"><pre><code class="bash">Enter host password <span class="k">for </span>user <span class="s1">&#39;[yourGitHubUserName]&#39;</span>:
 <span class="o">{</span>
   <span class="s2">&quot;id&quot;</span>: 17210769,
   <span class="s2">&quot;name&quot;</span>: <span class="s2">&quot;lab-03-git-intro&quot;</span>,
-  <span class="s2">&quot;full_name&quot;</span>: <span class="s2">&quot;bzuckerman/lab-03-git-intro&quot;</span>,
+  <span class="s2">&quot;full_name&quot;</span>: <span class="s2">&quot;[yourGitHubUserName]/lab-03-git-intro&quot;</span>,
   <span class="s2">&quot;owner&quot;</span>: <span class="o">{</span>
-    <span class="s2">&quot;login&quot;</span>: <span class="s2">&quot;bzuckerman&quot;</span>,
+    <span class="s2">&quot;login&quot;</span>: <span class="s2">&quot;[yourGitHubUserName]&quot;</span>,
 	...
 <span class="o">}</span>
 </code></pre></div>
@@ -225,7 +236,7 @@ git config user.email <span class="s2">&quot;my@email.address&quot;</span>
   <li>make sure you&#8217;re in your local repository folder for <strong>lab-03-git-intro</strong>
     <ul>
       <li>use <strong>pwd</strong> to do this</li>
-      <li>you should be in <strong>~/mtec1003/lab-03-git-intro</strong></li>
+      <li>you should be in <strong>~/Desktop/myClasses/mtec1003/lab-03-git-intro</strong></li>
       <li>if you&#8217;re not in your lab folder, change your directory to it</li>
     </ul>
   </li>
@@ -237,12 +248,12 @@ git config user.email <span class="s2">&quot;my@email.address&quot;</span>
 
 <ul>
   <li>it should <em>do nothing</em></li>
-  <li>now, link your local repository to your remote repository on github by using git remote add </li>
-  <li>make sure to substitute the two spots where it says &#8220;[your github user name]&#8221; with your <i>actual</i> github username
+  <li>now, link your local repository to your remote repository on <i>GitHub</i> by using git remote add </li>
+  <li>make sure to substitute the two spots where it says &#8220;[your <i>GitHub</i> user name]&#8221; with your <i>actual</i> <i>GitHub</i> username
 <!--_--></li>
 </ul>
 
-<div class="highlight"><pre><code class="bash">git remote add origin https://github.com/<span class="s2">[your github user name]</span>/lab-03-git-intro.git
+<div class="highlight"><pre><code class="bash">git remote add origin https://github.com/<span class="s2">[your <i>GitHub</i> user name]</span>/lab-03-git-intro.git
 </code></pre></div>
 
 <ul>
@@ -258,8 +269,8 @@ git config user.email <span class="s2">&quot;my@email.address&quot;</span>
   <li>it should show origin &#8230; and your repository url:</li>
 </ul>
 
-<div class="highlight"><pre><code class="bash">origin	https://github.com/bzuckerman/lab-03-git-intro.git <span class="o">(</span>fetch<span class="o">)</span>
-origin	https://github.com/bzuckerman/lab-03-git-intro.git <span class="o">(</span>push<span class="o">)</span>
+<div class="highlight"><pre><code class="bash">origin	https://github.com/[yourGitHubUserName]/lab-03-git-intro.git <span class="o">(</span>fetch<span class="o">)</span>
+origin	https://github.com/[yourGitHubUserName]/lab-03-git-intro.git <span class="o">(</span>push<span class="o">)</span>
 </code></pre></div>
 
 <h3 id="creating-and-saving-changes-locally-sending-to-remote-repository">Creating and Saving Changes Locally, Sending to Remote Repository</h3>
@@ -271,7 +282,7 @@ origin	https://github.com/bzuckerman/lab-03-git-intro.git <span class="o">(</spa
   <li>make sure you&#8217;re in your local repository folder for lab-03-git-intro
     <ul>
       <li>use <strong>pwd</strong> to do this</li>
-      <li>you should be in <strong>~/mtec1003/lab-03-git-intro</strong></li>
+      <li>you should be in <strong>~/Desktop/myClasses/mtec1003/lab-03-git-intro</strong></li>
       <li>if you&#8217;re not in your lab folder, change your directory to it</li>
       <li>if this doesn&#8217;t exist yet&#8230; make sure you completed the beginning part of this lab</li>
     </ul>
@@ -297,9 +308,9 @@ nothing to commit <span class="o">(</span>create/copy files and use <span class=
   <li>create a file called <strong>README.markdown</strong> using <strong>SublimeText</strong> (see below&#8230;)</li>
   <li>go to Applications &#8594; SublimeText (or use Command+Spacebar to activate spotlight search, then start typing Sublime)</li>
   <li>once SublimeText is open, go to File &#8594; New (or Command+n) to create a new file</li>
-  <li>save your file by going to File &#8594; Save As to save your files as <strong>README.markdown</strong> in your <strong>~/mtec1003/lab-03-git-intro</strong>
+  <li>save your file by going to File &#8594; Save As to save your files as <strong>README.markdown</strong> in your <strong>~/Desktop/myClasses/mtec1003/lab-03-git-intro</strong>
 <img src="../../resources/img/sublime-save-as-menu.png" alt="Save As" /></li>
-  <li>make sure you navigate to your <strong>~/mtec1003/lab-03-git-intro</strong> before saving!
+  <li>make sure you navigate to your <strong>~/Desktop/myClasses/mtec1003/lab-03-git-intro</strong> before saving!
 <img src="../../resources/img/sublime-save-as.png" alt="Save As" /></li>
   <li>switch back to terminal</li>
   <li>use <strong>git status</strong> to show that you&#8217;ve made changes</li>
@@ -395,7 +406,7 @@ nothing to commit, working directory clean
 </ul>
 
 <div class="highlight"><pre><code class="bash">commit 5b24d2777a602908978916ca8fe9c8dd2ed6036b
-Author: bree &lt;bzuckerman@citytech.cuny.edu&gt;
+Author: bree &lt;[you]@citytech.cuny.edu&gt;
 Date:   Wed Mar 5 11:45:21 2014 -0500
 
     added readme
@@ -415,12 +426,12 @@ Date:   Wed Mar 5 11:45:21 2014 -0500
 <div class="highlight"><pre><code class="bash">Counting objects: 3, <span class="k">done</span>.
 Writing objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, 242 bytes <span class="p">|</span> 0 bytes/s, <span class="k">done</span>.
 Total 3 <span class="o">(</span>delta 0<span class="o">)</span>, reused 0 <span class="o">(</span>delta 0<span class="o">)</span>
-To https://github.com/bzuckerman/lab-03-git-intro.git
+To https://github.com/[yourGitHubUserName]/lab-03-git-intro.git
  * <span class="o">[</span>new branch<span class="o">]</span>      master -&gt; master
 </code></pre></div>
 
 <ul>
-  <li>go back to github and look in your repository.  you should see that file appear.</li>
+  <li>go back to <i>GitHub</i> and look in your repository.  you should see that file appear.</li>
   <li>go back to SublimeText</li>
   <li>add two lines to your README.markdown file</li>
 </ul>
@@ -460,7 +471,7 @@ It<span class="err">&#39;</span>s about creating local and remote repositories, 
 </div>
 
 <div id="ft">
-	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+	<p>MTEC 1003 - Media Computation Skills Lab</p>
 </div>
 </div>
 </body>

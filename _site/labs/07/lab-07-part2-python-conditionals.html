@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Goldford-MTEC1003-OL04/assets/css/style.css?v=3718950b355668c8b9901bbc7a3f9a72a023e324">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>MTEC1003-OL04 Media Computation Skills Lab | Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<meta name="author" content="Prof. Louis Goldford" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<meta property="og:description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-OL04/labs/07/lab-07-part2-python-conditionals.html" />
+<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-OL04/labs/07/lab-07-part2-python-conditionals.html" />
+<meta property="og:site_name" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-OL04/labs/07/lab-07-part2-python-conditionals.html","headline":"MTEC1003-OL04 Media Computation Skills Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/Goldford-MTEC1003-OL04/">
+          <h1>MTEC1003-OL04 Media Computation Skills Lab</h1>
+        </a>
+        <h2>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</h2>
+
+        <section id="downloads">
+          <!-- <a href="index.html" class="btn btn-syllabus"><span class="icon"></span>Course Syllabus</a>
+          <a href="schedule.html" class="btn btn-schedule"><span class="icon"></span>Schedule</a>
+          <a href="resources.html" class="btn btn-software"><span class="icon"></span>Software + Resources</a>
+          <a href="grading.html" class="btn btn-software"><span class="icon"></span>Grading</a> -->
+        	<a href="/Goldford-MTEC1003-OL04/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
+        	<a href="/Goldford-MTEC1003-OL04/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
+        	<a href="/Goldford-MTEC1003-OL04/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
+          <a href="/Goldford-MTEC1003-OL04/grading.html" class="btn"><span class="icon"></span>GRADING</a>
+          
+      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-OL04" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+
+<h1 id="lab-7--part-2-python-conditionals">Lab 7 / Part 2: Python Conditionals</h1>
+
+<h4 id="c-o-n-t-e-n-t-s">C O N T E N T S</h4>
+<p><a href="#setup">Setup for Python3</a></p>
+<ol>
+  <li><a href="#js-stuff">Recreating JavaScript Conditional Exercises in Python</a></li>
+  <li><a href="#reminders-user">Reminders (User Input)</a></li>
+  <li><a href="#mod-reminders">Modified Reminders</a></li>
+</ol>
+
+<hr />
+
+<p><a id="setup"></a></p>
+<h2 id="setup-for-python3">Setup for Python3</h2>
+
+<p>Let’s be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling <code class="language-plaintext highlighter-rouge">python</code> on the command line. We can create an “alias” for python3 by running the following command:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span><span class="nb">alias </span><span class="nv">python</span><span class="o">=</span>/usr/local/bin/python3 </code></pre></figure>
+
+<p>Alternatively, you can simply run <code class="language-plaintext highlighter-rouge">python3</code> in the Terminal instead of <code class="language-plaintext highlighter-rouge">python</code>, but this gets annoying after awhile.</p>
+
+<p>Once you’ve done this, you’re all set.</p>
+
+<hr />
+
+<p><a id="js-stuff"></a></p>
+<h2 id="1-recreating-javascript-conditional-exercises-in-python">1. Recreating JavaScript Conditional Exercises in Python</h2>
+
+<p><em><strong>NOTE:</strong> This section starts with the same 3 exercises from Lab 7 / Part 1. If you feel more comfortable with Python rather than JavaScript, you can start with this section in Python and then complete the JavaScript exercises last. Either way, click on the link below for Lab 7 / Part 1 to see the details for each program.</em></p>
+
+<p>In <a href="/Goldford-MTEC1003-OL04/labs/07/lab-07-part1-javascript-conditionals.html" target="_blank">Lab 7 / Part 1</a>, you made 3 programs that returned different results depending on user input:</p>
+
+<ol>
+  <li>cake.html</li>
+  <li>spanish.html</li>
+  <li>oddcalc.html</li>
+</ol>
+
+<p>Using your own knowledge of Python, aided in part by this week’s <a href="https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.conditionals.tutorial.v01/#/" target="_blank">“Booleans + Conditionals” slides</a>, translate your 3 HTML/JavaScript programs into Python, and save them as: cake.py, spanish,py, and oddcalc.py.</p>
+
+<p>Make sure they’re in your <strong>/lab-07-conditionals</strong> repository!</p>
+
+<p>Now we just have to <strong>test</strong> our python scripts by running them on the command line.</p>
+
+<p>Back in Terminal, simply type <code class="language-plaintext highlighter-rouge">python</code>, then a space, and then drag-and-drop one of your new files, e.g. <strong>cake.py</strong>, onto the Terminal window (<strong>remember:</strong> this will quickly create a <code class="language-plaintext highlighter-rouge">full path</code> to your file on the command line!). Run the command by hitting <code class="language-plaintext highlighter-rouge">enter</code>, of course.</p>
+
+<p>Make sure your file is included in your <strong>/lab-07-conditionals</strong> repo, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes! Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<hr />
+
+<p><a id="reminders-user"></a></p>
+<h2 id="2-reminders-user-input">2. Reminders (User Input)</h2>
+
+<p>Write a Python program that:</p>
+<ul>
+  <li>asks the user for the current hour (but in military time: 0-23), then</li>
+  <li>converts the number from a string to a float,</li>
+  <li>sets up a series of conditions based on the current hour, and</li>
+  <li>prints one of the following <strong>reminders:</strong></li>
+</ul>
+
+<div class="schedulingtable">
+<table>
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hour</th>
+<th>Reminder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 to 5</td>
+<td>“It’s early. You should be sleeping!”</td>
+</tr>
+<tr>
+<td>5 to 7</td>
+<td>“Wake up, brew that coffee, get that mile run in, and get that breakfast…”</td>
+</tr>
+<tr>
+<td>7 to 9</td>
+<td>“Time to go to work.”</td>
+</tr>
+<tr>
+<td>9 to 12</td>
+<td>“You should be working!”</td>
+</tr>
+<tr>
+<td>12 to 13</td>
+<td>“Take your lunch break!”</td>
+</tr>
+<tr>
+<td>13 to 17</td>
+<td>“Do you feel that afternoon lull?”</td>
+</tr>
+<tr>
+<td>17 to 19</td>
+<td>“Time to hit the gym…”</td>
+</tr>
+<tr>
+<td>19 to 21</td>
+<td>“Gotta eat that dinner.”</td>
+</tr>
+<tr>
+<td>21 to 23</td>
+<td>“Get that SLEEP. And rePEAT!”</td>
+</tr>
+<tr>
+<td>any other hour</td>
+<td>“You didn’t type an acceptable value! (0-23)”</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Save your code, calling it <strong>reminders.v01.py</strong>.</p>
+
+<p>Save your code, make sure your <strong>reminders.v01.py</strong> file is included in your <strong>/lab-07-conditionals</strong> folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes! Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<hr />
+
+<p><a id="mod-reminders"></a></p>
+<h2 id="3-modified-reminders">3. Modified Reminders</h2>
+
+<p>Save a new version of your reminders.v01.py file, and call it: <strong>reminders.v02.py</strong>.</p>
+
+<p>In this new version, let’s modify the current code so that <em>instead of user input,</em> the program takes the <em>actual current time.</em></p>
+
+<h3 id="import-datetime">import datetime</h3>
+
+<p>At the top of your new file on line 1, type the following:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py"> <span class="kn">import</span> <span class="nn">datetime</span> </code></pre></figure>
+
+<p><code class="language-plaintext highlighter-rouge">import</code> is a statement in Python that allows you to “import” a “module.” In this case, <code class="language-plaintext highlighter-rouge">datetime</code> is the module we’re importing. A Python module is basically a file containing more Python code; more functions, variables, classes, methods, etc. We can use <code class="language-plaintext highlighter-rouge">datetime</code> to easily read the current system time and convert between a variety of formats. We can even use this set of tools to convert time between time zones!</p>
+
+<p>Write the rest of your code below your <code class="language-plaintext highlighter-rouge">import datetime</code> line.</p>
+
+<p>You won’t need to write much that’s new. You’ll need to <strong>comment out</strong> the existing user input line, where you previously used <code class="language-plaintext highlighter-rouge">input()</code> and <code class="language-plaintext highlighter-rouge">float()</code>. In its place, you’ll need to use the <code class="language-plaintext highlighter-rouge">datetime</code> module to grab the current hour. It’s really easy! just type the following:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py">  <span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">now</span><span class="p">.</span><span class="n">hour</span><span class="p">)</span></code></pre></figure>
+
+<p>Run your code in the Terminal, and you’ll get a number between 0 and 23. This is your <em>current hour</em>. You can read more about how the <code class="language-plaintext highlighter-rouge">datetime</code> module works <a href="https://docs.python.org/3/library/datetime.html#module-datetime" target="_blank">here,</a> but suffice it to say that we’re calling the <i>class</i> object <code class="language-plaintext highlighter-rouge">datetime</code> <i>within</i> a module that also has the same name. So, that’s why our syntax includes funny things like <code class="language-plaintext highlighter-rouge">datetime.dateime</code>.</p>
+
+<p>Anyway, by printing <code class="language-plaintext highlighter-rouge">now.hour</code> you can easily retrieve the current hour in local time. Use its value with your conditions! Finish adapting your code so that your conditions respond to this current hour. Make sure to <strong>save frequently</strong> and <strong>test</strong> on the command line!</p>
+
+<p>Save your code, make sure your <strong>reminders.v02.py</strong> file is included in your <strong>/lab-07-conditionals</strong> folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes! Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<p>At the end of this lab, your <strong>/lab-07-conditionals</strong> folder should contain the following files:</p>
+<ul>
+  <li>cake.html</li>
+  <li>cake.py</li>
+  <li>spanish.html</li>
+  <li>spanish.py</li>
+  <li>oddcalc.html</li>
+  <li>oddcalc.py</li>
+  <li>reminders.v01.py</li>
+  <li>reminders.v02.py</li>
+</ul>
+
+<p><em>Now, on to Lab 7 / Part 3!</em></p>
+
+<hr />
+
+      </section>
+    </div>
+
+    
+
+    <div>
+		<header><footer class="site-footer h-card">
+  <data class="u-url" href="/Goldford-MTEC1003-OL04/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h4 class="footer-heading">MTEC1003-OL04 Media Computation Skills Lab</h4>
+        <ul class="contact-list">
+          <li class="p-name">Prof. Louis Goldford</li><li><a class="u-email" href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</p>
+      </div>
+
+      <div class="social-links"><ul class="social-media-list"></ul></div>
+    </div>
+
+  </div>
+
+</footer></header>
+	</div>
+
+  </body>
+
+</html>

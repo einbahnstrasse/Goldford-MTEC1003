@@ -43,31 +43,28 @@
   <li>madlibs and madlibs with prompt</li>
 </ol>
 
+<hr />
+
 <h2 id="instructions">Instructions</h2>
 
 <h3 id="setup">Setup</h3>
 
 <p>Let's start with a shorthand way of setting up a new repository...</p>
-<p>On <i>GitHub</i>, do the following (use your <i>git cheatsheet</i> for a reminder):</p>
+<p><strong>ProTip:</strong> Bookmark this page so that you can easily repeat these steps in your future labs!</p>
+<p>On <i>GitHub</i>, do the following (use your <a href="../03/lab-03-git-intro.html" target="_blank"><i>git cheatsheet</i> from Lab 3</a> as a reminder for certain commands):</p>
 
 <ul>
-  <li>create a new repository (using the green <strong>"New"</strong> button) called <strong>lab-05-js-py</strong></li>
-  <li>initialize your new repo with a README.md file</li>
- 	<li>Find the green <strong>"Code"</strong> button, click on it, and copy the .git <strong>link</strong> in the dropdown menu.</li>
+  <li>Create a new repository (using the green <strong>"New"</strong> button) called <strong>lab-05-js-py</strong>.</li>
+  <li>Initialize your new repo with a README.md file (check the box next to this).</li>
+ 	<li>Find the green <strong>"Code"</strong> button, click on it, and <strong>copy the .git link</strong> in the dropdown menu.</li>
 </ul>
 
-<p>In Terminal, go to your <strong>/mtec1003</strong> folder and type:</p>
+<p>In Terminal, go to your <strong>/mtec1003</strong> folder, wherever it lives (remember: use <strong>cd</strong> commands to do this) and then type:</p>
 
-<!-- <ul>
-  <li>type </li>
-  <li>go to your repository folder: <strong>/Users/[yourName]/mtec1003/lab-05-js-py/</strong></li>
-  <li>once you&#8217;re in it, check if your repository exists by using git <strong>status</strong>:</li>
-  <li>you should get back:</li>
-</ul> -->
+<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> git clone <span class="s1">[paste your .git link from <i>GitHub</i> here!]</span></code></pre></div>
 
-<div class="highlight"><pre><code class="bash"><span class="o">(</span>prompt<span class="o">)</span> git clone <span class="s1">[paste your .git link from GitHub here!]</span></code></pre></div>
-
-<p>Run this command, pasting in the link you copied from <i>GitHub</i>, as indicated. This <strong>clones</strong> the repo into your /mtec1003 folder, meaning <i>it copies your remote repoistory onto your local computer.</i></p>
+<p>Run this command, pasting in the link you copied from <i>GitHub</i> as indicated. This <strong>clones</strong> the repo into your /mtec1003 folder, meaning <i>it copies your remote repoistory onto your local computer.</i></p>
+<p>Follow the steps on your <i>git cheatsheet</i> to <strong>config</strong> your <strong>user.name</strong> and <strong>user.email</strong>, as described in Lab 3.</p>
 <p>Now we're ready to make some JavaScript. Open up your text editor (e.g. Atom, Sublime Text, etc.)...</p>
 
 <hr />
@@ -75,13 +72,13 @@
 <h3 id="greetings">greetings</h3>
 
 <ul>
-  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>greetings.html</strong> in your repository directory: <strong>~/mtec1003/lab-05-js-py/</strong></li>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>greetings.html</strong> in your repository directory: <strong>~/Desktop/myClasses/mtec1003/lab-05-js-py/</strong></li>
   <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
   <li>ask the user for their name</li>
   <li>save that input in a variable</li>
   <li>print out to the JavaScript console &#8220;Hi (name that the user entered)!&#8221;</li>
   <li>save your file in your text editor (e.g. Atom, Sublime Text, etc.)</li>
-  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and push to save your file in version control and submit it</li>
+  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and <strong>push</strong> to save your file in version control and submit it</li>
   <li>example interaction is below (everything after the greater than sign (&gt; is user input using the prompt function):</li>
 </ul>
 
@@ -99,7 +96,7 @@ Hi bree!
 <p>Part 1</p>
 
 <ul>
-  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>madlibs.html</strong> in your repository directory: <strong>~/mtec1003/lab-05-js-py/</strong></li>
+  <li>using your text editor (e.g. Atom, Sublime Text, etc.), create a new file called <strong>madlibs.html</strong> in your repository directory: <strong>~/Desktop/myClasses/mtec1003/lab-05-js-py/</strong></li>
   <li>setup an html file, and add script tags&#8230; start writing your JavaScript between the script tags</li>
   <li>define 4 variables, set them each equal to a word: a noun, an adjective, an adverb and a verb</li>
   <li>name the variables after the part of speech of the word they are replacing, for example</li>
@@ -133,7 +130,7 @@ Underneath a ridiculous moon ...
 
 <ul>
   <li>save your file in your text editor (e.g. Atom, Sublime Text, etc.)</li>
-  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and push to save your file in version control and submit it</li>
+  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and <strong>push</strong> to save your file in version control and submit it</li>
 </ul>
 
 <p>Part 2</p>
@@ -143,15 +140,16 @@ Underneath a ridiculous moon ...
   <li>this should result in 4 dialog boxes</li>
   <li>and the result of the new lyrics printed out to the <strong>JavaScript console</strong></li>
   <li>save your file in your text editor (e.g. Atom, Sublime Text, etc.)</li>
-  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and push to save your file in version control and submit it</li>
+  <li>use <strong>status</strong>, <strong>add</strong> <strong>commit</strong> and <strong>push</strong> to save your file in version control and submit it</li>
 </ul>
 
+<hr />
 
 </div>
 </div>
 
 <div id="ft">
-	<p>MTEC 1003 - Media Computation Skills Lab - Spring 2015</p>
+	<p>MTEC 1003 - Media Computation Skills Lab</p>
 </div>
 </div>
 </body>

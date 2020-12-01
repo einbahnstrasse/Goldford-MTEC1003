@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Goldford-MTEC1003-OL04/assets/css/style.css?v=3718950b355668c8b9901bbc7a3f9a72a023e324">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>MTEC1003-OL04 Media Computation Skills Lab | Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<meta name="author" content="Prof. Louis Goldford" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<meta property="og:description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-OL04/labs/06/lab-06-part2-python-basics.html" />
+<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-OL04/labs/06/lab-06-part2-python-basics.html" />
+<meta property="og:site_name" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-OL04/labs/06/lab-06-part2-python-basics.html","headline":"MTEC1003-OL04 Media Computation Skills Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/Goldford-MTEC1003-OL04/">
+          <h1>MTEC1003-OL04 Media Computation Skills Lab</h1>
+        </a>
+        <h2>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</h2>
+
+        <section id="downloads">
+          <!-- <a href="index.html" class="btn btn-syllabus"><span class="icon"></span>Course Syllabus</a>
+          <a href="schedule.html" class="btn btn-schedule"><span class="icon"></span>Schedule</a>
+          <a href="resources.html" class="btn btn-software"><span class="icon"></span>Software + Resources</a>
+          <a href="grading.html" class="btn btn-software"><span class="icon"></span>Grading</a> -->
+        	<a href="/Goldford-MTEC1003-OL04/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
+        	<a href="/Goldford-MTEC1003-OL04/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
+        	<a href="/Goldford-MTEC1003-OL04/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
+          <a href="/Goldford-MTEC1003-OL04/grading.html" class="btn"><span class="icon"></span>GRADING</a>
+          
+      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-OL04" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+
+<h1 id="lab-6--part-2-some-simple-stupid-python-programs">Lab 6 / Part 2: Some Simple, Stupid Python Programs</h1>
+
+<h4 id="c-o-n-t-e-n-t-s">C O N T E N T S</h4>
+<p><a href="#setup">Setup for Python3</a></p>
+<ol>
+  <li><a href="#saytwice">Recreating <i>SayTwice.html</i> but in Python</a></li>
+  <li><a href="#temperature">Recreating (and Debugging) <i>Temperature.html</i> but in Python</a></li>
+  <li><a href="#bmi">Calculating Body Mass Index (BMI) in Python</a></li>
+</ol>
+
+<hr />
+
+<p><a id="setup"></a></p>
+<h2 id="setup-for-python3">Setup for Python3</h2>
+
+<p>Let’s be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling <code class="language-plaintext highlighter-rouge">python</code> on the command line. We can crete an “alias” for python3 by running the following command:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span><span class="nb">alias </span><span class="nv">python</span><span class="o">=</span>/usr/local/bin/python3 </code></pre></figure>
+
+<p>Alternatively, you can simply run <code class="language-plaintext highlighter-rouge">python3</code> in the Terminal instead of <code class="language-plaintext highlighter-rouge">python</code>, but this gets annoying after awhile.</p>
+
+<p>Once you’ve done this, you’re all set.</p>
+
+<hr />
+
+<p><a id="saytwice"></a></p>
+<h2 id="1-recreating-saytwicehtml-but-in-python">1. Recreating <em>SayTwice.html</em> but in Python</h2>
+
+<p>In <a href="/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html" target="_blank">Lab 6 / Part 1</a>, you made a program that asked for user input and echoed it back twice to the console. How would we do that in Python?</p>
+
+<p>What if I told you… that you already know the two things in Python you’ll need: <code class="language-plaintext highlighter-rouge">input()</code> and <code class="language-plaintext highlighter-rouge">print()</code>? Remember those?!</p>
+
+<p>I bet you can do the rest…</p>
+
+<p>Save your new code to a file called <strong>saytwice.py</strong>. Make sure it’s in your <strong>/lab-06-review</strong> repository!</p>
+
+<p>Now we just have to <strong>test</strong> our python script by running it on the command line.</p>
+
+<p>Back in Terminal, simply type <code class="language-plaintext highlighter-rouge">python</code>, then a space, and then drag-and-drop your <strong>saytwice.py</strong> file onto the Terminal window (<strong>remember:</strong> this will quickly create a <code class="language-plaintext highlighter-rouge">full path</code> to your file on the command line!). Run the command by hitting <code class="language-plaintext highlighter-rouge">enter</code>, of course.</p>
+
+<p>The output will look like this:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span>python /Users/louisgoldford/mtec1003/lab-06-review/saytwice.py  
+<span class="go">  Give me a word to say twice: michaelCaine
+  michaelCaine! michaelCaine!
+</span><span class="gp">  $</span><span class="w"> </span></code></pre></figure>
+
+<p>Make sure your file is included in your <strong>/lab-06-review</strong> folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes!<br />
+Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<hr />
+
+<p><a id="temperature"></a></p>
+<h2 id="2-recreating-and-debugging-temperaturehtml-but-in-python">2. Recreating (and Debugging) <em>Temperature.html</em> but in Python</h2>
+
+<p>This one’s slightly more involved, so we’ll do it together. Firstly, we need <a href="https://www.pleacher.com/mp/mlessons/algebra/funform.pdf" target="_blank">a formula for our conversion</a> from degrees in Celsius (°C) to degrees in Fahrenheit (°F):</p>
+
+\[{F} = {\frac{9}{5}}C + 32\]
+
+<p>where:</p>
+<ul>
+  <li>F will be our result; i.e. degrees in Fahrenheit (°F), and</li>
+  <li>C is our “user input”; i.e. degrees in Celsius (°C)</li>
+</ul>
+
+<p>Maybe you found this formula, or one like it, when you made your JavaScript version in <a href="/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html" target="_blank">Lab 6 / Part 1</a>. But how should we reconstruct it in Python?</p>
+
+<h3 id="initial-translation-of-our-javascript-code">Initial “Translation” of our JavaScript Code</h3>
+
+<p>Consider your file <strong>temperature.html</strong> from <a href="/Goldford-MTEC1003-OL04/labs/06/lab-06-part1-js-basics.html" target="_blank">Lab 6 / Part 1</a>, and start your translation into Python by doing the obvious:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre>  <span class="n">tempincelsius</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a temperature in celsius: "</span><span class="p">)</span>  
+  <span class="n">tempinfahrenheit</span> <span class="o">=</span> <span class="p">(</span><span class="n">tempincelsius</span> <span class="o">*</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">5</span><span class="p">))</span> <span class="o">+</span> <span class="mf">32.0</span>  
+  <span class="k">print</span><span class="p">(</span><span class="s">"The temperature is "</span> <span class="o">+</span> <span class="n">tempinfahrenheit</span> <span class="o">+</span> <span class="s">"°F"</span><span class="p">)</span> 
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>…Our Python code is looking pretty good…. I mean, right?………<br />
+……Yeah, life’s been pretty good to ya…. right?……<br />
+………We are <strong>aWeSoMe cOdErZ</strong> aren’t we… RIGHT?!!!!…</p>
+
+<p>So, we save our code and go to our console to run it, and we are <strong>SO SURE</strong> it’s gonna work… right?!<br />
+Well, let’s see what happens…</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span>python /Users/louisgoldford/mtec1003/lab-06-review/temperature.py  
+<span class="go">  Traceback (most recent call last):
+</span><span class="gp">    File "/Users/louisgoldford/mtec1003/lab-06-review/temperature.py", line 2, in &lt;module&gt;</span><span class="w">
+</span><span class="go">      tempinfahrenheit = (tempincelsius * (9 / 5)) + 32.0  
+  TypeError: can't multiply sequence by non-int of type 'float'
+</span><span class="gp">  $</span><span class="w"> </span></code></pre></figure>
+
+<h3 id="wait-what-just-happened-">WAIT, WHAT JUST HAPPENED ?!?!</h3>
+
+<iframe width="450" height="253" src="https://www.youtube.com/embed/k5Cfhooa1bI" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> alt="HEY WHA' HAPPENED?!"</iframe>
+
+<p>Okay first, just breathe… Now let’s start to work the problem.<br />
+(<em>“Incidentally,”</em> <a href="https://en.wikipedia.org/wiki/Fred_Willard" target="_blank">RIP Fred Willard</a>, who has absolutely nothing to do with Python. Whatsoever.)</p>
+
+<h3 id="we-need-a-floating-point-number">We Need a Floating-Point Number!</h3>
+
+<p>The error we got mentions two crucial things: (1) it mentions that line 2 is a specific problem, and (2) it also mentions something about a <code class="language-plaintext highlighter-rouge">float</code> (non-int of type ‘float’). What does this mean?</p>
+
+<p>It means that something on line 2 (which is reprinted in our error message, and that helps! <em>tempinfahrenheit = tempincelsius * 1.8 + 32.0</em>) is not the expected <strong>floating-point number</strong> (i.e. a number with a decimal, in computer science terms). Without a floating-point number, the equation we wrote on line 2 can’t be computed. We see that 1.8 and 32.0 are both numbers with decimals, so the only thing that might <em>not</em> be a floating-point number in line 2 <em>must be</em> our variable: <strong>‘tempincelsius’</strong>.</p>
+
+<p>So what <strong>is</strong> ‘tempincelsius’ then, anyway?<br />
+And how can we <strong>make</strong> it a floating-point number?</p>
+
+<h3 id="debugging-with-the-type-function">Debugging with the <code class="language-plaintext highlighter-rouge">type()</code> Function</h3>
+
+<p>Fortunately, in Python we can use a nifty function called <code class="language-plaintext highlighter-rouge">type()</code> to find out what <strong>‘tempincelsius’</strong> really is. Start by going back to your <strong>temperature.py</strong> file and <strong>commenting out</strong> lines 2 and 3 (since that’s where the error is occurring.)</p>
+
+<p>Just after line 1, insert a line and type the following:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="n">tempincelsius</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a temperature in celsius: "</span><span class="p">)</span>  
+  <span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">tempincelsius</span><span class="p">))</span>
+  <span class="c1"># tempinfahrenheit = (tempincelsius * (9 / 5)) + 32.0  
+</span>  <span class="c1"># print("The temperature is " + tempinfahrenheit + "°F") </span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Now, on line 2 we’re printing out (<code class="language-plaintext highlighter-rouge">print()</code>) the <em>result</em> of the <code class="language-plaintext highlighter-rouge">type()</code> function.<br />
+Save your file, and re-run it in Terminal:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span>python /Users/louisgoldford/mtec1003/lab-06-review/temperature.py  
+<span class="go">  Please enter a temperature in celsius: 45
+</span><span class="gp">  &lt;class 'str'&gt;</span><span class="w">
+</span><span class="gp">  $</span><span class="w"> </span></code></pre></figure>
+
+<p>AHA! The result of our</p>
+<figure class="highlight"><pre><code class="language-py" data-lang="py"> <span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">tempincelsius</span><span class="p">))</span> </code></pre></figure>
+<p>command tells us that the variable we’re testing, <strong>‘tempincelsius’</strong>, is a STRING, NOT A DECIMAL (i.e. ‘str’ according to the result in our console). So, now we know we just need to <em>convert</em> the <strong>‘tempincelsius’</strong> variable into a <code class="language-plaintext highlighter-rouge">float</code>. For converting between strings and floats, python has two very handy functions: <code class="language-plaintext highlighter-rouge">float()</code> and <code class="language-plaintext highlighter-rouge">str()</code>. How nice!</p>
+
+<h3 id="updating-our-code-with-the-right-conversions">Updating Our Code With the Right Conversions</h3>
+
+<p>Go back to your code, <strong>comment out</strong> the print function, and <strong>comment in</strong> lines 3 + 4. Revise them so that it reads:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre>  <span class="n">tempincelsius</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a temperature in celsius: "</span><span class="p">)</span>  
+  <span class="c1"># print(type(tempincelsius))
+</span>  <span class="n">tempinfahrenheit</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">tempincelsius</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">9</span> <span class="o">/</span> <span class="mi">5</span><span class="p">))</span> <span class="o">+</span> <span class="mf">32.0</span>   
+  <span class="k">print</span><span class="p">(</span><span class="s">"The temperature is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tempinfahrenheit</span><span class="p">)</span> <span class="o">+</span> <span class="s">"°F"</span><span class="p">)</span> 
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Here, we’ve updated our code so that we’re converting variable <strong>‘tempincelsius’</strong> into a <code class="language-plaintext highlighter-rouge">float</code> in order to compute the temperature. Then on line 4, we need to <em>concatenate</em> the result into a larger string and print it out to the console, so we have to convert the <strong>‘tempinfahrenheit’</strong> variable <em>back into a string, because it’s a float.</em> If we forget to convert it back into a string, we’ll get an error in the console similar to the one we got before we did our first conversion above.</p>
+
+<p>Try it out in the Terminal… Now it should work!</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span>python /Users/louisgoldford/mtec1003/lab-06-review/temperature.py  
+<span class="go">  Please enter a temperature in celsius: 32  
+  The temperature is 89.6°F  
+</span><span class="gp">  $</span><span class="w"> </span></code></pre></figure>
+
+<p>Save your code, make sure your <strong>temperature.py</strong> file is included in your <strong>/lab-06-review</strong> folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes! Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<hr />
+
+<p><a id="bmi"></a></p>
+<h2 id="3-calculating-body-mass-index-bmi-in-python">3. Calculating Body Mass Index (BMI) in Python</h2>
+
+<p>Let’s do something we haven’t already done in JavaScript…<br />
+Dunno about you, but the pandemic has led to me gaining some weight……… :$</p>
+
+<h3 id="how-would-you-calculate-the-percentage-of-fat-on-a-persons-body">How would you calculate the percentage of fat on a person’s body?</h3>
+
+<p>To do this we use <a href="https://www.pleacher.com/mp/mlessons/algebra/funform.pdf" target="_blank">a formula for Body Mass Index (BMI)</a>:</p>
+
+\[{BMI} = \frac{703 \times W}{H^2}\]
+
+<p>where:</p>
+<ul>
+  <li>W is a person’s weight (in pounds), and</li>
+  <li>H is their height (in inches).</li>
+</ul>
+
+<p>With just these two inputs to the equation, we can describe a person’s BMI; the percentage of their body weight that is fat.</p>
+
+<h3 id="how-would-we-accomplish-this-with-python">How would we accomplish this with Python?</h3>
+
+<p>As you can imagine, you’ll need to start by asking the user for some input.<br />
+In this case, you’ll need to:</p>
+<ol>
+  <li>ask the user for two things, and</li>
+  <li>create separate variables and prompts for each. Then,</li>
+  <li>you’ll convert the strings into floats (just like we did in <em>temperature</em> above),</li>
+  <li>make your equation (using the formula for BMI above),</li>
+  <li>convert the result back into a string, and finally</li>
+  <li>print the final result to the console.</li>
+</ol>
+
+<p>So, in your text editor, create a new file and call it <strong>bmi.py</strong>, and get started!</p>
+
+<h3 id="import-sys">import sys</h3>
+
+<p>At the top of your new file on line 1, type the following:</p>
+
+<figure class="highlight"><pre><code class="language-py" data-lang="py"> <span class="kn">import</span> <span class="nn">sys</span> </code></pre></figure>
+
+<p><code class="language-plaintext highlighter-rouge">import</code> is a statement in Python that allows you to “import” a “module.” In this case, <code class="language-plaintext highlighter-rouge">sys</code> is the module we’re importing. A Python module is basically a file containing more Python code; more functions, variables, classes, methods, etc. We’re using <code class="language-plaintext highlighter-rouge">sys</code> here to be sure you won’t get any errors resulting from weird characters you may type, or those that might throw errors on the command line. You might try safeguarding yourself with this particular module in some of your other Python files too!</p>
+
+<p>Write your code below your <code class="language-plaintext highlighter-rouge">import sys</code> line, so that your output in the console resembles this:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span>python /Users/louisgoldford/mtec1003/lab-06-review/bmi.py  
+<span class="go">  Enter your weight (in pounds): 153
+  Okay, also enter your height (in inches): 68
+  Your body mass index (BMI) is 23.2610294118%
+</span><span class="gp">  $</span><span class="w"> </span></code></pre></figure>
+
+<p>Although you won’t need it, feel free to try out Python’s <a href="https://www.w3schools.com/python/ref_func_pow.asp" target="_blank">pow() method</a> to aid in your calculation.</p>
+
+<p>Save your code, make sure your <strong>bmi.py</strong> file is included in your <strong>/lab-06-review</strong> folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes! Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<p>Your final <strong>/lab-06-review</strong> folder by the submission deadline should include the following files:</p>
+<ul>
+  <li>saytwice.html</li>
+  <li>saytwice.py</li>
+  <li>shout.html</li>
+  <li>temperature.html</li>
+  <li>temperature.py</li>
+  <li>bmi.py</li>
+</ul>
+
+<hr />
+
+      </section>
+    </div>
+
+    
+
+    <div>
+		<header><footer class="site-footer h-card">
+  <data class="u-url" href="/Goldford-MTEC1003-OL04/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h4 class="footer-heading">MTEC1003-OL04 Media Computation Skills Lab</h4>
+        <ul class="contact-list">
+          <li class="p-name">Prof. Louis Goldford</li><li><a class="u-email" href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</p>
+      </div>
+
+      <div class="social-links"><ul class="social-media-list"></ul></div>
+    </div>
+
+  </div>
+
+</footer></header>
+	</div>
+
+  </body>
+
+</html>

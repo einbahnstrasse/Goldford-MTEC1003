@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Goldford-MTEC1003-OL04/assets/css/style.css?v=3718950b355668c8b9901bbc7a3f9a72a023e324">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Lab 14 / Part 2: Advanced Web Design Concepts | MTEC1003-OL04 Media Computation Skills Lab</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Lab 14 / Part 2: Advanced Web Design Concepts" />
+<meta name="author" content="Prof. Louis Goldford" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<meta property="og:description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-OL04/labs/14/lab-14-part2-web-design.html" />
+<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-OL04/labs/14/lab-14-part2-web-design.html" />
+<meta property="og:site_name" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-OL04/labs/14/lab-14-part2-web-design.html","headline":"Lab 14 / Part 2: Advanced Web Design Concepts","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/Goldford-MTEC1003-OL04/">
+          <h1>MTEC1003-OL04 Media Computation Skills Lab</h1>
+        </a>
+        <h2>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</h2>
+
+        <section id="downloads">
+          <!-- <a href="index.html" class="btn btn-syllabus"><span class="icon"></span>Course Syllabus</a>
+          <a href="schedule.html" class="btn btn-schedule"><span class="icon"></span>Schedule</a>
+          <a href="resources.html" class="btn btn-software"><span class="icon"></span>Software + Resources</a>
+          <a href="grading.html" class="btn btn-software"><span class="icon"></span>Grading</a> -->
+        	<a href="/Goldford-MTEC1003-OL04/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
+        	<a href="/Goldford-MTEC1003-OL04/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
+        	<a href="/Goldford-MTEC1003-OL04/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
+          <a href="/Goldford-MTEC1003-OL04/grading.html" class="btn"><span class="icon"></span>GRADING</a>
+          
+      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-OL04" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1 id="lab-14--part-2-advanced-web-design-concepts">Lab 14 / Part 2: Advanced Web Design Concepts</h1>
+
+<h4 id="c-o-n-t-e-n-t-s">C O N T E N T S</h4>
+<ol>
+  <li><a href="#overview">Overview of This Lab</a></li>
+  <li><a href="#diving">Creating a Page With <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> Containers</a></li>
+  <li><a href="#cont">Brainstorming Content for your Website</a></li>
+</ol>
+
+<hr />
+
+<p><a id="overview"></a></p>
+<h2 id="1-overview-of-this-lab">1. Overview of This Lab</h2>
+
+<p>In this lab, we’ll make a simple website in HTML and stylize it with CSS.</p>
+
+<p>But this time, we’ll employ some more advanced web design concepts by building a site that includes:</p>
+<ul>
+  <li>some interrelated pages (e.g. a main page, “About Me”, “Contact”, etc.)</li>
+  <li>a navigation menu, or “navbar” to link these pages together (with so-called “sticky” positioning)</li>
+  <li>a “hero image” at the top of each page</li>
+  <li>using <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> (i.e. HTML <em>“dividers”</em>) to separate and position your content on a page</li>
+  <li>custom font integration using Google Fonts</li>
+  <li>building a custom color scheme for your site using Adobe Color</li>
+</ul>
+
+<p>In order to do this, start by creating a new repository on <em>GitHub</em>. Call it <strong>lab-14-part2-site</strong> and then <strong>CLONE</strong> it onto your local machine inside your <strong>/mtec1003</strong> folder. (As always, use your knowledge of git and all of your previous references in order to do this.)</p>
+
+<hr />
+
+<p><a id="diving"></a></p>
+<h2 id="2-creating-a-page-with-div-containers">2. Creating a Page With <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> Containers</h2>
+
+<p>In your new <strong>/lab-14-part2-site</strong> repository, start by creating a new HTML file and immediately save it as **index.html.</p>
+
+<p>This will be the front page of your site; i.e. your “home page.”</p>
+
+<p>Type “HTML” + the <code class="language-plaintext highlighter-rouge">TAB</code> key to generate a boilerplate HTML document.</p>
+
+<p>Inside your <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> tag, and in between the <code class="language-plaintext highlighter-rouge">&lt;title&gt;&lt;/title&gt;</code>, type the name of your page: call it “My Home Page”.</p>
+
+<p>Now, inside your page’s <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> tag, type “div” and then press the <code class="language-plaintext highlighter-rouge">TAB</code> key to format the proper tags. So far, your page should look like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My Home Page<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Now, with your cursor already positioned between the <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> tags you just created, make <em>another</em> set of <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> tags; i.e. one <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> within another, like so:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My Home Page<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">""</span><span class="nt">&gt;</span>
+
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Next, make 4 identical <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> elements. Inside each, label them “Divider1”, “Divider2”, and so on. These will simply act as “containers” for different parts of your page: in this case, we’ll be posting text elements inside each <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> and positioning them later with CSS.</p>
+
+<p>So far your HTML source should look like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">dir=</span><span class="s">"ltr"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My Home Page<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Divider1<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Divider2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Divider3<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div&gt;</span>Divider4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<hr />
+
+<p><a id="cont"></a></p>
+<h2 id="3-brainstorming-content-for-your-website">3. Brainstorming Content for your Website</h2>
+
+<p>For each of the pages <strong>Home</strong>, <strong>About Me</strong>, and at least 1 <strong>Portfolio page</strong>, start <strong>brainstorming</strong> ideas for <strong>content</strong> that will appear on your site.</p>
+
+<p>Think of what you want the viewer to see when they first see your <strong>Home</strong> page, how you want to present yourself in your <strong>About Me</strong>, and what among your own projects, or professional interests, you’d want to present on any of your <strong>Portfolio page</strong>. Write out some initial ideas…</p>
+
+<p>In your Terminal, navigate to your <strong>/lab-12-html</strong> repository, and create a new folder inside of it. <em>(Remember: What command will you use to create a new folder?)</em> Call this folder <strong>/final-project-brainstorming</strong>. Change your directory so that your Terminal is inside this folder. Verify you’re in the correct location by running <strong>pwd</strong>. Your path should look something like this:</p>
+
+<p><code class="language-plaintext highlighter-rouge">/Users/[yourUserName]/myClasses-Fall2020/mtec1003//lab-12-html/final-project-brainstorming</code></p>
+
+<p>In your text editor (e.g. SublimeText, Atom, VS Code, etc.), create 3 new text documents (.txt) and save them in your <strong>/final-project-brainstorming</strong> folder, which is within your <strong>/lab-12-html</strong> repository, using the following names:</p>
+<ul>
+  <li><strong>brainstorming-01-home-page.txt</strong></li>
+  <li><strong>brainstorming-02-about-me.txt</strong></li>
+  <li><strong>brainstorming-03-portfolio-v01.txt</strong></li>
+</ul>
+
+<p>In each of these files, type out your ideas for the content on each of the pages of your site. For example, in <strong>brainstorming-02-about-me.txt</strong>, type out a 1-2 paragraph <strong>biography</strong> with information about your education, work experience, your professional expertise or goals. Think about how you want to present yourself to a future employer, a future scholarship committee, an art gallery, on a graduate school application, etc. <em>Put your best foot forward!</em></p>
+
+<p>Do the same for the <strong>brainstorming-01-home-page.txt</strong> and <strong>brainstorming-03-portfolio-v01.txt</strong>. What is the first thing you want them to see when they load your site in the browser? What pieces of your work would you want to present?</p>
+
+<p>Each of these text files should contain <em>at least 1-2 paragraphs of text explaining your initial ideas</em> and/or draft of body text to be published on your website.</p>
+
+<p>Keep in mind: <em>You can change the contents of your site later!</em> You don’t need to turn in 100% complete ideas yet! Right now, the idea is to brainstorm and have at least a first draft of the site — that way, when we begin coding it later, you’ll already have content to drop in! You can always revise this content later, add, or change things as we move forward…</p>
+
+<hr />
+
+<p>Make sure your files is included in your <strong>/lab-12-html</strong> folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> your changes!<br />
+Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<p>Your final <strong>/lab-12-html</strong> folder by the submission deadline should include the files from parts 1 + 2 of the Week 12 Labs, plus the new folder <strong>/final-project-brainstorming</strong> containing the <strong>3 text files</strong> described above.</p>
+
+<hr />
+
+      </section>
+    </div>
+
+    
+
+    <div>
+		<header><footer class="site-footer h-card">
+  <data class="u-url" href="/Goldford-MTEC1003-OL04/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h4 class="footer-heading">MTEC1003-OL04 Media Computation Skills Lab</h4>
+        <ul class="contact-list">
+          <li class="p-name">Prof. Louis Goldford</li><li><a class="u-email" href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</p>
+      </div>
+
+      <div class="social-links"><ul class="social-media-list"></ul></div>
+    </div>
+
+  </div>
+
+</footer></header>
+	</div>
+
+  </body>
+
+</html>

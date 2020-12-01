@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Goldford-MTEC1003-OL04/assets/css/style.css?v=3718950b355668c8b9901bbc7a3f9a72a023e324">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>MTEC1003-OL04 Media Computation Skills Lab | Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<meta name="author" content="Prof. Louis Goldford" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<meta property="og:description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-recursions.html" />
+<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-recursions.html" />
+<meta property="og:site_name" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-recursions.html","headline":"MTEC1003-OL04 Media Computation Skills Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/Goldford-MTEC1003-OL04/">
+          <h1>MTEC1003-OL04 Media Computation Skills Lab</h1>
+        </a>
+        <h2>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</h2>
+
+        <section id="downloads">
+          <!-- <a href="index.html" class="btn btn-syllabus"><span class="icon"></span>Course Syllabus</a>
+          <a href="schedule.html" class="btn btn-schedule"><span class="icon"></span>Schedule</a>
+          <a href="resources.html" class="btn btn-software"><span class="icon"></span>Software + Resources</a>
+          <a href="grading.html" class="btn btn-software"><span class="icon"></span>Grading</a> -->
+        	<a href="/Goldford-MTEC1003-OL04/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
+        	<a href="/Goldford-MTEC1003-OL04/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
+        	<a href="/Goldford-MTEC1003-OL04/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
+          <a href="/Goldford-MTEC1003-OL04/grading.html" class="btn"><span class="icon"></span>GRADING</a>
+          
+      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-OL04" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+
+<h1 id="lab-10--part-2-python--javascript-recursions">Lab 10 / Part 2: Python + JavaScript Recursions</h1>
+
+<h4 id="c-o-n-t-e-n-t-s">C O N T E N T S</h4>
+<p><a href="#setup">Setup for Python3</a><br />
+<a href="#repo">Setting Up Your Lab 10 Repository</a></p>
+<ol>
+  <li><a href="#hny">Happy New Year! (in JavaScript)</a></li>
+  <li><a href="#timing">Add Timing + Interactivity</a></li>
+  <li><a href="#hanoi">The Tower of Hanoi (in Python)</a>
+<!-- 4. <a href="#bmi">Calculating Body Mass Index  (BMI) in Python</a> --></li>
+</ol>
+
+<hr />
+
+<p><a id="setup"></a></p>
+<h2 id="setup-for-python3">Setup for Python3</h2>
+
+<p>Let’s be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling <code class="language-plaintext highlighter-rouge">python</code> on the command line. We can crete an “alias” for python3 by running the following command:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span><span class="nb">alias </span><span class="nv">python</span><span class="o">=</span>/usr/local/bin/python3 </code></pre></figure>
+
+<p>Alternatively, you can simply run <code class="language-plaintext highlighter-rouge">python3</code> in the Terminal instead of <code class="language-plaintext highlighter-rouge">python</code>, but this gets annoying after awhile.</p>
+
+<hr />
+
+<p><a id="repo"></a></p>
+<h2 id="setting-up-your-lab-10-repository">Setting Up Your Lab 10 Repository</h2>
+
+<p><span style="color: red;"><em>You should already have your repository set up after completing Lab 10 / Part 1.<br />Instructions reappear below as a reminder:</em></span></p>
+
+<p><em>Note that</em> <strong>ALL FILES MUST BE CREATED IN A NEW LAB 10 REPOSITORY!</strong></p>
+<ul>
+  <li>On GitHub, create and name your new repository <span style="color: tomato;"><strong>lab-10-more-loops</strong></span> and <span style="color: tomato;"><strong>clone</strong></span> it inside your <span style="color: tomato;"><strong>/mtec1003</strong></span> folder.</li>
+  <li>Use your <em><strong>git cheatsheets</strong></em> and the walkthrough(s) from previous lab(s) as references for how to do this!</li>
+  <li>You may find it particularly time-saving to set up your repositories using the method described in <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html" target="_blank">Lab 5 / Part 1.</a></li>
+</ul>
+
+<p>Once you’ve done this, you’re all set.</p>
+
+<hr />
+
+<p><a id="hny"></a></p>
+<h2 id="1-happy-new-year-in-javascript">1. Happy New Year! (in JavaScript)</h2>
+
+<ol>
+  <li>Using your text editor, create a new file called <strong>happynewyear.html</strong> in your <strong>lab-10-more-loops</strong> repository.</li>
+  <li>Set up an HTML file, and add <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">&lt;script&gt;</code></span> tags… start writing your JavaScript between the tags.</li>
+  <li>Start by <span style="color: tomato;">defining</span> a new <em><strong>recursive function</strong></em>. Name this function <code class="language-plaintext highlighter-rouge">countDown</code>. It should take one <span style="color: tomato;">argument</span>; name this argument <code class="language-plaintext highlighter-rouge">start</code>. Don’t forget to <strong>add braces</strong> (<em>we’ll write our function’s <strong>statements</strong> inside this code block!</em>):</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">countDown</span><span class="p">(</span><span class="nx">start</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">}</span> </code></pre></figure>
+
+<ol start="4">
+  <li>Our function will take a <code class="language-plaintext highlighter-rouge">start</code> number, then count from that number down to 1, and finally will print “HAPPY NEW YEAR!”. To do this, start by printing the current value of <code class="language-plaintext highlighter-rouge">start</code> on the console. Make this the first line inside your function’s braces:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">start</span><span class="p">);</span> </code></pre></figure>
+
+<ol start="5">
+  <li>On the next line, let’s create a <span style="color: tomato;">local variable</span> that cannot be accessed anywhere else in our program; only from inside our function. We’ll name this variable <code class="language-plaintext highlighter-rouge">nextNumber</code> and use it to designate the <em><strong>“next”</strong></em> number in our count down. Type the following on the next line:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">nextNumber</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> </code></pre></figure>
+
+<p>We’ll use this line of code to <strong>decrement</strong> our <code class="language-plaintext highlighter-rouge">start</code> variable, one-by-one, until we reach our <strong>base case</strong>…</p>
+
+<h3 id="a-side-note-about-let">A Side-Note About <code class="language-plaintext highlighter-rouge">let</code></h3>
+
+<p>By using <code class="language-plaintext highlighter-rouge">let</code>, we’re telling JavaScript to create a <span style="color: tomato;">local variable</span> with a special property known as <a href="https://www.w3schools.com/js/js_let.asp" target="_blank">block scope.</a> That means our variable <code class="language-plaintext highlighter-rouge">nextNumber</code> can only be accessed from within this block of code. You might find this feature really helpful in your future JavaScript adventures…</p>
+
+<h3 id="setting-up-the-base-case">Setting Up the Base Case</h3>
+
+<ol start="6">
+  <li>Next, we’ll use a <em><strong>conditional statement</strong></em> to make our base case. Create an <span style="color: tomato;"><em><strong>if</strong> clause</em></span> followed by an <span style="color: tomato;"><em><strong>else</strong> clause</em></span>. Use the <span style="color: tomato;"><em><strong>if</strong> clause</em></span> to control what happens in your function for all values of <code class="language-plaintext highlighter-rouge">nextNumber</code> that are <em>greater than</em> 0. Within this code block, our function will <span style="color: tomato;"><em><strong>continually call itself</strong></em></span>, implementing our <strong>recursion</strong>. Type this clause like so:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="k">if</span> <span class="p">(</span><span class="nx">nextNumber</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">countDown</span><span class="p">(</span><span class="nx">nextNumber</span><span class="p">);</span>
+<span class="p">}</span> </code></pre></figure>
+
+<p>It’s important to note that the condition specified by the <span style="color: tomato;"><em><strong>if</strong> clause</em></span>:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">(</span><span class="nx">nextNumber</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span></code></pre></figure>
+
+<p>designates our <strong>base case</strong>. As long as <code class="language-plaintext highlighter-rouge">nextNumber</code> continues to be <em>greater than 0</em>, the function will keep calling itself, reducing its local variable by 1. But once this condition is no longer <code class="language-plaintext highlighter-rouge">true</code>, the function will stop.</p>
+
+<ol start="7">
+  <li>Now, inside the <span style="color: tomato;"><em><strong>else</strong> clause</em></span>, imagine that you’ve counted down all the way to 1. What happens when the ball finally drops on New Year’s Eve, after the counting…?</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">HAPPY NEW YEAR!</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="a-side-note-about-checking-your-braces">A Side-Note About Checking Your Braces</h3>
+
+<p>Make sure your code is written properly in all the correct braces &amp; code blocks. Use your text editor to make sure you’ve gotten this correct: Put your cursor on any open brace and notice how it <span style="color: tomato;">highlights</span> for you the corresponding closing brace. Use this to be sure you’ve enclosed all statements properly in their correct braces!</p>
+
+<h3 id="calling-your-function">Calling Your Function</h3>
+
+<ol start="8">
+  <li>So far you’ve <span style="color: tomato;">definined</span> your function. You just need to <span style="color: tomato;">call</span> it. Let’s run a countDown from 10 seconds. <em>Below &amp; outside of your function definition,</em> i.e. on the next line, call it with an argument of 10:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">countDown</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span></code></pre></figure>
+
+<p>Example JavaScript Console output should resemble the following:</p>
+
+<p><img src="/Goldford-MTEC1003-OL04/assets/hny.jsconsole.output.png" alt="HNY Example Output" width="200px" /></p>
+
+<ul>
+  <li><strong>Save</strong> your HMTL/JavaScript file, and make sure to <strong>test</strong> it using Google Chrome’s JavaScript Console.</li>
+  <li>For this exercise, you DON’T need to create a Python version!!</li>
+  <li>Use git <strong>status</strong>, <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> to version your file and submit it.</li>
+  <li>Since we’ll be making changes and adding to this file, <strong>commit</strong> your file with a <strong>message</strong> resembling this:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"first version of happynewyear.html"</span></code></pre></figure>
+
+<p>Now, let’s make some changes that will make our count down a much cooler experience…</p>
+
+<hr />
+
+<p><a id="timing"></a></p>
+<h2 id="2-add-timing--interactivity">2. Add Timing + Interactivity</h2>
+
+<p>When you imagine a proper New Year’s Eve count down, though, isn’t it true that we count down <em>one second at a time</em> until all the seconds have passed, and it’s time for the ball to drop? Let’s add this timing feature, so that we don’t get our entire count down in the console at once, but instead: one number at a time, with a 1-second delay between each number, all the way down to our final <em>“Happy New Year!”</em> message at the end.</p>
+
+<p>First, let’s make sure we’re all on the same page. Your 1st version of the file should look like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">dir=</span><span class="s">"ltr"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+      <span class="kd">function</span> <span class="nx">countDown</span><span class="p">(</span><span class="nx">start</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">start</span><span class="p">);</span>
+
+          <span class="kd">let</span> <span class="nx">nextNumber</span> <span class="o">=</span> <span class="nx">start</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+
+          <span class="k">if</span> <span class="p">(</span><span class="nx">nextNumber</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+              <span class="nx">countDown</span><span class="p">(</span><span class="nx">nextNumber</span><span class="p">);</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">HAPPY NEW YEAR!</span><span class="dl">"</span><span class="p">);</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="nx">countDown</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>If your code doesn’t yet look like this, make the necessary changes &amp; corrections to be sure it’s working before moving on. <span style="color: tomato;"><em>Your line numbers do not have to match mine,</em></span> but for ease of communication, I’ll be referring to the line numbers above for the rest of this exercise…</p>
+
+<h3 id="asking-the-user">Asking the User</h3>
+
+<p>By now, you should remember how to ask the user for input. We want to ask the user how many seconds there are until New Year’s Eve. Then, we’ll <strong>pass</strong> this as an <strong>argument</strong> to our function, which will count down from a user-supplied number. <em>Where do you think we should ask for user input?</em> If you guessed between the function definition and call, then you’re right!</p>
+
+<ol start="9">
+  <li>Insert a new line 20, between the function <strong>definition</strong> and its <strong>call</strong>, and ask the user for input:
+    <ul>
+      <li><strong>Declare</strong> a new variable for this user input. You can call it <code class="language-plaintext highlighter-rouge">count</code>.</li>
+      <li>Set it equal to a prompt. Ask them <em>“How many seconds there are until New Year’s Eve?”</em> or something like that.</li>
+      <li>Don’t forget to <strong>convert</strong> the user response to an integer.</li>
+      <li>You can do <em>all of this</em> in 1 line of code. Can you think of how to do it?</li>
+    </ul>
+  </li>
+  <li>User input will be stored inside your new variable. <strong>Pass</strong> this to your function <strong>call</strong> as its argument.
+    <ul>
+      <li><em>(HINT: You don’t need to make a new line of code for this step! You just need to change the function call, i.e. line 20.)</em></li>
+    </ul>
+  </li>
+  <li><strong>Test</strong> this by <strong>reloading</strong> your file in Chrome.
+    <ul>
+      <li>First you should see the prompt. Enter a number.</li>
+      <li>Then, your function should count down from this number. Check the Console to be sure.</li>
+      <li>Reload the page and try different numbers to be sure it’s working.</li>
+    </ul>
+  </li>
+</ol>
+
+<ul>
+  <li>Use git <strong>status</strong>, <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> to update your file.</li>
+  <li>Your <strong>commit message</strong> can resemble this:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"adding user input feature to happynewyear.html"</span></code></pre></figure>
+
+<h3 id="add-a-time-delay">Add a Time Delay</h3>
+
+<p>One last feature to add! We want the numbers to count down like we do in real life: 1 second at a time.</p>
+
+<ol start="12">
+  <li>Inside your <span style="color: tomato;"><em><strong>if</strong> clause</em></span> let’s add a delay by making a change on line 15. On this line, we’ll use the JavaScript function <a href="https://www.w3schools.com/jsref/met_win_settimeout.asp" target="_blank">setTimeout()</a> to make sure our new <code class="language-plaintext highlighter-rouge">countDown()</code> function calls itself with a 1-second delay.</li>
+</ol>
+
+<p>JavaScript’s <a href="https://www.w3schools.com/jsref/met_win_settimeout.asp" target="_blank">setTimeout()</a> function works like this:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">,</span> <span class="nx">milliseconds</span><span class="p">,</span> <span class="nx">param1</span><span class="p">,</span> <span class="nx">param2</span><span class="p">,</span> <span class="p">...)</span></code></pre></figure>
+
+<p>where <code class="language-plaintext highlighter-rouge">function</code> will be the name of a function to be called after a specific time delay (in our case, this will be our <code class="language-plaintext highlighter-rouge">countDown</code> function), and <code class="language-plaintext highlighter-rouge">milliseconds</code> is the time delay (for us, we’re targeting 1 second, or 1000 milliseconds).</p>
+
+<p>The optional parameters <code class="language-plaintext highlighter-rouge">param1</code> and <code class="language-plaintext highlighter-rouge">param2</code> are placeholders for any <strong>arguments</strong> we must <strong>pass</strong> to our named function (i.e. <code class="language-plaintext highlighter-rouge">countDown</code>).  What was that variable we passed to <code class="language-plaintext highlighter-rouge">countDown()</code> written in our original line 15? That variable will substitute <code class="language-plaintext highlighter-rouge">param1</code> in the formula above.</p>
+
+<p>So, change line 15 so that it looks like this (i.e. inside your <span style="color: tomato;"><em><strong>if</strong> clause</em></span>):</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="k">if</span> <span class="p">(</span><span class="nx">nextNumber</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">countDown</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="nx">nextNumber</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>This ensures that your function calls itself <em>every 1 second</em>.</p>
+
+<p>Let’s add the same delay to our final <em>“Happy New Year!”</em> message. Inside your <span style="color: tomato;"><em><strong>else</strong> clause</em></span>, change line 17 to the following:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">HAPPY NEW YEAR!</span><span class="dl">"</span><span class="p">);},</span> <span class="mi">1000</span><span class="p">,</span> <span class="nx">nextNumber</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>We’ve just <strong>defined</strong> a function inside the <code class="language-plaintext highlighter-rouge">setTimeout()</code> function: instead of naming a pre-existing function as the first argument to <code class="language-plaintext highlighter-rouge">setTimeout()</code>, now we’ve just included our original print message as its own function!</p>
+
+<p>Now, when you test your function, it should not only count down from a user-defined number of seconds; it should post each message to the console with a 1-second delay!</p>
+
+<ul>
+  <li><strong>Save</strong> your HMTL/JavaScript file, and make sure to <strong>test</strong> it using Google Chrome’s JavaScript Console.</li>
+  <li>For this exercise, you DON’T need to create a Python version!!</li>
+  <li>Use git <strong>status</strong>, <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> to version your file and submit it.</li>
+  <li>Your <strong>commit message</strong> can resemble this:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"adding timing feature to happynewyear.html"</span></code></pre></figure>
+
+<hr />
+
+<p><a id="hanoi"></a></p>
+<h2 id="3-the-tower-of-hanoi-in-python">3. The Tower of Hanoi (in Python)</h2>
+
+<p>By now you should have watched a lovely video by Professor Thorsten Altenkirch, explaining the <a href="https://en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">Tower of Hanoi</a> problem and how to implement it in Python:</p>
+
+<iframe src="https://www.youtube.com/embed/8lhxIOAfDss" width="560" height="315" frameborder="0"></iframe>
+
+<p>Your task : <span style="color: tomato;">transcribe the Python code in this video into a working Python script.</span> Fortunately, the examples given in the video are very clear, so you should be able to watch the video again and simply type out the same code you see on your screen.</p>
+
+<p><em>(In the video, Prof. Altenkirch uses <a href="https://jupyter.org/" target="_blank">Jupyter Notebook</a> to write Python in the browser, but <span style="color: tomato;">you don’t need Jupyter to write your code!</span> Just like the other Python files you create for this class, make your transcription in your text editor, then debug in the Terminal.)</em></p>
+
+<p>So, create a new file in your text editor called <strong>hanoi.py</strong> and start typing the code you learn from the video. Be sure to include function <strong>definitions</strong> for <code class="language-plaintext highlighter-rouge">move()</code> and <code class="language-plaintext highlighter-rouge">hanoi()</code>, and don’t forget a <strong>base case</strong> inside your <code class="language-plaintext highlighter-rouge">hanoi()</code> function!</p>
+
+<p>Your last line should <strong>call</strong> the <code class="language-plaintext highlighter-rouge">hanoi()</code> function exactly as he’s done in the video (i.e. using the same arguments: 4, “A”, “B”, “C”), and should produce the following output when you run it in Terminal:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">$</span><span class="w"> </span>python3 /path/to/hanoi.py
+<span class="go">Move disc from A to B!
+Move disc from A to C!
+Move disc from B to C!
+Move disc from A to B!
+Move disc from C to A!
+Move disc from C to B!
+Move disc from A to B!
+Move disc from A to C!
+Move disc from B to C!
+Move disc from B to A!
+Move disc from C to A!
+Move disc from B to C!
+Move disc from A to B!
+Move disc from A to C!
+Move disc from B to C!</span></code></pre></figure>
+
+<ul>
+  <li><strong>Save</strong> your Python file, and make sure to <strong>test</strong> it on your Terminal’s command line.</li>
+  <li>For this exercise, you DON’T need to create a JavaScript version!!</li>
+  <li>Use git <strong>status</strong>, <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> to version your file and submit it.</li>
+</ul>
+
+<hr />
+
+<p>Make sure all your files are included in your <strong>lab-10-more-loops</strong> repo folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> any additional changes! Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<p>At the end of Lab 10 / Part 2, your <strong>lab-10-more-loops</strong> folder should include the following files:</p>
+<ul>
+  <li>gimmymynumber.html</li>
+  <li>gimmymynumber.py</li>
+  <li>whichfloor.html</li>
+  <li>whichfloor.py</li>
+  <li>happynewyear.v01.html</li>
+  <li>happynewyear.v02.html <em>(no Python versions of “Happy New Year!”)</em></li>
+  <li>hanoi.py <em>(no JavaScript version of the Tower of Hanoi example. Just transcribe the code from the video and test it in your Terminal.)</em></li>
+</ul>
+
+<hr />
+
+      </section>
+    </div>
+
+    
+
+    <div>
+		<header><footer class="site-footer h-card">
+  <data class="u-url" href="/Goldford-MTEC1003-OL04/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h4 class="footer-heading">MTEC1003-OL04 Media Computation Skills Lab</h4>
+        <ul class="contact-list">
+          <li class="p-name">Prof. Louis Goldford</li><li><a class="u-email" href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</p>
+      </div>
+
+      <div class="social-links"><ul class="social-media-list"></ul></div>
+    </div>
+
+  </div>
+
+</footer></header>
+	</div>
+
+  </body>
+
+</html>

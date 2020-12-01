@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Goldford-MTEC1003-OL04/assets/css/style.css?v=3718950b355668c8b9901bbc7a3f9a72a023e324">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>MTEC1003-OL04 Media Computation Skills Lab | Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<meta name="author" content="Prof. Louis Goldford" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<meta property="og:description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
+<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-OL04/labs/10/lab-10-part1-while-loops.html" />
+<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-OL04/labs/10/lab-10-part1-while-loops.html" />
+<meta property="og:site_name" content="MTEC1003-OL04 Media Computation Skills Lab" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-OL04/labs/10/lab-10-part1-while-loops.html","headline":"MTEC1003-OL04 Media Computation Skills Lab","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/Goldford-MTEC1003-OL04/">
+          <h1>MTEC1003-OL04 Media Computation Skills Lab</h1>
+        </a>
+        <h2>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</h2>
+
+        <section id="downloads">
+          <!-- <a href="index.html" class="btn btn-syllabus"><span class="icon"></span>Course Syllabus</a>
+          <a href="schedule.html" class="btn btn-schedule"><span class="icon"></span>Schedule</a>
+          <a href="resources.html" class="btn btn-software"><span class="icon"></span>Software + Resources</a>
+          <a href="grading.html" class="btn btn-software"><span class="icon"></span>Grading</a> -->
+        	<a href="/Goldford-MTEC1003-OL04/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
+        	<a href="/Goldford-MTEC1003-OL04/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
+        	<a href="/Goldford-MTEC1003-OL04/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
+          <a href="/Goldford-MTEC1003-OL04/grading.html" class="btn"><span class="icon"></span>GRADING</a>
+          
+      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-OL04" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- http://www.iangoodfellow.com/blog/jekyll/markdown/tex/2016/11/07/latex-in-markdown.html -->
+
+<h1 id="lab-10--part-1-while-loops-in-python--javascript">Lab 10 / Part 1: While Loops in Python + JavaScript</h1>
+
+<h4 id="c-o-n-t-e-n-t-s">C O N T E N T S</h4>
+<p><a href="#setup">Setup for Python3</a><br />
+<a href="#repo">Setting Up Your Lab 10 Repository</a></p>
+<ol>
+  <li><a href="#gimmy">Gimmy My Number</a></li>
+  <li><a href="#stories">Which Floor Do You Work On?</a>
+<!-- 4. <a href="#bmi">Calculating Body Mass Index  (BMI) in Python</a> --></li>
+</ol>
+
+<hr />
+
+<p><a id="setup"></a></p>
+<h2 id="setup-for-python3">Setup for Python3</h2>
+
+<p>Let’s be sure your Terminal session will run Python3 (instead of the prepackaged Python 2.7.x) when calling <code class="language-plaintext highlighter-rouge">python</code> on the command line. We can crete an “alias” for python3 by running the following command:</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">  $</span><span class="w"> </span><span class="nb">alias </span><span class="nv">python</span><span class="o">=</span>/usr/local/bin/python3 </code></pre></figure>
+
+<p>Alternatively, you can simply run <code class="language-plaintext highlighter-rouge">python3</code> in the Terminal instead of <code class="language-plaintext highlighter-rouge">python</code>, but this gets annoying after awhile.</p>
+
+<hr />
+
+<p><a id="repo"></a></p>
+<h2 id="setting-up-your-lab-10-repository">Setting Up Your Lab 10 Repository</h2>
+
+<p><em>Note that</em> <strong>ALL FILES MUST BE CREATED IN A NEW LAB 10 REPOSITORY!</strong></p>
+<ul>
+  <li>On GitHub, create and name your new repository <span style="color: tomato;"><strong>lab-10-more-loops</strong></span> and <span style="color: tomato;"><strong>clone</strong></span> it inside your <span style="color: tomato;"><strong>/mtec1003</strong></span> folder.</li>
+  <li>Use your <em><strong>git cheatsheets</strong></em> and the walkthrough(s) from previous lab(s) as references for how to do this!</li>
+  <li>You may find it particularly time-saving to set up your repositories using the method described in <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html" target="_blank">Lab 5 / Part 1.</a></li>
+</ul>
+
+<p>Once you’ve done this, you’re all set.</p>
+
+<hr />
+
+<p><a id="gimmy"></a></p>
+<h2 id="1-gimmy-my-number">1. Gimmy My Number</h2>
+
+<ol>
+  <li>Using your text editor, create a new file called <strong>gimmymynumber.html</strong> in your <strong>lab-10-more-loops</strong> repository.</li>
+  <li>Set up an HTML file, and add <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">&lt;script&gt;</code></span> tags… start writing your JavaScript between the tags.</li>
+  <li>Ask the user for a number greater than 100 (<em>“Gimmy a number greater than 100 plz…“</em>).</li>
+  <li>If the user enters a number <em>greater than</em> 100, congratulate them! (<em>“</em><span style="color: tomato;"><code class="language-plaintext highlighter-rouge">&lt;number&gt;</code></span> <em>is greater than 100! Good work.”</em>).</li>
+  <li>But if they enter a number <strong>less</strong> than 100, ask again (<em>“This number is less than 100, dummy. Try again… I’ve got all day…”</em>).</li>
+  <li>Use a <span style="color: tomato;"><em><strong>while loop</strong></em></span> to accomplish this. Your loop should keep asking the user to enter a satisfactory number, and it should do so for as many times as necessary; until finally the user returns a number greater than 100.</li>
+</ol>
+
+<p>Example JavaScript Console output should resemble the following:</p>
+
+<p><img src="/Goldford-MTEC1003-OL04/assets/gimmymynumber.example.png" alt="Gimmy Example Output" width="600" /></p>
+
+<!-- <iframe src="Goldford-MTEC1003-OL04/labs/10/gimmymynumber.example.png" width="600px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+
+<!-- <img src="/Goldford-MTEC1003-OL04/labs/02/img/submit.lab2.v2.png"> -->
+
+<ul>
+  <li><strong>Save</strong> your HMTL/JavaScript file, and make sure to <strong>test</strong> it using Google Chrome’s JavaScript Console.</li>
+  <li>Once you know it works, recreate a version of this in Python:
+    <ul>
+      <li>In your text editor, create a new file called <strong>gimmymynumber.py</strong> in your <strong>lab-10-more-loops</strong> repository.</li>
+      <li>Don’t bother setting up HTML tags; no need for this in Python!</li>
+      <li>Repeat steps 3-6 above, carefully recalling how Python syntax differs from JavaScript (<em>e.g. how will you ask the user for input in Python?</em>).</li>
+      <li><strong>Save</strong> your Python script, and make sure to <strong>test</strong> it by running Python on your Terminal’s command line.</li>
+    </ul>
+  </li>
+  <li>Use git <strong>status</strong>, <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> to version your two files and submit them.</li>
+</ul>
+
+<hr />
+
+<p><a id="stories"></a></p>
+<h2 id="2-which-floor-do-you-work-on">2. Which Floor Do You Work On?</h2>
+<ol>
+  <li>Using your text editor, create a new file called <strong>whichfloor.html</strong> in your <strong>lab-10-more-loops</strong> repository.</li>
+  <li>Set up an HTML file, and add <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">&lt;script&gt;</code></span> tags… start writing your JavaScript between the tags.</li>
+  <li><strong>Declare</strong> a variable called <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">maximum_stories</code></span> and <strong>initialize</strong> it with a <strong>value</strong> of your choice. In other words: Decide how many floors your building should have.</li>
+  <li>Ask the user which floor they work on (<em>“On what floor of the building is your office?”</em>).</li>
+  <li>If the user enters a number <em>greater than</em> <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">maximum_stories</code></span>, format + print an <span style="color: tomato;"><strong>error message</strong></span> telling the user:
+    <ul>
+      <li>what number they entered,</li>
+      <li>how many floors are in the building, and</li>
+      <li>ask them to enter a valid number.</li>
+    </ul>
+  </li>
+  <li>Print this same message to the JavaScript Console; so that we we can keep a record of what the user entered.</li>
+  <li>If the user enters a valid number, format + print some kind of <em>“Congratulations!”</em> message.</li>
+  <li>Use a <span style="color: tomato;"><em><strong>while loop</strong></em></span> to accomplish this. Your loop should keep asking the user to enter a satisfactory number and should do so for as many times as necessary; until finally the user returns a number within the bounds of your <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">maximum_stories</code></span> variable.</li>
+  <li><strong>Save</strong> your HMTL/JavaScript file, and make sure to <strong>test</strong> it using the JavaScript Console.</li>
+  <li>Try <strong>initializing</strong> your program with different values for your <span style="color: tomato;"><code class="language-plaintext highlighter-rouge">maximum_stories</code></span> variable. For example, if you original set <code class="language-plaintext highlighter-rouge">maximum_stories</code> to a value of 10, increase it to 20 or some other value of your choice. Change this number at the start of your JavaScript program, <strong>save</strong> your HTML file in the text editor and <strong>refresh</strong> your program in Chrome. <strong>Test</strong> to make sure that your new values are reflected in the error messages thrown by your <strong>while loop</strong> program.</li>
+</ol>
+
+<p>Example JavaScript Console output should resemble the following:</p>
+
+<p><img src="/Goldford-MTEC1003-OL04/assets/stories.example.png" alt="Stories Example Output" width="600" /></p>
+
+<ul>
+  <li>Once you know it works, recreate a version of this in Python:
+    <ul>
+      <li>In your text editor, create a new file called <strong>whichfloor.py</strong> in your <strong>lab-10-more-loops</strong> repository.</li>
+      <li>Don’t bother setting up HTML tags; no need for this in Python!</li>
+      <li>Repeat steps 3-9 above, carefully recalling how Python syntax differs from JavaScript (<em>e.g. how will you ask the user for input in Python?</em>).</li>
+      <li><strong>Save</strong> your Python script, and make sure to <strong>test</strong> it by running Python on your Terminal’s command line.</li>
+    </ul>
+  </li>
+  <li>Use git <strong>status</strong>, <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> to version your two files and submit them.</li>
+</ul>
+
+<p>Make sure all your files are included in your <strong>lab-10-more-loops</strong> repo folder, and don’t forget to <strong>add</strong>, <strong>commit</strong>, and <strong>push</strong> any additional changes! Use your <a href="/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html" target="_blank"><em>git cheatsheet</em> (from lab 3)</a> if you need it!</p>
+
+<p>At the end of Lab 10 / Part 1, your <strong>lab-10-more-loops</strong> folder should include the following files:</p>
+<ul>
+  <li>gimmymynumber.html</li>
+  <li>gimmymynumber.py</li>
+  <li>whichfloor.html</li>
+  <li>whichfloor.py</li>
+</ul>
+
+<p>When finished, move on to <a href="/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-recursios.html" target="_blank">Lab 10 / Part 2: Python + JavaScript Recursions</a></p>
+
+<hr />
+
+      </section>
+    </div>
+
+    
+
+    <div>
+		<header><footer class="site-footer h-card">
+  <data class="u-url" href="/Goldford-MTEC1003-OL04/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+      <h4 class="footer-heading">MTEC1003-OL04 Media Computation Skills Lab</h4>
+        <ul class="contact-list">
+          <li class="p-name">Prof. Louis Goldford</li><li><a class="u-email" href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a></li></ul>
+      </div>
+
+      <div class="footer-col one-half">
+        <p>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</p>
+      </div>
+
+      <div class="social-links"><ul class="social-media-list"></ul></div>
+    </div>
+
+  </div>
+
+</footer></header>
+	</div>
+
+  </body>
+
+</html>

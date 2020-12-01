@@ -155,3 +155,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0 0 10px; }
 .btn-weekly:hover::before { transform: rotate(-45deg); background-color: rgba(255, 255, 255, 0); }
 
 .btn-weekly:hover::after { transform: rotate(45deg); background-color: rgba(255, 255, 255, 0); }
+
+.frontfoto { float: right; width: 30%; text-align: left; font-style: italic; font-size: smaller; text-indent: 0; border: thin silver solid; margin: 0.5em; padding: 0.5em; }
+
+img.scaled { width: 100%; }

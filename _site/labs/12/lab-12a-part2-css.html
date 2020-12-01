@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab 12, Part 2 - CSS</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../resources.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-13-part-2---css">Lab 12, Part 2 - CSS</h1>
+
+<h2 id="overview">Overview</h2>
+
+<ul>
+  <li>style a page using CSS</li>
+</ul>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="prep-work">Prep Work</h3>
+
+<ul>
+  <li><strong>USE THE SAME HTML FILE USED IN THE PREVIOUS LAB AS YOUR STARTING POINT!</strong></li>
+  <li>in Terminal change to your <strong>/lab-12-html</strong> folder</li>
+  <li>use <strong>pwd</strong> to make sure you&#8217;re in the right directory!</li>
+</ul>
+
+<hr />
+
+<h3 id="style-your-page-with-css">Style Your Page With CSS</h3>
+
+<h2 id="include-an-external-css-file">Include an External CSS File</h2>
+
+<ul>
+  <li>open up your text editor (e.g. SublimeText, Atom, VS Code, etc.)</li>
+  <li>if you don&#8217;t have <strong>index.html</strong> already open, go to the top menu bar, click on File&#8594;Open</li>
+  <li>browse to home&#8594;Desktop&#8594;usernamefolder&#8594;lab-12-html&#8594;index.html</li>
+  <li>create a new file by going to File&#8594;New </li>
+  <li>immediately save your new file by going to File&#8594;Save As
+    <ul>
+      <li>browse to home&#8594;Desktop&#8594;usernamefolder&#8594;lab-12-html</li>
+      <li>name your file <strong>style.css</strong></li>
+    </ul>
+  </li>
+  <li>add this to <strong>style.css</strong></li>
+</ul>
+
+<div class="highlight"><pre><code class="css"><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<ul>
+  <li>add your external css file to your page
+    <ul>
+      <li>in your &lt;head&gt; tag</li>
+      <li>add&#8230;  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;</li>
+    </ul>
+  </li>
+  <li>view your page by opening it in your browser (double click on the file from finder or Option-click&#8594;Open With)</li>
+  <li>you should see your paragraph tags in red</li>
+</ul>
+
+<h2 id="changing-color-and-text">Changing Color and Text</h2>
+
+<p>(view your page after each modification)</p>
+
+<ul>
+  <li>using the <a href="http://www.htmldog.com/guides/css/beginner/colors/">color property</a>:
+    <ul>
+      <li>change your largest header (h1) to green using hex values (try #008000 or <a href="http://www.color-hex.com/color/008000">look up</a> another)</li>
+      <li>change your paragraphs so that they&#8217;re blue using hex values (e.g. #0000FF)</li>
+    </ul>
+  </li>
+  <li>change the background color on all headers (h1 and h2) so that they&#8217;re gray (maybe something like #888888)</li>
+  <li>use <a href="http://www.htmldog.com/guides/css/beginner/text/">font-family</a> on body to change all of your text to sans-serif</li>
+  <li>use font-size on all paragraphs to make the text 12px (see link above for a reference)</li>
+  <li>use text-decoration on all paragraphs &#8230; try line-through</li>
+  <li>use text-decoration on your second largest header (h2) &#8230; try underline</li>
+  <li>use text-transform on your largest header (h1) to change to uppercase</li>
+  <li>view your page </li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<h2 id="margins-padding-and-border">Margins, Padding and Border</h2>
+
+<ul>
+  <li>add 20px <a href="http://www.htmldog.com/guides/css/beginner/margins/">margin</a> to your largest header (h1)</li>
+  <li>add 40px <a href="http://www.htmldog.com/guides/css/beginner/margins/">padding</a> to your largest header (h1)</li>
+  <li>add a 5 pixel wide, dashed, red <a href="http://www.htmldog.com/guides/css/beginner/borders/">border</a> around your largest header (h1)</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<h2 id="using-chrome-inspector-or-firebug">Using Chrome Inspector or Firebug</h2>
+
+<ul>
+  <li>Right click on your h1 heading and choose "Inspect Element"</li>
+  <li>You should see something like this:
+    <img src="../../resources/img/inspect-element.png" alt="Insepct Element" />
+  </li>
+  <li>Like with JavaScript, the console can be very helpful in debugging CSS/HTML.</li>
+</ul>
+
+<h2 id="classes-ids-grouped-selectors">Classes, IDs, Grouped Selectors</h2>
+
+<p>In <strong>index.html</strong>&#8230;</p>
+
+<ul>
+  <li>add an <a href="http://www.htmldog.com/guides/html/intermediate/spandiv/">id</a>  selector (use div tag with id= ___) to your first paragraph called intro</li>
+  <li>add a <a href="http://www.htmldog.com/guides/html/intermediate/spandiv/">class</a>  selector (use inline with class=___) to your first header (h1) called spotlight</li>
+</ul>
+
+<p>In <strong>style.css</strong>&#8230;</p>
+
+<ul>
+  <li>add a ID (#yyy) <a href="http://www.htmldog.com/guides/css/intermediate/classid/">selector</a> for #intro
+    <ul>
+      <li>set the border to one pixel, solid, black</li>
+    </ul>
+  </li>
+  <li>add a CLASS (.zzz) selector for .spotlight
+    <ul>
+      <li>set the background-color to yellow (try #FEFE22)</li>
+    </ul>
+  </li>
+  <li>remove any color properties from your h2 and paragraph selectors</li>
+  <li><a href="http://www.htmldog.com/guides/css/intermediate/grouping/">group</a> h2 and p so that their color is dark green</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<!-- <h2 id="nesting-pseudo-classes-background"><i>*** extra credit*** </i>Nesting, Pseudo Classes, Background</h2>
+
+<ul>
+  <li>create a selector that <a href="http://www.htmldog.com/guides/css/intermediate/grouping/">changes</a> all of the link text within a paragraph (p a)</li>
+  <li>using a <a href="http://www.htmldog.com/guides/css/intermediate/pseudoclasses/">pseudo class</a>, create a selector that changes link text to uppercase when hovered over (a:hover)</li>
+  <li>add a repeating image to the <a href="http://www.htmldog.com/guides/css/intermediate/backgroundimages/">background</a></li>
+</ul>
+
+<div class="highlight"><pre><code class="css"><span class="nt">body</span> <span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span> <span class="nb">white</span> <span class="sx">url(http://entertainmenttechnology.github.io/Wilson-MTEC1003/resources/img/lab-13-face.png)</span> <span class="k">repeat</span> <span class="k">top</span> <span class="k">right</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<ul>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul> -->
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab</p>
+</div>
+</div>
+</body>
+</html>

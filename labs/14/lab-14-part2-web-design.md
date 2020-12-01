@@ -23,7 +23,7 @@ But this time, we'll employ some more advanced web design concepts by building a
 * some interrelated pages (e.g. a main page, "About Me", "Contact", etc.)  
 * a navigation menu, or "navbar" to link these pages together (with so-called "sticky" positioning)
 * a "hero image" at the top of each page  
-* using `<div>` (i.e. HTML _"dividers"_) to separate and place content on a page  
+* using `<div>` (i.e. HTML _"dividers"_) to separate and position your content on a page  
 * custom font integration using Google Fonts  
 * building a custom color scheme for your site using Adobe Color  
 
@@ -40,15 +40,52 @@ This will be the front page of your site; i.e. your "home page."
 
 Type "HTML" + the `TAB` key to generate a boilerplate HTML document.  
 
-Inside your `<head>` tag, and in between the `<title></title>`, type the title of your page: "My Home Page".  
+Inside your `<head>` tag, and in between the `<title></title>`, type the name of your page: call it "My Home Page".  
 
-Now, inside your page's `<body>` tag, make 4 identical `<div>` elements: type "div" and then press the `TAB` key to format the tags. Inside each, label them "Divider1", "Divider2", and so on. These will simply act as "containers" for different parts of your page: in this case, we'll be posting text elements inside each `<div>` and positioning them later with CSS.  
+Now, inside your page's `<body>` tag, type "div" and then press the `TAB` key to format the proper tags. So far, your page should look like this:  
+
+{% highlight html linenos %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Home Page</title>
+  </head>
+  <body>
+    <div class="">
+
+    </div>
+  </body>
+</html>
+{% endhighlight %}
+
+Now, with your cursor already positioned between the `<div>` tags you just created, make _another_ set of `<div>` tags; i.e. one `<div>` within another, like so:
+
+{% highlight html linenos %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Home Page</title>
+  </head>
+  <body>
+    <div class="">
+      <div class="">
+
+      </div>
+    </div>
+  </body>
+</html>
+{% endhighlight %}
+
+
+Next, make 4 identical `<div>` elements. Inside each, label them "Divider1", "Divider2", and so on. These will simply act as "containers" for different parts of your page: in this case, we'll be posting text elements inside each `<div>` and positioning them later with CSS.  
 
 So far your HTML source should look like this:  
 
 {% highlight html linenos %}
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>My Home Page</title>

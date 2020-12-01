@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lab 12, Part 1 - HTML</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1> Media Computation Skills Lab</h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../resources.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-13-html-part-1---html">Lab 12, Part 1 - HTML</h1>
+
+<p>In this lab, you&#8217;ll be:</p>
+
+<ol>
+<!--  <li>Using SSH keys saved on your usb drive to connect to GitHub</li>  -->
+  <li>creating an html page</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<p><strong>ALL OF THESE FILES MUST BE CREATED IN <a href="#"></a> A LAB 12 REPOSITORY THAT YOU CREATE FOR THIS LAB!</strong></p>
+
+<ul>
+	<li>On <i>GitHub</i>, create and name your new repository <strong>lab-12-html</strong> and <strong>clone</strong> it inside your <strong>/mtec1003</strong> folder.</li>
+	<li>Use you <strong><i>git cheatsheet(s)</i></strong> and the walkthrough(s) from your <strong>previous lab(s)</strong> as references!</li>
+	<li>You may find it particularly <strong>time-saving</strong> to set up your repositories using the method described in <a href="../05/lab-05-part1-js-basics.html" target="_blank">Lab 5 / Part 1.</a></li>
+</ul>
+
+<hr />
+
+<h3 id="create-an-html-page">Create an HTML Page!</h3>
+
+<h2 id="basic-structure">Basic Structure</h2>
+
+<ul>
+  <li>open up your text editor (e.g. SublimeText, Atom, VS Code, etc.)</li>
+  <li>create a new file</li>
+  <li>save it&#8230;  browse to home&#8594;Desktop&#8594;usernamefolder&#8594;lab-12-html&#8594; and save as <strong>index.html</strong></li>
+  <li>create a skeleton page by using the following tags (don't use tab completion here)
+    <ul>
+      <li>&lt;!DOCTYPE html&gt; (note that this has no closing tag)</li>
+      <li>&lt;html lang=&quot;en&quot;&gt;</li>
+      <li>&lt;head&gt;</li>
+      <li>&lt;title&gt; &lt;&sol;title&gt;</li>
+      <li>&lt;&sol;head&gt;</li>
+      <li>&lt;body&gt;</li>
+      <li>&lt;&sol;body&gt;</li>
+      <li>&lt;&sol;html&gt;</li>
+    </ul>
+  </li>
+  <li>view your page by opening it in your browser (double click on the file from finder or option-click&#8594;Open With&#8230; your browser)</li>
+  <li>add text between the body tags</li>
+  <li>view your page (now just hit the refresh/reload button on your browser)</li>
+  <li>add a <a href="http://www.htmldog.com/guides/html/beginner/titles/">title</a>; it should go in head</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)&#8230; and of course, <strong>push origin master</strong></li>
+</ul>
+
+<h2 id="paragraphs-and-headings">Paragraphs and Headings</h2>
+
+<ul>
+  <li>add another line of text</li>
+  <li>view your page (note that there are no line breaks!)</li>
+  <li>add <a href="http://www.htmldog.com/guides/html/beginner/paragraphs/">paragraph</a> tags around each line of text
+    <ul>
+      <li>&lt;p&gt;line of text&lt;/p&gt;</li>
+    </ul>
+  </li>
+  <li>view your page (note that the text is now on separate lines!)</li>
+  <li>add some emphasis and strong tags around some text in one of the paragraphs
+    <ul>
+      <li>&lt;em&gt; &lt;/em&gt; </li>
+      <li>&lt;strong&gt; &lt;&sol;strong&gt;</li>
+    </ul>
+  </li>
+  <li>view your page (look for italicized and bolded text!)</li>
+  <li>add a <a href="http://www.htmldog.com/guides/html/beginner/headings/">heading</a> tag before each paragraph
+    <ul>
+      <li>add an &lt;h1&gt; first</li>
+      <li>add an &lt;h2&gt; next</li>
+    </ul>
+  </li>
+  <li>add one more heading tag, an h1 again&#8230; and add another paragraph tag underneath it</li>
+  <li>view your page (look for both headers)</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<h2 id="lists-and-links">Lists and Links</h2>
+
+<ul>
+  <li>add an <a href="http://www.htmldog.com/guides/html/beginner/lists/">ordered list</a> after your headers and paragraphs
+    <ul>
+      <li>&lt;ol&gt;</li>
+      <li>&lt;li&gt;</li>
+    </ul>
+  </li>
+  <li>view your page (look for both headers)</li>
+  <li>add an unordered list after your previous list
+    <ul>
+      <li>&lt;ul&gt;</li>
+      <li>&lt;li&gt;</li>
+    </ul>
+  </li>
+  <li>change one of your list items so that some of the text within it is a <a href="http://www.htmldog.com/guides/html/beginner/links/">link</a>
+    <ul>
+      <li>&lt;a href="http://somelinkhere.com"&gt;link text&lt;/a&gt;</li>
+    </ul>
+  </li>
+  <li>do the same for some text within one of the paragraphs</li>
+  <li>add another link in one of your paragraphs</li>
+  <li>view your page and check that your links work</li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<h2 id="images-and-tables">Images and Tables</h2>
+
+<ul>
+  <li>add an <a href="http://www.htmldog.com/guides/html/beginner/images/">image</a> somewhere on your page
+    <ul>
+      <li>&lt;img&gt; (no closing tag)</li>
+<!--      <li>set the src attribute, equal to http://entertainmenttechnology.github.io/Wilson-MTEC1003/resources/img/lab-12-face.png </li>
+-->
+      <li>set the src attribute, equal to http://cdn3.whatculture.com/images/2018/12/6a04de7e319b8a08-600x338.jpg</li>
+
+
+    </ul>
+  </li>
+  <li>view your page </li>
+  <li>add a <a href="http://www.htmldog.com/guides/html/beginner/tables/">table</a>
+    <ul>
+      <li>make it 2 columns, 3 rows</li>
+      <li>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</li>
+      <li>add text into each table cell</li>
+    </ul>
+  </li>
+  <li>view your page </li>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong> to staging, and <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+</ul>
+
+<h3 id="submit-your-work-through-github">Submit Your Work Through GitHub</h3>
+
+<ul>
+  <li>use git to check the <strong>status</strong>, <strong>add</strong>, <strong>commit</strong> (don&#8217;t forget the <strong>-m &#8216;message&#8217;</strong> part)</li>
+  <li>so, all you have to do is <strong>push</strong> (don&#8217;t forget <strong>origin master</strong>)</li>
+  <li>check that your code is on github by refreshing the page</li>
+</ul>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab</p>
+</div>
+</div>
+</body>
+</html>

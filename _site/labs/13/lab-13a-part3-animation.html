@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Animation</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="../../resources/css/screen.css">
+	<link rel="stylesheet" type="text/css" href="../../resources/css/syntax.css">
+	<script src="../../resources/js/jquery-1.6.3.min.js"></script>
+	<script src="../../resources/js/persistent-nav.js"></script>
+
+</head>
+<body>
+<div id="hd">
+<h1>Media Computation Skills Lab</h1>
+<h2>MTEC 1003</h2>
+
+	<div id="nav-container">
+<ul id="nav">
+
+	<li><a href="../../index.html">Description</a></li>
+
+
+	<li><a href="../../schedule.html">Schedule &amp; Notes</a></li>
+
+
+	<li><a href="../../resources.html">Installation Instructions</a></li>
+
+</ul>
+</div>
+
+
+</div>
+<div id="bd">
+<div id="content" class='lab'>
+	<h1 id="lab-12---part-1---animation">Lab 13 / Part 3 - Animation</h1>
+
+<ol>
+  <li>circle-animate</li>
+  <li>circle-boundary</li>
+  <li>circle-boundary-all</li>
+  <li>*circle-bounce</li>
+  <li>*circle-bounce-2</li>
+  <li>*circle-bounce-3</li>
+</ol>
+
+<hr />
+
+<h3 id="circle-animate">circle-animate</h3>
+
+<p>Write a program that draws a circle that moves horizontally from left to right.</p>
+
+<ul>
+  <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>circle-animate.html</strong> in your repository directory.</li>
+  <li>setup an html file</li>
+  <li>add a style tag in insides the head tag - add the following code to give your canvas element a border:</li>
+</ul>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;style&gt;</span>
+<span class="nf">#sketch</span> <span class="p">{</span>
+	<span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">&lt;/style&gt;</span>
+</code></pre></div>
+
+<ul>
+  <li>create a canvas element that is 480 by 720</li>
+  <li>add script tags</li>
+  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+  <li>declare the following variables:
+    <ul>
+      <li>sketch - your canvas element</li>
+      <li>context - your drawing instrument</li>
+      <li>circle - an object that contains your circles x, y position and radius</li>
+      <li>dx (set this equal to 2) - the velocity</li>
+      <li>fps (set this equal to 10) - the delay in ms before your animate function is called</li>
+      <li>animation - a variable to keep track of your animation</li>
+    </ul>
+  </li>
+  <li>create a main function
+    <ul>
+      <li>start writing your program in your main function</li>
+      <li>get your sketch element: sketch = document.getElementById(&#8216;sketch&#8217;);	</li>
+      <li>create your context: context = sketch.getContext(&#8220;2d&#8221;); </li>
+      <li>create your circle object: circle = {&#8216;x&#8217;:25, &#8216;y&#8217;:sketch.offsetHeight / 2, &#8216;r&#8217;:25};</li>
+      <li>specifiy a function to be called repeatedly at a specific interval: animation = setInterval(animate, fps);</li>
+      <li>note that the animate function will be defined immediately after&#8230; outside of the main function</li>
+      <li>your main function is finished!</li>
+    </ul>
+  </li>
+  <li>create another function, outside of main, called animate (this will be called repeatedly, and it will be responsible for clearing the screen and drawing your shapes)
+    <ul>
+      <li>clear the screen: context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);</li>
+      <li>draw circle at current position of circle object (this function will be defined later): draw_circle(circle.x, circle.y, circle.r);</li>
+      <li>move the circle&#8217;s position by adding velocity: circle.x = circle.x + dx;</li>
+      <li>that should finish your animate function</li>
+    </ul>
+  </li>
+  <li>finally, define your circle function; you can copy and paste from previous slides or programs</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example movie below</li>
+</ul>
+
+<p><a href="../../resources/mov/12/circle-animate.mov">circle-animate</a></p>
+
+<h3 id="circle-boundary">circle-boundary</h3>
+
+<p>Write a program that draws a circle that moves horizontally from left to right, but whenever it hits the right or left wall, it changes direction.</p>
+
+<ul>
+  <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>circle-boundary.html</strong> in your repository directory.</li>
+  <li>copy your code from your previous program</li>
+  <li>at the end of your animate function, add a conditional or conditionals to check if your circle is at either end of the canvas:
+    <ul>
+      <li>check that the circle&#8217;s x value is beyond the left side by seeing if it&#8217;s greater than the canvas sidth minus velocity minus radius: circle.x &gt; sketch.offsetWidth - dx - circle.r </li>
+      <li>check that the circle&#8217;s x value is beyond the right side by seeing if it&#8217;s less than the circle&#8217;s radius minus the velocity: circle.x &lt; circle.r - dx </li>
+      <li>if these conditions are set, change direction by changing the sign on velocity: dx = dx * -1</li>
+    </ul>
+  </li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example movie below</li>
+</ul>
+
+<p><a href="../../resources/mov/12/circle-boundary.mov">circle-boundary</a></p>
+
+<h3 id="circle-boundary-all">circle-boundary-all</h3>
+
+<p>Write a program that draws a circle that moves horizontally <strong>and</strong> vertically, but whenever it hits the right, left, top, or bottom wall, it changes direction.</p>
+
+<ul>
+  <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>circle-boundary-all.html</strong> in your repository directory.</li>
+  <li>copy your code from your previous program</li>
+  <li>add a velocity for y &#8230; call it dy and set it to some value&#8230; so that the ball moves up and down as well as left and right</li>
+  <li>in your animate function&#8230; change your circle&#8217;s y position by adding velocity: circle.y = circle.y + dy;</li>
+  <li>check your top and bottom boundaries (you can based this off of your left and right boundaries) </li>
+  <li>if the boundaries are encountered, flip the sign on dy (your vertical velocity)</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example movie below</li>
+</ul>
+
+<p><a href="../../resources/mov/12/circle-boundary-all.mov">circle-boundary-all</a></p>
+
+<h3 id="circle-bounce">circle-bounce</h3>
+
+<p>Write a program that draws a circle that falls vertically by using velocity and acceleration&#8230; and bounces after it hits the bottom boundary.  Eventually, the circle will stop bouncing. </p>
+
+<ul>
+  <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>circle-bounce.html</strong> in your repository directory.</li>
+  <li>base this program off of previous programs</li>
+  <li>you won&#8217;t need to move horizontally for this (so, you can remove dx)</li>
+  <li>however, you&#8217;ll need acceleration (probably around 0.1 or 0.2), and some sort of number to dampen the velocity after a bounce (probably 0.8 or 0.9)</li>
+  <li>in your animate function, along with changing the y position, you&#8217;ll also modify dy, the velocity, by using acceleration (for example&#8230; adding acceleration)</li>
+  <li>when your code checks for a bounce, instead of just flipping the sign on velocity, dampen the velocity by multiplying it by a number smaller than one (again, probably 0.8 or 0.9)</li>
+  <li>if you want to stop bouncing at a certain threshhold, this code may come in handy:</li>
+</ul>
+
+<div class="highlight"><pre><code class="js"><span class="c1">// if your velocity is less than some minimum value</span>
+<span class="k">if</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">abs</span><span class="p">(</span><span class="nx">dy</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nx">min_dy_val</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// zero out acceleration and velocity</span>
+	<span class="nx">dy</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="nx">acc</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<ul>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example movie below</li>
+</ul>
+
+<p><a href="../../resources/mov/12/circle-bounce.mov">circle-bounce</a></p>
+
+<h3 id="circle-bounce-2">circle-bounce-2</h3>
+
+<ul>
+  <li>modify your previous program to have a horizontal velocity as well!</li>
+  <li>use git status, add, commit, and push to save your file in version control and submit it</li>
+  <li>send it to github by using git push</li>
+  <li>example movie below</li>
+</ul>
+
+<p><a href="../../resources/mov/12/circle-bounce-2.mov">circle-bounce-2</a></p>
+
+</div>
+</div>
+
+<div id="ft">
+	<p>MTEC 1003 - Media Computation Skills Lab</p>
+</div>
+</div>
+</body>
+</html>

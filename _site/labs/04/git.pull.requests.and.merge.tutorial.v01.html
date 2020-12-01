@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/Goldford-MTEC1003-Fall2020/assets/css/style.css?v=b74d5b322417bef0ff797c9af68c838ab06c8851">
+    <link rel="stylesheet" href="/Goldford-MTEC1003-OL04/assets/css/style.css?v=3718950b355668c8b9901bbc7a3f9a72a023e324">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>GIT Tutorial: Submit a Pull Request + Merge Conflicts | MTEC1003-OL04 Media Computation Skills Lab</title>
@@ -14,11 +14,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
 <meta property="og:description" content="Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford." />
-<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/04/git.pull.requests.and.merge.tutorial.v01.html" />
-<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/04/git.pull.requests.and.merge.tutorial.v01.html" />
+<link rel="canonical" href="http://localhost:4000/Goldford-MTEC1003-OL04/labs/04/git.pull.requests.and.merge.tutorial.v01.html" />
+<meta property="og:url" content="http://localhost:4000/Goldford-MTEC1003-OL04/labs/04/git.pull.requests.and.merge.tutorial.v01.html" />
 <meta property="og:site_name" content="MTEC1003-OL04 Media Computation Skills Lab" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-Fall2020/labs/04/git.pull.requests.and.merge.tutorial.v01.html","headline":"GIT Tutorial: Submit a Pull Request + Merge Conflicts","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Prof. Louis Goldford"},"description":"Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.","@type":"WebPage","url":"http://localhost:4000/Goldford-MTEC1003-OL04/labs/04/git.pull.requests.and.merge.tutorial.v01.html","headline":"GIT Tutorial: Submit a Pull Request + Merge Conflicts","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -27,7 +27,7 @@
 
     <header>
       <div class="container">
-        <a id="a-title" href="/Goldford-MTEC1003-Fall2020/">
+        <a id="a-title" href="/Goldford-MTEC1003-OL04/">
           <h1>MTEC1003-OL04 Media Computation Skills Lab</h1>
         </a>
         <h2>Fall 2020 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.</h2>
@@ -37,12 +37,12 @@
           <a href="schedule.html" class="btn btn-schedule"><span class="icon"></span>Schedule</a>
           <a href="resources.html" class="btn btn-software"><span class="icon"></span>Software + Resources</a>
           <a href="grading.html" class="btn btn-software"><span class="icon"></span>Grading</a> -->
-        	<a href="/Goldford-MTEC1003-Fall2020/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
-        	<a href="/Goldford-MTEC1003-Fall2020/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
-        	<a href="/Goldford-MTEC1003-Fall2020/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
-          <a href="/Goldford-MTEC1003-Fall2020/grading.html" class="btn"><span class="icon"></span>GRADING</a>
+        	<a href="/Goldford-MTEC1003-OL04/index.html" class="btn"><span class="icon"></span>SYLLABUS</a>
+        	<a href="/Goldford-MTEC1003-OL04/schedule.html" class="btn"><span class="icon"></span>SCHEDULE</a>
+        	<a href="/Goldford-MTEC1003-OL04/resources.html" class="btn"><span class="icon"></span>SOFTWARE + RESOURCES</a>
+          <a href="/Goldford-MTEC1003-OL04/grading.html" class="btn"><span class="icon"></span>GRADING</a>
           
-      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-Fall2020" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
+      <!--    <a href="https://github.com/einbahnstrasse/Goldford-MTEC1003-OL04" class="btn btn-github"><span class="icon"></span>View on GitHub</a> -->
         </section>
       </div>
     </header>
@@ -75,23 +75,23 @@
 
 <p>Inside this repository there is one file, a README.md file. It’s a simple “markdown” file, but let’s imagine it’s a larger piece of code. Essentially this can be any in a series of text files. Notice what’s written under Section 3, lines 10-12:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v1.png" width="650px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v1.png" width="650px" /></p>
 
 <p>Once <code class="language-plaintext highlighter-rouge">fork</code>ed, user @LeonardDunk clicks on the <strong>pen tool</strong> to edit the file directly. (Alternatively, the file can be edited on your own computer with a text editor, or even on the command line itself!) they then makes a change to lines 10-12:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v2.png" width="400px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v2.png" width="400px" /></p>
 
 <p>Then, at the bottom of the page, @LeonardDunk <code class="language-plaintext highlighter-rouge">commit</code>s the change (<strong>Reminder:</strong> We’re not using the command line to make this commit. Instead, we’re committing <em>online</em> via the <em>GitHub</em> website.):</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v4.png" width="300px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v4.png" width="300px" /></p>
 
 <p>Now, suppose @LeonardDunk wants to <code class="language-plaintext highlighter-rouge">push</code> their new changes to the <em>original</em> ‘lab-04-merge-conflicts’ repository owned by @einbahnstrasse. (<strong>Remember:</strong> this <code class="language-plaintext highlighter-rouge">commit</code> was just made to @LeonardDunk’s <code class="language-plaintext highlighter-rouge">fork</code>ed copy of the repo…) In this case, they needs to <em>ask permission</em> of the original owner(s) to integrate their changes into the original code base. this is done through a <code class="language-plaintext highlighter-rouge">pull request</code>, i.e. asking the owners of the code to, “Please <em>pull</em> my changes into your original repository.” @LeonardDunk therefore hits the <strong>Pull request</strong> tab and then the green <strong>New pull request</strong> button:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v5.png" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v5.png" /></p>
 
 <p>Then, they can add a message (similar to adding a message to a <code class="language-plaintext highlighter-rouge">commit</code>), finally hit the green <strong>Create pull request</strong> button:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v8.png" width="600px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v8.png" width="600px" /></p>
 
 <p>this action signals to the original code owners that a new user, @LeonardDunk, has <code class="language-plaintext highlighter-rouge">fork</code>ed the repository and made their own changes to some of the original code, and is now asking to have those changes integrated into the original <code class="language-plaintext highlighter-rouge">repository</code>.</p>
 
@@ -105,43 +105,43 @@
 
 <p>In our case, another user, @DYLAN-T-PAIN, has made their own changes to lines 10-12…</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v11.png" width="400px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v11.png" width="400px" /></p>
 
 <p>Not only have they made their own changes, they’ve also made changes to the <em>same line(s)</em> of code that the other user changed, lines 10-12. I mean, come on, this is <strong>SUCH A DYLAN!</strong> (Okay, sorry to all the Dylans of the world…)</p>
 
 <p>Also, they’ve submitted a <code class="language-plaintext highlighter-rouge">pull request</code>:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v13.png" width="600px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v13.png" width="600px" /></p>
 
 <p>Thanks a lot, @DYLAN-T-PAIN…</p>
 
 <p>Since both users have made changes to the same line(s) in our README.md file, this means there’s a <code class="language-plaintext highlighter-rouge">conflict</code> and the owner of the code will have to <code class="language-plaintext highlighter-rouge">resolve</code> it before s/he can <code class="language-plaintext highlighter-rouge">merge</code> any change into the original <code class="language-plaintext highlighter-rouge">repository</code>. From @einbahnstrasse’s viewpoint, there appear to be two <code class="language-plaintext highlighter-rouge">pull request</code>s in need of attention:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v16.png" width="600px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v16.png" width="600px" /></p>
 
 <p>Let’s say @einbahnstrasse likes @LeonardDunk’s changes, so they click on this <code class="language-plaintext highlighter-rouge">pull request</code> first, and hit the green <strong>Merge pull request</strong> button:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v17.png" width="600px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v17.png" width="600px" /></p>
 
 <p>Then, @einbahnstrasse goes to @DYLAN-T-PAIN’s <code class="language-plaintext highlighter-rouge">pull request</code> and attempts to <code class="language-plaintext highlighter-rouge">merge</code>. There’s a warning about the <code class="language-plaintext highlighter-rouge">merge conflict</code>, so they click on the gray <strong>Resolve conflicts</strong> button:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v18.png" width="600px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v18.png" width="600px" /></p>
 
 <p>On the next page you’ll notice (1) a left sidebar with the files containing conflicts (in this case, only the README.md file), and on the right (2) a text editor showing the conflicting lines themselves. The red brackets show the different ‘versions’ of lines 10-12 that need to be resolved:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v20.png" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v20.png" /></p>
 
 <p>@einbahnstrasse deletes the first version, i.e. @DYLAN-T-PAIN’s version, so that only @LeonardDunk’s changes will be included in the repo. Then they hit the <strong>Mark as resolved</strong> button, which changes into a green <strong>Commit merge</strong> button:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v22.png" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v22.png" /></p>
 
 <p>@einbahnstrasse clicks this button as well, and finally the <strong>I understand, update master</strong> button that follows:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v23.png" width="350px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v23.png" width="350px" /></p>
 
 <p>@einbahnstrasse then clicks the <code class="language-plaintext highlighter-rouge">pull request</code> tab and then the specific request made by @DYLAN-T-PAIN. They type a message to let @DYLAN-T-PAIN know why their changes were not accepted, and finally they click on the <strong>Close and comment</strong> button to post the message and close the <code class="language-plaintext highlighter-rouge">pull request</code>:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v24.png" width="600px" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v24.png" width="600px" /></p>
 
 <p>Now, the preferred user changes have been integrated into the source code, and everybody lived happily ever after…</p>
 
@@ -155,7 +155,7 @@
 
 <p>You’ll then see a graph that looks curiously like the color-coded subway stops on the MTA:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v26.png" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v26.png" /></p>
 
 <p>Notice the original timeline for the code base, running left-to-right (in black). Each “stop” along this subway route  (or “node”) is a <code class="language-plaintext highlighter-rouge">commit</code> message, providing a handy visual for the history of the repository as it developed.</p>
 
@@ -167,7 +167,7 @@
 
 <p>These variously colored <code class="language-plaintext highlighter-rouge">fork</code>s appear like express subway trains along the same “route” as the original code. They can develop at their own rates of change. For example, here’s a <em>GitHub</em> project I follow with a lot more development than our tutorial repo — a JavaScript synthesizer project called Tone.js:</p>
 
-<p><img src="/Goldford-MTEC1003-Fall2020/labs/04/img/rp.v27.tone.js.png" /></p>
+<p><img src="/Goldford-MTEC1003-OL04/labs/04/img/rp.v27.tone.js.png" /></p>
 
 <p>Can you describe what the different “stations” and “routes” mean?</p>
 
@@ -180,7 +180,7 @@
 
     <div>
 		<header><footer class="site-footer h-card">
-  <data class="u-url" href="/Goldford-MTEC1003-Fall2020/"></data>
+  <data class="u-url" href="/Goldford-MTEC1003-OL04/"></data>
 
   <div class="wrapper">
 
