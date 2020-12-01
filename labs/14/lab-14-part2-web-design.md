@@ -264,7 +264,9 @@ In your external style sheet, add some rules for your hero text:
 }
 {% endhighlight %}
 
-At this point, open your **index.html** file in Chrome to observe the current state of your home page.
+At this point, open your **index.html** file in Chrome to observe the current state of your home page. It should appear extremely plain, without almost no styling at all:  
+
+<img src="resources/site.v01.png" alt="Dr. Fauci" width="700px" />
 
 * * *   
 
