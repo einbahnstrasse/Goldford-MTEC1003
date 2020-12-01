@@ -15,6 +15,10 @@ layout: default
   - <a href="#textelems">Make Containers for Body Text Elements</a>  
   - <a href="#extcss">Link to an External CSS Style Sheet</a>  
 3. <a href="#heroimg">Adding + Styling a Hero Image</a>  
+4. <a href="#adobecolor">Extracting Your Site's Color Scheme from a Photo</a>  
+5. <a href="#stylingdivs">Styling the Divs</a>  
+6. <a href="#stylingnav">Styling the Navbar</a>  
+7. <a href="#linkingpages">Linking New Pages</a>  
 
 * * *  
 
@@ -214,7 +218,7 @@ Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and
 <a id="heroimg"></a>
 ## 3. Adding + Styling a Hero Image     
 
-First, let's define some universal properties in our CSS style sheet. On line copy the following the code into your **style.css** file:  
+First, let's define some universal properties in our CSS style sheet. On line copy the following into your **style.css** file:  
 
 {% highlight css %}
 /* universal properties */
@@ -266,9 +270,39 @@ In your external style sheet, add some rules for your hero text:
 
 At this point, open your **index.html** file in Chrome to observe the current state of your home page. It should appear extremely plain, without almost no styling at all:  
 
-<img src="resources/site.v01.png" alt="Dr. Fauci" width="700px" />
+<img src="resources/site.v01.png" alt="Early Site Rendering" width="700px" />
 
 * * *   
+
+<a id="adobecolor"></a>
+## 4. Extracting Your Site's Color Scheme from a Photo     
+
+For get colors for our HTML elements, we're going to use a free feature on Adobe Color's site.  
+
+First, go here: [Extract color from an image](https://color.adobe.com/create/image){:target="_blank"}  
+
+Drag and drop the image fauci.v01.jpg onto the page. The site will return a "swatch" of prominent colors found in the image you upload. And most importantly for us... their hex numbers (near the bottom of the screen):   
+
+<img src="resources/adobe.color.v02.png" alt="Early Site Rendering" width="700px" />
+
+We can use these 5 hex values to color things on our site like body text, headers, background colors, buttons, etc. Because of their association to the image, we can give our web pages a greater sense of design coherence by coordinating these colored elements into a color _"theme."_  
+
+* * *   
+
+<a id="stylingdivs"></a>
+## 5. Styling the Divs     
+
+* * *   
+
+<a id="stylingnav"></a>
+## 6. Styling the Navbar     
+
+* * *
+
+<a id="linkingpages"></a>
+## 7. Linking New Pages     
+
+* * *
 
 Make sure your files is included in your **/lab-12-html** folder, and don't forget to **add**, **commit**, and **push** your changes!  
 Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
