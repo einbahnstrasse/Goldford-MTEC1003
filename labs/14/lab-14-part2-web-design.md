@@ -216,11 +216,11 @@ Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and
 
 Right-click and save the following image file in your local repo (fauci.v01.jpg):  
 
-<img src="fauci.v01.jpg"
-     alt="Dr. Fauci"
-     style="float: left; margin-right: 10px;" />
+<img src="fauci.v01.jpg" alt="Dr. Fauci" width="300px" />
 
 We're going to use this as our "hero image".  
+
+
 
 
 
