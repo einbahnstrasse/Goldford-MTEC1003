@@ -156,15 +156,15 @@ Inside each, provide placeholder text by labeling them "Divider1", "Divider2", a
 <div>Divider4</div>
 {% endhighlight %}
 
-We're going to give each of these 4 div containers **BOTH** a class selector **AND** an ID selector. Why would we do this?? The reason is simple: We want all of these divs to have some of the same styling properties in common, and for that we typically use a class selector. But some of these divs will have unique properties that we don't want our other elements to have, and as you'll recall from Lab 13, we typically use ID selectors for unique properties.  
+We're going to give each of these 4 div containers an ID selector. Why would we do this?? The reason is simple: We want these divs to have _unique_ properties that aren't shared with the other elements, and as you'll recall from Lab 13, we typically use ID selectors to designate _unique_ properties.  
 
-So, give these divs a generalized class selector, like "stuff", and then give them each a unique ID selector, for example "first," "second," "third," and "fourth." Add these selectors inline with each div's opening tag, like so:  
+So, give each of these divs a unique ID selector, for example "first," "second," "third," and "fourth." Add these selectors inline with each div's opening tag, like so:  
 
 {% highlight html %}
-<div class="stuff" id="first">Divider1</div>
-<div class="stuff" id="second">Divider2</div>
-<div class="stuff" id="third">Divider3</div>
-<div class="stuff" id="fourth">Divider4</div>
+<div id="first">Divider1</div>
+<div id="second">Divider2</div>
+<div id="third">Divider3</div>
+<div id="fourth">Divider4</div>
 {% endhighlight %}
 
 Again, we'll use these selectors to add style and positioning in CSS.
@@ -203,10 +203,10 @@ So far your HTML source should look like this:
       <a href="myportfolio.html">My Portfolio</a>
       <a href="contact.html">Contact</a>
     </div>
-    <div class="stuff" id="first">Divider1</div>
-    <div class="stuff" id="second">Divider2</div>
-    <div class="stuff" id="third">Divider3</div>
-    <div class="stuff" id="fourth">Divider4</div>
+    <div id="first">Divider1</div>
+    <div id="second">Divider2</div>
+    <div id="third">Divider3</div>
+    <div id="fourth">Divider4</div>
   </body>
 </html>
 {% endhighlight %}
@@ -287,10 +287,38 @@ Drag and drop the image fauci.v01.jpg onto the page. The site will return a "swa
 
 We can use these 5 hex values to color things on our site like body text, headers, background colors, buttons, etc. Because of their association to the image, we can give our web pages a greater sense of design coherence by coordinating these colored elements into a color _"theme."_  
 
+In the next section, we'll copy these hex values into our external style sheet.   
+
 * * *   
 
 <a id="stylingdivs"></a>
 ## 5. Styling the Divs     
+
+Previously, we'd assigned ID selectors to each `<div>` element below our navbar. We'll use these selectors give our divs unique properties.    
+
+In your CSS, first set up a series of individual ID selectors for each div. Leave them "blank" for now, meaning don't write any rules inside them (properties & values):  
+
+{% highlight css %}
+div#first {
+
+}
+
+div#second {
+
+}
+
+div#third {
+
+}
+
+div#fourth {
+
+}
+
+div#fifth {
+
+}
+{% endhighlight %}
 
 * * *   
 
