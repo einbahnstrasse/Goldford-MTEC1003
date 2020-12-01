@@ -59,7 +59,7 @@ Now, inside your page's `<body>` tag, type "div" and then press the `TAB` key to
 </html>
 {% endhighlight %}
 
-Now, with your cursor already positioned between the `<div>` tags you just created, make _another_ set of `<div>` tags; i.e. one `<div>` within another, like so:
+Now, with your cursor already positioned between the `<div>` tags you just created (i.e. on line 9 above), make _another_ set of `<div>` tags; i.e. one `<div>` within another, like so:
 
 {% highlight html linenos %}
 <!DOCTYPE html>
@@ -78,6 +78,18 @@ Now, with your cursor already positioned between the `<div>` tags you just creat
 </html>
 {% endhighlight %}
 
+On line 8, between the quotation marks, create a class identifier, and call it: "hero-image". On line 9, inside the "inner" `<div>` element, create another class label by typing "hero-text" between the quotation marks.  
+
+These two nested `<div>` elements will contain the banner image (sometimes called "hero image") that will span the top of our web page.  
+
+Now, inside the innermost `<div>`, add the following `<h1>` and `<p>` elements:  
+
+{% highlight html %}
+<h1>Hi, I'm Tony</h1>
+<h5>I'm an Immunologist</h5>
+{% endhighlight %}
+
+This text will be placed on top of our "hero image". We'll format all of this using the class selectors we've just labeled in our CSS file later.  
 
 Next, make 4 identical `<div>` elements. Inside each, label them "Divider1", "Divider2", and so on. These will simply act as "containers" for different parts of your page: in this case, we'll be posting text elements inside each `<div>` and positioning them later with CSS.  
 
