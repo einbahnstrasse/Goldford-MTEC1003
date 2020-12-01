@@ -9,7 +9,11 @@ layout: default
 
 #### C O N T E N T S  
 1. <a href="#overview">Overview of This Lab</a>  
-2. <a href="#diving">Creating a Page With `<div>` Containers</a>  
+2. <a href="#diving">Creating a Page With `<div>` Containers</a>    
+  - <a href="#hero">Make a Container for a "Hero Image"</a>    
+  - <a href="#naving">Make a Container for a Navbar</a>  
+  - <a href="#textelems">Make Containers for Body Text Elements</a>  
+  - <a href="#extcss">Link to an External CSS Style Sheet</a>  
 3. <a href="#cont">Brainstorming Content for your Website</a>  
 
 * * *  
@@ -41,6 +45,9 @@ This will be the front page of your site; i.e. your "home page."
 Type "HTML" + the `TAB` key to generate a boilerplate HTML document.  
 
 Inside your `<head>` tag, and in between the `<title></title>`, type the name of your page: call it "My Home Page".  
+
+<a id="hero"></a>
+#### Make a Container for a "Hero Image"
 
 Now, inside your page's `<body>` tag, type "div" and then press the `TAB` key to format the proper tags. So far, your page should look like this:  
 
@@ -111,30 +118,94 @@ So far, your page with the complete "hero image" container system should look li
 </html>
 {% endhighlight %}
 
+<a id="naving"></a>
+#### Make a Container for a Navbar  
+
 Next, let's make containers for a "navbar" — i.e. a navigation menu — so we can easily navigate our site.  
 
+Between lines 13 and 14, create another `<div>` as you had done before...  
 
+But this time, delete the class selector label from the opening tag, and replace it with an ID selector. Label this one "navbar". We'll use this ID selector to style our navbar uniquely in CSS.  
 
-Next, make 4 identical `<div>` elements. Inside each, label them "Divider1", "Divider2", and so on. These will simply act as "containers" for different parts of your page: in this case, we'll be posting text elements inside each `<div>` and positioning them later with CSS.  
+Inside these div tags, add some `<a>` link elements that we'll use for each page on our site:  
+
+{% highlight html %}
+<a href="index.html">Home</a>
+<a href="aboutme.html">About Me</a>
+<a href="myportfolio.html">My Portfolio</a>
+<a href="contact.html">Contact</a>
+{% endhighlight %}
+
+_By the way: **make sure all links and divs are properly indented!**_  
+
+<a id="textelems"></a>
+#### Make Containers for Body Text Elements    
+
+Next, make 4 identical `<div>` elements, which we'll use to place content on our home page. In this example, we'll be placing news stories inside these divs.  
+
+Inside each, provide placeholder text by labeling them "Divider1", "Divider2", and so on:  
+
+{% highlight html %}
+<div>Divider1</div>
+<div>Divider2</div>
+<div>Divider3</div>
+<div>Divider4</div>
+{% endhighlight %}
+
+We're going to give each of these 4 div containers **BOTH** a class selector **AND** an ID selector. Why would we do this?? The reason is simple: We want all of these divs to have some of the same styling properties in common, and for that we typically use a class selector. But some of these divs will have unique properties that we don't want our other elements to have, and as you'll recall from Lab 13, we typically use ID selectors for unique properties.  
+
+So, give these divs a generalized class selector, like "stuff", and then give them each a unique ID selector, for example "first," "second," "third," and "fourth." Add these selectors inline with each div's opening tag, like so:  
+
+{% highlight html %}
+<div class="stuff" id="first">Divider1</div>
+<div class="stuff" id="second">Divider2</div>
+<div class="stuff" id="third">Divider3</div>
+<div class="stuff" id="fourth">Divider4</div>
+{% endhighlight %}
+
+Again, we'll use these selectors to add style and positioning in CSS.
+
+<a id="extcss"></a>
+#### Link to an External CSS Style Sheet
+
+Finally, let's add a relative link in our `<head>` (directly following our `<title></title>` tags) to an external style sheet. The file should be referenced as "style.css" and should be included inline with the link tag:  
+
+{% highlight html %}
+<link rel="stylesheet" href="style.css">
+{% endhighlight %}
+
+Now, create a new file, save it immediately as **style.css**, and be sure it's located in your local repository; i.e. the same directory that contains your index.html file. We'll add all of our styling rules here in the next part of the lab.
 
 So far your HTML source should look like this:  
 
 {% highlight html linenos %}
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>My Home Page</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div>Divider1</div>
-    <div>Divider2</div>
-    <div>Divider3</div>
-    <div>Divider4</div>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Hi, I'm Tony</h1>
+        <h5>I'm an Immunologist</h5>
+      </div>
+    </div>
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="myportfolio.html">My Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="stuff" id="first">Divider1</div>
+    <div class="stuff" id="second">Divider2</div>
+    <div class="stuff" id="third">Divider3</div>
+    <div class="stuff" id="fourth">Divider4</div>
   </body>
 </html>
 {% endhighlight %}
-
 
 * * *   
 
