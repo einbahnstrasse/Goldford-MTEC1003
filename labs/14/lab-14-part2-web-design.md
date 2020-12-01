@@ -214,6 +214,15 @@ Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and
 <a id="heroimg"></a>
 ## 3. Adding + Styling a Hero Image     
 
+First, let's define some universal properties in our CSS style sheet. On line copy the following the code into your **style.css** file:  
+
+{% highlight css %}
+/* universal properties */
+body, html {
+    height: 100%;
+}
+{% endhighlight %}
+
 Right-click and save the following image file in your local repo (fauci.v01.jpg):  
 
 <img src="fauci.v01.jpg" alt="Dr. Fauci" width="375px" />
@@ -255,7 +264,7 @@ In your external style sheet, add some rules for your hero text:
 }
 {% endhighlight %}
 
-At this point, open your **index.html** file in Chrome to observe the current state of your home page. 
+At this point, open your **index.html** file in Chrome to observe the current state of your home page.
 
 * * *   
 
