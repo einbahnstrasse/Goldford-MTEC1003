@@ -42,11 +42,11 @@ Type "HTML" + the `TAB` key to generate a boilerplate HTML document.
 
 Inside your `<head>` tag, and in between the `<title></title>`, type the title of your page: "My Home Page".  
 
-Now, inside your page's `<body>` tag, make 4 identical `<div>` elements. These will simply act as "containers" for different parts of your page: in this case, we'll be posting text elements inside each `<div>` and positining them later with CSS.  
+Now, inside your page's `<body>` tag, make 4 identical `<div>` elements: type "div" and then press the `TAB` key to format the tags. Inside each, label them "Divider1", "Divider2", and so on. These will simply act as "containers" for different parts of your page: in this case, we'll be posting text elements inside each `<div>` and positioning them later with CSS.  
 
 So far your HTML source should look like this:  
 
-{% highlight html %}
+{% highlight html linenos %}
 <!DOCTYPE html>
 <html>
   <head>
