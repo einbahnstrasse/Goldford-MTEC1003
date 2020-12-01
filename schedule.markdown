@@ -319,6 +319,12 @@ _Don't forget to watch + study the following..._
 <h5 style="color:Tomato;"><b>EXTERNAL TUTORIALS</b></h5>
 * [Intro. to _GitHub Pages_](https://pages.github.com/){:target="_blank"}  
 
+<h5 style="color:Tomato;"><b>EXTERNAL TUTORIALS</b></h5>
+* [How to use Google Fonts in your next web design project](https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/){:target="_blank"}  
+* [How to Create a Hero Image](https://www.w3schools.com/howto/howto_css_hero_image.asp){:target="_blank"}  
+* [How to Create a Hero Image](https://www.w3schools.com/howto/howto_css_hero_image.asp){:target="_blank"}  
+* [How to Create a "Sticky" Navbar (JavaScript + CSS)](hthttps://www.w3schools.com/howto/howto_js_navbar_sticky.asp){:target="_blank"}  
+
 <h5 style="color:Tomato;"><b>VIDEO TUTORIAL</b></h5>
 ###### Shiffman: GitHub Pages - Git and GitHub for Poets  
 
