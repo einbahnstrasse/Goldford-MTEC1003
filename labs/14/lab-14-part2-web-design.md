@@ -807,9 +807,9 @@ $ git push origin gh-pages
 Total 0 (delta 0), reused 0 (delta 0)
 remote:
 remote: Create a pull request for 'gh-pages' on GitHub by visiting:
-remote:      https://github.com/einbahnstrasse/lab-14-part2-web-design/pull/new/gh-pages
+remote:      https://github.com/yourUserName/lab-14-part2-web-design/pull/new/gh-pages
 remote:
-To https://github.com/einbahnstrasse/lab-14-part2-web-design.git
+To https://github.com/yourUserName/lab-14-part2-web-design.git
  * [new branch]      gh-pages -> gh-pages
 $
 {% endhighlight %}
@@ -826,14 +826,16 @@ All you have to do is slightly rearrange this address in order to view the site 
 
 As always, use your "actual" _GitHub_ username in place of "yourUserName".  
 
+When the page loads, you should see you site at your unique _GitHub_ address!  
+
 It may not load immediately if you've just pushed your site. If so, wait a few minutes while the page uploads (this could take several minutes...), and then refresh your webpage.  
 
-Now, whenever you want to make further changes to your site, run the following commands:  
+So, to summarize: whenever you want to make further changes to your site, run the following commands:  
 
 {% highlight terminal %}
 $ git status
 $ git add --all
-$ git commit -m "i changed were x, y, and z."
+$ git commit -m "i changed x, y, and z."
 $ git push origin gh-pages
 $
 {% endhighlight %}
@@ -852,7 +854,5 @@ At the end of this lab, your **/lab-14-part2-site** repo should contain the foll
 7. **contact.html**  
 
 Make sure all files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
-
-**Optional Challenge:** Use the knowledge you gained in [Lab 14 / Part 1](/Goldford-MTEC1003-OL04/labs/14/lab-14-part1-gh-pages.html){:target="_blank"} to host this website on GitHub Pages!    
 
 * * *  
