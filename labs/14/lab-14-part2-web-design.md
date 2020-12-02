@@ -537,6 +537,12 @@ h1, h2, h3, h4, h5, h6 {
 
 Now, the headers all over your site will have the same font.  
 
+In Chrome, refresh your **index.html** page once again and note the changes in style:  
+
+<img src="resources/site.v02.png" alt="Early Site Rendering" width="800px" />
+
+...It's starting to look pretty good!  
+
 * * *   
 
 <a id="stylingnav"></a>
