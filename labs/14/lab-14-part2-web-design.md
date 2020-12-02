@@ -820,7 +820,7 @@ Now, visit your _GitHub_ repository. We've just created a new branch that now ap
 
 > <span style="color:lightseagreen">https://github.com/</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">/lab-14-part2-web-design</span>
 
-Make a small change to this address in order to view the site you just pushed:  
+All you have to do is slightly rearrange this address in order to view the site you just pushed:  
 
 > <span style="color:lightseagreen">https://</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">.github.io/lab-14-part2-web-design/</span>  
 
@@ -828,7 +828,17 @@ As always, use your "actual" _GitHub_ username in place of "yourUserName".
 
 It may not load immediately if you've just pushed your site. If so, wait a few minutes while the page uploads (this could take several minutes...), and then refresh your webpage.  
 
-Now, whenever you want to make changes to your site,
+Now, whenever you want to make further changes to your site, run the following commands:  
+
+{% highlight terminal %}
+$ git status
+$ git add --all
+$ git commit -m "i changed were x, y, and z."
+$ git push origin gh-pages
+$
+{% endhighlight %}
+
+Always remember to `git push origin gh-pages` in order to see your changes on your website hosted at _GitHub Pages!_  
 
 * * *
 
