@@ -5,7 +5,7 @@
 layout: default
 ---
 
-# Lab 14 / Part 2: Advanced Web Design Concepts  
+# Lab 14 / Part 2: Advanced Web Design Concepts + _GitHub Pages_  
 
 #### C O N T E N T S  
 1. <a href="#overview">Overview of This Lab</a>  
@@ -22,6 +22,7 @@ layout: default
 6. <a href="#googlefonts">Using Google Fonts</a>  
 7. <a href="#stylingnav">Styling the Navbar</a>  
 8. <a href="#linkingpages">Linking New Pages</a>  
+9. <a href="#githubpages">Pushing Your Site to _GitHub Pages_</a>  
 
 * * *  
 
@@ -754,6 +755,64 @@ Repeat these steps for each of the remaining 2 pages — make a simple template
 Just make sure the file names for each page exactly match <a href="#navinglinks">the links written in the navbar!</a>   
 
 <span style="color:red">_**NOTE ABOUT YOUR FINAL ASSIGNMENT: Your final project (i.e. personal website) can use this same navbar and linked pages template. Save new copies of these files and place them into your own repository. Change the color schemes, photos, fonts, and contents to match your own desired personal website elements. Add animation and/or JS canvas drawing, your own biography text, your own portfolio items (e.g. photos and videos of your own projects), styling rules, contact information, etc. Use this website as a template — don't start over from scratch, which will take far more time! And of course, be sure to how your own site on GitHub Pages according to the lessons learned in Lab 14 / Part 2.**_</span>
+
+* * *
+
+<a id="githubpages"></a>
+## 9. Pushing Your Site to _GitHub Pages_  
+
+Once you've built your website on your machine and tested it in Chrome, it's time to **push** the site to a remote server.  
+
+We'll use [_GitHub Pages_](https://pages.github.com/){:target="_blank"} as the server hosting our website. (For free!)  
+
+First, in your Terminal, make sure your commits are current, and that you've pushed your latest changes. Run `git status` to be sure your git is current:  
+
+{% highlight shell %}
+$ <span style="color:Tomato">git status</span>
+On branch master  
+nothing to commit, working tree clean  
+${% endhighlight %}
+
+Notice it first reminds you that you're working on the branch called `master`. Let's make a new branch, which we'll call "gh-pages", and push our changes here. In order to host our websites on _GitHub Pages_, we need to push our site to a branch with this exact name. Run the `git checkout` below as shown to create this new branch:  
+
+{% highlight shell %}
+$ <span style="color:Tomato">git checkout -b gh-pages</span>
+Switched to a new branch 'gh-pages'
+${% endhighlight %}
+
+So now you're working on the new branch `gh-pages`. That's good. Our next step is to `git rebase` our previous commits — which is a little bit like `git merge` — migrating our code from the `master` branch into the new `gh-pages` branch:  
+
+{% highlight shell %}
+$ <span style="color:Tomato">git rebase master</span>
+Current branch gh-pages is up to date.
+${% endhighlight %}
+
+To get our code from the `master` branch to the `gh-pages` branch, we use `git rebase` instead of `git merge` in order to maintain a linear commit history, as described by [this article.](https://gcapes.github.io/git-course/10-rebasing/){:target="_blank"}  
+
+Now all that's left to do is to **push** our changes to the new `gh-pages` branch:  
+
+{% highlight shell %}
+$ <span style="color:Tomato">git push origin gh-pages</span>
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'gh-pages' on GitHub by visiting:
+remote:      https://github.com/einbahnstrasse/lab-14-part2-web-design/pull/new/gh-pages
+remote:
+To https://github.com/einbahnstrasse/lab-14-part2-web-design.git
+ * [new branch]      gh-pages -> gh-pages
+${% endhighlight %}
+
+Now, visit your _GitHub_ repository. We've just created a new branch that now appears in your _GitHub_ repo, and this `gh-pages` branch will be where the site is hosted. To visit the site, make a small change to your web address... The address to your repository probably looks something like this:
+
+https://github.com/einbahnstrasse/lab-14-part2-web-design
+
+Make a small change to this address in order to view the site you just pushed:  
+
+https://einbahnstrasse.github.io/lab-14-part2-web-design/
+
+It may not load immediatey if you've just pushed your site. If so, wait a few minutes while the page uploads (this could take several minutes...), and then refresh your webpage.  
+
+
 
 * * *
 
