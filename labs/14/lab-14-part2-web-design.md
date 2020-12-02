@@ -747,13 +747,10 @@ Repeat these steps for each of the remaining 2 pages — make a simple template
 
 Just make sure the file names for each page exactly match <a href="#navinglinks">the links written in the navbar!</a>   
 
-<span style="color:red">_**NOTE: Your final project (i.e. personal website) can use this navbar and linked pages template. Change the color schemes, photos, and contents to match your own desired personal website elements. Add adimnation and/or JS canvas drawing, your own biography text, your own portfolio items (e.g. photos and videos of your own projects), styling rules, contact information, etc. Use this website as a template — don't start over from scratch, which will take far more time!**_</span>
+<span style="color:red">_**NOTE ABOUT YOUR FINAL ASSIGNMENT: Your final project (i.e. personal website) can use this same navbar and linked pages template. Save new copies of these files and place them into your own repository. Change the color schemes, photos, and contents to match your own desired personal website elements. Add adimnation and/or JS canvas drawing, your own biography text, your own portfolio items (e.g. photos and videos of your own projects), styling rules, contact information, etc. Use this website as a template — don't start over from scratch, which will take far more time! And of course, be sure to how your own site on GitHub pages according to the lessons learned in Lab 14 / Part 2.**_</span>
 
-* * *
+Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
 
-Make sure your files is included in your **/lab-12-html** folder, and don't forget to **add**, **commit**, and **push** your changes!  
-Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!  
-
-Your final **/lab-12-html** folder by the submission deadline should include the files from parts 1 + 2 of the Week 12 Labs, plus the new folder **/final-project-brainstorming** containing the **3 text files** described above.  
+**Optional Challenge:** Use the knowledge you gained in Lab 14 / Part 1 to host this website on _GitHub_ pages!  
 
 * * *  
