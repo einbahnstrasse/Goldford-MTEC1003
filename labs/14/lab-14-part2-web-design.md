@@ -19,8 +19,9 @@ layout: default
 5. <a href="#stylingdivs">Styling the Divs</a>  
   - <a href="#globalunique">Setting Global and Unique CSS Rules</a>   
   - <a href="#addtext">Adding Dummy Text to Each Div</a>   
-6. <a href="#stylingnav">Styling the Navbar</a>  
-7. <a href="#linkingpages">Linking New Pages</a>  
+6. <a href="#googlefonts">Using Google Fonts</a>  
+7. <a href="#stylingnav">Styling the Navbar</a>  
+8. <a href="#linkingpages">Linking New Pages</a>  
 
 * * *  
 
@@ -394,7 +395,7 @@ Let's replace the simple contents of each div ("Divider1", "Divider2", etc.) wit
 
 The following text-only news stories have been prepared for you with the proper HTML tags; they're ready to copy and paste inside your **index.html** file. For example, click on the following link for the first story:  
 
-[Dummy News Story \#1](/Goldford-MTEC1003-OL04/labs/14/resources/story.v01.txt){:target="_blank"}  
+* [Dummy News Story \#1](/Goldford-MTEC1003-OL04/labs/14/resources/story.v01.txt){:target="_blank"}  
 
 ...then **highlight** the entire text file (on Mac: command + A) and **copy** the entire story (command + C).  
 
@@ -440,21 +441,81 @@ Use the following links to copy unique text (i.e. news articles) and paste them 
 * [Dummy News Story \#4](/Goldford-MTEC1003-OL04/labs/14/resources/story.v04.txt){:target="_blank"}  
 * [Dummy News Story \#5](/Goldford-MTEC1003-OL04/labs/14/resources/story.v05.txt){:target="_blank"}  
 
-Once you've copied all this text, refresh your **index.html** page, scroll down and notice that each div has a different size. This is because instead of setting their `height:` property we instead invoked the `word-wrap: break-word;` rule, ensuring that each div would only require the amount of space needed for its contents!  
+Once you've copied in all this text, refresh your **index.html** page, scroll down and notice that each div has a different size. This is because instead of setting their `height:` properties to the same value (in our CSS), we instead invoked the `word-wrap: break-word;` rule, ensuring that each div would only require the amount of space needed for its contents!  
 
-When you scroll down the divs should now look something like this:  
+Now, when you scroll down the divs should all have different heights.  
 
-<img src="resources/site.v01.png" alt="Early Site Rendering" width="700px" />
+* * *
+
+<a id="googlefonts"></a>
+## 6. Using Google Fonts
+
+You may notice there are some problems with our body text...  
+
+First of all, our font is really boring! Let's "spice up" our page by using more interesting and designer-friendly fonts. Also, the black text looks awful against these colored backgrounds!  
+
+So, start by [clicking here to visit Google Fonts](https://fonts.google.com/){:target="_blank"}.  
+
+Browse the font collections here. You can use any of the licensed fonts in your page!  
+
+Let's choose 2 fonts: one for good looking headers, and another for body text...  
+
+In the search bar in the upper left, type "Major Mono Display" and click on the font of the same name, which comes up as a result.  
+
+On the next page, find the "Regular 400" weight font on the page and click the "+ Select this style" button next to it.
+
+Then, hover over the icon in the upper right corner of the page, where a floating windows appears reading, "View your selected families". Click this icon and observe the right sidebar that comes up:  
+
+<img src="resources/google.fonts.v01.png" alt="Early Site Rendering" width="800px" />
+
+Notice that the right sidebar contains pre-formatted HTML and CSS code that you can copy into your own website!
+
+Before we copy anything, let's add one more font to use on our website.  
+
+Click again on the "Browse Fonts" tab at the top of the page, and in the search bar in the upper left, this time type "Dosis" and click on the font family that shows up as a result.  
+
+On the next page, click on some of the "lightweight" fonts within the font family to add them to your selection. We'll use this font for body text, so lighter weights are preferred. For example, click on "+ Select this style" for 2 or 3 of the fonts listed; try the 200, 300, and 400 styles.  
+
+If the right sidebar disappeared, reopen it by click on the icon in the upper right corner.  
+
+Your selection should look like this:  
+
+<img src="resources/google.fonts.v02.png" alt="Early Site Rendering" width="800px" />
+
+Highlight the HTML code in the center of the right sidebar (in the screencap above, this currently highlighted in blue). Copy the code (command + C).  
+
+Now, go back to the `<head>` of your **index.html** file. Paste this code inside the `<head>`, below the link to your CSS style sheet beginning on line 7. These 2 new lines of code from Google Fonts will allow you to use the font in your page. Your updated HTML `<head>` will now resemble this:  
+
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Major+Mono+Display&display=swap" rel="stylesheet">
+  </head>
+{% endhighlight %}
+
+Next, let's style the page with these new fonts using CSS.  
+
+Go back to the Google Fonts page and this time highlight + copy the CSS code for the Dosis font, pictured towards the bottom of the right sidebar.  
+
+Next, let's set a new global CSS rule that colors all of our text white, which looks better agains the updated colors of our site:  
+
+
+
 
 * * *   
 
 <a id="stylingnav"></a>
-## 6. Styling the Navbar     
+## 7. Styling the Navbar     
 
 * * *
 
 <a id="linkingpages"></a>
-## 7. Linking New Pages     
+## 8. Linking New Pages     
 
 * * *
 
