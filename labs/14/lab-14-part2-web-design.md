@@ -757,7 +757,7 @@ Just make sure the file names for each page exactly match <a href="#navinglinks"
 
 * * *
 
-At the end of this lab, your **/lab-14-part2-site** should contain the following 7 files:  
+At the end of this lab, your **/lab-14-part2-site** repo should contain the following 7 files:  
 1. **index.html**  
 2. **style.css**  
 3. **fauci.v01.jpg**  
@@ -766,7 +766,7 @@ At the end of this lab, your **/lab-14-part2-site** should contain the following
 6. **myportfolio.html**  
 7. **contact.html**  
 
-Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
+Make sure all files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
 
 **Optional Challenge:** Use the knowledge you gained in Lab 14 / Part 1 to host this website on _GitHub_ pages!  
 

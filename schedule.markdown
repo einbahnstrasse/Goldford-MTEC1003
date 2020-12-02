@@ -313,7 +313,7 @@ _Don't forget to watch + study the following..._
 <h3 class="schedule-page-date">Week 14: December 7th</h3>
 ### _GitHub Pages_, Advanced Web Design + Layout
 
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
 <h5 style="color:Tomato;"><b>EXTERNAL TUTORIALS</b></h5>
 * [Intro. to _GitHub Pages_](https://pages.github.com/){:target="_blank"}  
@@ -332,8 +332,7 @@ _Don't forget to watch + study the following..._
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 14 / Part 1: _GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}  
-
-<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
+* [Lab 14 / Part 2: Advanced Web Design Concepts](/Goldford-MTEC1003-OL04/labs/14/lab-14-part2-web-design.html){:target="_blank"}  
 
 * * *
 
