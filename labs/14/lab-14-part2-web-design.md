@@ -156,15 +156,15 @@ Inside each, provide placeholder text by labeling them "Divider1", "Divider2", a
 <div>Divider4</div>
 {% endhighlight %}
 
-We're going to give each of these 4 div containers an ID selector. Why would we do this?? The reason is simple: We want these divs to have _unique_ properties that aren't shared with the other elements, and as you'll recall from Lab 13, we typically use ID selectors to designate _unique_ properties.  
+We're going to give each of these 4 divs 2 kinds of selectors. As you'll recall from last week's lab: these are called **class** selectors and **ID** selectors. Why would we need both kinds? The reason is simple: We want these divs to have some _global_ properties that they share with _all_ our divs, and for that we typically use a class selector. And at the same we want them to have _unique_ properties that are not shared with the other divs. As you'll also recall from Lab 13, we typically use ID selectors to designate these _unique_ properties.  
 
-So, give each of these divs a unique ID selector, for example "first," "second," "third," and "fourth." Add these selectors inline with each div's opening tag, like so:  
+So, give each of these divs a common class selector — call it "stuff" — and also a unique ID selector, for example "first," "second," "third," and "fourth." Add these selectors inline with each div's opening tag, like so:  
 
 {% highlight html %}
-<div id="first">Divider1</div>
-<div id="second">Divider2</div>
-<div id="third">Divider3</div>
-<div id="fourth">Divider4</div>
+<div class="stuff" id="first">Divider1</div>
+<div class="stuff" id="second">Divider2</div>
+<div class="stuff" id="third">Divider3</div>
+<div class="stuff" id="fourth">Divider4</div>
 {% endhighlight %}
 
 Again, we'll use these selectors to add style and positioning in CSS.
@@ -203,10 +203,10 @@ So far your HTML source should look like this:
       <a href="myportfolio.html">My Portfolio</a>
       <a href="contact.html">Contact</a>
     </div>
-    <div id="first">Divider1</div>
-    <div id="second">Divider2</div>
-    <div id="third">Divider3</div>
-    <div id="fourth">Divider4</div>
+    <div class="stuff" id="first">Divider1</div>
+    <div class="stuff" id="second">Divider2</div>
+    <div class="stuff" id="third">Divider3</div>
+    <div class="stuff" id="fourth">Divider4</div>
   </body>
 </html>
 {% endhighlight %}
@@ -294,9 +294,38 @@ In the next section, we'll copy these hex values into our external style sheet.
 <a id="stylingdivs"></a>
 ## 5. Styling the Divs     
 
-Previously, we'd assigned ID selectors to each `<div>` element below our navbar. We'll use these selectors give our divs unique properties.    
+Previously, we'd assigned **class** selectors and **ID** selectors to each `<div>` element below our navbar.  
+Now we'll use these selectors to give our divs unique properties.    
 
-In your CSS, first set up a series of individual ID selectors for each div. Leave them "blank" for now, meaning don't write any rules inside them (properties & values):  
+In your CSS, let's first define some _global properties_ — that all our divs will have in common.  
+
+Remember: our class selector for these particular divs is "stuff". Type the following:  
+
+{% highlight css %}
+div.stuff {
+  width: 250px;
+  /* height: fit-content; */
+  word-wrap: break-word;
+  overflow: auto;
+  text-align: left;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: black;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+}
+{% endhighlight %}
+
+The selector `div.stuff` will therefore set rules for any `<div>`s with the class selector `.stuff`.
+
+First we set the `width:` property to 250px — in other words, each div will be a column 250 pixels wide. Notice that the `height:` property is commented out. I left this commented out so you'd notice it was missing! Instead, we've defined the `word-wrap:` property and set its value to `break-word`, and we've given the `overflow:` property a value of `auto`. These will ensure the size of our divs will conform to the size of its contents. If we put 3 paragraphs (`<p></p>`) of text inside one div, and then 5 paragraphs inside another, then each div will only take up the amount of space needed for each block of paragraph text. You'll see this in action when we load our divs up with body text later...  
+
+But for now, remember that these properties are _global_ and will apply to all of our divs grouped together into the class "stuff."  
+
+Next, let's define _unique_ properties for individual divs, defined by their individual ID selectors.  
+
+Set up ID selectors for each one in your CSS. Leave them "blank" for now; don't write any rules yet:  
 
 {% highlight css %}
 div#first {
@@ -319,6 +348,8 @@ div#fifth {
 
 }
 {% endhighlight %}
+
+Next, let's define some global properties for all divs.
 
 * * *   
 
