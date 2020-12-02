@@ -157,6 +157,7 @@ Inside each, provide placeholder text by labeling them "Divider1", "Divider2", a
 <div>Divider2</div>
 <div>Divider3</div>
 <div>Divider4</div>
+<div>Divider5</div>
 {% endhighlight %}
 
 We're going to give each of these 4 divs 2 kinds of selectors. As you'll recall from last week's lab: these are called **class** selectors and **ID** selectors. Why would we need both kinds? The reason is simple: We want these divs to have some _global_ properties that they share with _all_ our divs, and for that we typically use a class selector. And at the same we want them to have _unique_ properties that are not shared with the other divs. As you'll also recall from Lab 13, we typically use ID selectors to designate these _unique_ properties.  
@@ -168,7 +169,7 @@ So, give each of these divs a common class selector — call it "stuff" — an
 <div class="stuff" id="second">Divider2</div>
 <div class="stuff" id="third">Divider3</div>
 <div class="stuff" id="fourth">Divider4</div>
-<div class="stuff" id="fifth">Divider4</div>
+<div class="stuff" id="fifth">Divider5</div>
 {% endhighlight %}
 
 Again, we'll use these selectors to add style and positioning in CSS.
@@ -211,7 +212,7 @@ So far your HTML source should look like this:
     <div class="stuff" id="second">Divider2</div>
     <div class="stuff" id="third">Divider3</div>
     <div class="stuff" id="fourth">Divider4</div>
-    <div class="stuff" id="fifth">Divider4</div>
+    <div class="stuff" id="fifth">Divider5</div>
   </body>
 </html>
 {% endhighlight %}
@@ -275,7 +276,9 @@ In your external style sheet, add some rules for your hero text:
 
 At this point, open your **index.html** file in Chrome to observe the current state of your home page. It should appear extremely plain, without almost no styling at all:  
 
-<img src="resources/site.v01.png" alt="Early Site Rendering" width="700px" />
+<img src="resources/site.v01.png" alt="Early Site Rendering" width="700px" />  
+
+Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
 
 * * *   
 
@@ -292,7 +295,9 @@ Drag and drop the image fauci.v01.jpg onto the page. The site will return a "swa
 
 We can use these 5 hex values to color things on our site like body text, headers, background colors, buttons, etc. Because of their association to the image, we can give our web pages a greater sense of design coherence by coordinating these colored elements into a color _"theme."_  
 
-In the next section, we'll copy these hex values into our external style sheet.   
+In the next section, we'll copy these hex values into our external style sheet.  
+
+Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
 
 * * *   
 
@@ -445,6 +450,8 @@ Once you've copied in all this text, refresh your **index.html** page, scroll do
 
 Now, when you scroll down the divs should all have different heights.  
 
+Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
+
 * * *
 
 <a id="googlefonts"></a>
@@ -525,7 +532,7 @@ Let's use our other chosen font, Major Mono Display, for all headers.
 
 To do this, we just create another rule that applies to all our headers, `<h1>` through `<h6>`.  
 
-So, adapt your CSS once again and include the following rule:  
+So, adapt your CSS once again to include the following rule:  
 
 {% highlight css %}
 /* use Major Mono Display for all headings h1—h6 */
@@ -543,15 +550,132 @@ In Chrome, refresh your **index.html** page once again and note the changes in s
 
 ...It's starting to look pretty good!  
 
+Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
+
 * * *   
 
 <a id="stylingnav"></a>
 ## 7. Styling the Navbar     
 
+We're almost done!!  
+
+The navbar is still looking pretty plain. How would you like to have a navbar that "sticks" to the top of the page even when you scroll down past it?  
+
+To accomplish this, we'll be using a combination of CSS and JavaScript. We'll be adapting code from [this tutorial on creating "sticky" navbars.](https://www.w3schools.com/howto/howto_js_navbar_sticky.asp){:target="_blank"}  
+
+First, recall the navbar elements we wrote in our HTML source, on lines 17-22 just under the hero image containers:  
+
+{% highlight html %}
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="myportfolio.html">My Portfolio</a>
+  <a href="contact.html">Contact</a>
+</div>
+{% endhighlight %}
+
+We have a container with ID selector "navbar", which contains 4 href links to other pages on our site.  
+
+Go to your **style.css** document. Add the following style rules:  
+
+{% highlight css %}
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #260A03;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-family: 'Major Mono Display', monospace;
+    /* font-family rule copied from Google Fonts */
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+{% endhighlight %}
+
+Here, we address global navbar properties by targeting the ID selector `#navbar`. Then, we target just the links alone by invoking `#navbar a`. These style rules provide some simple coloring and display options. Notice that we're including the `font-family` rule copied out from Google Fonts!  
+
+Next, imagine that we want the navbar links to have a different color when we hover over them. To do this, add another rule that changes the color of the text when you hover over the navbar links:  
+
+{% highlight css %}
+/* Change color on hover. */
+#navbar a:hover {
+  color: hotpink;
+}
+{% endhighlight %}
+
+And finally, add the following rules to your CSS to help us manage the "sticky" behavior of the navbar. These next 2 rules will interact with the JavaScript we write next, in order to make the navbar stay at the top of the page when we scroll down...  
+
+{% highlight css %}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+{% endhighlight %}
+
+Now, return to your HTML source. We need to write a bit of JavaScript to make the "sticky" part work. So, scroll down to the bottom of your HTML, and in between the final closing `</div>` tag and the closing `</body>` tag, open up `<script></script>` tags and type the following:  
+
+{% highlight html %}
+<script src="navbar.v01.js"></script>
+{% endhighlight %}
+
+Here, we're referencing an external file called **navbar.v01.js**, which we'll use to write some JavaScript and help our navbar "stick" to the top of the page. _(Note: Typically we've been writing the JavaScript itself between the `<script>` tags, but in web design it's typical to write the JavaScript in a separate, external file referenced in the script tag this way. This just helps keep our code organized!)_  
+
+It's time to write our JavaScript! Make a new file in your text editor and save it as **navbar.v01.js**. _Be sure the file is saved in your local repo, along with your index.html and style.css files! They all must be in the same directory level in order to work!_  
+
+Enter the following JS code into your file and save it:  
+
+{% highlight javascript linenos %}
+// source: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+{% endhighlight %}
+
+Notice on line x we're writing a funtion that _creates_ the class "sticky" and adds it to the navbar "object" (i.e. the HTML element we called "navbar"). This is done in a conditional statement — We add the class when the scroll position reaches its scroll position, and if the value of the scroll height is not greater than our limit, we've coded an `else` branch to remove the sticky class. In our CSS, we added a rule to the `.sticky` class selector, which pins the navbar's position to the top of the page, in a fixed position.
+
+To see this in action, refresh your **index.html** page once more, and scroll up and down the page. Notice how the navbar remains at the top of the page, even as you scroll down to read the news articles!  
+
+Also, take notice of the behavior of the navbar when you hover over the links. They change colors and are highlighted according to the CSS rules we wrote!  
+
+Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
+
 * * *
 
 <a id="linkingpages"></a>
 ## 8. Linking New Pages     
+
+Now that you've made the home page with all of your preferred design elements, you can quickly & easily reuse them on any other pages you write for your site!  
+
+Think of all this hard work you've done on the home page as recycleable: you've just made a _template_, and you'll reuse the same design elements on your other pages in order to keep things organized and and maintain the look of your new site...  
+
+
 
 * * *
 
