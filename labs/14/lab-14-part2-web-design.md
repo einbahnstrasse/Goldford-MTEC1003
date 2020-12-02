@@ -404,8 +404,28 @@ In your **index.html** file, navigate to line 21:
 
 Highlight the current placeholder text ("Divider1") and **replace** this text by **pasting** the pre-formatted news article currently on your clipboard (command + V).  
 
-Your new div should look like this, beginning on line 21:  
+Clean up the result by properly indenting the contents of the div. Your new div should look like this, beginning on line 21:  
 
+{% highlight html %}
+<div class="stuff" id="first">
+  <h2>Moderna to apply today for FDA authorization for its Covid-19 vaccine</h2>
+  <h4>Updated 8:00 AM ET, Mon November 30, 2020</h4>
+  <h5><a href="http://lite.cnn.com/en/article/h_8a9d29406e73343797dbac1d4a23586c" target="_blank">view source</a></h5>
+  <p>(CNN) - Pharmaceutical company Moderna intends to apply Monday to the US Food and Drug Administration for authorization of its Covid-19 vaccine.</p>
+  <p>The company will ask the FDA to review an expanded data set showing the vaccine is 94.1% effective at preventing Covid-19 and 100% effective at preventing severe cases of the disease.</p>
+  <p>"This is striking," said Dr. Paul Offit, a member of the FDA's vaccine advisory committee. "These are amazing data."</p>
+  <p>Moderna's chief medical officer said he became emotional when he saw the data Saturday night.</p>
+  <p>"It was the first time I allowed myself to cry," Dr. Tal Zaks said. "We have a full expectation to change the course of this pandemic."</p>
+  <p>Moderna will become the second company to apply to the FDA for emergency use authorization for a coronavirus vaccine. Pfizer applied on November 20 with data showing similarly high efficacy.</p>
+  <p>The FDA will meet with its advisory committee in December to review Pfizer's and Moderna's applications.</p>
+  <p>The first vaccinations in the United States are expected to take place "towards the latter part of December," according to Dr. Anthony Fauci, director of the National Institute of Allergy and Infectious Diseases.</p>
+  <p>Moderna's new data</p>
+  <p>On Monday, Moderna released updated efficacy data for its Phase 3 clinical trial.</p>
+  <p>Starting in July, Moderna gave either its vaccine or a placebo -- a shot of saline that does nothing -- to some 30,000 people in the United States. With high rates of coronavirus throughout the country over the next following months, many of those study subjects developed Covid-19.</p>
+  <p>But there was a big difference between the group that got the vaccine and the group that got the placebo.</p>
+  <p>Among the approximately 15,000 people who received the vaccine, 11 developed Covid-19.</p>
+</div>
+{% endhighlight %}
 
 * * *   
 
