@@ -500,12 +500,42 @@ Now, go back to the `<head>` of your **index.html** file. Paste this code inside
 
 Next, let's style the page with these new fonts using CSS.  
 
-Go back to the Google Fonts page and this time highlight + copy the CSS code for the Dosis font, pictured towards the bottom of the right sidebar.  
+Go back to the Google Fonts page and this time highlight + copy the CSS code for the Dosis font, pictured towards the bottom of the right sidebar, under "CSS rules to specify families":  
 
-Next, let's set a new global CSS rule that colors all of our text white, which looks better agains the updated colors of our site:  
+{% highlight css %}
+font-family: 'Dosis', sans-serif;
+{% endhighlight %}
 
+In your **style.css** file, at the top, paste this `font-family` rule inside inside the combined `html, body` selectors. Choose a light `font-weight` for your body text: try 200. Also, use this opportunity to create a `color` rule that applies the value `white` to all body text. Adapt the top of your CSS code so that is resembles this:
 
+{% highlight css %}
+/* universal properties */
+body, html {
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+      /* font-family rule copied from Google Fonts */
+    font-weight: 200;
+    color: white;
+}
+{% endhighlight %}
 
+Now, all body text will have color value `white`, and will be styled using the Dosis font family at font weight of 200.  
+
+Let's use our other chosen font, Major Mono Display, for all headers.  
+
+To do this, we just create another rule that applies to all our headers, `<h1>` through `<h6>`.  
+
+So, adapt your CSS once again and include the following rule:  
+
+{% highlight css %}
+/* use Major Mono Display for all headings h1—h6 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Major Mono Display', monospace;
+    /* font-family rule copied from Google Fonts */
+}
+{% endhighlight %}
+
+Now, the headers all over your site will have the same font.  
 
 * * *   
 
