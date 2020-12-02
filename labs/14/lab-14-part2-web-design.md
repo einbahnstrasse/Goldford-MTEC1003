@@ -602,10 +602,12 @@ Here, we address global navbar properties by targeting the ID selector `#navbar`
 
 Next, imagine that we want the navbar links to have a different color when we hover over them. To do this, add another rule that changes the color of the text when you hover over the navbar links:  
 
+<a id="navinglinkhighlights"></a>
 {% highlight css %}
-/* Change color on hover. */
+/* Change color + highlight on hover. */
 #navbar a:hover {
   color: hotpink;
+  background-color: white;
 }
 {% endhighlight %}
 
@@ -659,11 +661,11 @@ function myFunction() {
 }
 {% endhighlight %}
 
-Notice on line x we're writing a funtion on line 12 that _creates_ the class "sticky" and adds it to the navbar "object" (i.e. the HTML element we called "navbar"). This is done with a conditional statement — We add the class when the scroll position reaches its scroll position (lines 13-14), and if the value of the scroll height is not greater than our limit, we've coded an `else` branch to remove the sticky class (lines 15-16). In our CSS, we added <a href="#stickyrule">a rule to the `.sticky` class selector</a>, which pins the navbar's position to the top of the page, in a fixed position.
+Notice on line 12: we're writing a funtion that _creates_ the class "sticky" and adds it to the navbar "object" (i.e. the HTML element we called "navbar"). This is done with a conditional statement — We add the class when the scroll position reaches its scroll position (lines 13-14), and if the value of the scroll height is not greater than our limit, we've coded an `else` branch to remove the sticky class (lines 15-16). In our CSS, we added <a href="#stickyrule">a rule to the `.sticky` class selector</a>, which pins the navbar's position to the top of the page, in a fixed position.
 
 To see this in action, refresh your **index.html** page once more, and scroll up and down the page. Notice how the navbar remains at the top of the page, even as you scroll down to read the news articles!  
 
-Also, take notice of the behavior of the navbar when you hover over the links. They change colors and are highlighted according to the CSS rules we wrote!  
+Also, take notice of the behavior of the navbar when you hover over the links. They change colors and are highlighted according to <a href="#navinglinkhighlights">the CSS rules we wrote!</a>    
 
 Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
 
