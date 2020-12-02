@@ -17,6 +17,8 @@ layout: default
 3. <a href="#heroimg">Adding + Styling a Hero Image</a>  
 4. <a href="#adobecolor">Extracting Your Site's Color Scheme from a Photo</a>  
 5. <a href="#stylingdivs">Styling the Divs</a>  
+  - <a href="#globalunique">Setting Global and Unique CSS Rules</a>   
+  - <a href="#addtext">Adding Dummy Text to Each Div</a>   
 6. <a href="#stylingnav">Styling the Navbar</a>  
 7. <a href="#linkingpages">Linking New Pages</a>  
 
@@ -294,6 +296,9 @@ In the next section, we'll copy these hex values into our external style sheet.
 <a id="stylingdivs"></a>
 ## 5. Styling the Divs     
 
+<a id="globalunique"></a>
+### Setting Global and Unique CSS Rules  
+
 Previously, we'd assigned **class** selectors and **ID** selectors to each `<div>` element below our navbar.  
 Now we'll use these selectors to give our divs unique properties.    
 
@@ -319,11 +324,11 @@ div.stuff {
 
 The selector `div.stuff` will therefore set rules for any `<div>`s with the class selector `.stuff`.
 
-First we set the `width:` property to 250px — in other words, each div will be a column 250 pixels wide. Notice that the `height:` property is commented out. I left this commented out so you'd notice it was missing! Instead, we've defined the `word-wrap:` property and set its value to `break-word`, and we've given the `overflow:` property a value of `auto`. These will ensure the size of our divs will conform to the size of its contents. If we put 3 paragraphs (`<p></p>`) of text inside one div, and then 5 paragraphs inside another, then each div will only take up the amount of space needed for each block of paragraph text. You'll see this in action when we load our divs up with body text later...  
+First we set the `width:` property to 250px — in other words, each div will be a column 250 pixels wide. Notice that the `height:` property is commented out. I left this commented out so you'd notice it was missing! Instead, we've defined the `word-wrap:` property and set its value to `break-word`, and we've given the `overflow:` property a value of `auto`. These will ensure the size of our divs will conform to the size of their contents. So, if we put 3 paragraphs (`<p></p>`) of text inside one div, and then 5 paragraphs inside another, then each div will only take up the amount of space needed for each block of paragraph text. You'll see this in action when we load our divs up with body text later...  
 
 But for now, remember that these properties are _global_ and will apply to all of our divs grouped together into the class "stuff."  
 
-Next, let's define _unique_ properties for individual divs, defined by their individual ID selectors.  
+Next, let's define _unique_ properties for each div, defined by their individual ID selectors.  
 
 Set up ID selectors for each one in your CSS. Leave them "blank" for now; don't write any rules yet:  
 
@@ -349,7 +354,58 @@ div#fifth {
 }
 {% endhighlight %}
 
-Next, let's define some global properties for all divs.
+Let's give each `<div>` its own background color. And, let's use the 5 colors extracted from our "hero image" in the last section.  
+
+For each of these ID selectors, set a rule for `background-color:` and set it equal to one of the hex values returned to us by the Adobe Color website:  
+
+{% highlight css %}
+div#first {
+  background-color: #A4A3B5;
+}
+
+div#second {
+  background-color: #594336;
+}
+
+div#third {
+  background-color: #A6654E;
+}
+
+div#fourth {
+  background-color: #D99982;
+}
+
+div#fifth {
+  background-color: #260A03;
+}
+{% endhighlight %}
+
+Refresh your **index.html** page, and immediately you should see the following changes:
+1. The divs are now horizontal instead of stacked on top of each other, thanks to the `float: left;` rule in the `div.stuff` selector.  
+2. Each div has a border and a unique background color.  
+3. The size of the div wrapped around each block of text is only as big as the text contained in the div. Right now they're all the same, but let's give them differing amounts of text in each one...  
+
+<a id="addtext"></a>
+### Adding Dummy Text to Each Div  
+
+Let's replace the simple contents of each div ("Divider1", "Divider2", etc.) with some news articles.  
+
+The following text-only news stories have been prepared for you with the proper HTML tags; they're ready to copy and paste inside your **index.html** file. For example, click on the following link for the first story:  
+
+[Dummy News Story \#1](/Goldford-MTEC1003-OL04/labs/14/resources/story.v01.txt){:target="_blank"}
+
+...then **highlight** the entire text file (on Mac: command + A) and **copy** the entire story (command + C).  
+
+In your **index.html** file, navigate to line 21:
+
+{% highlight html %}
+<div class="stuff" id="first">Divider1</div>
+{% endhighlight %}
+
+Highlight the current placeholder text ("Divider1") and **replace** this text by **pasting** the pre-formatted news article currently on your clipboard (command + V).  
+
+Your new div should look like this, beginning on line 21:  
+
 
 * * *   
 
