@@ -611,6 +611,7 @@ Next, imagine that we want the navbar links to have a different color when we ho
 
 And finally, add the following rules to your CSS to help us manage the "sticky" behavior of the navbar. These next 2 rules will interact with the JavaScript we write next, in order to make the navbar stay at the top of the page when we scroll down...  
 
+<a id="stickyrule"></a>
 {% highlight css %}
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -658,7 +659,7 @@ function myFunction() {
 }
 {% endhighlight %}
 
-Notice on line x we're writing a funtion that _creates_ the class "sticky" and adds it to the navbar "object" (i.e. the HTML element we called "navbar"). This is done in a conditional statement — We add the class when the scroll position reaches its scroll position, and if the value of the scroll height is not greater than our limit, we've coded an `else` branch to remove the sticky class. In our CSS, we added a rule to the `.sticky` class selector, which pins the navbar's position to the top of the page, in a fixed position.
+Notice on line x we're writing a funtion on line 12 that _creates_ the class "sticky" and adds it to the navbar "object" (i.e. the HTML element we called "navbar"). This is done with a conditional statement — We add the class when the scroll position reaches its scroll position (lines 13-14), and if the value of the scroll height is not greater than our limit, we've coded an `else` branch to remove the sticky class (lines 15-16). In our CSS, we added <a href="#stickyrule">a rule to the `.sticky` class selector</a>, which pins the navbar's position to the top of the page, in a fixed position.
 
 To see this in action, refresh your **index.html** page once more, and scroll up and down the page. Notice how the navbar remains at the top of the page, even as you scroll down to read the news articles!  
 
