@@ -674,9 +674,77 @@ Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and
 
 Now that you've made the home page with all of your preferred design elements, you can quickly & easily reuse them on any other pages you write for your site!  
 
-Think of all this hard work you've done on the home page as recycleable: you've just made a _template_, and you'll reuse the same design elements on your other pages in order to keep things organized and and maintain the look of your new site...  
+Think of all this hard work you've done on the home page as recyclable: you've just made a _template_, and you'll reuse the same design elements on your other pages in order to keep things organized and and maintain the look of your new site...  
 
+So, bring up your **index.html** home page, which we'll use as a _template_ for the other linked pages.
 
+Recall the navbar links once more on lines 17-22:  
+
+{% highlight html %}
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="myportfolio.html">My Portfolio</a>
+  <a href="contact.html">Contact</a>
+</div>
+{% endhighlight %}
+
+This means we need 3 more pages with the names provided in the links above.
+
+Save a copy of your **index.html** file and name is **aboutme.html**.  
+
+In this new file, delete everything after the first "stuff" div until the `<script>` tag at the bottom of the page (for styling the navbar). This should be approximately lines 41-143.  
+
+Now, delete the news article contained in that first div. This should be approximately lines 24-39.  
+
+In place of this news article, enter some dummy text to identify your "About Me" page.  
+
+Write in an `<h2>` heading identifying the page. Your entire "About Me" page can simply look like this:    
+
+{% highlight html linenos %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Major+Mono+Display&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Hi, I'm Tony</h1>
+        <h5>I'm an Immunologist</h5>
+      </div>
+    </div>
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="myportfolio.html">My Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="stuff" id="first">
+      <h2>Template for an About Me Page</h2>
+    </div>
+
+    <script src="navbar.v01.js"></script>
+
+  </body>
+</html>
+{% endhighlight %}
+
+Notice the new `<h2>` heading we wrote on line 24. It's the only element contained in the first "stuff" `<div>`, but you can recycle any or all of the design elements to create other divs, add more content (such as your biography or resume, etc.) and just have fun with it!  
+
+Now, from your **index.html** home page, click on "About Me" in your navbar, and observe the new page:  
+
+<img src="resources/site.v03.png" alt="About Me Page" width="600px" />
+
+Click on the "Home" link in your navbar, and it returns to your Home Page. It works!  
+
+Repeat these steps for each of the remaining 2 pages — make a simple template like this for your "My Portfolio" and "Contact".
+
+<span style="color:red">_**NOTE: Your final project (i.e. personal website) can use this navbar and linked pages template. Change the color schemes, photos, and contents to match your own desired personal website elements. Add adimnation and/or JS canvas drawing, your own biography text, your own portfolio items (e.g. photos and videos of your own projects), styling rules, contact information, etc. Use this website as a template — don't start over from scratch, which will take far more time!**_</span>
 
 * * *
 
