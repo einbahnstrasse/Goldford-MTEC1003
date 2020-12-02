@@ -332,7 +332,7 @@ _Don't forget to watch + study the following..._
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 14 / Part 1: _GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}  
-* [Lab 14 / Part 2: Advanced Web Design Concepts](/Goldford-MTEC1003-OL04/labs/14/lab-14-part2-web-design.html){:target="_blank"}  
+* [Lab 14 / Part 2: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-part2-web-design.html){:target="_blank"}  
 
 * * *
 
