@@ -782,7 +782,15 @@ Switched to a new branch 'gh-pages'
 $
 {% endhighlight %}
 
-So now you're working on the new branch `gh-pages`. That's good. Our next step is to `git rebase` our previous commits — which is a little bit like `git merge` — migrating our code from the `master` branch into the new `gh-pages` branch:  
+Verify that you're currently working on the new branch `gh-pages`:  
+
+{% highlight terminal %}
+$ git branch
+* gh-pages
+  master
+{% endhighlight %}
+
+So now you're working on `gh-pages`. That's good. Our next step is to `git rebase` our previous commits — which is a little bit like `git merge` — migrating our code from the `master` branch into the new `gh-pages` branch:  
 
 {% highlight terminal %}
 $ git rebase master
