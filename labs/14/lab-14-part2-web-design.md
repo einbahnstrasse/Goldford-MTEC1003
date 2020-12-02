@@ -802,6 +802,8 @@ To https://github.com/einbahnstrasse/lab-14-part2-web-design.git
  * [new branch]      gh-pages -> gh-pages
 ${% endhighlight %}
 
+Notice that you typed `git push origin gh-pages` instead of the familiar `git push origin master`. In order for this to work, you must push to `gh-pages`! If you push to `master`, you won't see your site appear on _GitHub_.  
+
 Now, visit your _GitHub_ repository. We've just created a new branch that now appears in your _GitHub_ repo, and this `gh-pages` branch will be where the site is hosted. To visit the site, make a small change to your web address... The address to your repository probably looks something like this:
 
 https://github.com/einbahnstrasse/lab-14-part2-web-design
@@ -812,7 +814,7 @@ https://einbahnstrasse.github.io/lab-14-part2-web-design/
 
 It may not load immediatey if you've just pushed your site. If so, wait a few minutes while the page uploads (this could take several minutes...), and then refresh your webpage.  
 
-
+Now, whenever you want to make changes to your site,
 
 * * *
 
