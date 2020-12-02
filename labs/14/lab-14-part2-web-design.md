@@ -767,23 +767,20 @@ We'll use [_GitHub Pages_](https://pages.github.com/){:target="_blank"} as the s
 
 First, in your Terminal, make sure your commits are current, and that you've pushed your latest changes. Run `git status` to be sure your git is current:  
 
-{% highlight shell %}
-$ git status
+{% highlight shell %}$ git status
 On branch master  
 nothing to commit, working tree clean  
 ${% endhighlight %}
 
 Notice it first reminds you that you're working on the branch called `master`. Let's make a new branch, which we'll call "gh-pages", and push our changes here. In order to host our websites on _GitHub Pages_, we need to push our site to a branch with this exact name. Run the `git checkout` below as shown to create this new branch:  
 
-{% highlight shell %}
-$ git checkout -b gh-pages
+{% highlight shell %}$ git checkout -b gh-pages
 Switched to a new branch 'gh-pages'
 ${% endhighlight %}
 
 So now you're working on the new branch `gh-pages`. That's good. Our next step is to `git rebase` our previous commits — which is a little bit like `git merge` — migrating our code from the `master` branch into the new `gh-pages` branch:  
 
-{% highlight shell %}
-$ git rebase master
+{% highlight shell %}$ git rebase master
 Current branch gh-pages is up to date.
 ${% endhighlight %}
 
@@ -791,8 +788,7 @@ To get our code from the `master` branch to the `gh-pages` branch, we use `git r
 
 Now all that's left to do is to **push** our changes to the new `gh-pages` branch:  
 
-{% highlight shell %}
-$ git push origin gh-pages
+{% highlight shell %}$ git push origin gh-pages
 Total 0 (delta 0), reused 0 (delta 0)
 remote:
 remote: Create a pull request for 'gh-pages' on GitHub by visiting:
