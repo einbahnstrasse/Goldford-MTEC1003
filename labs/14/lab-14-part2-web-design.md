@@ -753,7 +753,7 @@ Repeat these steps for each of the remaining 2 pages — make a simple template
 
 Just make sure the file names for each page exactly match <a href="#navinglinks">the links written in the navbar!</a>   
 
-<span style="color:red">_**NOTE ABOUT YOUR FINAL ASSIGNMENT: Your final project (i.e. personal website) can use this same navbar and linked pages template. Save new copies of these files and place them into your own repository. Change the color schemes, photos, fonts, and contents to match your own desired personal website elements. Add animation and/or JS canvas drawing, your own biography text, your own portfolio items (e.g. photos and videos of your own projects), styling rules, contact information, etc. Use this website as a template — don't start over from scratch, which will take far more time! And of course, be sure to how your own site on GitHub pages according to the lessons learned in Lab 14 / Part 2.**_</span>
+<span style="color:red">_**NOTE ABOUT YOUR FINAL ASSIGNMENT: Your final project (i.e. personal website) can use this same navbar and linked pages template. Save new copies of these files and place them into your own repository. Change the color schemes, photos, fonts, and contents to match your own desired personal website elements. Add animation and/or JS canvas drawing, your own biography text, your own portfolio items (e.g. photos and videos of your own projects), styling rules, contact information, etc. Use this website as a template — don't start over from scratch, which will take far more time! And of course, be sure to how your own site on GitHub Pages according to the lessons learned in Lab 14 / Part 2.**_</span>
 
 * * *
 
@@ -768,6 +768,6 @@ At the end of this lab, your **/lab-14-part2-site** repo should contain the foll
 
 Make sure all files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
 
-**Optional Challenge:** Use the knowledge you gained in Lab 14 / Part 1 to host this website on _GitHub_ pages!  
+**Optional Challenge:** Use the knowledge you gained in [Lab 14 / Part 1](/Goldford-MTEC1003-OL04/labs/14/lab-14-part1-gh-pages.html){:target="_blank"} to host this website on GitHub Pages!    
 
 * * *  
