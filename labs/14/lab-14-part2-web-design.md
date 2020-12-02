@@ -217,7 +217,7 @@ So far your HTML source should look like this:
 </html>
 {% endhighlight %}
 
-Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
+Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
 
 * * *   
 
@@ -278,7 +278,7 @@ At this point, open your **index.html** file in Chrome to observe the current st
 
 <img src="resources/site.v01.png" alt="Early Site Rendering" width="700px" />  
 
-Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
+Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
 
 * * *   
 
@@ -297,7 +297,7 @@ We can use these 5 hex values to color things on our site like body text, header
 
 In the next section, we'll copy these hex values into our external style sheet.  
 
-Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
+Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
 
 * * *   
 
@@ -450,7 +450,7 @@ Once you've copied in all this text, refresh your **index.html** page, scroll do
 
 Now, when you scroll down the divs should all have different heights.  
 
-Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
+Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
 
 * * *
 
@@ -550,7 +550,7 @@ In Chrome, refresh your **index.html** page once again and note the changes in s
 
 ...It's starting to look pretty good!  
 
-Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
+Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
 
 * * *   
 
@@ -667,7 +667,7 @@ To see this in action, refresh your **index.html** page once more, and scroll up
 
 Also, take notice of the behavior of the navbar when you hover over the links. They change colors and are highlighted according to <a href="#navinglinkhighlights">the CSS rules we wrote!</a>    
 
-Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
+Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!  
 
 * * *
 
