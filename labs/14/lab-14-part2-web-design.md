@@ -702,14 +702,18 @@ Now, delete the news article contained in that first div. This should be approxi
 
 In place of this news article, enter some dummy text to identify your "About Me" page.  
 
-Write in an `<h2>` heading identifying the page. Your entire "About Me" page can simply look like this:    
+Write in an `<h2>` heading identifying the page.  
+
+Then, change the HTML document title on line 5 from "My Home Page" to "About Me".  
+
+Your entire "About Me" page can simply look like this:    
 
 {% highlight html linenos %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My Home Page</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Major+Mono+Display&display=swap" rel="stylesheet">
@@ -751,7 +755,21 @@ Just make sure the file names for each page exactly match <a href="#navinglinks"
 
 <span style="color:red">_**NOTE ABOUT YOUR FINAL ASSIGNMENT: Your final project (i.e. personal website) can use this same navbar and linked pages template. Save new copies of these files and place them into your own repository. Change the color schemes, photos, and contents to match your own desired personal website elements. Add adimnation and/or JS canvas drawing, your own biography text, your own portfolio items (e.g. photos and videos of your own projects), styling rules, contact information, etc. Use this website as a template — don't start over from scratch, which will take far more time! And of course, be sure to how your own site on GitHub pages according to the lessons learned in Lab 14 / Part 2.**_</span>
 
-Make sure your 2 files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
+* * *
+
+At the end of this lab, your **/lab-14-part2-site** should contain the following 7 files:  
+1. **index.html**  
+2. **style.css**  
+3. **fauci.v01.jpg**  
+4. **navbar.v01.js**  
+5. **aboutme.html**  
+6. **myportfolio.html**  
+7. **contact.html**  
+
+
+Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
+
+
 
 **Optional Challenge:** Use the knowledge you gained in Lab 14 / Part 1 to host this website on _GitHub_ pages!  
 
