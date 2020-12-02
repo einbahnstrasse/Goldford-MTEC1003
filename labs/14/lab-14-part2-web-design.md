@@ -766,10 +766,7 @@ At the end of this lab, your **/lab-14-part2-site** should contain the following
 6. **myportfolio.html**  
 7. **contact.html**  
 
-
 Make sure your files are all included in your **/lab-14-part2-site** repo, and don't forget to **add**, **commit**, and **push** your changes!
-
-
 
 **Optional Challenge:** Use the knowledge you gained in Lab 14 / Part 1 to host this website on _GitHub_ pages!  
 
