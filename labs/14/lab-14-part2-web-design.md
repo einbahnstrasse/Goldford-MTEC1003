@@ -822,7 +822,7 @@ Now, visit your _GitHub_ repository. We've just created a new branch that now ap
 
 Make a small change to this address in order to view the site you just pushed:  
 
-<span style="color:lightseagreen">https://yourUserName.github.io/lab-14-part2-web-design/</span>  
+> <span style="color:lightseagreen">https://yourUserName.github.io/lab-14-part2-web-design/</span>  
 
 As always, use your "actual" _GitHub_ username in place of "yourUserName".  
 
