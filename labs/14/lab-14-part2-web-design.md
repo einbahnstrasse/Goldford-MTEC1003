@@ -5,7 +5,7 @@
 layout: default
 ---
 
-# Lab 14 / Part 2: Advanced Web Design Concepts + _GitHub Pages_  
+# Lab 14 / Part 2: Advanced Web Design + _GitHub Pages_  
 
 #### C O N T E N T S  
 1. <a href="#overview">Overview of This Lab</a>  
