@@ -167,6 +167,7 @@ So, give each of these divs a common class selector — call it "stuff" — an
 <div class="stuff" id="second">Divider2</div>
 <div class="stuff" id="third">Divider3</div>
 <div class="stuff" id="fourth">Divider4</div>
+<div class="stuff" id="fifth">Divider4</div>
 {% endhighlight %}
 
 Again, we'll use these selectors to add style and positioning in CSS.
@@ -209,6 +210,7 @@ So far your HTML source should look like this:
     <div class="stuff" id="second">Divider2</div>
     <div class="stuff" id="third">Divider3</div>
     <div class="stuff" id="fourth">Divider4</div>
+    <div class="stuff" id="fifth">Divider4</div>
   </body>
 </html>
 {% endhighlight %}
@@ -279,7 +281,7 @@ At this point, open your **index.html** file in Chrome to observe the current st
 <a id="adobecolor"></a>
 ## 4. Extracting Your Site's Color Scheme from a Photo     
 
-For get colors for our HTML elements, we're going to use a free feature on Adobe Color's site.  
+To get colors for our HTML elements, we're going to use a free feature on Adobe Color's site.  
 
 First, go here: [Extract color from an image](https://color.adobe.com/create/image){:target="_blank"}  
 
@@ -392,7 +394,7 @@ Let's replace the simple contents of each div ("Divider1", "Divider2", etc.) wit
 
 The following text-only news stories have been prepared for you with the proper HTML tags; they're ready to copy and paste inside your **index.html** file. For example, click on the following link for the first story:  
 
-[Dummy News Story \#1](/Goldford-MTEC1003-OL04/labs/14/resources/story.v01.txt){:target="_blank"}
+[Dummy News Story \#1](/Goldford-MTEC1003-OL04/labs/14/resources/story.v01.txt){:target="_blank"}  
 
 ...then **highlight** the entire text file (on Mac: command + A) and **copy** the entire story (command + C).  
 
@@ -404,7 +406,9 @@ In your **index.html** file, navigate to line 21:
 
 Highlight the current placeholder text ("Divider1") and **replace** this text by **pasting** the pre-formatted news article currently on your clipboard (command + V).  
 
-Clean up the result by properly indenting the contents of the div. Your new div should look like this, beginning on line 21:  
+Clean up the result by properly indenting the contents of the div.  
+
+Your new div should look like this, beginning on line 21:  
 
 {% highlight html %}
 <div class="stuff" id="first">
@@ -426,6 +430,21 @@ Clean up the result by properly indenting the contents of the div. Your new div 
   <p>Among the approximately 15,000 people who received the vaccine, 11 developed Covid-19.</p>
 </div>
 {% endhighlight %}
+
+**Now, repeat these steps for each of the remaining 4 divs...**  
+
+Use the following links to copy unique text (i.e. news articles) and paste them inside each div:  
+
+* [Dummy News Story \#2](/Goldford-MTEC1003-OL04/labs/14/resources/story.v02.txt){:target="_blank"}  
+* [Dummy News Story \#3](/Goldford-MTEC1003-OL04/labs/14/resources/story.v03.txt){:target="_blank"}  
+* [Dummy News Story \#4](/Goldford-MTEC1003-OL04/labs/14/resources/story.v04.txt){:target="_blank"}  
+* [Dummy News Story \#5](/Goldford-MTEC1003-OL04/labs/14/resources/story.v05.txt){:target="_blank"}  
+
+Once you've copied all this text, refresh your **index.html** page, scroll down and notice that each div has a different size. This is because instead of setting their `height:` property we instead invoked the `word-wrap: break-word;` rule, ensuring that each div would only require the amount of space needed for its contents!  
+
+When you scroll down the divs should now look something like this:  
+
+<img src="resources/site.v01.png" alt="Early Site Rendering" width="700px" />
 
 * * *   
 
