@@ -680,6 +680,7 @@ So, bring up your **index.html** home page, which we'll use as a _template_ for 
 
 Recall the navbar links once more on lines 17-22:  
 
+<a id="navinglinks"></a>
 {% highlight html %}
 <div id="navbar">
   <a href="index.html">Home</a>
@@ -742,7 +743,9 @@ Now, from your **index.html** home page, click on "About Me" in your navbar, and
 
 Click on the "Home" link in your navbar, and it returns to your Home Page. It works!  
 
-Repeat these steps for each of the remaining 2 pages — make a simple template like this for your "My Portfolio" and "Contact".
+Repeat these steps for each of the remaining 2 pages — make a simple template like this for your "My Portfolio" and "Contact".  
+
+Just make sure the file names for each page exactly match <a href="#navinglinks">the links written in the navbar!</a>   
 
 <span style="color:red">_**NOTE: Your final project (i.e. personal website) can use this navbar and linked pages template. Change the color schemes, photos, and contents to match your own desired personal website elements. Add adimnation and/or JS canvas drawing, your own biography text, your own portfolio items (e.g. photos and videos of your own projects), styling rules, contact information, etc. Use this website as a template — don't start over from scratch, which will take far more time!**_</span>
 
