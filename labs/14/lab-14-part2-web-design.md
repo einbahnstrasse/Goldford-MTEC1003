@@ -822,9 +822,11 @@ Now, visit your _GitHub_ repository. We've just created a new branch that now ap
 
 Make a small change to this address in order to view the site you just pushed:  
 
-<span style="color:lightseagreen">https://yourUserName.github.io/lab-14-part2-web-design/</span>
+<span style="color:lightseagreen">https://yourUserName.github.io/lab-14-part2-web-design/</span>  
 
-It may not load immediatey if you've just pushed your site. If so, wait a few minutes while the page uploads (this could take several minutes...), and then refresh your webpage.  
+As always, use your "actual" _GitHub_ username in place of "yourUserName".  
+
+It may not load immediately if you've just pushed your site. If so, wait a few minutes while the page uploads (this could take several minutes...), and then refresh your webpage.  
 
 Now, whenever you want to make changes to your site,
 
