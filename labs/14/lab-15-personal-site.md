@@ -39,7 +39,7 @@ Your website will be hosted on _GitHub_ in a repository with name of your choice
 
 You can choose your own repository name to further personalize your site; especially if you want to share it publicly _(e.g. Louis-Goldford-homepage)._  
 
-You will finish your site this week, push it to _GitHub Pages_, and to complete Lab 15 you'll send me 2 links by the start of class next Monday, December 14:  
+<span style="color:red">You will finish your site this week, push it to _GitHub Pages_, and to complete Lab 15 you'll EMAIL ME 2 LINKS by the start of class next Monday, December 14:</span>  
 
 > <span style="color:lightseagreen">https://github.com/</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">/lab-15-personal-site</span>
 
