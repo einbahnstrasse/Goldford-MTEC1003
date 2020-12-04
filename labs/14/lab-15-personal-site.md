@@ -35,7 +35,7 @@ Previously you gathered your ideas and planned for your website in [Lab 12 / Par
 
 For the final project, you will take this content you developed and plug it into the website template presented to you in [Lab 14: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-web-design-github-pages.html){:target="_blank"}.  
 
-Your website will be hosted on GitHub a repository name of your choice _(Recommended: lab-15-personal-site)_ and then **CLONE** it onto your local machine inside your **/mtec1003** folder. (As always, use your knowledge of git and all of your previous references in order to do this.)   
+Your website will be hosted on _GitHub_ in a repository with name of your choice _(Recommended: lab-15-personal-site)_ and then **CLONE** it onto your local machine inside your **/mtec1003** folder. (As always, use your knowledge of git and all of your previous references in order to do this.)   
 
 You can choose your own repository name to further personalize your site; especially if you want to share it publicly _(e.g. Louis-Goldford-homepage)._  
 
@@ -51,7 +51,7 @@ and
 
 Your website must have a minimum of 4 linked pages:  
 
-1. a home page   
+1. a Home page   
   - _Must have some kind of artwork, e.g. JavaScript Canvas drawing and/or animation._  
 2. an "About Me" page
   - _Must include your biography (or a resume if you wish), and a description of your professional goals._    
@@ -66,22 +66,22 @@ In addition, your website must have the following elements:
 * Create a **navbar** at the top of your site's pages, for easy page linking across your site.
   - _Use the template provided in_ [_Lab 14: Advanced Web Design + GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-web-design-github-pages.html){:target="_blank"} _to create & stylize your navbar!_   
 * Use `<div>` containers to separate, stylize, and position content on your pages.    
-* Use use **class** and **ID** selectors to distinguish between _group_ styling and _individual_ styling throughout your site.  
-* You must choose your own website colors (using any of the tools discussed).  
+* Use **class** and **ID** selectors to distinguish between _group_ styling and _individual_ styling throughout your site.  
+* You must choose your own website colors (using any of the tools discussed. e.g. Adobe Color).  
   - _Recommended: You can use the Adobe Color tool to extract a color scheme from a photo you may use on your site!_  
 * You must include your own preferred fonts (using Google Fonts).
-  - _Recommended: Choose at lest 2 fonts (1 for headings and another for body text, also demonstrated in Lab 14.)_  
+  - _Recommended: Choose at least 2 fonts (1 for headings and another for body text, also demonstrated in Lab 14.)_  
 
 You may **optionally** include a "hero image" at the top of your website as well.  
 
-At the end of this lab, your **/lab-15-personal-site** repo should contain the following 7 files:  
+At the end of this lab, your **/lab-15-personal-site** repo should contain the following files:  
 
-1. a Home Page, e.g. **index.html**  
+1. your Home Page, e.g. **index.html**  
 2. an External Style Sheet, e.g. **style.css**  
 3. Your "About Me" page, e.g. **aboutme.html**  
 4. Your "My Portfolio" page(s), e.g. **myportfolio.v01.html**  
 5. Your Contact page, e.g. **contact.html**  
-6. _Optionally:_ include any image or video files that will be linked inside your HTML.    
+6. _Optionally:_ include any image or video files that will be linked inside your HTML _(Not necessary if you're linking content from other sites, such as an image hosted elsewhere or a video on YouTube, for example. In this case, you'll use <a href="...">...</a> tags in your HTML source)._    
 7. _Optionally:_ include any necessary external JavaScript, e.g. **navbar.v01.js**  
 
 Make sure all files are all included in your **/lab-15-personal-site** repo, and don't forget to **add**, **commit**, and **push** your changes! _(Remember: for pushing to GitHub Pages, you'll invoke `git push origin gh-pages`!)_  
