@@ -334,6 +334,7 @@ _Don't forget to watch + study the following..._
 <!-- * [Lab 14 / Part 1: _GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}  
 * [Lab 14 / Part 2: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-part2-web-design.html){:target="_blank"}   -->
 * [Lab 14: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL04/labs/14/lab-14-web-design-github-pages.html){:target="_blank"}  
+* [Lab 15: Finishing Your Personal Website](/Goldford-MTEC1003-OL04/labs/14/lab-15-personal-site.html){:target="_blank"}  
 
 * * *
 
@@ -342,12 +343,11 @@ _Don't forget to watch + study the following..._
 ### Complete + Present Final Assignments
 <p class="redish">Finals week begins. <i>Last class session on 12/14. See <a href="http://www.citytech.cuny.edu/registrar/docs/fall_2020.pdf"  target="_blank">CityTech Fall 2020 Schedule.</a></i></p>
 
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
-<h5 style="color:Tomato;"><b>SLIDES</b></h5>
-
-<h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-
-<h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
+<h5 style="color:Tomato;"><b>Lab 15: <i>Personal Website</i> Presentations</b></h5>
+* Each student presents their website (5-10 minutes per student)  
+* Be prepared to ask questions or make constructive comments when called upon.  
+* Be prepared to respond to questions about your site or your portfolio work.
 
 * * *

@@ -807,9 +807,9 @@ $ git push origin gh-pages
 Total 0 (delta 0), reused 0 (delta 0)
 remote:
 remote: Create a pull request for 'gh-pages' on GitHub by visiting:
-remote:      https://github.com/yourUserName/lab-14-part2-web-design/pull/new/gh-pages
+remote:      https://github.com/yourUserName/lab-14-site/pull/new/gh-pages
 remote:
-To https://github.com/yourUserName/lab-14-part2-web-design.git
+To https://github.com/yourUserName/lab-14-site.git
  * [new branch]      gh-pages -> gh-pages
 $
 {% endhighlight %}
@@ -818,11 +818,11 @@ Notice that you typed `git push origin gh-pages` instead of the familiar `git pu
 
 Now, visit your _GitHub_ repository. We've just created a new branch that now appears in your _GitHub_ repo, and this `gh-pages` branch will be where the site is hosted. To visit the site, make a small change to your web address... The address to your repository probably looks something like this:
 
-> <span style="color:lightseagreen">https://github.com/</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">/lab-14-part2-web-design</span>
+> <span style="color:lightseagreen">https://github.com/</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">/lab-14-site</span>
 
 All you have to do is slightly rearrange this address in order to view the site you just pushed:  
 
-> <span style="color:lightseagreen">https://</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">.github.io/lab-14-part2-web-design/</span>  
+> <span style="color:lightseagreen">https://</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">.github.io/lab-14-site/</span>  
 
 As always, use your "actual" _GitHub_ username in place of "yourUserName".  
 
