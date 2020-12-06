@@ -788,6 +788,7 @@ Verify that you're currently working on the new branch `gh-pages`:
 $ git branch
 * gh-pages
   master
+$
 {% endhighlight %}
 
 So now you're working on `gh-pages`. That's good. Our next step is to `git rebase` our previous commits — which is a little bit like `git merge` — migrating our code from the `master` branch into the new `gh-pages` branch:  
