@@ -83,7 +83,7 @@ At the end of this lab, your **/lab-15-personal-site** repo should contain the f
 3. Your "About Me" page, e.g. **aboutme.html**  
 4. Your "My Portfolio" page(s), e.g. **myportfolio.v01.html**  
 5. Your Contact page, e.g. **contact.html**  
-6. _Optionally:_ include any image or video files that will be linked inside your HTML _(Not necessary if you're linking content from other sites, such as an image hosted elsewhere or a video on YouTube, for example. In this case, you'll use <a href="...">...</a> tags in your HTML source)._    
+6. _Optionally:_ include any image or video files that will be linked inside your HTML _(Not necessary if you're linking content from other sites, such as an image hosted elsewhere or a video on YouTube, for example. In this case, you'll use `<a href="...">...</a>` tags in your HTML source)._    
 7. _Optionally:_ include any necessary external JavaScript, e.g. **navbar.v01.js**  
 
 Make sure all files are all included in your **/lab-15-personal-site** repo, and don't forget to **add**, **commit**, and **push** your changes! _(Remember: for pushing to GitHub Pages, you'll invoke `git push origin gh-pages`!)_  
