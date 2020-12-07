@@ -41,11 +41,11 @@ You can choose your own repository name to further personalize your site; especi
 
 <span style="color:red">You will finish your site this week, push it to _GitHub Pages_, and to complete Lab 15 you'll EMAIL ME 2 LINKS by the start of class next Monday, December 14:</span>  
 
-> <span style="color:lightseagreen">https://github.com/</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">/lab-15-personal-site</span>
+> <span style="color:lightseagreen">https://github.com/</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">/</span><span style="color:Moccasin">lab-15-personal-site/</span>
 
 and  
 
-> <span style="color:lightseagreen">https://</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">.github.io/lab-15-personal-site/</span>  
+> <span style="color:lightseagreen">https://</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">.github.io/</span><span style="color:Moccasin">lab-15-personal-site/</span>  
 
 (The 1st link is "back end" of your site, where I can see the source files you pushed. The 2nd link is the "front end", or the website interface itself.)  
 
