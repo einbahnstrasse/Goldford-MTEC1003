@@ -47,7 +47,7 @@ and
 
 > <span style="color:lightseagreen">https://</span><span style="color:lime">yourUserName</span><span style="color:lightseagreen">.github.io/</span><span style="color:OliveDrab">lab-15-personal-site/</span>  
 
-(The 1st link is "back end" of your site, where I can see the source files you pushed. The 2nd link is the "front end", or the website interface itself.)  
+(The 1st link is the "back end" of your site, where I can see the source files you pushed. The 2nd link is the "front end", or the website interface itself.)  
 
 Your website must have a minimum of 4 linked pages:  
 
