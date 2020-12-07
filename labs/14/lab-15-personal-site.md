@@ -74,6 +74,8 @@ In addition, your website must have the following elements:
 
 You may **optionally** include a "hero image" at the top of your website as well.  
 
+<span style="color:red"><i><b>CRUCIAL:</b> Reusing the fonts, color schemes, photos, and other content given in our tutorials is <b>strictly prohibited.</b> You will need to "design" your site yourselves: choose your own colors, fonts, images, and potentially videos and layout. You now have the tools to make your own creative decisions. Repeating the same elements in your own site will result in a lowered grade!</i></span>  
+
 At the end of this lab, your **/lab-15-personal-site** repo should contain the following files:  
 
 1. your Home Page, e.g. **index.html**  
