@@ -350,6 +350,10 @@ _Don't forget to watch + study the following..._
 <h5 style="color:Tomato;"><b>Lab 15: <i>Personal Website</i> Presentations</b></h5>
 * Each student presents their website (5-10 minutes per student)  
 * Be prepared to ask questions or make constructive comments when called upon.  
-* Be prepared to respond to questions about your site or your portfolio work.
+* Be prepared to respond to questions about your site or your portfolio work.  
+
+<h5 style="color:Tomato;">Course Evaluations</h5>
+* An extra 10 minutes for completion of CityTech course surveys (emailed to you)  
+* Prof. Goldford will enter a _"breakout room"_ while you complete this.  
 
 * * *
