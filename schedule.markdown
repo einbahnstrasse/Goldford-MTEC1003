@@ -345,6 +345,8 @@ _Don't forget to watch + study the following..._
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
+### [Final Assessment Quizlet](https://forms.gle/no7vbu6Yg85kQrmcA){:target="_blank"}  
+
 <h5 style="color:Tomato;"><b>Lab 15: <i>Personal Website</i> Presentations</b></h5>
 * Each student presents their website (5-10 minutes per student)  
 * Be prepared to ask questions or make constructive comments when called upon.  
