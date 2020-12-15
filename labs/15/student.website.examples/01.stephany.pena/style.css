@@ -1,0 +1,150 @@
+/* universal properties */
+body, html {
+    height: 100%;
+    color: black;
+    background-color: #ffc0cb;
+    font-family: 'Zilla', serif;
+    /* font-family rule copied from Google Fonts */
+    font-weight: 300;
+}
+
+/* use Major Mono Display for all headings h1—h6 */
+h1, h2, h3, h4, h5, h6 {
+  	font-family: 'Slab', sans-serif;
+  	text-align: center;
+    /* font-family rule copied from Google Fonts */
+}
+
+/* Style the navbar */
+#navbar {
+  	overflow: hidden;
+  	background-color: #f4c0ff;
+}
+
+/* Navbar links */
+#navbar a {
+  	float: left;
+  	display: block;
+  	color: black;
+  	font-family: 'Slab', sans-serif;
+    /* font-family rule copied from Google Fonts */
+  	text-align: center;
+  	padding: 14px;
+  	text-decoration: none;
+}
+
+/* Change color + highlight on hover. */
+#navbar a:hover {
+  	color: blue;
+  	background-color: gray;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  	padding-top: 60px;
+}
+
+
+div.contact{
+	width: 750px;
+  	/* height: fit-content; */
+	word-wrap: break-word;
+	overflow: auto;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	margin: auto;
+	padding: 5px;
+	background-color: #e6ddc5;
+}
+div.bio{
+	width: 750px;
+  	/* height: fit-content; */
+	word-wrap: break-word;
+	overflow: auto;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	margin: auto;
+	padding: 5px;
+	background-color: #e6ddc5;
+}
+
+div.goals{
+	width: 750px;
+  	/* height: fit-content; */
+	word-wrap: break-word;
+	overflow: auto;
+	text-align: left;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	margin: auto;
+	padding: 5px;
+	background-color: #e6ddc5;
+}
+
+
+div.stuff {
+	width: 250px;
+  	/* height: fit-content; */
+	word-wrap: break-word;
+	overflow: auto;
+	text-align: center;
+	border-width: 1px;
+	border-style: dotted;
+	border-color: black;
+	float: left;
+	margin: 10px;
+	padding: 5px;
+}
+
+div#first {
+	background-color: #c0ebff;
+}
+
+div#second {
+	background-color: #c0ffd5;
+}
+
+div#third {
+	background-color: #c0ebff;
+}
+
+div#fourth {
+	background-color: #c0ffd5;
+}
+
+div#fifth {
+	background-color: #c0ebff;
+}
+
+div#sixth {
+	background-color: #c0ffd5;
+}
+
+div#seventh {
+	background-color: #c0ebff;
+}
+
+div#eighth {
+	background-color: #c0ffd5;
+}
+
+div#ninth {
+	background-color: #c0ebff;
+}
+
+div#tenth {
+	background-color: #c0ffd5;
+}
+

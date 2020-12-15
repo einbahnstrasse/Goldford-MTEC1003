@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Homaepage</title>
+    <link rel="stylesheet" href="PersonalPage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Henry Cruz</h1>
+      </div>
+    </div>
+    <div id ="navbar">
+      <a href="index.html">Home</a>
+      <a href="Aboutme.html">About Me</a>
+      <a href="Portfolio.html">Graphic Design Portfolio</a>
+      <a href="LDProfile.html">Lighting Design Portfolio</a>
+      <a href="Contact.html">Contact</a>
+      <a href="refernce.html">PhotoCredits</a>
+      <a href="Doc.html">Documents</a>
+    </div>
+
+    <style>
+      #sketch {
+        border: 1px solid #000;
+      }
+    </style>
+    <body>
+    <canvas id="sketch" width="1900" height="720"> </canvas>
+      <script>
+        document.addEventListener('DOMContentLoaded', main);
+      var sketch;
+        var context;
+        var circle;
+        var dx = 10;
+        var dy = 2;
+        var fps = 10;
+        var animation;
+
+    function main() {
+        sketch = document.getElementById('sketch');
+        context = sketch.getContext('2d');
+        circle = {'x': 25, 'y': sketch.offsetHeight / 2, 'r': 25};
+        animation = setInterval(animate, fps);
+    }
+
+    function animate() {
+        context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
+        draw_circle(circle.x, circle.y, circle.r);
+        circle.x = circle.x + dx;
+        circle.y = circle.y + dy;
+
+    if (circle.x + circle.r > sketch.width || circle.x - circle.r < 0) {
+              dx = -dx;
+
+    }
+    if (circle.y + circle.r > sketch.height || circle.y - circle.r < 0) {
+    dy = -dy;
+
+    }
+    }
+    function draw_circle(x, y, r) {
+       context.beginPath();
+       context.arc(x, y, r, 0, 2 * Math.PI, true);
+       context.closePath();
+       context.fill();
+          }
+
+src="navbar.v01.js"
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body onload="draw()">
+    <canvas id="sketch" width="1000" height="600">
+    </canvas>
+
+    <div class="Rectangle">
+    <div class="navbar">
+      <h1>Karla Ramirez</h1>
+
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="myportfolio.v01.html">My Portfolio</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+    </div>
+    <!-- <div class="square">
+      <p>Hello, welcome to Karla's page. Enjoy looking at this pretty flower I drew. :D</p>
+
+    </div> -->
+    <script>
+      function draw(){
+        var sketch = document.getElementById('sketch');
+        var context = sketch.getContext("2d");
+
+
+        // two ovals
+        // context.fillStyle = "#DF4D2D";
+        // context.beginPath();
+        // context.ellipse(300, 350, 300,250, Math.PI / 2, 0, 2 * Math.PI);
+        // context.fill();
+        //
+        // context.fillStyle = "#DF4D2D";
+        // context.beginPath();
+        // context.ellipse(350, 300, 300, 250, Math.PI / 2, 0, 2 * Math.PI);
+        // context.fill();
+        // end of ovals
+
+        // the first 4 petals
+        context.fillStyle = "#D9A796";
+        // FILL SHAPES WITH COLORS:
+
+        context.beginPath();
+        context.arc(800,400,200 , 0, 2 * Math.PI, true);
+        context.closePath();
+        context.fill();
+        //
+        // // CIRCLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#13.0
+        //   // context.beginPath();
+        //   // context.arc(x, y, radius, start angle, end angle, clockwise);
+        //   // context.closePath();
+        //   // context.fill();
+        // // petal 2
+
+        context.fillStyle = "#D9A796";
+
+        context.beginPath();
+        context.arc(600,200, 200, 0, 2 * Math.PI, true);
+        context.closePath();
+        context.fill();
+        // //petal3
+        context.fillStyle = "#D9A796";
+
+        context.beginPath();
+        context.arc(800,200, 200, 0, 2 * Math.PI, true);
+        context.closePath();
+        context.fill();
+        // //petal3
+        context.fillStyle = "##D9A796";
+
+        context.beginPath();
+        context.arc(600,400, 200, 0, 2 * Math.PI, true);
+        context.closePath();
+        context.fill();
+        // the end of the four petal
+
+
+
+      //two ovals
+      context.fillStyle = "#BF5A1F";
+      context.beginPath();
+      context.ellipse(700, 300, 300, 75, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#BF5A1F";
+      context.beginPath();
+      context.ellipse(700, 300, 75, 300, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#BF5A1F";
+      context.beginPath();
+      context.ellipse(700, 300, 75, 300, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#BF5A1F";
+      context.beginPath();
+      context.ellipse(700, 300, 300, 75, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#BF5A1F";
+
+      context.beginPath();
+      context.arc(700,300, 50, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+      // middle circle
+      context.fillStyle = "#F08080";
+
+      context.beginPath();
+      context.arc(700,300, 75, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+      // end middle circle
+
+
+
+
+      //begining of flower
+      context.fillStyle = "#01402E";
+      // FILL SHAPES WITH COLORS:
+
+      context.beginPath();
+      context.arc(800,400,50 , 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(800,400, 50, 15, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(800, 400, 15, 50, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(800, 400, 15, 50, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(800, 400, 50, 15, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+      //end of flower
+
+
+
+
+
+      //
+      // // CIRCLE: https://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/12/canvas.html#13.0
+      //   // context.beginPath();
+      //   // context.arc(x, y, radius, start angle, end angle, clockwise);
+      //   // context.closePath();
+      //   // context.fill();
+      // // petal 2
+
+      //begining of flower
+      context.fillStyle = "#01402E";
+
+      context.beginPath();
+      context.arc(600,200, 50, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(600, 200, 50, 15, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(600, 200, 15, 50, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(600, 200, 15, 50, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(600, 200, 50, 15, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+
+      // end of flower
+
+    // begining of flower
+      context.fillStyle = "#01402E";
+
+      context.beginPath();
+      context.arc(800,200, 50, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(800, 200, 50, 15, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(800, 200, 15, 50, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(800, 200, 15, 50, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(800, 200, 50, 15, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+      //end of flower
+
+
+
+      // //petal3
+
+      //begining of flower
+      context.fillStyle = "#01402E";
+
+      context.beginPath();
+      context.arc(600,400, 50, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(600, 400, 50, 15, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(600, 400, 15, 50, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(600, 400, 15, 50, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(600, 400, 50, 15, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+
+      // end of flower
+
+
+
+
+
+
+
+
+      // flower 4
+      context.fillStyle = "#01402E";
+
+      context.beginPath();
+      context.arc(550,300, 50, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(550, 300, 50, 15, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(550, 300, 15, 50, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(550, 300, 15, 50, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(550, 300, 50, 15, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+
+      // the end of flower 4
+
+
+
+
+
+
+      //flowerone
+      context.fillStyle = "#01402E";
+
+      context.beginPath();
+      context.arc(850,300, 50, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(850, 300, 50, 15, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(850, 300, 15, 50, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(850, 300, 15, 50, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(850, 300, 50, 15, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+      // THE END OF THE FLOWER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //flower 2
+      context.fillStyle = "#01402E";
+      // FILL SHAPES WITH COLORS:
+
+      context.beginPath();
+      context.arc(700,150,50 , 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+
+            context.fillStyle = "#723973";
+            context.beginPath();
+            context.ellipse(700, 150, 50, 15, Math.PI / 4, 0, 2 * Math.PI);
+            context.fill();
+
+            context.fillStyle = "#723973";
+            context.beginPath();
+            context.ellipse(700, 150, 15, 50, Math.PI / 4, 0, 2 * Math.PI);
+            context.fill();
+
+            context.fillStyle = "#723973";
+            context.beginPath();
+            context.ellipse(700, 150, 15, 50, Math.PI / 2, 0, 2 * Math.PI);
+            context.fill();
+
+            context.fillStyle = "#723973";
+            context.beginPath();
+            context.ellipse(700, 150, 50, 15, Math.PI / 2, 0, 2 * Math.PI);
+            context.fill();
+
+      // the end of flower 2
+
+      // flower 3
+      context.fillStyle = "#01402E";
+      // FILL SHAPES WITH COLORS:
+
+      context.beginPath();
+      context.arc(700,450,50 , 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+
+
+            context.fillStyle = "#723973";
+            context.beginPath();
+            context.ellipse(700, 450, 50, 15, Math.PI / 4, 0, 2 * Math.PI);
+            context.fill();
+
+            context.fillStyle = "#723973";
+            context.beginPath();
+            context.ellipse(700, 450, 15, 50, Math.PI / 4, 0, 2 * Math.PI);
+            context.fill();
+
+            context.fillStyle = "#723973";
+            context.beginPath();
+            context.ellipse(700, 450, 15, 50, Math.PI / 2, 0, 2 * Math.PI);
+            context.fill();
+
+            context.fillStyle = "#723973";
+            context.beginPath();
+            context.ellipse(700, 450, 50, 15, Math.PI / 2, 0, 2 * Math.PI);
+            context.fill();
+
+      // flower end
+
+
+
+
+
+
+      // petals pt2
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(700, 300, 50, 25, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(700, 300, 25, 50, Math.PI / 4, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(700, 300, 25, 50, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+      context.fillStyle = "#723973";
+      context.beginPath();
+      context.ellipse(700, 300, 50, 25, Math.PI / 2, 0, 2 * Math.PI);
+      context.fill();
+
+
+
+
+
+      }
+
+    </script>
+
+
+  </body>
+</html>

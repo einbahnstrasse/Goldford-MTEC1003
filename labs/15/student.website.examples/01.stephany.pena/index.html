@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+	<style>
+	#sketch {
+	background-color: #e6ddc5;
+	border:1px solid #000000;
+}
+</style>
+  </head>
+  
+  <body onload="main()">
+   <img src="welcome_banner.gif" alt="" width="1415px">
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="myportfolio.html">My Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <h2>Home</h2>
+
+
+    <script src="navbar.v01.js"></script>
+    
+	<canvas id="sketch" width="1415" height="500">
+
+	</canvas>
+	<script>
+		function main() {
+			var sketch = document.getElementById('sketch');
+			var context = sketch.getContext("2d");
+			
+			var row;
+			var col;
+			var x;
+			var y;
+			
+			for (row = 0; row < 20; row++) {
+			
+				for(col = 0; col < 20; col++) {
+					x = col * 74;
+					y = row * 74;
+					if (row % 2 == col % 2){
+						context.fillStyle = "#008080";
+							
+					} else{
+						context.fillStyle = "#C0C0C0";
+					
+					
+					}
+					context.fillRect(x, y, 20, 20);
+					
+					context.beginPath();
+					context.arc(x, y, 12, 0, 2 * Math.PI, true);
+					context.closePath();
+					context.fill();}
+				}
+			}
+
+		
+
+		
+
+	</script>
+  </body>
+</html>

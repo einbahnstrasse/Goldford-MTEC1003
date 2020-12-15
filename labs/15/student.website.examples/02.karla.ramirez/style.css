@@ -1,0 +1,125 @@
+body{
+
+  background-color: #D96459;
+}
+div.Rectangle{
+  /* background-color: #f1d6b7; */
+  /* background-color: #D96459; */
+
+}
+
+div.navbar{
+  font-family: 'Quicksand', sans-serif;
+  /* width: 100%;  /* i'm assuming full width */
+  overflow: hidden;
+  display: block;
+  background-color: #C14242;
+  border: 10px solid #C14242;
+
+
+
+}
+.navbar h1{
+  display: inline-block;
+  /* vertical-align: top; */
+  /* width: 50px; */
+  height: 100px;
+  margin-right: 325px;
+  /* margin-left: 50px; */
+  margin-top: 10px;    /* if you want it vertically middle of the navbar. */
+  margin-bottom: 0;
+  font-size: 75px;
+  float: left;
+
+
+}
+
+
+.navbar a{
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  height: 70px;        /* if you want it to take the full height of the bar */
+  line-height: 80px;
+  font-size: 30px;
+  margin-top: 35px;    /* if you want it vertically middle of the navbar. */
+  text-decoration: none;
+  overflow: hidden;
+
+}
+.navbar a:hover{
+  background-color: #DB7DA4;
+}
+
+
+div#text{
+  font-family: 'Open Sans', sans-serif;
+}
+div.box{
+  display: flex;
+  flex-direction:column;
+background-color: #D96459;
+
+  /* vertical-align: top; */
+  /* width: 50px; */
+  /* height: 50px;
+  margin-right: 500px;
+  margin-left: 100px;
+  margin-top: 10px;    /* if you want it vertically middle of the navbar. */
+  /* font-size: 40px; */
+}
+.aboutme img{
+  float: right;
+  margin-right: 40px;
+}
+.aboutme p{
+  font-size: 30px;
+
+}
+/* .middlebox{
+  display: flex;
+} */
+ div.stuff{
+   display: inline-block;
+
+
+ }
+ * {
+   box-sizing: border-box;
+     /* background-color: #C14242; */
+
+ }
+ .column {
+   float: left;
+   width:33.33%;
+   padding: 5px;
+ }
+ .row::after {
+  clear: both;
+  display: table;
+
+}
+.square{
+  width: 100%;
+  height:630px;
+  padding: 50px;
+  border: 10px solid #DB7DA4;
+  background-color: ;
+  /* opacity: 0.3; */
+}
+.square img{
+  float: right;
+  marginright: 60px;
+  /* display: flex; */
+}
+.square h1 p{
+
+  /* float: left; */
+  /* padding: 50px; */
+  /* border: 10px solid black; */
+  /* margin: 0;
+  height: 80px;
+  width: 20px; */
+  font-size: 40px;
+}
