@@ -36,7 +36,7 @@ layout: default
 	* <a href="#zoom">Part I. Virtual Participation on Zoom</a>  
 	* <a href="#arrival">Part II. Prompt Arrival and Absences</a>  
 10. <a href="#integrity">Academic Integrity Policy</a>  
- 	* <a href="#integrity">Part I. General Notes on Academic Integrity</a>  
+	* <a href="#integrity">Part I. General Notes on Academic Integrity</a>  
 	* <a href="#integrity-pledge">Part II. Academic Integrity Pledge</a>  
 11. <a href="#rubric">GENERAL GRADING RUBRIC for Lab Assignments</a>  
 12. <a href="#disable">Course Accommodations for Students with Disabilities</a>   
@@ -322,7 +322,7 @@ Students and all others who work with information, ideas, texts, images, music, 
 
 <a id="integrity-pledge"></a>
 #### Part II. Academic Integrity Pledge
-By enrolling in this course, you pledge to uphold the policy on Academic Integrity described below:  
+_By enrolling in this course, you pledge to uphold the policy on Academic Integrity described below:_  
 
 I understand the value of personal integrity and ethical behavior in all aspects of my professional and personal life. By committing to honesty and personal responsibility, I earn the respect and trust of others. As a student at New York City College of Technology, I recognize that the value of my education is not just being able to say I am a college graduate, but it also incorporates the skills, values, and knowledge I have acquired. I thus commit myself to upholding academic integrity as an important aspect of my personal integrity and professional growth. I understand that academic integrity includes:  
 
@@ -330,7 +330,7 @@ I understand the value of personal integrity and ethical behavior in all aspects
 2. Only turning in work that I have done myself, and not using unattributed work done by others. While working and studying with others can be an effective way to learn, submitted work will be my own.  
 3. Giving full and proper credit to sources and references, and acknowledging the contributions and ideas of others, in my academic work.  
 
-Further, I have read and understand the college’s Academic Integrity Policy found in the New York City College of Technology College Catalog, p. 56 of the spring 2020 catalog: http://www.citytech.cuny.edu/catalog/docs/catalog.pdf#page=56  
+Further, I have read and understand the college’s Academic Integrity Policy found in the New York City College of Technology College Catalog, p. 56 of the spring 2020 catalog: [http://www.citytech.cuny.edu/catalog/docs/catalog.pdf#page=56](http://www.citytech.cuny.edu/catalog/docs/catalog.pdf#page=56){:target="_blank"}  
 
 (Modified from the Marquette University Honor Code, PB, RB; AM; 12/23/2020)  
 
