@@ -21,7 +21,7 @@ layout: default
 
 <!-- <h1>Syllabus</h1> -->
 # Syllabus
-[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL78/resources/week.01/Goldford.MTEC1003.Spring2021.Syllabus.v01){:target="_blank"}
+[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL78/resources/week.01/Goldford.MTEC1003.Spring2021.Syllabus.v02.pdf){:target="_blank"}
 
 #### C O N T E N T S  
 1. <a href="#contact">Essential Course + Contact Information</a>  
