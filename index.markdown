@@ -36,6 +36,8 @@ layout: default
 	* <a href="#zoom">Part I. Virtual Participation on Zoom</a>  
 	* <a href="#arrival">Part II. Prompt Arrival and Absences</a>  
 10. <a href="#integrity">Academic Integrity Policy</a>  
+ 	* <a href="#integrity">Part I. General Notes on Academic Integrity</a>  
+	* <a href="#integrity-pledge">Part II. Academic Integrity Pledge</a>  
 11. <a href="#rubric">GENERAL GRADING RUBRIC for Lab Assignments</a>  
 12. <a href="#disable">Course Accommodations for Students with Disabilities</a>   
 13. <a href="#inclusivity">Inclusivity</a>  
@@ -51,7 +53,7 @@ layout: default
 **Email:** <a href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a>  
 **Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/LouisGoldford](https://calendly.com/LouisGoldford){:target="_blank"})  
 **Office Location:** Zoom (scheduled through the Calendly link above)  
-**Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/){:target="_blank"}) <!-- <a href="https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/">https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/</a>   -->
+**Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/){:target="_blank"})  
 **Course Slack:** [http://goldford-mtec1003.slack.com/](http://goldford-mtec1003.slack.com/)  
 
 * * *
@@ -167,7 +169,7 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 <tr>
 <td markdown="span">4</td>
 <td markdown="span">3/1</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w4" target="_blank">Version Control: Local/Remote Repositories + Collaboration Via <i>_GitHub_</i></a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w4" target="_blank">Version Control: Local/Remote Repositories + Collaboration Via _GitHub_</a></td>
 </tr>
 <tr>
 <td markdown="span">5</td>
@@ -235,21 +237,22 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 ### IX. Attendance + Participation Policy
 _Participation is based on attendance and your engagement on Zoom, and will form a substantial portion of your grade._
 
-#### IX. Part I. Virtual Participation on Zoom
-* You will be required to **share your video connection for the duration of each class** unless the instructor changes video sharing permissions. **Occasionally you will also be called upon to share your audio and screen-sharing connections** (e.g. for asking or answering questions, demonstrating, and troubleshooting your code).
-* You are welcome to send the instructor **an email describing any significant challenges to this weekly video conferencing requirement.** If necessary, we can work out an alternative.
-* Find a quiet and presentable space that you don't mind sharing through your Zoom video connection. Alternatively, choose an appropriate virtual background within Zoom settings.
-* **Do not use a photo.** Video of your face confirms (1) that you are present and participating in our class, and (2) whether you understand our discussion and materials. This simulates our normal physical classroom environment. Despite the challenges of distance learning, we must push ourselves to engage fully in lieu of in-person sessions.
-* Therefore, _present yourself as you would in a physical classroom._
-* Utilize Zoom's **chat and hand-raising features for interacting with the instructor or the class.** Occasionally you will be prompted to answer questions, so these tools are essential.
-* For questions about using Zoom and its features, consult the [Zoom Help Center](https://support.zoom.us/hc/en-us){:target="_blank"}.
-* **Test your internet connection on the day of class before it's too late.** If you are suddenly experiencing connection problems that prevent you from joining one of our sessions on time, send me a Slack message immediately, and an email later if necessary. Further information about our Attendance Policy appears below. Failure to proactively troubleshoot long-term connection problems (and/or to communicate with the instructor about them) will be problematic for your participation score.
-* Avoid distractions from social media and unrelated gaming or web content. Strive to engage fully during our dedicated class time. We only meet on Mondays, so it will be difficult to recoup the losses of not paying attention later in the week, e.g. while finishing assignments.
-* Typically we will take a 10-minute break in the middle of class. If you need additional time for restroom breaks or emergencies, quietly and occasionally excuse yourself by muting your video and audio on Zoom. However, **frequent and recurring self-excusals will reflect negatively with your engagement in our class and result in lowered participation marks.**
-* Failure to comply with these policies **will result in a lowered participation score.** I grade holistically, but **will not be curving your scores** when long-term participation issues persist.
-* **There is no extra credit in MTEC1003.** Therefore, plan accordingly.
-* **Certain demonstrations in class may be recorded** for anyone in need of an asynchronous learning option. Any such videos will be made available temporarily through our Course Slack page, but will never be posted publicly.
-* Bear in mind that you will be doing exercises on your computer at the same time we're discussing and presenting examples on Zoom. Locate an easy way to rapidly switch between the application windows open on your desktop, e.g. between Zoom and your Terminal, Text Editor, and/or Chrome. On macOS, for example, this is easily accomplished by holding down the `Command` key and pressing `TAB` to switch between applications.
+#### IX. Part I. Virtual Participation on Zoom  
+* You will be encouraged but not required to share your video connection for the duration of each class. Occasionally you will also be called upon to share your audio and screen-sharing connections, which remain required (e.g. for asking or answering questions, demonstrating your work, troubleshooting your code, etc).  
+* If you choose not to share your video, your engagement and presence must be felt through your active participation, response to prompts and questions, offering possible solutions and perspectives where appropriate.  
+* Find a quiet and presentable space that you don't mind sharing through your Zoom audio (and possibly video) connection. You can also choose a virtual background within Zoom settings if you want to share your video but need to preserve the privacy of your space.  
+* In lieu of a video sharing attendance requirement, you will complete weekly online quizzes as part of your participation grade during our allotted class time. These quizzes usually take about 15-20 minutes to complete and will begin promptly at the start of each class. Therefore, your prompt arrival at 2:30 ensures that you have the full amount of time to demonstrate your participation. Each quiz is worth a variable number of points each week and is entirely based on our slides and other materials located under the SCHEDULE TAB of our Course Website, as well as issues that may have arisen during our previous class discussions.  
+* The topic(s) of each quiz may review the previous week’s materials or may include questions on the upcoming topics of the current week. Therefore, you will need to take notes and study in advance of each class, fully prepared to finish these quizzes in a timely manner. Failure to complete each quiz within the allotted time will result in a loss of participation points and will negatively affect your course grade.  
+* Additionally, each quiz will conclude with a passphrase given verbally by the instructor over Zoom at a random time during the class session. You will be unable to submit your weekly quiz for participation points until you submit the correct passphrase at the end. You must remain present and alert in class in order to receive the correct passphrase.  Do not repeat the passphrase once it’s been given by the instructor.  
+* Utilize Zoom's chat and hand-raising features for interacting with the instructor or the class. Occasionally you will be prompted to answer questions, so these tools are essential.  
+* For questions about using Zoom and its features, consult the [Zoom Help Center.](https://support.zoom.us/hc/en-us){:target="_blank"}    
+* Test your internet connection on the day of class before it's too late. If you are suddenly experiencing connection problems that prevent you from joining one of our sessions on time, send me a Slack message immediately, and an email later if necessary. Further information about our Attendance Policy appears below. Failure to proactively troubleshoot long-term connection problems (and/or to communicate with the instructor about them) will be problematic for your participation score.  
+* Avoid distractions from social media and unrelated gaming or web content. Strive to engage fully during our dedicated class time. We only meet on Mondays, so it will be difficult to recoup the losses of not paying attention later in the week, e.g. while finishing assignments.  
+* Typically we will take a short break about midway through class. If you need additional time for restroom breaks or emergencies, quietly and occasionally excuse yourself by muting your video and audio on Zoom. However, frequent and recurring self-excusals will reflect negatively on your engagement in our class and result in lowered participation scores.  
+* Failure to comply with these policies will result in a lowered participation score. I grade holistically, but will not be curving your scores when long-term participation issues persist.  
+* There is no extra credit in MTEC1003. Therefore, plan accordingly.  
+* Certain demonstrations in class may be recorded for anyone in need of an asynchronous learning option, but in general we do not record weekly lectures. Any such videos will be made available temporarily through our Course Slack page, but will never be posted publicly.  
+* Bear in mind that you will be doing exercises on your computer at the same time we're discussing and presenting examples on Zoom. Locate an easy way to rapidly switch between the application windows open on your desktop, e.g. between Zoom and your Terminal, Text Editor, and/or Chrome. On macOS, for example, this is easily accomplished by holding down the `Command` key and pressing `TAB` key to switch between applications.  
 
 <a id="arrival"></a>
 #### IX. Part II. Prompt Arrival and Absences
@@ -310,11 +313,26 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 
 <a id="integrity"></a>
 ### X. Academic Integrity Policy
+#### Part I. General Notes on Academic Integrity
 Students and all others who work with information, ideas, texts, images, music, inventions, and other intellectual property owe their audience and sources accuracy and honesty in using, crediting, and citing sources. As a community of intellectual and professional workers, the university recognizes its responsibility for providing instruction in information literacy and academic integrity, offering models of good practice, and responding vigilantly and appropriately to infractions of academic integrity. Accordingly, academic dishonesty is prohibited in The City University of New York and at New York City College of Technology and is punishable by penalties, including failing grades, suspension, and expulsion. The complete text of the College policy on Academic Integrity may be found in the catalog.
 
 <div class="instructornote">
 <p markdown="span">**Instructor Note:** _Code borrowed from another source must be attributed as a comment within your own code. If you are unsure of whether or not your work may constitute plagiarism, please check with the instructor before submitting. Where applicable and where marked within our course materials, follow the provisions of the [Creative Commons Attribution-ShareAlike 4.0 International License.](https://creativecommons.org/licenses/by-sa/4.0/){:target="_blank"}_</p>
 </div>
+
+<a id="integrity-pledge"></a>
+#### Part II. Academic Integrity Pledge
+By enrolling in this course, you pledge to uphold the policy on Academic Integrity described below:  
+
+I understand the value of personal integrity and ethical behavior in all aspects of my professional and personal life. By committing to honesty and personal responsibility, I earn the respect and trust of others. As a student at New York City College of Technology, I recognize that the value of my education is not just being able to say I am a college graduate, but it also incorporates the skills, values, and knowledge I have acquired. I thus commit myself to upholding academic integrity as an important aspect of my personal integrity and professional growth. I understand that academic integrity includes:  
+
+1. Fully observing the rules governing exams and assignments regarding resource material, electronic aids, copying, collaborating with others, or engaging in any other behavior that subverts the purpose of the exam or assignment, and the directions of the instructor.   
+2. Only turning in work that I have done myself, and not using unattributed work done by others. While working and studying with others can be an effective way to learn, submitted work will be my own.  
+3. Giving full and proper credit to sources and references, and acknowledging the contributions and ideas of others, in my academic work.  
+
+Further, I have read and understand the college’s Academic Integrity Policy found in the New York City College of Technology College Catalog, p. 56 of the spring 2020 catalog: http://www.citytech.cuny.edu/catalog/docs/catalog.pdf#page=56  
+
+(Modified from the Marquette University Honor Code, PB, RB; AM; 12/23/2020)  
 
 * * *
 
