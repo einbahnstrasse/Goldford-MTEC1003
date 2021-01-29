@@ -15,6 +15,7 @@ _Be sure you've installed + tested all 7 of these before you arrive in class:_
 _If you're not on macOS, you'll most likely need a program that mimics the behavior of the Unix command line._  
 _Mac users can ignore this step! But if you're on Windows, install one of these free apps:_  
 
+* [Git BASH _(recommended)_](https://gitforwindows.org/){:target="_blank"}  
 * [Xshell](https://xshell.en.softonic.com/){:target="_blank"}  
 * [Cmder](https://cmder.net/){:target="_blank"}  
 * [PuTTY](https://www.puttygen.com/download-putty){:target="_blank"}  
