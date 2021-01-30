@@ -23,7 +23,7 @@ layout: default
 
 <!-- <h1>Syllabus</h1> -->
 # Syllabus
-[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL78/resources/week.01/Goldford.MTEC1003.Spring2021.Syllabus.v02.pdf){:target="_blank"}
+[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL78/resources/week.01/Goldford.MTEC1003.Spring2021.Syllabus.v03.pdf){:target="_blank"}
 
 #### C O N T E N T S  
 1. <a href="#contact">Essential Course + Contact Information</a>  
@@ -265,7 +265,7 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 	* After these first 2 steps, contact the instructor with any additional questions.
 * **Excused absences/lateness must be accompanied by documentation** and/or include advance notice with the instructor where possible. Excused absences/lateness will not impact on your grade. Absences may be excused in cases of: documentation of illness provided by a doctor, religious observance with advance notice, official school-related activity (always with documentation and advanced notice), and on a case-by-case basis for other critical events, at the discretion of the instructor.
 * _A lack of communication with the instructor about planned absences will therefore be treated as UNEXCUSED. Be in touch early._
-* **Unexcused absences and lateness will result in lowered participation grades.** Prompt arrival online earns you an immediate 5 points (i.e. full participation). For arrivals after 2:30 PM, the following weighted score system applies:
+* **Unexcused absences and lateness will result in lowered participation grades.** Prompt arrival online earns you an immediate 5 points (i.e. 1/2 of your full participation). For arrivals after 2:30 PM, the following weighted score system applies:
 
 <div class="latetable">
 <table>
@@ -309,7 +309,7 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 </div>
 
 <div class="instructornote">
-<p markdown="span"><em><b>Additionally, three (3) unexcused absences will lower your final course grade by 10% (i.e. one letter grade).<br />Each additional unexcused absence will further lower your course grade in 5% increments.</b></em></p></div>
+<p markdown="span"><em>Additionally, three (3) unexcused absences will <b>lower your participation score by 34 points</b>, which is equivalent to a 10% reduction of your Course Grade (i.e. one letter grade).<br />Each additional unexcused absence beyond 3 will further lower your participation score by <b>17 points</b>, or the equivalent of 5% increments in your Course Grade.</em></p></div>
 
 * * *
 
