@@ -34,8 +34,8 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
 <div class="instructornote"><p markdown="span"><em>Due online (GitHub) at 11:59 PM Saturday night each week!</em></p></div>  
 * [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003-OL78/labs/01/how.to.submit.1st.week.labs.html){:target="_blank"}  
-* [Lab 1 / Part 1: Commands + Navigation](/Goldford-MTEC1003-OL78/labs/01/lab.01.part1.commands.navigation.txt){:target="_blank"}  
-* [Lab 1 / Part 2: Download + (Un)Compress](/Goldford-MTEC1003-OL78/labs/01/lab.01.part2.download.compress.txt){:target="_blank"}  
+* [Lab 1 / Part 1: Commands + Navigation](https://github.com/einbahnstrasse/mtec1003-week1-labs/blob/master/lab.01.part1.commands.navigation.txt){:target="_blank"}  
+* [Lab 1 / Part 2: Download + (Un)Compress](https://github.com/einbahnstrasse/mtec1003-week1-labs/blob/master/lab.01.part2.download.compress.txt){:target="_blank"}  
 
 * * *
 
