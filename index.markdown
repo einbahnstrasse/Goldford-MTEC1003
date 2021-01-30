@@ -5,6 +5,8 @@
 layout: default
 ---
 
+<link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico">
+
 <img src="https://media.giphy.com/media/BmmfETghGOPrW/giphy.gif" alt="zachypooh" width="600" align="right">  
 <div style="text-align: right"><i>"By the end of this course,<br>you will be able to..."</i></div>  
 
