@@ -228,7 +228,7 @@ _The following topics and their precise order may change. Check our Schedule pag
 * * *
 
 **`190 Total Points`** in _Lab Assignments_  
-<h5 style="color:Tomato;"><b>_55.88% of your Course Grade_</b></h5>  
+<p style="color:Tomato;"><b>_55.88% of your Course Grade_</b></p>  
 
 ### II. Participation  
 
@@ -238,7 +238,7 @@ _The following topics and their precise order may change. Check our Schedule pag
 * * *
 
 **`150 Total Points`** in _Participation Scores_  
-<h5 style="color:Tomato;"><b>_44.12% of your Course Grade_</b></h5>  
+<p style="color:Tomato;"><b>_44.12% of your Course Grade_</b></p>  
 
 * * *
 
