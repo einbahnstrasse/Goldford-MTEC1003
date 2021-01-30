@@ -212,13 +212,13 @@ _The following topics and their precise order may change. Check our Schedule pag
 <tr>
 <td markdown="span">14</td>
 <td markdown="span">5/17</td>
-<td markdown="span">5</td>
+<td markdown="span">10</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w14" target="_blank">14.1 Advanced Web Design + <i>GitHub Pages</i></a></td>
 </tr>
 <tr>
 <td markdown="span">15</td>
 <td markdown="span">5/17</td>
-<td markdown="span">5</td>
+<td markdown="span">20</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w14" target="_blank">15.1 Finishing Your Personal Website</a></td>
 </tr>
 </tbody>
