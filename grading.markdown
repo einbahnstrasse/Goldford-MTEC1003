@@ -228,10 +228,9 @@ _The following topics and their precise order may change. Check our Schedule pag
 * * *
 
 **`190 Total Points`** in _Lab Assignments_  
-_55.88% of your Course Grade_  
+<h5 style="color:Tomato;"><b>_55.88% of your Course Grade_</b></h5>  
 
-
-### II. Participation Scores
+### II. Participation  
 
 * 15 classes  
 * 10 points/each  
@@ -239,7 +238,7 @@ _55.88% of your Course Grade_
 * * *
 
 **`150 Total Points`** in _Participation Scores_  
-_44.12% of your Course Grade_  
+<h5 style="color:Tomato;"><b>_44.12% of your Course Grade_</b></h5>  
 
 * * *
 
