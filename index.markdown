@@ -333,7 +333,7 @@ I understand the value of personal integrity and ethical behavior in all aspects
 2. Only turning in work that I have done myself, and not using unattributed work done by others. While working and studying with others can be an effective way to learn, submitted work will be my own.  
 3. Giving full and proper credit to sources and references, and acknowledging the contributions and ideas of others, in my academic work.  
 
-Further, I have read and understand the college’s Academic Integrity Policy found in the New York City College of Technology College Catalog, p. 56 of the spring 2020 catalog: [http://www.citytech.cuny.edu/catalog/docs/catalog.pdf#page=56](http://www.citytech.cuny.edu/catalog/docs/catalog.pdf#page=56){:target="_blank"}  
+Further, I have read and understand the college’s [Academic Integrity Policy found in the New York City College of Technology College Catalog, p. 56 of the spring 2020 catalog.](http://www.citytech.cuny.edu/catalog/docs/catalog.pdf#page=56){:target="_blank"}  
 
 (Modified from the Marquette University Honor Code, PB, RB; AM; 12/23/2020)  
 
@@ -412,6 +412,9 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 <a id="disable"></a>
 ### XII. Course Accommodations for Students with Disabilities  
 In order to receive disability-related academic accommodations students must first be registered with the Student Support Services Program (SSSP). Students who have a documented disability or suspect they may have a disability are invited to set up an appointment with Ms. Linda Buist, the program manager of SSSP (Phone: 718–260–5143, e-mail: <a href="mailto:buist@citytech.cuny.edu">buist@citytech.cuny.edu</a>). If you have already registered with SSSP, please provide your professor with the course accommodation form and discuss your specific accommodation with him/her/them.  
+
+### A Note on City Tech’s Counseling Center  
+The Counseling Services Center supports the educational, emotional and career development of City Tech students by providing opportunities for skill development, counseling and referrals that address obstacles to success. The Center is currently available to students remotely. For questions and appointments, contact the Center at <a href="mailto:counseling@citytech.cuny.edu">counseling@citytech.cuny.edu</a> or 718-260-5030.
 
 * * *
 
