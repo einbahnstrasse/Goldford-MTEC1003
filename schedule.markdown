@@ -18,8 +18,10 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w1"></a>
 <h3 class="schedule-page-date">Week 1: February 1st</h3>
 ### File System: Introduction, Navigation, Paths, Output, Download, Uncompress  
+### [Week #1 Survey/Quiz — Personal Info, Syllabus Elements, Etc.](https://forms.gle/6q2ZLfd9hfPfpqQZ6){:target="_blank"}  
+* _Complete the quizlet above as part of today's participation._  
+
 <h5 style="color:Tomato;"><b>Start-of-Semester Business</b></h5>
-<!-- * [Personal Info Form DUE NOW!](https://forms.gle/6M39dqqsh9pLQr1R7){:target="_blank"}   -->
 * Review [Syllabus + course policies.](/Goldford-MTEC1003-OL78/index.html){:target="_blank"}  
 * Review [Detailed Breakdown of Grading.](/Goldford-MTEC1003-OL78/grading.html){:target="_blank"}  
 * Review [Keys for Success in MTEC1003](/Goldford-MTEC1003-OL78/resources/week.01/keys.for.success.html){:target="_blank"}  
