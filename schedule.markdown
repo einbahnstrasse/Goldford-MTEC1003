@@ -33,6 +33,16 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * [Paths](/Goldford-MTEC1003-OL78/labs/02/paths-review.html#1.0){:target="_blank"}  
 * [Output, Download, and Uncompress](/Goldford-MTEC1003-OL78/labs/02/output-download-uncompress.html){:target="_blank"}  
 
+<h5 style="color:Tomato;"><b>Video Tutorial</b></h5>
+###### Stepping Through Week 1 Slides + Labs    
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/O617zAPuNng" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+_Normally we won't record our classes but sometimes we may, in order to clarify complex topics, etc. This video is archived from a previous version of this class, but the directions are all the same. For the 2 labs (below) this week, enter your respones in the text files and then save your changes directly on GitHub (i.e. "commit" your changes), as demonstrated and described in class and in this video. The slides above will help guide you to these answers, so be sure to study them and use to your advantage. Don't forget to study the slides for Week 2 before next class!_   
+
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
 <div class="instructornote"><p markdown="span"><em>Due online (GitHub) at 11:59 PM Saturday night each week!</em></p></div>  
 * [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003-OL78/labs/01/how.to.submit.1st.week.labs.html){:target="_blank"}  
