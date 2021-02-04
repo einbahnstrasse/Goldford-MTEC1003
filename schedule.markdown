@@ -67,7 +67,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Submitting Week 2 Labs](/Goldford-MTEC1003-OL78/labs/02/how.to.submit.2nd.week.labs.html){:target="_blank"}  
-* [Lab 2 / Part 1: Review](/Goldford-MTEC1003-OL78/labs/02/lab.02.part1.review.compress.txt){:target="_blank"}  
+<!-- * [Lab 2 / Part 1: Review](/Goldford-MTEC1003-OL78/labs/02/lab.02.part1.review.compress.txt){:target="_blank"}   -->
 * [Lab 2 / Part 2: Working with Files](/Goldford-MTEC1003-OL78/labs/02/lab.02.part2.working.with.files.txt){:target="_blank"}  
 * [Lab 2 / Part 3: Shell Scripting, Permissions, Editing Text, Date + Time](/Goldford-MTEC1003-OL78/labs/02/lab.02.part3.shell.scripting.txt){:target="_blank"}  
 
