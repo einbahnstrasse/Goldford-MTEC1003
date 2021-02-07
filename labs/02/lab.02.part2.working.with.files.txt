@@ -3,10 +3,10 @@ MTEC1003 — LAB 02 (revised revised 2/7/21 —lg)
 LAB 2 / PART 2: Working With Files
 
 ==========
-Follow the instructions line-by-line.  
+Follow the instructions line-by-line.
 
-* Type in the commands as is, but ignore the beginning prompt.  
-* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* Type in the commands as is, but ignore the beginning prompt.
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
 * "No output" or "nothing happens" are valid answers to any of the questions.
 ==========
 
@@ -44,7 +44,7 @@ What command did you use?
 
 
 ==========
-2. Create a directory called my_files. 
+2. Create a directory called my_files.
 Then, change into your new directory.
 
 What two commands did you use?
@@ -78,7 +78,7 @@ What command did you use?
 ==========
 5. Create a copy of bar.txt called baz.txt, and then list the files again.
 
-Write the commands that you used. 
+Write the commands that you used.
 Also, copy and paste the output of your file listing below.
 ----------
 
@@ -107,7 +107,7 @@ Copy and paste the output of your file listing below.
 7. Move the file called foo.txt to qux.txt and then list the files again.
 
 
-Write the command that you used to move the file.  
+Write the command that you used to move the file.
 Copy and paste the output of your file listing below.
 ----------
 
@@ -168,7 +168,7 @@ $ rm -rf my_files
 
 books/other/pg1232.txt
 
-Use the command called cat on the file to show its contents. 
+Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
@@ -183,7 +183,7 @@ Describe what happened below.
 
 books/other/pg1232.txt
 
-Use the command, head, on the file to show the contents of the beginning of the file.  
+Use the command, head, on the file to show the contents of the beginning of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
@@ -198,7 +198,7 @@ Write the command that you used below.  Write the last line of the output below 
 
 books/other/pg1232.txt
 
-Use tail on the file to show the contents of the end of the file.  
+Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below.
 ----------
@@ -264,5 +264,7 @@ Write the command that you used below.
 
 
 ==========
-Next: Go on to LAB 2 / PART 3...
+Next: Save this file. Then, using your mouse or a Terminal command that you learned this week, MOVE this file into your "mtec1003-lab-02" folder.
+
+And that's it! Now, go on to LAB 2 / PART 3...
 ----------

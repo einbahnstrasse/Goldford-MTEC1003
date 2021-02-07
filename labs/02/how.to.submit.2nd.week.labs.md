@@ -11,10 +11,10 @@ So, you've learned how to "fork" a file on _GitHub_ to create your own copy of i
 
 This time, we'll be doing now something slightly more involved: we'll be copying some files down from _GitHub_, working on them on our local machine, and then storing all of our work this week on _GitHub_ using something they call "repositories". We'll talk about what that means later, but for now, follow this step-by-step guide below for uploading your Week 2 labs...
 
-* From our [Schedule Page](/Goldford-MTEC1003-OL78/schedule.html), navigate to Week 2, and look under Lab Assignments. There are 3 labs.  
+* From our [Schedule Page](/Goldford-MTEC1003-OL78/schedule.html), navigate to Week 2, and look under Lab Assignments. There are 2 labs. (There used to be 3 but now only 2; you might notice lab 2 / part 1 is missing! _Don't worry_ — we're only doing labs 2 and 3 this week.)
 * Click on each of them, then right-click and "Save As..." each text file somewhere on your computer.  
 * Follow the instructions in each lab. As instructed, put each of these lab files inside the same folder.  
-* When your lab work is complete, you'll have all of your files collected in a single folder called "mtec1003".  
+* When your lab work is complete, you'll have all of your files collected in a single folder called "mtec1003-lab-02".  
 * To upload everything, first log in to _GitHub_ with your username and password.  
 * In the upper-right corner, click on your avatar and select "Your Repositories":  
 
