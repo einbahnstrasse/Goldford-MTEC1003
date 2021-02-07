@@ -177,6 +177,7 @@ What commands did you use to do this?  Show the output.
 
 
 ==========
-15. To finish up, save this file and, using your mouse or with a Terminal command, 
-move it into your mtec1003-lab-02 folder.
+15. To finish up, using your mouse or with Terminal commands, save this file and be sure it's inside your mtec1003-lab-02 folder. (If not, move it into this folder.)
+
+When finished, be sure to COMMIT your files to your GitHub repository for week 2 labs. Follow the instructions on the Course Website under Week #2...
 ----------
