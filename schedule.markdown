@@ -56,8 +56,8 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
 <p class="redish">Week 2 Skips 1 week! <i>City Tech is closed on 2/15 for Presidents Day. VOE Rosters due 2/18. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf" target="_blank">CityTech Spring 2021 Schedule.</a></i></p>
 
-<!-- ### [Review Quizlet (Wk. 1)](https://forms.gle/NPYcX8iPERocxyfn7){:target="_blank"}  
-* _Complete the quizlet above as part of today's attendance + participation._   -->
+### [Week 2 Quizlet](https://forms.gle/h9NqSpMnerG3gwPf7){:target="_blank"}  
+* _Complete the quizlet above as part of today's attendance + participation._  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Review](/Goldford-MTEC1003-OL78/labs/03/review.html#1.0){:target="_blank"}  
@@ -68,7 +68,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Submitting Week 2 Labs](/Goldford-MTEC1003-OL78/labs/02/how.to.submit.2nd.week.labs.html){:target="_blank"}  
 <!-- * [Lab 2 / Part 1: Review](/Goldford-MTEC1003-OL78/labs/02/lab.02.part1.review.compress.txt){:target="_blank"}   -->
-* Lab 2 / Part 1 has been removed: We'll only complete the following 2 labs this week!  
+* Lab 2 / Part 1 has been removed: We'll only complete the following 2 labs this week!    
 * [Lab 2 / Part 2: Working with Files](/Goldford-MTEC1003-OL78/labs/02/lab.02.part2.working.with.files.txt){:target="_blank"}  
 * [Lab 2 / Part 3: Shell Scripting, Permissions, Editing Text, Date + Time](/Goldford-MTEC1003-OL78/labs/02/lab.02.part3.shell.scripting.txt){:target="_blank"}  
 
