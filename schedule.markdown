@@ -79,7 +79,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### Version Control: Introduction to GIT, Concepts + Basic Commands
 
 <!-- ### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}   -->
-### [Week 3 Quizlet)](https://forms.gle/z6EMvJkfCTZJMXCC8){:target="_blank"}  
+### [Week 3 Quizlet](https://forms.gle/z6EMvJkfCTZJMXCC8){:target="_blank"}  
 * _Complete the quizlet above as part of today's attendance + participation._   
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
