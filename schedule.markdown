@@ -78,9 +78,9 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h3 class="schedule-page-date">Week 3: February 22nd</h3>
 ### Version Control: Introduction to GIT, Concepts + Basic Commands
 
-<!-- ### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}  
-### [Warmup Quizlet (Wk. 3)](https://forms.gle/VqsrRhRkHuNUXQ6v7){:target="_blank"}  
-* _Complete these quizlets above as part of today's attendance + participation._   -->
+<!-- ### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}   -->
+### [Week 3 Quizlet)](https://forms.gle/z6EMvJkfCTZJMXCC8){:target="_blank"}  
+* _Complete the quizlet above as part of today's attendance + participation._   
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Introduction to Version Control + Git](/Goldford-MTEC1003-OL78/labs/04/version-control.html){:target="_blank"}  
