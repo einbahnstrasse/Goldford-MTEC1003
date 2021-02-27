@@ -107,7 +107,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h3 class="schedule-page-date">Week 4: March 1st</h3>
 ### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_
 
-### [Week 3 Review + Week 4 Quizlet](https://forms.gle/BB93ZrMb3nHLyHig8){:target="_blank"}  
+### [Week 4 Quizlet](https://forms.gle/nd7spESTG2S2RHFa6){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Tutorials</b></h5>  
 * [Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL78/labs/04/git.pull.requests.and.merge.tutorial.v01.html){:target="_blank"}  
