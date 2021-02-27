@@ -103,7 +103,7 @@ Now, the preferred user changes have been integrated into the source code, and e
 
 We can also visualize the often complex network of users that interact with our repos. _GitHub_ provides a handy mechanism for this, called the **Network graph**.  
 
-From the front page of any repo (i.e. [https://github.com/einbahnstrasse/lab-04-merge-conflicts](https://github.com/einbahnstrasse/lab-04-merge-conflicts)), click on the **Insights** tab and, at the bottom of the left sidebar, the **Network** tab.
+From the front page of any repo (i.e. [https://github.com/einbahnstrasse/lab-04-merge-conflicts](https://github.com/einbahnstrasse/lab-04-merge-conflicts){:target="_blank"}), click on the **Insights** tab and, at the bottom of the left sidebar, the **Network** tab.
 
 You'll then see a graph that looks curiously like the color-coded subway stops on the MTA:    
 
