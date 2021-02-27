@@ -23,7 +23,7 @@ In this tutorial you'll learn to harness some of git's powerful collaborative fe
 
 ## Part 1. Submitting a `pull request`  
 
-First, we'll need to `fork` a copy of a repository. In this tutorial, we'll use this readymade 'lab-04-merge-conflicts' repository located at [https://github.com/einbahnstrasse/lab-04-merge-conflicts](https://github.com/einbahnstrasse/lab-04-merge-conflicts). A new user can navigate to a repository like this one and hit the now-familiar **fork** button to create their own copy.  
+First, we'll need to `fork` a copy of a repository. In this tutorial, we'll use this readymade 'lab-04-merge-conflicts' repository located at [https://github.com/einbahnstrasse/lab-04-merge-conflicts.](https://github.com/einbahnstrasse/lab-04-merge-conflicts){:target="_blank"} A new user can navigate to a repository like this one and hit the now-familiar **fork** button to create their own copy.  
 
 Inside this repository there is one file, a README.md file. It's a simple "markdown" file, but let's imagine it's a larger piece of code. Essentially this can be any in a series of text files. Notice what's written under Section 3, lines 10-12:  
 
