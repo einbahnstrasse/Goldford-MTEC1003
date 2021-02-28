@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Lab 4 Part 1: Pull Requests + Merge Conflicts
-_Refer to the [Tutorial on Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL04/labs/04/git.pull.requests.and.merge.tutorial.v01.html) and to [Lab 3](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html) for an explanation of the steps below._
+_Refer to the [Tutorial on Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL78/labs/04/git.pull.requests.and.merge.tutorial.v01.html) and to [Lab 3](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html) for an explanation of the steps below._
 
 For this lab, you'll be:
 1. Creating a `remote repository` initialized with a README.md file on _GitHub_, then  
