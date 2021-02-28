@@ -26,11 +26,12 @@ For this lab, you'll be:
 * Log into your _GitHub_ account, and from the front page, click the green **New** button and initialize a `repository` with a README.md (i.e. be sure to check the box for a README file).  
 * Write something in your own README file. This can be anything, really. Sprinkle some random text on multiple lines to give your file some dimension. Even just something short to identify yourself is fine! This is like your _source code_...
 * Now, from the address bar in your web browser, `copy` the address of your new `repository`.
-* `Paste` this address into the Google Sheet below, next to your name. You'll need to [sign into Google Sheets with your Entertainment Technology email address](https://docs.google.com/spreadsheets/d/1m-ILOrqra5h8MVR735iDlfs80h6aThcjHsZ6RaSNO3I/edit?usp=sharing) in order to add your link. If this doesn't work, send the instructor an email with your link and it will be added immediately.
+* `Paste` this address into the Google Sheet below, next to your name. You'll need to [sign into Google Sheets with your Entertainment Technology email address](https://docs.google.com/spreadsheets/d/1iFV2GRbztEV9tGt9vBsujDrK-8FT1UajhJoKV0nplaw/edit?usp=sharing) in order to add your link. If this doesn't work, send the instructor an email with your link and it will be added immediately.
 
 The sheet will become populated with new repos for each member of our class, so refresh this page frequently:
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSG_PSBDlCsG3OXFYlwH3y-6aRc8KKcG547KRruSL0254jYyG-lDfg0Y8NvpeMq7AvpEchzCH1015qM/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="600"></iframe>
+<!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSG_PSBDlCsG3OXFYlwH3y-6aRc8KKcG547KRruSL0254jYyG-lDfg0Y8NvpeMq7AvpEchzCH1015qM/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="800" height="600"></iframe> -->
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTK8nOMLr5iVQzsukbeL3caY-b7fBcdPdkw8XD1RV1_Udjpo2wqd1kh8hiVYyja5bWVJ4rje7pifTr_/pubhtml?gid=0&single=true" width="800" height="600"></iframe>
 
 * * *
 
