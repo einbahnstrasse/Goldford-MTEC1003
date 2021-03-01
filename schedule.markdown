@@ -89,8 +89,12 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
 <!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/05/lab-05-git-part-01.html)   -->
-* [Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"}  
-<!-- * [exp lab 4 part 1 link](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-01.html)   -->
+<!-- * [Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"}   -->
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RiXiihejeHc" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
 
 <h5 style="color:Tomato;"><b>Video Tutorial Series</b></h5>
 ###### Daniel Shiffman: Git and GitHub for Poets  
