@@ -128,6 +128,15 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h3 class="schedule-page-date">Week 5: March 8th</h3>
 ### JavaScript + Python: Introduction, Variables, Types, Input/Output
 
+<h5 style="color:Tomato;"><b>Short Video Tutorial</b></h5>
+###### How to Study for Week 5    
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OM5Ohp-y0t8" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div>
+
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Introduction to JavaScript](/Goldford-MTEC1003-OL78/labs/05/js-intro.html){:target="_blank"}  
 * [JavaScript Basics](/Goldford-MTEC1003-OL78/labs/05/js-basics.html){:target="_blank"}  
