@@ -64,7 +64,13 @@ In Terminal, resuming just where we'd paused our work in [Lab 4 / Part 2.](/Gold
 $ curl -i -H "Authorization: token 38597e1f2g1az2h5870fs6i465rty5w234c97qqq" -d '{ "name": "lab-04-version-control" }' https://api.github.com/user/repos  
 {% endhighlight %}
 
-But, make one essential change to the command above:  
+Or, if you get an error running this command, you may need to alter it slightly with **escape characters** to be sure your quotation marks are parsed properly in your Terminal (this may be helpful for Git for Windows users) like so:  
+
+{% highlight terminal %}
+$ curl -i -H "Authorization: token 38597e1f2g1az2h5870fs6i465rty5w234c97qqq" -d "{ \"name\": \"lab-04-version-control\" }" https://api.github.com/user/repos
+{% endhighlight %}
+
+Whichever one you use, be sure to make one essential change to your command above:  
 
 Replace the fake API token (<span style="color:red">38597e1f2g1az2h5870fs6i465rty5w234c97qqq</span>) with the token you created, copied, and saved on your own _GitHub_ page. This is the equivalent of using your _GitHub_ password to "log in" to the GitHub API from the command line.  
 
