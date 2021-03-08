@@ -128,7 +128,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h3 class="schedule-page-date">Week 5: March 8th</h3>
 ### JavaScript + Python: Introduction, Variables, Types, Input/Output
 
-### [Week 5 Quizlet](https://forms.gle/DPaJmDTxhiJH7X7T9){:target="_blank"}  
+### [Week 5 Quizlet](https://forms.gle/cscqxf27tfv8kpvW8){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Short Video Tutorial</b></h5>
 ###### How to Study for Week 5    
@@ -147,6 +147,15 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003-OL78/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
 * [Lab 5 / Part 2: All the Basics... But in PYTHON!](/Goldford-MTEC1003-OL78/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
+
+<!-- <h5 style="color:Tomato;"><b>Video Tutorial</b></h5>
+###### Setup for Week 5 Labs + _"Greetings"_ In JavaScript + Python   
+
+<div class="video">
+    <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rJjbdYY5wBU" frameborder="0" allowfullscreen></iframe>
+    </figure>
+</div> -->
 
 <!-- <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5> -->
 
