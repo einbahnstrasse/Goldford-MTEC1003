@@ -165,7 +165,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h3 class="schedule-page-date">Week 6: March 15th</h3>
 ### Review: Version Control + Basic JavaScript/Python  
 
-<!-- ### [Week 5 Quizlet](https://forms.gle/DPaJmDTxhiJH7X7T9){:target="_blank"}   -->
+### [Week 6 Quizlet](https://forms.gle/P7Jt8JJGcxAfWEDh6){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Git Review](/Goldford-MTEC1003-OL78/labs/06/git-review.html){:target="_blank"}  
