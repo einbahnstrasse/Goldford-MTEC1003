@@ -215,6 +215,7 @@ Your final **/lab-06-review** folder by the submission deadline should include t
   * shout.html  
   * temperature.html  
   * temperature.py  
+  * miles.html  
   * bmi.py  
 
 * * *
