@@ -183,7 +183,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### Javascript + Python: Conditionals
 <p class="redish"><i>Spring Recess 3/27-4/4. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf" target="_blank">CityTech Spring 2021 Schedule.</a></i></p>
 
-### [Week 6 Review (Quizlet)](https://forms.gle/2vqG7kvmSbujwBM57){:target="_blank"}  
+### [Week 7 Quizlet](https://forms.gle/4u16EXNECjKkGi3H7){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Conditionals](/Goldford-MTEC1003-OL78/labs/06/js-conditionals.html){:target="_blank"}  
