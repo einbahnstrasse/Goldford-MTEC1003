@@ -242,7 +242,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### Javascript + Python: Function Definitions + Function Calls
 <!-- <p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf"  target="_blank">CityTech Spring 2021 Schedule.</a></i></p> -->
 
-### [Week 9 Warmup (Quizlet)](https://forms.gle/c3YzMLmvjhudPEka7){:target="_blank"}  
+### [Week 9 Quiz](https://forms.gle/af3XNsxdzPhcudRn8){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Functions](/Goldford-MTEC1003-OL78/labs/09/js.functions.html){:target="_blank"}  
