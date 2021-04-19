@@ -261,7 +261,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 
 ### [Week 10 Quiz](https://forms.gle/GMCVMiCeCnUm9ZJ88){:target="_blank"}  
 
-<h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>More coming soon!  w Check back as this week gets filled up...</i></h4>
 
 * * *
 
