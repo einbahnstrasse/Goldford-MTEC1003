@@ -256,7 +256,10 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 
 <a id="w10"></a>
 <h3 class="schedule-page-date">Week 10: April 19th</h3>
-### Introduction to Python Data Visualization + Mapping
+<!-- ### Introduction to Python Data Visualization + Mapping -->
+### Review Week  
+
+### [Week 10 Quiz](https://forms.gle/GMCVMiCeCnUm9ZJ88){:target="_blank"}  
 
 <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4>
 
