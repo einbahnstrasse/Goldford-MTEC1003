@@ -269,6 +269,8 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h3 class="schedule-page-date">Week 11: April 26th</h3>
 ### Javascript + Python: More Kinds of Loops  
 
+### [Week 11 Quiz](https://forms.gle/DesnJy6Gera6XLMg9){:target="_blank"}  
+
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
 

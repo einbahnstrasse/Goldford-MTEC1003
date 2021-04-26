@@ -55,7 +55,7 @@ Once you've done this, you're all set.
 
 Example JavaScript Console output should resemble the following:  
 
-<img src="/Goldford-MTEC1003-OL04/assets/gimmymynumber.example.png" alt="Gimmy Example Output" width="600">  
+<img src="/Goldford-MTEC1003-OL78/assets/gimmymynumber.example.png" alt="Gimmy Example Output" width="600">  
 
 <!-- <iframe src="{{ site.baseurl }}/labs/10/gimmymynumber.example.png" width="600px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
 
@@ -106,6 +106,6 @@ At the end of Lab 10 / Part 1, your **lab-10-more-loops** folder should include 
   * whichfloor.html  
   * whichfloor.py  
 
-When finished, move on to [Lab 10 / Part 2: Python + JavaScript Recursions](/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-recursios.html){:target="_blank"} 
+When finished, move on to [Lab 10 / Part 2: Python + JavaScript Recursions](/Goldford-MTEC1003-OL04/labs/10/lab-10-part2-recursios.html){:target="_blank"}
 
 * * *
