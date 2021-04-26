@@ -89,7 +89,7 @@ Example JavaScript Console output should resemble the following:
 
 Example JavaScript Console output should resemble the following:  
 
-<img src="/Goldford-MTEC1003-OL04/assets/stories.example.png" alt="Stories Example Output" width="600">  
+<img src="/Goldford-MTEC1003-OL78/assets/stories.example.png" alt="Stories Example Output" width="600">  
 
 * Once you know it works, recreate a version of this in Python:  
   - In your text editor, create a new file called **whichfloor.py** in your **lab-10-more-loops** repository.  
