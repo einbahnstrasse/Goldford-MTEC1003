@@ -339,6 +339,15 @@ _Don't forget to watch + study the following..._
 * [Click Events](/Goldford-MTEC1003-OL78/labs/11/click.html){:target="_blank"}  
 * [Animation](/Goldford-MTEC1003-OL78/labs/11/animation.html){:target="_blank"}  
 
+<h5 style="color:Tomato;"><b>Example Websites Created by Former Students</b></h5>  
+_For our final lab at the end of this sclass, you will make a personal website that could looks like this..._  
+* [Example #1: Stephany Pena](https://mtec1003-example-sites.github.io/01.stephany.pena/){:target="_blank"}  
+* [Example #2: Karla Ramirez](https://mtec1003-example-sites.github.io/02.karla.ramirez/){:target="_blank"}  
+* [Example #3: Henry Cruz](https://mtec1003-example-sites.github.io/03.henry.cruz/){:target="_blank"}  
+* [Example #4: Antonio Almaguer](https://mtec1003-example-sites.github.io/04.antonio.almaguer/){:target="_blank"}  
+* [Example #5: Eric White](https://mtec1003-example-sites.github.io/05.eric.white/){:target="_blank"}  
+* [Example #6: Samuel Cheung](https://mtec1003-example-sites.github.io/06.samuel.cheung/){:target="_blank"}  
+
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 13 / Part 1: Basic Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13a-part1-basic-canvas.html){:target="_blank"}  
 * [Lab 13 / Part 2: Advanced Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13a-part2-advanced-canvas.html){:target="_blank"}  
