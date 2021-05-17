@@ -363,6 +363,8 @@ _For our final lab at the end of this sclass, you will make a personal website t
 <h3 class="schedule-page-date">Week 14: May 17th</h3>
 ### _GitHub Pages_, Advanced Web Design + Layout
 
+### [Week 14 Quizlet](https://forms.gle/Zmdv3oKnqhaBFY8Z6){:target="_blank"}  
+
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
 <h5 style="color:Tomato;"><b>EXTERNAL TUTORIALS</b></h5>
