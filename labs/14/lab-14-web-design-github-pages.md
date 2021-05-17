@@ -401,7 +401,7 @@ Let's replace the simple contents of each div ("Divider1", "Divider2", etc.) wit
 
 The following text-only news stories have been prepared for you with the proper HTML tags; they're ready to copy and paste inside your **index.html** file. For example, click on the following link for the first story:  
 
-* [Dummy News Story \#1](/Goldford-MTEC1003-OL04/labs/14/resources/story.v01.txt){:target="_blank"}  
+* [Dummy News Story \#1](/Goldford-MTEC1003-OL78/labs/14/resources/story.v01.txt){:target="_blank"}  
 
 ...then **highlight** the entire text file (on Mac: command + A) and **copy** the entire story (command + C).  
 
@@ -442,10 +442,10 @@ Your new div should look like this, beginning on line 21:
 
 Use the following links to copy unique text (i.e. news articles) and paste them inside each div:  
 
-* [Dummy News Story \#2](/Goldford-MTEC1003-OL04/labs/14/resources/story.v02.txt){:target="_blank"}  
-* [Dummy News Story \#3](/Goldford-MTEC1003-OL04/labs/14/resources/story.v03.txt){:target="_blank"}  
-* [Dummy News Story \#4](/Goldford-MTEC1003-OL04/labs/14/resources/story.v04.txt){:target="_blank"}  
-* [Dummy News Story \#5](/Goldford-MTEC1003-OL04/labs/14/resources/story.v05.txt){:target="_blank"}  
+* [Dummy News Story \#2](/Goldford-MTEC1003-OL78/labs/14/resources/story.v02.txt){:target="_blank"}  
+* [Dummy News Story \#3](/Goldford-MTEC1003-OL78/labs/14/resources/story.v03.txt){:target="_blank"}  
+* [Dummy News Story \#4](/Goldford-MTEC1003-OL78/labs/14/resources/story.v04.txt){:target="_blank"}  
+* [Dummy News Story \#5](/Goldford-MTEC1003-OL78/labs/14/resources/story.v05.txt){:target="_blank"}  
 
 Once you've copied in all this text, refresh your **index.html** page, scroll down and notice that each div has a different size. This is because instead of setting their `height:` properties to the same value (in our CSS), we instead invoked the `word-wrap: break-word;` rule, ensuring that each div would only require the amount of space needed for its contents!  
 
