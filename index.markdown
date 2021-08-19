@@ -47,8 +47,8 @@ layout: default
 <a id="contact"></a>
 ### I. Essential Course + Contact Information
 **Course Number:** MTEC1003  
-**Semester:** Spring 2021  
-**Section:** OL78 (36468)  
+**Semester:** Fall 2021  
+**Section:** OL04 (17466)  
 **Location + Time:** Mondays 2:30-5:00 PM [ONLINE]  
 
 **Professor:** Louis Goldford  
@@ -57,7 +57,7 @@ layout: default
 **Office Location:** Zoom (scheduled through the Calendly link above)  
 **Course Slack:** [http://goldford-mtec1003-f21.slack.com/](http://goldford-mtec1003-f21.slack.com/)  
 **Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/){:target="_blank"})  
-<p markdown="span"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em>  
+<p markdown="span" class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em>  
 
 * * *
 
