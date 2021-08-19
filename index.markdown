@@ -23,7 +23,7 @@ layout: default
 
 <!-- <h1>Syllabus</h1> -->
 # Syllabus
-[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL78/resources/week.01/Goldford.MTEC1003.Spring2021.Syllabus.v03.pdf){:target="_blank"}
+[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL78/resources/week.01/Goldford.MTEC1003.Fall2021.Syllabus.v01.pdf){:target="_blank"}  
 
 #### C O N T E N T S  
 1. <a href="#contact">Essential Course + Contact Information</a>  
@@ -55,8 +55,9 @@ layout: default
 **Email:** <a href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a>  
 **Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/LouisGoldford](https://calendly.com/LouisGoldford){:target="_blank"})  
 **Office Location:** Zoom (scheduled through the Calendly link above)  
+**Course Slack:** [http://goldford-mtec1003-f21.slack.com/](http://goldford-mtec1003-f21.slack.com/)  
 **Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/){:target="_blank"})  
-**Course Slack:** [http://goldford-mtec1003.slack.com/](http://goldford-mtec1003.slack.com/)  
+<p markdown="span"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em></span>  
 
 * * *
 
@@ -126,6 +127,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL78/resources.html){:target="_blank
 * Weekly course sessions will be held on Zoom. Use the recurring virtual Zoom classroom link emailed to you at the start of the semester.
 * City Tech email accounts are our official means of communication, but we will also use Slack and OpenLab for additional discussion.  
 * **Requests to the instructor for assistance:** Send an email, or a message on Slack. I will respond during normal working hours; requests arriving "after hours" will be answered on subsequent weekdays.  
+* [Professional communication etiquette](https://www.indeed.com/career-advice/career-development/professional-email-salutations){:target="_blank"} is expected in our written correspondence. In emails and messages, this includes polite and appropriate salutations, greetings, and courtesies.  
 * **Virtual office hours are available through my Calendly link** _(see I. Essential Course + Contact Information, above)_. If you are frequently missing from class discussion, missing lab assignments, or demonstrating poor comprehension of our materials, **I may occasionally require office hours visits with you, in which case I’ll send you a message through Slack or in an email. It is my expectation that you respond promptly and sign up for a time** to discuss any such perceived issues, and failure to do so will be reflected in negative participation points.  
 * Slack should be used during regular hours. Please respond during the workday as promptly as you can to inquiries from the instructor (both for email and messages sent on Slack). _Multiple successive days without a response is unacceptable._
 * **Actively participate** in our online class discussions. **Thoughtfully contribute to a positive classroom environment,** while supporting and challenging your colleagues’ ideas.
@@ -156,78 +158,78 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 <tbody>
 <tr>
 <td markdown="span">1</td>
-<td markdown="span">2/1</td>
+<td markdown="span">8/30</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w1" target="_blank">File System: Introduction, Navigation, Paths, Output, Download, Uncompress</a></td>
 </tr>
 <tr>
 <td markdown="span">2</td>
-<td markdown="span">2/8</td>
+<td markdown="span">9/13</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w2" target="_blank">File System: Shell Scripting, Permissions, Date/Time, Editing Files</a></td>
 </tr>
 <tr>
 <td markdown="span">3</td>
-<td markdown="span">2/22</td>
+<td markdown="span">9/20</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w3" target="_blank">Version Control: Introduction to GIT, Concepts + Basic Commands</a></td>
 </tr>
 <tr>
 <td markdown="span">4</td>
-<td markdown="span">3/1</td>
+<td markdown="span">9/27</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w4" target="_blank">Version Control: Local/Remote Repositories + Collaboration Via _GitHub_</a></td>
 </tr>
 <tr>
 <td markdown="span">5</td>
-<td markdown="span">3/8</td>
+<td markdown="span">10/4</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w5" target="_blank">JavaScript + Python: Introduction, Variables, Types, Input/Output</a></td>
 </tr>
 <tr>
 <td markdown="span">6</td>
-<td markdown="span">3/15</td>
+<td markdown="span">10/18</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w6" target="_blank">Review: Version Control + Basic JavaScript/Python</a></td>
 </tr>
 <tr>
 <td markdown="span">7</td>
-<td markdown="span">3/22</td>
+<td markdown="span">10/25</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w7" target="_blank">Javascript + Python: Conditionals</a></td>
 </tr>
 <tr>
 <td markdown="span">8</td>
-<td markdown="span">4/5</td>
+<td markdown="span">11/1</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w8" target="_blank">Javascript + Python: For Loops<br />Javascript + Python: Debugging</a>
 </td>
 </tr>
 <tr>
 <td markdown="span">9</td>
-<td markdown="span">4/12</td>
+<td markdown="span">11/8</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w9" target="_blank">Javascript + Python: Functions Definitions + Function Calls</a></td>
 </tr>
 <tr>
 <td markdown="span">10</td>
-<td markdown="span">4/19</td>
+<td markdown="span">11/15</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w10" target="_blank">Introduction to Python Data Visualization + Mapping</a></td>
 </tr>
 <tr>
 <td markdown="span">11</td>
-<td markdown="span">4/26</td>
+<td markdown="span">11/22</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w11" target="_blank">HTMJavascript + Python: More Kinds of Loops</a></td>
 </tr>
 <tr>
 <td markdown="span">12</td>
-<td markdown="span">5/3</td>
+<td markdown="span">11/29</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w12" target="_blank">HTML/CSS: Introduction</a></td>
 </tr>
 <tr>
 <td markdown="span">13</td>
-<td markdown="span">5/10</td>
+<td markdown="span">12/6</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w13" target="_blank">HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)</a></td>
 </tr>
 <tr>
 <td markdown="span">14</td>
-<td markdown="span">5/17</td>
+<td markdown="span">12/13</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w14" target="_blank">Introduction to _GitHub_ Pages <br />Advanced Web Design + Layout</a></td>
 </tr>
 <tr>
 <td markdown="span">15</td>
-<td markdown="span">5/24</td>
+<td markdown="span">12/20</td>
 <td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w15" target="_blank">Complete + Present Final Assignments</a></td>
 </tr>
 </tbody>
@@ -241,7 +243,7 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 _Participation is based on attendance and your engagement on Zoom, and will form a substantial portion of your grade._
 
 #### IX. Part I. Virtual Participation on Zoom  
-* You will be encouraged but not required to share your video connection for the duration of each class. Occasionally you will also be called upon to share your audio and screen-sharing connections, which remain required (e.g. for asking or answering questions, demonstrating your work, troubleshooting your code, etc).  
+* You will be encouraged but not required to share your video connection for the duration of each class. You will be called upon to share your audio and screen-sharing connections, which remain required (for asking/answering questions, demonstrating your work, troubleshooting your code, etc). Failure to unmute your Zoom microphone and respond within 15 seconds of being called upon will be considered an absence from class, and will result in lowered participation scores for the day. Technical difficulties are no excuse (see policy regarding internet connection below): you should test your connection before class, and if there are any problems, they must be reported in advance.   
 * If you choose not to share your video, your engagement and presence must still be felt through your active participation in other manners: e.g. responses to prompts and questions, offering possible solutions and perspectives where appropriate, etc.  
 * Find a quiet and presentable space that you don't mind sharing through your Zoom audio (and possibly video) connection. You can also choose a virtual background within Zoom settings if you want to share your video but need to preserve the privacy of your space.  
 * In lieu of a video sharing attendance requirement, you will complete weekly online quizzes as part of your participation grade during our allotted class time. These quizzes usually take about 15-20 minutes to complete and will begin promptly at the start of each class. Therefore, your prompt arrival at 2:30 ensures that you have the full amount of time to demonstrate your participation. Each quiz is worth a variable number of points each week and is entirely based on our slides and other materials located under the SCHEDULE TAB of our Course Website, as well as issues that may have arisen during our previous class discussions.  
