@@ -57,12 +57,12 @@ layout: default
 **Office Location:** Zoom (scheduled through the Calendly link above)  
 **Course Slack:** [http://goldford-mtec1003-f21.slack.com/](http://goldford-mtec1003-f21.slack.com/)  
 **Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/){:target="_blank"})  
-<p markdown="span" class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em>  
+<p class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em></p>  
 
-* * *
+* * *  
 
-<a id="descr"></a>
-### II. Course Description
+<a id="descr"></a>  
+### II. Course Description  
 MTEC1003 examines the fundamental topics, tools, skills, and best practices that support creative programming. At its core we ask how the user can gain finer control over their computer and make better use of it in their personal practice. Through our weekly lab assignments, demonstrations, and supplementary resources, students will gain fluency with the tools necessary to construct websites, using essential front-end technologies such as HTML/CSS and JavaScript. Additionally, students will implement fundamental programming paradigms in JavaScript and Python, and will harness the computer's powerful administrative functionality on the Unix command line. We will organize our workflow intelligently with source code management (i.e. Git). Our work prepares the student for subsequent classes in the MTEC course rotation. Time permitting, we will also touch on the basics of data mapping for artistic purposes.
 
 In this semester's online version of MTEC1003, and in lieu of a physical classroom, we will rely on a few of the interactive coding tools available to us as distant learners — for example, some of our tutorials will be completed on Google Colaboratory, and we will heavily utilize Slack for essential course communication. We may also use OpenLab for some correspondence.
