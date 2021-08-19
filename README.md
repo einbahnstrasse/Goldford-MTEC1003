@@ -1,4 +1,4 @@
-# Goldford-MTEC1103-Spring2021
+# Goldford-MTEC1103-Fall2021
 Course website for students of Louis Goldford's MTEC1003 Media Computation Skills Lab
 
 ## The site is live here:
