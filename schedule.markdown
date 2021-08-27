@@ -18,7 +18,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 <a id="w1"></a>
 <h3 class="schedule-page-date">Week 1: August 30th</h3>
 ### File System: Introduction, Navigation, Paths, Output, Download, Uncompress  
-### [Week #1 Survey/Quiz — Personal Info, Syllabus Elements](https://forms.gle/6q2ZLfd9hfPfpqQZ6){:target="_blank"}  
+### [Week #1 Survey/Quiz — Personal Info, Syllabus Elements](https://forms.gle/ZFSQ9DXqTrmbedXXA){:target="_blank"}  
 * _Complete the quizlet above as part of today's participation._  
 
 <h5 style="color:Tomato;"><b>Start-of-Semester Business</b></h5>
