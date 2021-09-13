@@ -56,7 +56,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
 <p class="redish">Week 2 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>
 
-### [Week 2 Quizlet](https://forms.gle/h9NqSpMnerG3gwPf7){:target="_blank"}  
+### [Week 2 Quizlet](https://forms.gle/M63TqY7QBKEZUPUu5){:target="_blank"}  
 * _Complete the quizlet above as part of today's attendance + participation._  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
