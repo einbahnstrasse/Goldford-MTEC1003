@@ -38,7 +38,7 @@ _Check your operating system for compatibility and install one of these:_
 
 * * *
 
-### 3. Homebrew  
+### 3. Homebrew _(macOS and Linux systems only!)_
 _Package management system to ease installation of other tools and software._  
 
 1. INSTALL:  
@@ -60,6 +60,9 @@ _Package management system to ease installation of other tools and software._
 ### 4. GIT  
 _Version control system for tracking changes in development code or any set of files._  
 <p class="redish"><i>You'll be using GIT (and GitHub.com) to submit your lab homework every week, so be sure to set this up!</i></p>  
+
+* Windows Users: install GIT using [Git for Windows](https://gitforwindows.org/){:target="_blank"}  
+* macOS users: Follow the instructions using Homebrew below...  
 
 1. INSTALL:  
 		`brew install git`  
