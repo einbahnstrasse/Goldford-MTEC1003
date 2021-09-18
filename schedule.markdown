@@ -54,7 +54,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <a id="w2"></a>
 <h3 class="schedule-page-date">Week 2: September 13th</h3>
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
-<p class="redish">Week 2 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>
+<p class="redish"><i>Week 2 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>
 
 ### [Week 2 Quizlet](https://forms.gle/M63TqY7QBKEZUPUu5){:target="_blank"}  
 * _Complete the quizlet above as part of today's attendance + participation._  
@@ -79,7 +79,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### Version Control: Introduction to GIT, Concepts + Basic Commands
 
 <!-- ### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}   -->
-### [Week 3 Quizlet](https://forms.gle/z6EMvJkfCTZJMXCC8){:target="_blank"}  
+### [Week 3 Quizlet](https://forms.gle/PKLw1Qkmmm8cVmR76){:target="_blank"}  
 * _Complete the quizlet above as part of today's attendance + participation._   
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
@@ -88,8 +88,8 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * [Making, Saving, and Sharing Changes](/Goldford-MTEC1003-OL78/labs/04/changing-files.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
-<!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/05/lab-05-git-part-01.html)   -->
-<!-- * [Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"}   -->
+* [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/05/lab-05-git-part-01.html){:target="_blank"}  
+[Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"}  
 <div class="video">
     <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/RiXiihejeHc" frameborder="0" allowfullscreen></iframe>
