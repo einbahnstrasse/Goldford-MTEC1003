@@ -58,17 +58,22 @@ This is your personal API token; don't share it with anybody! We'll use it inste
 
 Copy your token value to the clipboard (if you haven't just done it in the previous steps). Now, we are ready to link our local and remote repositories using the access token we've just created.  
 
-In Terminal, resuming just where we'd paused our work in [Lab 4 / Part 2.](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}, type the following long command:  
+In Terminal, resuming just where we'd paused our work in either [Lab 3](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"} or [Lab 4 / Part 2](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}, type the following long command:  
 
 {% highlight terminal %}
-$ curl -i -H "Authorization: token 38597e1f2g1az2h5870fs6i465rty5w234c97qqq" -d '{ "name": "lab-04-version-control" }' https://api.github.com/user/repos  
+$ curl -i -H "Authorization: token 38597e1f2g1az2h5870fs6i465rty5w234c97qqq" -d '{ "name": "lab-03-git-intro" }' https://api.github.com/user/repos  
 {% endhighlight %}
+
+
+_(The long command above assumes you're currently working on [Lab 3](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"}, but if you are working on [Lab 4 / Part 2](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}, simply replace the "name": field with "lab-04-version-control".)_
 
 Or, if you get an error running this command, you may need to alter it slightly with **escape characters** to be sure your quotation marks are parsed properly in your Terminal (this may be helpful for Git for Windows users) like so:  
 
 {% highlight terminal %}
-$ curl -i -H "Authorization: token 38597e1f2g1az2h5870fs6i465rty5w234c97qqq" -d "{ \"name\": \"lab-04-version-control\" }" https://api.github.com/user/repos
+$ curl -i -H "Authorization: token 38597e1f2g1az2h5870fs6i465rty5w234c97qqq" -d "{ \"name\": \"lab-03-git-intro\" }" https://api.github.com/user/repos
 {% endhighlight %}
+
+_(Again, if you are working on [Lab 4 / Part 2](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}, simply replace the "name": field with "lab-04-version-control".)_
 
 Whichever one you use, be sure to make one essential change to your command above:  
 
@@ -90,11 +95,11 @@ etag: "38597e1f2g1az2h5870fs6i465rty5w234c97qqq38597e1f2g1az2h5870fs6i465rty5w23
 x-oauth-scopes: repo
 x-accepted-oauth-scopes: public_repo, repo
 location: https://api.github.com/repos/yourUserName/lab-04-version-control
-...many...
-...more...
-...lines...
-...of...
-...text!...
+_...many..._  
+_...more..._  
+_...lines..._  
+_...of..._  
+_...text!..._  
 "allow_squash_merge": true,
 "allow_merge_commit": true,
 "allow_rebase_merge": true,
