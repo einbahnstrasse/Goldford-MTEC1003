@@ -95,11 +95,11 @@ etag: "38597e1f2g1az2h5870fs6i465rty5w234c97qqq38597e1f2g1az2h5870fs6i465rty5w23
 x-oauth-scopes: repo
 x-accepted-oauth-scopes: public_repo, repo
 location: https://api.github.com/repos/yourUserName/lab-04-version-control
-_...many..._  
-_...more..._  
-_...lines..._  
-_...of..._  
-_...text!..._  
+...many...  
+...more...  
+...lines...  
+...of...  
+...text!...  
 "allow_squash_merge": true,
 "allow_merge_commit": true,
 "allow_rebase_merge": true,
