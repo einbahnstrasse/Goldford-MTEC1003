@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Creating Your Remote Repository Using a _GitHub_ API Access Token
-_This brief tutorial proposes an alternative to the original method of linking your remote repository. You are here because you've been redirected from [Lab 4 / Part 2.](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}_  
+_This brief tutorial proposes an alternative to the original method of linking your remote repository. You are here because you've been redirected from either [Lab 3](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"} or [Lab 4 / Part 2](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}_  
 
 In this tutorial, we'll be:  
 1. <a href="#mktoken">Creating a <i>GitHub</i> API access <b>token</b> to use on the command line, and</a>    
@@ -111,6 +111,6 @@ Follow the link printed towards the top under "location:" to verify that your ne
 
 _Congratulations!_ You've successfully created your new **remote** repository (on _GitHub_) and you're now ready to link it to your **local** repository, and finally you'll be able to `git commit` and `git push` from the command line!  
 
-Once you've completed the steps in this tutorial, return to the tutorial you are actively working on: either [Lab 3](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"} or [Lab 4 / Part 2.](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"} exactly where the link to this tutorial appears, and resume work on your lab.    
+Once you've completed the steps in this tutorial, return to the tutorial you are actively working on: either [Lab 3](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"} or [Lab 4 / Part 2](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"} exactly where the link to this tutorial appears, and resume work on your lab.    
 
 * * *  
