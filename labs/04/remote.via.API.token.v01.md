@@ -111,6 +111,6 @@ Follow the link printed towards the top under "location:" to verify that your ne
 
 _Congratulations!_ You've successfully created your new **remote** repository (on _GitHub_) and you're now ready to link it to your **local** repository, and finally you'll be able to `git commit` and `git push` from the command line!  
 
-Once you've completed the steps in this tutorial, return to [Lab 4 / Part 2.](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"} exactly where the link to this tutorial appears, and resume work on the lab.    
+Once you've completed the steps in this tutorial, return to the tutorial you are actively working on: either [Lab 3](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"} or [Lab 4 / Part 2.](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"} exactly where the link to this tutorial appears, and resume work on your lab.    
 
 * * *  
