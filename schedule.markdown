@@ -86,6 +86,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * [Introduction to Version Control + Git](/Goldford-MTEC1003-OL78/labs/04/version-control.html){:target="_blank"}  
 * [Creating and Setting Up Repositories](/Goldford-MTEC1003-OL78/labs/04/creating-repositories.html){:target="_blank"}  
 * [Making, Saving, and Sharing Changes](/Goldford-MTEC1003-OL78/labs/04/changing-files.html){:target="_blank"}  
+* [More info on GitHub personal access tokens](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
 <!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/05/lab-05-git-part-01.html){:target="_blank"}   -->
