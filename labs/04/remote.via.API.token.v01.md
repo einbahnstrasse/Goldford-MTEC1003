@@ -110,7 +110,7 @@ location: https://api.github.com/repos/yourUserName/lab-04-version-control
 $
 {% endhighlight %}
 
-Follow the link printed towards the top under "location:" to verify that your new remote repository is working on _GitHub._ It should follow the general pattern of https://api.github.com/repos/yourUserName/lab-04-version-control. When you see the name of the repository online, you know it worked:  
+Follow the link printed towards the top under "location:" to verify that your new remote repository is working on _GitHub._ It should follow the general pattern of https://github.com/yourUserName/lab-03-git-intro.git. When you see the name of the repository online, you know it worked:  
 
 <img src="/Goldford-MTEC1003-OL78/labs/04/img.token/07.png" width="2000px">
 
