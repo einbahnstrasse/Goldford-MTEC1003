@@ -52,7 +52,7 @@ When you're ready, `copy` your revised command, `paste` it on the command line, 
 
 In your Terminal, the command and its output should resemble this:
 
-<img src="/Goldford-MTEC1003-OL78/labs/04/img.clone/img.clone.02.clone.repo.png" width="2000px">  
+<img src="/Goldford-MTEC1003-OL78/labs/04/img.clone/img.clone.02.clone.repo.png" width="600px">  
 
 _Congratulations!_ You've successfully **CLONED** your **remote** repository onto your local computer and you're now ready to run the normal sequence of `git` commands, such as `git status`, `git commit`, and `git push`, from your command line.  
 
