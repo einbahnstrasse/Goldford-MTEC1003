@@ -64,19 +64,6 @@ In Terminal, resuming just where we'd paused our work in either [Lab 3](/Goldfor
 $ curl -i -H "Authorization: token 38597e1f2g1az2h5870fs6i465rty5w234c97qqq" -d '{ "name": "lab-03-git-intro" }' https://api.github.com/user/repos  
 {% endhighlight %}
 
-
-_(The long command above assumes you're currently working on [Lab 3](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"}, but if you are working on [Lab 4 / Part 2](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}, simply replace the "name": field with "lab-04-version-control".)_
-
-Or, if you get an error running this command, you may need to alter it slightly with **escape characters** to be sure your quotation marks are parsed properly in your Terminal (this may be helpful for Git for Windows users) like so:  
-
-{% highlight terminal %}
-$ curl -i -H "Authorization: token 38597e1f2g1az2h5870fs6i465rty5w234c97qqq" -d "{ \"name\": \"lab-03-git-intro\" }" https://api.github.com/user/repos
-{% endhighlight %}
-
-_(Again, if you are working on [Lab 4 / Part 2](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}, simply replace the "name": field with "lab-04-version-control".)_
-
-Whichever one you use, be sure to make one essential change to your command above:  
-
 Replace the fake API token (<span style="color:red">38597e1f2g1az2h5870fs6i465rty5w234c97qqq</span>) with the token you created, copied, and saved on your own _GitHub_ page. This is the equivalent of using your _GitHub_ password to "log in" to the GitHub API from the command line.  
 
 When you're ready, press `<ENTER>` to run the command.  
