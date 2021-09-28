@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Cloning a Remote Repository Using Your _GitHub_ API Access Token  
-_This brief tutorial proposes a quick & easy way of setting up your weekly repositories. Use this tutorial beginning in Week 5.{:target="_blank"}_  
+_This brief tutorial proposes a quick & easy way of setting up your weekly repositories. Use this tutorial beginning in Week 5. **BOOKMARK** this page to easily retrieve it in the future._  
 
 In this tutorial, we'll be:  
 1. <a href="#remote">Creating a remote repository on <i>GitHub</i>.</a>    
