@@ -46,7 +46,7 @@ Before running this in Terminal, in your text editor replace the fake API token 
 
 Also, be sure to <span style="color:red">change the name of the repository in this command</span> _(beyond week 5)_ to connect it to the remote repository you created for the current week. So, instead of `lab-05-js-py.git` you will need to be sure this name accurately matches the name you gave your repo on _GitHub_.  
 
-Does everything look good? Any errors? <font size="2">_**Check your spelling!**_</font>    
+Does everything look good? Any errors? <span style="color:red; font-size:2em;"><i><b>Check your spelling!</b></i></span>    
 
 When you're ready, `copy` your revised command, `paste` it on the command line, and press `<ENTER>` to run the command.  
 
