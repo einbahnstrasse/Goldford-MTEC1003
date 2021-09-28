@@ -44,7 +44,7 @@ $ git clone https://38597e1f2g1az2h5870fs6i465rty5w234c97qqq@github.com/yourGitH
 
 Before running this in Terminal, in your text editor replace the fake API token (<span style="color:red">38597e1f2g1az2h5870fs6i465rty5w234c97qqq</span>) with the token you created, and replace <span style="color:red">yourGitHubUserName</span> with your actual _GitHub_ username. This is the equivalent of using your _GitHub_ password to "log in" to the GitHub API from the command line.  
 
-Also, be sure to **change the name of the repository in this command** _(beyond week 5)_ to connect it to the remote repository you created for the current week. So, instead of `lab-05-js-py.git` you will need to be sure this name accurately matches the name you gave your repo on _GitHub_.  
+Also, be sure to <span style="color:red">change the name of the repository in this command</span> _(beyond week 5)_ to connect it to the remote repository you created for the current week. So, instead of `lab-05-js-py.git` you will need to be sure this name accurately matches the name you gave your repo on _GitHub_.  
 
 Does everything look good? Any errors? _**Check your spelling!**_  
 
