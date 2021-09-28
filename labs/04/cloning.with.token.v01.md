@@ -81,7 +81,7 @@ In your Terminal, these commands and their output should resemble the following:
 
 <img src="/Goldford-MTEC1003-OL78/labs/04/img.clone/img.clone.04a.status.add.commit.push.png" width="600px">  
 
-As always, your final step should be sure to **check your _GitHub_ repository** after running your `git push` command, to **VERIFY** that your most current work is reflected on _GitHub_, i.e. to be sure you've properly submitted your labs!  
+As always, your final step should be to **check your _GitHub_ repository** after running your `git push` command, in order to **VERIFY** that your most current work is reflected on _GitHub_, i.e. to be sure you've properly submitted your labs!  
 
 You can **VERIFY** this from the front page of your _GitHub_ repo in 3 easy ways:  
 
