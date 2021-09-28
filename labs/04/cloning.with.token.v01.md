@@ -29,6 +29,8 @@ After you create your repository, you're ready to [_**CLONE**_](https://git-scm.
 <a id="clone"></a>
 ### 2. _**CLONE**_ the Repo Using Your _GitHub_ API Access Token  
 
+In `git`, making a `clone` is the process of copying of a _**remote**_ repository onto a computer, thus creating a _**local**_ repository. So, for lab 5 and all future labs, we'll start by creating the remote repo first (as we have above in step 1), and then we'll take the following steps to `clone` that remote onto our computer. When we do this, we can instantly start sending our commits to the remote. It's a faster process than what we've done in Weeks 3 and 4.   
+
 Retrieve your _GitHub_ API Access Token [created in Week 3](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/04/remote.via.API.token.v01.html){:target="_blank"}, and copy your token value to the clipboard.
 
 In Terminal, navigate to your **mtec1003 folder**, where you keep repositories for this class. It should be something like:  
