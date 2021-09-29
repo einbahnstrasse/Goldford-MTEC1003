@@ -36,13 +36,6 @@ Alternatively, you can simply run `python3` in the Terminal instead of `python`,
 ## Setting Up Your Lab 10 Repository  
 
 <span style="color: red;">_You should already have your repository set up after completing Lab 10 / Part 1._</span>   
-<!--
-_Note that_ **ALL FILES MUST BE CREATED IN A NEW LAB 10 REPOSITORY!**  
-* On GitHub, create and name your new repository <span style="color: tomato;">**lab-10-more-loops**</span> and <span style="color: tomato;">**clone**</span> it inside your <span style="color: tomato;">**/mtec1003**</span> folder.  
-* Use your _**git cheatsheets**_ and the walkthrough(s) from previous lab(s) as references for how to do this!  
-* You may find it particularly time-saving to set up your repositories using the method described in [Lab 5 / Part 1.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
-
-Once you've done this, you're all set.   -->
 
 * * *  
 
