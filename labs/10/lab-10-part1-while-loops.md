@@ -36,6 +36,7 @@ Alternatively, you can simply run `python3` in the Terminal instead of `python`,
 
 _ProTip:_ **Bookmark the following page so that you can easily repeat these steps in your future labs!**  
 * [Cloning a Remote Repo Using Your _GitHub_ API Access Token](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/04/cloning.with.token.v01.html){:target="_blank"}   
+* On _GitHub_, create and name your new repository **lab-10-more-loops** and **clone** it inside your **/mtec1003** folder.  
 * Once you've completed the steps at the link above, you're ready to begin.  
 * Open up your text editor (e.g. Atom, Sublime Text, etc.)...  
 * Note: **ALL FILES YOU CREATE BELOW MUST BE SUBMITTED IN YOUR NEW REPOSITORY THIS WEEK.**  
