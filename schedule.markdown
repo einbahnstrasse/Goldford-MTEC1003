@@ -129,7 +129,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h3 class="schedule-page-date">Week 5: October 4th</h3>
 ### JavaScript + Python: Introduction, Variables, Types, Input/Output
 
-### [Week 5 Quizlet](https://forms.gle/cscqxf27tfv8kpvW8){:target="_blank"}  
+### [Week 5 Quizlet](https://forms.gle/27cXX47ERkRchwWx7){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Short Video Tutorial</b></h5>
 ###### How to Study for Week 5    
