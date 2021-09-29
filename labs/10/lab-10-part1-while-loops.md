@@ -34,12 +34,11 @@ Alternatively, you can simply run `python3` in the Terminal instead of `python`,
 <a id="repo"></a>
 ## Setting Up Your Lab 10 Repository  
 
-_Note that_ **ALL FILES MUST BE CREATED IN A NEW LAB 10 REPOSITORY!**  
-* On GitHub, create and name your new repository <span style="color: tomato;">**lab-10-more-loops**</span> and <span style="color: tomato;">**clone**</span> it inside your <span style="color: tomato;">**/mtec1003**</span> folder.  
-* Use your _**git cheatsheets**_ and the walkthrough(s) from previous lab(s) as references for how to do this!  
-* You may find it particularly time-saving to set up your repositories using the method described in [Lab 5 / Part 1.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
-
-Once you've done this, you're all set.  
+_ProTip:_ **Bookmark the following page so that you can easily repeat these steps in your future labs!**  
+* [Cloning a Remote Repo Using Your _GitHub_ API Access Token](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/04/cloning.with.token.v01.html){:target="_blank"}   
+* Once you've completed the steps at the link above, you're ready to begin.  
+* Open up your text editor (e.g. Atom, Sublime Text, etc.)...  
+* Note: **ALL FILES YOU CREATE BELOW MUST BE SUBMITTED IN YOUR NEW REPOSITORY THIS WEEK.**  
 
 * * *  
 

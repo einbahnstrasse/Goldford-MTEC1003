@@ -41,6 +41,12 @@ But this time, we'll employ some more advanced web design concepts by building a
 
 In order to do this, start by creating a new repository on _GitHub_. Call it **lab-14-site** and then **CLONE** it onto your local machine inside your **/mtec1003** folder. (As always, use your knowledge of git and all of your previous references in order to do this.)   
 
+_ProTip:_ **Bookmark the following page so that you can easily repeat these steps in your future labs!**  
+* [Cloning a Remote Repo Using Your _GitHub_ API Access Token](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/04/cloning.with.token.v01.html){:target="_blank"}   
+* Once you've completed the steps at the link above, you're ready to begin.  
+* Open up your text editor (e.g. Atom, Sublime Text, etc.)...  
+* Note: **ALL FILES YOU CREATE BELOW MUST BE SUBMITTED IN YOUR NEW REPOSITORY THIS WEEK.**  
+
 * * *   
 
 <a id="diving"></a>
