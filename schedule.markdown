@@ -165,7 +165,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <a id="w6"></a>
 <h3 class="schedule-page-date">Week 6: October 18th</h3>
 ### Review: Version Control + Basic JavaScript/Python  
-<p class="redish">Week 6 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>  
+<p class="redish">Week 6 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></p>  
 
 ### [Week 6 Quizlet](https://forms.gle/aRLbFrLLbnkXhNbw5){:target="_blank"}  
 
