@@ -165,7 +165,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <a id="w6"></a>
 <h3 class="schedule-page-date">Week 6: October 18th</h3>
 ### Review: Version Control + Basic JavaScript/Python  
-<p class="redish">Week 6 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></p>  
+<p class="redish"><i>Week 6 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>  
 
 ### [Week 6 Quizlet](https://forms.gle/aRLbFrLLbnkXhNbw5){:target="_blank"}  
 
@@ -186,7 +186,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <!-- <p class="redish"><i>Spring Recess 3/27-4/4. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf" target="_blank">CityTech Spring 2021 Schedule.</a></i></p> -->  
 <p class="redish"><i>Midterm grades reported via email by 10/28. See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>  
 
-### [Week 7 Quizlet](https://forms.gle/4u16EXNECjKkGi3H7){:target="_blank"}  
+### [Week 7 Quizlet](https://forms.gle/CcH4KJMx9CFPZ3G98){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Conditionals](/Goldford-MTEC1003-OL78/labs/06/js-conditionals.html){:target="_blank"}  
