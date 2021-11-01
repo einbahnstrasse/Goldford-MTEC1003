@@ -205,7 +205,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### JavaScript + Python: For Loops  
 <!-- <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf"  target="_blank">CityTech Spring 2021 Schedule.</a></i></p>   -->
 
-### [Week 8 Quiz](https://forms.gle/a87JkThF2agjXLgh6){:target="_blank"}  
+### [Week 8 Quiz](https://forms.gle/AUejB3RRx93ubwhZ7){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [For Loops in JavaScript](/Goldford-MTEC1003-OL78/labs/08/js.for.loops.v02.html){:target="_blank"}  
