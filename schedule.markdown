@@ -262,7 +262,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <!-- ### Introduction to Python Data Visualization + Mapping -->
 ### Review Week  
 
-### [Week 10 Quiz](https://forms.gle/GMCVMiCeCnUm9ZJ88){:target="_blank"}  
+### [Week 10 Quiz](https://forms.gle/Qry4hh2ebBrvXFRQ9){:target="_blank"}  
 
 <h4 style="color:yellow;"><i>More coming soon!  w Check back as this week gets filled up...</i></h4>
 
