@@ -264,7 +264,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 
 ### [Week 10 Quiz](https://forms.gle/Qry4hh2ebBrvXFRQ9){:target="_blank"}  
 
-<h4 style="color:yellow;"><i>More coming soon!  w Check back as this week gets filled up...</i></h4>
+<h4 style="color:yellow;"><i>Nothing to prepare. This week we'll be reviewing for loops and discussing some more advanced features of functions and variables, including a discussion of "variable scope."</i></h4>
 
 * * *
 
