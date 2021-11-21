@@ -272,7 +272,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h3 class="schedule-page-date">Week 11: November 22nd</h3>
 ### Javascript + Python: More Kinds of Loops  
 
-### [Week 11 Quiz](https://forms.gle/DesnJy6Gera6XLMg9){:target="_blank"}  
+### [Week 11 Quiz](https://forms.gle/onzE8V11mx2HLbwAA){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
@@ -300,6 +300,7 @@ _Don't forget to watch + study the following..._
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 10 / Part 1: While Loops](/Goldford-MTEC1003-OL78/labs/10/lab-10-part1-while-loops.html){:target="_blank"}  
 * [Lab 10 / Part 2: Recursions](/Goldford-MTEC1003-OL78/labs/10/lab-10-part2-recursions.html){:target="_blank"}  
+* <p class="redish"><em>Make sure you listen to the entire Ladybug Podcast episode (find it under Week 8, above) before next class! Our next quiz will include questions related to this podcast and to the topic of debugging.</em></p>  
 
 * * *
 
