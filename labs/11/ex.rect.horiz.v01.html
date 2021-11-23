@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rectangle Horizontal</title>
+  </head>
+  <body>
+    <canvas id="sketch" width="800" height="400" style="border: 1px solid gray;"></canvas>
+    <script>
+      document.addEventListener('DOMContentLoaded', main);
+
+      var sketch;
+      var context;
+
+      var rectangle = {'x':0, 'y':100};
+      var dx = 1;
+      var fps = 10;
+
+      function main() {
+      	sketch = document.getElementById('sketch');
+      	context = sketch.getContext("2d");
+      	setInterval(animate, fps);
+      }
+
+      function animate() {
+      	context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);
+      	context.fillRect(rectangle.x, rectangle.y, 120, 40);
+      	rectangle.x = rectangle.x + dx;
+      }
+
+    </script>
+
+  </body>
+</html>
