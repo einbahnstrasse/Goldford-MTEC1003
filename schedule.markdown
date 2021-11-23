@@ -344,7 +344,7 @@ _Don't forget to watch + study the following..._
 * [Animation](/Goldford-MTEC1003-OL78/labs/11/animation.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Example Websites Created by Former Students</b></h5>  
-_For our final lab at the end of this sclass, you will make a personal website that could looks like this..._  
+_For our final lab at the end of this class, you will make a personal website that could looks like this..._  
 * [Example #1: Stephany Pena](https://mtec1003-example-sites.github.io/01.stephany.pena/){:target="_blank"}  
 * [Example #2: Karla Ramirez](https://mtec1003-example-sites.github.io/02.karla.ramirez/){:target="_blank"}  
 * [Example #3: Henry Cruz](https://mtec1003-example-sites.github.io/03.henry.cruz/){:target="_blank"}  
