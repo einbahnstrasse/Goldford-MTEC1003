@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MTEC1003 - JavaScript For Loop</title>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700" />
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/slides.css">
+	<link rel="stylesheet" type="text/css" href="resources/../../../resources/css/syntax.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+<section class="title-slide">
+
+  <h1 id="click-events">Click Events</h1>
+
+  <footer>Media Computation Skills Lab <br />MTEC 1003</footer>
+
+</section>
+
+<section>
+  <h3 id="what-will-this-code-output-in-the-javascript-console">What Will This Code Output in the JavaScript Console?</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span> <span class="nx">greet</span><span class="p">()</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="s2">&quot;hello&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">print</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">greet</span><span class="p">);</span>
+<span class="c1">// gives us a function without a name</span>
+</code></pre></div>
+
+  <div class="incremental">
+    <ul>
+      <li>function</li>
+      <li>remember &#8230; functions are types</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h3 id="anonymous-functions">Anonymous Functions</h3>
+
+  <p>We can create functions without names!</p>
+
+  <div class="highlight"><pre><code class="js"><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">draw_exclamation</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">event</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">// gives us a function without a name</span>
+</code></pre></div>
+
+  <p>&#8230;and we can pass these as arguments to another function.</p>
+
+</section>
+
+<section>
+  <h3 id="a-click">A Click</h3>
+
+  <p>In addition to detecting when a page loads, you can <strong>listen for when an element is clicked</strong>:</p>
+
+  <div class="highlight"><pre><code class="js"><span class="nx">sketch</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// your code here... event.x, event.y</span>
+<span class="p">});</span>
+</code></pre></div>
+
+  <ul>
+    <li>note that we pass in an <em>anonymous</em> function as the second argument rather than a named argument</li>
+    <li>it takes a single parameter, which contains the x and y values of where the click occurred</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="event-objects">Event Objects</h3>
+
+  <p>Note that we can access the event created from clicking!</p>
+
+  <p>This contains the x and y coordinates of where the click occurred.</p>
+</section>
+
+<section>
+  <h3 id="clicking-circles">Clicking Circles (Part #1)</h3>
+
+  <!-- <div class="incremental"> -->
+
+    <div class="highlight"><pre><code class="html"><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;sketch&quot;</span> <span class="na">width=</span><span class="s">&quot;800&quot;</span> <span class="na">height=</span><span class="s">&quot;600&quot;</span><span class="na"> style=</span><span class="s">&quot;border: 1px solid gray;&quot;<span class="nt">&gt;</span>
+<span class="nt">&lt;/canvas&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">sketch</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">context</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">sketch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;sketch&#39;</span><span class="p">);</span>
+	<span class="nx">context</span> <span class="o">=</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">&quot;#992255&quot;</span><span class="p">;</span>
+	<span class="nx">sketch</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">draw_circle</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">event</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="mi">75</span><span class="p">);</span>
+	<span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</div>
+</section>
+
+<section>
+  <h3 id="clicking-circles">Clicking Circles (Part #2)</h3>
+	<!-- <div class="incremental"> -->
+		<div class="highlight"><pre><code class="html">
+	<span class="kd">function</span> <span class="nx">draw_circle</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">, </span><span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+		<span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+		<span class="nx">context</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+		<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+	<span class="p">}</span>
+	<span class="nt">&lt;/script&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+	<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+</div>
+<a href="ex.click.circles.v01.html" target="_blank"><h3><em>See this example in action!</em></h3></a>
+<p>(Click the link above, then click anywhere in the canvas on the next screen...)</p>
+</section>
+
+<section>
+  <h3 id="clearing-the-screen">Clearing the Screen</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="nx">context</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">offsetWidth</span><span class="p">,</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">offsetHeight</span><span class="p">);</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="two-items-relative-to-one-another">Two Items Relative to One Another #1</h3>
+
+  <div class="highlight"><pre><code class="js"><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span> <span class="nx">main</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">sketch</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">context</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">sketch</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;sketch&#39;</span><span class="p">);</span>
+	<span class="nx">context</span> <span class="o">=</span> <span class="nx">sketch</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">);</span>
+	<span class="nx">sketch</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">draw_exclamation</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">event</span><span class="p">.</span><span class="nx">y</span><span class="p">);</span>
+	<span class="p">});</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">draw_exclamation</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">fillRect</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+	<span class="nx">draw_circle</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">25</span><span class="p">,</span> <span class="nx">y</span> <span class="o">+</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">25</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">draw_circle</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">r</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">closePath</span><span class="p">();</span>
+	<span class="nx">context</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+
+</section>
+
+<section>
+  <h3 id="two-items-relative-to-one-another">Two Items Relative to One Another #2</h3>
+
+<a href="ex.two.items.v01.html" target="_blank"><h3><em>See this example in action!</em></h3></a>
+<p>(Click the link above, then click anywhere in the canvas on the next screen...)</p>
+
+</section>
+
+<div id="progress-bar"></div>
+<script src="resources/../../../resources/js/slides.js"></script>
+</body>
+</html>

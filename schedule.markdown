@@ -340,7 +340,7 @@ _Don't forget to watch + study the following..._
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Introduction to the Canvas](/Goldford-MTEC1003-OL78/labs/12/canvas.html){:target="_blank"}  
 * [Events](/Goldford-MTEC1003-OL78/labs/10/events.html){:target="_blank"}  
-* [Click Events](/Goldford-MTEC1003-OL78/labs/11/click.html){:target="_blank"}  
+* [Click Events](/Goldford-MTEC1003-OL78/labs/11/click.v02.html){:target="_blank"}  
 * [Animation](/Goldford-MTEC1003-OL78/labs/11/animation.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Example Websites Created by Former Students</b></h5>  

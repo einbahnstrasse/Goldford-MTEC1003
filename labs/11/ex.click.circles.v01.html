@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Click Circles</title>
+</head>
+<body>
+<canvas id="sketch" width="800" height="600" style="border: 1px solid gray;">
+</canvas>
+<script>
+document.addEventListener('DOMContentLoaded', main);
+
+var sketch;
+var context;
+
+function main() {
+	sketch = document.getElementById('sketch');
+	context = sketch.getContext("2d");
+	context.fillStyle = "#992255";
+	sketch.addEventListener("click", function(event) {
+		draw_circle(event.x, event.y, 75);
+	});
+}
+
+function draw_circle(x, y,r) {
+		context.beginPath();
+		context.arc(x, y, r, 0, 2 * Math.PI, true);
+		context.closePath();
+		context.fill();
+	}
+</script>
+</body>
+</html>
