@@ -40,7 +40,7 @@ Name this file **columnloop.html**. Use a loop to make a column of 5 <span style
 <a id="4by7"></a>
 ## 3. Four By Seven  
 
-Name this file **4by7.html**. Use 2 loops to make a 4 x 7 grid of circles:  
+Name this file **4by7.html**. Use 2 loops to make a 4 x 7 grid of <span style="color: LightGreen">light green</span> circles:  
 
 <img src="/Goldford-MTEC1003-OL78/labs/13/img/ex.4x7.png" alt="4x7 example output" width="210px">  
 
@@ -49,7 +49,7 @@ Name this file **4by7.html**. Use 2 loops to make a 4 x 7 grid of circles:
 <a id="checkerboard"></a>
 ## 4. Checkerboard    
 
-Name this file **checkerboard.html**. Make a checkerboard that has alternating black and white squares:  
+Name this file **checkerboard.html**. Make a checkerboard that has alternating <span style="color: black;background-color:white;">black</span> and white squares:  
 
 <img src="/Goldford-MTEC1003-OL78/labs/13/img/ex.checkerboard.png" alt="checkerboard example output" width="200px">  
 
@@ -58,7 +58,7 @@ Name this file **checkerboard.html**. Make a checkerboard that has alternating b
 <a id="checkersgame"></a>
 ## 5. Checkers Game    
 
-Name this file **checkersgame.html**. Using that same checkerboard, place <span style="color: blue">blue</span> and <span style="color: green">green</span> pieces on the proper squares to start a game:  
+Name this file **checkersgame.html**. Using that same checkerboard you made before, place <span style="color: blue;background-color:DimGray;">blue</span> and <span style="color: green">green</span> pieces on the proper squares to start a game:  
 
 <img src="/Goldford-MTEC1003-OL78/labs/13/img/ex.checkersgame.png" alt="checkers game example output" width="200px">  
 
@@ -67,7 +67,7 @@ Name this file **checkersgame.html**. Using that same checkerboard, place <span 
 <a id="threecircles"></a>
 ## 6. Three Circles      
 
-Name this file **threecircles.html**. Make 3 concentric circles. The largest has a radius of 100 px and is <span style="color: red">red</span>. The medium circle has a radius of 75 pm and is <span style="color: blue">blue</span>. The smallest circle has a radius of 50 px and is <span style="color: green">green</span>:  
+Name this file **threecircles.html**. Make 3 concentric circles. The largest has a radius of 100 px and is <span style="color: red">red</span>. The medium circle has a radius of 75 px and is <span style="color: blue;background-color:DimGray;">blue</span>. The smallest circle has a radius of 50 px and is <span style="color: green">green</span>:  
 
 <img src="/Goldford-MTEC1003-OL78/labs/13/img/ex.threecircles.png" alt="3 circles example output" width="200px">  
 
