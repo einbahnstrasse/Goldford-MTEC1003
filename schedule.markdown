@@ -354,7 +354,7 @@ _For our final lab at the end of this class, you will make a personal website th
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 13 / Part 1: Basic Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13a-part1-basic-canvas.html){:target="_blank"}  
-* [Lab 13 / Part 2: Advanced Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13a-part2-advanced-canvas.html){:target="_blank"}  
+* [Lab 13 / Part 2: Advanced Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13b-part2-advanced-canvas.html){:target="_blank"}  
 * [Lab 13 / Part 3: Animation](/Goldford-MTEC1003-OL78/labs/13/lab-13a-part3-animation.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
