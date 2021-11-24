@@ -89,12 +89,12 @@ Name this file **hemisphere.html**. Draw the two <span style="color: black;backg
 
 `context.arc(x, y, radius, 0, 2 * Math.PI, true)`  
 
-* Argument 1 = x position  
-* Argument 2 = y position  
-* Argument 3 = radius  
-* Argument 4 = starting angle of circle (0-360°)  
-* Argument 5 = ending angle of circle (0-360°)  
-* Argument 6 = fill side (which side of circle is colored)  
+* Argument 1 = x position (pixels)  
+* Argument 2 = y position (pixels)  
+* Argument 3 = radius (distance from center)  
+* Argument 4 = starting angle (0-2π radians)  
+* Argument 5 = ending angle (0-2π radians)  
+* Argument 6 = fill side (which side of circle is colored) : **counterclockwise** (An _optional_ **boolean** value. If **true**, draws the arc counter-clockwise between the start and end angles. The default is **false** (clockwise). [_source_](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc){:target="_blank"}  
 
 Your hemisphere should look something like this:
 
