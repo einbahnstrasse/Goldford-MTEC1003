@@ -424,6 +424,8 @@ _For our final lab at the end of this class, you will make a personal website th
 </div>
 <br>
 
+<div class="spacer" style="width: 100%;height: 95px;">&nbsp;</div>
+
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 <!-- * [Lab 14 / Part 1: _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}  
 * [Lab 14 / Part 2: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-part2-web-design.html){:target="_blank"}   -->
