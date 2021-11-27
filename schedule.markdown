@@ -386,6 +386,14 @@ _For our final lab at the end of this class, you will make a personal website th
     </figure>
 </div>
 
+<h5 style="color:Tomato;"><b>Shortcuts for HTML Elements</b></h5>  
+###### Input Types in HTML    
+
+{::options parse_block_html="false" /}
+<div align="center">
+  https://www.instagram.com/p/CWuzBvPlNaD/?utm_source=ig_web_copy_link
+</div>
+
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 <!-- * [Lab 14 / Part 1: _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}  
 * [Lab 14 / Part 2: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-part2-web-design.html){:target="_blank"}   -->
