@@ -90,7 +90,7 @@ animation, click and drawing events, etc. I've seen students who waited to do it
 
 * * *   
 
-Make sure your files is included in your **/lab-12-html** folder, and don't forget to **add**, **commit**, and **push** your changes!  
+Make sure your files are included in your **/lab-12-html** folder, and don't forget to **add**, **commit**, and **push** your changes!  
 <!-- Use your [_git cheatsheet_ (from lab 3)](/Goldford-MTEC1003-OL04/labs/03/lab-03-git-intro.html){:target="_blank"} if you need it!   -->
 
 Your final **/lab-12-html** folder by the submission deadline should include the files from parts 1 + 2 of the Week 12 Labs, plus the new folder **/final-project-brainstorming** containing the **3 text files** described above.  
