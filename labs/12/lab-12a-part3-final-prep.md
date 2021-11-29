@@ -36,14 +36,18 @@ Your website will have the following elements:
 * a **Home** page  
   - including some simple, [animated JavaScript artwork](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/11/animation.v02.html){:target="_blank"}. _(We'll learn about this in Week 13, but on your website it CANNOT BE THE SAME THING AS OUR LAB! You must BE CREATIVE and make your own animation, use your own colors, etc.)_  
 * an **About Me** page  
-  - including a photo of you _(or if you prefer not to use your own image, no worries — a placeholder image will do!)_  
+  - including a photo of you _(<span style="color: red"><i><strong>OR</strong></i></span> if you prefer not to use your own image, no worries — any placeholder image will do!)_  
 * **at least 1 Portfolio page**, demonstrating some of your work or professional goals  
   - can include photos, videos, text explanations, excerpts of your code, etc.
 * a **Contact Me** page  
 * at least one **CSS stylesheet** linked in the header of your site's pages; i.e. for stylizing your site's appearance  
   - _You may opt to have more than one stylesheet if your design requires it._  
-* On any page of your site, you must have at least one [click event](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/11/click.v02.html){:target="_blank"} <span style="color: red"><i><strong>OR</strong></i></span> one [drawing event](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/10/events.v02.html){:target="_blank"}. _(We'll also learn about these in Week 13, but on your website they CANNOT BE THE SAME THING AS OUR LAB! You must BE CREATIVE and make your own click event or drawing event.)_  
-* You must also include one of the [self-guided supplemental HTML/CSS elements](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/schedule.html#final-code-snippets){:target="_blank"} _(find them under Week 14)_. These are all fun, simple HTML elements and code snippets you can easily include in your web projects, and they can be learned quickly from Instagram posts. Choose from different HTML input types and other UI objects, or even CSS image hover effects! **_Optionally_**: If you're feeling confident, you can browse any of these Instagram coding accounts and find other cool web effects that you'd prefer to use instead. (However, I'd recommend staying with one of these simple ones if this is your first-ever web project!) The point here is to show you how easy it is to teach yourself more about front-end web design!  
+* On any page of your site, you must have at least one of the following things we'll learn in future classes:
+  - one [click event](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/11/click.v02.html){:target="_blank"} <span style="color: red"><i><strong>OR</strong></i></span> one  
+  - [drawing event](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/10/events.v02.html){:target="_blank"}.
+    - _(We'll also learn about these in Week 13, but on your website they CANNOT BE THE SAME THING AS OUR LAB! You must BE CREATIVE and make your own click event or drawing event.)_  
+* You must also include one of the [self-guided supplemental HTML/CSS elements](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/schedule.html#final-code-snippets){:target="_blank"} _(find them under Week 14)_.
+  - These are all fun, simple HTML elements and code snippets you can easily include in your web projects, and they can be learned quickly from Instagram posts. Choose from different HTML input types and other UI objects, or even CSS image hover effects! **_Optionally_**: If you're feeling confident, you can browse any of these Instagram coding accounts and find other cool web effects that you'd prefer to use instead. (However, I'd recommend staying with one of these simple ones if this is your first-ever web project!) The point here is to show you how easy it is to teach yourself more about front-end web design!  
 
 Your website may optionally include some **external HTML or JS elements**, if you feel comfortable using them.  
 For example, our Course Website utilizes the following JavaScript libraries:
