@@ -396,10 +396,12 @@ _For our final lab at the end of this class, you will make a personal website th
 
 <a id="final-code-snippets"></a>
 
-<summary><b>Program note</b></summary>
-    <p>Imagine this: Your psychiatric patient won’t eat the soup in the hospital because they swear you’ve poisoned it. How would you convince them it isn’t poisoned — and that they must eat? Here Edgar Levenson asks what constitutes an effective psychoanalytic treatment. For him, some approach analysis from a God-like position, telling patients about their own delusions. But a successful approach concentrates on how external factors trigger very real distortions and fantasy processes, including the actual physician/patient interaction. In this way, an interpersonal analyst would begin not from an authorial position but by genuinely asking, <em>“What was it that *I* did to poison that soup?”</em> <a href="#"><b>More info...</b></a></p>
-  </details>
+###### Exp. Details tag  
 
+<details>
+    <summary>Details</summary>
+    Something small enough to escape casual notice.
+</details>
 
 <h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-zzz</b></h5>  
 <!-- ###### Input Types in HTML     -->
