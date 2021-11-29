@@ -66,24 +66,27 @@ Feel free to experiment these or any others, if it would help you get inspired, 
 
 For each of the pages **Home**, **About Me**, and at least 1 **Portfolio page**, start **brainstorming** ideas for **content** that will appear on your site.
 
-Think of what you want the viewer to see when they first see your **Home** page, how you want to present yourself in your **About Me**, and what among your own projects, or professional interests, you'd want to present on any of your **Portfolio page**. Write out some initial ideas...  
+Think of what you want the viewer to see when they first see your **Home** page, how you want to present yourself in your **About Me**, and what among your own projects, or professional interests, you'd want to present on any of your **Portfolio pages**. Write out some initial ideas...  
 
-In your Terminal, navigate to your **/lab-12-html** repository, and create a new folder inside of it. _(Remember: What command will you use to create a new folder?)_ Call this folder **/final-project-brainstorming**. Change your directory so that your Terminal is inside this folder. Verify you're in the correct location by running **pwd**. Your path should look something like this:
+Navigate to your **/lab-12-html** repository, and create a new folder inside of it. _(Remember: If using Terminal, what command will you use to create a new folder?)_ Call this folder **/final-project-brainstorming**. (If using Terminal, change your directory so that your Terminal is pointing to this folder. Verify you're in the correct location by running **pwd**.) The path to your new folder should look like this:
 
-`/Users/[yourUserName]/myClasses-Fall2020/mtec1003//lab-12-html/final-project-brainstorming`
+`/Users/yourUserName/myClasses-Fall2020/mtec1003/lab-12-html/final-project-brainstorming`
 
 In your text editor (e.g. SublimeText, Atom, VS Code, etc.), create 3 new text documents (.txt) and save them in your **/final-project-brainstorming** folder, which is within your **/lab-12-html** repository, using the following names:
 * **brainstorming-01-home-page.txt**  
 * **brainstorming-02-about-me.txt**  
 * **brainstorming-03-portfolio-v01.txt**  
 
-In each of these files, type out your ideas for the content on each of the pages of your site. For example, in **brainstorming-02-about-me.txt**, type out a 1-2 paragraph **biography** with information about your education, work experience, your professional expertise or goals. Think about how you want to present yourself to a future employer, a future scholarship committee, an art gallery, on a graduate school application, etc. _Put your best foot forward!_  
+In each of these files, type out your ideas for the content on each of the pages of your site. For example, in **brainstorming-02-about-me.txt**, type out a 1-2 paragraph **personal biography** with information about your education, work experience, your professional expertise and goals. What is your dream job? Where do you see yourself in 5 years? Think about how you want to present yourself to a future employer, a future scholarship committee, an art gallery that might feature your design work, or a graduate school application, etc. _Put your best foot forward!_  
 
-Do the same for the **brainstorming-01-home-page.txt** and **brainstorming-03-portfolio-v01.txt**. What is the first thing you want them to see when they load your site in the browser? What pieces of your work would you want to present?
+Do the same for the **brainstorming-01-home-page.txt** and **brainstorming-03-portfolio-v01.txt**. What is the first thing you want them to see when they load your site? What pieces of your work do you want to present?
 
 Each of these text files should contain _at least 1-2 paragraphs of text explaining your initial ideas_ and/or draft of body text to be published on your website.
 
-Keep in mind: _You can change the contents of your site later!_ You don't need to turn in 100% complete ideas yet! Right now, the idea is to brainstorm and have at least a first draft of the site — that way, when we begin coding it later, you'll already have content to drop in! You can always revise this content later, add, or change things as we move forward...
+Keep in mind: _You can change the contents of your site later!_ You don't need to turn in 100% complete ideas yet! Right now, the idea is to brainstorm and have at least a first draft of the site — that way, when we begin coding it later, you'll already have content to drop in! You can always revise this content later, add, or change things as we move forward...  
+
+Crucially, <span style="color: red"><i><strong>DO NOT WAIT TO WRITE THE CONTENTS OF YOUR WEBSITE!</strong></i></span> You will have plenty of technical details to learn in the weeks ahead — HTML/CSS, Javascript
+animation, click and drawing events, etc. I've seen students who waited to do it all at the very end of class, and they ended up failing the assignment because they couldn't turn stuff in on time — so do this initial planning phase <span style="color: red"><i><strong>NOW</strong></i></span>.  
 
 * * *   
 
