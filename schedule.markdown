@@ -401,7 +401,7 @@ _For our final lab at the end of this class, you will make a personal website th
 * [Lab 15: Finishing Your Personal Website](/Goldford-MTEC1003-OL78/labs/14/lab-15-personal-site.html){:target="_blank"}  
 
 <a id="final-code-snippets"></a>
-<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-iii</b></h5>  
+<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-jjj</b></h5>  
 ###### Choose one or many for your final project!    
 
 {::options parse_block_html="false" /}
@@ -426,7 +426,7 @@ _For our final lab at the end of this class, you will make a personal website th
 {::options parse_block_html="true" /}
 <!-- <br> -->
 
-<div class="spacer" style="width: 100%;height:95px;">&nbsp;</div>
+<!-- <div class="spacer" style="width: 100%;height:95px;">&nbsp;</div> -->
 
 * * *
 
