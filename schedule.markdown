@@ -394,15 +394,15 @@ _For our final lab at the end of this class, you will make a personal website th
     </figure>
 </div>
 
-<h5 style="color:Tomato;><b>LAB ASSIGNMENTS</b></h5>
+<h5 style="color:Tomato;><b>LAB ASSIGNMENTS</b></h5>  
 <!-- * [Lab 14 / Part 1: _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}  
 * [Lab 14 / Part 2: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-part2-web-design.html){:target="_blank"}   -->
 * [Lab 14: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-web-design-github-pages.html){:target="_blank"}  
 * [Lab 15: Finishing Your Personal Website](/Goldford-MTEC1003-OL78/labs/14/lab-15-personal-site.html){:target="_blank"}  
 
 <a id="final-code-snippets"></a>
-<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-ggg</b></h5>  
-###### Choose for your final project!    
+<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-hhh</b></h5>  
+###### Choose one or many for your final project!    
 
 {::options parse_block_html="false" /}
 <details>
