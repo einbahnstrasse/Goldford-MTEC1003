@@ -395,15 +395,13 @@ _For our final lab at the end of this class, you will make a personal website th
 </div>
 
 <a id="final-code-snippets"></a>
+<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-zzz</b></h5>  
 
-###### Exp. Details tag  
-
+{::options parse_block_html="false" /}
 <details>
-    <summary>Details</summary>
+    <summary>Click to reveal HTML/CSS Shortcuts!</summary>
     Something small enough to escape casual notice.
 </details>
-
-<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-zzz</b></h5>  
 <!-- ###### Input Types in HTML     -->
 
 {::options parse_block_html="false" /}
