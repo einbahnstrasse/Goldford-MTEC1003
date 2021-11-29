@@ -395,65 +395,15 @@ _For our final lab at the end of this class, you will make a personal website th
 </div>
 
 <a id="final-code-snippets"></a>
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-</style>
-
-<h2>Accordion</h2>
-
-<button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="comp-work-indv" id="work-indv-tell-me">
+  <a href="#" class="work-title"><h3>Tell Me, How Is It That I Poisoned Your Soup?</h3></a>
+  <h4 class="work-instr-year">ensemble and electronics (2019)</h4>
+  <h5 class="work-recording-ensemble">Talea Ensemble</h5>
+  <details>
+    <summary><b>Program note</b></summary>
+    <p>Imagine this: Your psychiatric patient won’t eat the soup in the hospital because they swear you’ve poisoned it. How would you convince them it isn’t poisoned — and that they must eat? Here Edgar Levenson asks what constitutes an effective psychoanalytic treatment. For him, some approach analysis from a God-like position, telling patients about their own delusions. But a successful approach concentrates on how external factors trigger very real distortions and fantasy processes, including the actual physician/patient interaction. In this way, an interpersonal analyst would begin not from an authorial position but by genuinely asking, <em>“What was it that *I* did to poison that soup?”</em> <a href="#"><b>More info...</b></a></p>
+  </details>
 </div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
 
 <h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-zzz</b></h5>  
 <!-- ###### Input Types in HTML     -->
