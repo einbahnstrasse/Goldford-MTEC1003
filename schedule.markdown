@@ -395,7 +395,7 @@ _For our final lab at the end of this class, you will make a personal website th
 </div>
 
 <a id="final-code-snippets"></a>
-<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-eee</b></h5>  
+<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-fff</b></h5>  
 ###### Choose for your final project!    
 
 {::options parse_block_html="false" /}
@@ -417,10 +417,11 @@ _For our final lab at the end of this class, you will make a personal website th
 </details>
 
 <!-- {::options parse_block_html="false" /} -->
-<!-- <br> -->
+<br>
 
 
-<!-- <div class="spacer" style="width: 100%;height:95px;">&nbsp;</div> -->
+<div class="spacer" style="width: 100%;height:95px;">&nbsp;</div>
+
 <div class="spacer" style="width: 100%;height:95px;">
   <h5 style="color:Tomato;align:left;float:none;"><b>LAB ASSIGNMENTS</b></h5>
 </div>
