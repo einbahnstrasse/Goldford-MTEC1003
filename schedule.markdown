@@ -347,7 +347,7 @@ _Don't forget to watch + study the following..._
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Introduction to the Canvas](/Goldford-MTEC1003-OL78/labs/12/canvas.html){:target="_blank"}  
-* [Events](/Goldford-MTEC1003-OL78/labs/10/events.v02.html){:target="_blank"}  
+* [Drawing Events](/Goldford-MTEC1003-OL78/labs/10/events.v02.html){:target="_blank"}  
 * [Click Events](/Goldford-MTEC1003-OL78/labs/11/click.v02.html){:target="_blank"}  
 * [Animation](/Goldford-MTEC1003-OL78/labs/11/animation.v02.html){:target="_blank"}  
 
@@ -401,7 +401,7 @@ _For our final lab at the end of this class, you will make a personal website th
 * [Lab 15: Finishing Your Personal Website](/Goldford-MTEC1003-OL78/labs/14/lab-15-personal-site.html){:target="_blank"}  
 
 <a id="final-code-snippets"></a>
-<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements-jjj</b></h5>  
+<h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements</b></h5>  
 ###### Choose one or many for your final project!    
 
 {::options parse_block_html="false" /}
