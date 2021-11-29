@@ -17,11 +17,11 @@ layout: default
 <a id="overview"></a>
 ## 1. Overview of the MTEC1003 Final Assignment  
 
-Our last class is on Monday, December 14 (i.e. Week 15), as marked on our [Schedule page.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL04/){:target="_blank"}  
+Our last class is on Monday, December 20 (i.e. Week 15), as marked on our [Schedule page.](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/){:target="_blank"}  
 
 On that day, your final project for the semester will be due. This will be a simple, personal website design that you write in HTML, CSS, and JavaScript.
 
-**_You will present your website to the class on December 14, so it must be complete and presentable by this date!_**
+**_You will present your website to the class on December 20, so it must be complete and presentable by this date!_**
 
 Everything you need to build your website will be demonstrated + practiced during these last few weeks of class; during our unit on HTML/CSS. However, you may also choose to add external elements to your website if you would like to do so — these can include custom navbars, JavaScript libraries, and other elements that you can easily test & debug in your web browser.
 
