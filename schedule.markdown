@@ -341,7 +341,7 @@ _Don't forget to watch + study the following..._
 ### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
 <!-- <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf"  target="_blank">CityTech Fall 2021 Schedule.</a></i></p> -->
 
-### [Week 13 Quizlet](https://forms.gle/SA8HjqB5ZjuiujqQ6){:target="_blank"}  
+### [Week 13 Quizlet](https://forms.gle/CeLdfsh55hxVKj557){:target="_blank"}  
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
@@ -361,7 +361,7 @@ _For our final lab at the end of this class, you will make a personal website th
 * [Example #6: Samuel Cheung](https://mtec1003-example-sites.github.io/06.samuel.cheung/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 13 / Part 1: Basic Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13a-part1-basic-canvas.html){:target="_blank"}  
+* [Lab 13 / Part 1: Basic Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13b-part1-basic-canvas.html){:target="_blank"}  
 * [Lab 13 / Part 2: Advanced Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13b-part2-advanced-canvas.html){:target="_blank"}  
 * [Lab 13 / Part 3: Animation](/Goldford-MTEC1003-OL78/labs/13/lab-13a-part3-animation.html){:target="_blank"}  
 
