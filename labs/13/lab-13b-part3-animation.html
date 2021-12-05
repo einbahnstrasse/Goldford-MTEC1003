@@ -120,8 +120,60 @@
 
 <ul>
   <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>circle-boundary.html</strong> in your repository directory.</li>
-  <li>copy your code from your previous program</li>
-  <li>at the end of your animate function, add a conditional or conditionals to check if your circle is at either end of the canvas:
+	<!-- <li>Copy your code from the previous exercise.</li> -->
+  <li>Start with the following code, which creates a circle that moves horizontally from left to right:</li>
+	<ul>
+	  <!-- <li>using your text editor (e.g. SublimeText, Atom, VS Code, etc.), create a new file called <strong>circle-animate.html</strong> in your repository directory.</li> -->
+	  <li>setup an html file</li>
+	  <li>add a style tag in insides the head tag - add the following code to give your canvas element a border:</li>
+	</ul>
+
+	<div class="highlight"><pre><code class="html"><span class="nt">&lt;style&gt;</span>
+	<span class="nf">#sketch</span> <span class="p">{</span>
+		<span class="k">border</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#000</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="nt">&lt;/style&gt;</span>
+	</code></pre></div>
+
+	<ul>
+	  <li>create a canvas element that is 480 by 720</li>
+	  <li>add script tags</li>
+	  <li>add a listener to your document to handle onload events&#8230; set it to run your main function: document.addEventListener(&#8216;DOMContentLoaded&#8217;, main);</li>
+	  <li>declare the following variables:
+	    <ul>
+	      <li>sketch - your canvas element</li>
+	      <li>context - your drawing instrument</li>
+	      <li>circle - an object that contains your circles x, y position and radius</li>
+	      <li>dx (set this equal to 2) - the velocity</li>
+	      <li>fps (set this equal to 10) - the delay in ms before your animate function is called</li>
+	      <li>animation - a variable to keep track of your animation</li>
+	    </ul>
+	  </li>
+	  <li>create a main function
+	    <ul>
+	      <li>start writing your program in your main function</li>
+	      <li>get your sketch element: sketch = document.getElementById(&#8216;sketch&#8217;);	</li>
+	      <li>create your context: context = sketch.getContext(&#8220;2d&#8221;); </li>
+	      <li>create your circle object: circle = {&#8216;x&#8217;:25, &#8216;y&#8217;:sketch.offsetHeight / 2, &#8216;r&#8217;:25};</li>
+	      <li>specifiy a function to be called repeatedly at a specific interval: animation = setInterval(animate, fps);</li>
+	      <li>note that the animate function will be defined immediately after&#8230; outside of the main function</li>
+	      <li>your main function is finished!</li>
+	    </ul>
+	  </li>
+	  <li>create another function, outside of main, called animate (this will be called repeatedly, and it will be responsible for clearing the screen and drawing your shapes)
+	    <ul>
+	      <li>clear the screen: context.clearRect(0, 0, sketch.offsetWidth, sketch.offsetHeight);</li>
+	      <li>draw circle at current position of circle object (this function will be defined later): draw_circle(circle.x, circle.y, circle.r);</li>
+	      <li>move the circle&#8217;s position by adding velocity: circle.x = circle.x + dx;</li>
+	      <li>that should finish your animate function</li>
+	    </ul>
+	  </li>
+	  <li>finally, define your circle function; you can copy and paste from previous slides or programs</li>
+	  <!-- <li>use git status, add, commit, and push to save your file in version control and submit it</li> -->
+	  <!-- <li>send it to github by using git push</li> -->
+	  <!-- <li>example movie below</li> -->
+	</ul>
+  <li><strong>at the end of your animate function, add a conditional (or conditionals)</strong> to check if your circle is at either end of the canvas:
     <ul>
       <li>check that the circle&#8217;s x value is beyond the left side by seeing if it&#8217;s greater than the canvas sidth minus velocity minus radius: circle.x &gt; sketch.offsetWidth - dx - circle.r </li>
       <li>check that the circle&#8217;s x value is beyond the right side by seeing if it&#8217;s less than the circle&#8217;s radius minus the velocity: circle.x &lt; circle.r - dx </li>
