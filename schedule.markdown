@@ -437,7 +437,7 @@ _For our final lab at the end of this class, you will make a personal website th
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
-### [Final Assessment Quizlet](https://forms.gle/TeqD65ZT9p4gYG8Y8){:target="_blank"}  
+### [Final Assessment Quizlet](https://forms.gle/AG9eJcYD2XqfCzh17){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Lab 15: <i>Personal Website</i> Presentations</b></h5>
 * Each student presents their website (5-10 minutes per student)  
