@@ -47,8 +47,8 @@ layout: default
 <a id="contact"></a>
 ### I. Essential Course + Contact Information
 **Course Number:** MTEC1003  
-**Semester:** Fall 2021  
-**Section:** OL04 (17466)  
+**Semester:** Spring 2022  
+**Section:** OL15 (27087)  
 **Location + Time:** Mondays 2:30-5:00 PM [ONLINE]  
 
 **Professor:** Louis Goldford  
@@ -158,78 +158,78 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 <tbody>
 <tr>
 <td markdown="span">1</td>
-<td markdown="span">8/30</td>
+<td markdown="span">1/31</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w1" target="_blank">File System: Introduction, Navigation, Paths, Output, Download, Uncompress</a></td>
 </tr>
 <tr>
 <td markdown="span">2</td>
-<td markdown="span">9/13</td>
+<td markdown="span">2/7</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w2" target="_blank">File System: Shell Scripting, Permissions, Date/Time, Editing Files</a></td>
 </tr>
 <tr>
 <td markdown="span">3</td>
-<td markdown="span">9/20</td>
+<td markdown="span">2/14</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w3" target="_blank">Version Control: Introduction to GIT, Concepts + Basic Commands</a></td>
 </tr>
 <tr>
 <td markdown="span">4</td>
-<td markdown="span">9/27</td>
+<td markdown="span">2/28</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w4" target="_blank">Version Control: Local/Remote Repositories + Collaboration Via _GitHub_</a></td>
 </tr>
 <tr>
 <td markdown="span">5</td>
-<td markdown="span">10/4</td>
+<td markdown="span">3/7</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w5" target="_blank">JavaScript + Python: Introduction, Variables, Types, Input/Output</a></td>
 </tr>
 <tr>
 <td markdown="span">6</td>
-<td markdown="span">10/18</td>
+<td markdown="span">3/14</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w6" target="_blank">Review: Version Control + Basic JavaScript/Python</a></td>
 </tr>
 <tr>
 <td markdown="span">7</td>
-<td markdown="span">10/25</td>
+<td markdown="span">3/21</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w7" target="_blank">Javascript + Python: Conditionals</a></td>
 </tr>
 <tr>
 <td markdown="span">8</td>
-<td markdown="span">11/1</td>
+<td markdown="span">3/28</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w8" target="_blank">Javascript + Python: For Loops<br />Javascript + Python: Debugging</a>
 </td>
 </tr>
 <tr>
 <td markdown="span">9</td>
-<td markdown="span">11/8</td>
+<td markdown="span">4/4</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w9" target="_blank">Javascript + Python: Functions Definitions + Function Calls</a></td>
 </tr>
 <tr>
 <td markdown="span">10</td>
-<td markdown="span">11/15</td>
+<td markdown="span">4/11</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w10" target="_blank">Introduction to Python Data Visualization + Mapping</a></td>
 </tr>
 <tr>
 <td markdown="span">11</td>
-<td markdown="span">11/22</td>
+<td markdown="span">4/25</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w11" target="_blank">HTMJavascript + Python: More Kinds of Loops</a></td>
 </tr>
 <tr>
 <td markdown="span">12</td>
-<td markdown="span">11/29</td>
+<td markdown="span">5/2</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w12" target="_blank">HTML/CSS: Introduction</a></td>
 </tr>
 <tr>
 <td markdown="span">13</td>
-<td markdown="span">12/6</td>
+<td markdown="span">5/9</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w13" target="_blank">HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)</a></td>
 </tr>
 <tr>
 <td markdown="span">14</td>
-<td markdown="span">12/13</td>
+<td markdown="span">5/16</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w14" target="_blank">Introduction to _GitHub_ Pages <br />Advanced Web Design + Layout</a></td>
 </tr>
 <tr>
 <td markdown="span">15</td>
-<td markdown="span">12/20</td>
+<td markdown="span">5/23</td>
 <td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w15" target="_blank">Complete + Present Final Assignments</a></td>
 </tr>
 </tbody>
