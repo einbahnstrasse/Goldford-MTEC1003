@@ -29,9 +29,9 @@ _Additionally, Windows users may request access to a Virtual Desktop to be able 
 * * *
 
 ### 2. Text Editor
-_Get yourself a little something nice... A good text editor with clear syntax highlighting._  
 _Check your operating system for compatibility and install one of these:_  
 
+* [Visual Studio Code (RECOMMENDED)](https://code.visualstudio.com/download){:target="_blank"}  
 * [Atom](https://atom.io/){:target="_blank"}  
 * [Sublime Text 3](https://www.sublimetext.com/3){:target="_blank"}  
 * [Visual Studio Code](https://code.visualstudio.com/download){:target="_blank"}  
@@ -91,7 +91,7 @@ _A web browser with great built-in device compatibility tools._
 1. INSTALL:  
 	* [Direct from Chrome homepage](https://www.google.com/intl/en/chrome/){:target="_blank"}  
 2. VERIFY:  
-	* Chrome can be launched from your Applications folder.  
+	* Chrome can be launched from your /Applications folder.  
 
 * * *
 

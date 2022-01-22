@@ -23,7 +23,7 @@ layout: default
 
 <!-- <h1>Syllabus</h1> -->
 # Syllabus
-[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003/resources/week.01/Goldford.MTEC1003.Fall2021.Syllabus.v01.pdf){:target="_blank"}  
+[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003/resources/week.01/Goldford.MTEC1003.Spring2022.Syllabus.v01.pdf){:target="_blank"}  
 
 #### C O N T E N T S  
 1. <a href="#contact">Essential Course + Contact Information</a>  
@@ -55,9 +55,9 @@ layout: default
 **Email:** <a href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a>  
 **Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/LouisGoldford](https://calendly.com/LouisGoldford){:target="_blank"})  
 **Office Location:** Zoom (scheduled through the Calendly link above)  
-**Course Slack:** [http://goldford-mtec1003-f21.slack.com/](http://goldford-mtec1003-f21.slack.com/)  
+**Course Slack:** [http://goldford-mtec1003-f21.slack.com/](http://goldford-mtec1003-s22.slack.com/)  
 **Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003/](https://einbahnstrasse.github.io/Goldford-MTEC1003/){:target="_blank"})  
-<p class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em></p>  
+<!-- <p class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em></p>   -->
 
 * * *  
 
