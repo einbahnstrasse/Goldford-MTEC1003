@@ -20,7 +20,7 @@ In this tutorial, we'll be:
 
 Set up a remote repository on _GitHub_ as you normally would. From your home page on _GitHub_, click the green "New" button and on the next page, name your repository and be sure to select all of the correct options, just as we've done in previous weeks. For example, your repository for Week 5 should resemble this:  
 
-<img src="/Goldford-MTEC1003-OL78/labs/04/img.clone/img.clone.01.create.repo.png" width="600px">   
+<img src="/Goldford-MTEC1003/labs/04/img.clone/img.clone.01.create.repo.png" width="600px">   
 
 After you create your repository, you're ready to [_**CLONE**_](https://git-scm.com/docs/git-clone){:target="_blank"} it onto your local computer.  
 
@@ -31,7 +31,7 @@ After you create your repository, you're ready to [_**CLONE**_](https://git-scm.
 
 In `git`, making a `clone` is the process of copying of a _**remote**_ repository onto a computer, thus creating a _**local**_ repository. So, for lab 5 and all future labs, we'll start by creating the remote repo first (as we have above in step 1), and then we'll take the following steps to `clone` that remote onto our computer. When we do this, we can instantly start sending our commits to the remote. It's a faster process than what we've done in Weeks 3 and 4.   
 
-Retrieve your _GitHub_ API Access Token [created in Week 3](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/04/remote.via.API.token.v01.html){:target="_blank"}, and copy your token value to the clipboard.
+Retrieve your _GitHub_ API Access Token [created in Week 3](https://einbahnstrasse.github.io/Goldford-MTEC1003/labs/04/remote.via.API.token.v01.html){:target="_blank"}, and copy your token value to the clipboard.
 
 In Terminal, navigate to your **mtec1003 folder**, where you keep repositories for this class. It should be something like:  
 
@@ -54,7 +54,7 @@ When you're ready, `copy` your revised command, `paste` it on the command line, 
 
 In your Terminal, the command and its output should resemble this:
 
-<img src="/Goldford-MTEC1003-OL78/labs/04/img.clone/img.clone.02.clone.repo.png" width="2000px">  
+<img src="/Goldford-MTEC1003/labs/04/img.clone/img.clone.02.clone.repo.png" width="2000px">  
 
 _Congratulations!_ You've successfully **CLONED** your **remote** repository onto your local computer and you're now ready to run the normal sequence of `git` commands, such as `git status`, `git commit`, and `git push`, from your command line.  
 
@@ -67,7 +67,7 @@ At this point, if you're feeling confident about your git command skills, **retu
 
 From here on, you can add new files and revise old ones, then track their changes under git. As a quick example, make a change to the README.markdown file you created on _GitHub_, which has now been cloned onto your computer. `open` this file in your text editor and type something new, for example on line 3, and be sure to `save` your changes (_locally_):  
 
-<img src="/Goldford-MTEC1003-OL78/labs/04/img.clone/img.clone.03.edit.a.change.png" width="600px">
+<img src="/Goldford-MTEC1003/labs/04/img.clone/img.clone.03.edit.a.change.png" width="600px">
 
 Now, run the normal sequence of git commands in your Terminal to version these changes:
 
@@ -81,13 +81,13 @@ Your commit message should **be placed between double quotation marks** and shou
 
 In your Terminal, these commands and their output should resemble the following:
 
-<img src="/Goldford-MTEC1003-OL78/labs/04/img.clone/img.clone.04a.status.add.commit.push.png" width="600px">  
+<img src="/Goldford-MTEC1003/labs/04/img.clone/img.clone.04a.status.add.commit.push.png" width="600px">  
 
 As always, your final step should be to **check your _GitHub_ repository** after running your `git push` command, in order to **VERIFY** that your most current work is reflected on _GitHub_, i.e. to be sure you've properly submitted your labs!  
 
 You can **VERIFY** this from the front page of your _GitHub_ repo in 3 easy ways:  
 
-<img src="/Goldford-MTEC1003-OL78/labs/04/img.clone/img.clone.v05.validate.png" width="2000px">  
+<img src="/Goldford-MTEC1003/labs/04/img.clone/img.clone.v05.validate.png" width="2000px">  
 
 _**Return to your lab and continue your work.**_
 

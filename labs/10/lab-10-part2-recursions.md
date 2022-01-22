@@ -107,7 +107,7 @@ countDown(10);{% endhighlight %}
 
 Example JavaScript Console output should resemble the following:
 
-<img src="/Goldford-MTEC1003-OL78/assets/hny.jsconsole.output.png" alt="HNY Example Output" width="200px">  
+<img src="/Goldford-MTEC1003/assets/hny.jsconsole.output.png" alt="HNY Example Output" width="200px">  
 
 * **Save** your HMTL/JavaScript file, and make sure to **test** it using Google Chrome's JavaScript Console.  
 * For this exercise, you DON'T need to create a Python version!!  

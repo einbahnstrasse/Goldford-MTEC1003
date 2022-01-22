@@ -35,7 +35,7 @@ Alternatively, you can simply run `python3` in the Terminal instead of `python`,
 ## Setting Up Your Lab 10 Repository  
 
 _ProTip:_ **Bookmark the following page so that you can easily repeat these steps in your future labs!**  
-* [Cloning a Remote Repo Using Your _GitHub_ API Access Token](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/04/cloning.with.token.v01.html){:target="_blank"}   
+* [Cloning a Remote Repo Using Your _GitHub_ API Access Token](https://einbahnstrasse.github.io/Goldford-MTEC1003/labs/04/cloning.with.token.v01.html){:target="_blank"}   
 * On _GitHub_, create and name your new repository **lab-10-more-loops** and **clone** it inside your **/mtec1003** folder.  
 * Once you've completed the steps at the link above, you're ready to begin.  
 * Open up your text editor (e.g. Atom, Sublime Text, etc.)...  
@@ -55,7 +55,7 @@ _ProTip:_ **Bookmark the following page so that you can easily repeat these step
 
 Example JavaScript Console output should resemble the following:  
 
-<img src="/Goldford-MTEC1003-OL78/assets/gimmymynumber.example.png" alt="Gimmy Example Output" width="600">  
+<img src="/Goldford-MTEC1003/assets/gimmymynumber.example.png" alt="Gimmy Example Output" width="600">  
 
 <!-- <iframe src="{{ site.baseurl }}/labs/10/gimmymynumber.example.png" width="600px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
 
@@ -89,7 +89,7 @@ Example JavaScript Console output should resemble the following:
 
 Example JavaScript Console output should resemble the following:  
 
-<img src="/Goldford-MTEC1003-OL78/assets/stories.example.png" alt="Stories Example Output" width="600">  
+<img src="/Goldford-MTEC1003/assets/stories.example.png" alt="Stories Example Output" width="600">  
 
 * Once you know it works, recreate a version of this in Python:  
   - In your text editor, create a new file called **whichfloor.py** in your **lab-10-more-loops** repository.  

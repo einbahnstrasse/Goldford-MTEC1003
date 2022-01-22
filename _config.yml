@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MTEC1003-OL04 Media Computation Skills Lab
+title: MTEC1003-OL15 Media Computation Skills Lab
 email: LGoldford@citytech.cuny.edu
 author: Prof. Louis Goldford
 description: >- # this means to ignore newlines until "baseurl:"
-  Fall 2021 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.
-baseurl: "Goldford-MTEC1003-OL78" # the subpath of your site, e.g. /blog
+  Spring 2022 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.
+baseurl: "Goldford-MTEC1003" # the subpath of your site, e.g. /blog
 # baseurl: "Goldford-MTEC1003-Fall2020" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: einbahnstrasse

@@ -5,7 +5,7 @@
 layout: default
 ---
 
-<img src="/Goldford-MTEC1003-OL78/assets/organized.gif" alt="organized" width="400" align="right">
+<img src="/Goldford-MTEC1003/assets/organized.gif" alt="organized" width="400" align="right">
 
 # Schedule
 _This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [CUNY CityTech Fall 2021 Academic Calendar](https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf){:target="_blank"}. The following topics and their precise order may change. Check here for updates!_  
@@ -22,16 +22,16 @@ _This page will be updated frequently with examples, video tutorials, links to n
 * _Complete the quizlet above as part of today's participation._  
 
 <h5 style="color:Tomato;"><b>Start-of-Semester Business</b></h5>
-* Review [Syllabus + course policies.](/Goldford-MTEC1003-OL78/index.html){:target="_blank"}  
-* Review [Detailed Breakdown of Grading.](/Goldford-MTEC1003-OL78/grading.html){:target="_blank"}  
-* Review [Keys for Success in MTEC1003](/Goldford-MTEC1003-OL78/resources/week.01/keys.for.success.html){:target="_blank"}  
+* Review [Syllabus + course policies.](/Goldford-MTEC1003/index.html){:target="_blank"}  
+* Review [Detailed Breakdown of Grading.](/Goldford-MTEC1003/grading.html){:target="_blank"}  
+* Review [Keys for Success in MTEC1003](/Goldford-MTEC1003/resources/week.01/keys.for.success.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
-* [About the Command Line](/Goldford-MTEC1003-OL78/labs/01/command-line.html){:target="_blank"}  
-* [Entering Commands](/Goldford-MTEC1003-OL78/labs/01/entering-commands.html){:target="_blank"}  
-* [Navigating the File System](/Goldford-MTEC1003-OL78/labs/01/file-system.html){:target="_blank"}  
-* [Paths](/Goldford-MTEC1003-OL78/labs/02/paths-review.html#1.0){:target="_blank"}  
-* [Output, Download, and Uncompress](/Goldford-MTEC1003-OL78/labs/02/output-download-uncompress.html){:target="_blank"}  
+* [About the Command Line](/Goldford-MTEC1003/labs/01/command-line.html){:target="_blank"}  
+* [Entering Commands](/Goldford-MTEC1003/labs/01/entering-commands.html){:target="_blank"}  
+* [Navigating the File System](/Goldford-MTEC1003/labs/01/file-system.html){:target="_blank"}  
+* [Paths](/Goldford-MTEC1003/labs/02/paths-review.html#1.0){:target="_blank"}  
+* [Output, Download, and Uncompress](/Goldford-MTEC1003/labs/02/output-download-uncompress.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Video Tutorial</b></h5>
 ###### Stepping Through Week 1 Slides + Labs    
@@ -45,7 +45,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
 <div class="instructornote"><p markdown="span"><em>Due online (GitHub) at 11:59 PM Saturday night each week!</em></p></div>  
-* [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003-OL78/labs/01/how.to.submit.1st.week.labs.html){:target="_blank"}  
+* [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003/labs/01/how.to.submit.1st.week.labs.html){:target="_blank"}  
 * [Lab 1 / Part 1: Commands + Navigation](https://github.com/einbahnstrasse/mtec1003-week1-labs/blob/master/lab.01.part1.commands.navigation.txt){:target="_blank"}  
 * [Lab 1 / Part 2: Download + (Un)Compress](https://github.com/einbahnstrasse/mtec1003-week1-labs/blob/master/lab.01.part2.download.compress.txt){:target="_blank"}  
 
@@ -60,17 +60,17 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * _Complete the quizlet above as part of today's attendance + participation._  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
-* [Review](/Goldford-MTEC1003-OL78/labs/03/review.html#1.0){:target="_blank"}  
-* [Working With Files](/Goldford-MTEC1003-OL78/labs/03/working-with-files.html){:target="_blank"}  
-* [File Permissions, Editing, Date + Time, Shell Scripting](/Goldford-MTEC1003-OL78/labs/03/permissions-editing-date-time.html){:target="_blank"}  
-* [Shell Scripting: Some Odds and Ends](/Goldford-MTEC1003-OL78/labs/04/shell-scripting.html#1.0){:target="_blank"}  
+* [Review](/Goldford-MTEC1003/labs/03/review.html#1.0){:target="_blank"}  
+* [Working With Files](/Goldford-MTEC1003/labs/03/working-with-files.html){:target="_blank"}  
+* [File Permissions, Editing, Date + Time, Shell Scripting](/Goldford-MTEC1003/labs/03/permissions-editing-date-time.html){:target="_blank"}  
+* [Shell Scripting: Some Odds and Ends](/Goldford-MTEC1003/labs/04/shell-scripting.html#1.0){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Submitting Week 2 Labs](/Goldford-MTEC1003-OL78/labs/02/how.to.submit.2nd.week.labs.html){:target="_blank"}  
-<!-- * [Lab 2 / Part 1: Review](/Goldford-MTEC1003-OL78/labs/02/lab.02.part1.review.compress.txt){:target="_blank"}   -->
+* [Submitting Week 2 Labs](/Goldford-MTEC1003/labs/02/how.to.submit.2nd.week.labs.html){:target="_blank"}  
+<!-- * [Lab 2 / Part 1: Review](/Goldford-MTEC1003/labs/02/lab.02.part1.review.compress.txt){:target="_blank"}   -->
 * Lab 2 / Part 1 has been removed: We'll only complete the following 2 labs this week!    
-* [Lab 2 / Part 2: Working with Files](/Goldford-MTEC1003-OL78/labs/02/lab.02.part2.working.with.files.txt){:target="_blank"}  
-* [Lab 2 / Part 3: Shell Scripting, Permissions, Editing Text, Date + Time](/Goldford-MTEC1003-OL78/labs/02/lab.02.part3.shell.scripting.txt){:target="_blank"}  
+* [Lab 2 / Part 2: Working with Files](/Goldford-MTEC1003/labs/02/lab.02.part2.working.with.files.txt){:target="_blank"}  
+* [Lab 2 / Part 3: Shell Scripting, Permissions, Editing Text, Date + Time](/Goldford-MTEC1003/labs/02/lab.02.part3.shell.scripting.txt){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>  
 ###### Basic Linux Terminal/Emulator Commands  
@@ -91,14 +91,14 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * _Complete the quizlet above as part of today's attendance + participation._   
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
-* [Introduction to Version Control + Git](/Goldford-MTEC1003-OL78/labs/04/version-control.html){:target="_blank"}  
-* [Creating and Setting Up Repositories](/Goldford-MTEC1003-OL78/labs/04/creating-repositories.html){:target="_blank"}  
-* [Making, Saving, and Sharing Changes](/Goldford-MTEC1003-OL78/labs/04/changing-files.html){:target="_blank"}  
+* [Introduction to Version Control + Git](/Goldford-MTEC1003/labs/04/version-control.html){:target="_blank"}  
+* [Creating and Setting Up Repositories](/Goldford-MTEC1003/labs/04/creating-repositories.html){:target="_blank"}  
+* [Making, Saving, and Sharing Changes](/Goldford-MTEC1003/labs/04/changing-files.html){:target="_blank"}  
 * [More info on GitHub personal access tokens](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
-<!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/05/lab-05-git-part-01.html){:target="_blank"}   -->
-* [Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003-OL78/labs/03/lab-03-git-intro.html){:target="_blank"}  
+<!-- * [Lab 5 / Part 1: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003/labs/05/lab-05-git-part-01.html){:target="_blank"}   -->
+* [Lab 3: Local + Remote Repositories, Creating and Saving Changes](/Goldford-MTEC1003/labs/03/lab-03-git-intro.html){:target="_blank"}  
 <div class="video">
     <figure>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/RiXiihejeHc" frameborder="0" allowfullscreen></iframe>
@@ -123,13 +123,13 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### [Week 4 Quizlet](https://forms.gle/8pRFw9LF96roSr4H6){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Tutorials</b></h5>  
-* [Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL78/labs/04/git.pull.requests.and.merge.tutorial.v01.html){:target="_blank"}  
+* [Pull Requests + Merge Conflicts](/Goldford-MTEC1003/labs/04/git.pull.requests.and.merge.tutorial.v01.html){:target="_blank"}  
 * [Shiffman Video Tutorial on Pull Requests / Merges](https://youtu.be/JtIX3HJKwfo){:target="_blank"}
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
-* [Lab 4 / Part 1: Pull Requests + Merge Conflicts](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-01a.html){:target="_blank"}  
-* [Lab 4 / Part 2: Review — Creating + Setting Up Git Repositories](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-02a.html){:target="_blank"}  
-* [Lab 4 / Part 3: Review — Saving + Sending Changes to Your Repository](/Goldford-MTEC1003-OL78/labs/04/lab-04-git-part-03a.html){:target="_blank"}  
+* [Lab 4 / Part 1: Pull Requests + Merge Conflicts](/Goldford-MTEC1003/labs/04/lab-04-git-part-01a.html){:target="_blank"}  
+* [Lab 4 / Part 2: Review — Creating + Setting Up Git Repositories](/Goldford-MTEC1003/labs/04/lab-04-git-part-02a.html){:target="_blank"}  
+* [Lab 4 / Part 3: Review — Saving + Sending Changes to Your Repository](/Goldford-MTEC1003/labs/04/lab-04-git-part-03a.html){:target="_blank"}  
 
 * * *
 
@@ -149,13 +149,13 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 </div>
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
-* [Introduction to JavaScript](/Goldford-MTEC1003-OL78/labs/05/js-intro.html){:target="_blank"}  
-* [JavaScript Basics](/Goldford-MTEC1003-OL78/labs/05/js-basics.html){:target="_blank"}  
+* [Introduction to JavaScript](/Goldford-MTEC1003/labs/05/js-intro.html){:target="_blank"}  
+* [JavaScript Basics](/Goldford-MTEC1003/labs/05/js-basics.html){:target="_blank"}  
 * [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003-OL78/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
-* [Lab 5 / Part 2: All the Basics... But in PYTHON!](/Goldford-MTEC1003-OL78/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
+* [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
+* [Lab 5 / Part 2: All the Basics... But in PYTHON!](/Goldford-MTEC1003/labs/05/lab-05-part2-python-basics.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Video Tutorial</b></h5>
 ###### Setup for Week 5 Labs + _"Greetings"_ In JavaScript + Python   
@@ -178,13 +178,13 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### [Week 6 Quizlet](https://forms.gle/aRLbFrLLbnkXhNbw5){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
-* [Git Review](/Goldford-MTEC1003-OL78/labs/06/git-review.html){:target="_blank"}  
-* [JavaScript Basics Review](/Goldford-MTEC1003-OL78/labs/06/js-basics-review.html){:target="_blank"}  
+* [Git Review](/Goldford-MTEC1003/labs/06/git-review.html){:target="_blank"}  
+* [JavaScript Basics Review](/Goldford-MTEC1003/labs/06/js-basics-review.html){:target="_blank"}  
 * [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 6 / Part 1: JavaScript](/Goldford-MTEC1003-OL78/labs/06/lab-06-part1-js-basics.html){:target="_blank"}  
-* [Lab 6 / Part 2: Some Simple, Stupid Python Programs](/Goldford-MTEC1003-OL78/labs/06/lab-06-part2-python-basics.html){:target="_blank"}  
+* [Lab 6 / Part 1: JavaScript](/Goldford-MTEC1003/labs/06/lab-06-part1-js-basics.html){:target="_blank"}  
+* [Lab 6 / Part 2: Some Simple, Stupid Python Programs](/Goldford-MTEC1003/labs/06/lab-06-part2-python-basics.html){:target="_blank"}  
 
 * * *
 
@@ -197,14 +197,14 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### [Week 7 Quizlet](https://forms.gle/CcH4KJMx9CFPZ3G98){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
-* [JavaScript Conditionals](/Goldford-MTEC1003-OL78/labs/06/js-conditionals.html){:target="_blank"}  
-* [JavaScript Conditionals — Revisited](/Goldford-MTEC1003-OL78/labs/07/js-conditionals-revisited.html){:target="_blank"}  
+* [JavaScript Conditionals](/Goldford-MTEC1003/labs/06/js-conditionals.html){:target="_blank"}  
+* [JavaScript Conditionals — Revisited](/Goldford-MTEC1003/labs/07/js-conditionals-revisited.html){:target="_blank"}  
 * [Booleans + Conditionals (Python + JS)](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.conditionals.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 7 / Part 1: JavaScript Conditionals](/Goldford-MTEC1003-OL78/labs/07/lab-07-part1-javascript-conditionals.html){:target="_blank"}  
-* [Lab 7 / Part 2: Python Conditionals](/Goldford-MTEC1003-OL78/labs/07/lab-07-part2-python-conditionals.html){:target="_blank"}  
-* [Lab 7 / Part 3: Nesting](/Goldford-MTEC1003-OL78/labs/07/lab-07-part3-nesting.html){:target="_blank"}  
+* [Lab 7 / Part 1: JavaScript Conditionals](/Goldford-MTEC1003/labs/07/lab-07-part1-javascript-conditionals.html){:target="_blank"}  
+* [Lab 7 / Part 2: Python Conditionals](/Goldford-MTEC1003/labs/07/lab-07-part2-python-conditionals.html){:target="_blank"}  
+* [Lab 7 / Part 3: Nesting](/Goldford-MTEC1003/labs/07/lab-07-part3-nesting.html){:target="_blank"}  
 
 * * *
 
@@ -216,7 +216,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### [Week 8 Quiz](https://forms.gle/AUejB3RRx93ubwhZ7){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
-* [For Loops in JavaScript](/Goldford-MTEC1003-OL78/labs/08/js.for.loops.v02.html){:target="_blank"}  
+* [For Loops in JavaScript](/Goldford-MTEC1003/labs/08/js.for.loops.v02.html){:target="_blank"}  
 * [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
 
 ### JavaScript + Python: Debugging  
@@ -240,8 +240,8 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 </div>
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 8 / Part 1: JavaScript For Loops](/Goldford-MTEC1003-OL78/labs/08/lab-08-part1-js-for-loops.html){:target="_blank"}  
-* [Lab 8 / Part 2: For Loops in Python](/Goldford-MTEC1003-OL78/labs/08/lab-08-part2-python-for-loops.html){:target="_blank"}  
+* [Lab 8 / Part 1: JavaScript For Loops](/Goldford-MTEC1003/labs/08/lab-08-part1-js-for-loops.html){:target="_blank"}  
+* [Lab 8 / Part 2: For Loops in Python](/Goldford-MTEC1003/labs/08/lab-08-part2-python-for-loops.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 * [Ladybug Podcast: Episode on Debugging](https://www.ladybug.dev/episodes/debugging?rq=debugging){:target="_blank"}  
@@ -256,12 +256,12 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### [Week 9 Quiz](https://forms.gle/QgfhPgzbRdawBpPM7){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
-* [JavaScript Functions](/Goldford-MTEC1003-OL78/labs/09/js.functions.html){:target="_blank"}  
+* [JavaScript Functions](/Goldford-MTEC1003/labs/09/js.functions.html){:target="_blank"}  
 * [Python Function Definitions + Calls](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/functions.tutorial.v01/#/){:target="_blank"}
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 9 / Part 1: JavaScript Functions](/Goldford-MTEC1003-OL78/labs/09/lab-09-part1-js-functions.html){:target="_blank"}  
-* [Lab 9 / Part 2: Python Functions](/Goldford-MTEC1003-OL78/labs/09/lab-09-part2-python-functions.html){:target="_blank"}  
+* [Lab 9 / Part 1: JavaScript Functions](/Goldford-MTEC1003/labs/09/lab-09-part1-js-functions.html){:target="_blank"}  
+* [Lab 9 / Part 2: Python Functions](/Goldford-MTEC1003/labs/09/lab-09-part2-python-functions.html){:target="_blank"}  
 
 * * *
 
@@ -306,8 +306,8 @@ _Don't forget to watch + study the following..._
 </div>
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 10 / Part 1: While Loops](/Goldford-MTEC1003-OL78/labs/10/lab-10-part1-while-loops.html){:target="_blank"}  
-* [Lab 10 / Part 2: Recursions](/Goldford-MTEC1003-OL78/labs/10/lab-10-part2-recursions.html){:target="_blank"}  
+* [Lab 10 / Part 1: While Loops](/Goldford-MTEC1003/labs/10/lab-10-part1-while-loops.html){:target="_blank"}  
+* [Lab 10 / Part 2: Recursions](/Goldford-MTEC1003/labs/10/lab-10-part2-recursions.html){:target="_blank"}  
 * <p class="redish"><em>Make sure you listen to the entire Ladybug Podcast episode (find it under Week 8, above) before next class! Our next quiz will include questions related to this podcast and to the topic of debugging.</em></p>  
 
 * * *
@@ -321,7 +321,7 @@ _Don't forget to watch + study the following..._
 ### [Week 12 Quiz: Debugging](https://forms.gle/VFN49qJMEawnJra29){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
-* [Introduction to HTML + CSS](/Goldford-MTEC1003-OL78/labs/13/html_css.html){:target="_blank"}  
+* [Introduction to HTML + CSS](/Goldford-MTEC1003/labs/13/html_css.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>EXTERNAL TUTORIALS</b></h5>
 * [A CheatSheet of Basic HTML Tags](http://www.simplehtmlguide.com/cheatsheet.php){:target="_blank"}  
@@ -330,9 +330,9 @@ _Don't forget to watch + study the following..._
 * [HTML Dog's CSS Intermediate Tutorial](https://www.htmldog.com/guides/css/intermediate/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 12 / Part 1: HTML](/Goldford-MTEC1003-OL78/labs/12/lab-12a-part1-html.html){:target="_blank"}  
-* [Lab 12 / Part 2: CSS](/Goldford-MTEC1003-OL78/labs/12/lab-12a-part2-css.html){:target="_blank"}  
-* [Lab 12 / Part 3: Preparing for Your Final Assignment](/Goldford-MTEC1003-OL78/labs/12/lab-12a-part3-final-prep.html){:target="_blank"}  
+* [Lab 12 / Part 1: HTML](/Goldford-MTEC1003/labs/12/lab-12a-part1-html.html){:target="_blank"}  
+* [Lab 12 / Part 2: CSS](/Goldford-MTEC1003/labs/12/lab-12a-part2-css.html){:target="_blank"}  
+* [Lab 12 / Part 3: Preparing for Your Final Assignment](/Goldford-MTEC1003/labs/12/lab-12a-part3-final-prep.html){:target="_blank"}  
 
 * * *
 
@@ -346,10 +346,10 @@ _Don't forget to watch + study the following..._
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
-* [Introduction to the Canvas](/Goldford-MTEC1003-OL78/labs/12/canvas.html){:target="_blank"}  
-* [Drawing Events](/Goldford-MTEC1003-OL78/labs/10/events.v02.html){:target="_blank"}  
-* [Click Events](/Goldford-MTEC1003-OL78/labs/11/click.v02.html){:target="_blank"}  
-* [Animation](/Goldford-MTEC1003-OL78/labs/11/animation.v02.html){:target="_blank"}  
+* [Introduction to the Canvas](/Goldford-MTEC1003/labs/12/canvas.html){:target="_blank"}  
+* [Drawing Events](/Goldford-MTEC1003/labs/10/events.v02.html){:target="_blank"}  
+* [Click Events](/Goldford-MTEC1003/labs/11/click.v02.html){:target="_blank"}  
+* [Animation](/Goldford-MTEC1003/labs/11/animation.v02.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Example Websites Created by Former Students</b></h5>  
 _For our final lab at the end of this class, you will make a personal website that could looks like this..._  
@@ -361,9 +361,9 @@ _For our final lab at the end of this class, you will make a personal website th
 * [Example #6: Samuel Cheung](https://mtec1003-example-sites.github.io/06.samuel.cheung/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
-* [Lab 13 / Part 1: Basic Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13b-part1-basic-canvas.html){:target="_blank"}  
-* [Lab 13 / Part 2: Advanced Canvas](/Goldford-MTEC1003-OL78/labs/13/lab-13c-part2-advanced-canvas.html){:target="_blank"}  
-* [Lab 13 / Part 3: Animation](/Goldford-MTEC1003-OL78/labs/13/lab-13b-part3-animation.html){:target="_blank"}  
+* [Lab 13 / Part 1: Basic Canvas](/Goldford-MTEC1003/labs/13/lab-13b-part1-basic-canvas.html){:target="_blank"}  
+* [Lab 13 / Part 2: Advanced Canvas](/Goldford-MTEC1003/labs/13/lab-13c-part2-advanced-canvas.html){:target="_blank"}  
+* [Lab 13 / Part 3: Animation](/Goldford-MTEC1003/labs/13/lab-13b-part3-animation.html){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Further Reading / Suggested Resources</b></h5>
 * [JavaScript Games (Ski Free!)](http://basicallydan.github.io/skifree.js/){:target="_blank"}  
@@ -395,10 +395,10 @@ _For our final lab at the end of this class, you will make a personal website th
 </div>
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>    
-<!-- * [Lab 14 / Part 1: _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}   -->
-<!-- * [Lab 14 / Part 2: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-part2-web-design.html){:target="_blank"}   -->
-* [Lab 14: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-web-design-github-pages.html){:target="_blank"}  
-* [Lab 15: Finishing Your Personal Website](/Goldford-MTEC1003-OL78/labs/14/lab-15-personal-site.html){:target="_blank"}  
+<!-- * [Lab 14 / Part 1: _GitHub Pages_](/Goldford-MTEC1003/labs/14/lab-14-part1-gh-pages.html){:target="_blank"}   -->
+<!-- * [Lab 14 / Part 2: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003/labs/14/lab-14-part2-web-design.html){:target="_blank"}   -->
+* [Lab 14: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003/labs/14/lab-14-web-design-github-pages.html){:target="_blank"}  
+* [Lab 15: Finishing Your Personal Website](/Goldford-MTEC1003/labs/14/lab-15-personal-site.html){:target="_blank"}  
 
 <a id="final-code-snippets"></a>
 <h5 style="color:Tomato;"><b>Supplemental Shortcuts for HTML Elements</b></h5>  

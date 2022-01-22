@@ -23,7 +23,7 @@ layout: default
 
 <!-- <h1>Syllabus</h1> -->
 # Syllabus
-[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003-OL78/resources/week.01/Goldford.MTEC1003.Fall2021.Syllabus.v01.pdf){:target="_blank"}  
+[_A PDF version of this Syllabus lives here._](/Goldford-MTEC1003/resources/week.01/Goldford.MTEC1003.Fall2021.Syllabus.v01.pdf){:target="_blank"}  
 
 #### C O N T E N T S  
 1. <a href="#contact">Essential Course + Contact Information</a>  
@@ -56,7 +56,7 @@ layout: default
 **Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/LouisGoldford](https://calendly.com/LouisGoldford){:target="_blank"})  
 **Office Location:** Zoom (scheduled through the Calendly link above)  
 **Course Slack:** [http://goldford-mtec1003-f21.slack.com/](http://goldford-mtec1003-f21.slack.com/)  
-**Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/){:target="_blank"})  
+**Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003/](https://einbahnstrasse.github.io/Goldford-MTEC1003/){:target="_blank"})  
 <p class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em></p>  
 
 * * *  
@@ -67,7 +67,7 @@ MTEC1003 examines the fundamental topics, tools, skills, and best practices that
 
 In this semester's online version of MTEC1003, and in lieu of a physical classroom, we will rely on a few of the interactive coding tools available to us as distant learners — for example, some of our tutorials will be completed on Google Colaboratory, and we will heavily utilize Slack for essential course communication. We may also use OpenLab for some correspondence.
 
-Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public _GitHub_ user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003-OL78/resources.html){:target="_blank"}).
+Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public _GitHub_ user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003/resources.html){:target="_blank"}).
 
 * * *
 
@@ -96,7 +96,7 @@ _By the end of the course students will be able to:_
 
 <a id="resources"></a>
 ### V. Required Software + Other Resources  
-_See the [RESOURCES TAB](/Goldford-MTEC1003-OL78/resources.html){:target="_blank"} for download and documentation links._  
+_See the [RESOURCES TAB](/Goldford-MTEC1003/resources.html){:target="_blank"} for download and documentation links._  
 * Terminal (macOS) or an acceptable Terminal Emulator (Windows)  
 * an acceptable Text Editor (e.g. Atom, Sublime Text 3, or Visual Studio Code)  
 * Google Chrome  
@@ -138,7 +138,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003-OL78/resources.html){:target="_blank
 <a id="sched"></a>
 ### VIII. General Schedule of Topics
 _Please note: Our schedule of topics and their precise order may change._  
-_See the [SCHEDULE TAB](/Goldford-MTEC1003-OL78/schedule.html){:target="_blank"} for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._  
+_See the [SCHEDULE TAB](/Goldford-MTEC1003/schedule.html){:target="_blank"} for a precise breakdown of all tutorials, assignments, and other resources as the semester develops._  
 _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB.](grading.html){:target="_blank"}_  
 
 <div class="schedulingtable">
@@ -159,78 +159,78 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 <tr>
 <td markdown="span">1</td>
 <td markdown="span">8/30</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w1" target="_blank">File System: Introduction, Navigation, Paths, Output, Download, Uncompress</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w1" target="_blank">File System: Introduction, Navigation, Paths, Output, Download, Uncompress</a></td>
 </tr>
 <tr>
 <td markdown="span">2</td>
 <td markdown="span">9/13</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w2" target="_blank">File System: Shell Scripting, Permissions, Date/Time, Editing Files</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w2" target="_blank">File System: Shell Scripting, Permissions, Date/Time, Editing Files</a></td>
 </tr>
 <tr>
 <td markdown="span">3</td>
 <td markdown="span">9/20</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w3" target="_blank">Version Control: Introduction to GIT, Concepts + Basic Commands</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w3" target="_blank">Version Control: Introduction to GIT, Concepts + Basic Commands</a></td>
 </tr>
 <tr>
 <td markdown="span">4</td>
 <td markdown="span">9/27</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w4" target="_blank">Version Control: Local/Remote Repositories + Collaboration Via _GitHub_</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w4" target="_blank">Version Control: Local/Remote Repositories + Collaboration Via _GitHub_</a></td>
 </tr>
 <tr>
 <td markdown="span">5</td>
 <td markdown="span">10/4</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w5" target="_blank">JavaScript + Python: Introduction, Variables, Types, Input/Output</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w5" target="_blank">JavaScript + Python: Introduction, Variables, Types, Input/Output</a></td>
 </tr>
 <tr>
 <td markdown="span">6</td>
 <td markdown="span">10/18</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w6" target="_blank">Review: Version Control + Basic JavaScript/Python</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w6" target="_blank">Review: Version Control + Basic JavaScript/Python</a></td>
 </tr>
 <tr>
 <td markdown="span">7</td>
 <td markdown="span">10/25</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w7" target="_blank">Javascript + Python: Conditionals</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w7" target="_blank">Javascript + Python: Conditionals</a></td>
 </tr>
 <tr>
 <td markdown="span">8</td>
 <td markdown="span">11/1</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w8" target="_blank">Javascript + Python: For Loops<br />Javascript + Python: Debugging</a>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w8" target="_blank">Javascript + Python: For Loops<br />Javascript + Python: Debugging</a>
 </td>
 </tr>
 <tr>
 <td markdown="span">9</td>
 <td markdown="span">11/8</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w9" target="_blank">Javascript + Python: Functions Definitions + Function Calls</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w9" target="_blank">Javascript + Python: Functions Definitions + Function Calls</a></td>
 </tr>
 <tr>
 <td markdown="span">10</td>
 <td markdown="span">11/15</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w10" target="_blank">Introduction to Python Data Visualization + Mapping</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w10" target="_blank">Introduction to Python Data Visualization + Mapping</a></td>
 </tr>
 <tr>
 <td markdown="span">11</td>
 <td markdown="span">11/22</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w11" target="_blank">HTMJavascript + Python: More Kinds of Loops</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w11" target="_blank">HTMJavascript + Python: More Kinds of Loops</a></td>
 </tr>
 <tr>
 <td markdown="span">12</td>
 <td markdown="span">11/29</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w12" target="_blank">HTML/CSS: Introduction</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w12" target="_blank">HTML/CSS: Introduction</a></td>
 </tr>
 <tr>
 <td markdown="span">13</td>
 <td markdown="span">12/6</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w13" target="_blank">HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w13" target="_blank">HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)</a></td>
 </tr>
 <tr>
 <td markdown="span">14</td>
 <td markdown="span">12/13</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w14" target="_blank">Introduction to _GitHub_ Pages <br />Advanced Web Design + Layout</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w14" target="_blank">Introduction to _GitHub_ Pages <br />Advanced Web Design + Layout</a></td>
 </tr>
 <tr>
 <td markdown="span">15</td>
 <td markdown="span">12/20</td>
-<td markdown="span"><a href="/Goldford-MTEC1003-OL78/schedule.html#w15" target="_blank">Complete + Present Final Assignments</a></td>
+<td markdown="span"><a href="/Goldford-MTEC1003/schedule.html#w15" target="_blank">Complete + Present Final Assignments</a></td>
 </tr>
 </tbody>
 </table>

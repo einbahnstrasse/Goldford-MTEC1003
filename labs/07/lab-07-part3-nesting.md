@@ -43,7 +43,7 @@ Once you've done this, you're all set.
 Our goal for this lab will be to turn the following flowchart into Python and JavaScript programs.  
 We'll make our program as a series of _conditional statements:_  
 
-<img src="/Goldford-MTEC1003-OL78/labs/07/engineering-flow-chart.png" alt="engineering flow chart" width="800">  
+<img src="/Goldford-MTEC1003/labs/07/engineering-flow-chart.png" alt="engineering flow chart" width="800">  
 [view source](https://cacoo.com/blog/12-funny-flowcharts-help-navigate-lifes-toughest-decisions/){:target="_blank"}  
 
 Notice the "branching" effect: Imagine the structure of the flowchart to be like a tree. How you answer the 1st question (i.e. the tree "trunk") determines the "path" taken within the flowchart, and how you answer the 2nd question (i.e. the "branches" of our tree) will determine 1 of 4 possible "final" outcomes.  

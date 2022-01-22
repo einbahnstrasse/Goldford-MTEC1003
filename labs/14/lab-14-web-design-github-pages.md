@@ -42,7 +42,7 @@ But this time, we'll employ some more advanced web design concepts by building a
 In order to do this, start by creating a new repository on _GitHub_. Call it **lab-14-site** and then **CLONE** it onto your local machine inside your **/mtec1003** folder. (As always, use your knowledge of git and all of your previous references in order to do this.)   
 
 _ProTip:_ **Bookmark the following page so that you can easily repeat these steps in your future labs!**  
-* [Cloning a Remote Repo Using Your _GitHub_ API Access Token](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/04/cloning.with.token.v01.html){:target="_blank"}   
+* [Cloning a Remote Repo Using Your _GitHub_ API Access Token](https://einbahnstrasse.github.io/Goldford-MTEC1003/labs/04/cloning.with.token.v01.html){:target="_blank"}   
 * On _GitHub_, create and name your new repository **lab-14-site** and **clone** it inside your **/mtec1003** folder.  
 * Once you've completed the steps at the link above, you're ready to begin.  
 * Open up your text editor (e.g. Atom, Sublime Text, etc.)...  
@@ -408,7 +408,7 @@ Let's replace the simple contents of each div ("Divider1", "Divider2", etc.) wit
 
 The following text-only news stories have been prepared for you with the proper HTML tags; they're ready to copy and paste inside your **index.html** file. For example, click on the following link for the first story:  
 
-* [Dummy News Story \#1](/Goldford-MTEC1003-OL78/labs/14/resources/story.v01.txt){:target="_blank"}  
+* [Dummy News Story \#1](/Goldford-MTEC1003/labs/14/resources/story.v01.txt){:target="_blank"}  
 
 ...then **highlight** the entire text file (on Mac: command + A) and **copy** the entire story (command + C).  
 
@@ -449,10 +449,10 @@ Your new div should look like this, beginning on line 21:
 
 Use the following links to copy unique text (i.e. news articles) and paste them inside each div:  
 
-* [Dummy News Story \#2](/Goldford-MTEC1003-OL78/labs/14/resources/story.v02.txt){:target="_blank"}  
-* [Dummy News Story \#3](/Goldford-MTEC1003-OL78/labs/14/resources/story.v03.txt){:target="_blank"}  
-* [Dummy News Story \#4](/Goldford-MTEC1003-OL78/labs/14/resources/story.v04.txt){:target="_blank"}  
-* [Dummy News Story \#5](/Goldford-MTEC1003-OL78/labs/14/resources/story.v05.txt){:target="_blank"}  
+* [Dummy News Story \#2](/Goldford-MTEC1003/labs/14/resources/story.v02.txt){:target="_blank"}  
+* [Dummy News Story \#3](/Goldford-MTEC1003/labs/14/resources/story.v03.txt){:target="_blank"}  
+* [Dummy News Story \#4](/Goldford-MTEC1003/labs/14/resources/story.v04.txt){:target="_blank"}  
+* [Dummy News Story \#5](/Goldford-MTEC1003/labs/14/resources/story.v05.txt){:target="_blank"}  
 
 Once you've copied in all this text, refresh your **index.html** page, scroll down and notice that each div has a different size. This is because instead of setting their `height:` properties to the same value (in our CSS), we instead invoked the `word-wrap: break-word;` rule, ensuring that each div would only require the amount of space needed for its contents!  
 

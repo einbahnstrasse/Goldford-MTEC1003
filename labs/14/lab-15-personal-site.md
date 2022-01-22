@@ -31,9 +31,9 @@ Below, I'll describe the requirements for this lab:
 <a id="reqs"></a>
 ## 1. Requirements of Lab 15 (Your Website)  
 
-Previously you gathered your ideas and planned for your website in [Lab 12 / Part 3: Preparing for Your Final Assignment](/Goldford-MTEC1003-OL78/labs/12/lab-12a-part3-final-prep.html){:target="_blank"}.  
+Previously you gathered your ideas and planned for your website in [Lab 12 / Part 3: Preparing for Your Final Assignment](/Goldford-MTEC1003/labs/12/lab-12a-part3-final-prep.html){:target="_blank"}.  
 
-For the final project, you will take this content you developed and plug it into the website template presented to you in [Lab 14: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-web-design-github-pages.html){:target="_blank"}.  
+For the final project, you will take this content you developed and plug it into the website template presented to you in [Lab 14: Advanced Web Design + _GitHub Pages_](/Goldford-MTEC1003/labs/14/lab-14-web-design-github-pages.html){:target="_blank"}.  
 
 Your website will be hosted on _GitHub_ in a repository with name of your choice _(Recommended: lab-15-personal-site)_ and then **CLONE** it onto your local machine inside your **/mtec1003** folder. (As always, use your knowledge of git and all of your previous references in order to do this.)   
 
@@ -60,20 +60,20 @@ In addition, your website must have the following elements:
 
 * at least one **CSS stylesheet** linked in the header of your site's pages; i.e. for stylizing your site's appearance  
   - _You may opt to have more than one stylesheet if your design requires it._  
-* Your **Home page** must include some simple [animated JavaScript artwork](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/11/animation.v02.html){:target="_blank"}. _(see: Week 13)_  
+* Your **Home page** must include some simple [animated JavaScript artwork](https://einbahnstrasse.github.io/Goldford-MTEC1003/labs/11/animation.v02.html){:target="_blank"}. _(see: Week 13)_  
 * Your **About Me** page must include a **photo** of you _(<span style="color: red"><i><strong>OR</strong></i></span> if you prefer not to use your own image, no worries — any placeholder image will do!)_  
 * On any page of your site, you must have at least one of the following things we'll learn in future classes:
-  - one [click event](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/11/click.v02.html){:target="_blank"} <span style="color: red"><i><strong>OR</strong></i></span>    
-  - one [drawing event](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/labs/10/events.v02.html){:target="_blank"}.
+  - one [click event](https://einbahnstrasse.github.io/Goldford-MTEC1003/labs/11/click.v02.html){:target="_blank"} <span style="color: red"><i><strong>OR</strong></i></span>    
+  - one [drawing event](https://einbahnstrasse.github.io/Goldford-MTEC1003/labs/10/events.v02.html){:target="_blank"}.
     - _(We'll also learn about these in Week 13, but on your website they CANNOT BE THE SAME THING AS OUR LAB! You must BE CREATIVE and make your own click event or drawing event.)_  
-* You must also include one of the [self-guided supplemental HTML/CSS elements](https://einbahnstrasse.github.io/Goldford-MTEC1003-OL78/schedule.html#final-code-snippets){:target="_blank"} _(find them under Week 14)_.
+* You must also include one of the [self-guided supplemental HTML/CSS elements](https://einbahnstrasse.github.io/Goldford-MTEC1003/schedule.html#final-code-snippets){:target="_blank"} _(find them under Week 14)_.
   - These are all fun, simple HTML elements and code snippets you can easily include in your web projects, and they can be learned quickly from Instagram posts. Choose from different HTML input types and other UI objects, or even CSS image hover effects!
   - **_Optionally_**: If you're feeling confident, you can browse any of these Instagram coding accounts and find other cool web effects that you'd prefer to use instead. (However, I'd recommend staying with one of these simple ones if this is your first-ever web project!) The point here is to show you how easy it is to teach yourself more about front-end web design!  
 
 Design elements to include in your site, based on our work this week:  
 
 * Create a **navbar** at the top of your site's pages, for easy page linking across your site.
-  - _Use the template provided in_ [_Lab 14: Advanced Web Design + GitHub Pages_](/Goldford-MTEC1003-OL78/labs/14/lab-14-web-design-github-pages.html){:target="_blank"} _to create & stylize your navbar!_   
+  - _Use the template provided in_ [_Lab 14: Advanced Web Design + GitHub Pages_](/Goldford-MTEC1003/labs/14/lab-14-web-design-github-pages.html){:target="_blank"} _to create & stylize your navbar!_   
 * Use `<div>` containers to separate, stylize, and position content on your pages.    
 * Use **class** and **ID** selectors to distinguish between _group_ styling and _individual_ styling throughout your site.  
 * You must choose your own website colors (using any of the tools discussed. e.g. Adobe Color).  
