@@ -151,7 +151,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
 * [Introduction to JavaScript](/Goldford-MTEC1003/labs/05/js-intro.html){:target="_blank"}  
 * [JavaScript Basics](/Goldford-MTEC1003/labs/05/js-basics.html){:target="_blank"}  
-* [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}
+* [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 5 / Part 1: JavaScript Values, Types, Operations, Variables, Calling Functions, and Input/Output](/Goldford-MTEC1003/labs/05/lab-05-part1-js-basics.html){:target="_blank"}  
@@ -180,7 +180,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Git Review](/Goldford-MTEC1003/labs/06/git-review.html){:target="_blank"}  
 * [JavaScript Basics Review](/Goldford-MTEC1003/labs/06/js-basics-review.html){:target="_blank"}  
-* [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}  
+* [Introduction to Python](https://einbahnstrasse.github.io/MTEC1003-slides/slides/python.intro.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 6 / Part 1: JavaScript](/Goldford-MTEC1003/labs/06/lab-06-part1-js-basics.html){:target="_blank"}  
@@ -199,7 +199,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Conditionals](/Goldford-MTEC1003/labs/06/js-conditionals.html){:target="_blank"}  
 * [JavaScript Conditionals — Revisited](/Goldford-MTEC1003/labs/07/js-conditionals-revisited.html){:target="_blank"}  
-* [Booleans + Conditionals (Python + JS)](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.conditionals.tutorial.v01/#/){:target="_blank"}  
+* [Booleans + Conditionals (Python + JS)](https://einbahnstrasse.github.io/MTEC1003-slides/slides/python.conditionals.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 7 / Part 1: JavaScript Conditionals](/Goldford-MTEC1003/labs/07/lab-07-part1-javascript-conditionals.html){:target="_blank"}  
@@ -217,10 +217,10 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [For Loops in JavaScript](/Goldford-MTEC1003/labs/08/js.for.loops.v02.html){:target="_blank"}  
-* [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
+* [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"}  
 
 ### JavaScript + Python: Debugging  
-* [Introduction to Debugging](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/debugging.tutorial.v01/#/){:target="_blank"}  
+* [Introduction to Debugging](https://einbahnstrasse.github.io/MTEC1003-slides/slides/debugging.tutorial.v01/#/){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>VIDEO TUTORIALS</b></h5>
 ###### CS Dojo: 5 Debugging Tips Every Developer Should Know  
@@ -257,7 +257,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Functions](/Goldford-MTEC1003/labs/09/js.functions.html){:target="_blank"}  
-* [Python Function Definitions + Calls](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/functions.tutorial.v01/#/){:target="_blank"}
+* [Python Function Definitions + Calls](https://einbahnstrasse.github.io/MTEC1003-slides/slides/functions.tutorial.v01/#/){:target="_blank"}
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>
 * [Lab 9 / Part 1: JavaScript Functions](/Goldford-MTEC1003/labs/09/lab-09-part1-js-functions.html){:target="_blank"}  
@@ -283,7 +283,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 ### [Week 11 Quiz](https://forms.gle/x7CBfmmx5uZ5tT4W6){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
-* [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
+* [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
 
 _Don't forget to watch + study the following..._
 

@@ -44,7 +44,7 @@ In [Lab 9 / Part 1](/Goldford-MTEC1003-OL04/labs/09/lab-09-part1-js-functions.ht
   3. double.html  
   4. factorial.html
 
-Using your knowledge of Python, aided in part by this week's [Python Function Definitions + Calls](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/functions.tutorial.v01/#/){:target="_blank"} slides, translate your HTML/JavaScript programs into Python and save them as: **greetings.py, pluralize,py, double.py,** and **factorial.py.**  
+Using your knowledge of Python, aided in part by this week's [Python Function Definitions + Calls](https://einbahnstrasse.github.io/MTEC1003-slides/slides/functions.tutorial.v01/#/){:target="_blank"} slides, translate your HTML/JavaScript programs into Python and save them as: **greetings.py, pluralize,py, double.py,** and **factorial.py.**  
 
 Make sure they're in your **/lab-09-functions** repository!
 

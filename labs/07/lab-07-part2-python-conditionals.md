@@ -43,7 +43,7 @@ In [Lab 7 / Part 1](/Goldford-MTEC1003-OL04/labs/07/lab-07-part1-javascript-cond
   2. spanish.html  
   3. oddcalc.html  
 
-Using your own knowledge of Python, aided in part by this week's ["Booleans + Conditionals" slides](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.conditionals.tutorial.v01/#/){:target="_blank"}, translate your 3 HTML/JavaScript programs into Python, and save them as: cake.py, spanish,py, and oddcalc.py.
+Using your own knowledge of Python, aided in part by this week's ["Booleans + Conditionals" slides](https://einbahnstrasse.github.io/MTEC1003-slides/slides/python.conditionals.tutorial.v01/#/){:target="_blank"}, translate your 3 HTML/JavaScript programs into Python, and save them as: cake.py, spanish,py, and oddcalc.py.
 
 Make sure they're in your **/lab-07-conditionals** repository!
 

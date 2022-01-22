@@ -44,7 +44,7 @@ In [Lab 8 / Part 1](/Goldford-MTEC1003-OL04/labs/08/lab-08-part1-js-for-loops.ht
   4. largest.html
   5. fizzbuzz.html
 
-Using your knowledge of Python, aided in part by this week's [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-OL04-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"} slides, translate your 3 HTML/JavaScript programs into Python and save them as: **tens.py, party,py, average.py, largest.py,** and **fizzbuzz.py.**  
+Using your knowledge of Python, aided in part by this week's [For Loops in Python](https://einbahnstrasse.github.io/MTEC1003-slides/slides/python.for.loop.tutorial.v01/#/){:target="_blank"} slides, translate your 3 HTML/JavaScript programs into Python and save them as: **tens.py, party,py, average.py, largest.py,** and **fizzbuzz.py.**  
 
 Make sure they're in your **/lab-08-for-loops** repository!
 
