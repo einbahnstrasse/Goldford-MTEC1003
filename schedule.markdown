@@ -8,15 +8,15 @@ layout: default
 <img src="/Goldford-MTEC1003/assets/organized.gif" alt="organized" width="400" align="right">
 
 # Schedule
-_This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [CUNY CityTech Fall 2021 Academic Calendar](https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf){:target="_blank"}. The following topics and their precise order may change. Check here for updates!_  
+_This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [CityTech Spring 2022 Schedule](https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf){:target="_blank"}. The following topics and their precise order may change. Check here for updates!_  
 <div class="instructornote">  
 <p markdown="span"><em><b>Study slides, references, and tutorials before each class.</b></em></p></div>  
-**Skip to:** <a href="#w1">Week 1: 8/30</a> <a href="#w2">Week 2: 9/13</a> <a href="#w3">Week 3: 9/20</a> <a href="#w4">Week 4: 9/27</a> <a href="#w5">Week 5: 10/4</a> <a href="#w6">Week 6: 10/18</a> <a href="#w7">Week 7: 10/25</a> <a href="#w8">Week 8: 11/1</a> <a href="#w9">Week 9: 11/8</a> <a href="#w10">Week 10: 11/15</a> <a href="#w11">Week 11: 11/22</a> <a href="#w12">Week 12: 11/29</a> <a href="#w13">Week 13: 12/6</a> <a href="#w14">Week 14: 12/13</a> <a href="#w15">Week 15: 12/20</a>
+**Skip to:** <a href="#w1">Week 1</a> <a href="#w2">Week 2</a> <a href="#w3">Week 3</a> <a href="#w4">Week 4</a> <a href="#w5">Week 5</a> <a href="#w6">Week 6</a> <a href="#w7">Week 7</a> <a href="#w8">Week 8</a> <a href="#w9">Week 9</a> <a href="#w10">Week 10</a> <a href="#w11">Week 11</a> <a href="#w12">Week 12</a> <a href="#w13">Week 13</a> <a href="#w14">Week 14</a> <a href="#w15">Week 15</a>
 
 * * *
 
 <a id="w1"></a>
-<h3 class="schedule-page-date">Week 1: August 30th</h3>
+<h3 class="schedule-page-date">Week 1: January 31st</h3>
 ### File System: Introduction, Navigation, Paths, Output, Download, Uncompress  
 ### [Week #1 Survey/Quiz — Personal Info, Syllabus Elements](https://forms.gle/ZFSQ9DXqTrmbedXXA){:target="_blank"}  
 * _Complete the quizlet above as part of today's participation._  
@@ -52,9 +52,8 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w2"></a>
-<h3 class="schedule-page-date">Week 2: September 13th</h3>
+<h3 class="schedule-page-date">Week 2: February 7th</h3>
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
-<p class="redish"><i>Week 2 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>
 
 ### [Week 2 Quizlet](https://forms.gle/M63TqY7QBKEZUPUu5){:target="_blank"}  
 * _Complete the quizlet above as part of today's attendance + participation._  
@@ -83,8 +82,9 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w3"></a>
-<h3 class="schedule-page-date">Week 3: September 20th</h3>
-### Version Control: Introduction to GIT, Concepts + Basic Commands
+<h3 class="schedule-page-date">Week 3: February 14th</h3>
+### Version Control: Introduction to GIT, Concepts + Basic Commands  
+<p class="redish"><i>No class next Monday on 2/21. Week 4 will be held on 2/28. CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
 
 <!-- ### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}   -->
 ### [Week 3 Quizlet](https://forms.gle/PKLw1Qkmmm8cVmR76){:target="_blank"}  
@@ -117,8 +117,9 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w4"></a>
-<h3 class="schedule-page-date">Week 4: September 27th</h3>
-### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_
+<h3 class="schedule-page-date">Week 4: February 28th</h3>
+### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_  
+<p class="redish"><i>Week 4 has skipped 1 week! CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
 
 ### [Week 4 Quizlet](https://forms.gle/8pRFw9LF96roSr4H6){:target="_blank"}  
 
@@ -134,7 +135,7 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w5"></a>
-<h3 class="schedule-page-date">Week 5: October 4th</h3>
+<h3 class="schedule-page-date">Week 5: March 7th</h3>
 ### JavaScript + Python: Introduction, Variables, Types, Input/Output
 
 ### [Week 5 Quizlet](https://forms.gle/27cXX47ERkRchwWx7){:target="_blank"}  
@@ -171,9 +172,9 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w6"></a>
-<h3 class="schedule-page-date">Week 6: October 18th</h3>
+<h3 class="schedule-page-date">Week 6: March 14th</h3>
 ### Review: Version Control + Basic JavaScript/Python  
-<p class="redish"><i>Week 6 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>  
+<!-- <p class="redish"><i>Week 6 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>   -->
 
 ### [Week 6 Quizlet](https://forms.gle/aRLbFrLLbnkXhNbw5){:target="_blank"}  
 
@@ -189,10 +190,10 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w7"></a>
-<h3 class="schedule-page-date">Week 7: October 25th</h3>
+<h3 class="schedule-page-date">Week 7: March 21st</h3>
 ### Javascript + Python: Conditionals
 <!-- <p class="redish"><i>Spring Recess 3/27-4/4. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf" target="_blank">CityTech Spring 2021 Schedule.</a></i></p> -->  
-<p class="redish"><i>Midterm grades reported via email by 10/28. See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf" target="_blank">CityTech Fall 2021 Schedule.</a></i></p>  
+<p class="redish"><i>Midterm grades reported via email by 3/24. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>  
 
 ### [Week 7 Quizlet](https://forms.gle/CcH4KJMx9CFPZ3G98){:target="_blank"}  
 
@@ -209,9 +210,9 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w8"></a>
-<h3 class="schedule-page-date">Week 8: November 1st</h3>
+<h3 class="schedule-page-date">Week 8: March 28th</h3>
 ### JavaScript + Python: For Loops  
-<!-- <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf"  target="_blank">CityTech Fall 2021 Schedule.</a></i></p>   -->
+<!-- <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p>   -->
 
 ### [Week 8 Quiz](https://forms.gle/AUejB3RRx93ubwhZ7){:target="_blank"}  
 
@@ -249,9 +250,9 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w9"></a>
-<h3 class="schedule-page-date">Week 9: November 8th</h3>
+<h3 class="schedule-page-date">Week 9: April 4th</h3>
 ### Javascript + Python: Function Definitions + Function Calls
-<!-- <p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf"  target="_blank">CityTech Fall 2021 Schedule.</a></i></p> -->
+<!-- <p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
 ### [Week 9 Quiz](https://forms.gle/QgfhPgzbRdawBpPM7){:target="_blank"}  
 
@@ -266,9 +267,10 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w10"></a>
-<h3 class="schedule-page-date">Week 10: November 15th</h3>
+<h3 class="schedule-page-date">Week 10: April 11th</h3>
 <!-- ### Introduction to Python Data Visualization + Mapping -->
 ### Review Week  
+<p class="redish"><i>Spring Recess 4/15-4/22. After today's class, we resume on 4/25. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
 
 ### [Week 10 Quiz](https://forms.gle/Qry4hh2ebBrvXFRQ9){:target="_blank"}  
 
@@ -277,8 +279,8 @@ _Normally we won't record our classes but sometimes we may, in order to clarify 
 * * *
 
 <a id="w11"></a>
-<h3 class="schedule-page-date">Week 11: November 22nd</h3>
-### Javascript + Python: More Kinds of Loops  
+<h3 class="schedule-page-date">Week 11: April 25th</h3>  
+### Javascript + Python: More Kinds of Loops   
 
 ### [Week 11 Quiz](https://forms.gle/x7CBfmmx5uZ5tT4W6){:target="_blank"}  
 
@@ -290,7 +292,6 @@ _Don't forget to watch + study the following..._
 <h5 style="color:Tomato;"><b>Recursion Tutorial Videos</b></h5>  
 
 ###### Shiffman: Tree Branches (in p5.js)  
-<!-- test change 1/21/22 -->
 
 <div class="video">
     <figure>
@@ -314,7 +315,7 @@ _Don't forget to watch + study the following..._
 * * *
 
 <a id="w12"></a>
-<h3 class="schedule-page-date">Week 12: November 29th</h3>
+<h3 class="schedule-page-date">Week 12: May 2nd</h3>
 ### HTML/CSS: Introduction  
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
@@ -338,9 +339,9 @@ _Don't forget to watch + study the following..._
 * * *
 
 <a id="w13"></a>
-<h3 class="schedule-page-date">Week 13: December 6th</h3>
+<h3 class="schedule-page-date">Week 13: May 9th</h3>
 ### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
-<!-- <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf"  target="_blank">CityTech Fall 2021 Schedule.</a></i></p> -->
+<!-- <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
 ### [Week 13 Quizlet](https://forms.gle/CeLdfsh55hxVKj557){:target="_blank"}  
 
@@ -373,7 +374,7 @@ _For our final lab at the end of this class, you will make a personal website th
 * * *
 
 <a id="w14"></a>
-<h3 class="schedule-page-date">Week 14: December 13th</h3>
+<h3 class="schedule-page-date">Week 14: May 16th</h3>
 ### _GitHub Pages_, Advanced Web Design + Layout
 
 ### [Week 14 Quizlet](https://forms.gle/NVL7RdRgmfSegrs47){:target="_blank"}  
@@ -432,9 +433,9 @@ _For our final lab at the end of this class, you will make a personal website th
 * * *
 
 <a id="w15"></a>
-<h3 class="schedule-page-date">Week 15: December 20th</h3>
+<h3 class="schedule-page-date">Week 15: May 23rd</h3>
 ### Complete + Present Final Assignments
-<p class="redish">Finals week begins. <i>Last class session on 12/14. See <a href="https://www.citytech.cuny.edu/registrar/docs/fall_2021.pdf"  target="_blank">CityTech Fall 2021 Schedule.</a></i></p>
+<p class="redish">Finals week. <i>Last class session on 5/23. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
