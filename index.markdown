@@ -55,7 +55,7 @@ layout: default
 **Email:** <a href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a>  
 **Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/LouisGoldford](https://calendly.com/LouisGoldford){:target="_blank"})  
 **Office Location:** Zoom (scheduled through the Calendly link above)  
-**Course Slack:** [http://goldford-mtec1003-f21.slack.com/](http://goldford-mtec1003-s22.slack.com/)  
+**Course Slack:** [http://goldford-mtec1003-s22.slack.com/](http://goldford-mtec1003-s22.slack.com/)  
 **Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003/](https://einbahnstrasse.github.io/Goldford-MTEC1003/){:target="_blank"})  
 <!-- <p class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em></p>   -->
 
