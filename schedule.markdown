@@ -55,7 +55,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <h3 class="schedule-page-date">Week 2: February 7th</h3>
 ### File System: Shell Scripting, Permissions, Date/Time, Editing Files  
 
-### [Week 2 Quizlet](https://forms.gle/M63TqY7QBKEZUPUu5){:target="_blank"}  
+### [Week 2 Quizlet](https://forms.gle/vFneHmAUaNeTaHo4A){:target="_blank"}  
 * _Complete the quizlet above as part of today's attendance + participation._  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
