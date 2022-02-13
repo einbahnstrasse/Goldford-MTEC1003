@@ -87,7 +87,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <p class="redish"><i>No class next Monday on 2/21. Week 4 will be held on 2/28. CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
 
 <!-- ### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}   -->
-### [Week 3 Quizlet](https://forms.gle/PKLw1Qkmmm8cVmR76){:target="_blank"}  
+### [Week 3 Quizlet](https://forms.gle/S2TocaafUk8a3ToZ7){:target="_blank"}  
 * _Complete the quizlet above as part of today's attendance + participation._   
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>  
