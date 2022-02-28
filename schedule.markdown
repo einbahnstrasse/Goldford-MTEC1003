@@ -121,7 +121,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 ### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_  
 <p class="redish"><i>Week 4 has skipped 1 week! CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
 
-### [Week 4 Quizlet](https://forms.gle/8pRFw9LF96roSr4H6){:target="_blank"}  
+### [Week 4 Quiz](https://forms.gle/hgcdLfwfwiAJeKes7){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Tutorials</b></h5>  
 * [Pull Requests + Merge Conflicts](/Goldford-MTEC1003/labs/04/git.pull.requests.and.merge.tutorial.v01.html){:target="_blank"}  
