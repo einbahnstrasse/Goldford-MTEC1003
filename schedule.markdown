@@ -176,7 +176,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 ### Review: Version Control + Basic JavaScript/Python  
 <!-- <p class="redish"><i>Week 6 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>   -->
 
-### [Week 6 Quizlet](https://forms.gle/aRLbFrLLbnkXhNbw5){:target="_blank"}  
+### [Week 6 Quiz](https://forms.gle/GDj9DbasS5JaeksJ7){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Git Review](/Goldford-MTEC1003/labs/06/git-review.html){:target="_blank"}  
