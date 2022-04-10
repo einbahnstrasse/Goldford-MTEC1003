@@ -272,7 +272,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 ### Review Week  
 <p class="redish"><i>Spring Recess 4/15-4/22. After today's class, we resume on 4/25. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
 
-### [Week 10 Quiz](https://forms.gle/Qry4hh2ebBrvXFRQ9){:target="_blank"}  
+### [Week 10 Quiz](https://forms.gle/pu4iPmRVnw5Ymc9u7){:target="_blank"}  
 
 <h4 style="color:yellow;"><i>Nothing to prepare. This week we'll be reviewing for loops and discussing some more advanced features of functions and variables, including a discussion of "variable scope."</i></h4>
 
