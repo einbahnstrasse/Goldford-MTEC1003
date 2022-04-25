@@ -282,7 +282,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <h3 class="schedule-page-date">Week 11: April 25th</h3>  
 ### Javascript + Python: More Kinds of Loops   
 
-### [Week 11 Quiz](https://forms.gle/x7CBfmmx5uZ5tT4W6){:target="_blank"}  
+### [Week 11 Quiz](https://forms.gle/nfTpaKXMLMD53vHg6){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
