@@ -320,7 +320,7 @@ _Don't forget to watch + study the following..._
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
-### [Week 12 Quiz: Debugging](https://forms.gle/VFN49qJMEawnJra29){:target="_blank"}  
+### [Week 12 Quiz: Debugging](https://forms.gle/rnkNiFBBbtkDfrsY8){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Introduction to HTML + CSS](/Goldford-MTEC1003/labs/13/html_css.html){:target="_blank"}  
