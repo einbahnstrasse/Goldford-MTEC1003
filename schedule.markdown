@@ -343,7 +343,7 @@ _Don't forget to watch + study the following..._
 ### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
 <!-- <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
-### [Week 13 Quizlet](https://forms.gle/CeLdfsh55hxVKj557){:target="_blank"}  
+### [Week 13 Quizlet](https://forms.gle/dP8vymgLTfhYvRTi6){:target="_blank"}  
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
