@@ -53,10 +53,10 @@ layout: default
 
 **Professor:** Louis Goldford  
 **Email:** <a href="mailto:louis.goldford81@citytech.cuny.edu">louis.goldford81@citytech.cuny.edu</a>  
-**Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/louis-goldford](https://calendly.com/louis-goldford){:target="_blank"})  
-**Office Location:** Zoom (scheduled through the Calendly link above)  
+**Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/louis-goldford](https://calendly.com/louis-goldford){:target="_blank"}   
+**Office Location:** Zoom _(scheduled through the Calendly link above)_  
 **Course Discord:** Coming Soon! 
-**Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003/](https://einbahnstrasse.github.io/Goldford-MTEC1003/){:target="_blank"})  
+**Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003/](https://einbahnstrasse.github.io/Goldford-MTEC1003/){:target="_blank"}  
 <!-- <p class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em></p>   -->
 
 * * *  
