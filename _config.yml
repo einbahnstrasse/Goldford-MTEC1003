@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MTEC1003-OL15 Media Computation Skills Lab
+title: MTEC1003-OL20 Media Computation Skills Lab
 email: LGoldford@citytech.cuny.edu
 author: Prof. Louis Goldford
 description: >- # this means to ignore newlines until "baseurl:"

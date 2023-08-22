@@ -47,9 +47,9 @@ layout: default
 <a id="contact"></a>
 ### I. Essential Course + Contact Information
 **Course Number:** MTEC1003  
-**Semester:** Spring 2022  
-**Section:** OL15 (27087)  
-**Location + Time:** Mondays 2:30-5:00 PM [ONLINE]  
+**Semester:** Fall 2023  
+**Section:** OL20 (21310)  
+**Location + Time:** Wednesdsays 6:00-8:30 PM [ONLINE]  
 
 **Professor:** Louis Goldford  
 **Email:** <a href="mailto:LGoldford@citytech.cuny.edu">LGoldford@citytech.cuny.edu</a>  
