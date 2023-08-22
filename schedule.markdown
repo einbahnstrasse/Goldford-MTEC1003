@@ -8,7 +8,7 @@ layout: default
 <img src="/Goldford-MTEC1003/assets/organized.gif" alt="organized" width="400" align="right">
 
 # Schedule
-_This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the {{ site.CUNY-calendar }}. The following topics and their precise order may change. Check here for updates!_  
+_This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [Current CityTech Academic Calendar]({{ site.CUNY-calendar }}){:target="_blank"}. The following topics and their precise order may change. Check here for updates!_  
 <div class="instructornote">  
 <p markdown="span"><em><b>Study all slides, references, and tutorials before each class.</b></em></p></div>  
 **Skip to:** <a href="#w1">Week 1</a> <a href="#w2">Week 2</a> <a href="#w3">Week 3</a> <a href="#w4">Week 4</a> <a href="#w5">Week 5</a> <a href="#w6">Week 6</a> <a href="#w7">Week 7</a> <a href="#w8">Week 8</a> <a href="#w9">Week 9</a> <a href="#w10">Week 10</a> <a href="#w11">Week 11</a> <a href="#w12">Week 12</a> <a href="#w13">Week 13</a> <a href="#w14">Week 14</a> <a href="#w15">Week 15</a>
@@ -44,7 +44,7 @@ _This page will be updated frequently with examples, video tutorials, links to n
 _Normally we won't record our classes but sometimes we may in order to clarify complex topics. This video is archived from a previous version of this class, but the directions are all the same. For the 2 labs (below) this week, enter your respones in the text files and then save your changes directly on GitHub (i.e. "commit" your changes), as demonstrated and described in class and in this video. The slides above will help guide you to these answers, so be sure to study them and use to your advantage. Don't forget to study the slides for Week 2 before next class!_   
 
 <h5 style="color:Tomato;"><b>LAB ASSIGNMENTS</b></h5>  
-<div class="instructornote"><p markdown="span"><em>Due online (GitHub) at 11:59 PM Saturday night each week!</em></p></div>  
+<div class="instructornote"><p markdown="span"><em>Due online (GitHub) at 11:59 PM Tuesday night each week!</em></p></div>  
 * [Setting Up GitHub for Submitting Labs](/Goldford-MTEC1003/labs/01/how.to.submit.1st.week.labs.html){:target="_blank"}  
 * [Lab 1 / Part 1: Commands + Navigation](https://github.com/einbahnstrasse/mtec1003-week1-labs/blob/master/lab.01.part1.commands.navigation.txt){:target="_blank"}  
 * [Lab 1 / Part 2: Download + (Un)Compress](https://github.com/einbahnstrasse/mtec1003-week1-labs/blob/master/lab.01.part2.download.compress.txt){:target="_blank"}  

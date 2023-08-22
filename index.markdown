@@ -112,7 +112,7 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003/resources.html){:target="_blank"} fo
 * **Arrive on time** to all online course sessions. — _See Attendance + Participation Policy below._
 * Setup + maintain a public _GitHub_ account, and report your username to the instructor for grading at the start of the semester.
 * Spend **1-2 additional hours a week** _(outside of class)_ on the timely completion of our lab assignments and projects.
-* Submit assignments by the given deadlines: typically **on the Saturday night following class.**
+* Submit assignments by the given deadlines: {{ site.weekly-deadline-statement }}
 * **Back up and organize your work REGULARLY on _GitHub_.** _Catastrophic loss of materials is no excuse for missed deadlines!_
 
 #### VI. Part II. Special Note About Readings + Slides
