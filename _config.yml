@@ -30,10 +30,18 @@ twitter_username: einbahnstrasse
 github_username:  einbahnstrasse
 #show_downloads: false
 
+# +8/22/23 commenting out theme / plugins and replacing below...
 # Build settings
-theme: jekyll-theme-hacker
+# theme: jekyll-theme-hacker
+# plugins:
+#   - jekyll-feed
+
+# +8/22/23 trying to repair gem problems for Fall 2023!
+# https://github.com/pages-themes/hacker
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
-  - jekyll-feed
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
 
 
 # SCHEDULE-SPECIFIC VARIABLES:
