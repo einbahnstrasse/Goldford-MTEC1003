@@ -19,7 +19,7 @@ _Mac users can ignore this step! But if you're on Windows, install one of these 
 * [Xshell](https://xshell.en.softonic.com/){:target="_blank"}  
 * [Cmder](https://cmder.net/){:target="_blank"}  
 * [PuTTY](https://www.puttygen.com/download-putty){:target="_blank"}  
-* Or, check out some others: [15 Best Terminal Emulators for Windows in 2020](https://www.puttygen.com/windows-terminal-emulators){:target="_blank"}  
+* Or, check out some others: [15 Best Terminal Emulators for Windows in 2023](https://www.puttygen.com/windows-terminal-emulators){:target="_blank"}  
 
 ### 1b. Windows Users: Virtual Desktop (Optional)  
 _Additionally, Windows users may request access to a Virtual Desktop to be able to work on macOS remotely._  

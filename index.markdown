@@ -52,10 +52,10 @@ layout: default
 **Location + Time:** Wednesdsays 6:00-8:30 PM [ONLINE]  
 
 **Professor:** Louis Goldford  
-**Email:** <a href="mailto:LOUIS.GOLDFORD81@citytech.cuny.edu">LOUIS.GOLDFORD81@citytech.cuny.edu</a>  
-**Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/LouisGoldford](https://calendly.com/LouisGoldford){:target="_blank"})  
+**Email:** <a href="mailto:louis.goldford81@citytech.cuny.edu">louis.goldford81@citytech.cuny.edu</a>  
+**Office Hours:** by appointment, scheduled via Calendly: [https://calendly.com/louis-goldford](https://calendly.com/louis-goldford){:target="_blank"})  
 **Office Location:** Zoom (scheduled through the Calendly link above)  
-**Course Slack:** [http://goldford-mtec1003-s22.slack.com/](http://goldford-mtec1003-s22.slack.com/)  
+**Course Discord:** Coming Soon! 
 **Course Website:** [https://einbahnstrasse.github.io/Goldford-MTEC1003/](https://einbahnstrasse.github.io/Goldford-MTEC1003/){:target="_blank"})  
 <!-- <p class="redish"><em>Notice that the web address does not match our Fall section number. The course website address above is correct (ending in OL78) even though our Fall section number is OL04.</em></p>   -->
 
@@ -65,9 +65,9 @@ layout: default
 ### II. Course Description  
 MTEC1003 examines the fundamental topics, tools, skills, and best practices that support creative programming. At its core we ask how the user can gain finer control over their computer and make better use of it in their personal practice. Through our weekly lab assignments, demonstrations, and supplementary resources, students will gain fluency with the tools necessary to construct websites, using essential front-end technologies such as HTML/CSS and JavaScript. Additionally, students will implement fundamental programming paradigms in JavaScript and Python, and will harness the computer's powerful administrative functionality on the Unix command line. We will organize our workflow intelligently with source code management (i.e. Git). Our work prepares the student for subsequent classes in the MTEC course rotation. Time permitting, we will also touch on the basics of data mapping for artistic purposes.
 
-In this semester's online version of MTEC1003, and in lieu of a physical classroom, we will rely on a few of the interactive coding tools available to us as distant learners — for example, some of our tutorials will be completed on Google Colaboratory, and we will heavily utilize Slack for essential course communication. We may also use OpenLab for some correspondence.
+In this semester's online version of MTEC1003, and in lieu of a physical classroom, we will rely on a few of the interactive coding tools available to us as distant learners — for example, some of our tutorials will be completed on Google Colaboratory, and we will heavily utilize Discord for essential course communication. We may also use OpenLab for some correspondence.
 
-Students will therefore be **required** to (1) set up and join our course's Slack channel, (2) set up and maintain a public _GitHub_ user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003/resources.html){:target="_blank"}).
+Students will therefore be **required** to (1) set up and join our course's Discord channel, (2) set up and maintain a public _GitHub_ user account for all submitting assignments, and (3) download/install all required software on their own computer (from the [RESOURCES TAB](/Goldford-MTEC1003/resources.html){:target="_blank"}).
 
 * * *
 
@@ -125,15 +125,15 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003/resources.html){:target="_blank"} fo
 <a id="comm"></a>
 ### VII. Communication
 * Weekly course sessions will be held on Zoom. Use the recurring virtual Zoom classroom link emailed to you at the start of the semester.
-* City Tech email accounts are our official means of communication, but we will also use Slack and OpenLab for additional discussion.  
-* **Requests to the instructor for assistance:** Send an email, or a message on Slack. I will respond during normal working hours; requests arriving "after hours" will be answered on subsequent weekdays.  
+* City Tech email accounts are our official means of communication, but we will also use Discord and OpenLab for additional discussion.  
+* **Requests to the instructor for assistance:** Send an email, or a message on Discord. I will respond during normal working hours; requests arriving "after hours" will be answered on subsequent weekdays.  
 * [Professional communication etiquette](https://www.indeed.com/career-advice/career-development/professional-email-salutations){:target="_blank"} is expected in our written correspondence. In emails and messages, this includes polite and appropriate salutations, greetings, and courtesies.  
-* **Virtual office hours are available through my Calendly link** _(see I. Essential Course + Contact Information, above)_. If you are frequently missing from class discussion, missing lab assignments, or demonstrating poor comprehension of our materials, **I may occasionally require office hours visits with you, in which case I’ll send you a message through Slack or in an email. It is my expectation that you respond promptly and sign up for a time** to discuss any such perceived issues, and failure to do so will be reflected in negative participation points.  
-* Slack should be used during regular hours. Please respond during the workday as promptly as you can to inquiries from the instructor (both for email and messages sent on Slack). _Multiple successive days without a response is unacceptable._
+* **Virtual office hours are available through my Calendly link** _(see I. Essential Course + Contact Information, above)_. If you are frequently missing from class discussion, missing lab assignments, or demonstrating poor comprehension of our materials, **I may occasionally require office hours visits with you, in which case I’ll send you a message through Discord or in an email. It is my expectation that you respond promptly and sign up for a time** to discuss any such perceived issues, and failure to do so will be reflected in negative participation points.  
+* Discord should be used during regular hours. Please respond during the workday as promptly as you can to inquiries from the instructor (both for email and messages sent on Discord). _Multiple successive days without a response is unacceptable._
 * **Actively participate** in our online class discussions. **Thoughtfully contribute to a positive classroom environment,** while supporting and challenging your colleagues’ ideas.
-* **Check Slack regularly** for group and private messages.
-* If you have a question that may be relevant to the group (about assignments, etc.), post in the #general channel on Slack.
-* Use Slack for easy communications with your classmates as well — you can DM individuals or selected groups.
+* **Check Discord regularly** for group and private messages.
+* If you have a question that may be relevant to the group (about assignments, etc.), post in the #general channel on Discord.
+* Use Discord for easy communications with your classmates as well — you can DM individuals or selected groups.
 
 <a id="sched"></a>
 ### VIII. General Schedule of Topics
@@ -251,19 +251,19 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 * Additionally, each quiz will conclude with a passphrase given verbally by the instructor over Zoom at a random time during the class session. You will be unable to submit your weekly quiz for participation points until you submit the correct passphrase at the end. You must remain present and alert in class in order to receive the correct passphrase.  Do not repeat the passphrase once it’s been given by the instructor.  
 * Utilize Zoom's chat and hand-raising features for interacting with the instructor or the class. Occasionally you will be prompted to answer questions, so these tools are essential.  
 * For questions about using Zoom and its features, consult the [Zoom Help Center.](https://support.zoom.us/hc/en-us){:target="_blank"}    
-* Test your internet connection on the day of class before it's too late. If you are suddenly experiencing connection problems that prevent you from joining one of our sessions on time, send me a Slack message immediately, and an email later if necessary. Further information about our Attendance Policy appears below. Failure to proactively troubleshoot long-term connection problems (and/or to communicate with the instructor about them) will be problematic for your participation score.  
+* Test your internet connection on the day of class before it's too late. If you are suddenly experiencing connection problems that prevent you from joining one of our sessions on time, send me a Discord message immediately, and an email later if necessary. Further information about our Attendance Policy appears below. Failure to proactively troubleshoot long-term connection problems (and/or to communicate with the instructor about them) will be problematic for your participation score.  
 * Avoid distractions from social media and unrelated gaming or web content. Strive to engage fully during our dedicated class time. We only meet on Mondays, so it will be difficult to recoup the losses of not paying attention later in the week, e.g. while finishing assignments.  
 * Typically we will take a short break about midway through class. If you need additional time for restroom breaks or emergencies, quietly and occasionally excuse yourself by muting your video and audio on Zoom. However, frequent and recurring self-excusals will reflect negatively on your engagement in our class and result in lowered participation scores.  
 * Failure to comply with these policies will result in a lowered participation score. I grade holistically, but will not be curving your scores when long-term participation issues persist.  
 * There is no extra credit in MTEC1003. Therefore, plan accordingly.  
-* Certain demonstrations in class may be recorded for anyone in need of an asynchronous learning option, but in general we do not record weekly lectures. Any such videos will be made available temporarily through our Course Slack page, but will never be posted publicly.  
+* Certain demonstrations in class may be recorded for anyone in need of an asynchronous learning option, but in general we do not record weekly lectures. Any such videos will be made available temporarily through our Course Discord page, but will never be posted publicly.  
 * Bear in mind that you will be doing exercises on your computer at the same time we're discussing and presenting examples on Zoom. Locate an easy way to rapidly switch between the application windows open on your desktop, e.g. between Zoom and your Terminal, Text Editor, and/or Chrome. On macOS, for example, this is easily accomplished by holding down the `Command` key and pressing `TAB` key to switch between applications.  
 
 <a id="arrival"></a>
 #### IX. Part II. Prompt Arrival and Absences
 * Students are expected to arrive promptly to all virtual class sessions, stay online and involved through the duration of each session, participate and engage in our labs, discussions, and demonstrations.  
 * Follow this **Procedure for Absences:**
-	* Contact a classmate for notes on what you missed (e.g. on Slack).
+	* Contact a classmate for notes on what you missed (e.g. on Discord).
 	* Check our Course Website for assignments, slides, tutorials, recommended documentation reading, etc.
 	* After these first 2 steps, contact the instructor with any additional questions.
 * **Excused absences/lateness must be accompanied by documentation** and/or include advance notice with the instructor where possible. Excused absences/lateness will not impact on your grade. Absences may be excused in cases of: documentation of illness provided by a doctor, religious observance with advance notice, official school-related activity (always with documentation and advanced notice), and on a case-by-case basis for other critical events, at the discretion of the instructor.
@@ -284,23 +284,23 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 </thead>
 <tbody>
 <tr>
-<td markdown="span">2:30 or earlier</td>
+<td markdown="span">6:00 or earlier</td>
 <td markdown="span">5 points (full credit)</td>
 </tr>
 <tr>
-<td markdown="span">2:31-2:40</td>
+<td markdown="span">6:01-6:10</td>
 <td markdown="span">4 points</td>
 </tr>
 <tr>
-<td markdown="span">2:40-3:00</td>
+<td markdown="span">6:10-6:30</td>
 <td markdown="span">3 points</td>
 </tr>
 <tr>
-<td markdown="span">3:00-3:30</td>
+<td markdown="span">6:30-7:00</td>
 <td markdown="span">2 points</td>
 </tr>
 <tr>
-<td markdown="span">after 3:30</td>
+<td markdown="span">after 7:00</td>
 <td markdown="span">1 point</td>
 </tr>
 <tr>

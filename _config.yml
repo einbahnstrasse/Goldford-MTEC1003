@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: MTEC1003-OL20 Media Computation Skills Lab
-email: LOUIS.GOLDFORD81@citytech.cuny.edu
+email: louis.goldford81@citytech.cuny.edu
 author: Prof. Louis Goldford
 description: >- # this means to ignore newlines until "baseurl:"
   Fall 2023 Wed 6:00-8:30 [ONLINE] Prof. Louis Goldford.
