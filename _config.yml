@@ -35,6 +35,25 @@ theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
+week-01: 8/30
+week-02: 9/6
+week-03: 9/13
+week-04: 9/20
+week-05: 9/27
+week-06: 10/4
+week-07: 10/11
+week-08: 10/18
+week-09: 10/25
+week-10: 11/1
+week-11: 11/8
+week-12: 11/15
+week-13: 11/29
+week-14: 12/6
+week-15: 12/13
+
+drop-deadline: 9/14
+midterm-deadline: 10/26
+
 gems:
   - jekyll-relative-links
 # trying to fix internal links!
