@@ -8,7 +8,7 @@ layout: default
 <img src="/Goldford-MTEC1003/assets/organized.gif" alt="organized" width="400" align="right">
 
 # Schedule
-_This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the [CityTech Fall 2023 Schedule](https://www.citytech.cuny.edu/registrar/docs/fall_2023.pdf){:target="_blank"}. The following topics and their precise order may change. Check here for updates!_  
+_This page will be updated frequently with examples, video tutorials, links to new resources, and occasional updates to LAB ASSIGNMENTS. Our schedule follows the {{ site.CUNY-calendar }}. The following topics and their precise order may change. Check here for updates!_  
 <div class="instructornote">  
 <p markdown="span"><em><b>Study all slides, references, and tutorials before each class.</b></em></p></div>  
 **Skip to:** <a href="#w1">Week 1</a> <a href="#w2">Week 2</a> <a href="#w3">Week 3</a> <a href="#w4">Week 4</a> <a href="#w5">Week 5</a> <a href="#w6">Week 6</a> <a href="#w7">Week 7</a> <a href="#w8">Week 8</a> <a href="#w9">Week 9</a> <a href="#w10">Week 10</a> <a href="#w11">Week 11</a> <a href="#w12">Week 12</a> <a href="#w13">Week 13</a> <a href="#w14">Week 14</a> <a href="#w15">Week 15</a>

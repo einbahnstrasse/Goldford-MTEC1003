@@ -35,6 +35,11 @@ theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 
+
+# SCHEDULE-SPECIFIC VARIABLES:
+
+CUNY-calendar: [CityTech Fall 2023 Calendar](https://www.citytech.cuny.edu/registrar/docs/fall_2023.pdf){:target="_blank"}
+
 week-01: 8/30
 week-02: 9/6
 week-03: 9/13
@@ -53,6 +58,7 @@ week-15: 12/13
 
 drop-deadline: 9/14
 midterm-deadline: 10/26
+
 
 gems:
   - jekyll-relative-links

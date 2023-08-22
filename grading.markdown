@@ -15,7 +15,7 @@ _For an overview of grading policies for this course, see [XI. General Grading R
 
 ### I. Weekly Lab Assignments
 
-_Our schedule follows the [CUNY CityTech Spring 2021 Academic Calendar](https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf){:target="_blank"}._   
+_Our schedule follows the {{ site.CUNY-calendar }}._   
 _The following topics and their precise order may change. Check our Schedule page for updates!_  
 
 <div class="schedulingtable">
