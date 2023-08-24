@@ -193,7 +193,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <h3 class="schedule-page-date">Week 7: {{ site.week-07 }}</h3>
 ### Javascript + Python: Conditionals
 <!-- <p class="redish"><i>Spring Recess 3/27-4/4. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf" target="_blank">CityTech Spring 2021 Schedule.</a></i></p> -->  
-<p class="redish"><i>Midterm grades reported via email by 3/24. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>  
+<!-- <p class="redish"><i>Midterm grades reported via email by 3/24. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>   -->
 
 ### [Week 7 Quizlet](https://forms.gle/u5aovKDWUmqh8R4w6){:target="_blank"}  
 
@@ -270,7 +270,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <h3 class="schedule-page-date">Week 10: {{ site.week-10 }}</h3>
 <!-- ### Introduction to Python Data Visualization + Mapping -->
 ### Review Week  
-<p class="redish"><i>Spring Recess 4/15-4/22. After today's class, we resume on 4/25. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
+<!-- <p class="redish"><i>Spring Recess 4/15-4/22. After today's class, we resume on 4/25. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
 ### [Week 10 Quiz](https://forms.gle/pu4iPmRVnw5Ymc9u7){:target="_blank"}  
 
