@@ -244,4 +244,14 @@ _The following topics and their precise order may change. Check our Schedule pag
 
 ### III. Altogether, thats...
 
-**`340 Total Points`** for the course as a whole.
+**`340 Total Points`** for the course as a whole.   
+
+* * *
+
+### IV. Midterm Progress Report   
+
+Although there is no midterm exam for this course, your progress to date will be reported to you by email during the midterm period.   
+
+This semester, you should receive a midterm progress report from me on or before:   
+
+{{ site.midterm-deadline }}   

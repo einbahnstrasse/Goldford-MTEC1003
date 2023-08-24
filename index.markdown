@@ -49,7 +49,8 @@ layout: default
 **Course Number:** MTEC1003  
 **Semester:** Fall 2023  
 **Section:** OL20 (21310)  
-**Location + Time:** Wednesdsays 6:00-8:30 PM [ONLINE]  
+**Location + Time:** Wednesdsays 6:00-8:30 PM   
+**Modality:** Zoom [ONLINE]  
 
 **Professor:** Louis Goldford  
 **Email:** <a href="mailto:louis.goldford81@citytech.cuny.edu">louis.goldford81@citytech.cuny.edu</a>  
@@ -124,7 +125,6 @@ _See the [RESOURCES TAB](/Goldford-MTEC1003/resources.html){:target="_blank"} fo
 
 <a id="comm"></a>
 ### VII. Communication
-* Weekly course sessions will be held on Zoom. Use the recurring virtual Zoom classroom link emailed to you at the start of the semester.
 * City Tech email accounts are our official means of communication, but we will also use Discord and OpenLab for additional discussion.  
 * **Requests to the instructor for assistance:** Send an email, or a message on Discord. I will respond during normal working hours; requests arriving "after hours" will be answered on subsequent weekdays.  
 * [Professional communication etiquette](https://www.indeed.com/career-advice/career-development/professional-email-salutations){:target="_blank"} is expected in our written correspondence. In emails and messages, this includes polite and appropriate salutations, greetings, and courtesies.  
@@ -243,21 +243,27 @@ _For a detailed list of assignments, points, and deadlines, see the [GRADING TAB
 _Participation is based on attendance and your engagement on Zoom, and will form a substantial portion of your grade._
 
 #### IX. Part I. Virtual Participation on Zoom  
-* You will be encouraged but not required to share your video connection for the duration of each class. You will be called upon to share your audio and screen-sharing connections, which remain required (for asking/answering questions, demonstrating your work, troubleshooting your code, etc). Failure to unmute your Zoom microphone and respond within 15 seconds of being called upon will be considered an absence from class, and will result in lowered participation scores for the day. Technical difficulties are no excuse (see policy regarding internet connection below): you should test your connection before class, and if there are any problems, they must be reported in advance.   
-* If you choose not to share your video, your engagement and presence must still be felt through your active participation in other manners: e.g. responses to prompts and questions, offering possible solutions and perspectives where appropriate, etc.  
-* Find a quiet and presentable space that you don't mind sharing through your Zoom audio (and possibly video) connection. You can also choose a virtual background within Zoom settings if you want to share your video but need to preserve the privacy of your space.  
-* In lieu of a video sharing attendance requirement, you will complete weekly online quizzes as part of your participation grade during our allotted class time. These quizzes usually take about 15-20 minutes to complete and will begin promptly at the start of each class. Therefore, your prompt arrival at 2:30 ensures that you have the full amount of time to demonstrate your participation. Each quiz is worth a variable number of points each week and is entirely based on our slides and other materials located under the SCHEDULE TAB of our Course Website, as well as issues that may have arisen during our previous class discussions.  
-* The topic(s) of each quiz may review the previous week’s materials or may include questions on the upcoming topics of the current week. Therefore, you will need to take notes and study in advance of each class, fully prepared to finish these quizzes in a timely manner. Failure to complete each quiz within the allotted time will result in a loss of participation points and will negatively affect your course grade.  
-* Additionally, each quiz will conclude with a passphrase given verbally by the instructor over Zoom at a random time during the class session. You will be unable to submit your weekly quiz for participation points until you submit the correct passphrase at the end. You must remain present and alert in class in order to receive the correct passphrase.  Do not repeat the passphrase once it’s been given by the instructor.  
+* Weekly course sessions will be held exclusively on Zoom. Those enrolled in this course will find the link to our weekly Zoom sessions posted on Blackboard. Email me (see <a href="#contact">Essential Course + Contact Information</a>) above if you don't see our link on Blackboard.  
+* You are required to share your video connection for the duration of each class. You will periodically be called upon to share your audio and screen-sharing connections for asking/answering questions, demonstrating your work, troubleshooting your code, etc.  
+* Find a quiet and presentable space that you don't mind sharing through your Zoom audio connection.  
+* If you are concerned about privacy over a video chat, you may choose a virtual background within Zoom settings.  
+* Failure to share your video connection or to unmute your microphone and respond within 15 seconds of being called upon will be considered an absence from class, and will result in a loss of participation for the day.  
+* Technical difficulties are not an excuse: you are responsible for testing your connection before class, and if there are any issues, they must be promptly reported. Test your internet connection (recommended: at least 30 minutes before the start of our class). If you suddenly experience connection problems that prevent you from joining or remaining in our sessions, send me a Discord message or email me as soon as possible. Further information about our Attendance Policy appears below.  
+* Failure to proactively troubleshoot long-term connection problems (and/or to communicate with the instructor about them) will result in a loss of participation points.  
+* Students who need computer access in order to attend our virtual classes should visit V-217 for desktop access (as well as workspaces where you can dock your own laptop, if necessary).  
+* Additionally, students may [request a loaner laptop.](https://www.citytech.cuny.edu/device-loan){:target="_blank"}   
+* Your engagement and presence must be felt through your active participation: e.g. responses to prompts and questions, offering possible solutions and perspectives where appropriate, etc.  
+* Weekly online quizzes will be given at the start of class as part of your participation grade. These quizzes usually take about 15-20 minutes to complete and will begin promptly at the start of each class. Therefore, your prompt arrival ensures that you have the full amount of time to demonstrate your participation. Each quiz is worth a variable number of points each week and is entirely based on our slides and other materials located under the SCHEDULE TAB of our Course Website, as well our previous class discussions.  
+* The topic(s) of each quiz may review the previous week’s materials or may include questions on the upcoming topics of the current week. Therefore, you will need to take notes and study in advance of each class in order to finish these quizzes in a timely manner. Failure to complete each quiz within the allotted time will result in a loss of participation points and will negatively affect your course grade.  
+* Additionally, each quiz will conclude with a passphrase given verbally by the instructor over Zoom after the conclusion of the quiz time period. You must remain present and alert in class in order to receive the correct passphrase, and your quiz must be submitted within a minute of the passphrase being distributed in class. Do not repeat the passphrase once it’s been given by the instructor.   
 * Utilize Zoom's chat and hand-raising features for interacting with the instructor or the class. Occasionally you will be prompted to answer questions, so these tools are essential.  
 * For questions about using Zoom and its features, consult the [Zoom Help Center.](https://support.zoom.us/hc/en-us){:target="_blank"}    
-* Test your internet connection on the day of class before it's too late. If you are suddenly experiencing connection problems that prevent you from joining one of our sessions on time, send me a Discord message immediately, and an email later if necessary. Further information about our Attendance Policy appears below. Failure to proactively troubleshoot long-term connection problems (and/or to communicate with the instructor about them) will be problematic for your participation score.  
-* Avoid distractions from social media and unrelated gaming or web content. Strive to engage fully during our dedicated class time. We only meet on Mondays, so it will be difficult to recoup the losses of not paying attention later in the week, e.g. while finishing assignments.  
-* Typically we will take a short break about midway through class. If you need additional time for restroom breaks or emergencies, quietly and occasionally excuse yourself by muting your video and audio on Zoom. However, frequent and recurring self-excusals will reflect negatively on your engagement in our class and result in lowered participation scores.  
-* Failure to comply with these policies will result in a lowered participation score. I grade holistically, but will not be curving your scores when long-term participation issues persist.  
-* There is no extra credit in MTEC1003. Therefore, plan accordingly.  
-* Certain demonstrations in class may be recorded for anyone in need of an asynchronous learning option, but in general we do not record weekly lectures. Any such videos will be made available temporarily through our Course Discord page, but will never be posted publicly.  
-* Bear in mind that you will be doing exercises on your computer at the same time we're discussing and presenting examples on Zoom. Locate an easy way to rapidly switch between the application windows open on your desktop, e.g. between Zoom and your Terminal, Text Editor, and/or Chrome. On macOS, for example, this is easily accomplished by holding down the `Command` key and pressing `TAB` key to switch between applications.  
+* Avoid distractions from social media and unrelated web content. Strive to engage fully during our dedicated class time. We only meet once per week, so it will be difficult to recoup the losses of not paying attention later in the week, e.g. while finishing assignments.   
+* We may take a short break about midway through class. If you need additional time for restroom breaks or emergencies, quietly and occasionally excuse yourself on Zoom, keeping your video on. Frequent and recurring self-excusals will result in lowered participation scores.  
+* Failure to comply with these policies carries a long-term penalty: Although I grade holistically, I will not be curving your scores, especially when long-term participation issues persist.   
+* There is no extra credit in MTEC1003. Therefore, plan accordingly.   
+* Certain demonstrations in class may be recorded, but in general we do not record weekly lectures. Any such videos will be made available temporarily through our Course Discord page, but will never be posted publicly.  
+* Bear in mind that you will be completing exercises on your computer at the same time we're discussing and presenting examples on Zoom. Be prepared to rapidly switch between the application windows open on your desktop, e.g. between Zoom and your Terminal, Text Editor, and/or Google Chrome. On macOS, for example, this is easily accomplished by holding down the `Command` key and pressing `TAB` key to switch between applications.  
 
 <a id="arrival"></a>
 #### IX. Part II. Prompt Arrival and Absences
@@ -266,9 +272,10 @@ _Participation is based on attendance and your engagement on Zoom, and will form
 	* Contact a classmate for notes on what you missed (e.g. on Discord).
 	* Check our Course Website for assignments, slides, tutorials, recommended documentation reading, etc.
 	* After these first 2 steps, contact the instructor with any additional questions.
-* **Excused absences/lateness must be accompanied by documentation** and/or include advance notice with the instructor where possible. Excused absences/lateness will not impact on your grade. Absences may be excused in cases of: documentation of illness provided by a doctor, religious observance with advance notice, official school-related activity (always with documentation and advanced notice), and on a case-by-case basis for other critical events, at the discretion of the instructor.
-* _A lack of communication with the instructor about planned absences will therefore be treated as UNEXCUSED. Be in touch early._
-* **Unexcused absences and lateness will result in lowered participation grades.** Prompt arrival online earns you an immediate 5 points (i.e. 1/2 of your full participation). For arrivals after 2:30 PM, the following weighted score system applies:
+* **Excused absences/lateness must be accompanied by documentation** and/or include advance notice with the instructor where possible. Excused absences/lateness will not impact on your grade. Absences may be excused in cases of: documentation of illness provided by a doctor, religious observance with advance notice, official school-related activity (always with documentation and advanced notice), and on a case-by-case basis for other critical events, at the discretion of the instructor.   
+* Excused absenses must be reported to the instructor by email before the 3rd class session. (See our SCHEDULE tab to be sure you meet this deadline!)   
+* _A lack of communication with the instructor about planned absences will therefore be treated as UNEXCUSED. Be in touch early._   
+* **Unexcused absences and lateness will result in lowered participation grades.** Prompt arrival online earns you an immediate 5 points (i.e. 1/2 of your full participation). For late arrivals, the following weighted score system applies:
 
 <div class="latetable">
 <table>

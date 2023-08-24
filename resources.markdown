@@ -11,6 +11,17 @@ _Be sure you've installed + tested all 7 of these before you arrive in class:_
 
 * * *
 
+### College Laboratory Technicians (CLT)   
+_If you cannot resolve installation errors and need assistance with the installation procedures below, contact one of our CLTs:_    
+* Dimple Mirpuri: dmirpuri@citytech.cuny.edu  
+* Alberto Tuican: atuican@citytech.cuny.edu    
+* Chris Medina: chmedina@citytech.cuny.edu    
+* Yinglian Liu: yinglian.liu75@citytech.cuny.edu    
+
+_Be respectful of their roles and resonsibilities: Only ask a CLT for technical assistance. CLTs will be unable to demonstrate or instruct the lessons from our classes, for example, if you were absent. For questions related to our course content, contact your Professor._    
+
+* * *
+
 ### 1a. Windows Users: A Free Terminal Emulator
 _If you're not on macOS, you'll most likely need a program that mimics the behavior of the Unix command line._  
 _Mac users can ignore this step! But if you're on Windows, install one of these free apps:_  
