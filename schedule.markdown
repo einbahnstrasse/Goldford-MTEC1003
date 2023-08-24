@@ -84,7 +84,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <a id="w3"></a>
 <h3 class="schedule-page-date">Week 3: {{ site.week-03 }}</h3>
 ### Version Control: Introduction to GIT, Concepts + Basic Commands  
-<p class="redish"><i>No class next Monday on 2/21. Week 4 will be held on 2/28. CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
+<!-- <p class="redish"><i>No class next Monday on 2/21. Week 4 will be held on 2/28. CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
 <!-- ### [Review Quizlet (Wk. 2)](https://forms.gle/StirvtzxaiqsT8tv5){:target="_blank"}   -->
 ### [Week 3 Quizlet](https://forms.gle/S2TocaafUk8a3ToZ7){:target="_blank"}  
@@ -119,7 +119,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <a id="w4"></a>
 <h3 class="schedule-page-date">Week 4: {{ site.week-04 }}</h3>
 ### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_  
-<p class="redish"><i>Week 4 has skipped 1 week! CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
+<!-- <p class="redish"><i>Week 4 has skipped 1 week! CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
 ### [Week 4 Quiz](https://forms.gle/hgcdLfwfwiAJeKes7){:target="_blank"}  
 
@@ -341,7 +341,8 @@ _Don't forget to watch + study the following..._
 <a id="w13"></a>
 <h3 class="schedule-page-date">Week 13: {{ site.week-13 }}</h3>
 ### HTML/CSS: Drawing on Web Pages (Using JavaScript + HTML Canvas)
-<!-- <p class="redish">Thanksgiving Break is from 11/26 to 11/29. <i>Yes, we will have class on 11/23. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
+<p class="redish"><i>No classes on 11/22 due to Thanksgiving. Week 13 has skipped a week. For further details, see:</i></p>
+[Current CityTech Academic Calendar]({{ site.CUNY-calendar }}){:target="_blank"}
 
 ### [Week 13 Quizlet](https://forms.gle/dP8vymgLTfhYvRTi6){:target="_blank"}  
 
@@ -435,7 +436,8 @@ _For our final lab at the end of this class, you will make a personal website th
 <a id="w15"></a>
 <h3 class="schedule-page-date">Week 15: {{ site.week-15 }}</h3>
 ### Complete + Present Final Assignments
-<p class="redish">Finals week. <i>Last class session on 5/23. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p>
+<p class="redish"><i>Final Class held on a university Reading Day. If necessary, we can push this to the following week, but that is the very last day of the semester. I would prefer to hold our last class as scheduled to allow people to start their holiday earlier. Let me know if you have any questions about this. For more information, see:</i></p>
+[Current CityTech Academic Calendar]({{ site.CUNY-calendar }}){:target="_blank"}
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
