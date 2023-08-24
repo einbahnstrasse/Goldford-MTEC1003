@@ -18,57 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MTEC1003-OL20 Media Computation Skills Lab
-email: louis.goldford81@citytech.cuny.edu
+title: MTEC1003-OL78 Media Computation Skills Lab
+email: LGoldford@citytech.cuny.edu
 author: Prof. Louis Goldford
 description: >- # this means to ignore newlines until "baseurl:"
-  Fall 2023 Wed 6:00-8:30 [ONLINE] Prof. Louis Goldford.
-baseurl: "Goldford-MTEC1003" # the subpath of your site, e.g. /blog
+  Spring 2021 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.
+baseurl: "Goldford-MTEC1003-OL78" # the subpath of your site, e.g. /blog
 # baseurl: "Goldford-MTEC1003-Fall2020" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: einbahnstrasse
 github_username:  einbahnstrasse
 #show_downloads: false
 
-# +8/22/23 commenting out theme / plugins and replacing below...
 # Build settings
-# theme: jekyll-theme-hacker
-# plugins:
-#   - jekyll-feed
-
-# +8/22/23 trying to repair gem problems for Fall 2023!
-# https://github.com/pages-themes/hacker
-remote_theme: pages-themes/hacker@v0.2.0
+theme: jekyll-theme-hacker
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
-
-
-# SCHEDULE-SPECIFIC VARIABLES:
-
-CUNY-calendar: [CityTech Fall 2023 Calendar](https://www.citytech.cuny.edu/registrar/docs/fall_2023.pdf){:target="_blank"}
-
-weekly-deadline-statement: Deadlines are always due online (GitHub) at 11:59 PM Tuesday night each week!
-
-week-01: 8/30
-week-02: 9/6
-week-03: 9/13
-week-04: 9/20
-week-05: 9/27
-week-06: 10/4
-week-07: 10/11
-week-08: 10/18
-week-09: 10/25
-week-10: 11/1
-week-11: 11/8
-week-12: 11/15
-week-13: 11/29
-week-14: 12/6
-week-15: 12/13
-
-drop-deadline: 9/14
-midterm-deadline: 10/26
-
+  - jekyll-feed
 
 gems:
   - jekyll-relative-links
