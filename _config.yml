@@ -18,17 +18,36 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MTEC1003-OL78 Media Computation Skills Lab
-email: LGoldford@citytech.cuny.edu
+title: MTEC1003 Media Computation Skills Lab
+email: louis.goldford81@citytech.cuny.edu
 author: Prof. Louis Goldford
 description: >- # this means to ignore newlines until "baseurl:"
-  Spring 2021 Mon 2:30-5:00 [ONLINE] Prof. Louis Goldford.
-baseurl: "Goldford-MTEC1003-OL78" # the subpath of your site, e.g. /blog
+  Fall 2023 Wed 6:00-8:30 [ONLINE] Prof. Louis Goldford.
+baseurl: "Goldford-MTEC1003" # the subpath of your site, e.g. /blog
 # baseurl: "Goldford-MTEC1003-Fall2020" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: einbahnstrasse
 github_username:  einbahnstrasse
 #show_downloads: false
+
+week-01: 8/30
+week-02: 9/6
+week-03: 9/13
+week-04: 9/20
+week-05: 9/27
+week-06: 10/4
+week-07: 10/11
+week-08: 10/18
+week-09: 10/25
+week-10: 11/1
+week-11: 11/8
+week-12: 11/15
+week-13: 11/29
+week-14: 12/6
+week-15: 12/13
+
+drop-deadline: 9/14
+midterm-deadline: 10/26
 
 # Build settings
 theme: jekyll-theme-hacker
