@@ -50,6 +50,7 @@ drop-deadline: 9/14
 midterm-deadline: 10/26
 
 weekly-deadline-statement: Deadlines are always due online (GitHub) at 11:59 PM Tuesday night each week!
+CUNY-calendar: https://www.citytech.cuny.edu/registrar/docs/fall_2023.pdf
 
 # Build settings
 theme: jekyll-theme-hacker
