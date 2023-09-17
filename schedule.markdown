@@ -121,7 +121,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 ### Version Control: Local/Remote Repositories + Collaboration Via _GitHub_  
 <!-- <p class="redish"><i>Week 4 has skipped 1 week! CityTech is closed on 2/21 for President's Day. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
-### [Week 4 Quiz](https://forms.gle/hgcdLfwfwiAJeKes7){:target="_blank"}  
+### [Week 4 Quiz](https://forms.gle/U9mF31xufi9JiunWA){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Tutorials</b></h5>  
 * [Pull Requests + Merge Conflicts](/Goldford-MTEC1003/labs/04/git.pull.requests.and.merge.tutorial.v01.html){:target="_blank"}  
@@ -138,7 +138,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <h3 class="schedule-page-date">Week 5: {{ site.week-05 }}</h3>
 ### JavaScript + Python: Introduction, Variables, Types, Input/Output
 
-### [Week 5 Quiz](https://forms.gle/svjDsp6qH9xZGZc4A){:target="_blank"}  
+### [Week 5 Quiz](https://forms.gle/w3LT4DSLixm9y6kAA){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>Short Video Tutorial</b></h5>
 ###### How to Study for Week 5    
@@ -176,7 +176,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 ### Review: Version Control + Basic JavaScript/Python  
 <!-- <p class="redish"><i>Week 6 Skips 1 week! See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>   -->
 
-### [Week 6 Quiz](https://forms.gle/GDj9DbasS5JaeksJ7){:target="_blank"}  
+### [Week 6 Quiz](https://forms.gle/17TC9dTkhnQ7ZDGXA){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Git Review](/Goldford-MTEC1003/labs/06/git-review.html){:target="_blank"}  
@@ -195,7 +195,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <!-- <p class="redish"><i>Spring Recess 3/27-4/4. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2021.pdf" target="_blank">CityTech Spring 2021 Schedule.</a></i></p> -->  
 <!-- <p class="redish"><i>Midterm grades reported via email by 3/24. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p>   -->
 
-### [Week 7 Quizlet](https://forms.gle/u5aovKDWUmqh8R4w6){:target="_blank"}  
+### [Week 7 Quizlet](https://forms.gle/7qT7SLau23UXze4K9){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Conditionals](/Goldford-MTEC1003/labs/06/js-conditionals.html){:target="_blank"}  
@@ -214,7 +214,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 ### JavaScript + Python: For Loops  
 <!-- <p class="redish"><i>Midterm grades reported via email by 10/29. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p>   -->
 
-### [Week 8 Quiz](https://forms.gle/h5XMi7Gy1UDLAGta6){:target="_blank"}  
+### [Week 8 Quiz](https://forms.gle/ZMyfz2jaKsrVrwN89){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [For Loops in JavaScript](/Goldford-MTEC1003/labs/08/js.for.loops.v02.html){:target="_blank"}  
@@ -254,7 +254,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 ### Javascript + Python: Function Definitions + Function Calls
 <!-- <p class="redish"><i>Withdrawal period ends Friday 11/6! See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf"  target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
-### [Week 9 Quiz](https://forms.gle/q3MxbgKPLhTnRYuJA){:target="_blank"}  
+### [Week 9 Quiz](https://forms.gle/swT587LUA18R1HKt6){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [JavaScript Functions](/Goldford-MTEC1003/labs/09/js.functions.html){:target="_blank"}  
@@ -272,7 +272,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 ### Review Week  
 <!-- <p class="redish"><i>Spring Recess 4/15-4/22. After today's class, we resume on 4/25. See <a href="https://www.citytech.cuny.edu/registrar/docs/spring_2022.pdf" target="_blank">CityTech Spring 2022 Schedule.</a></i></p> -->
 
-### [Week 10 Quiz](https://forms.gle/pu4iPmRVnw5Ymc9u7){:target="_blank"}  
+### [Week 10 Quiz](https://forms.gle/8at1UdGAjeoiV2C39){:target="_blank"}  
 
 <h4 style="color:yellow;"><i>Nothing to prepare. This week we'll be reviewing for loops and discussing some more advanced features of functions and variables, including a discussion of "variable scope."</i></h4>
 
@@ -282,7 +282,7 @@ _Normally we won't record our classes but sometimes we may in order to clarify c
 <h3 class="schedule-page-date">Week 11: {{ site.week-11 }}</h3>  
 ### Javascript + Python: More Kinds of Loops   
 
-### [Week 11 Quiz](https://forms.gle/nfTpaKXMLMD53vHg6){:target="_blank"}  
+### [Week 11 Quiz](https://forms.gle/NG9xZewtjdYNZm4B6){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [More ("MOAR!") Kinds of Loops](https://einbahnstrasse.github.io/MTEC1003-slides/slides/more.loops.tutorial.v01/#/){:target="_blank"}  
@@ -320,7 +320,7 @@ _Don't forget to watch + study the following..._
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
-### [Week 12 Quiz: Debugging](https://forms.gle/rnkNiFBBbtkDfrsY8){:target="_blank"}  
+### [Week 12 Quiz: Debugging](https://forms.gle/wejHysGq8QetGmTE8){:target="_blank"}  
 
 <h5 style="color:Tomato;"><b>SLIDES</b></h5>
 * [Introduction to HTML + CSS](/Goldford-MTEC1003/labs/13/html_css.html){:target="_blank"}  
@@ -344,7 +344,7 @@ _Don't forget to watch + study the following..._
 <p class="redish"><i>No classes on 11/22 due to Thanksgiving. Week 13 has skipped a week. For further details, see:</i></p>
 [Current CityTech Academic Calendar]({{ site.CUNY-calendar }}){:target="_blank"}
 
-### [Week 13 Quizlet](https://forms.gle/dP8vymgLTfhYvRTi6){:target="_blank"}  
+### [Week 13 Quizlet](https://forms.gle/YdhTJovhGWf34poj7){:target="_blank"}  
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
@@ -378,7 +378,7 @@ _For our final lab at the end of this class, you will make a personal website th
 <h3 class="schedule-page-date">Week 14: {{ site.week-14 }}</h3>
 ### _GitHub Pages_, Advanced Web Design + Layout
 
-### [Week 14 Quizlet](https://forms.gle/7bnLSrikqB6rZV9m9){:target="_blank"}  
+### [Week 14 Quizlet](https://forms.gle/2scudrNLJgzN4pPUA){:target="_blank"}  
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
@@ -441,7 +441,7 @@ _For our final lab at the end of this class, you will make a personal website th
 
 <!-- <h4 style="color:yellow;"><i>More coming soon! Check back as this week gets filled up...</i></h4> -->
 
-### [Final Assessment Quizlet](https://forms.gle/AG9eJcYD2XqfCzh17){:target="_blank"}  
+<!-- ### [Final Assessment Quizlet](https://forms.gle/AG9eJcYD2XqfCzh17){:target="_blank"}   -->
 
 <h5 style="color:Tomato;"><b>Lab 15: <i>Personal Website</i> Presentations</b></h5>
 * Each student presents their website (5-10 minutes per student)  
